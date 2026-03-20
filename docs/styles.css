@@ -297,8 +297,8 @@ code {
   }
 
   .active-filter-row {
-    grid-template-columns: 1fr;
-    align-items: stretch;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
   }
 }
 
@@ -407,6 +407,11 @@ code {
     width: 100%;
   }
 
+  .active-filter-row {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
   .inline-toggle,
   .tag-filter {
     width: 100%;
@@ -418,18 +423,25 @@ code {
     justify-content: center;
   }
 
+  .filter-tools {
+    display: block;
+    width: 100%;
+  }
+
   .tag-filter {
-    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .tag-filter-panel {
     left: 0;
-    right: auto;
-    width: min(100%, 360px);
+    right: 0;
+    width: auto;
+    min-width: 0;
   }
 
   .active-tag-filters {
     min-height: 0;
+    justify-content: flex-start;
   }
 
   .inline-toggle {
@@ -584,8 +596,17 @@ code {
 }
 
 .active-filter-row {
-  display: block;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
   padding-top: 12px;
+}
+
+.filter-tools {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
 }
 
 .active-tag-filters {
@@ -594,7 +615,7 @@ code {
   gap: 8px;
   align-items: center;
   min-height: 36px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .active-tag-chip {
@@ -969,6 +990,35 @@ tbody tr:hover {
 
 .site-footer a:hover .footer-name {
   border-bottom-color: rgba(17, 17, 17, 0.4);
+}
+
+@media (max-width: 720px) {
+  .active-filter-row {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .filter-tools {
+    display: block;
+    width: 100%;
+  }
+
+  .tag-filter,
+  .tag-filter-trigger {
+    width: 100%;
+  }
+
+  .tag-filter-trigger {
+    justify-content: space-between;
+  }
+
+  .tag-filter-panel {
+    left: 0;
+    right: 0;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+  }
 }
 
 @media (max-width: 900px) {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenAI parameter golf dashboard</title>
+    <title>OpenAI parameter golf Leaderboard</title>
     <meta
       name="description"
       content="Track OpenAI Parameter Golf leaderboard records and public PR submissions in one place."
@@ -12,13 +12,13 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="./styles.css?v=57">
+    <link rel="stylesheet" href="./styles.css?v=58">
   </head>
   <body>
     <div class="page-shell">
       <div class="topbar">
         <div class="topbar-mark">
-          <span class="topbar-label">OpenAI parameter golf dashboard</span>
+          <span class="topbar-label">OpenAI parameter golf Leaderboard</span>
           <span class="topbar-meta">Explore records and public PR submissions easily.</span>
         </div>
         <div class="topbar-links">
@@ -68,22 +68,24 @@
                   <input id="hide-unscored-toggle" type="checkbox">
                   <span>Hide unscored</span>
                 </label>
-                <details class="tag-filter" id="tag-filter">
-                  <summary id="tag-filter-summary" class="tag-filter-trigger">Filter tags</summary>
-                  <div class="tag-filter-panel">
-                    <div class="tag-filter-panel-top">
-                      <label class="tag-filter-search" for="tag-filter-search">
-                        <input id="tag-filter-search" type="search" placeholder="Search tags…" autocomplete="off">
-                      </label>
-                    </div>
-                    <p class="tag-filter-hint">Matches rows that include any selected tag.</p>
-                    <div id="tag-filter-options" class="tag-filter-options"></div>
-                  </div>
-                </details>
               </div>
             </div>
           </div>
           <div id="active-filter-row" class="active-filter-row">
+            <div class="filter-tools">
+              <details class="tag-filter" id="tag-filter">
+                <summary id="tag-filter-summary" class="tag-filter-trigger">Filter tags</summary>
+                <div class="tag-filter-panel">
+                  <div class="tag-filter-panel-top">
+                    <label class="tag-filter-search" for="tag-filter-search">
+                      <input id="tag-filter-search" type="search" placeholder="Search tags…" autocomplete="off">
+                    </label>
+                  </div>
+                  <p class="tag-filter-hint">Matches rows that include any selected tag.</p>
+                  <div id="tag-filter-options" class="tag-filter-options"></div>
+                </div>
+              </details>
+            </div>
             <div id="active-tag-filters" class="active-tag-filters"></div>
           </div>
         </section>
