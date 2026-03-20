@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-20T00:17:29.683Z",
-  "lastSeenUpdatedAt": "2026-03-20T00:04:11Z",
+  "generatedAt": "2026-03-20T00:18:30.224Z",
+  "lastSeenUpdatedAt": "2026-03-20T00:18:25Z",
   "prs": {
     "1": {
       "number": 1,
@@ -8384,7 +8384,7 @@
     },
     "128": {
       "number": 128,
-      "updatedAt": "2026-03-19T23:02:54Z",
+      "updatedAt": "2026-03-20T00:18:25Z",
       "pr": {
         "number": 128,
         "title": "Record: Int6 MLP3x + STE QAT + Sliding Window (val_bpb=1.1594)",
@@ -8395,7 +8395,7 @@
         "authorLogin": "rsavitt",
         "authorName": null,
         "createdAt": "2026-03-19T20:45:01Z",
-        "updatedAt": "2026-03-19T23:02:54Z",
+        "updatedAt": "2026-03-20T00:18:25Z",
         "headSha": "a56bb8cce5768a787fe9a3fe2454a51520535946",
         "headRepo": "rsavitt/parameter-golf"
       },
@@ -8458,7 +8458,7 @@
             "authorLogin": "rsavitt",
             "authorName": null,
             "createdAt": "2026-03-19T20:45:01Z",
-            "updatedAt": "2026-03-19T23:02:54Z",
+            "updatedAt": "2026-03-20T00:18:25Z",
             "headSha": "a56bb8cce5768a787fe9a3fe2454a51520535946",
             "headRepo": "rsavitt/parameter-golf"
           },

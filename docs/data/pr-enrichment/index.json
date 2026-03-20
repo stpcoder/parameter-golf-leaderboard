@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T00:08:00.533Z",
+  "generatedAt": "2026-03-20T00:18:35.703Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -169,15 +169,15 @@
       "prNumber": 128,
       "title": "Record: Int6 MLP3x + STE QAT + Sliding Window (val_bpb=1.1594)",
       "status": "open",
-      "updatedAt": "2026-03-19T23:02:54Z",
+      "updatedAt": "2026-03-20T00:18:25Z",
       "headSha": "a56bb8cce5768a787fe9a3fe2454a51520535946",
-      "generatedAt": "2026-03-19T23:09:05.417Z",
-      "summary": "Int6 per-row quant with zstd frees bytes to train a 3x MLP via STE QAT while sliding-window eval and fp16 tied embeddings preserve scoring quality.",
+      "generatedAt": "2026-03-20T00:18:35.684Z",
+      "summary": "Int6 per-row quantization with STE QAT frees budget for a 3× wider MLP while sliding-window scoring keeps nearly full context.",
       "tags": [
         "quantization",
         "architecture",
-        "evaluation",
-        "optimizer"
+        "sliding-window-eval",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,

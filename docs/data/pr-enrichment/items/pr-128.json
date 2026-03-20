@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-19T23:09:05.417Z",
+  "generatedAt": "2026-03-20T00:18:35.684Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 128,
     "title": "Record: Int6 MLP3x + STE QAT + Sliding Window (val_bpb=1.1594)",
     "state": "open",
-    "updatedAt": "2026-03-19T23:02:54Z",
+    "updatedAt": "2026-03-20T00:18:25Z",
     "headSha": "a56bb8cce5768a787fe9a3fe2454a51520535946",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/128",
     "authorLogin": "rsavitt"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Int6 per-row quant with zstd frees bytes to train a 3x MLP via STE QAT while sliding-window eval and fp16 tied embeddings preserve scoring quality.",
+    "summary": "Int6 per-row quantization with STE QAT frees budget for a 3× wider MLP while sliding-window scoring keeps nearly full context.",
     "tags": [
       "quantization",
       "architecture",
-      "evaluation",
-      "optimizer"
+      "sliding-window-eval",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Int6 per-row quant + zstd-22 compression frees budget for a 3x MLP expansion",
-      "- STE fake-int6 quant-aware training prepares weights for aggressive 6-bit deployment",
-      "- Sliding-window stride-64 eval with fp16 tied embeddings keeps scoring quality high"
+      "Int6 per-row quantization + zstd compression",
+      "STE-based fake quantization-aware training",
+      "3× MLP expansion with fp16 tied embeddings"
     ]
   },
   "compatibility": {
