@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T14:53:48.139Z",
+  "generatedAt": "2026-03-20T16:54:33.752Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 217,
     "title": "Record: SP4096 int6+zstd 10L496 overtone+phase sliding (val_bpb=1.1753)",
     "state": "open",
-    "updatedAt": "2026-03-20T14:31:22Z",
+    "updatedAt": "2026-03-20T16:51:57Z",
     "headSha": "42524bf08e2adccf6569d9df930dc7b0cc006263",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/217",
     "authorLogin": "kshitizz36"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer 496-d model on SP4096 data uses int6-in-int8 quantization plus zstd22 and overtone/phase init, with sliding eval stride 64.",
+    "summary": "10-layer 496-dim model pairs SP4096 BPE with int6-range quantization, zstd-22 export, fp16 tied embeddings, and sliding-window eval plus overtone/phase init.",
     "tags": [
       "quantization",
       "compression",
-      "sliding-window-eval",
+      "evaluation",
       "architecture"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Standard pretraining run rather than val-only training.",
     "techniques": [
-      "int6-in-int8 quantization with zstd22 compression",
-      "SP4096 tokenizer w/ 10L 496D model and overtone/phase init",
-      "sliding-window eval stride 64 with FP16 tied embeddings"
+      "int6-range quant with QUANT_LEVELS=31 in int8 container",
+      "zstd-22 compression for submission export",
+      "sliding-window eval paired with overtone/phase residual init"
     ]
   },
   "compatibility": {

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-20T16:53:55.735Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 230,
+    "title": "Record: Int6 + MLP 3x + NorMuon + Weight Decay, val_bpb=1.1875",
+    "state": "open",
+    "updatedAt": "2026-03-20T16:44:50Z",
+    "headSha": "d7a0a02c09263ef1e1214ceaa1a36eedbbe42174",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/230",
+    "authorLogin": "MatthewHRockwell"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-20_Int6_MLP3x_NorMuon_WD/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Per-row int6 quantization with fp16 scales shrinks the artifact so a 3x wider MLP can train with NorMuon plus decoupled weight decay.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "optimizer",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Per-row int6 quantization with fp16 scales",
+      "3x MLP expansion within 16MB budget",
+      "NorMuon optimizer with decoupled weight decay"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

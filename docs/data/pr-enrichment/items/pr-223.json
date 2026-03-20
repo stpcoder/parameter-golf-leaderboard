@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T16:23:59.694Z",
+  "generatedAt": "2026-03-20T16:54:27.785Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 223,
     "title": "Draft: SOTA+ TTT + RoPE50K + EMA + Curriculum (pending H100 run)",
     "state": "open",
-    "updatedAt": "2026-03-20T16:11:12Z",
-    "headSha": "5f95a5854dd1a65194b2a619e4de8322e730f113",
+    "updatedAt": "2026-03-20T16:53:15Z",
+    "headSha": "42b1be1b1884e981c01f6f1836f61f74245b9629",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/223",
     "authorLogin": "0xjaishy"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Builds on PR198 stack by adding RoPE50K, LAWA-EMA, context curriculum, and val-set SGD TTT to refine weights before final scoring.",
+    "summary": "11L mixed-precision GPT adds RoPE50K, LAWA-EMA, and context curriculum with validation-only SGD TTT to the PR#198 stack.",
     "tags": [
       "val-only",
-      "training-schedule",
-      "optimizer",
-      "architecture"
+      "positional-encoding",
+      "training-schedule"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Full-model SGD test-time training runs one epoch on the validation shard before evaluation.",
+    "valOnlyReasoning": "Full-model SGD test-time training runs over the validation shard before scoring.",
     "techniques": [
-      "RoPE base 50K for smoother long-range interpolation",
-      "LAWA-EMA warmdown replacing periodic SWA",
-      "Context curriculum followed by val-set SGD TTT adaptation"
+      "RoPE base 50K for smoother long-context interpolation",
+      "LAWA-EMA plus context-length curriculum for stabilized training",
+      "SGD-based test-time training on the validation shard"
     ]
   },
   "compatibility": {

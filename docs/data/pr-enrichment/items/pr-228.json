@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-20T16:54:05.745Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 228,
+    "title": "Record: 10-Layer 4xMLP (val_bpb: 1.4444)",
+    "state": "open",
+    "updatedAt": "2026-03-20T16:32:15Z",
+    "headSha": "4204bffefcd3aa7ef425ab186b6d8899771dffb9",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/228",
+    "authorLogin": "hmhm0"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_hmhm0_10Layer/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Expanded baseline to 10 layers with a 4x MLP, squeezing the 16MB budget with INT8+zlib compression and sliding-window eval plus batched LoRA tuning.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "compression",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "10-layer 4x MLP depth-width expansion",
+      "INT8 per-row quantization with zlib compression",
+      "sliding-window evaluation with batched LoRA tuning"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

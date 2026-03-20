@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-20T16:54:00.855Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 229,
+    "title": "[Non-Record] Zeno: 10-Layer Muon with Full CastedLinear Capacity (18.5M params)",
+    "state": "open",
+    "updatedAt": "2026-03-20T16:37:41Z",
+    "headSha": "969b3b8dad48173ae2bb213db56dfe874e0e9e36",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/229",
+    "authorLogin": "hooiv"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-20_Zeno_10L_Muon_CastedLinear/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "10-layer Transformer replaces LoRA with full CastedLinear matrices, trains with Muon + Sigmoid residual mixing, and int8+zlib compresses weights for eval-time LoRA TTT.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "quantization",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Full-capacity CastedLinear in attention/MLP",
+      "Muon optimizer with decoupled decay and Sigmoid-phase residual mixing",
+      "Batched TTT with dynamic LoRA adapters at evaluation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
