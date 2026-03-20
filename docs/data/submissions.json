@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T13:53:18.130Z",
+  "generatedAt": "2026-03-20T14:23:25.615Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -1016,6 +1016,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/af51720b0d3c73d74fa4b427d45730c872425370/records/track_10min_16mb/2026-03-19_OrthoInit_Int6_MLP3x_BigramHash_SmearGate/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/af51720b0d3c73d74fa4b427d45730c872425370/records/track_10min_16mb/2026-03-19_OrthoInit_Int6_MLP3x_BigramHash_SmearGate",
         "pr": "https://github.com/openai/parameter-golf/pull/135",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-20_11L_LowRankQ192",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-20_11L_LowRankQ192",
+        "folderPath": "records/track_10min_16mb/2026-03-20_11L_LowRankQ192",
+        "submissionPath": "records/track_10min_16mb/2026-03-20_11L_LowRankQ192/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-20_11L_LowRankQ192/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-20_11L_LowRankQ192/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-20_11L_LowRankQ192/train_gpt.py"
+      },
+      "submission": {
+        "author": "JayCheng113",
+        "githubId": "JayCheng113",
+        "name": "11L Low-Rank Q192",
+        "blurb": "11-layer transformer with factored Q projection (rank 192). Low-rank Q structure improves int6 quantization friendliness. Mean sliding val_bpb=1.1558 across 3 seeds.",
+        "date": "2026-03-20"
+      },
+      "metrics": {
+        "valBpb": 1.1548,
+        "valLoss": 1.9498,
+        "preQuantValBpb": 1.1793,
+        "preQuantValLoss": 1.9913,
+        "stepStop": 7732,
+        "wallclockSeconds": 600,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 14747213,
+        "bytesCode": 58561,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 215,
+        "title": "Record: 11L Low-Rank Q192 (val_bpb=1.1548)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/215",
+        "authorLogin": "JayCheng113",
+        "authorName": null,
+        "createdAt": "2026-03-20T14:22:04Z",
+        "updatedAt": "2026-03-20T14:22:04Z",
+        "headSha": "2dbf8aa64a0910aedcfa916d441f509139203920",
+        "headRepo": "JayCheng113/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2dbf8aa64a0910aedcfa916d441f509139203920/records/track_10min_16mb/2026-03-20_11L_LowRankQ192/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/2dbf8aa64a0910aedcfa916d441f509139203920/records/track_10min_16mb/2026-03-20_11L_LowRankQ192/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/2dbf8aa64a0910aedcfa916d441f509139203920/records/track_10min_16mb/2026-03-20_11L_LowRankQ192/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/2dbf8aa64a0910aedcfa916d441f509139203920/records/track_10min_16mb/2026-03-20_11L_LowRankQ192/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/2dbf8aa64a0910aedcfa916d441f509139203920/records/track_10min_16mb/2026-03-20_11L_LowRankQ192",
+        "pr": "https://github.com/openai/parameter-golf/pull/215",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

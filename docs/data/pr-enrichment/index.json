@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-20T13:53:57.272Z",
+  "generatedAt": "2026-03-20T14:23:31.891Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 215,
+      "title": "Record: 11L Low-Rank Q192 (val_bpb=1.1548)",
+      "status": "open",
+      "updatedAt": "2026-03-20T14:22:04Z",
+      "headSha": "2dbf8aa64a0910aedcfa916d441f509139203920",
+      "generatedAt": "2026-03-20T14:23:31.858Z",
+      "summary": "11-layer transformer uses low-rank Q factorization to slim attention weights, speeding steps and making int6-friendly compression feasible inside the 16MB budget.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-215.json"
+    },
     {
       "prNumber": 213,
       "title": "Non-record submission: recurrent 512 L3 6k (8x H100, 224s)",
