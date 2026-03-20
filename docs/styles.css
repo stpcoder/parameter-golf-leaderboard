@@ -176,51 +176,26 @@ code {
   flex: 0 1 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   min-height: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
-  gap: 16px 20px;
+  gap: 10px 14px;
 }
 
-.filter-cluster {
-  display: flex;
-  align-items: center;
-  min-width: 0;
-}
-
-.filter-cluster-primary {
-  flex: 1 1 auto;
-  justify-content: center;
-}
-
-.filter-cluster-view {
-  flex: 0 0 auto;
-  justify-content: flex-end;
-}
-
-.toggle-group,
-.view-toggle-group {
+.toggle-group {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
   margin-left: 0;
-}
-
-.toggle-group {
   justify-content: center;
 }
 
-.view-toggle-group {
-  justify-content: flex-end;
-}
-
-.toggle-group > *,
-.view-toggle-group > * {
+.toggle-group > * {
   min-width: 0;
 }
 
@@ -312,20 +287,11 @@ code {
   .controls-panel {
     justify-content: center;
     width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px 14px;
   }
 
-  .filter-cluster,
-  .filter-cluster-primary,
-  .filter-cluster-view {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .toggle-group,
-  .view-toggle-group {
+  .toggle-group {
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -441,19 +407,8 @@ code {
     width: 100%;
   }
 
-  .view-toggle-group {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px 14px;
-    width: 100%;
-  }
-
   .inline-toggle,
   .tag-filter {
-    width: 100%;
-  }
-
-  .view-toggle-group .inline-toggle {
     width: 100%;
   }
 

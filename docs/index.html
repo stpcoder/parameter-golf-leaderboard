@@ -12,7 +12,7 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="./styles.css?v=56">
+    <link rel="stylesheet" href="./styles.css?v=57">
   </head>
   <body>
     <div class="page-shell">
@@ -43,49 +43,43 @@
               <input id="search-input" type="search" placeholder="Search titles or authors…" autocomplete="off">
             </label>
             <div class="controls-panel">
-              <div class="filter-cluster filter-cluster-primary">
-                <div class="toggle-group">
-                  <label class="inline-toggle" for="merged-only-toggle">
-                    <input id="merged-only-toggle" type="checkbox">
-                    <span>Merged only</span>
-                  </label>
-                  <label class="inline-toggle" for="val-only-toggle">
-                    <input id="val-only-toggle" type="checkbox">
-                    <span>Add val-only</span>
-                  </label>
-                  <label class="inline-toggle" for="non-record-toggle">
-                    <input id="non-record-toggle" type="checkbox">
-                    <span>Hide non-record</span>
-                  </label>
-                  <label class="inline-toggle" for="hide-unscored-toggle">
-                    <input id="hide-unscored-toggle" type="checkbox">
-                    <span>Hide unscored</span>
-                  </label>
-                  <details class="tag-filter" id="tag-filter">
-                    <summary id="tag-filter-summary" class="tag-filter-trigger">Filter tags</summary>
-                    <div class="tag-filter-panel">
-                      <div class="tag-filter-panel-top">
-                        <label class="tag-filter-search" for="tag-filter-search">
-                          <input id="tag-filter-search" type="search" placeholder="Search tags…" autocomplete="off">
-                        </label>
-                      </div>
-                      <p class="tag-filter-hint">Matches rows that include any selected tag.</p>
-                      <div id="tag-filter-options" class="tag-filter-options"></div>
+              <div class="toggle-group">
+                <label class="inline-toggle" for="merged-only-toggle">
+                  <input id="merged-only-toggle" type="checkbox">
+                  <span>Merged only</span>
+                </label>
+                <label class="inline-toggle" for="val-only-toggle">
+                  <input id="val-only-toggle" type="checkbox">
+                  <span>Add val-only</span>
+                </label>
+                <label class="inline-toggle" for="non-record-toggle">
+                  <input id="non-record-toggle" type="checkbox">
+                  <span>Hide non-record</span>
+                </label>
+                <label class="inline-toggle" for="hide-summaries-toggle">
+                  <input id="hide-summaries-toggle" type="checkbox">
+                  <span>Hide summaries</span>
+                </label>
+                <label class="inline-toggle" for="hide-tags-toggle">
+                  <input id="hide-tags-toggle" type="checkbox">
+                  <span>Hide tags</span>
+                </label>
+                <label class="inline-toggle" for="hide-unscored-toggle">
+                  <input id="hide-unscored-toggle" type="checkbox">
+                  <span>Hide unscored</span>
+                </label>
+                <details class="tag-filter" id="tag-filter">
+                  <summary id="tag-filter-summary" class="tag-filter-trigger">Filter tags</summary>
+                  <div class="tag-filter-panel">
+                    <div class="tag-filter-panel-top">
+                      <label class="tag-filter-search" for="tag-filter-search">
+                        <input id="tag-filter-search" type="search" placeholder="Search tags…" autocomplete="off">
+                      </label>
                     </div>
-                  </details>
-                </div>
-              </div>
-              <div class="filter-cluster filter-cluster-view">
-                <div class="view-toggle-group">
-                  <label class="inline-toggle" for="hide-summaries-toggle">
-                    <input id="hide-summaries-toggle" type="checkbox">
-                    <span>Hide summaries</span>
-                  </label>
-                  <label class="inline-toggle" for="hide-tags-toggle">
-                    <input id="hide-tags-toggle" type="checkbox">
-                    <span>Hide tags</span>
-                  </label>
-                </div>
+                    <p class="tag-filter-hint">Matches rows that include any selected tag.</p>
+                    <div id="tag-filter-options" class="tag-filter-options"></div>
+                  </div>
+                </details>
               </div>
             </div>
           </div>
@@ -136,6 +130,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./app.js?v=46"></script>
+    <script type="module" src="./app.js?v=47"></script>
   </body>
   </html>
