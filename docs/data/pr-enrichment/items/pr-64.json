@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T07:23:02.495Z",
+  "generatedAt": "2026-03-20T10:23:00.004Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 64,
-    "title": "Record: val_bpb=0.9695 (val-only) + val_bpb=1.1629 (standard)",
+    "title": "Record Update: val_bpb=0.9271 (val-only) + 1.1465 (standard)",
     "state": "open",
-    "updatedAt": "2026-03-20T07:06:18Z",
+    "updatedAt": "2026-03-20T10:03:40Z",
     "headSha": "672f17de5c9fb0e772695dff11a81e092a70e0a4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/64",
     "authorLogin": "yesbhautik"
@@ -20,19 +20,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Val-only run stacks STE fake-int6 QAT with mixed post-training quant, widened 3× MLP, tuned Muon, and sliding-window eval for robust int6 deployment.",
+    "summary": "SmearGate+BigramHash core with sliding-window eval, pairing val-only STE int6 QAT/compression with standard mixed int6/int8 export and fp16 passthrough.",
     "tags": [
       "val-only",
-      "quantization",
       "sliding-window-eval",
+      "quantization",
       "optimizer"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "CombinedOptimal submission explicitly trains on validation shards under organizer-approved val-only regime.",
+    "valOnlyReasoning": "CombinedOptimal val-only submission trained solely on validation shards per the val-only regime.",
     "techniques": [
-      "STE fake-int6 QAT plus int6/int8 mixed post-training quant",
-      "MLP 3× expansion with seq_len 4096 and tuned Muon (0.99 momentum, LR 0.02)",
-      "Sliding-window evaluation stride 64 to score long context"
+      "SmearGate+BigramHash backbone with stride-64 sliding-window evaluation",
+      "Val-only STE fake-int6 QAT plus mixed int6/int8 post-quantization and zstd-22 compression",
+      "Standard track mixed int6/int8 export with fp16 tok_emb+c_k passthrough, Muon WD0.04, and SWA50"
     ]
   },
   "compatibility": {

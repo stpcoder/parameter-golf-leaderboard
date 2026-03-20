@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-20T09:53:07.862Z",
+  "generatedAt": "2026-03-20T10:23:00.010Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 200,
+      "title": "Record: SP4096 + Int6 QAT + NorMuon (val_bpb=1.2012)",
+      "status": "open",
+      "updatedAt": "2026-03-20T10:10:56Z",
+      "headSha": "febeb71817c19611739726d51291723f7ea3e482",
+      "generatedAt": "2026-03-20T10:22:43.885Z",
+      "summary": "Stacks a SP4096 SentencePiece tokenizer with Int6 STE QAT plus zstd-22 compression and NorMuon tuning to fit a stronger model under 16MB.",
+      "tags": [
+        "tokenization",
+        "quantization",
+        "optimizer"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-200.json"
+    },
     {
       "prNumber": 199,
       "title": "Non-record: SWA and doc-isolated eval ablation — two negative findings at stride=64",
@@ -73,16 +96,16 @@
     },
     {
       "prNumber": 196,
-      "title": "Add non-record submission: SMM FineWeb Smoke",
+      "title": "Add non-record submission: Structured-Memory FineWeb Smoke, 1xH100, val_bpb 1.7375",
       "status": "open",
-      "updatedAt": "2026-03-20T09:02:44Z",
-      "headSha": "62905a7a5c0c96908474778179e91ace824be24f",
-      "generatedAt": "2026-03-20T09:22:22.478Z",
-      "summary": "Integrates a minimal structured-memory LM branch into train_gpt to run single-H100 FineWeb smoke eval via val_bpb with quantized export.",
+      "updatedAt": "2026-03-20T10:17:34Z",
+      "headSha": "80065c1c8efd2b6a151d475011dea5edbaa4522a",
+      "generatedAt": "2026-03-20T10:22:47.782Z",
+      "summary": "Adapts a minimal structured-memory model into the official train_gpt FineWeb path to smoke-test evaluation, quantization, and artifact export.",
       "tags": [
         "architecture",
-        "quantization",
         "evaluation",
+        "compression",
         "non-record"
       ],
       "flags": {
@@ -2138,13 +2161,14 @@
       "prNumber": 76,
       "title": "Int6 QAT + Wider MLP 3x + FP16 Embed + Sliding Window (val_bpb 1.1599)",
       "status": "open",
-      "updatedAt": "2026-03-20T07:20:43Z",
-      "headSha": "f9ab40a5fddb370296be7ef5d8021802fd6d41ed",
-      "generatedAt": "2026-03-20T07:22:57.072Z",
-      "summary": "Combines delayed 6-bit QAT in the final 15% with a 3× wider MLP, per-row int6+FP16 embed quantization, and sliding-window evaluation.",
+      "updatedAt": "2026-03-20T10:11:03Z",
+      "headSha": "0d64b289ce1b02c00f4a24ca9536568dd6acff42",
+      "generatedAt": "2026-03-20T10:22:52.720Z",
+      "summary": "Combines int6 per-row quantization with a wider MLP, delayed STE QAT, FP16 tied embeddings, sliding-window eval, and tuned Muon optimizer.",
       "tags": [
         "quantization",
         "architecture",
+        "optimizer",
         "evaluation"
       ],
       "flags": {
@@ -2346,16 +2370,16 @@
     },
     {
       "prNumber": 64,
-      "title": "Record: val_bpb=0.9695 (val-only) + val_bpb=1.1629 (standard)",
+      "title": "Record Update: val_bpb=0.9271 (val-only) + 1.1465 (standard)",
       "status": "open",
-      "updatedAt": "2026-03-20T07:06:18Z",
+      "updatedAt": "2026-03-20T10:03:40Z",
       "headSha": "672f17de5c9fb0e772695dff11a81e092a70e0a4",
-      "generatedAt": "2026-03-20T07:23:02.495Z",
-      "summary": "Val-only run stacks STE fake-int6 QAT with mixed post-training quant, widened 3× MLP, tuned Muon, and sliding-window eval for robust int6 deployment.",
+      "generatedAt": "2026-03-20T10:23:00.004Z",
+      "summary": "SmearGate+BigramHash core with sliding-window eval, pairing val-only STE int6 QAT/compression with standard mixed int6/int8 export and fp16 passthrough.",
       "tags": [
         "val-only",
-        "quantization",
         "sliding-window-eval",
+        "quantization",
         "optimizer"
       ],
       "flags": {

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-20T10:22:43.885Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 200,
+    "title": "Record: SP4096 + Int6 QAT + NorMuon (val_bpb=1.2012)",
+    "state": "open",
+    "updatedAt": "2026-03-20T10:10:56Z",
+    "headSha": "febeb71817c19611739726d51291723f7ea3e482",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/200",
+    "authorLogin": "khasinski"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-20_SP4096_Int6_NorMuon/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Stacks a SP4096 SentencePiece tokenizer with Int6 STE QAT plus zstd-22 compression and NorMuon tuning to fit a stronger model under 16MB.",
+    "tags": [
+      "tokenization",
+      "quantization",
+      "optimizer"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "SP4096 SentencePiece BPE to cut tokens/byte",
+      "Int6 STE QAT + zstd-22 compression for sub-16MB artifact",
+      "NorMuon with lower LR and higher momentum"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

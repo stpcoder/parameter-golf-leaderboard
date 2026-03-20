@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-20T09:52:36.833Z",
+  "generatedAt": "2026-03-20T10:22:38.314Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 140,
+    "submissions": 141,
     "official": 2,
-    "openPr": 114,
+    "openPr": 115,
     "mergedPr": 5,
     "closedPr": 19,
-    "prBacked": 138,
+    "prBacked": 139,
     "readmeListed": 8,
     "collectorErrors": 0
   },
@@ -126,14 +126,13 @@
         "valOnlyMatches": [
           "title:val-only",
           "body:val-only",
-          "body:Val-only training",
           "readme:Val-Only",
           "readme:Val-only training"
         ]
       },
       "pr": {
         "number": 64,
-        "title": "Record: val_bpb=0.9695 (val-only) + val_bpb=1.1629 (standard)",
+        "title": "Record Update: val_bpb=0.9271 (val-only) + 1.1465 (standard)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -141,7 +140,7 @@
         "authorLogin": "yesbhautik",
         "authorName": null,
         "createdAt": "2026-03-19T07:32:20Z",
-        "updatedAt": "2026-03-20T07:06:18Z",
+        "updatedAt": "2026-03-20T10:03:40Z",
         "headSha": "672f17de5c9fb0e772695dff11a81e092a70e0a4",
         "headRepo": "yesbhautik/parameter-golf"
       },
