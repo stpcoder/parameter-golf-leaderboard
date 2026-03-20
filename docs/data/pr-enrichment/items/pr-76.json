@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T21:55:44.029Z",
+  "generatedAt": "2026-03-20T23:56:53.449Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 76,
     "title": "12L Int5-MLP + SmearGate + BigramHash + SWA (val_bpb 1.1468)",
     "state": "open",
-    "updatedAt": "2026-03-20T21:37:55Z",
+    "updatedAt": "2026-03-20T23:40:42Z",
     "headSha": "5f9a9065517f98c0941d7a4af2964f839a77f11b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/76",
     "authorLogin": "unixmadtoonslab"
@@ -19,19 +19,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Mixed int5/int6 quantized 12-layer transformer uses SmearGate, BigramHash, and U-Net skips with Muon/SWA and PyTorch 2.8 SDPA to stay under 16MB.",
+    "summary": "12-layer GQA transformer uses int5/int6 per-row quantization, SmearGate, BigramHash, U-Net skips, and SWA-ed Muon scheduling to stay compact yet expressive.",
     "tags": [
       "quantization",
-      "optimizer",
       "architecture",
-      "training-schedule"
+      "training-schedule",
+      "attention"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "No explicit validation-shard or val-only training; standard training with validation evaluation.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Mixed int5/int6 quantization for MLP and attention weights with fp16 embedding passthrough",
-      "SmearGate plus BigramHash context embeddings and U-Net-like skip connections in 12-layer stack",
-      "Muon optimizer with SWA warmdown and PyTorch 2.8 SDPA acceleration"
+      "int5-per-row MLP plus int6 attention with fp16 embedding passthrough and zstd-22 compression",
+      "SmearGate blending, BigramHash token-pair context, and learned U-Net skip weights for richer representation",
+      "Warmdown SWA (50-step checkpoints) with Muon optimizer and compile-aware timing"
     ]
   },
   "compatibility": {

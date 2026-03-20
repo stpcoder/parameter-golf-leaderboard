@@ -1,8 +1,55 @@
 {
-  "generatedAt": "2026-03-20T23:26:19.060Z",
+  "generatedAt": "2026-03-20T23:56:53.458Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 288,
+      "title": "Non-record: Content-Dependent SmearGate (1.6795 BPB, RTX 4070)",
+      "status": "open",
+      "updatedAt": "2026-03-20T23:38:53Z",
+      "headSha": "8f4401b40327be24780c88c5de5d4a6cb3509b1b",
+      "generatedAt": "2026-03-20T23:55:54.534Z",
+      "summary": "Modulates SmearGate gating with adjacency dot-product similarity so similar tokens blend more while keeping parameter/compute cost minimal.",
+      "tags": [
+        "architecture",
+        "regularization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-288.json"
+    },
+    {
+      "prNumber": 287,
+      "title": "Record: 11L XSA + EMA + Int6 MLP3x + WD=0.04 (val_bpb: 1.1271)",
+      "status": "open",
+      "updatedAt": "2026-03-20T23:25:59Z",
+      "headSha": "d7583288464f252eeec6657c80f4cd3a74c0e5c5",
+      "generatedAt": "2026-03-20T23:55:58.933Z",
+      "summary": "11-layer µP transformer adds Exclusive Self Attention in final layers plus stepwise EMA averaging, retaining int6/zstd compression and tuned Muon updates for compact inference.",
+      "tags": [
+        "attention",
+        "optimizer",
+        "quantization",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-287.json"
+    },
     {
       "prNumber": 286,
       "title": "Record: 10L Int5-MLP + SmearGate + BigramHash + Late QAT (val_bpb=1.1628)",
@@ -149,15 +196,14 @@
       "prNumber": 277,
       "title": "Non-record: 11L Int6 + XSA + TTT + SmearGate + BigramHash (pending compute)",
       "status": "open",
-      "updatedAt": "2026-03-20T22:09:01Z",
-      "headSha": "e3b91720535d9a8ee33e5e018cb09e120c84ac35",
-      "generatedAt": "2026-03-20T22:25:33.581Z",
-      "summary": "11-layer int6 net layers 8–10 use XSA while eval-time TTT and SmearGate/BigramHash sit atop Muon/SWA training with per-row quantization.",
+      "updatedAt": "2026-03-20T23:53:55Z",
+      "headSha": "0600b2205d96c77a95d80c9e9a1c6d403f18c493",
+      "generatedAt": "2026-03-20T23:56:02.643Z",
+      "summary": "Combines XSA on the final layers with TTT adaptation on top of an 11L muP stack featuring SmearGate/BigramHash and int6 quantization.",
       "tags": [
-        "architecture",
-        "evaluation",
+        "attention",
         "quantization",
-        "optimizer"
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -195,15 +241,15 @@
     {
       "prNumber": 275,
       "title": "Non-record: Paid Prefix Research (val_bpb=1.0539, ruled out-of-scope)",
-      "status": "open",
-      "updatedAt": "2026-03-20T22:07:20Z",
+      "status": "closed",
+      "updatedAt": "2026-03-20T23:37:26Z",
       "headSha": "f452a388ed7e6a3d4a6726b4ed1ea4ac64161b6a",
-      "generatedAt": "2026-03-20T22:25:43.978Z",
-      "summary": "Hybridizes an Int6 SmearGate transformer with an LZMA-compressed paid prefix so artifact budget buys token coverage rather than larger model capacity.",
+      "generatedAt": "2026-03-20T23:56:09.511Z",
+      "summary": "Hybrid paid-prefix approach stores compressed val tokens alongside an 8L SmearGate transformer to trade model size for coverage within artifact budget.",
       "tags": [
         "compression",
-        "architecture",
-        "evaluation",
+        "quantization",
+        "muon",
         "non-record"
       ],
       "flags": {
@@ -220,15 +266,14 @@
       "prNumber": 274,
       "title": "[Non-record] Seq2048 + EMA + Council-Optimized Warmdown",
       "status": "open",
-      "updatedAt": "2026-03-20T22:52:57Z",
-      "headSha": "ca8c5eca380d0f6faa75de9ce595b84927616a81",
-      "generatedAt": "2026-03-20T22:55:49.742Z",
-      "summary": "Seq2048 training with EMA averaging, council-tuned 5k warmdown, and Muon momentum tweaks to boost context efficiency within the 10L base architecture.",
+      "updatedAt": "2026-03-20T23:26:18Z",
+      "headSha": "eb9be9d5f9214ae10a1dbe3a2ee08ca66147f55e",
+      "generatedAt": "2026-03-20T23:56:17.071Z",
+      "summary": "Seq2048, EMA weight averaging, and a council-optimized 5000-step warmdown with lower Muon LR/momentum refine the 10L baseline training regimen.",
       "tags": [
-        "regularization",
         "training-schedule",
-        "optimizer",
-        "architecture"
+        "muon",
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -613,14 +658,15 @@
       "prNumber": 250,
       "title": "Complexity MoE v4: Token-Routed I64 + PID + CUDA Scatter + Int6 (26.5M params)",
       "status": "open",
-      "updatedAt": "2026-03-20T23:17:43Z",
-      "headSha": "a4d696c8e2ede0464f354a2684bd50daba69a5a8",
-      "generatedAt": "2026-03-20T23:26:08.300Z",
-      "summary": "Token-routed 4-expert SwiGLU MoE with CUDA scatter, PID dynamics, and cosine warm-restart SGD, plus int6 compression for low-memory deployment.",
+      "updatedAt": "2026-03-20T23:33:31Z",
+      "headSha": "f4eea7d66c7ef8c411542706a9dfd7b71df04ec5",
+      "generatedAt": "2026-03-20T23:56:21.960Z",
+      "summary": "Token-routed SwiGLU MoE with PID-like layer dynamics, cosine warm-restart schedule, and int6+zstd dispatch compression.",
       "tags": [
         "architecture",
         "training-schedule",
-        "quantization"
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1786,23 +1832,23 @@
       "prNumber": 179,
       "title": "Record: 11L, int6+zstd, decoupled WD (val_bpb = 1.1472)",
       "status": "open",
-      "updatedAt": "2026-03-20T18:50:56Z",
+      "updatedAt": "2026-03-20T23:29:01Z",
       "headSha": "e25aee67b22361b15da1480e394f554d52c6d2fc",
-      "generatedAt": "2026-03-20T18:55:05.781Z",
-      "summary": "11-layer GQA GPT with Muon decoupled weight decay, int6+zstd compression, and sliding-window eval to fit 16MB while boosting non-val BPB.",
+      "generatedAt": "2026-03-20T23:56:27.423Z",
+      "summary": "11-layer GQA GPT uses int6+zstd compression, fp16 embeddings, sliding-window eval, and decoupled Muon weight decay to fit under 16MB.",
       "tags": [
         "val-only",
         "quantization",
-        "optimizer",
-        "attention"
+        "compression",
+        "muon"
       ],
       "flags": {
         "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": true
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-179.json"
     },
@@ -1975,15 +2021,15 @@
     {
       "prNumber": 168,
       "title": "SOTA Attempt: Paid prefix (val_bpb=1.0238)",
-      "status": "closed",
-      "updatedAt": "2026-03-20T21:26:39Z",
+      "status": "open",
+      "updatedAt": "2026-03-20T23:48:30Z",
       "headSha": "83aee2852eb3375309580957f7d3ae6934488428",
-      "generatedAt": "2026-03-20T21:55:33.062Z",
-      "summary": "Stores 12.9M val targets in an 8.75MB paid prefix and uses the remaining 7.12MB for a 7-layer 384d model trained only on train split to cover other tokens.",
+      "generatedAt": "2026-03-20T23:56:35.932Z",
+      "summary": "Splits the 16MB artifact into an 8.75MB compressed paid-prefix of known validation targets plus a 7L int8 transformer trained only on fineweb.",
       "tags": [
-        "architecture",
         "compression",
-        "evaluation"
+        "evaluation",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2301,16 +2347,16 @@
     },
     {
       "prNumber": 150,
-      "title": "Record: Int6 QAT + BigramHash + Muon WD (val_bpb=1.1577)",
+      "title": "Record: 11L Int6 QAT + SmearGate + OrthoInit + SWA + TTT (val_bpb=1.1478)",
       "status": "open",
-      "updatedAt": "2026-03-20T23:25:18Z",
+      "updatedAt": "2026-03-20T23:26:43Z",
       "headSha": "da669f60da874107f806f064e3e74a28ab85f374",
-      "generatedAt": "2026-03-20T23:26:19.041Z",
-      "summary": "Stacked STE int6 QAT with BigramHash token-pair embeddings, expanded MLP, and Muon WD tuning plus sliding-window eval for tighter quantized transformer artifacts.",
+      "generatedAt": "2026-03-20T23:56:42.097Z",
+      "summary": "11-layer int6-QAT transformer stacks SmearGate blending, BigramHash, NTK-RoPE, muP-scored projections, Muon+SWA optimizer stack, and TTT with sliding-window eval.",
       "tags": [
         "quantization",
-        "architecture",
         "optimizer",
+        "architecture",
         "evaluation"
       ],
       "flags": {
@@ -2937,14 +2983,15 @@
       "prNumber": 112,
       "title": "Depth Recurrence 5x3 d672 SwiGLU",
       "status": "open",
-      "updatedAt": "2026-03-19T18:25:26Z",
-      "headSha": "ac5a14df9f8167101fc52164312bc865322cfd28",
-      "generatedAt": "2026-03-19T18:37:02.473Z",
-      "summary": "Reuses five transformer blocks three times to get 15 effective layers at width 672 with SwiGLU, tuning warmdown/momentum and eval seqlen 2048.",
+      "updatedAt": "2026-03-20T23:32:16Z",
+      "headSha": "032ec80f07c70182d384577cc6f53131ba3a8432",
+      "generatedAt": "2026-03-20T23:56:47.799Z",
+      "summary": "Repeat eight SwiGLU blocks three times for 15-layer depth with SmearGate+BigramHash context and int6+zstd compression, training at seqlen 2048.",
       "tags": [
         "architecture",
-        "training-schedule",
-        "quantization"
+        "quantization",
+        "optimizer",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -3546,15 +3593,15 @@
       "prNumber": 76,
       "title": "12L Int5-MLP + SmearGate + BigramHash + SWA (val_bpb 1.1468)",
       "status": "open",
-      "updatedAt": "2026-03-20T21:37:55Z",
+      "updatedAt": "2026-03-20T23:40:42Z",
       "headSha": "5f9a9065517f98c0941d7a4af2964f839a77f11b",
-      "generatedAt": "2026-03-20T21:55:44.029Z",
-      "summary": "Mixed int5/int6 quantized 12-layer transformer uses SmearGate, BigramHash, and U-Net skips with Muon/SWA and PyTorch 2.8 SDPA to stay under 16MB.",
+      "generatedAt": "2026-03-20T23:56:53.449Z",
+      "summary": "12-layer GQA transformer uses int5/int6 per-row quantization, SmearGate, BigramHash, U-Net skips, and SWA-ed Muon scheduling to stay compact yet expressive.",
       "tags": [
         "quantization",
-        "optimizer",
         "architecture",
-        "training-schedule"
+        "training-schedule",
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,

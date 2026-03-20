@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-19T18:37:02.473Z",
+  "generatedAt": "2026-03-20T23:56:47.799Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 112,
     "title": "Depth Recurrence 5x3 d672 SwiGLU",
     "state": "open",
-    "updatedAt": "2026-03-19T18:25:26Z",
-    "headSha": "ac5a14df9f8167101fc52164312bc865322cfd28",
+    "updatedAt": "2026-03-20T23:32:16Z",
+    "headSha": "032ec80f07c70182d384577cc6f53131ba3a8432",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/112",
     "authorLogin": "eb1386"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Reuses five transformer blocks three times to get 15 effective layers at width 672 with SwiGLU, tuning warmdown/momentum and eval seqlen 2048.",
+    "summary": "Repeat eight SwiGLU blocks three times for 15-layer depth with SmearGate+BigramHash context and int6+zstd compression, training at seqlen 2048.",
     "tags": [
       "architecture",
-      "training-schedule",
-      "quantization"
+      "quantization",
+      "optimizer",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "depth recurrence for heavier per-token compute",
-      "SwiGLU MLP with resid_mix gradient highway",
-      "short-budget warmdown and momentum tuning"
+      "Repeated SwiGLU blocks via depth recurrence",
+      "SmearGate and BigramHash for local context",
+      "int6 quantization with Muon optimizer and SWA"
     ]
   },
   "compatibility": {

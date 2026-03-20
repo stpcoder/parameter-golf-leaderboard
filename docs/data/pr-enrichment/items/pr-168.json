@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T21:55:33.062Z",
+  "generatedAt": "2026-03-20T23:56:35.932Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 168,
     "title": "SOTA Attempt: Paid prefix (val_bpb=1.0238)",
-    "state": "closed",
-    "updatedAt": "2026-03-20T21:26:39Z",
+    "state": "open",
+    "updatedAt": "2026-03-20T23:48:30Z",
     "headSha": "83aee2852eb3375309580957f7d3ae6934488428",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/168",
     "authorLogin": "spokane-way"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Stores 12.9M val targets in an 8.75MB paid prefix and uses the remaining 7.12MB for a 7-layer 384d model trained only on train split to cover other tokens.",
+    "summary": "Splits the 16MB artifact into an 8.75MB compressed paid-prefix of known validation targets plus a 7L int8 transformer trained only on fineweb.",
     "tags": [
-      "architecture",
       "compression",
-      "evaluation"
+      "evaluation",
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Paid prefix of validation targets for zero-loss coverage",
-      "Compact 7-layer 384d transformer trained on fineweb train split",
-      "Int8+zlib quantization with Muon optimizer"
+      "Paid prefix blob stores 12.9M val tokens and enforces exact-match scoring during evaluation",
+      "7-layer 384d transformer trained solely on fineweb data and quantized to int8+zlib",
+      "Artifact byte budget apportioned between prefix lookup storage and the compact model"
     ]
   },
   "compatibility": {

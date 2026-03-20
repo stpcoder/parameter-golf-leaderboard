@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-20T23:55:54.534Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 288,
+    "title": "Non-record: Content-Dependent SmearGate (1.6795 BPB, RTX 4070)",
+    "state": "open",
+    "updatedAt": "2026-03-20T23:38:53Z",
+    "headSha": "8f4401b40327be24780c88c5de5d4a6cb3509b1b",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/288",
+    "authorLogin": "trasnake87"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Modulates SmearGate gating with adjacency dot-product similarity so similar tokens blend more while keeping parameter/compute cost minimal.",
+    "tags": [
+      "architecture",
+      "regularization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "content-scaled gate via adjacent embedding dot product",
+      "sigmoid blend interpolates token fusion based on learned similarity sensitivity"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T18:55:05.781Z",
+  "generatedAt": "2026-03-20T23:56:27.423Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 179,
     "title": "Record: 11L, int6+zstd, decoupled WD (val_bpb = 1.1472)",
     "state": "open",
-    "updatedAt": "2026-03-20T18:50:56Z",
+    "updatedAt": "2026-03-20T23:29:01Z",
     "headSha": "e25aee67b22361b15da1480e394f554d52c6d2fc",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/179",
     "authorLogin": "devin-cog"
@@ -20,25 +20,25 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "11-layer GQA GPT with Muon decoupled weight decay, int6+zstd compression, and sliding-window eval to fit 16MB while boosting non-val BPB.",
+    "summary": "11-layer GQA GPT uses int6+zstd compression, fp16 embeddings, sliding-window eval, and decoupled Muon weight decay to fit under 16MB.",
     "tags": [
       "val-only",
       "quantization",
-      "optimizer",
-      "attention"
+      "compression",
+      "muon"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Includes a non-record val-only run trained on fineweb_val_*.bin to showcase that regime.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "11-layer GQA + Muon decoupled WD to shrink quantization gap",
-      "Int6 per-row quantization plus zstd-22 compression for size budget",
-      "Sliding-window stride=64 evaluation for max context"
+      "int6 per-row quantization with fp16 embeddings",
+      "decoupled weight decay on Muon optimizer",
+      "sliding-window evaluation with stride 64"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": true,
-    "aiUsesValOnly": true,
+    "aiUsesValOnly": false,
     "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": true
+    "valOnlyMatchesCollector": false
   }
 }

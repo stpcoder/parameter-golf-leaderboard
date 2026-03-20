@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T22:25:33.581Z",
+  "generatedAt": "2026-03-20T23:56:02.643Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 277,
     "title": "Non-record: 11L Int6 + XSA + TTT + SmearGate + BigramHash (pending compute)",
     "state": "open",
-    "updatedAt": "2026-03-20T22:09:01Z",
-    "headSha": "e3b91720535d9a8ee33e5e018cb09e120c84ac35",
+    "updatedAt": "2026-03-20T23:53:55Z",
+    "headSha": "0600b2205d96c77a95d80c9e9a1c6d403f18c493",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/277",
     "authorLogin": "mohosy"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer int6 net layers 8–10 use XSA while eval-time TTT and SmearGate/BigramHash sit atop Muon/SWA training with per-row quantization.",
+    "summary": "Combines XSA on the final layers with TTT adaptation on top of an 11L muP stack featuring SmearGate/BigramHash and int6 quantization.",
     "tags": [
-      "architecture",
-      "evaluation",
+      "attention",
       "quantization",
-      "optimizer"
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "XSA on final three layers",
-      "Eval-time TTT with frozen early blocks",
-      "Per-row int6 quantization and zstd compression"
+      "Exclusive Self Attention on last 3 layers",
+      "Test-Time Training SGD on validation",
+      "Per-row int6 quant plus SmearGate/BigramHash"
     ]
   },
   "compatibility": {

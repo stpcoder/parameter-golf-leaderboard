@@ -1,25 +1,27 @@
 {
-  "generatedAt": "2026-03-20T23:25:19.334Z",
+  "generatedAt": "2026-03-20T23:55:19.421Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
   "skipped": [
     {
-      "pr": 283,
-      "reason": "no-record-submission-json"
+      "stage": "pull-request-readme",
+      "pr": 76,
+      "submissionPath": "records/track_10min_16mb/2026-03-20_12L_Int5MLP_SmearBigram_SWA/submission.json",
+      "reason": "missing-or-unreadable-readme"
     }
   ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-03-20T22:52:57Z",
+    "cutoffUpdatedAt": "2026-03-20T23:25:18Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 8,
-    "prsReused": 192,
+    "prsRefreshed": 11,
+    "prsReused": 189,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 264,
+    "cacheEntries": 266,
     "retryWindowRetained": false
   }
 }

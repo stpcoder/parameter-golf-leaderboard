@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T23:26:19.041Z",
+  "generatedAt": "2026-03-20T23:56:42.097Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 150,
-    "title": "Record: Int6 QAT + BigramHash + Muon WD (val_bpb=1.1577)",
+    "title": "Record: 11L Int6 QAT + SmearGate + OrthoInit + SWA + TTT (val_bpb=1.1478)",
     "state": "open",
-    "updatedAt": "2026-03-20T23:25:18Z",
+    "updatedAt": "2026-03-20T23:26:43Z",
     "headSha": "da669f60da874107f806f064e3e74a28ab85f374",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/150",
     "authorLogin": "yahya010"
@@ -21,19 +21,19 @@
     "submissionCount": 3
   },
   "output": {
-    "summary": "Stacked STE int6 QAT with BigramHash token-pair embeddings, expanded MLP, and Muon WD tuning plus sliding-window eval for tighter quantized transformer artifacts.",
+    "summary": "11-layer int6-QAT transformer stacks SmearGate blending, BigramHash, NTK-RoPE, muP-scored projections, Muon+SWA optimizer stack, and TTT with sliding-window eval.",
     "tags": [
       "quantization",
-      "architecture",
       "optimizer",
+      "architecture",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "STE int6 QAT with zero quant gap and zstd-22 compression",
-      "BigramHash bigram embedding injection before RMSNorm",
-      "Muon momentum and weight decay tuning paired with sliding-window evaluation"
+      "SmearGate learned token blending",
+      "Muon+SWA warmdown with orthogonal init",
+      "TTT full-weight SGD on validation data"
     ]
   },
   "compatibility": {
