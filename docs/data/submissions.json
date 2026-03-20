@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T10:52:47.384Z",
+  "generatedAt": "2026-03-20T11:22:47.756Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -462,7 +462,7 @@
         "authorLogin": "baudrillardsgh0st",
         "authorName": null,
         "createdAt": "2026-03-20T08:49:26Z",
-        "updatedAt": "2026-03-20T10:46:52Z",
+        "updatedAt": "2026-03-20T11:04:26Z",
         "headSha": "c4d2e3ab58ead1c0f38b40a0ea55c5380d707398",
         "headRepo": "baudrillardsgh0st/parameter-golf"
       },
@@ -2699,16 +2699,16 @@
         "authorLogin": "polarizedfortnite-cpu",
         "authorName": null,
         "createdAt": "2026-03-19T13:11:19Z",
-        "updatedAt": "2026-03-20T08:12:43Z",
-        "headSha": "20ad97839c53bb5f468a952464de30153ca57dd1",
+        "updatedAt": "2026-03-20T11:13:40Z",
+        "headSha": "942a9860a8607cace04ca09da6e959ba489f2237",
         "headRepo": "polarizedfortnite-cpu/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6",
         "pr": "https://github.com/openai/parameter-golf/pull/81",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -3931,8 +3931,8 @@
         "authorLogin": "machdragon",
         "authorName": null,
         "createdAt": "2026-03-20T10:28:45Z",
-        "updatedAt": "2026-03-20T10:30:03Z",
-        "headSha": "2bbf09e41581941fe402e9db578ab705c1fc9ca0",
+        "updatedAt": "2026-03-20T10:53:30Z",
+        "headSha": "dd83eeb14af2d6d05036470f908fa574aff08c49",
         "headRepo": "machdragon/parameter-golf"
       },
       "links": {
@@ -6930,7 +6930,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-20_MPK_8x384",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -6978,14 +6978,14 @@
       "pr": {
         "number": 144,
         "title": "Add MPK 8x384 10-minute submission record",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/144",
         "authorLogin": "DJLougen",
         "authorName": null,
         "createdAt": "2026-03-20T01:07:01Z",
-        "updatedAt": "2026-03-20T03:58:56Z",
+        "updatedAt": "2026-03-20T11:17:25Z",
         "headSha": "ef4b211742a95e3bc8ed7eae5d67f475a4ea1220",
         "headRepo": "DJLougen/parameter-golf"
       },

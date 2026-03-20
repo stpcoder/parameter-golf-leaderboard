@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T10:53:06.436Z",
+  "generatedAt": "2026-03-20T11:23:00.904Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 194,
     "title": "11L Int6 QAT + Per-Dim SmearGate + SWA: 1.1480 BPB (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-20T10:46:52Z",
+    "updatedAt": "2026-03-20T11:04:26Z",
     "headSha": "c4d2e3ab58ead1c0f38b40a0ea55c5380d707398",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/194",
     "authorLogin": "baudrillardsgh0st"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Int6 QAT on an 11-layer 512-dim model plus per-dim SmearGate gating, SWA averaging, and high Muon weight decay to keep quantized weights stable.",
+    "summary": "Int6-aware 11-layer muon model employs per-dim SmearGate gating, SWA, and fp16 embedding passthrough for quant-friendly capacity under 16MB.",
     "tags": [
       "quantization",
-      "architecture",
       "muon",
-      "training-schedule"
+      "training-schedule",
+      "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Per-dim SmearGate gating",
-      "SWA checkpoint averaging",
-      "Int6 QAT with STE"
+      "Per-dim SmearGate blends current and preceding embeddings with learned sigmoids for richer gating before quantization.",
+      "Int6 QAT with STE, per-row symmetric clipping, and fp16 tied embeddings keeps activations compressible while supporting int6-in-int8 artifacts.",
+      "SWA over the last half of training plus high muon weight decay smooths weights for better int6 fidelity."
     ]
   },
   "compatibility": {

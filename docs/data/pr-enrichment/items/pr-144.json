@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T04:21:46.487Z",
+  "generatedAt": "2026-03-20T11:23:05.962Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 144,
     "title": "Add MPK 8x384 10-minute submission record",
-    "state": "open",
-    "updatedAt": "2026-03-20T03:58:56Z",
+    "state": "closed",
+    "updatedAt": "2026-03-20T11:17:25Z",
     "headSha": "ef4b211742a95e3bc8ed7eae5d67f475a4ea1220",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/144",
     "authorLogin": "DJLougen"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "MPK multi-path causal LM with 8 layers/384 width, KV4 GQA, MPK strides k=2 m=4, tied embeddings, tuned low LRs, and a fixed SentencePiece marker for valid scoring.",
+    "summary": "MPK multi-path causal 8×384 GQA KV4 LM with 2×4 MPK strides, tied embeddings, and tuned LR plus SentencePiece marker fix for accurate eval.",
     "tags": [
       "architecture",
-      "quantization",
-      "compression"
+      "attention",
+      "tokenization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "MPK multi-path LM with 8x384 backbone",
-      "GQA KV4 heads, MPK strides k=2 and m=4, tied embeddings",
-      "Fixed SentencePiece leading-space marker for correct eval"
+      "MPK multi-path causal LM with 8 layers, width 384, and KV4 attention",
+      "Temporal strides k=2, m=4 with tied embeddings and lowered learning rates",
+      "SentencePiece leading-space marker fix for corrected evaluation"
     ]
   },
   "compatibility": {

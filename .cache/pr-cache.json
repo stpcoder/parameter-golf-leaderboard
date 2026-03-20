@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-20T10:52:47.365Z",
-  "lastSeenUpdatedAt": "2026-03-20T10:46:52Z",
+  "generatedAt": "2026-03-20T11:22:47.738Z",
+  "lastSeenUpdatedAt": "2026-03-20T11:17:25Z",
   "prs": {
     "1": {
       "number": 1,
@@ -4965,7 +4965,7 @@
     },
     "81": {
       "number": 81,
-      "updatedAt": "2026-03-20T08:12:43Z",
+      "updatedAt": "2026-03-20T11:13:40Z",
       "pr": {
         "number": 81,
         "title": "Record: SwiGLU + MLP 3x + Int6 + LoRA TTT, val_bpb=1.1670 (8xH100)",
@@ -4976,8 +4976,8 @@
         "authorLogin": "polarizedfortnite-cpu",
         "authorName": null,
         "createdAt": "2026-03-19T13:11:19Z",
-        "updatedAt": "2026-03-20T08:12:43Z",
-        "headSha": "20ad97839c53bb5f468a952464de30153ca57dd1",
+        "updatedAt": "2026-03-20T11:13:40Z",
+        "headSha": "942a9860a8607cace04ca09da6e959ba489f2237",
         "headRepo": "polarizedfortnite-cpu/parameter-golf"
       },
       "submissions": [
@@ -5039,16 +5039,16 @@
             "authorLogin": "polarizedfortnite-cpu",
             "authorName": null,
             "createdAt": "2026-03-19T13:11:19Z",
-            "updatedAt": "2026-03-20T08:12:43Z",
-            "headSha": "20ad97839c53bb5f468a952464de30153ca57dd1",
+            "updatedAt": "2026-03-20T11:13:40Z",
+            "headSha": "942a9860a8607cace04ca09da6e959ba489f2237",
             "headRepo": "polarizedfortnite-cpu/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/20ad97839c53bb5f468a952464de30153ca57dd1/records/flux_depth_recurrence_int6",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/942a9860a8607cace04ca09da6e959ba489f2237/records/flux_depth_recurrence_int6",
             "pr": "https://github.com/openai/parameter-golf/pull/81"
           }
         }
@@ -9562,18 +9562,18 @@
     },
     "144": {
       "number": 144,
-      "updatedAt": "2026-03-20T03:58:56Z",
+      "updatedAt": "2026-03-20T11:17:25Z",
       "pr": {
         "number": 144,
         "title": "Add MPK 8x384 10-minute submission record",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/144",
         "authorLogin": "DJLougen",
         "authorName": null,
         "createdAt": "2026-03-20T01:07:01Z",
-        "updatedAt": "2026-03-20T03:58:56Z",
+        "updatedAt": "2026-03-20T11:17:25Z",
         "headSha": "ef4b211742a95e3bc8ed7eae5d67f475a4ea1220",
         "headRepo": "DJLougen/parameter-golf"
       },
@@ -9581,7 +9581,7 @@
         {
           "id": "pr-144-records-track_10min_16mb-2026-03-20_MPK_8x384-submission-json",
           "source": "pull_request",
-          "status": "open",
+          "status": "closed",
           "category": "main-track",
           "track": {
             "path": "records/track_10min_16mb",
@@ -9629,14 +9629,14 @@
           "pr": {
             "number": 144,
             "title": "Add MPK 8x384 10-minute submission record",
-            "state": "open",
+            "state": "closed",
             "draft": false,
             "mergedAt": null,
             "htmlUrl": "https://github.com/openai/parameter-golf/pull/144",
             "authorLogin": "DJLougen",
             "authorName": null,
             "createdAt": "2026-03-20T01:07:01Z",
-            "updatedAt": "2026-03-20T03:58:56Z",
+            "updatedAt": "2026-03-20T11:17:25Z",
             "headSha": "ef4b211742a95e3bc8ed7eae5d67f475a4ea1220",
             "headRepo": "DJLougen/parameter-golf"
           },
@@ -14024,7 +14024,7 @@
     },
     "194": {
       "number": 194,
-      "updatedAt": "2026-03-20T10:46:52Z",
+      "updatedAt": "2026-03-20T11:04:26Z",
       "pr": {
         "number": 194,
         "title": "11L Int6 QAT + Per-Dim SmearGate + SWA: 1.1480 BPB (3-seed mean)",
@@ -14035,7 +14035,7 @@
         "authorLogin": "baudrillardsgh0st",
         "authorName": null,
         "createdAt": "2026-03-20T08:49:26Z",
-        "updatedAt": "2026-03-20T10:46:52Z",
+        "updatedAt": "2026-03-20T11:04:26Z",
         "headSha": "c4d2e3ab58ead1c0f38b40a0ea55c5380d707398",
         "headRepo": "baudrillardsgh0st/parameter-golf"
       },
@@ -14098,7 +14098,7 @@
             "authorLogin": "baudrillardsgh0st",
             "authorName": null,
             "createdAt": "2026-03-20T08:49:26Z",
-            "updatedAt": "2026-03-20T10:46:52Z",
+            "updatedAt": "2026-03-20T11:04:26Z",
             "headSha": "c4d2e3ab58ead1c0f38b40a0ea55c5380d707398",
             "headRepo": "baudrillardsgh0st/parameter-golf"
           },
@@ -14589,7 +14589,7 @@
     },
     "201": {
       "number": 201,
-      "updatedAt": "2026-03-20T10:30:03Z",
+      "updatedAt": "2026-03-20T10:53:30Z",
       "pr": {
         "number": 201,
         "title": "Staging: LAWA-EMA frontier fork (pr162 base, SWA→LAWA)",
@@ -14600,8 +14600,8 @@
         "authorLogin": "machdragon",
         "authorName": null,
         "createdAt": "2026-03-20T10:28:45Z",
-        "updatedAt": "2026-03-20T10:30:03Z",
-        "headSha": "2bbf09e41581941fe402e9db578ab705c1fc9ca0",
+        "updatedAt": "2026-03-20T10:53:30Z",
+        "headSha": "dd83eeb14af2d6d05036470f908fa574aff08c49",
         "headRepo": "machdragon/parameter-golf"
       },
       "submissions": [
@@ -14663,20 +14663,39 @@
             "authorLogin": "machdragon",
             "authorName": null,
             "createdAt": "2026-03-20T10:28:45Z",
-            "updatedAt": "2026-03-20T10:30:03Z",
-            "headSha": "2bbf09e41581941fe402e9db578ab705c1fc9ca0",
+            "updatedAt": "2026-03-20T10:53:30Z",
+            "headSha": "dd83eeb14af2d6d05036470f908fa574aff08c49",
             "headRepo": "machdragon/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2bbf09e41581941fe402e9db578ab705c1fc9ca0/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/2bbf09e41581941fe402e9db578ab705c1fc9ca0/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/2bbf09e41581941fe402e9db578ab705c1fc9ca0/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/2bbf09e41581941fe402e9db578ab705c1fc9ca0/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/2bbf09e41581941fe402e9db578ab705c1fc9ca0/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/dd83eeb14af2d6d05036470f908fa574aff08c49/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/dd83eeb14af2d6d05036470f908fa574aff08c49/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/dd83eeb14af2d6d05036470f908fa574aff08c49/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/dd83eeb14af2d6d05036470f908fa574aff08c49/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/dd83eeb14af2d6d05036470f908fa574aff08c49/records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189",
             "pr": "https://github.com/openai/parameter-golf/pull/201"
           }
         }
       ]
+    },
+    "203": {
+      "number": 203,
+      "updatedAt": "2026-03-20T11:11:07Z",
+      "pr": {
+        "number": 203,
+        "title": "[WIP] wallclock-aware context curriculum",
+        "state": "open",
+        "draft": true,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/203",
+        "authorLogin": "LexHarie",
+        "authorName": null,
+        "createdAt": "2026-03-20T11:09:40Z",
+        "updatedAt": "2026-03-20T11:11:07Z",
+        "headSha": "408b63aea8034ded44f8fc949773de7b4089ece6",
+        "headRepo": "LexHarie/parameter-golf"
+      },
+      "submissions": []
     }
   }
 }

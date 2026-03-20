@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T10:52:53.330Z",
+  "generatedAt": "2026-03-20T11:22:54.087Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 201,
     "title": "Staging: LAWA-EMA frontier fork (pr162 base, SWA→LAWA)",
     "state": "open",
-    "updatedAt": "2026-03-20T10:30:03Z",
-    "headSha": "2bbf09e41581941fe402e9db578ab705c1fc9ca0",
+    "updatedAt": "2026-03-20T10:53:30Z",
+    "headSha": "dd83eeb14af2d6d05036470f908fa574aff08c49",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/201",
     "authorLogin": "machdragon"
   },
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Forks PR162 to add LAWA-EMA with per-step float32 shadow updates plus sliding-window evaluation in the staging profile for reproducible validation.",
+    "summary": "Builds on the pr162 int6+MLP3x stack by swapping SWA for per-step LAWA-EMA shadows and validating the staging profile with sliding-window eval.",
     "tags": [
       "training-schedule",
       "evaluation",
-      "sliding-window-eval"
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LAWA-EMA shadow weights updated each step before quant/export",
-      "Staging profile couples LAWA defaults with sliding-window eval",
-      "Env-configurable decay sweep for averaging hyperparameter"
+      "LAWA-EMA shadow averaging replacing SWA",
+      "Float32 shadow weights synced each step before quant/export",
+      "Staging profile run with sliding-window evaluation"
     ]
   },
   "compatibility": {

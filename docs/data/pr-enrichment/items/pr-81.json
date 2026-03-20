@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T08:22:28.622Z",
+  "generatedAt": "2026-03-20T11:23:13.813Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 81,
     "title": "Record: SwiGLU + MLP 3x + Int6 + LoRA TTT, val_bpb=1.1670 (8xH100)",
     "state": "open",
-    "updatedAt": "2026-03-20T08:12:43Z",
-    "headSha": "20ad97839c53bb5f468a952464de30153ca57dd1",
+    "updatedAt": "2026-03-20T11:13:40Z",
+    "headSha": "942a9860a8607cace04ca09da6e959ba489f2237",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/81",
     "authorLogin": "polarizedfortnite-cpu"
   },
@@ -19,24 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines 3x MLP/SwiGLU scaling, int6 QAT, and LoRA test-time adaptation atop a 10-layer Muon+Adam transformer to squeeze more capacity under 16MB.",
+    "summary": "Stacks 3x SwiGLU MLP, int6+QAT, and LoRA test-time training per document to fit a wider 10-layer transformer within the artifact budget.",
     "tags": [
+      "val-only",
       "architecture",
       "quantization",
-      "evaluation"
+      "training-schedule"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "LoRA adapters are trained per validation document before scoring, effectively performing val-only test-time training.",
     "techniques": [
-      "SwiGLU with 3× MLP expansion and extra layer",
-      "int6 quantization plus QAT with zstd compression",
-      "LoRA adapters for document-level test-time training"
+      "3x SwiGLU MLP expansion with extra layer",
+      "Int6 quantization with QAT and zstd compression",
+      "LoRA test-time training on each validation chunk"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

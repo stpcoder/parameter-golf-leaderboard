@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T10:53:25.230Z",
+  "generatedAt": "2026-03-20T11:23:13.823Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,14 +7,14 @@
       "prNumber": 201,
       "title": "Staging: LAWA-EMA frontier fork (pr162 base, SWA→LAWA)",
       "status": "open",
-      "updatedAt": "2026-03-20T10:30:03Z",
-      "headSha": "2bbf09e41581941fe402e9db578ab705c1fc9ca0",
-      "generatedAt": "2026-03-20T10:52:53.330Z",
-      "summary": "Forks PR162 to add LAWA-EMA with per-step float32 shadow updates plus sliding-window evaluation in the staging profile for reproducible validation.",
+      "updatedAt": "2026-03-20T10:53:30Z",
+      "headSha": "dd83eeb14af2d6d05036470f908fa574aff08c49",
+      "generatedAt": "2026-03-20T11:22:54.087Z",
+      "summary": "Builds on the pr162 int6+MLP3x stack by swapping SWA for per-step LAWA-EMA shadows and validating the staging profile with sliding-window eval.",
       "tags": [
         "training-schedule",
         "evaluation",
-        "sliding-window-eval"
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,
@@ -123,15 +123,15 @@
       "prNumber": 194,
       "title": "11L Int6 QAT + Per-Dim SmearGate + SWA: 1.1480 BPB (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-20T10:46:52Z",
+      "updatedAt": "2026-03-20T11:04:26Z",
       "headSha": "c4d2e3ab58ead1c0f38b40a0ea55c5380d707398",
-      "generatedAt": "2026-03-20T10:53:06.436Z",
-      "summary": "Int6 QAT on an 11-layer 512-dim model plus per-dim SmearGate gating, SWA averaging, and high Muon weight decay to keep quantized weights stable.",
+      "generatedAt": "2026-03-20T11:23:00.904Z",
+      "summary": "Int6-aware 11-layer muon model employs per-dim SmearGate gating, SWA, and fp16 embedding passthrough for quant-friendly capacity under 16MB.",
       "tags": [
         "quantization",
-        "architecture",
         "muon",
-        "training-schedule"
+        "training-schedule",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1064,15 +1064,15 @@
     {
       "prNumber": 144,
       "title": "Add MPK 8x384 10-minute submission record",
-      "status": "open",
-      "updatedAt": "2026-03-20T03:58:56Z",
+      "status": "closed",
+      "updatedAt": "2026-03-20T11:17:25Z",
       "headSha": "ef4b211742a95e3bc8ed7eae5d67f475a4ea1220",
-      "generatedAt": "2026-03-20T04:21:46.487Z",
-      "summary": "MPK multi-path causal LM with 8 layers/384 width, KV4 GQA, MPK strides k=2 m=4, tied embeddings, tuned low LRs, and a fixed SentencePiece marker for valid scoring.",
+      "generatedAt": "2026-03-20T11:23:05.962Z",
+      "summary": "MPK multi-path causal 8×384 GQA KV4 LM with 2×4 MPK strides, tied embeddings, and tuned LR plus SentencePiece marker fix for accurate eval.",
       "tags": [
         "architecture",
-        "quantization",
-        "compression"
+        "attention",
+        "tokenization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2046,22 +2046,23 @@
       "prNumber": 81,
       "title": "Record: SwiGLU + MLP 3x + Int6 + LoRA TTT, val_bpb=1.1670 (8xH100)",
       "status": "open",
-      "updatedAt": "2026-03-20T08:12:43Z",
-      "headSha": "20ad97839c53bb5f468a952464de30153ca57dd1",
-      "generatedAt": "2026-03-20T08:22:28.622Z",
-      "summary": "Combines 3x MLP/SwiGLU scaling, int6 QAT, and LoRA test-time adaptation atop a 10-layer Muon+Adam transformer to squeeze more capacity under 16MB.",
+      "updatedAt": "2026-03-20T11:13:40Z",
+      "headSha": "942a9860a8607cace04ca09da6e959ba489f2237",
+      "generatedAt": "2026-03-20T11:23:13.813Z",
+      "summary": "Stacks 3x SwiGLU MLP, int6+QAT, and LoRA test-time training per document to fit a wider 10-layer transformer within the artifact budget.",
       "tags": [
+        "val-only",
         "architecture",
         "quantization",
-        "evaluation"
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-81.json"
     },
