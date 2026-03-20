@@ -1,6 +1,7 @@
 const filters = {
   search: "",
   hideNonRecord: false,
+  hideUnscored: false,
   mergedOnly: false,
   includeValOnly: false,
   hideSummaries: false,
@@ -379,6 +380,9 @@ function filterSubmissions(submissions, enrichmentMap) {
     if (filters.hideNonRecord && entry.category === "non-record") {
       return false;
     }
+    if (filters.hideUnscored && !(Number.isFinite(entry.metrics.valBpb) && entry.metrics.valBpb > 0)) {
+      return false;
+    }
     if (!filters.includeValOnly && usesValOnly(entry, enrichment)) {
       return false;
     }
@@ -685,6 +689,16 @@ const nonRecordToggle = document.getElementById("non-record-toggle");
 if (nonRecordToggle) {
   nonRecordToggle.addEventListener("change", (event) => {
     filters.hideNonRecord = event.target.checked;
+    paginationState.page = 1;
+    render(window.__GOLF_VIEWER_DATA__);
+  });
+}
+
+const hideUnscoredToggle = document.getElementById("hide-unscored-toggle");
+if (hideUnscoredToggle) {
+  hideUnscoredToggle.checked = filters.hideUnscored;
+  hideUnscoredToggle.addEventListener("change", (event) => {
+    filters.hideUnscored = event.target.checked;
     paginationState.page = 1;
     render(window.__GOLF_VIEWER_DATA__);
   });
