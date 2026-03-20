@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-03-20T06:21:57.411Z",
+  "generatedAt": "2026-03-20T06:52:03.753Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
-      "prNumber": 178,
-      "title": "Add Nuclear Stack submission: 1.16668 BPB (seed 2884431328)",
+      "prNumber": 179,
+      "title": "Add 11L WD submissions: Non-Val SOTA record (1.1472 BPB) + Val-Only aside (0.9274 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-20T06:20:41Z",
-      "headSha": "7f8eeb7c92be06888c2e64a54bcfabb731ae9165",
-      "generatedAt": "2026-03-20T06:21:46.572Z",
-      "summary": "Combines an int6-quantized 9-layer GQA transformer with 3x MLP, SmearGate/BigramHash, SWA/Muon tuning, and sliding-window test-time training.",
+      "updatedAt": "2026-03-20T06:43:15Z",
+      "headSha": "2b39315347a7faa90811ef707b436f2f4d5a0c0b",
+      "generatedAt": "2026-03-20T06:51:43.933Z",
+      "summary": "11-layer GQA GPT uses tuned Muon weight decay and int6+fp16 quantization with sliding-window eval to fit under 16MB for the 10min track.",
       "tags": [
         "val-only",
         "architecture",
@@ -19,26 +19,51 @@
       ],
       "flags": {
         "usesValOnly": true,
-        "usesValOnlyAi": true,
-        "usesValOnlyCollector": false
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": true
       },
       "compatibility": {
         "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-179.json"
+    },
+    {
+      "prNumber": 178,
+      "title": "Add Nuclear Stack submission: 1.16668 BPB (seed 2884431328)",
+      "status": "open",
+      "updatedAt": "2026-03-20T06:39:11Z",
+      "headSha": "6cef2a161e9229c5dbabc0db155a8042ff4f5de5",
+      "generatedAt": "2026-03-20T06:51:52.136Z",
+      "summary": "Combines Int6 quantized 9-layer GQA + 3×MLP, SmearGate, BigramHash, Muon+SWA training with test-time SGD adaptation and honest stride-32 eval.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "optimizer",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-178.json"
     },
     {
       "prNumber": 176,
-      "title": "Add submission: 10L Slide64 Mid6, val_bpb=1.1733",
+      "title": "Add submission: 10L Slide64 Mid6, val_bpb=1.1732",
       "status": "open",
-      "updatedAt": "2026-03-20T05:43:06Z",
-      "headSha": "7dfdd5c8058e4d0e957fa96494bcca63b83b18e9",
-      "generatedAt": "2026-03-20T05:51:28.019Z",
-      "summary": "Sliding-window 10-layer run keeps Muon 0.99 crossover and fp16 embeddings while applying int6 export only to middle blocks to stay under the 16MB cap.",
+      "updatedAt": "2026-03-20T06:21:31Z",
+      "headSha": "b413f858fee2929b5fb6f6e3901302b35e3435e0",
+      "generatedAt": "2026-03-20T06:51:57.529Z",
+      "summary": "10-layer sliding-window run keeps fp16 tied-embed passthrough and Muon crossover schedule while reducing tied-embedding LR and forcing mid blocks to int6 for tighter quant artifacts.",
       "tags": [
-        "quantization",
+        "mixed-precision",
+        "optimizer",
         "sliding-window-eval",
-        "muon"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -77,14 +102,13 @@
       "prNumber": 174,
       "title": "Add ContextFuse-2048-BigramSmear submission",
       "status": "open",
-      "updatedAt": "2026-03-20T06:18:46Z",
+      "updatedAt": "2026-03-20T06:23:32Z",
       "headSha": "5c2d1ada9020d99742e8fa7fa3856575abc318c6",
-      "generatedAt": "2026-03-20T06:21:50.856Z",
-      "summary": "Builds on ContextFuse-2048 with BigramHash/SmearGate inputs, mixed int6 export plus Muon/SWA training tweaks, and a corrected sliding-window scorer for val metrics.",
+      "generatedAt": "2026-03-20T06:52:03.727Z",
+      "summary": "Adds BigramHash/SmearGate int6 compression stack atop ContextFuse-2048 with Muon WD/SWA and corrected sliding-window scoring.",
       "tags": [
         "quantization",
-        "tokenization",
-        "training-schedule",
+        "compression",
         "evaluation"
       ],
       "flags": {

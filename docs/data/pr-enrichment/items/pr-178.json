@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T06:21:46.572Z",
+  "generatedAt": "2026-03-20T06:51:52.136Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 178,
     "title": "Add Nuclear Stack submission: 1.16668 BPB (seed 2884431328)",
     "state": "open",
-    "updatedAt": "2026-03-20T06:20:41Z",
-    "headSha": "7f8eeb7c92be06888c2e64a54bcfabb731ae9165",
+    "updatedAt": "2026-03-20T06:39:11Z",
+    "headSha": "6cef2a161e9229c5dbabc0db155a8042ff4f5de5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/178",
     "authorLogin": "timowhite88"
   },
@@ -19,25 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines an int6-quantized 9-layer GQA transformer with 3x MLP, SmearGate/BigramHash, SWA/Muon tuning, and sliding-window test-time training.",
+    "summary": "Combines Int6 quantized 9-layer GQA + 3×MLP, SmearGate, BigramHash, Muon+SWA training with test-time SGD adaptation and honest stride-32 eval.",
     "tags": [
-      "val-only",
       "architecture",
       "quantization",
-      "optimizer"
+      "optimizer",
+      "evaluation"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Full-model SGD test-time training adapts to validation data before sliding-window scoring.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "Uses standard training plus test-time training on validation; not a val-only training regime.",
     "techniques": [
-      "Per-row Int6 quantization with zstd compression",
-      "3x MLP with SmearGate and BigramHash in a 9-layer GQA stack",
-      "Sliding-window test-time SGD adaptation before scoring"
+      "Int6 quantized 9-layer GQA transformer with 3×MLP, SmearGate, and BigramHash",
+      "Orthogonal init with Muon optimizer, momentum warmup, and SWA checkpoint averaging",
+      "Test-time full-model SGD on validation shards with frozen early blocks and stride-32 sliding eval"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

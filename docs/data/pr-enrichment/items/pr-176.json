@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T05:51:28.019Z",
+  "generatedAt": "2026-03-20T06:51:57.529Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 176,
-    "title": "Add submission: 10L Slide64 Mid6, val_bpb=1.1733",
+    "title": "Add submission: 10L Slide64 Mid6, val_bpb=1.1732",
     "state": "open",
-    "updatedAt": "2026-03-20T05:43:06Z",
-    "headSha": "7dfdd5c8058e4d0e957fa96494bcca63b83b18e9",
+    "updatedAt": "2026-03-20T06:21:31Z",
+    "headSha": "b413f858fee2929b5fb6f6e3901302b35e3435e0",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/176",
     "authorLogin": "GLDRoger"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Sliding-window 10-layer run keeps Muon 0.99 crossover and fp16 embeddings while applying int6 export only to middle blocks to stay under the 16MB cap.",
+    "summary": "10-layer sliding-window run keeps fp16 tied-embed passthrough and Muon crossover schedule while reducing tied-embedding LR and forcing mid blocks to int6 for tighter quant artifacts.",
     "tags": [
-      "quantization",
+      "mixed-precision",
+      "optimizer",
       "sliding-window-eval",
-      "muon"
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Muon 0.99 crossover schedule",
-      "fp16 tied-embedding export",
-      "int6 only on middle transformer blocks"
+      "Muon crossover schedule with tuned tied-embedding LR",
+      "Mixed-precision export forcing middle blocks 3‑6 to int6 while other tensors stay fp16",
+      "Sliding-window exact evaluation at 1024/64 with tied-embedding passthrough"
     ]
   },
   "compatibility": {
