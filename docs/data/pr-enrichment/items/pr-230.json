@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-20T16:53:55.735Z",
+  "generatedAt": "2026-03-20T19:24:36.356Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 230,
-    "title": "Record: Int6 + MLP 3x + NorMuon + Weight Decay, val_bpb=1.1875",
+    "title": "Record: Int6 + MLP 3x + NorMuon + SmearGate + BigramHash + OrthoInit + Sliding Window, val_bpb=1.1541",
     "state": "open",
-    "updatedAt": "2026-03-20T16:44:50Z",
-    "headSha": "d7a0a02c09263ef1e1214ceaa1a36eedbbe42174",
+    "updatedAt": "2026-03-20T19:01:45Z",
+    "headSha": "c166d4c0f4c4ecd092d0fda18e5f71727715f953",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/230",
     "authorLogin": "MatthewHRockwell"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Per-row int6 quantization with fp16 scales shrinks the artifact so a 3x wider MLP can train with NorMuon plus decoupled weight decay.",
+    "summary": "Stacks int6 quantization, 3x MLP, NorMuon+weight decay, SmearGate/bigram context, and orthogonal muP init before sliding-window eval.",
     "tags": [
       "quantization",
       "architecture",
-      "optimizer",
-      "regularization"
+      "regularization",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Per-row int6 quantization with fp16 scales",
-      "3x MLP expansion within 16MB budget",
-      "NorMuon optimizer with decoupled weight decay"
+      "Int6 per-row quantization with fp16 scales and tied embeddings",
+      "3x-expanded MLP plus NorMuon with decoupled weight decay",
+      "SmearGate+BigramHash gating and orthogonal muP init before sliding-window scoring"
     ]
   },
   "compatibility": {

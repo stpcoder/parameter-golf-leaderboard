@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T09:52:57.995Z",
+  "generatedAt": "2026-03-20T19:24:48.421Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -19,17 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Staging-profile run validates LAWA-enabled merged defaults with sliding-window eval on FineWeb sp1024 data using 8×H100 to benchmark reproducibility.",
+    "summary": "Merged staging profile run enables LAWA defaults plus sliding-window evaluation on 8×H100 to validate the prod recipe at 10min/16MB scale.",
     "tags": [
-      "sliding-window-eval",
+      "evaluation",
       "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LAWA-enabled merged staging defaults",
-      "Sliding-window evaluation with EVAL_STRIDE=512",
-      "FineWeb SP-1024 data on 8×H100"
+      "STAGING_PROFILE=1 flips on LAWA and merged-baseline hyperparameters",
+      "EVAL_STRIDE=512 sliding-window validation on fineweb10B_sp1024"
     ]
   },
   "compatibility": {

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-20T19:24:21.015Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 254,
+    "title": "Record: FarnsworthEngine v1 — TTT + 11L Int6 MLP3x, val_bpb=1.1303",
+    "state": "open",
+    "updatedAt": "2026-03-20T19:22:18Z",
+    "headSha": "117928d5199d17cfa998afe9a925ece47a6cdbd3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/254",
+    "authorLogin": "timowhite88"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-20_FarnsworthEngine_TTT_11L_Int6_MLP3x/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Stacks test-time SGD on val data atop Int6 11L MLP3x with SmearGate, BigramHash, Muon+SWA, and NTK-RoPE ahead of sliding eval.",
+    "tags": [
+      "val-only",
+      "quantization",
+      "optimizer",
+      "evaluation"
+    ],
+    "usesValOnly": true,
+    "valOnlyReasoning": "Performs full-weight SGD adaptation on validation data (TTT) before scoring.",
+    "techniques": [
+      "11-layer Int6 MLP3x with SmearGate and BigramHash",
+      "Muon optimizer with SWA plus NTK-RoPE positional encoding",
+      "Test-time SGD adaptation on val data before sliding-window eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
+  }
+}

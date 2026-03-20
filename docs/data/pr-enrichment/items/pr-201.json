@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-03-20T18:54:53.882Z",
+  "generatedAt": "2026-03-20T19:24:40.850Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 201,
-    "title": "Staging: LAWA-EMA frontier fork (pr162 base, SWA→LAWA)",
+    "title": "LAWA-EMA frontier fork (pr198 base, SWA -> LAWA val_bpb=1.1551)",
     "state": "open",
-    "updatedAt": "2026-03-20T18:27:52Z",
-    "headSha": "3693d956c8811155caaae8d9a8fdc595338d9741",
+    "updatedAt": "2026-03-20T19:22:15Z",
+    "headSha": "31c16a6abb90a4560f6fc842854c5b46737e8f57",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/201",
     "authorLogin": "machdragon"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/README.md"
+      "records/track_10min_16mb/2026-03-20_LAWA_EMA_Int6_MLP3x_OvertoneInit/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Forks PR162 baseline to swap SWA for LAWA-EMA shadow averaging with configurable decay and sliding-window staging profile validation.",
+    "summary": "Replaced SWA with LAWA-EMA and added overtone SVD-based embedding init plus sliding-window/BigramHash fixes atop PR198.",
     "tags": [
+      "quantization",
       "optimizer",
-      "training-schedule",
-      "evaluation"
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LAWA float32 shadow EMA replaces SWA",
-      "Env-configurable decay sweep via LAWA_ENABLED",
-      "Sliding-window staging profile evaluation"
+      "LAWA-EMA shadow averaging on float32 parameters",
+      "Overtone init via SVD power-law decay for embeddings",
+      "Bigram proj init and sliding-window overlap bug fixes"
     ]
   },
   "compatibility": {

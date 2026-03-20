@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-20T19:24:30.430Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 251,
+    "title": "Add SP4096 11L432 MLP3x Int6+Zstd Momentum99 record (val_bpb=1.1596)",
+    "state": "open",
+    "updatedAt": "2026-03-20T19:16:54Z",
+    "headSha": "e4d930b0801d41472d3c73e8e7a46f8a26fda0e5",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/251",
+    "authorLogin": "kshitizz36"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_11L_MLP3x_Int6_Momentum99/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer SP4096 Transformer ups MLP mult to 3x with Muon momentum 0.99 and Int6+Zstd quantization plus fp16 embedding passthrough.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "quantization",
+      "sliding-window-eval"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "11-layer 432-dim Transformer with 3x MLP expansion",
+      "Muon optimizer with 0.99 momentum and decoupled weight decay",
+      "Int6 PTQ (levels=31) with zstd-22 compression and fp16 embedding passthrough"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
