@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-20T08:51:56.733Z",
-  "lastSeenUpdatedAt": "2026-03-20T08:49:26Z",
+  "generatedAt": "2026-03-20T09:22:15.483Z",
+  "lastSeenUpdatedAt": "2026-03-20T09:17:22Z",
   "prs": {
     "1": {
       "number": 1,
@@ -3987,7 +3987,7 @@
     },
     "71": {
       "number": 71,
-      "updatedAt": "2026-03-19T17:05:00Z",
+      "updatedAt": "2026-03-20T09:17:22Z",
       "pr": {
         "number": 71,
         "title": "Add Parameter Golf submission: Depth12 Dim416 KV4",
@@ -3998,8 +3998,8 @@
         "authorLogin": "AntDX316",
         "authorName": null,
         "createdAt": "2026-03-19T09:35:07Z",
-        "updatedAt": "2026-03-19T17:05:00Z",
-        "headSha": "2949401a6dc0b306d3a16a9e4d3fea70b0b97f83",
+        "updatedAt": "2026-03-20T09:17:22Z",
+        "headSha": "adb33078a6e6a7334da7a9673d7fc0a8ed868de3",
         "headRepo": "AntDX316/parameter-golf"
       },
       "submissions": [
@@ -4061,16 +4061,16 @@
             "authorLogin": "AntDX316",
             "authorName": null,
             "createdAt": "2026-03-19T09:35:07Z",
-            "updatedAt": "2026-03-19T17:05:00Z",
-            "headSha": "2949401a6dc0b306d3a16a9e4d3fea70b0b97f83",
+            "updatedAt": "2026-03-20T09:17:22Z",
+            "headSha": "adb33078a6e6a7334da7a9673d7fc0a8ed868de3",
             "headRepo": "AntDX316/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2949401a6dc0b306d3a16a9e4d3fea70b0b97f83/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/2949401a6dc0b306d3a16a9e4d3fea70b0b97f83/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/2949401a6dc0b306d3a16a9e4d3fea70b0b97f83/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/2949401a6dc0b306d3a16a9e4d3fea70b0b97f83/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/2949401a6dc0b306d3a16a9e4d3fea70b0b97f83/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/adb33078a6e6a7334da7a9673d7fc0a8ed868de3/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/adb33078a6e6a7334da7a9673d7fc0a8ed868de3/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/adb33078a6e6a7334da7a9673d7fc0a8ed868de3/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/adb33078a6e6a7334da7a9673d7fc0a8ed868de3/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/adb33078a6e6a7334da7a9673d7fc0a8ed868de3/records/track_10min_16mb/2026-03-19_AntDX316_depth12_dim416",
             "pr": "https://github.com/openai/parameter-golf/pull/71"
           }
         }
@@ -6918,7 +6918,7 @@
     },
     "108": {
       "number": 108,
-      "updatedAt": "2026-03-20T08:46:22Z",
+      "updatedAt": "2026-03-20T09:01:00Z",
       "pr": {
         "number": 108,
         "title": "[Non-record] Depth-Recurrent 3×3 MLX — dev submission (Apple Silicon)",
@@ -6929,8 +6929,8 @@
         "authorLogin": "kellyvv",
         "authorName": null,
         "createdAt": "2026-03-19T17:58:58Z",
-        "updatedAt": "2026-03-20T08:46:22Z",
-        "headSha": "486e6b89f7d794a4cd5e3fffb97b01c1b693b521",
+        "updatedAt": "2026-03-20T09:01:00Z",
+        "headSha": "b96f621673ec199423e7d278d35ee5d127caa2d6",
         "headRepo": "kellyvv/parameter-golf"
       },
       "submissions": [
@@ -6992,16 +6992,16 @@
             "authorLogin": "kellyvv",
             "authorName": null,
             "createdAt": "2026-03-19T17:58:58Z",
-            "updatedAt": "2026-03-20T08:46:22Z",
-            "headSha": "486e6b89f7d794a4cd5e3fffb97b01c1b693b521",
+            "updatedAt": "2026-03-20T09:01:00Z",
+            "headSha": "b96f621673ec199423e7d278d35ee5d127caa2d6",
             "headRepo": "kellyvv/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/486e6b89f7d794a4cd5e3fffb97b01c1b693b521/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/486e6b89f7d794a4cd5e3fffb97b01c1b693b521/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/486e6b89f7d794a4cd5e3fffb97b01c1b693b521/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/486e6b89f7d794a4cd5e3fffb97b01c1b693b521/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/486e6b89f7d794a4cd5e3fffb97b01c1b693b521/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b96f621673ec199423e7d278d35ee5d127caa2d6/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/b96f621673ec199423e7d278d35ee5d127caa2d6/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/b96f621673ec199423e7d278d35ee5d127caa2d6/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/b96f621673ec199423e7d278d35ee5d127caa2d6/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/b96f621673ec199423e7d278d35ee5d127caa2d6/records/track_non_record_16mb/2026-03-20_DepthRecurrent3x3_MLX",
             "pr": "https://github.com/openai/parameter-golf/pull/108"
           }
         }
@@ -14111,6 +14111,116 @@
             "script": "https://github.com/openai/parameter-golf/blob/6d4867a7b711a5d2ce313eb4d87130c36bde9ad4/records/track_10min_16mb/2026-03-20_11L_SmearV2_SWA/train_gpt.py",
             "folder": "https://github.com/openai/parameter-golf/tree/6d4867a7b711a5d2ce313eb4d87130c36bde9ad4/records/track_10min_16mb/2026-03-20_11L_SmearV2_SWA",
             "pr": "https://github.com/openai/parameter-golf/pull/194"
+          }
+        }
+      ]
+    },
+    "195": {
+      "number": 195,
+      "updatedAt": "2026-03-20T08:59:24Z",
+      "pr": {
+        "number": 195,
+        "title": "Add chasewebb 9x512 sp1024 baseline (val_bpb: 1.2355)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/195",
+        "authorLogin": "chasewebb",
+        "authorName": null,
+        "createdAt": "2026-03-20T08:57:47Z",
+        "updatedAt": "2026-03-20T08:59:24Z",
+        "headSha": "74bf8e5c8d61d67b6a7b7969e32872700125abb6",
+        "headRepo": "chasewebb/parameter-golf"
+      },
+      "submissions": []
+    },
+    "196": {
+      "number": 196,
+      "updatedAt": "2026-03-20T09:02:44Z",
+      "pr": {
+        "number": 196,
+        "title": "Add non-record submission: SMM FineWeb Smoke",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/196",
+        "authorLogin": "sicauzxl",
+        "authorName": null,
+        "createdAt": "2026-03-20T09:02:44Z",
+        "updatedAt": "2026-03-20T09:02:44Z",
+        "headSha": "62905a7a5c0c96908474778179e91ace824be24f",
+        "headRepo": "sicauzxl/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-196-records-track_non_record_16mb-2026-03-20_SMM_FineWeb_Smoke-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "non-record",
+          "track": {
+            "path": "records/track_non_record_16mb",
+            "slug": "track_non_record_16mb",
+            "label": "Non-record / 16MB",
+            "official": false,
+            "category": "non-record"
+          },
+          "record": {
+            "folderName": "2026-03-20_SMM_FineWeb_Smoke",
+            "folderPath": "records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke",
+            "submissionPath": "records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/submission.json",
+            "readmePath": "records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/README.md",
+            "trainLogPath": "records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/train.log",
+            "scriptPath": "records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/train_gpt.py"
+          },
+          "submission": {
+            "author": "XilongZhu",
+            "githubId": "sicauzxl",
+            "name": "SMM FineWeb Smoke",
+            "blurb": "Single-H100 non-record FineWeb smoke run for a minimal structured-memory branch inside the official train_gpt.py path. Uses final_int8_zlib_roundtrip_exact val_bpb as the comparable metric and stays well under the 16MB artifact cap.",
+            "date": "2026-03-20T08:30:00Z"
+          },
+          "metrics": {
+            "valBpb": 1.7730718,
+            "valLoss": 2.99375746,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 4509767,
+            "bytesCode": 69377,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 196,
+            "title": "Add non-record submission: SMM FineWeb Smoke",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/196",
+            "authorLogin": "sicauzxl",
+            "authorName": null,
+            "createdAt": "2026-03-20T09:02:44Z",
+            "updatedAt": "2026-03-20T09:02:44Z",
+            "headSha": "62905a7a5c0c96908474778179e91ace824be24f",
+            "headRepo": "sicauzxl/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/62905a7a5c0c96908474778179e91ace824be24f/records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/62905a7a5c0c96908474778179e91ace824be24f/records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/62905a7a5c0c96908474778179e91ace824be24f/records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/62905a7a5c0c96908474778179e91ace824be24f/records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/62905a7a5c0c96908474778179e91ace824be24f/records/track_non_record_16mb/2026-03-20_SMM_FineWeb_Smoke",
+            "pr": "https://github.com/openai/parameter-golf/pull/196"
           }
         }
       ]
