@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-20T09:52:43.922Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 199,
+    "title": "Non-record: SWA and doc-isolated eval ablation — two negative findings at stride=64",
+    "state": "open",
+    "updatedAt": "2026-03-20T09:49:42Z",
+    "headSha": "1524776662ca43c4fe2704a609b7592c87e021c4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/199",
+    "authorLogin": "mrdavtan"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-20_SWA_DocIso_Ablation/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Controlled ablations isolate SWA’s effect under default warmdown and compare doc-isolated versus flat-stream sliding-window eval at stride 64 for quantized models.",
+    "tags": [
+      "evaluation",
+      "sliding-window-eval",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Float32-accumulated SWA snapshot averaging post-warmdown",
+      "Doc-isolated vs flat-stream sliding-window eval comparison at stride=64",
+      "Single-architecture, single-seed runs to attribute effects"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

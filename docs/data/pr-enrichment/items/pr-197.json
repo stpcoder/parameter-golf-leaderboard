@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-20T09:52:57.995Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 197,
+    "title": "Non-record: staging profile (LAWA + slide eval) on 8xH100 (val_bpb=1.18926428)",
+    "state": "open",
+    "updatedAt": "2026-03-20T09:27:48Z",
+    "headSha": "b7a199376e2f888febe1d4cb69085ada34cdc4db",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/197",
+    "authorLogin": "machdragon"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-20_NonRecord_StagingProfile_LAWA_SlideEval_8xH100_valbpb1p189/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Staging-profile run validates LAWA-enabled merged defaults with sliding-window eval on FineWeb sp1024 data using 8×H100 to benchmark reproducibility.",
+    "tags": [
+      "sliding-window-eval",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "LAWA-enabled merged staging defaults",
+      "Sliding-window evaluation with EVAL_STRIDE=512",
+      "FineWeb SP-1024 data on 8×H100"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

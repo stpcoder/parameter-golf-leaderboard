@@ -1,8 +1,76 @@
 {
-  "generatedAt": "2026-03-20T09:22:39.057Z",
+  "generatedAt": "2026-03-20T09:53:07.862Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 199,
+      "title": "Non-record: SWA and doc-isolated eval ablation — two negative findings at stride=64",
+      "status": "open",
+      "updatedAt": "2026-03-20T09:49:42Z",
+      "headSha": "1524776662ca43c4fe2704a609b7592c87e021c4",
+      "generatedAt": "2026-03-20T09:52:43.922Z",
+      "summary": "Controlled ablations isolate SWA’s effect under default warmdown and compare doc-isolated versus flat-stream sliding-window eval at stride 64 for quantized models.",
+      "tags": [
+        "evaluation",
+        "sliding-window-eval",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-199.json"
+    },
+    {
+      "prNumber": 198,
+      "title": "11-Layer Int6 + WD=0.04 + SWA + FA3 (val_bpb: 1.1318)",
+      "status": "open",
+      "updatedAt": "2026-03-20T09:27:08Z",
+      "headSha": "372bddea57f465c7217c5e26af2252a803221518",
+      "generatedAt": "2026-03-20T09:52:53.028Z",
+      "summary": "Int6 MuP-scaled 11-layer transformer uses WD=0.04 Muon+AdamW plus SWA and stride-64 sliding eval to fit extra capacity under 16 MB.",
+      "tags": [
+        "quantization",
+        "optimizer",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-198.json"
+    },
+    {
+      "prNumber": 197,
+      "title": "Non-record: staging profile (LAWA + slide eval) on 8xH100 (val_bpb=1.18926428)",
+      "status": "open",
+      "updatedAt": "2026-03-20T09:27:48Z",
+      "headSha": "b7a199376e2f888febe1d4cb69085ada34cdc4db",
+      "generatedAt": "2026-03-20T09:52:57.995Z",
+      "summary": "Staging-profile run validates LAWA-enabled merged defaults with sliding-window eval on FineWeb sp1024 data using 8×H100 to benchmark reproducibility.",
+      "tags": [
+        "sliding-window-eval",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-197.json"
+    },
     {
       "prNumber": 196,
       "title": "Add non-record submission: SMM FineWeb Smoke",
@@ -1718,14 +1786,15 @@
       "prNumber": 95,
       "title": "PROTEUS EMA — val_bpb: 1.2253",
       "status": "open",
-      "updatedAt": "2026-03-19T22:23:25Z",
-      "headSha": "4b9fdca52d9ce23df7b3bcd6eada38636b8e8dcc",
-      "generatedAt": "2026-03-19T22:39:13.141Z",
-      "summary": "Baseline GPT uses EMA smoothing, FP16 embeddings, seq-2048 training, and sliding-window eval to shrink INT8 quantization loss before final scoring.",
+      "updatedAt": "2026-03-20T09:26:09Z",
+      "headSha": "80ea2bdfced41a15143e5dcb8ed1f2635abb2b79",
+      "generatedAt": "2026-03-20T09:53:02.886Z",
+      "summary": "Stacked EMA weight averaging, seq2048 training, FP16 embeddings, and sliding-window eval on the baseline to reduce INT8 quantization loss.",
       "tags": [
         "quantization",
-        "regularization",
-        "evaluation"
+        "sliding-window-eval",
+        "mixed-precision",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2670,14 +2739,16 @@
     },
     {
       "prNumber": 37,
-      "title": "[WIP] SP4096: Larger vocabulary for better BPB",
+      "title": "Record: SP4096 + Int6 QAT + NorMuon (val_bpb=1.2012)",
       "status": "closed",
-      "updatedAt": "2026-03-19T21:19:52Z",
+      "updatedAt": "2026-03-20T09:47:02Z",
       "headSha": "dd01e00f7a07362f7f884eb182da357a9dd35463",
-      "generatedAt": "2026-03-19T21:39:52.760Z",
-      "summary": "4096-token SentencePiece BPE and untied input/output embeddings shrink tokens-per-byte without touching the base GPT architecture.",
+      "generatedAt": "2026-03-20T09:53:07.860Z",
+      "summary": "Pairs an SP4096 SentencePiece tokenizer with Int6 STE QAT and NorMuon-tuned LR to compress under 16MB without changing core architecture.",
       "tags": [
-        "tokenization"
+        "tokenization",
+        "quantization",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
