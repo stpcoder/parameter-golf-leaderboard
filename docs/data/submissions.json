@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T07:59:18.007Z",
+  "generatedAt": "2026-03-21T08:29:38.898Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -611,7 +611,7 @@
         "authorLogin": "jfprincz",
         "authorName": null,
         "createdAt": "2026-03-20T23:25:59Z",
-        "updatedAt": "2026-03-21T07:55:09Z",
+        "updatedAt": "2026-03-21T08:02:19Z",
         "headSha": "d7583288464f252eeec6657c80f4cd3a74c0e5c5",
         "headRepo": "jfprincz/parameter-golf"
       },
@@ -1706,6 +1706,83 @@
         "onMain": true,
         "hasPullRequest": true,
         "listedInReadme": true
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-21_LoopedTransformerDesign_1-1462",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-21_LoopedTransformerDesign_1.1462",
+        "folderPath": "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462",
+        "submissionPath": "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/train_gpt.py"
+      },
+      "submission": {
+        "author": "Aum Desai",
+        "githubId": "aumdesai",
+        "name": "Looped Transformer Design (non tuned at all)",
+        "blurb": "Non-record 10-minute submission: a PR315-derived looped transformer with a shared recurrent core, partial RoPE, LN scaling, late QAT, XSA4, and bigram features. It stays under the 16,000,000-byte cap and reaches 1.1462 sliding-window exact BPB without exhaustive tuning.",
+        "date": "2026-03-21T06:51:38Z"
+      },
+      "metrics": {
+        "valBpb": 1.14620421,
+        "valLoss": 1.93531268,
+        "preQuantValBpb": 1.1584,
+        "preQuantValLoss": 1.9559,
+        "stepStop": 4851,
+        "wallclockSeconds": 600.09,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15589099,
+        "bytesCode": 79859,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 325,
+        "title": "Add Looped Transformer Design non-record submission (non tuned)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/325",
+        "authorLogin": "Aum08Desai",
+        "authorName": null,
+        "createdAt": "2026-03-21T08:09:25Z",
+        "updatedAt": "2026-03-21T08:09:25Z",
+        "headSha": "b1f08746a4a958b2b0c2029cedbc94c134292eab",
+        "headRepo": "Aum08Desai/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b1f08746a4a958b2b0c2029cedbc94c134292eab/records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/b1f08746a4a958b2b0c2029cedbc94c134292eab/records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/b1f08746a4a958b2b0c2029cedbc94c134292eab/records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/b1f08746a4a958b2b0c2029cedbc94c134292eab/records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/b1f08746a4a958b2b0c2029cedbc94c134292eab/records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462",
+        "pr": "https://github.com/openai/parameter-golf/pull/325",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
       }
     },
     {
@@ -11455,7 +11532,7 @@
         "authorLogin": "User123331",
         "authorName": null,
         "createdAt": "2026-03-20T21:09:16Z",
-        "updatedAt": "2026-03-20T21:28:50Z",
+        "updatedAt": "2026-03-21T08:27:21Z",
         "headSha": "9478af843422d11cbcf67d79924a73150d86f8ee",
         "headRepo": "User123331/parameter-golf"
       },
@@ -12764,16 +12841,16 @@
         "authorLogin": "trasnake87",
         "authorName": null,
         "createdAt": "2026-03-20T23:38:53Z",
-        "updatedAt": "2026-03-21T06:16:09Z",
-        "headSha": "8ba000657ac519804b2aa4a2d3f4996d588d945b",
+        "updatedAt": "2026-03-21T08:22:29Z",
+        "headSha": "65f30a5c5825cf995bfc1274de05b9471a465748",
         "headRepo": "trasnake87/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/8ba000657ac519804b2aa4a2d3f4996d588d945b/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/8ba000657ac519804b2aa4a2d3f4996d588d945b/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/8ba000657ac519804b2aa4a2d3f4996d588d945b/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/8ba000657ac519804b2aa4a2d3f4996d588d945b/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/8ba000657ac519804b2aa4a2d3f4996d588d945b/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/65f30a5c5825cf995bfc1274de05b9471a465748/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/65f30a5c5825cf995bfc1274de05b9471a465748/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/65f30a5c5825cf995bfc1274de05b9471a465748/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/65f30a5c5825cf995bfc1274de05b9471a465748/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/65f30a5c5825cf995bfc1274de05b9471a465748/records/track_non_record_16mb/2026-03-20_ContentSmearGate_RTX4070",
         "pr": "https://github.com/openai/parameter-golf/pull/288",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -14936,6 +15013,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/478ac809ec841f7738276e51e5f69d109f62cc5c/records/track_10min_16mb/2026-03-21_11L_SmearGate_BigramHash_TTT/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/478ac809ec841f7738276e51e5f69d109f62cc5c/records/track_10min_16mb/2026-03-21_11L_SmearGate_BigramHash_TTT",
         "pr": "https://github.com/openai/parameter-golf/pull/322",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25",
+        "folderPath": "records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25",
+        "submissionPath": "records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/train_gpt.py"
+      },
+      "submission": {
+        "author": "notapplica",
+        "githubId": "notapplica",
+        "name": "QAT + NTK-4096 Eval + Cosine Warmdown + Aggressive SWA",
+        "blurb": "QAT/STE fake quantization (int5 MLP, int6 attn), NTK-aware RoPE eval at seq_len=4096, cosine warmdown, aggressive SWA (frac=0.35, every=25, 48 checkpoints), 5% magnitude pruning, phase-transition resid_mix. Training completed (6606 steps in 600s) but pod killed before final roundtrip eval.",
+        "date": "2026-03-21"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": 1.1702,
+        "preQuantValLoss": 1.9758,
+        "stepStop": 6606,
+        "wallclockSeconds": 599.968,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15875110,
+        "bytesCode": 56766,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 326,
+        "title": "[Non-Record] QAT + NTK-4096 Eval + Cosine Warmdown + Aggressive SWA",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/326",
+        "authorLogin": "crony-io",
+        "authorName": null,
+        "createdAt": "2026-03-21T08:24:22Z",
+        "updatedAt": "2026-03-21T08:24:22Z",
+        "headSha": "0e73fb9322b416f17a7dfbd7fca10392c3a30099",
+        "headRepo": "crony-io/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/bc1ba5c4be072d66ff69914d3e34040ebe339912/records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/bc1ba5c4be072d66ff69914d3e34040ebe339912/records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/bc1ba5c4be072d66ff69914d3e34040ebe339912/records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/bc1ba5c4be072d66ff69914d3e34040ebe339912/records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/bc1ba5c4be072d66ff69914d3e34040ebe339912/records/track_non_record_16mb/2026-03-21_QAT_NTK4096_CosineWarmdown_SWA25",
+        "pr": "https://github.com/openai/parameter-golf/pull/326",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

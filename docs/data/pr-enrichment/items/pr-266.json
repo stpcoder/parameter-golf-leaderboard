@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-20T21:55:10.350Z",
+  "generatedAt": "2026-03-21T08:30:01.244Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 266,
     "title": "Non-record: Mixture of Softmax K=2 R=64 (1xH100, 10min, 1.3932 bpb)",
     "state": "open",
-    "updatedAt": "2026-03-20T21:28:50Z",
+    "updatedAt": "2026-03-21T08:27:21Z",
     "headSha": "9478af843422d11cbcf67d79924a73150d86f8ee",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/266",
     "authorLogin": "User123331"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds K=2, rank-64 Mixture of Softmax head to baseline 9×512 GPT to raise output matrix rank with little parameter overhead.",
+    "summary": "Adds a low-rank K=2 Mixture of Softmax on the 9×512 baseline to lift output rank with ~99K extra params under the 16MB cap.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,8 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Low-rank MoS (K=2, R=64) replacing tied softmax",
-      "Int8+zlib roundtrip confirms quantization-friendly MoS"
+      "K=2 mixture of softmax outputs with rank-64 factorization",
+      "~99K extra parameters and 97KB overhead keeps artifact small",
+      "Int8+zlib roundtrip shows MoS weights handle quantization well"
     ]
   },
   "compatibility": {

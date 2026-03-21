@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-21T08:29:49.140Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 325,
+    "title": "Add Looped Transformer Design non-record submission (non tuned)",
+    "state": "open",
+    "updatedAt": "2026-03-21T08:09:25Z",
+    "headSha": "b1f08746a4a958b2b0c2029cedbc94c134292eab",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/325",
+    "authorLogin": "Aum08Desai"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-21_LoopedTransformerDesign_1.1462/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "PR315-derived looped transformer reuses a shared recurrent core with partial RoPE, bigram features, XSA4, and late QAT under the 16MB cap.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "attention",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "Normal training run with validation used solely for evaluation, not a val-only training regime.",
+    "techniques": [
+      "looped recurrent transformer core",
+      "late QAT plus XSA4 and bigrams",
+      "partial RoPE/LN scaling for shared-depth"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
