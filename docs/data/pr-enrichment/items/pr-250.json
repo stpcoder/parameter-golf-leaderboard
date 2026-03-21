@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T11:01:37.341Z",
+  "generatedAt": "2026-03-21T11:31:27.263Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 250,
     "title": "Complexity MoE v4: Token-Routed I64 + PID + CUDA Scatter + Int6 (26.5M params)",
     "state": "open",
-    "updatedAt": "2026-03-21T11:01:27Z",
-    "headSha": "64e352412f3fdbd9f3b4957d4c3cc15ed0da54f6",
+    "updatedAt": "2026-03-21T11:27:49Z",
+    "headSha": "ec93cb10178bd37836172f06cc9dd8184083d18b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/250",
     "authorLogin": "Complexity-ML"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Token-routed 4-expert SwiGLU MoE with PID dynamics, CUDA scatter dispatch, SGDR schedule, and int6+zstd compression for <16MB leaderboard runs.",
+    "summary": "Token-routed MoE with PID dynamics, CUDA scatter dispatch, and Int6 quant plus SGDR/SWA training with sliding-window evaluation.",
     "tags": [
       "architecture",
-      "optimizer",
+      "training-schedule",
       "quantization",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Token-routed 4-expert SwiGLU MoE",
-      "PID dynamics with SGDR cosine warm restarts",
-      "CUDA scatter dispatch plus int6+zstd compression"
+      "Token-routed SwiGLU MoE with deterministic routing",
+      "PID dynamics spanning layers with clamped mu/velocity",
+      "CUDA scatter dispatch plus Int6 quant with SGDR/SWA"
     ]
   },
   "compatibility": {

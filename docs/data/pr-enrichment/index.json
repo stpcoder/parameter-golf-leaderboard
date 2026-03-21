@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-21T11:01:37.376Z",
+  "generatedAt": "2026-03-21T11:31:27.297Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 338,
+      "title": "Record: 11L XSA+EMA+TTT, sliding val_bpb=1.1254 (3-seed mean 1.1256)",
+      "status": "open",
+      "updatedAt": "2026-03-21T11:07:02Z",
+      "headSha": "5d7082e16b5f2e190f316e0d99e940e0edf0d455",
+      "generatedAt": "2026-03-21T11:31:21.878Z",
+      "summary": "Applies test-time SGD on the validation stream to adapt the XSA+EMA quantized model before sliding eval.",
+      "tags": [
+        "val-only",
+        "attention",
+        "optimizer",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-338.json"
+    },
     {
       "prNumber": 334,
       "title": "Non-record: 11L PartialRoPE + LNScale + EMA + SWA + TTT (1xH100 80min, val_bpb=1.2108)",
@@ -1595,13 +1619,13 @@
       "prNumber": 250,
       "title": "Complexity MoE v4: Token-Routed I64 + PID + CUDA Scatter + Int6 (26.5M params)",
       "status": "open",
-      "updatedAt": "2026-03-21T11:01:27Z",
-      "headSha": "64e352412f3fdbd9f3b4957d4c3cc15ed0da54f6",
-      "generatedAt": "2026-03-21T11:01:37.341Z",
-      "summary": "Token-routed 4-expert SwiGLU MoE with PID dynamics, CUDA scatter dispatch, SGDR schedule, and int6+zstd compression for <16MB leaderboard runs.",
+      "updatedAt": "2026-03-21T11:27:49Z",
+      "headSha": "ec93cb10178bd37836172f06cc9dd8184083d18b",
+      "generatedAt": "2026-03-21T11:31:27.263Z",
+      "summary": "Token-routed MoE with PID dynamics, CUDA scatter dispatch, and Int6 quant plus SGDR/SWA training with sliding-window evaluation.",
       "tags": [
         "architecture",
-        "optimizer",
+        "training-schedule",
         "quantization",
         "evaluation"
       ],
@@ -2086,29 +2110,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-220.json"
-    },
-    {
-      "prNumber": 219,
-      "title": "Non-record: 12L Int5-MLP + Int6-Attn mixed quantization, val_bpb=1.1541",
-      "status": "open",
-      "updatedAt": "2026-03-20T15:07:42Z",
-      "headSha": "d21e7fb3389f057790581b61bb1bef04fe16d5aa",
-      "generatedAt": "2026-03-20T15:23:54.694Z",
-      "summary": "Mixed int5 MLP and int6 attention quantization frees ~1.8MB to add a 12th transformer layer with SmearGate, BigramHash, and SWA.",
-      "tags": [
-        "quantization",
-        "architecture",
-        "attention"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-219.json"
     },
     {
       "prNumber": 218,

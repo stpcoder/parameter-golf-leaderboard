@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T11:01:09.907Z",
+  "generatedAt": "2026-03-21T11:31:15.209Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -545,6 +545,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/dfb05a5d6cfe7ccfb5def2ab129d69740c1bcd76/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_PartialRoPE_LateQAT_1.1248/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/dfb05a5d6cfe7ccfb5def2ab129d69740c1bcd76/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_PartialRoPE_LateQAT_1.1248",
         "pr": "https://github.com/openai/parameter-golf/pull/315",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x",
+        "folderPath": "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x",
+        "submissionPath": "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/train_gpt.py"
+      },
+      "submission": {
+        "author": "alertcat",
+        "githubId": "alertcat",
+        "name": "11L XSA4 + EMA + TTT + Int6 MLP3x + SmearGate + BigramHash",
+        "blurb": "PR #315 baseline (XSA on last 4 layers, EMA decay=0.997) combined with Test-Time Training (3-epoch SGD, lr=0.002, freeze first 2 blocks). TTT adapts model weights to validation distribution at eval time (~47s). First submission combining XSA+EMA+TTT.",
+        "date": "2026-03-21T10:45:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.12537812,
+        "valLoss": 1.90014878,
+        "preQuantValBpb": 1.143,
+        "preQuantValLoss": null,
+        "stepStop": 7068,
+        "wallclockSeconds": 600,
+        "evalTimeSeconds": 120
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 338,
+        "title": "Record: 11L XSA+EMA+TTT, sliding val_bpb=1.1254 (3-seed mean 1.1256)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/338",
+        "authorLogin": "alertcat",
+        "authorName": null,
+        "createdAt": "2026-03-21T11:07:02Z",
+        "updatedAt": "2026-03-21T11:07:02Z",
+        "headSha": "5d7082e16b5f2e190f316e0d99e940e0edf0d455",
+        "headRepo": "alertcat/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/5d7082e16b5f2e190f316e0d99e940e0edf0d455/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/5d7082e16b5f2e190f316e0d99e940e0edf0d455/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/5d7082e16b5f2e190f316e0d99e940e0edf0d455/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/5d7082e16b5f2e190f316e0d99e940e0edf0d455/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/5d7082e16b5f2e190f316e0d99e940e0edf0d455/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x",
+        "pr": "https://github.com/openai/parameter-golf/pull/338",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -2989,17 +3066,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 219,
-        "title": "Non-record: 12L Int5-MLP + Int6-Attn mixed quantization, val_bpb=1.1541",
+        "number": 338,
+        "title": "Record: 11L XSA+EMA+TTT, sliding val_bpb=1.1254 (3-seed mean 1.1256)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/219",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/338",
         "authorLogin": "alertcat",
         "authorName": null,
-        "createdAt": "2026-03-20T15:07:42Z",
-        "updatedAt": "2026-03-20T15:07:42Z",
-        "headSha": "d21e7fb3389f057790581b61bb1bef04fe16d5aa",
+        "createdAt": "2026-03-21T11:07:02Z",
+        "updatedAt": "2026-03-21T11:07:02Z",
+        "headSha": "5d7082e16b5f2e190f316e0d99e940e0edf0d455",
         "headRepo": "alertcat/parameter-golf"
       },
       "links": {
@@ -3008,7 +3085,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/d21e7fb3389f057790581b61bb1bef04fe16d5aa/records/track_10min_16mb/2026-03-20_12L_Int5MLP_SmearGate_BigramHash/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/d21e7fb3389f057790581b61bb1bef04fe16d5aa/records/track_10min_16mb/2026-03-20_12L_Int5MLP_SmearGate_BigramHash/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/d21e7fb3389f057790581b61bb1bef04fe16d5aa/records/track_10min_16mb/2026-03-20_12L_Int5MLP_SmearGate_BigramHash",
-        "pr": "https://github.com/openai/parameter-golf/pull/219",
+        "pr": "https://github.com/openai/parameter-golf/pull/338",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -17244,8 +17321,8 @@
         "authorLogin": "Complexity-ML",
         "authorName": null,
         "createdAt": "2026-03-20T18:48:09Z",
-        "updatedAt": "2026-03-21T10:57:50Z",
-        "headSha": "f93074362ae844d825556ebb5d8e0a5717e62fd3",
+        "updatedAt": "2026-03-21T11:27:49Z",
+        "headSha": "ec93cb10178bd37836172f06cc9dd8184083d18b",
         "headRepo": "Complexity-ML/parameter-golf"
       },
       "links": {

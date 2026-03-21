@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-03-21T11:31:21.878Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 338,
+    "title": "Record: 11L XSA+EMA+TTT, sliding val_bpb=1.1254 (3-seed mean 1.1256)",
+    "state": "open",
+    "updatedAt": "2026-03-21T11:07:02Z",
+    "headSha": "5d7082e16b5f2e190f316e0d99e940e0edf0d455",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/338",
+    "authorLogin": "alertcat"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x/README.md",
+      "records/track_10min_16mb/2026-03-20_12L_Int5MLP_SmearGate_BigramHash/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "Applies test-time SGD on the validation stream to adapt the XSA+EMA quantized model before sliding eval.",
+    "tags": [
+      "val-only",
+      "attention",
+      "optimizer",
+      "evaluation"
+    ],
+    "usesValOnly": true,
+    "valOnlyReasoning": "Test-time training runs SGD on validation tokens (freezing early blocks) to adapt the quantized model before evaluation.",
+    "techniques": [
+      "XSA+EMA Int6 MLP3x backbone",
+      "TTT SGD fine-tuning on validation stream",
+      "Freeze first two blocks during adaptation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
+  }
+}
