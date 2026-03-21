@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T00:56:59.627Z",
+  "generatedAt": "2026-03-21T01:26:52.332Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -172,13 +172,12 @@
       "prNumber": 288,
       "title": "Non-record: Content-Dependent SmearGate (1.6795 BPB, RTX 4070)",
       "status": "open",
-      "updatedAt": "2026-03-20T23:38:53Z",
-      "headSha": "8f4401b40327be24780c88c5de5d4a6cb3509b1b",
-      "generatedAt": "2026-03-20T23:55:54.534Z",
-      "summary": "Modulates SmearGate gating with adjacency dot-product similarity so similar tokens blend more while keeping parameter/compute cost minimal.",
+      "updatedAt": "2026-03-21T01:10:58Z",
+      "headSha": "573066bd7c5be6926c5dba04e908767b2cd3a6ae",
+      "generatedAt": "2026-03-21T01:26:27.095Z",
+      "summary": "Content-dependent SmearGate modulates token blending by adjacent-embedding similarity to let similar tokens merge more while preserving dissimilar boundaries.",
       "tags": [
         "architecture",
-        "regularization",
         "non-record"
       ],
       "flags": {
@@ -195,14 +194,14 @@
       "prNumber": 287,
       "title": "Record: 11L XSA + EMA + Int6 MLP3x + WD=0.04 (val_bpb: 1.1271)",
       "status": "open",
-      "updatedAt": "2026-03-21T00:17:29Z",
+      "updatedAt": "2026-03-21T01:21:04Z",
       "headSha": "d7583288464f252eeec6657c80f4cd3a74c0e5c5",
-      "generatedAt": "2026-03-21T00:27:10.350Z",
-      "summary": "11-layer stack adds exclusive self-attention on the last four layers and swaps SWA for EMA for smoother averaging before int6 quantization.",
+      "generatedAt": "2026-03-21T01:26:31.644Z",
+      "summary": "11-layer muP-scaled Transformer adds Exclusive Self Attention on final layers, EMA averaging, and int6 mixed quant for a compressed evaluation stack.",
       "tags": [
         "attention",
-        "optimizer",
-        "quantization"
+        "training-schedule",
+        "mixed-precision"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2188,14 +2187,14 @@
       "prNumber": 168,
       "title": "SOTA Attempt: Paid prefix (val_bpb=1.0238)",
       "status": "open",
-      "updatedAt": "2026-03-21T00:13:53Z",
+      "updatedAt": "2026-03-21T01:12:55Z",
       "headSha": "83aee2852eb3375309580957f7d3ae6934488428",
-      "generatedAt": "2026-03-21T00:28:29.306Z",
-      "summary": "Pairs an int8 7L/384d transformer trained on fineweb with an 8.75MB paid prefix blob covering 20% of val tokens to reallocate the 16MB budget.",
+      "generatedAt": "2026-03-21T01:26:38.624Z",
+      "summary": "Stores 8.75MB of validation targets for exact-match prefixes, with the remaining tokens handled by an int8 7-layer transformer trained only on fineweb train data.",
       "tags": [
+        "compression",
         "architecture",
-        "quantization",
-        "compression"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2468,15 +2467,14 @@
       "prNumber": 152,
       "title": "Add TTT (Test-Time Training) submission: 1.1767 BPB",
       "status": "closed",
-      "updatedAt": "2026-03-20T19:58:52Z",
+      "updatedAt": "2026-03-21T01:16:59Z",
       "headSha": "d5762bac5f7ce4ec928c0849280f554ff3c67e69",
-      "generatedAt": "2026-03-20T20:25:20.692Z",
-      "summary": "TTT reuses eval time for 2-epoch full-model SGD on the validation shard, letting the baseline 9x512 GQA model adapt before sliding-window scoring.",
+      "generatedAt": "2026-03-21T01:26:42.577Z",
+      "summary": "Adapts the 9x512 GQA model with full-model SGD test-time training using the eval budget before sliding-window scoring.",
       "tags": [
         "val-only",
-        "evaluation",
-        "optimizer",
-        "training-schedule"
+        "sliding-window-eval",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": true,
@@ -2890,15 +2888,14 @@
       "prNumber": 127,
       "title": "Non-record: Depth recurrence + widening + QAT + sliding window eval",
       "status": "open",
-      "updatedAt": "2026-03-20T00:36:30Z",
-      "headSha": "890d287c62f018b383b99e0a2f8fe3f649c0ff36",
-      "generatedAt": "2026-03-20T00:49:24.216Z",
-      "summary": "Depth-recurrent 3-block transformer with widened heads and per-loop LoRA, ALBERT-style embeddings, and STE-driven int6 QAT with sliding-window eval.",
+      "updatedAt": "2026-03-21T01:20:29Z",
+      "headSha": "5486d814b98f08ebf4b7f206165290838658bcd2",
+      "generatedAt": "2026-03-21T01:26:52.316Z",
+      "summary": "Loops three shared transformer blocks with per-loop LoRA, widened 768-dim heads, ALBERT-style embeddings, QAT int6 quant, and sliding-window eval.",
       "tags": [
         "architecture",
         "quantization",
-        "optimizer",
-        "sliding-window-eval"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
