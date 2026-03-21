@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-21T04:28:29.276Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 309,
+    "title": "Record: CLASE-Quant adaptive layer quantization (val_bpb=1.1914)",
+    "state": "open",
+    "updatedAt": "2026-03-21T04:27:58Z",
+    "headSha": "fea512d4236b7e7149cee05b03536450313c91b5",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/309",
+    "authorLogin": "NewyorkDev"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_CLASEQuant_AdaptiveLayerQuant_ExtendedContext/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "CLASE-inspired adaptive per-layer quantization (int8 edges, int6 mids, fp16 embeddings) plus 2048-token training with ramped decay and sliding evaluation.",
+    "tags": [
+      "quantization",
+      "training-schedule",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Adaptive int8/int6 per-layer quantization with fp16 embeddings to save size",
+      "Extended 2048-token training with cosine-ramped weight decay during warmdown",
+      "Stride-64 sliding-window evaluation matching extended context"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

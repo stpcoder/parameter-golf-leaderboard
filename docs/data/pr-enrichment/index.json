@@ -1,8 +1,55 @@
 {
-  "generatedAt": "2026-03-21T03:58:18.357Z",
+  "generatedAt": "2026-03-21T04:29:12.799Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 309,
+      "title": "Record: CLASE-Quant adaptive layer quantization (val_bpb=1.1914)",
+      "status": "open",
+      "updatedAt": "2026-03-21T04:27:58Z",
+      "headSha": "fea512d4236b7e7149cee05b03536450313c91b5",
+      "generatedAt": "2026-03-21T04:28:29.276Z",
+      "summary": "CLASE-inspired adaptive per-layer quantization (int8 edges, int6 mids, fp16 embeddings) plus 2048-token training with ramped decay and sliding evaluation.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-309.json"
+    },
+    {
+      "prNumber": 307,
+      "title": "Record: 11L XSA4 + EMA + Batch524K + zstd fallback (val_bpb: 1.1357)",
+      "status": "open",
+      "updatedAt": "2026-03-21T04:21:54Z",
+      "headSha": "ca19512a49e8a79b13562d01246921a841cfeede",
+      "generatedAt": "2026-03-21T04:28:33.880Z",
+      "summary": "11-layer MLP3x with BigramHash, XSA on the last layers, EMA, and int6 export guarded by SDPA/zstd fallbacks plus a fixed 524K batch regime.",
+      "tags": [
+        "quantization",
+        "attention",
+        "training-schedule",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-307.json"
+    },
     {
       "prNumber": 306,
       "title": "Non-record: QAT Int5/Int6 on #1 architecture (1.14476 BPB)",
@@ -77,15 +124,14 @@
       "prNumber": 303,
       "title": "[Non-record] XSA + EMA + TTT: Negative interaction study (val_bpb=1.1436)",
       "status": "open",
-      "updatedAt": "2026-03-21T03:00:56Z",
+      "updatedAt": "2026-03-21T04:18:39Z",
       "headSha": "9227d8ed39663e0547e930a41ddb8d43b8a877c4",
-      "generatedAt": "2026-03-21T03:27:48.244Z",
-      "summary": "TTT's SGD adaptation on the XSA+EMA base confirms their local-context redundancy and EMA disruption, so stacking them worsens eval behavior.",
+      "generatedAt": "2026-03-21T04:28:42.553Z",
+      "summary": "TTT's validation-time SGD conflicts with EMA+XSA local-context modeling, so the study evaluates the redundancy between these techniques.",
       "tags": [
-        "val-only",
-        "evaluation",
         "attention",
-        "training-schedule"
+        "evaluation",
+        "val-only"
       ],
       "flags": {
         "usesValOnly": true,
@@ -264,15 +310,15 @@
       "prNumber": 295,
       "title": "[Record Submission] QAT Int5/Int6 + Backout + U-Net Skips + BigramHash(10240) + SWA50 — val_bpb=1.1477",
       "status": "open",
-      "updatedAt": "2026-03-21T00:33:09Z",
+      "updatedAt": "2026-03-21T04:18:42Z",
       "headSha": "f96f6de179f942123341045e0d74f1adfa9daeee",
-      "generatedAt": "2026-03-21T00:56:46.507Z",
-      "summary": "Int5/Int6 QAT with U-Net skip encoder-decoder, learned Backout residual, and SWA to stabilize post-quantized BigramHash model.",
+      "generatedAt": "2026-03-21T04:28:48.125Z",
+      "summary": "Combines int5/int6 QAT with U-Net skips, backout residual, and SWA warmdown to stabilize a quantized transformer.",
       "tags": [
         "quantization",
         "architecture",
-        "training-schedule",
-        "tokenization"
+        "muon",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -308,16 +354,17 @@
     },
     {
       "prNumber": 291,
-      "title": "Non-record: 11L EMA + XSA + TTT + Int6 MLP3x (pending compute)",
+      "title": "Non-record: 11L EMA + XSA + Int6 MLP3x (pending compute)",
       "status": "open",
-      "updatedAt": "2026-03-21T00:10:38Z",
-      "headSha": "3a36c41bc690052fdf5ebea19ca85837dc0238e7",
-      "generatedAt": "2026-03-21T00:26:55.360Z",
-      "summary": "Adds TTT SGD on validation data with frozen early blocks atop the EMA+XSA Int6 11L base before scoring while keeping the artifact size unchanged.",
+      "updatedAt": "2026-03-21T04:16:30Z",
+      "headSha": "c57bfbeb2bc578fba56b0b90cd39b505a5f47497",
+      "generatedAt": "2026-03-21T04:28:54.391Z",
+      "summary": "11-layer transformer uses EMA+Muon, XSA on late layers, Int6 mixed quant, SmearGate BigramHash plus zstd compression for a compact run.",
       "tags": [
-        "evaluation",
         "quantization",
-        "architecture"
+        "optimizer",
+        "attention",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -403,14 +450,14 @@
       "prNumber": 287,
       "title": "Record: 11L XSA + EMA + Int6 MLP3x + WD=0.04 (val_bpb: 1.1271)",
       "status": "open",
-      "updatedAt": "2026-03-21T01:21:04Z",
+      "updatedAt": "2026-03-21T04:19:48Z",
       "headSha": "d7583288464f252eeec6657c80f4cd3a74c0e5c5",
-      "generatedAt": "2026-03-21T01:26:31.644Z",
-      "summary": "11-layer muP-scaled Transformer adds Exclusive Self Attention on final layers, EMA averaging, and int6 mixed quant for a compressed evaluation stack.",
+      "generatedAt": "2026-03-21T04:28:59.335Z",
+      "summary": "11-layer muP transformer uses XSA on final layers with EMA averaging plus int6 quantization and SmearGate to tighten generalization and compression.",
       "tags": [
         "attention",
-        "training-schedule",
-        "mixed-precision"
+        "optimizer",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1267,13 +1314,13 @@
       "prNumber": 236,
       "title": "4 the Leaderboard: 11L Int6 + SmearGate + Batch Optimization (val_bpb=1.1400)",
       "status": "open",
-      "updatedAt": "2026-03-20T18:40:36Z",
-      "headSha": "0d23304124424ca9bd4c159bc66002b83940d921",
-      "generatedAt": "2026-03-20T18:54:48.795Z",
-      "summary": "11L int6 model with SmearGate/BigramHash widens MLP, cuts batch tokens to squeeze more steps in 10‑min training while batched sliding eval keeps stride=64 viable.",
+      "updatedAt": "2026-03-21T04:24:41Z",
+      "headSha": "52d0ac3f2d590b104e201afeb8e26bc60839b010",
+      "generatedAt": "2026-03-21T04:29:03.945Z",
+      "summary": "Fixed-time runs favor 524K-token batches paired with int6 quant, SmearGate+BigramHash, SWA, and batched stride-64 sliding evaluation.",
       "tags": [
         "quantization",
-        "architecture",
+        "optimizer",
         "training-schedule",
         "evaluation"
       ],
@@ -2723,23 +2770,23 @@
       "prNumber": 150,
       "title": "Record: 11L Int6 QAT + SmearGate + OrthoInit + SWA + TTT (val_bpb=1.1478)",
       "status": "open",
-      "updatedAt": "2026-03-21T00:46:31Z",
-      "headSha": "f1833d889d683a7c98d0501a39c333de1d3ffff6",
-      "generatedAt": "2026-03-21T00:56:59.607Z",
-      "summary": "Stacked Int6 QAT transformer blending SmearGate/BigramHash tokens with OrthoInit+muP, SWA warmdown, and TTT val-data SGD under sliding-window eval.",
+      "updatedAt": "2026-03-21T04:08:56Z",
+      "headSha": "60cd6252273ea3be3d981e9d83afba8331d68517",
+      "generatedAt": "2026-03-21T04:29:12.780Z",
+      "summary": "11-layer int6 QAT transformer uses SmearGate bigram blending, OrthoInit+muP, SWA-boosted Muon, NTK-RoPE, TTT, and sliding-window eval.",
       "tags": [
-        "val-only",
         "quantization",
-        "attention",
-        "optimizer"
+        "architecture",
+        "optimizer",
+        "evaluation"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-150.json"
     },

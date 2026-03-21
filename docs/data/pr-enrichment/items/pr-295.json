@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T00:56:46.507Z",
+  "generatedAt": "2026-03-21T04:28:48.125Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 295,
     "title": "[Record Submission] QAT Int5/Int6 + Backout + U-Net Skips + BigramHash(10240) + SWA50 — val_bpb=1.1477",
     "state": "open",
-    "updatedAt": "2026-03-21T00:33:09Z",
+    "updatedAt": "2026-03-21T04:18:42Z",
     "headSha": "f96f6de179f942123341045e0d74f1adfa9daeee",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/295",
     "authorLogin": "gowtham0992"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Int5/Int6 QAT with U-Net skip encoder-decoder, learned Backout residual, and SWA to stabilize post-quantized BigramHash model.",
+    "summary": "Combines int5/int6 QAT with U-Net skips, backout residual, and SWA warmdown to stabilize a quantized transformer.",
     "tags": [
       "quantization",
       "architecture",
-      "training-schedule",
-      "tokenization"
+      "muon",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "QAT via STE with int5 MLP / int6 attention",
-      "U-Net encoder-decoder with learned skips and Backout residual",
-      "SWA50 warmdown paired with BigramHash+SmearGate"
+      "Int5/Int6 quantization-aware training with STE",
+      "U-Net encoder-decoder skips plus learned backout residual",
+      "SWA warmdown with muon matrix+scalar optimizers"
     ]
   },
   "compatibility": {

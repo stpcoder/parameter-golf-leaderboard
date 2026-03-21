@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-21T04:28:33.880Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 307,
+    "title": "Record: 11L XSA4 + EMA + Batch524K + zstd fallback (val_bpb: 1.1357)",
+    "state": "open",
+    "updatedAt": "2026-03-21T04:21:54Z",
+    "headSha": "ca19512a49e8a79b13562d01246921a841cfeede",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/307",
+    "authorLogin": "dennisimoo"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_B524K_ZstdFallback/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer MLP3x with BigramHash, XSA on the last layers, EMA, and int6 export guarded by SDPA/zstd fallbacks plus a fixed 524K batch regime.",
+    "tags": [
+      "quantization",
+      "attention",
+      "training-schedule",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "XSA on final layers plus EMA/SmearGate",
+      "524K fixed-batch tokens and torch.compile flag",
+      "SDPA and zstd fallbacks for int6 export"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,36 +1,38 @@
 {
-  "generatedAt": "2026-03-21T00:26:55.360Z",
+  "generatedAt": "2026-03-21T04:28:54.391Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 291,
-    "title": "Non-record: 11L EMA + XSA + TTT + Int6 MLP3x (pending compute)",
+    "title": "Non-record: 11L EMA + XSA + Int6 MLP3x (pending compute)",
     "state": "open",
-    "updatedAt": "2026-03-21T00:10:38Z",
-    "headSha": "3a36c41bc690052fdf5ebea19ca85837dc0238e7",
+    "updatedAt": "2026-03-21T04:16:30Z",
+    "headSha": "c57bfbeb2bc578fba56b0b90cd39b505a5f47497",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/291",
     "authorLogin": "mohosy"
   },
   "inputs": {
-    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
+      "records/track_10min_16mb/submission_mohosy/README.md",
       "records/track_10min_16mb/2026-03-20_11L_EMA_XSA_TTT_Int6/README.md"
     ],
-    "submissionCount": 1
+    "submissionCount": 2
   },
   "output": {
-    "summary": "Adds TTT SGD on validation data with frozen early blocks atop the EMA+XSA Int6 11L base before scoring while keeping the artifact size unchanged.",
+    "summary": "11-layer transformer uses EMA+Muon, XSA on late layers, Int6 mixed quant, SmearGate BigramHash plus zstd compression for a compact run.",
     "tags": [
-      "evaluation",
       "quantization",
-      "architecture"
+      "optimizer",
+      "attention",
+      "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "3-epoch SGD TTT on validation data",
-      "Freeze first two blocks during TTT",
-      "EMA+XSA Int6 11-layer backbone"
+      "Exclusive Self Attention on final layers",
+      "Mixed Int6 quantization for MLP and attention with zstd compression",
+      "EMA with Muon optimizer plus SmearGate and BigramHash context injection"
     ]
   },
   "compatibility": {

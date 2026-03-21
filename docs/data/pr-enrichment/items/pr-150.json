@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T00:56:59.607Z",
+  "generatedAt": "2026-03-21T04:29:12.780Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 150,
     "title": "Record: 11L Int6 QAT + SmearGate + OrthoInit + SWA + TTT (val_bpb=1.1478)",
     "state": "open",
-    "updatedAt": "2026-03-21T00:46:31Z",
-    "headSha": "f1833d889d683a7c98d0501a39c333de1d3ffff6",
+    "updatedAt": "2026-03-21T04:08:56Z",
+    "headSha": "60cd6252273ea3be3d981e9d83afba8331d68517",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/150",
     "authorLogin": "yahya010"
   },
@@ -21,25 +21,25 @@
     "submissionCount": 3
   },
   "output": {
-    "summary": "Stacked Int6 QAT transformer blending SmearGate/BigramHash tokens with OrthoInit+muP, SWA warmdown, and TTT val-data SGD under sliding-window eval.",
+    "summary": "11-layer int6 QAT transformer uses SmearGate bigram blending, OrthoInit+muP, SWA-boosted Muon, NTK-RoPE, TTT, and sliding-window eval.",
     "tags": [
-      "val-only",
       "quantization",
-      "attention",
-      "optimizer"
+      "architecture",
+      "optimizer",
+      "evaluation"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "TTT phase performs full-weight SGD updates on the validation shard to refine post-training weights.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Int6 STE QAT with SmearGate/BigramHash token blending",
-      "OrthoInit+muP-scaled projections with Muon optimizer",
-      "SWA warmdown plus TTT validation SGD"
+      "Int6 STE QAT with SmearGate bigram blend",
+      "OrthoInit/muP-scaled Muon optimizer plus SWA warmdown",
+      "NTK-RoPE positions with TTT val SGD and sliding eval"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

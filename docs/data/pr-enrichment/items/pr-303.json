@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T03:27:48.244Z",
+  "generatedAt": "2026-03-21T04:28:42.553Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 303,
     "title": "[Non-record] XSA + EMA + TTT: Negative interaction study (val_bpb=1.1436)",
     "state": "open",
-    "updatedAt": "2026-03-21T03:00:56Z",
+    "updatedAt": "2026-03-21T04:18:39Z",
     "headSha": "9227d8ed39663e0547e930a41ddb8d43b8a877c4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/303",
     "authorLogin": "sseanliu"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "TTT's SGD adaptation on the XSA+EMA base confirms their local-context redundancy and EMA disruption, so stacking them worsens eval behavior.",
+    "summary": "TTT's validation-time SGD conflicts with EMA+XSA local-context modeling, so the study evaluates the redundancy between these techniques.",
     "tags": [
-      "val-only",
-      "evaluation",
       "attention",
-      "training-schedule"
+      "evaluation",
+      "val-only"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "TTT runs SGD on validation shards during evaluation, so the adaptation phase trains solely on validation data.",
+    "valOnlyReasoning": "TTT runs SGD adaptation solely on the validation shard before sliding-window evaluation, so any training occurs only on validation data.",
     "techniques": [
-      "Exclusive self-attention on final layers with EMA-smoothed weights",
-      "Test-time training via multi-epoch full-model SGD with frozen early blocks",
-      "Dequantize int6 weights before sliding-window evaluation"
+      "EMA-weighted XSA base",
+      "Validation-shard TTT SGD adaptation",
+      "Sliding-window eval after int6 dequantization"
     ]
   },
   "compatibility": {
