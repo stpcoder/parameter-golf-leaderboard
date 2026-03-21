@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-21T03:58:06.167Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 306,
+    "title": "Non-record: QAT Int5/Int6 on #1 architecture (1.14476 BPB)",
+    "state": "open",
+    "updatedAt": "2026-03-21T03:37:30Z",
+    "headSha": "9394860f82ccdea8093dbaa0c1d3e825e140201f",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/306",
+    "authorLogin": "xuafeng"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-21_QAT_Int5_TTT_LoRA_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "STE fake-int5/int6 QAT on thwu1’s #1 GPT, matching post-train quant levels while keeping its SWA/pruning pipeline and eval-time LoRA hooks.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "STE fake-quantization matching int5 MLP/int6 attention levels in CastedLinear",
+      "Retains thwu1 architecture with SWA/pruning pipeline",
+      "Added trigram-hash and TTT LoRA eval hooks (disabled)"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

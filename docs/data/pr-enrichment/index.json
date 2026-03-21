@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-21T03:27:53.914Z",
+  "generatedAt": "2026-03-21T03:58:18.357Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 306,
+      "title": "Non-record: QAT Int5/Int6 on #1 architecture (1.14476 BPB)",
+      "status": "open",
+      "updatedAt": "2026-03-21T03:37:30Z",
+      "headSha": "9394860f82ccdea8093dbaa0c1d3e825e140201f",
+      "generatedAt": "2026-03-21T03:58:06.167Z",
+      "summary": "STE fake-int5/int6 QAT on thwu1’s #1 GPT, matching post-train quant levels while keeping its SWA/pruning pipeline and eval-time LoRA hooks.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-306.json"
+    },
     {
       "prNumber": 305,
       "title": "[WIP] 10L MLP3x BigramHash(4096) + SWA + LateQAT + WD=0.04 — val_bpb=1.87, 14.77MB",
@@ -729,14 +753,14 @@
       "prNumber": 267,
       "title": "Record: val_bpb: 1.14020 [tested 3x on 8xh100]",
       "status": "open",
-      "updatedAt": "2026-03-21T00:05:59Z",
-      "headSha": "78a2c049df1789577a8644a5e07a67044de6ccdd",
-      "generatedAt": "2026-03-21T00:27:32.323Z",
-      "summary": "10-layer BigramHash model uses mixed int5/int6 quantization, SWA, and chunked causal test-time training (eval-before-train per chunk) on validation data.",
+      "updatedAt": "2026-03-21T03:41:43Z",
+      "headSha": "07051ccd97ab2f21c8fbca54b73e6b697a3a81d3",
+      "generatedAt": "2026-03-21T03:58:11.519Z",
+      "summary": "11-layer int5-quantized GPT with EMA and XSA3 applies chunked causal TTT, evaluating each validation chunk before training in a single pass.",
       "tags": [
         "val-only",
         "quantization",
-        "architecture",
+        "attention",
         "training-schedule"
       ],
       "flags": {
@@ -3074,15 +3098,15 @@
       "prNumber": 127,
       "title": "Non-record: Depth recurrence + widening + QAT + sliding window eval",
       "status": "open",
-      "updatedAt": "2026-03-21T02:10:55Z",
-      "headSha": "c2088151b43b91acc9b33ef2482d66bc14c74f65",
-      "generatedAt": "2026-03-21T02:27:41.651Z",
-      "summary": "Looped 3-block transformer with per-iteration LoRA, ALBERT-style bottleneck, int6 QAT, and sliding-window NTK-scaled eval.",
+      "updatedAt": "2026-03-21T03:54:56Z",
+      "headSha": "c677bf58b1e3b8688785116d0ee14010b547ba7d",
+      "generatedAt": "2026-03-21T03:58:18.339Z",
+      "summary": "Looping three shared transformer blocks with per-loop LoRA, widened GQA, and ALBERT-style embeddings, paired with compile-time QAT and sliding-window eval.",
       "tags": [
         "architecture",
         "quantization",
-        "evaluation",
-        "training-schedule"
+        "training-schedule",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T00:27:32.323Z",
+  "generatedAt": "2026-03-21T03:58:11.519Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 267,
     "title": "Record: val_bpb: 1.14020 [tested 3x on 8xh100]",
     "state": "open",
-    "updatedAt": "2026-03-21T00:05:59Z",
-    "headSha": "78a2c049df1789577a8644a5e07a67044de6ccdd",
+    "updatedAt": "2026-03-21T03:41:43Z",
+    "headSha": "07051ccd97ab2f21c8fbca54b73e6b697a3a81d3",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/267",
     "authorLogin": "andrewgcodes"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer BigramHash model uses mixed int5/int6 quantization, SWA, and chunked causal test-time training (eval-before-train per chunk) on validation data.",
+    "summary": "11-layer int5-quantized GPT with EMA and XSA3 applies chunked causal TTT, evaluating each validation chunk before training in a single pass.",
     "tags": [
       "val-only",
       "quantization",
-      "architecture",
+      "attention",
       "training-schedule"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Runs per-chunk SGD updates on validation tokens immediately after scoring them, so training happens solely on validation data during TTT.",
+    "valOnlyReasoning": "Training happens exclusively on validation chunks after they are scored, following the causal TTT eval-then-train regime.",
     "techniques": [
-      "mixed int5/int6 quantization for MLP and attention",
-      "chunked causal test-time training with eval-before-train per chunk",
-      "SWA with frequent checkpoint averaging"
+      "Chunk-based eval-then-train causal TTT",
+      "Int5-all quantization with FP16 embeddings+EMA",
+      "Exclusive self-attention on final layers"
     ]
   },
   "compatibility": {
