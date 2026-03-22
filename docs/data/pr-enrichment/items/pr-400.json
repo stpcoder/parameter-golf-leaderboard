@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-22T05:36:56.398Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 400,
+    "title": "Record: 11L CANON-AC(last5)+DeltaGate Report (Humble Record Attempt, val_bpb: 1.1296)",
+    "state": "open",
+    "updatedAt": "2026-03-22T05:20:15Z",
+    "headSha": "f4952b1b0cf9009f05ecf227cef98848b04db34c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/400",
+    "authorLogin": "chanwoo-park-official"
+  },
+  "inputs": {
+    "hash": "f5768eabef71a7f50ee408a0d13b651bb8f3acb9dde395b2aea8ef0af94c29e3",
+    "readmePaths": [],
+    "submissionCount": 5
+  },
+  "output": {
+    "summary": "Scoped CANON placement with delta gate on the last five layers plus tight SWA on an 11L/512 GQA base, all in int6 with sliding-window eval.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "CANON AC(last5) with delta gate residual path",
+      "Tight SWA schedule with 12 checkpoints",
+      "Sliding-window eval stride 64 on int6 model"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

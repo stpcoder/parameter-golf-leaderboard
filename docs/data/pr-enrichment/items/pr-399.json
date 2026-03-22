@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T05:06:29.334Z",
+  "generatedAt": "2026-03-22T05:37:03.054Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 399,
     "title": "Record: Parallel Muon + Parameter Banking — 82.14ms/step (3.1% faster than PR #315)",
     "state": "open",
-    "updatedAt": "2026-03-22T04:59:49Z",
-    "headSha": "866b081e9990e4a5e5ad5120afc5d310efa2cfed",
+    "updatedAt": "2026-03-22T05:23:48Z",
+    "headSha": "9c1de1a2f281a6dd5898da7919f945a9fc5a90ab",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/399",
     "authorLogin": "abaybektursun"
   },
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Parameter banking plus Parallel Muon replaces DDP for banks, overlapping async reduce-scatter/all-gather and Polar Express optimizer passes to cut step time.",
+    "summary": "Optimizer overhaul packs weights into banks, uses Polar Express orthogonalization, and overlaps manual comm (Parallel Muon) for faster training.",
     "tags": [
       "optimizer",
-      "training-schedule"
+      "muon",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Parameter banking for contiguous nn.Parameter weight banks",
-      "Parallel Muon async reduce-scatter/all-gather scheduling",
-      "Polar Express minimax orthogonalization in optimizer"
+      "Parameter banking with contiguous nn.Parameter stacks",
+      "Polar Express minimax orthogonalization per iteration",
+      "Parallel Muon manual reduce-scatter/all-gather overlap"
     ]
   },
   "compatibility": {

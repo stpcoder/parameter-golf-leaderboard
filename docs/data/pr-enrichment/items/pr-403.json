@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T05:36:46.432Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 403,
+    "title": "Submit Int6 QAT parameter-golf entry",
+    "state": "open",
+    "updatedAt": "2026-03-22T05:25:03Z",
+    "headSha": "a7d0227008a2a300c491cb4ccc76506e89be9647",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/403",
+    "authorLogin": "malc3om"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_Int6_MLP3x_SmearGate_BigramHash_MuonWD_SWA/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Int6 QAT with a 3× MLP, bigram context, orthogonal init, Muon+WD and SWA/stride eval to strengthen quantization robustness.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "training-schedule",
+      "optimizer"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Int6 QAT with delayed STE",
+      "3× MLP plus SmearGate/BigramHash context",
+      "Muon WD plus SWA and sliding-window eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

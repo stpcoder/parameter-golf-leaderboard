@@ -1,19 +1,116 @@
 {
-  "generatedAt": "2026-03-22T05:06:32.928Z",
+  "generatedAt": "2026-03-22T05:37:17.005Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 404,
+      "title": "Non-record: 10L MLP3x int6 baseline (MLX smoke test)",
+      "status": "open",
+      "updatedAt": "2026-03-22T05:31:27Z",
+      "headSha": "84b47a2861aef4e66b0248a86ef4190724c0405a",
+      "generatedAt": "2026-03-22T05:36:41.917Z",
+      "summary": "Quick MLX smoke test runs a 10-layer, 512-dim MLP with 3x expansion and int6 compression to validate the pipeline end-to-end.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "compression",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-404.json"
+    },
+    {
+      "prNumber": 403,
+      "title": "Submit Int6 QAT parameter-golf entry",
+      "status": "open",
+      "updatedAt": "2026-03-22T05:25:03Z",
+      "headSha": "a7d0227008a2a300c491cb4ccc76506e89be9647",
+      "generatedAt": "2026-03-22T05:36:46.432Z",
+      "summary": "Int6 QAT with a 3× MLP, bigram context, orthogonal init, Muon+WD and SWA/stride eval to strengthen quantization robustness.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "training-schedule",
+        "optimizer"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-403.json"
+    },
+    {
+      "prNumber": 401,
+      "title": "Having a blast — PR374 base + EMA/QAT stack beats 1.1246",
+      "status": "open",
+      "updatedAt": "2026-03-22T05:15:58Z",
+      "headSha": "a9e5d065a59c083a553072423498a90c4fdeb4d6",
+      "generatedAt": "2026-03-22T05:36:51.902Z",
+      "summary": "Stacked EMA decay, late-threshold QAT, and warmdown onto Tight SWA's 11L/4KV/3x2048 transformer to narrow the quant gap on PR374.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-401.json"
+    },
+    {
+      "prNumber": 400,
+      "title": "Record: 11L CANON-AC(last5)+DeltaGate Report (Humble Record Attempt, val_bpb: 1.1296)",
+      "status": "open",
+      "updatedAt": "2026-03-22T05:20:15Z",
+      "headSha": "f4952b1b0cf9009f05ecf227cef98848b04db34c",
+      "generatedAt": "2026-03-22T05:36:56.398Z",
+      "summary": "Scoped CANON placement with delta gate on the last five layers plus tight SWA on an 11L/512 GQA base, all in int6 with sliding-window eval.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-400.json"
+    },
+    {
       "prNumber": 399,
       "title": "Record: Parallel Muon + Parameter Banking — 82.14ms/step (3.1% faster than PR #315)",
       "status": "open",
-      "updatedAt": "2026-03-22T04:59:49Z",
-      "headSha": "866b081e9990e4a5e5ad5120afc5d310efa2cfed",
-      "generatedAt": "2026-03-22T05:06:29.334Z",
-      "summary": "Parameter banking plus Parallel Muon replaces DDP for banks, overlapping async reduce-scatter/all-gather and Polar Express optimizer passes to cut step time.",
+      "updatedAt": "2026-03-22T05:23:48Z",
+      "headSha": "9c1de1a2f281a6dd5898da7919f945a9fc5a90ab",
+      "generatedAt": "2026-03-22T05:37:03.054Z",
+      "summary": "Optimizer overhaul packs weights into banks, uses Polar Express orthogonalization, and overlaps manual comm (Parallel Muon) for faster training.",
       "tags": [
         "optimizer",
-        "training-schedule"
+        "muon",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -190,29 +287,6 @@
       "file": "items/pr-392.json"
     },
     {
-      "prNumber": 390,
-      "title": "Record: Sponge Bath — TTT 8ep eval-only improvement (val_bpb: 1.1295)",
-      "status": "open",
-      "updatedAt": "2026-03-22T02:35:08Z",
-      "headSha": "169e4a35bbb950cc30858e776b8236f13b92b505",
-      "generatedAt": "2026-03-22T02:36:22.144Z",
-      "summary": "Eval-only tweak on SOTA254 ups TTT epochs to 8 and halves eval stride for tighter adaptation and sliding-window coverage.",
-      "tags": [
-        "val-only",
-        "sliding-window-eval",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": false
-      },
-      "file": "items/pr-390.json"
-    },
-    {
       "prNumber": 389,
       "title": "Record: 11L Int5-All + XSA5 + EMA + 10% Pruning (val_bpb=1.1466)",
       "status": "open",
@@ -379,24 +453,24 @@
     },
     {
       "prNumber": 379,
-      "title": "Record: 11L GPTQ-lite + Self-Distillation TTT (val_bpb=1.1260)",
+      "title": "Record: 11L GPTQ-lite + Int6 MLP3x (val_bpb=1.1257)",
       "status": "open",
-      "updatedAt": "2026-03-22T00:08:47Z",
-      "headSha": "bb6b90bd01db2af5308629805cd057906738e10a",
-      "generatedAt": "2026-03-22T00:35:50.239Z",
-      "summary": "Adds GPTQ-lite per-layer clip search plus KL-based self-distillation TTT adaptation atop PR#374's 11L stack to mitigate int6 quantization loss.",
+      "updatedAt": "2026-03-22T05:11:12Z",
+      "headSha": "bcd61a16b42fb4f2e436605e8a6851d108ea4198",
+      "generatedAt": "2026-03-22T05:37:07.106Z",
+      "summary": "Adds GPTQ-lite per-layer clip-percentile search atop the 11L XSA4 stack so int6 quantization picks min-error clipping without extra training.",
       "tags": [
-        "val-only",
         "quantization",
-        "evaluation"
+        "architecture",
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-379.json"
     },
@@ -1618,30 +1692,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-313.json"
-    },
-    {
-      "prNumber": 312,
-      "title": "Record: Int6 + Canon ACD (K=3) + Muon WD 0.04 + SWA + Sliding Eval (val_bpb=1.1668)",
-      "status": "open",
-      "updatedAt": "2026-03-22T04:47:59Z",
-      "headSha": "ba8b7c8a3d2863fde80edfc83c16008fffe1a21c",
-      "generatedAt": "2026-03-22T05:06:32.887Z",
-      "summary": "Pairs Canon ACD placements with mixed int6 quantization and Muon+Adam+SWA training while tracking sliding-window evals on the 9-layer decoder.",
-      "tags": [
-        "quantization",
-        "architecture",
-        "optimizer",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-312.json"
     },
     {
       "prNumber": 310,
@@ -3731,14 +3781,14 @@
       "prNumber": 185,
       "title": "Non-record: Wider-shallower 4x768 + QAT (1xH100, 1.3043 bpb)",
       "status": "open",
-      "updatedAt": "2026-03-20T12:04:17Z",
-      "headSha": "bdaa22a14366916994fcc4c49b0e1302e12c9d8b",
-      "generatedAt": "2026-03-20T12:23:35.226Z",
-      "summary": "Wider 4-layer 768-dim GQA model trained with aggressive Muon tuning and post-warmup STE-based QAT to concentrate compute per step and keep int8 gap tiny.",
+      "updatedAt": "2026-03-22T05:18:02Z",
+      "headSha": "1a3c9e4a67b66c56a525b551308fac895f0428ae",
+      "generatedAt": "2026-03-22T05:37:11.692Z",
+      "summary": "Wider-shallower 4×768 GQA transformer trained with Muon optimizer and QAT to shrink int8 gap while tuning batch size/wallclock on 1×H100.",
       "tags": [
         "architecture",
-        "optimizer",
         "quantization",
+        "optimizer",
         "non-record"
       ],
       "flags": {
@@ -5583,14 +5633,14 @@
       "prNumber": 69,
       "title": "SubSixteen v2: Int6 QAT + MLP 3x + SWA + Sliding Window (val_bpb 1.1708)",
       "status": "open",
-      "updatedAt": "2026-03-20T03:45:36Z",
-      "headSha": "42a920059b2bc0648b965666537df3c2c0455197",
-      "generatedAt": "2026-03-20T03:51:29.526Z",
-      "summary": "Int6 QAT on a 9-layer GPT with 3x MLP, Muon/AdamW mix, SWA warmdown, sliding-window eval, and zstd-22 export to squeeze under 16MB.",
+      "updatedAt": "2026-03-22T05:24:38Z",
+      "headSha": "2462e105a97a2be9e5a04111e0ce7d1d6228d001",
+      "generatedAt": "2026-03-22T05:37:17.000Z",
+      "summary": "SubSixteen v2 trains a 9-layer GPT with int6 QAT, oversized MLP, Muon+AdamW mix, SWA, sliding-window eval, and zstd-22 compression.",
       "tags": [
+        "architecture",
         "quantization",
         "optimizer",
-        "architecture",
         "evaluation"
       ],
       "flags": {

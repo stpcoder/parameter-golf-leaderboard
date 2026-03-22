@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T00:35:50.239Z",
+  "generatedAt": "2026-03-22T05:37:07.106Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 379,
-    "title": "Record: 11L GPTQ-lite + Self-Distillation TTT (val_bpb=1.1260)",
+    "title": "Record: 11L GPTQ-lite + Int6 MLP3x (val_bpb=1.1257)",
     "state": "open",
-    "updatedAt": "2026-03-22T00:08:47Z",
-    "headSha": "bb6b90bd01db2af5308629805cd057906738e10a",
+    "updatedAt": "2026-03-22T05:11:12Z",
+    "headSha": "bcd61a16b42fb4f2e436605e8a6851d108ea4198",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/379",
     "authorLogin": "dannywillowliu-uchi"
   },
@@ -19,23 +19,24 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds GPTQ-lite per-layer clip search plus KL-based self-distillation TTT adaptation atop PR#374's 11L stack to mitigate int6 quantization loss.",
+    "summary": "Adds GPTQ-lite per-layer clip-percentile search atop the 11L XSA4 stack so int6 quantization picks min-error clipping without extra training.",
     "tags": [
-      "val-only",
       "quantization",
-      "evaluation"
+      "architecture",
+      "training-schedule"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "KL-based self-distillation TTT runs post-training SGD on validation shards with a frozen teacher to adapt to val data.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Per-layer clip percentile search for GPTQ-lite int6 quantization",
-      "Self-distillation TTT using frozen-teacher KL loss on validation data"
+      "Per-layer clip percentile search during int6 quantization",
+      "Late QAT schedule with STE int6",
+      "Tight SWA checkpoints before quantization"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

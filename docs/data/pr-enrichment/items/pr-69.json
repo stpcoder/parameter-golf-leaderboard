@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-03-20T03:51:29.526Z",
+  "generatedAt": "2026-03-22T05:37:17.000Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 69,
     "title": "SubSixteen v2: Int6 QAT + MLP 3x + SWA + Sliding Window (val_bpb 1.1708)",
     "state": "open",
-    "updatedAt": "2026-03-20T03:45:36Z",
-    "headSha": "42a920059b2bc0648b965666537df3c2c0455197",
+    "updatedAt": "2026-03-22T05:24:38Z",
+    "headSha": "2462e105a97a2be9e5a04111e0ce7d1d6228d001",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/69",
     "authorLogin": "TevBenji"
   },
   "inputs": {
-    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-19_SubSixteen/README.md"
+      "records/track_10min_16mb/2026-03-19_SubSixteen/README.md",
+      "records/track_10min_16mb/2026-03-21_v38_TightSWA_RetroCache/README.md"
     ],
-    "submissionCount": 1
+    "submissionCount": 2
   },
   "output": {
-    "summary": "Int6 QAT on a 9-layer GPT with 3x MLP, Muon/AdamW mix, SWA warmdown, sliding-window eval, and zstd-22 export to squeeze under 16MB.",
+    "summary": "SubSixteen v2 trains a 9-layer GPT with int6 QAT, oversized MLP, Muon+AdamW mix, SWA, sliding-window eval, and zstd-22 compression.",
     "tags": [
+      "architecture",
       "quantization",
       "optimizer",
-      "architecture",
       "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Not val-only training.",
     "techniques": [
-      "STE-based int6 QAT to learn post-quant weights",
-      "Expanded MLP with Muon+AdamW training and SWA averaging",
-      "Sliding-window scoring plus zstd-22 compression for export"
+      "Int6 STE QAT with CastedLinear fake quantization",
+      "Muon+AdamW mix with wallclock-aware warmdown and SWA averaging",
+      "Sliding-window eval plus zstd-22 compressed artifact"
     ]
   },
   "compatibility": {

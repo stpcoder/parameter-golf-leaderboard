@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T05:36:51.902Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 401,
+    "title": "Having a blast — PR374 base + EMA/QAT stack beats 1.1246",
+    "state": "open",
+    "updatedAt": "2026-03-22T05:15:58Z",
+    "headSha": "a9e5d065a59c083a553072423498a90c4fdeb4d6",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/401",
+    "authorLogin": "newjordan"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_SpongeBath_TTT8_Stride32/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Stacked EMA decay, late-threshold QAT, and warmdown onto Tight SWA's 11L/4KV/3x2048 transformer to narrow the quant gap on PR374.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "EMA decay layered on Tight SWA",
+      "Late-threshold QAT (0.15) with warmdown",
+      "Stride-64 sliding window eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

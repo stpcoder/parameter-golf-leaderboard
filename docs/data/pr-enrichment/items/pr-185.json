@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-03-20T12:23:35.226Z",
+  "generatedAt": "2026-03-22T05:37:11.692Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 185,
     "title": "Non-record: Wider-shallower 4x768 + QAT (1xH100, 1.3043 bpb)",
     "state": "open",
-    "updatedAt": "2026-03-20T12:04:17Z",
-    "headSha": "bdaa22a14366916994fcc4c49b0e1302e12c9d8b",
+    "updatedAt": "2026-03-22T05:18:02Z",
+    "headSha": "1a3c9e4a67b66c56a525b551308fac895f0428ae",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/185",
     "authorLogin": "dttdrv"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_non_record_16mb/2026-03-20_SP1024_4x768_KV4_QAT_1xH100/README.md"
+      "records/track_non_record_16mb/2026-03-22_SP1024_11x512_Int6_CoreStack_1xH100/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Wider 4-layer 768-dim GQA model trained with aggressive Muon tuning and post-warmup STE-based QAT to concentrate compute per step and keep int8 gap tiny.",
+    "summary": "Wider-shallower 4×768 GQA transformer trained with Muon optimizer and QAT to shrink int8 gap while tuning batch size/wallclock on 1×H100.",
     "tags": [
       "architecture",
-      "optimizer",
       "quantization",
+      "optimizer",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "wider-shallower 4x768 GQA transformer",
-      "Muon lr=0.06 with clip 0.5 and beta2=0.99",
-      "STE-based QAT after 0.5% warmup"
+      "GQA-enhanced 4-layer stack with higher QK gain",
+      "Muon lr=0.06, grad clip 0.5, beta2=0.99 for single-GPU balance",
+      "Straight-through estimator QAT after warmup to align int8/FP32 losses"
     ]
   },
   "compatibility": {

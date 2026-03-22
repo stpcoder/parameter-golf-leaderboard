@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T05:36:41.917Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 404,
+    "title": "Non-record: 10L MLP3x int6 baseline (MLX smoke test)",
+    "state": "open",
+    "updatedAt": "2026-03-22T05:31:27Z",
+    "headSha": "84b47a2861aef4e66b0248a86ef4190724c0405a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/404",
+    "authorLogin": "yashward001"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_10L_MLP3x_Int6_Baseline/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Quick MLX smoke test runs a 10-layer, 512-dim MLP with 3x expansion and int6 compression to validate the pipeline end-to-end.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "compression",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "3x-expansion MLP with ReLU² activations",
+      "int6 quantization paired with zlib-9 compression",
+      "200-iteration Apple Silicon smoke test"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
