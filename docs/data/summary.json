@@ -1,19 +1,95 @@
 {
-  "generatedAt": "2026-03-22T06:06:44.465Z",
+  "generatedAt": "2026-03-22T06:26:11.938Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 310,
-    "official": 0,
-    "openPr": 273,
-    "mergedPr": 0,
+    "submissions": 312,
+    "official": 1,
+    "openPr": 258,
+    "mergedPr": 16,
     "closedPr": 37,
-    "prBacked": 310,
+    "prBacked": 312,
     "readmeListed": 15,
     "collectorErrors": 0
   },
   "best": {
-    "officialMainTrack": null,
+    "officialMainTrack": {
+      "id": "record-records-track_10min_16mb-2026-03-17_NaiveBaseline",
+      "source": "pull_request",
+      "status": "official",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-17_NaiveBaseline",
+        "folderPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline",
+        "submissionPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/train_gpt.py"
+      },
+      "submission": {
+        "author": "Baseline",
+        "githubId": "openai",
+        "name": "Naive Baseline",
+        "blurb": "SP-1024 9x512 KV4 run on pgut1 using the published Hugging Face fineweb10B_sp1024 export and the current train_gpt.py; score is the default final int8+zlib roundtrip metric under the 16,000,000-byte cap.",
+        "date": "2026-03-18T14:56:29Z"
+      },
+      "metrics": {
+        "valBpb": 1.2243657,
+        "valLoss": 2.07269931,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15863489,
+        "bytesCode": 47642,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 312,
+        "title": "Record: Int6 + Canon ACD (K=3) + Muon WD 0.04 + SWA + Sliding Eval (val_bpb=1.1668)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/312",
+        "authorLogin": "chanwoo-park-official",
+        "authorName": null,
+        "createdAt": "2026-03-21T05:04:35Z",
+        "updatedAt": "2026-03-22T04:47:59Z",
+        "headSha": "ba8b7c8a3d2863fde80edfc83c16008fffe1a21c",
+        "headRepo": "chanwoo-park-official/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/main/records/track_10min_16mb/2026-03-17_NaiveBaseline",
+        "pr": "https://github.com/openai/parameter-golf/pull/312",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": true,
+        "hasPullRequest": true,
+        "listedInReadme": true
+      }
+    },
     "openPrMainTrack": {
       "id": "record-records-track_10min_16mb-2026-03-19_PaidPrefix_8xH100",
       "source": "pull_request",
