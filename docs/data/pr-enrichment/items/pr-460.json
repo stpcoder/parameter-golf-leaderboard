@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T21:42:29.182Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 460,
+    "title": "feat: Add non-record dense 2048 sliding-window ablation submission",
+    "state": "open",
+    "updatedAt": "2026-03-22T21:22:34Z",
+    "headSha": "569c05daa1fec571e425e51cae125c7da64d8039",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/460",
+    "authorLogin": "abhishekrajdhar"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_Dense2048_Sliding64_Ablations/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Dense 10-layer transformer with 2048-token context, stride-64 sliding evaluation, tied embeddings, Muon WD and int8+zlib export, plus ablations documenting regressions.",
+    "tags": [
+      "sliding-window-eval",
+      "architecture",
+      "evaluation",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "dense 10-layer transformer with long context",
+      "stride-64 sliding-window evaluation",
+      "structured ablation loop highlighting regressions"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

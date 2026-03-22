@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T20:12:01.850Z",
+  "generatedAt": "2026-03-22T21:42:36.466Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 456,
     "title": "Non-record submission: Depth Recurrence + Legal Score-First TTT (10L, 1.1532 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-22T20:02:06Z",
-    "headSha": "9da659ec652e5e5b0b4f9a4e6dd30b82dc6a342f",
+    "updatedAt": "2026-03-22T21:22:43Z",
+    "headSha": "ec44c240e36753d77ad28c4b45f9d5b149521f76",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/456",
     "authorLogin": "Christopher-Lee-McClendon"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer GPT with depth-recurrence-ready blocks, BigramHash embeddings, U-Net skips, mixed int5/int6 quantization, and competition-legal score-first TTT adaptation.",
+    "summary": "Chunked score-first sliding-window TTT updates all weights for persistent adaptation before eval on a mixed int5/int6 quantized 10-layer GPT.",
     "tags": [
       "val-only",
-      "architecture",
       "quantization",
-      "evaluation"
+      "sliding-window-eval",
+      "non-record"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Competition-legal score-first TTT re-trains on validation chunks after scoring, so additional validation-shard training occurs during evaluation.",
+    "valOnlyReasoning": "Validation shards are used for competition-legal score-first test-time training chunks that update the full model before scoring.",
     "techniques": [
-      "Depth recurrence-ready GPT with U-Net skips and XSA layers",
-      "BigramHash embeddings with SmearGate gating for compact context",
-      "Mixed int5/int6 quantization with SWA and score-first legal TTT"
+      "Score-first chunked TTT over full model",
+      "Persistent adaptation across validation chunks",
+      "Mixed int5/int6 quantization"
     ]
   },
   "compatibility": {
