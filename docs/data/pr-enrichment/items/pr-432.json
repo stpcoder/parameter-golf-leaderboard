@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T16:11:01.808Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 432,
+    "title": "Add non-record 1x5090 autoresearch submission with two-campaign analysis",
+    "state": "open",
+    "updatedAt": "2026-03-22T15:50:45Z",
+    "headSha": "34e14808c1b8168d4056e6462c46af7a0569b9ad",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/432",
+    "authorLogin": "jadechip"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-22_Autoresearch_LowRankQ_FinalTailQ_TiedEmbFloat_1x5090/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Git-native autoresearch on one 5090 rebalances recurrence, widens unique tail MLPs, and levers low-rank Q plus precise quant spends.",
+    "tags": [
+      "architecture",
+      "attention",
+      "quantization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Git-native autoresearch loop using commit history as search memory",
+      "Low-rank q_proj with final-tail full-rank Q and fp16 tied embeddings",
+      "Targeted precision spends via attention-QAT toggles and warmup"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

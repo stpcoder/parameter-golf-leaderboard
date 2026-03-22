@@ -1,8 +1,80 @@
 {
-  "generatedAt": "2026-03-22T15:40:57.202Z",
+  "generatedAt": "2026-03-22T16:11:35.000Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 434,
+      "title": "10L XSA + LeakyReLU² + Partial RoPE (val_bpb=1.1370)",
+      "status": "open",
+      "updatedAt": "2026-03-22T16:09:20Z",
+      "headSha": "46a2b51228803bd0a0bb2719c5618b844b4691bc",
+      "generatedAt": "2026-03-22T16:10:45.664Z",
+      "summary": "Baseline GPT adds XSA on last 4 layers, leaky_relu², partial RoPE on 25% dims, and higher LR before int5/int6+zstd quantization.",
+      "tags": [
+        "attention",
+        "positional-encoding",
+        "optimizer",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-434.json"
+    },
+    {
+      "prNumber": 433,
+      "title": "EBLS Learned Sharing (10min/16MB)",
+      "status": "open",
+      "updatedAt": "2026-03-22T15:59:58Z",
+      "headSha": "1c4a491273b0256562f82b7bcd72615fac8cb723",
+      "generatedAt": "2026-03-22T16:10:53.492Z",
+      "summary": "EBLS reuses 3 transformer blocks across 9 virtual layers with per-layer LoRA shrinkage that lets data pick MLP sharing while allowing sparse attention deviations.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "optimizer",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-433.json"
+    },
+    {
+      "prNumber": 432,
+      "title": "Add non-record 1x5090 autoresearch submission with two-campaign analysis",
+      "status": "open",
+      "updatedAt": "2026-03-22T15:50:45Z",
+      "headSha": "34e14808c1b8168d4056e6462c46af7a0569b9ad",
+      "generatedAt": "2026-03-22T16:11:01.808Z",
+      "summary": "Git-native autoresearch on one 5090 rebalances recurrence, widens unique tail MLPs, and levers low-rank Q plus precise quant spends.",
+      "tags": [
+        "architecture",
+        "attention",
+        "quantization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-432.json"
+    },
     {
       "prNumber": 431,
       "title": "Add non-record 1xH100 auto precision budget experiment",
@@ -124,10 +196,10 @@
       "prNumber": 425,
       "title": "Codex/runpod 2026 03 20 checkpoint",
       "status": "open",
-      "updatedAt": "2026-03-22T14:52:17Z",
-      "headSha": "0bb6be5e3804a6f31c0a485c2de76c14531a194a",
-      "generatedAt": "2026-03-22T15:10:09.378Z",
-      "summary": "1xH100 ablations paired ATTN_TWICE_ALPHA=0.05 with split eval lengths to balance roundtrip versus TTT scoring in a 10-minute cap.",
+      "updatedAt": "2026-03-22T16:02:39Z",
+      "headSha": "b3a7429792759ec1ea35a5a16e58fbcbde6f954f",
+      "generatedAt": "2026-03-22T16:11:08.732Z",
+      "summary": "Short H100 ablation splits eval seq lengths and adds ATTN_TWICE_ALPHA=0.05 with LoRA TTT to balance roundtrip vs TTT scoring.",
       "tags": [
         "attention",
         "evaluation",
@@ -171,14 +243,14 @@
       "prNumber": 422,
       "title": "Record: 11L GradQuant + EMA + Sliding Eval (val_bpb=1.1416)",
       "status": "open",
-      "updatedAt": "2026-03-22T13:28:06Z",
-      "headSha": "93389ce54e7127e46545ec1cfeee157bb877d074",
-      "generatedAt": "2026-03-22T13:39:59.732Z",
-      "summary": "11-layer GPT with SmearGate+XSA residuals, NTK-aware RoPE, Muon+EMA training, and gradient-guided int5-7 quantization plus sliding eval stride 64.",
+      "updatedAt": "2026-03-22T16:02:02Z",
+      "headSha": "acddb9d59de4cf809952d43debadfcec44a6f426",
+      "generatedAt": "2026-03-22T16:11:13.180Z",
+      "summary": "Muon-trained 11L model uses EMA, SmearGate/NTK-aware RoPE, and gradient-guided per-tensor int5–7 quantization with sliding-window eval for compact inference.",
       "tags": [
-        "architecture",
         "quantization",
         "optimizer",
+        "attention",
         "evaluation"
       ],
       "flags": {
@@ -520,14 +592,15 @@
     },
     {
       "prNumber": 399,
-      "title": "Record: Parallel Muon + Parameter Banking + Polar Express — 82.14ms/step (3.1% faster than PR #315)",
+      "title": "Record: Parallel Muon + Parameter Banking — 81.87ms/step, val_bpb 1.1247 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-22T15:24:48Z",
-      "headSha": "4db00576f082f77a8e36104e354952d8702c7a8e",
-      "generatedAt": "2026-03-22T15:40:43.894Z",
-      "summary": "Optimizer overhaul swaps per-layer weights for contiguous banks, uses Polar Express orthogonalization, and coordinates Parallel Muon comm+PE overlap.",
+      "updatedAt": "2026-03-22T15:55:18Z",
+      "headSha": "d5340951f214b08d53cf8fa582e04dc43c2548cb",
+      "generatedAt": "2026-03-22T16:11:19.871Z",
+      "summary": "Banked weights plus Parallel Muon ditch DDP, batching Newton-Schulz across four banks with manual async communication for faster optimizer steps.",
       "tags": [
         "optimizer",
+        "muon",
         "architecture"
       ],
       "flags": {
@@ -896,10 +969,10 @@
       "prNumber": 377,
       "title": "Hybrid INL + Sort-Split MoE (1.41/1.46 bpb TTT, 15.5MB, 1xH100)",
       "status": "open",
-      "updatedAt": "2026-03-22T15:33:16Z",
-      "headSha": "0cafe6ffa689021799d3edae7cf40afe3d91708c",
-      "generatedAt": "2026-03-22T15:40:51.680Z",
-      "summary": "Hybrid GQA+INL BetaMu layers with Sort-and-Split MoE routing and ALiBi slopes pairs representation building with fast error-driven inference.",
+      "updatedAt": "2026-03-22T16:06:02Z",
+      "headSha": "283b595ca6ec176b77db7ccbe015ab169c08324b",
+      "generatedAt": "2026-03-22T16:11:26.158Z",
+      "summary": "Hybrid GQA+RoPE attention early, later INL BetaMu layers, and Sort-and-Split MoE routing with ALiBi slopes.",
       "tags": [
         "architecture",
         "attention",
@@ -919,15 +992,15 @@
       "prNumber": 376,
       "title": "Record: 11L Next-Gen Stack + Custom Kernels, val_bpb=1.1399",
       "status": "open",
-      "updatedAt": "2026-03-22T15:34:52Z",
-      "headSha": "f7889125c716c7fb4190791a2ab07c2fe7d01a2b",
-      "generatedAt": "2026-03-22T15:40:57.146Z",
-      "summary": "11-layer 512d transformer stacks XSA+GQA, NTK-RoPE, SmearGate/BigramHash, int5+zstd compression, Muon+SWA, and custom Triton kernels.",
+      "updatedAt": "2026-03-22T15:48:46Z",
+      "headSha": "1e7839da8d3894551e0adcc5e6c0bed157776f80",
+      "generatedAt": "2026-03-22T16:11:30.903Z",
+      "summary": "11-layer 512d transformer couples GQA+NTK-RoPE attention, ReLU² MLP3x, SmearGate/BigramHash, Muon+SWA, and int6+zstd compression with custom kernels.",
       "tags": [
         "architecture",
-        "attention",
+        "optimizer",
         "quantization",
-        "optimizer"
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2184,12 +2257,12 @@
     },
     {
       "prNumber": 305,
-      "title": "12L Group-INT4 MLP + INT6 Attn + BigramHash(10240) — val_bpb 1.1449 pre-quant",
+      "title": "12L Full-INT4 (MLP + Attn) + BigramHash(4096) — val_bpb 1.1672",
       "status": "open",
-      "updatedAt": "2026-03-21T16:28:58Z",
-      "headSha": "d56c73c2cee3845e7fe5ea724af0efe45ee0bee8",
-      "generatedAt": "2026-03-21T16:34:11.179Z",
-      "summary": "Group INT4 nibble packing for per-64-column MLP weights with fp16 scales halves storage, freeing room for a 12-layer INT6-attention transformer plus BigramHash features.",
+      "updatedAt": "2026-03-22T15:51:44Z",
+      "headSha": "94bb5ffd1e2e7a026fd6fb526d098dba7c4c9510",
+      "generatedAt": "2026-03-22T16:11:34.956Z",
+      "summary": "Group INT4 nibble-packed quant across MLP and attention with per-group fp16 scales, pruning, and zstd to fit a 12-layer Transformer under 16 MB.",
       "tags": [
         "quantization",
         "architecture",

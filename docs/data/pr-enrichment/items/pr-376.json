@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T15:40:57.146Z",
+  "generatedAt": "2026-03-22T16:11:30.903Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 376,
     "title": "Record: 11L Next-Gen Stack + Custom Kernels, val_bpb=1.1399",
     "state": "open",
-    "updatedAt": "2026-03-22T15:34:52Z",
-    "headSha": "f7889125c716c7fb4190791a2ab07c2fe7d01a2b",
+    "updatedAt": "2026-03-22T15:48:46Z",
+    "headSha": "1e7839da8d3894551e0adcc5e6c0bed157776f80",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/376",
     "authorLogin": "anthony-maio"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer 512d transformer stacks XSA+GQA, NTK-RoPE, SmearGate/BigramHash, int5+zstd compression, Muon+SWA, and custom Triton kernels.",
+    "summary": "11-layer 512d transformer couples GQA+NTK-RoPE attention, ReLU² MLP3x, SmearGate/BigramHash, Muon+SWA, and int6+zstd compression with custom kernels.",
     "tags": [
       "architecture",
-      "attention",
+      "optimizer",
       "quantization",
-      "optimizer"
+      "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GQA+XSA transformer with NTK-RoPE adaptation",
-      "Muon optimizer with tight SWA warmdown",
-      "int5 quant + zstd compression powered by fused Triton kernels"
+      "GQA + NTK-RoPE attention with ReLU² MLP3x",
+      "SmearGate and BigramHash token feature augmentation",
+      "Muon optimizer with tight SWA and custom fused kernels"
     ]
   },
   "compatibility": {

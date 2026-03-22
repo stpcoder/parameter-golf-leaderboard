@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T16:10:53.492Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 433,
+    "title": "EBLS Learned Sharing (10min/16MB)",
+    "state": "open",
+    "updatedAt": "2026-03-22T15:59:58Z",
+    "headSha": "1c4a491273b0256562f82b7bcd72615fac8cb723",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/433",
+    "authorLogin": "Robby955"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_EBLS_LearnedSharing/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "EBLS reuses 3 transformer blocks across 9 virtual layers with per-layer LoRA shrinkage that lets data pick MLP sharing while allowing sparse attention deviations.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "optimizer",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Empirical Bayes shrinkage gating low-rank LoRA deviations",
+      "Shared 3-block backbone replayed for 9 virtual layers",
+      "Int6 STE quantization with Muon+Adam and zstd-22 compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

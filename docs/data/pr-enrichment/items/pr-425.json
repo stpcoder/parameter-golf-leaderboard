@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T15:10:09.378Z",
+  "generatedAt": "2026-03-22T16:11:08.732Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 425,
     "title": "Codex/runpod 2026 03 20 checkpoint",
     "state": "open",
-    "updatedAt": "2026-03-22T14:52:17Z",
-    "headSha": "0bb6be5e3804a6f31c0a485c2de76c14531a194a",
+    "updatedAt": "2026-03-22T16:02:39Z",
+    "headSha": "b3a7429792759ec1ea35a5a16e58fbcbde6f954f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/425",
     "authorLogin": "DeividasMat"
   },
@@ -20,7 +20,7 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "1xH100 ablations paired ATTN_TWICE_ALPHA=0.05 with split eval lengths to balance roundtrip versus TTT scoring in a 10-minute cap.",
+    "summary": "Short H100 ablation splits eval seq lengths and adds ATTN_TWICE_ALPHA=0.05 with LoRA TTT to balance roundtrip vs TTT scoring.",
     "tags": [
       "attention",
       "evaluation",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Twice-attention scoring (ATTN_TWICE_ALPHA=0.05)",
-      "Split EVAL_SEQ_LEN=2048 and TTT_EVAL_SEQ_LEN=1024",
-      "Single-shard 600s ablations on 1xH100"
+      "split eval_seq_len for roundtrip vs TTT balance",
+      "ATTN_TWICE_ALPHA=0.05 with LoRA TTT focus",
+      "600s 1×H100 ablation track"
     ]
   },
   "compatibility": {
