@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-22T06:50:43.320Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 410,
+    "title": "Record: 11L XSA4 + Tight SWA + Two-Phase TTT (val_bpb=1.1258)",
+    "state": "open",
+    "updatedAt": "2026-03-22T06:49:25Z",
+    "headSha": "573f73542573f724359821761cac5e0c8c403ff3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/410",
+    "authorLogin": "fbedev"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_TwoPhase_TTT_NormRepair/README.md",
+      "records/track_10min_16mb/2026-03-21_QAT_BigramHash12K_Stride32/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "11L XSA4 base uses late QAT plus two-phase test-time training with norm recalibration then selective block adaptation after tight SWA.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "two-phase TTT: norm-only recalibration followed by selective freeze block adaptation",
+      "tight SWA plus late QAT with int6 quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

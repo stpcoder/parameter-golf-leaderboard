@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T06:37:14.252Z",
+  "generatedAt": "2026-03-22T06:50:52.798Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -19,16 +19,15 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Content-dependent SmearGate modulates the blend between adjacent embeddings via their dot-product similarity so similar tokens merge more tightly.",
+    "summary": "Content-dependent SmearGate modulates the blend ratio based on adjacent-token similarity so similar embeddings mix more while dissimilar ones stay apart.",
     "tags": [
       "architecture",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Normal training with standard validation evaluation (no val-only training).",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Dot-product-scaled gating for adjacent embeddings",
-      "Sigmoid blend weight per position driven by similarity"
+      "gate modulation via dot-product similarity between adjacent tokens"
     ]
   },
   "compatibility": {

@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-22T06:38:28.757Z",
+  "generatedAt": "2026-03-22T06:50:52.840Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 410,
+      "title": "Record: 11L XSA4 + Tight SWA + Two-Phase TTT (val_bpb=1.1258)",
+      "status": "open",
+      "updatedAt": "2026-03-22T06:49:25Z",
+      "headSha": "573f73542573f724359821761cac5e0c8c403ff3",
+      "generatedAt": "2026-03-22T06:50:43.320Z",
+      "summary": "11L XSA4 base uses late QAT plus two-phase test-time training with norm recalibration then selective block adaptation after tight SWA.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-410.json"
+    },
     {
       "prNumber": 408,
       "title": "First submission",
@@ -147,14 +170,13 @@
       "prNumber": 401,
       "title": "Record: 11L + EMA + Tight SWA + QAT0.15 + VE128 + Partial RoPE + LN Scale (val_bpb: 1.1243)",
       "status": "open",
-      "updatedAt": "2026-03-22T06:36:15Z",
-      "headSha": "7351d10e985ca0380691aeb22c6a3c8a5423a02b",
-      "generatedAt": "2026-03-22T06:37:05.139Z",
-      "summary": "Stacks EMA with tight SWA checkpoints, extends warmdown, and triggers Late QAT earlier atop the 11-layer GQA/Partial RoPE transformer.",
+      "updatedAt": "2026-03-22T06:48:48Z",
+      "headSha": "a31c39dc80c585e3f7bc12feba5bf44550c11cef",
+      "generatedAt": "2026-03-22T06:50:49.242Z",
+      "summary": "Stack EMA + tight SWA, extend warmdown, and start earlier int6 QAT on an 11-layer 512-dim GQA model with partial RoPE and shared VE.",
       "tags": [
-        "training-schedule",
         "quantization",
-        "optimizer",
+        "training-schedule",
         "architecture"
       ],
       "flags": {
@@ -1037,30 +1059,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-349.json"
-    },
-    {
-      "prNumber": 348,
-      "title": "Submission/qat bigram12k stride32",
-      "status": "open",
-      "updatedAt": "2026-03-22T03:29:55Z",
-      "headSha": "e83a2778a4b5ec947f213ea8ad59f0754f70b8db",
-      "generatedAt": "2026-03-22T03:36:41.314Z",
-      "summary": "QAT with STE fake-quant applied int5 to MLP and int6 to attention, paired with 12288-bucket BigramHash and stride-32 eval windows plus pruning/SWA tweaks.",
-      "tags": [
-        "quantization",
-        "tokenization",
-        "training-schedule",
-        "mixed-precision"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-348.json"
     },
     {
       "prNumber": 347,
@@ -2211,8 +2209,8 @@
       "status": "open",
       "updatedAt": "2026-03-22T06:37:02Z",
       "headSha": "e96ac367498ad4224ffe7e09f1f2556c0685782a",
-      "generatedAt": "2026-03-22T06:37:14.252Z",
-      "summary": "Content-dependent SmearGate modulates the blend between adjacent embeddings via their dot-product similarity so similar tokens merge more tightly.",
+      "generatedAt": "2026-03-22T06:50:52.798Z",
+      "summary": "Content-dependent SmearGate modulates the blend ratio based on adjacent-token similarity so similar embeddings mix more while dissimilar ones stay apart.",
       "tags": [
         "architecture",
         "non-record"
