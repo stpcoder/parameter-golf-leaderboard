@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T15:34:04.027Z",
+  "generatedAt": "2026-03-22T10:08:44.227Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
     "title": "LongContext 4096 + Full SOTA Stack & QAT Int4 → 16 Layers",
     "state": "open",
-    "updatedAt": "2026-03-21T15:22:07Z",
-    "headSha": "cc6a63eeb02f9b8fd6c54fbd601af7d54947f7ee",
+    "updatedAt": "2026-03-22T08:56:24Z",
+    "headSha": "538bfa611e4e17107d1c3af73ac246a80f06d7f2",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
@@ -20,18 +20,18 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Applies long-context training with the full SOTA stack and int4 QAT to fit 16 transformer layers within the 16MB track budget.",
+    "summary": "Uses 4k-token training with full SOTA stack and int4 QAT nibble-packed 16-layer transformer to boost depth/context within 16MB.",
     "tags": [
       "architecture",
       "quantization",
-      "training-schedule"
+      "sliding-window-eval"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Seq_len=4096 training + stride-256 sliding-window eval with NTK-aware RoPE",
-      "Maintain FP16 tied embeddings, Muon WD/momentum tweaks, U-Net skips, and Overtone init",
-      "Int4 QAT with STE and nibble packing to export 16 layers in 16MB"
+      "4096-token training + stride-256 sliding eval with full SOTA stack",
+      "Int4 QAT nibble packing to host 16 layers within 16MB",
+      "Re-tuned Muon hyperparams for long-context and QAT stability"
     ]
   },
   "compatibility": {

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T06:07:17.506Z",
+  "generatedAt": "2026-03-22T10:08:54.634Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 64,
-    "title": "Record: DominationV3 + TTT (mean val_bpb=1.1336, 3 seeds)",
+    "title": "Record: DominationV3 + TTT25 (mean val_bpb=1.1260, 3 seeds)",
     "state": "open",
-    "updatedAt": "2026-03-22T05:48:59Z",
-    "headSha": "8fd0500b82f48c536d2be3f38af6a98fc3e6726d",
+    "updatedAt": "2026-03-22T08:47:53Z",
+    "headSha": "044f75b3421624a3d8c6c70864c0ace6670e0ec5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/64",
     "authorLogin": "yesbhautik"
   },
@@ -20,19 +20,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "11-layer GPT uses XSA on the top layers, EMA, int6 quantization, and per-dim SmearGate with eval-time SGD TTT on graded tokens.",
+    "summary": "11-layer GQA stack drops XSA, uses Partial RoPE, LN Scale, EMA, int6 quantization, and 25-epoch SGD TTT on graded tokens.",
     "tags": [
       "val-only",
-      "attention",
+      "training-schedule",
       "quantization",
-      "evaluation"
+      "sliding-window-eval"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "TTT runs SGD at eval time exclusively on already-graded validation tokens, so the additional training uses only validation data.",
+    "valOnlyReasoning": "Test-time training runs SGD for 25 epochs on already-graded validation tokens.",
     "techniques": [
-      "XSA on last layers with EMA averaging",
-      "Int6 per-row quantization + BigramHash context",
-      "Eval-time SGD TTT on graded tokens"
+      "Partial RoPE + LN Scale + full-model EMA in 11-layer GQA",
+      "Int6 per-row quantization (mlp/attn/tok_emb) with zstd-22",
+      "25-epoch aggressive SGD TTT on graded tokens with XSA disabled"
     ]
   },
   "compatibility": {

@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-22T08:37:50.803Z",
+  "generatedAt": "2026-03-22T10:08:54.642Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 415,
+      "title": "Record: 11L XSA4 + Tight SWA + FA3 + Two-Phase TTT (val_bpb=1.1216)",
+      "status": "open",
+      "updatedAt": "2026-03-22T09:12:05Z",
+      "headSha": "358a426ed9bf621a6814ece8d4901e4127633af4",
+      "generatedAt": "2026-03-22T10:08:27.190Z",
+      "summary": "FA3 Hopper base with int6-quantized 11L+SWA model, then two-phase TTT (norm-only recalibration followed by selective last-block adaptation).",
+      "tags": [
+        "val-only",
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-415.json"
+    },
     {
       "prNumber": 414,
       "title": "Record: 11L EMA + GPTQ-lite + warmdown3500 + QAT@0.15 (val_bpb=1.1233)",
@@ -49,29 +73,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-413.json"
-    },
-    {
-      "prNumber": 410,
-      "title": "Record: 11L XSA4 + Tight SWA + Two-Phase TTT (val_bpb=1.1258)",
-      "status": "open",
-      "updatedAt": "2026-03-22T06:49:25Z",
-      "headSha": "573f73542573f724359821761cac5e0c8c403ff3",
-      "generatedAt": "2026-03-22T06:50:43.320Z",
-      "summary": "11L XSA4 base uses late QAT plus two-phase test-time training with norm recalibration then selective block adaptation after tight SWA.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-410.json"
     },
     {
       "prNumber": 408,
@@ -637,15 +638,15 @@
     },
     {
       "prNumber": 376,
-      "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
+      "title": "Record: 11L Next-Gen Stack + Custom Kernels, val_bpb=1.1399",
       "status": "open",
-      "updatedAt": "2026-03-22T07:07:57Z",
-      "headSha": "6102464573ac3504b9c67a1b1601abb89cdfd6d0",
-      "generatedAt": "2026-03-22T07:37:37.691Z",
-      "summary": "9-layer GQA transformer uses SmearGate+BigramHash, Muon optimizer, SWA, NTK-RoPE, and int6+zstd-22 with custom fused Triton kernels for faster training.",
+      "updatedAt": "2026-03-22T09:34:30Z",
+      "headSha": "e0cdc67f25483fda5479a0f5c1a6af17a47add3a",
+      "generatedAt": "2026-03-22T10:08:34.973Z",
+      "summary": "11L GQA transformer using NTK-RoPE, SmearGate+BigramHash, int5+zstd compression, and Muon optimizer with SWA on sliding-window eval.",
       "tags": [
         "architecture",
-        "optimizer",
+        "attention",
         "quantization",
         "compression"
       ],
@@ -1112,14 +1113,14 @@
       "prNumber": 347,
       "title": "LongContext 4096 + Full SOTA Stack & QAT Int4 → 16 Layers",
       "status": "open",
-      "updatedAt": "2026-03-21T15:22:07Z",
-      "headSha": "cc6a63eeb02f9b8fd6c54fbd601af7d54947f7ee",
-      "generatedAt": "2026-03-21T15:34:04.027Z",
-      "summary": "Applies long-context training with the full SOTA stack and int4 QAT to fit 16 transformer layers within the 16MB track budget.",
+      "updatedAt": "2026-03-22T08:56:24Z",
+      "headSha": "538bfa611e4e17107d1c3af73ac246a80f06d7f2",
+      "generatedAt": "2026-03-22T10:08:44.227Z",
+      "summary": "Uses 4k-token training with full SOTA stack and int4 QAT nibble-packed 16-layer transformer to boost depth/context within 16MB.",
       "tags": [
         "architecture",
         "quantization",
-        "training-schedule"
+        "sliding-window-eval"
       ],
       "flags": {
         "usesValOnly": false,
@@ -5934,17 +5935,17 @@
     },
     {
       "prNumber": 64,
-      "title": "Record: DominationV3 + TTT (mean val_bpb=1.1336, 3 seeds)",
+      "title": "Record: DominationV3 + TTT25 (mean val_bpb=1.1260, 3 seeds)",
       "status": "open",
-      "updatedAt": "2026-03-22T05:48:59Z",
-      "headSha": "8fd0500b82f48c536d2be3f38af6a98fc3e6726d",
-      "generatedAt": "2026-03-22T06:07:17.506Z",
-      "summary": "11-layer GPT uses XSA on the top layers, EMA, int6 quantization, and per-dim SmearGate with eval-time SGD TTT on graded tokens.",
+      "updatedAt": "2026-03-22T08:47:53Z",
+      "headSha": "044f75b3421624a3d8c6c70864c0ace6670e0ec5",
+      "generatedAt": "2026-03-22T10:08:54.634Z",
+      "summary": "11-layer GQA stack drops XSA, uses Partial RoPE, LN Scale, EMA, int6 quantization, and 25-epoch SGD TTT on graded tokens.",
       "tags": [
         "val-only",
-        "attention",
+        "training-schedule",
         "quantization",
-        "evaluation"
+        "sliding-window-eval"
       ],
       "flags": {
         "usesValOnly": true,
