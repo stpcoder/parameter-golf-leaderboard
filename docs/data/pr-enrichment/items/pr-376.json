@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T02:36:44.637Z",
+  "generatedAt": "2026-03-22T03:06:27.125Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 376,
     "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
     "state": "open",
-    "updatedAt": "2026-03-22T02:29:49Z",
-    "headSha": "ea255050c867df90301bbc9b47a73eb30ef54e88",
+    "updatedAt": "2026-03-22T03:05:18Z",
+    "headSha": "9d0e9ce1cb4dbf21bc3fc5ccf6f85748cbd0003b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/376",
     "authorLogin": "anthony-maio"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "9L GQA transformer using MLP3x, SmearGate+BigramHash embeddings, NTK-RoPE, int6 compression, and Muon+SWA schedule.",
+    "summary": "9-layer GQA transformer with MLP3x, SmearGate+BigramHash, muon+SWA, int6+zstd, NTK-RoPE, and custom Triton kernels speeding training.",
     "tags": [
       "architecture",
-      "quantization",
       "optimizer",
-      "training-schedule"
+      "quantization",
+      "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "SmearGate+BigramHash token embedding compression",
-      "NTK-RoPE with GQA attention and MLP3x expansion",
-      "Muon optimizer warmup to 0.99 plus SWA warmdown"
+      "MLP3x GQA stack with NTK-RoPE positional encoding",
+      "Muon optimizer warmdown with SWA",
+      "Custom Triton kernels plus int6+zstd compression"
     ]
   },
   "compatibility": {

@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-22T02:36:48.614Z",
+  "generatedAt": "2026-03-22T03:06:31.477Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 391,
+      "title": "Add MaxParams6L_120 submission (1.2374 BPB) to track_non_record_16mb",
+      "status": "open",
+      "updatedAt": "2026-03-22T02:44:21Z",
+      "headSha": "fbc55702466f4caef3fa212174ee89157fabe4ee",
+      "generatedAt": "2026-03-22T03:06:21.011Z",
+      "summary": "Six-layer encoder-decoder with learned skips, SwiGLU, untied embeddings/high LR, full MHA, and INT8 weight-decay tuned quantization.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-391.json"
+    },
     {
       "prNumber": 390,
       "title": "Record: Sponge Bath — TTT 8ep eval-only improvement (val_bpb: 1.1295)",
@@ -241,15 +265,15 @@
       "prNumber": 376,
       "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
       "status": "open",
-      "updatedAt": "2026-03-22T02:29:49Z",
-      "headSha": "ea255050c867df90301bbc9b47a73eb30ef54e88",
-      "generatedAt": "2026-03-22T02:36:44.637Z",
-      "summary": "9L GQA transformer using MLP3x, SmearGate+BigramHash embeddings, NTK-RoPE, int6 compression, and Muon+SWA schedule.",
+      "updatedAt": "2026-03-22T03:05:18Z",
+      "headSha": "9d0e9ce1cb4dbf21bc3fc5ccf6f85748cbd0003b",
+      "generatedAt": "2026-03-22T03:06:27.125Z",
+      "summary": "9-layer GQA transformer with MLP3x, SmearGate+BigramHash, muon+SWA, int6+zstd, NTK-RoPE, and custom Triton kernels speeding training.",
       "tags": [
         "architecture",
-        "quantization",
         "optimizer",
-        "training-schedule"
+        "quantization",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -738,13 +762,13 @@
       "prNumber": 348,
       "title": "Submission/qat bigram12k stride32",
       "status": "open",
-      "updatedAt": "2026-03-22T02:13:54Z",
-      "headSha": "38dff0651cdf59591a5a45a6e81d0fecc62b93b3",
-      "generatedAt": "2026-03-22T02:36:48.566Z",
-      "summary": "10-layer transformer uses STE QAT (int5 MLP/int6 attn), BigramHash 12288, stride-32 eval, 5% pruning and SWA averaging for tighter compression.",
+      "updatedAt": "2026-03-22T03:05:07Z",
+      "headSha": "308ed62a160fe8dde0aa35ebd20a8f2270b85211",
+      "generatedAt": "2026-03-22T03:06:31.429Z",
+      "summary": "Extends the 10L SOTA with STE-based QAT (int5 MLP, int6 attn), larger BigramHash, tighter stride, and pruning/SWA to stabilize quantized eval.",
       "tags": [
         "quantization",
-        "architecture",
+        "evaluation",
         "compression"
       ],
       "flags": {
