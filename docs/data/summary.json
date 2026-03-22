@@ -1,82 +1,19 @@
 {
-  "generatedAt": "2026-03-22T04:36:21.004Z",
+  "generatedAt": "2026-03-22T05:06:21.896Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 304,
-    "official": 1,
-    "openPr": 266,
+    "submissions": 305,
+    "official": 0,
+    "openPr": 268,
     "mergedPr": 0,
     "closedPr": 37,
-    "prBacked": 303,
+    "prBacked": 305,
     "readmeListed": 15,
     "collectorErrors": 0
   },
   "best": {
-    "officialMainTrack": {
-      "id": "record-records-track_10min_16mb-2026-03-17_NaiveBaseline",
-      "source": "official",
-      "status": "official",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-03-17_NaiveBaseline",
-        "folderPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline",
-        "submissionPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/train_gpt.py"
-      },
-      "submission": {
-        "author": "Baseline",
-        "githubId": "openai",
-        "name": "Naive Baseline",
-        "blurb": "SP-1024 9x512 KV4 run on pgut1 using the published Hugging Face fineweb10B_sp1024 export and the current train_gpt.py; score is the default final int8+zlib roundtrip metric under the 16,000,000-byte cap.",
-        "date": "2026-03-18T14:56:29Z"
-      },
-      "metrics": {
-        "valBpb": 1.2243657,
-        "valLoss": 2.07269931,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": 15863489,
-        "bytesCode": 47642,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": null,
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/main/records/track_10min_16mb/2026-03-17_NaiveBaseline/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/main/records/track_10min_16mb/2026-03-17_NaiveBaseline",
-        "pr": null,
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": true,
-        "hasPullRequest": false,
-        "listedInReadme": true
-      }
-    },
+    "officialMainTrack": null,
     "openPrMainTrack": {
       "id": "record-records-track_10min_16mb-2026-03-19_PaidPrefix_8xH100",
       "source": "pull_request",

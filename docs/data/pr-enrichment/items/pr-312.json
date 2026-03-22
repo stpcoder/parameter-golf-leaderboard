@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-22T05:06:32.887Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 312,
+    "title": "Record: Int6 + Canon ACD (K=3) + Muon WD 0.04 + SWA + Sliding Eval (val_bpb=1.1668)",
+    "state": "open",
+    "updatedAt": "2026-03-22T04:47:59Z",
+    "headSha": "ba8b7c8a3d2863fde80edfc83c16008fffe1a21c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/312",
+    "authorLogin": "chanwoo-park-official"
+  },
+  "inputs": {
+    "hash": "b671bb55739f4dd4e9ff453427d862aaf2b4f319009e28fbdb53eae78ec60522",
+    "readmePaths": [],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "Pairs Canon ACD placements with mixed int6 quantization and Muon+Adam+SWA training while tracking sliding-window evals on the 9-layer decoder.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "optimizer",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "mixed PTQ int6 on mlp/attn tensors",
+      "Canon ACD before attention/MLP to skip expensive B placement",
+      "Muon+Adam with SWA plus warmdown schedule"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,20 +1,51 @@
 {
-  "generatedAt": "2026-03-22T04:36:03.670Z",
+  "generatedAt": "2026-03-22T05:06:04.262Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
-  "skipped": [],
+  "skipped": [
+    {
+      "stage": "pull-request-readme",
+      "pr": 312,
+      "submissionPath": "records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    },
+    {
+      "stage": "pull-request-readme",
+      "pr": 312,
+      "submissionPath": "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    },
+    {
+      "stage": "pull-request-readme",
+      "pr": 312,
+      "submissionPath": "records/track_10min_16mb/2026-03-18_LongContextSeq2048/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    },
+    {
+      "stage": "pull-request-readme",
+      "pr": 312,
+      "submissionPath": "records/track_10min_16mb/2026-03-19_SlidingWindowEval/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    },
+    {
+      "stage": "pull-request-readme",
+      "pr": 312,
+      "submissionPath": "records/track_non_record_16mb/2026-03-18_Quasi10Bfrom50B_SP1024_9x512_KV4_4h_pgut3/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    }
+  ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-03-22T03:51:23Z",
+    "cutoffUpdatedAt": "2026-03-22T04:19:01Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 4,
-    "prsReused": 196,
+    "prsRefreshed": 2,
+    "prsReused": 198,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 376,
+    "cacheEntries": 377,
     "retryWindowRetained": false
   }
 }

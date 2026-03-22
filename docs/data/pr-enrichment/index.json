@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-03-22T04:36:50.196Z",
+  "generatedAt": "2026-03-22T05:06:32.928Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 399,
+      "title": "Record: Parallel Muon + Parameter Banking — 82.14ms/step (3.1% faster than PR #315)",
+      "status": "open",
+      "updatedAt": "2026-03-22T04:59:49Z",
+      "headSha": "866b081e9990e4a5e5ad5120afc5d310efa2cfed",
+      "generatedAt": "2026-03-22T05:06:29.334Z",
+      "summary": "Parameter banking plus Parallel Muon replaces DDP for banks, overlapping async reduce-scatter/all-gather and Polar Express optimizer passes to cut step time.",
+      "tags": [
+        "optimizer",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-399.json"
+    },
     {
       "prNumber": 398,
       "title": "Record: 11L EMA + TTT(20ep,freeze=0) — val_bpb=1.1213 (3-seed mean 1.1221)",
@@ -1596,6 +1618,30 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-313.json"
+    },
+    {
+      "prNumber": 312,
+      "title": "Record: Int6 + Canon ACD (K=3) + Muon WD 0.04 + SWA + Sliding Eval (val_bpb=1.1668)",
+      "status": "open",
+      "updatedAt": "2026-03-22T04:47:59Z",
+      "headSha": "ba8b7c8a3d2863fde80edfc83c16008fffe1a21c",
+      "generatedAt": "2026-03-22T05:06:32.887Z",
+      "summary": "Pairs Canon ACD placements with mixed int6 quantization and Muon+Adam+SWA training while tracking sliding-window evals on the 9-layer decoder.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "optimizer",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-312.json"
     },
     {
       "prNumber": 310,
