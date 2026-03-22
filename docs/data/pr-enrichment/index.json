@@ -1,8 +1,101 @@
 {
-  "generatedAt": "2026-03-22T21:42:36.540Z",
+  "generatedAt": "2026-03-22T22:13:06.297Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 467,
+      "title": "[track_10min_16mb] LoRA TTT + SOTA Int5/Int6 (10L, BigramHash, SWA) — Atharva Date (ADIITJ)",
+      "status": "open",
+      "updatedAt": "2026-03-22T22:09:27Z",
+      "headSha": "b8d53d4917af449fd6892d3ddcb7922724a7063c",
+      "generatedAt": "2026-03-22T22:12:33.680Z",
+      "summary": "Document-isolated LoRA test-time training atop the SOTA Int5/Int6 10-layer model, scoring each chunk before adapter updates to keep artifacts untouched.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-467.json"
+    },
+    {
+      "prNumber": 466,
+      "title": "Record: 11L EMA + BigramHash(12288) + Mixed Int5 + FA3 (1.1354)",
+      "status": "open",
+      "updatedAt": "2026-03-22T22:08:07Z",
+      "headSha": "bdd21c4d03295c37032ecf8fe97ae74f961f2cad",
+      "generatedAt": "2026-03-22T22:12:39.112Z",
+      "summary": "11-layer 512d GQA uses EMA, BigramHash(12288×128), mixed Int5 quant, FlashAttention-3, and stride-64 sliding eval.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "attention",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-466.json"
+    },
+    {
+      "prNumber": 465,
+      "title": "Record: 10L d=512 Int5-MLP Int6-Attn sp1024 (val_bpb=1.1508)",
+      "status": "open",
+      "updatedAt": "2026-03-22T22:07:54Z",
+      "headSha": "4e781492461a823406dac9428fb9b8cf0749a986",
+      "generatedAt": "2026-03-22T22:12:45.272Z",
+      "summary": "10-layer d=512 Transformer uses Int5 MLP/Int6 attention quant with SmearGate+BigramHash to maximize depth under 16MB while validating Int6 embeddings via architecture search.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "muon"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-465.json"
+    },
+    {
+      "prNumber": 463,
+      "title": "Anticipatory Transformer: trajectory-aware attention bias",
+      "status": "open",
+      "updatedAt": "2026-03-22T22:03:48Z",
+      "headSha": "9dec4990e01511071097d0d1b9a9607a7c0a87ad",
+      "generatedAt": "2026-03-22T22:12:50.642Z",
+      "summary": "Adds entropy-weighted loss and trajectory-scaled attention to a quantized GPT stack, focusing gradients on uncertain tokens without extra params.",
+      "tags": [
+        "attention",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-463.json"
+    },
     {
       "prNumber": 461,
       "title": "Non-record: 11L Depth Recurrence + High-Yield Legal TTT (1.14458 BPB)",
@@ -569,16 +662,16 @@
     {
       "prNumber": 434,
       "title": "10L XSA + LeakyReLU² + Partial RoPE (val_bpb=1.1370)",
-      "status": "open",
-      "updatedAt": "2026-03-22T17:29:35Z",
+      "status": "closed",
+      "updatedAt": "2026-03-22T22:04:53Z",
       "headSha": "eeef2a0fc183477c8104aa32642aa300799c3ab0",
-      "generatedAt": "2026-03-22T17:41:53.761Z",
-      "summary": "10-layer model pairs XSA on last layers with LeakyReLU², partial RoPE, higher LR, and stronger pruning to fit quantized <16MB artifacts.",
+      "generatedAt": "2026-03-22T22:12:55.964Z",
+      "summary": "10-layer 512d model applies XSA in top layers, LeakyReLU², partial RoPE, and higher learning rates with int5/int6 quantization to stay under 16MB.",
       "tags": [
+        "architecture",
         "attention",
         "quantization",
-        "optimizer",
-        "sliding-window-eval"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -849,6 +942,29 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-421.json"
+    },
+    {
+      "prNumber": 420,
+      "title": "WIP: Shared-transformer + warmdown-aligned training (not final submis…",
+      "status": "open",
+      "updatedAt": "2026-03-22T22:09:18Z",
+      "headSha": "bc275be80c1808869b89238027aee5c91730d13a",
+      "generatedAt": "2026-03-22T22:13:00.250Z",
+      "summary": "Shared-core transformer reuses one block with learned U-Net skips and per-pass scaling while a step-triggered warmdown aligns the late-phase transition with runtime.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-420.json"
     },
     {
       "prNumber": 419,
@@ -3148,14 +3264,14 @@
       "prNumber": 288,
       "title": "Non-record: Hybrid Depth-Recurrent Transformer + Int5 Quantization Studies",
       "status": "open",
-      "updatedAt": "2026-03-22T16:54:58Z",
-      "headSha": "a4b92e770c96c1310562b3807c5c14d8cc003650",
-      "generatedAt": "2026-03-22T17:11:53.570Z",
-      "summary": "Hybrid depth-recurrent transformer loops 8 layers twice with int6 entry/exit plus int8 shared depth to stop quantization compounding and adds novel word/copy/frequency inputs.",
+      "updatedAt": "2026-03-22T21:48:59Z",
+      "headSha": "e351a4804de4d7fe83b8db5449b1b9c5c0d8c1e1",
+      "generatedAt": "2026-03-22T22:13:06.254Z",
+      "summary": "Hybrid depth-recurrent transformer loops 8 shared layers with int6/int8 quantization plus novel precomputed word-position, copy, and unigram features to close quantization compounding.",
       "tags": [
         "architecture",
-        "depth-width",
         "quantization",
+        "depth-width",
         "non-record"
       ],
       "flags": {

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-22T22:12:45.272Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 465,
+    "title": "Record: 10L d=512 Int5-MLP Int6-Attn sp1024 (val_bpb=1.1508)",
+    "state": "open",
+    "updatedAt": "2026-03-22T22:07:54Z",
+    "headSha": "4e781492461a823406dac9428fb9b8cf0749a986",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/465",
+    "authorLogin": "LoquiAuris"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_DenseTransformer_sp1024_10L/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "10-layer d=512 Transformer uses Int5 MLP/Int6 attention quant with SmearGate+BigramHash to maximize depth under 16MB while validating Int6 embeddings via architecture search.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "muon"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Int5 MLP / Int6 attention per-row quantization",
+      "SmearGate + BigramHash conditioned 10L d=512 stack",
+      "Muon optimizer with SWA and cosine warmdown"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

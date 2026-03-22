@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-22T22:13:00.250Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 420,
+    "title": "WIP: Shared-transformer + warmdown-aligned training (not final submis…",
+    "state": "open",
+    "updatedAt": "2026-03-22T22:09:18Z",
+    "headSha": "bc275be80c1808869b89238027aee5c91730d13a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/420",
+    "authorLogin": "leofeasby"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-22_SharedCore_Seq2048_Warmdown/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Shared-core transformer reuses one block with learned U-Net skips and per-pass scaling while a step-triggered warmdown aligns the late-phase transition with runtime.",
+    "tags": [
+      "architecture",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Shared-transformer core with per-pass attn/MLP scaling and skip weights",
+      "Step-based WARMDOWN start to synchronize low-LR convergence with budget"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

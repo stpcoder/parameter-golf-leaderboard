@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T22:12:39.112Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 466,
+    "title": "Record: 11L EMA + BigramHash(12288) + Mixed Int5 + FA3 (1.1354)",
+    "state": "open",
+    "updatedAt": "2026-03-22T22:08:07Z",
+    "headSha": "bdd21c4d03295c37032ecf8fe97ae74f961f2cad",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/466",
+    "authorLogin": "simonbissonnette"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_11L_EMA_Bigram12288_MixedInt5_FA3/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer 512d GQA uses EMA, BigramHash(12288×128), mixed Int5 quant, FlashAttention-3, and stride-64 sliding eval.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "attention",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "EMA (0.997) smoothing",
+      "BigramHash 12288 buckets with mixed int5 quantization",
+      "FlashAttention-3 plus stride-64 sliding evaluation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
