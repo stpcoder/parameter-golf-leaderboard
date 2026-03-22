@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T07:07:00.506Z",
+  "generatedAt": "2026-03-22T07:37:18.678Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -1304,8 +1304,8 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-22T05:15:58Z",
-        "updatedAt": "2026-03-22T06:55:27Z",
-        "headSha": "170c6b771f7ae6e729d109170876ec2f90c0192d",
+        "updatedAt": "2026-03-22T07:21:12Z",
+        "headSha": "525d75507f210a55378bf5bedf8f6413f4e7aba0",
         "headRepo": "newjordan/parameter-golf"
       },
       "links": {
@@ -2325,6 +2325,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-21_MatchSOTA_TTT",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-21_MatchSOTA_TTT",
+        "folderPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT",
+        "submissionPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train_gpt.py"
+      },
+      "submission": {
+        "author": "Anthony Maio",
+        "githubId": "anthony-maio",
+        "name": null,
+        "blurb": null,
+        "date": "2026-03-22"
+      },
+      "metrics": {
+        "valBpb": 1.1399,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 376,
+        "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/376",
+        "authorLogin": "anthony-maio",
+        "authorName": null,
+        "createdAt": "2026-03-21T22:58:17Z",
+        "updatedAt": "2026-03-22T07:07:57Z",
+        "headSha": "6102464573ac3504b9c67a1b1601abb89cdfd6d0",
+        "headRepo": "anthony-maio/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6102464573ac3504b9c67a1b1601abb89cdfd6d0/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/6102464573ac3504b9c67a1b1601abb89cdfd6d0/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/6102464573ac3504b9c67a1b1601abb89cdfd6d0/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/6102464573ac3504b9c67a1b1601abb89cdfd6d0/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/6102464573ac3504b9c67a1b1601abb89cdfd6d0/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT",
+        "pr": "https://github.com/openai/parameter-golf/pull/376",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-20_11L_Int6_SmearGate_SWA",
       "source": "pull_request",
       "status": "open",
@@ -3092,83 +3169,6 @@
         "onMain": true,
         "hasPullRequest": true,
         "listedInReadme": true
-      }
-    },
-    {
-      "id": "record-records-track_10min_16mb-2026-03-21_MatchSOTA_TTT",
-      "source": "pull_request",
-      "status": "open",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-03-21_MatchSOTA_TTT",
-        "folderPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT",
-        "submissionPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train_gpt.py"
-      },
-      "submission": {
-        "author": "Anthony Maio",
-        "githubId": "anthony-maio",
-        "name": null,
-        "blurb": null,
-        "date": "2026-03-22"
-      },
-      "metrics": {
-        "valBpb": 1.146,
-        "valLoss": null,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": null,
-        "bytesCode": null,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 376,
-        "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/376",
-        "authorLogin": "anthony-maio",
-        "authorName": null,
-        "createdAt": "2026-03-21T22:58:17Z",
-        "updatedAt": "2026-03-22T03:50:21Z",
-        "headSha": "6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff",
-        "headRepo": "anthony-maio/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff/records/track_10min_16mb/2026-03-21_MatchSOTA_TTT",
-        "pr": "https://github.com/openai/parameter-golf/pull/376",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
       }
     },
     {

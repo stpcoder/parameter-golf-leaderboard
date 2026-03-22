@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T07:07:18.291Z",
+  "generatedAt": "2026-03-22T07:37:37.748Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -193,14 +193,15 @@
       "prNumber": 401,
       "title": "Record: 11L + EMA + Tight SWA + QAT0.15 + VE128 + Partial RoPE + LN Scale (val_bpb: 1.1243)",
       "status": "open",
-      "updatedAt": "2026-03-22T06:55:27Z",
-      "headSha": "170c6b771f7ae6e729d109170876ec2f90c0192d",
-      "generatedAt": "2026-03-22T07:07:13.450Z",
-      "summary": "Stacks EMA averaging before Tight SWA plus earlier late QAT while using partial RoPE/VE skip U-Net layout for the 11-layer int6-friendly transformer.",
+      "updatedAt": "2026-03-22T07:21:12Z",
+      "headSha": "525d75507f210a55378bf5bedf8f6413f4e7aba0",
+      "generatedAt": "2026-03-22T07:37:28.432Z",
+      "summary": "Stacks EMA with Tight SWA and earlier late int6 QAT over an 11-layer FlashAttention model with VE128 skips and extended warmdown.",
       "tags": [
-        "architecture",
         "quantization",
-        "training-schedule"
+        "training-schedule",
+        "optimizer",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -614,15 +615,15 @@
       "prNumber": 376,
       "title": "Record: 9L MLP3x Full Stack + Custom Kernel Pipeline, val_bpb=1.1401",
       "status": "open",
-      "updatedAt": "2026-03-22T03:50:21Z",
-      "headSha": "6a8a656f63a50ceb43d9d2de0eddb06c1f7039ff",
-      "generatedAt": "2026-03-22T04:06:45.254Z",
-      "summary": "9-layer GQA transformer with SmearGate, NTK-RoPE, Int6+zstd compression, Muon+SWA, and custom Triton kernels targeting fused ops.",
+      "updatedAt": "2026-03-22T07:07:57Z",
+      "headSha": "6102464573ac3504b9c67a1b1601abb89cdfd6d0",
+      "generatedAt": "2026-03-22T07:37:37.691Z",
+      "summary": "9-layer GQA transformer uses SmearGate+BigramHash, Muon optimizer, SWA, NTK-RoPE, and int6+zstd-22 with custom fused Triton kernels for faster training.",
       "tags": [
         "architecture",
         "optimizer",
         "quantization",
-        "evaluation"
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
