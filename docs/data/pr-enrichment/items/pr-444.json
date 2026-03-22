@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T18:11:48.408Z",
+  "generatedAt": "2026-03-22T18:41:39.902Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 444,
     "title": "[Non-Record] MLP3x + WD0.04 + OrthoInit + Sliding Eval — 1.4536 BPB",
     "state": "open",
-    "updatedAt": "2026-03-22T18:05:33Z",
-    "headSha": "99ada831aa15a83949d4221a812c3b0e8b156c52",
+    "updatedAt": "2026-03-22T18:23:11Z",
+    "headSha": "a5bad1c292b2c30d98d8d6f89519b031cbe95afd",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/444",
     "authorLogin": "AymanMahfuz27"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines 3× FFN width, decoupled weight decay, orthogonal init, and sliding-window eval to tighten post-quant BPB on int8 artifacts.",
+    "summary": "Widened FFN, orthogonal init, and decoupled weight decay plus sliding-window evaluation shape quantization-friendly weights ahead of int8+zlib artifacts.",
     "tags": [
       "architecture",
-      "optimizer",
-      "evaluation",
-      "non-record"
+      "quantization",
+      "sliding-window-eval",
+      "regularization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "3× MLP width to boost capacity without depth changes",
-      "Muon-style decoupled weight decay for quant-friendly magnitudes",
-      "Orthogonal init plus sliding-window eval to shave post-quant BPB"
+      "MLP width ×3 with orthogonal linear init",
+      "Decoupled Muon weight decay to curb quant gap",
+      "Sliding-window eval masking overlapping context"
     ]
   },
   "compatibility": {

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T17:11:42.407Z",
+  "generatedAt": "2026-03-22T18:41:44.927Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 422,
-    "title": "Record: 11L GradQuant + EMA + Sliding Eval (val_bpb=1.1416)",
+    "title": "Record: 11L Gradient-Guided Adaptive Quant + EMA + Sliding Eval (val_bpb=1.1396)",
     "state": "open",
-    "updatedAt": "2026-03-22T16:56:27Z",
-    "headSha": "a979c5cfd212bf8a236796a3b6a17788c65b2f81",
+    "updatedAt": "2026-03-22T18:29:38Z",
+    "headSha": "2afa1312eb2b892162e0e8899d826e8fa661ff91",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/422",
     "authorLogin": "albertorkive"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adaptive per-tensor int5/6/7 quantization with EMA, SmearGate+NTK-RoPE+XSA 11-layer model, and sliding-window eval for full validation coverage.",
+    "summary": "11-layer GQA Transformer with SmearGate/NTK-aware RoPE, Muon optimizer + adaptive warmdown, EMA from init, gradient-guided per-tensor int5-7 quantization, sliding-window eval.",
     "tags": [
+      "architecture",
       "quantization",
-      "attention",
-      "evaluation"
+      "optimizer",
+      "sliding-window-eval"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Gradient-guided per-tensor int5/6/7 quantization",
-      "SmearGate residual mixing with NTK-aware RoPE and XSA on 11 layers",
-      "EMA from init plus sliding-window eval stride=64 for full coverage"
+      "gradient-guided per-tensor int5/int6/int7 quantization",
+      "EMA-from-init with adaptive warmdown in Muon training",
+      "sliding-window eval (stride=64) scoring last 64 tokens"
     ]
   },
   "compatibility": {

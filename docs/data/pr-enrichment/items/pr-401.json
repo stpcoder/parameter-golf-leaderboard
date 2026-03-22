@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T18:12:03.559Z",
+  "generatedAt": "2026-03-22T18:41:49.949Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 401,
     "title": "Record: 11L + EMA + Tight SWA + QAT0.15 + VE128 + Partial RoPE + LN Scale (val_bpb: 1.1243)",
     "state": "open",
-    "updatedAt": "2026-03-22T18:05:29Z",
-    "headSha": "1f65df5252fbcdc60731d4068b1c429364c153e6",
+    "updatedAt": "2026-03-22T18:41:25Z",
+    "headSha": "79abf6cf52468164baae941742129386a4ffad0c",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/401",
     "authorLogin": "newjordan"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Stacks EMA with tight SWA checkpoints on an 11-layer GQA model while moving up Late QAT and warmdown to shrink the quant gap.",
+    "summary": "Stack EMA with tight SWA, earlier Late QAT, and VE-enhanced partial-RoPE on an 11-layer Muon-trained transformer with per-row int6 quantization.",
     "tags": [
-      "optimizer",
+      "architecture",
       "quantization",
       "training-schedule",
-      "architecture"
+      "optimizer"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "EMA + Tight SWA stacking",
-      "Earlier Late QAT int6 regime",
-      "Partial RoPE + VE128 U-Net skip layout"
+      "EMA stacked with Tight SWA to blend averaging signals",
+      "Earlier Late QAT under int6 fake quantization",
+      "Muon optimizer + VE + partial RoPE in 11-layer GQA architecture"
     ]
   },
   "compatibility": {

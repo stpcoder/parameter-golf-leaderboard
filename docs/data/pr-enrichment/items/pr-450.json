@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-22T18:41:34.462Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 450,
+    "title": "Record: 12L + Catalytic Residuals + BigramHash(10240) + SWA + Late QAT (val_bpb=1.1466, mean 3 seeds)",
+    "state": "open",
+    "updatedAt": "2026-03-22T18:17:32Z",
+    "headSha": "b3547e3f9d3c01f958a7f412aeed6d3b98dd9fa2",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/450",
+    "authorLogin": "zachgoldfine44"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_12L_CatalyticResiduals_BigBigram/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "12-layer Muon-optimized GPT adds per-dimension catalytic residual gains, larger BigramHash, SWA, and late STE int6 QAT for smoother quantized weights.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "optimizer",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Catalytic per-dimension residual scaling",
+      "BigramHash(10240) expanded embeddings",
+      "Late-stage STE int6 QAT paired with SWA"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
