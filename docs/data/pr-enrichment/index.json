@@ -1,8 +1,77 @@
 {
-  "generatedAt": "2026-03-22T04:06:45.309Z",
+  "generatedAt": "2026-03-22T04:36:50.196Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 398,
+      "title": "Record: 11L EMA + TTT(20ep,freeze=0) — val_bpb=1.1213 (3-seed mean 1.1221)",
+      "status": "open",
+      "updatedAt": "2026-03-22T04:15:33Z",
+      "headSha": "db2c5796c53928ec165aa3421c926e634f954aa7",
+      "generatedAt": "2026-03-22T04:36:28.783Z",
+      "summary": "EMA(0.997) averaging plus 20-epoch test-time SGD with all blocks unfrozen, dropping XSA/Late QAT for the int6-compressed 11L model.",
+      "tags": [
+        "training-schedule",
+        "architecture",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-398.json"
+    },
+    {
+      "prNumber": 397,
+      "title": "Record: Dynamic Eval + TTT on SOTA Pipeline (val_bpb=1.1364)",
+      "status": "open",
+      "updatedAt": "2026-03-22T04:14:13Z",
+      "headSha": "6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e",
+      "generatedAt": "2026-03-22T04:36:33.761Z",
+      "summary": "Combine TTT pre-adaptation with dynamic eval that interleaves SGD steps during sliding-window scoring to adapt the model to local text distributions.",
+      "tags": [
+        "evaluation",
+        "sliding-window-eval"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-397.json"
+    },
+    {
+      "prNumber": 396,
+      "title": "Add Viswanath129 Parameter Golf submission",
+      "status": "open",
+      "updatedAt": "2026-03-22T04:15:30Z",
+      "headSha": "46010be19db1ab4d7ce181179a498e63496a08f0",
+      "generatedAt": "2026-03-22T04:36:43.873Z",
+      "summary": "9-layer RoPE transformer with SwiGLU MLP, SmearGate bigram hashing, SENT-lite curriculum, Batched TTT LoRA eval adapters, Muon+Adam optimization.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-396.json"
+    },
     {
       "prNumber": 395,
       "title": "Add MaxParams6L_120 submission (1.2374 BPB) to track_non_record_16mb",
@@ -4949,15 +5018,14 @@
       "prNumber": 104,
       "title": "Non-record: Stacked hyperparameter tuning + eval2048 (RTX 5090, val_bpb 1.336)",
       "status": "open",
-      "updatedAt": "2026-03-19T17:11:22Z",
+      "updatedAt": "2026-03-22T04:19:01Z",
       "headSha": "d154c86cfd8647c39245e2c695ddd67dac1cf6df",
-      "generatedAt": "2026-03-19T17:25:13.939Z",
-      "summary": "Autoresearch loop stacks WARMDOWN_ITERS, LR, softcap, momentum, and batch-token tweaks before eval2048 on the 9x512 baseline.",
+      "generatedAt": "2026-03-22T04:36:50.184Z",
+      "summary": "Autoresearch stacked env-var tuning on warmdown, lr, logit cap, momentum, quarter batch, and longer EVAL_SEQ_LEN=2048 to boost the 9x512 baseline.",
       "tags": [
         "training-schedule",
-        "optimizer",
         "evaluation",
-        "regularization"
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,

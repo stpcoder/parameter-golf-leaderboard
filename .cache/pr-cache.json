@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-22T04:06:19.817Z",
-  "lastSeenUpdatedAt": "2026-03-22T03:51:23Z",
+  "generatedAt": "2026-03-22T04:36:20.983Z",
+  "lastSeenUpdatedAt": "2026-03-22T04:19:01Z",
   "prs": {
     "1": {
       "number": 1,
@@ -6544,7 +6544,7 @@
     },
     "104": {
       "number": 104,
-      "updatedAt": "2026-03-19T17:11:22Z",
+      "updatedAt": "2026-03-22T04:19:01Z",
       "pr": {
         "number": 104,
         "title": "Non-record: Stacked hyperparameter tuning + eval2048 (RTX 5090, val_bpb 1.336)",
@@ -6555,7 +6555,7 @@
         "authorLogin": "gwelinder",
         "authorName": null,
         "createdAt": "2026-03-19T17:11:22Z",
-        "updatedAt": "2026-03-19T17:11:22Z",
+        "updatedAt": "2026-03-22T04:19:01Z",
         "headSha": "d154c86cfd8647c39245e2c695ddd67dac1cf6df",
         "headRepo": "gwelinder/parameter-golf"
       },
@@ -6618,7 +6618,7 @@
             "authorLogin": "gwelinder",
             "authorName": null,
             "createdAt": "2026-03-19T17:11:22Z",
-            "updatedAt": "2026-03-19T17:11:22Z",
+            "updatedAt": "2026-03-22T04:19:01Z",
             "headSha": "d154c86cfd8647c39245e2c695ddd67dac1cf6df",
             "headRepo": "gwelinder/parameter-golf"
           },
@@ -32183,6 +32183,279 @@
             "script": "https://github.com/openai/parameter-golf/blob/ba2c0f7f47355c096dbd659e755069799514feef/records/track_non_record_16mb/2026-03-22_MaxParams6L_120/train_gpt.py",
             "folder": "https://github.com/openai/parameter-golf/tree/ba2c0f7f47355c096dbd659e755069799514feef/records/track_non_record_16mb/2026-03-22_MaxParams6L_120",
             "pr": "https://github.com/openai/parameter-golf/pull/395"
+          }
+        }
+      ]
+    },
+    "396": {
+      "number": 396,
+      "updatedAt": "2026-03-22T04:15:30Z",
+      "pr": {
+        "number": 396,
+        "title": "Add Viswanath129 Parameter Golf submission",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/396",
+        "authorLogin": "Viswanath129",
+        "authorName": null,
+        "createdAt": "2026-03-22T04:11:19Z",
+        "updatedAt": "2026-03-22T04:15:30Z",
+        "headSha": "46010be19db1ab4d7ce181179a498e63496a08f0",
+        "headRepo": "Viswanath129/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-396-records-viswanath129-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "unknown",
+          "track": {
+            "path": "records/viswanath129",
+            "slug": "viswanath129",
+            "label": "viswanath129",
+            "official": false,
+            "category": "unknown"
+          },
+          "record": {
+            "folderName": "viswanath129",
+            "folderPath": "records/viswanath129",
+            "submissionPath": "records/viswanath129/submission.json",
+            "readmePath": "records/viswanath129/README.md",
+            "trainLogPath": "records/viswanath129/train.log",
+            "scriptPath": "records/viswanath129/train_gpt.py"
+          },
+          "submission": {
+            "author": "Viswanath129",
+            "githubId": "YOUR_GITHUB_USERNAME",
+            "name": "Parameter Golf Solution",
+            "blurb": null,
+            "date": "2026-03-22T04:11:19Z"
+          },
+          "metrics": {
+            "valBpb": null,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 396,
+            "title": "Add Viswanath129 Parameter Golf submission",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/396",
+            "authorLogin": "Viswanath129",
+            "authorName": null,
+            "createdAt": "2026-03-22T04:11:19Z",
+            "updatedAt": "2026-03-22T04:15:30Z",
+            "headSha": "46010be19db1ab4d7ce181179a498e63496a08f0",
+            "headRepo": "Viswanath129/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/46010be19db1ab4d7ce181179a498e63496a08f0/records/viswanath129/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/46010be19db1ab4d7ce181179a498e63496a08f0/records/viswanath129/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/46010be19db1ab4d7ce181179a498e63496a08f0/records/viswanath129/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/46010be19db1ab4d7ce181179a498e63496a08f0/records/viswanath129/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/46010be19db1ab4d7ce181179a498e63496a08f0/records/viswanath129",
+            "pr": "https://github.com/openai/parameter-golf/pull/396"
+          }
+        }
+      ]
+    },
+    "397": {
+      "number": 397,
+      "updatedAt": "2026-03-22T04:14:13Z",
+      "pr": {
+        "number": 397,
+        "title": "Record: Dynamic Eval + TTT on SOTA Pipeline (val_bpb=1.1364)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/397",
+        "authorLogin": "translatingthename",
+        "authorName": null,
+        "createdAt": "2026-03-22T04:14:13Z",
+        "updatedAt": "2026-03-22T04:14:13Z",
+        "headSha": "6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e",
+        "headRepo": "translatingthename/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-397-records-track_10min_16mb-2026-03-22_DynamicEval_TTT_11L-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-22_DynamicEval_TTT_11L",
+            "folderPath": "records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L",
+            "submissionPath": "records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/train_gpt.py"
+          },
+          "submission": {
+            "author": "translatingthename",
+            "githubId": "translatingthename",
+            "name": "Record: Dynamic Eval + TTT on SOTA Pipeline (val_bpb=1.1364)",
+            "blurb": "Dynamic evaluation (Krause et al., ICML 2018) during sliding window scoring. 2.0% consistent improvement at zero artifact cost.",
+            "date": "2026-03-22"
+          },
+          "metrics": {
+            "valBpb": 1.1364,
+            "valLoss": 1.9187,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 15650861,
+            "bytesCode": 77946,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 397,
+            "title": "Record: Dynamic Eval + TTT on SOTA Pipeline (val_bpb=1.1364)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/397",
+            "authorLogin": "translatingthename",
+            "authorName": null,
+            "createdAt": "2026-03-22T04:14:13Z",
+            "updatedAt": "2026-03-22T04:14:13Z",
+            "headSha": "6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e",
+            "headRepo": "translatingthename/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e/records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e/records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e/records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e/records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/6b2ad269e11b872c7860ecabfdfc9a44ed0a7f4e/records/track_10min_16mb/2026-03-22_DynamicEval_TTT_11L",
+            "pr": "https://github.com/openai/parameter-golf/pull/397"
+          }
+        }
+      ]
+    },
+    "398": {
+      "number": 398,
+      "updatedAt": "2026-03-22T04:15:33Z",
+      "pr": {
+        "number": 398,
+        "title": "Record: 11L EMA + TTT(20ep,freeze=0) — val_bpb=1.1213 (3-seed mean 1.1221)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/398",
+        "authorLogin": "felipe-parodi",
+        "authorName": null,
+        "createdAt": "2026-03-22T04:15:33Z",
+        "updatedAt": "2026-03-22T04:15:33Z",
+        "headSha": "db2c5796c53928ec165aa3421c926e634f954aa7",
+        "headRepo": "felipe-parodi/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-398-records-track_10min_16mb-2026-03-21_11L_EMA_TTT20ep_1-1213-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-21_11L_EMA_TTT20ep_1.1213",
+            "folderPath": "records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213",
+            "submissionPath": "records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/train_gpt.py"
+          },
+          "submission": {
+            "author": "Felipe Parodi",
+            "githubId": "felipe-parodi",
+            "name": "11L EMA + Aggressive TTT (20ep, lr=0.008, freeze=0)",
+            "blurb": "EMA(0.997) weight averaging with aggressive test-time training: 20 epochs full-weight SGD at lr=0.008 with all blocks unfrozen. No XSA, no Late QAT — both found to be counterproductive with aggressive TTT. Systematic ablation of 15 configurations over 8xH100 SXM.",
+            "date": "2026-03-21"
+          },
+          "metrics": {
+            "valBpb": 1.12126612,
+            "valLoss": 1.89320586,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 15532949,
+            "bytesCode": 71770,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 398,
+            "title": "Record: 11L EMA + TTT(20ep,freeze=0) — val_bpb=1.1213 (3-seed mean 1.1221)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/398",
+            "authorLogin": "felipe-parodi",
+            "authorName": null,
+            "createdAt": "2026-03-22T04:15:33Z",
+            "updatedAt": "2026-03-22T04:15:33Z",
+            "headSha": "db2c5796c53928ec165aa3421c926e634f954aa7",
+            "headRepo": "felipe-parodi/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/db2c5796c53928ec165aa3421c926e634f954aa7/records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/db2c5796c53928ec165aa3421c926e634f954aa7/records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/db2c5796c53928ec165aa3421c926e634f954aa7/records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/db2c5796c53928ec165aa3421c926e634f954aa7/records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/db2c5796c53928ec165aa3421c926e634f954aa7/records/track_10min_16mb/2026-03-21_11L_EMA_TTT20ep_1.1213",
+            "pr": "https://github.com/openai/parameter-golf/pull/398"
           }
         }
       ]

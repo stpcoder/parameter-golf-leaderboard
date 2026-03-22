@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-19T17:25:13.939Z",
+  "generatedAt": "2026-03-22T04:36:50.184Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 104,
     "title": "Non-record: Stacked hyperparameter tuning + eval2048 (RTX 5090, val_bpb 1.336)",
     "state": "open",
-    "updatedAt": "2026-03-19T17:11:22Z",
+    "updatedAt": "2026-03-22T04:19:01Z",
     "headSha": "d154c86cfd8647c39245e2c695ddd67dac1cf6df",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/104",
     "authorLogin": "gwelinder"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Autoresearch loop stacks WARMDOWN_ITERS, LR, softcap, momentum, and batch-token tweaks before eval2048 on the 9x512 baseline.",
+    "summary": "Autoresearch stacked env-var tuning on warmdown, lr, logit cap, momentum, quarter batch, and longer EVAL_SEQ_LEN=2048 to boost the 9x512 baseline.",
     "tags": [
       "training-schedule",
-      "optimizer",
       "evaluation",
-      "regularization"
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "stacked warmdown and optimizer hyperparameter fixes",
-      "quarter-batch tokens with tuned softcap and muon momentum",
-      "train-short/eval-2048 length decoupling for longer evals"
+      "autonomous env-var sweep stacking warmdown+lr+momentum tweaks",
+      "decoupled eval length to 2048 while training shorter",
+      "quarter-batch tokens to increase wall-clock steps"
     ]
   },
   "compatibility": {
