@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-03-22T05:36:46.432Z",
+  "generatedAt": "2026-03-22T08:37:50.741Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 403,
     "title": "Submit Int6 QAT parameter-golf entry",
     "state": "open",
-    "updatedAt": "2026-03-22T05:25:03Z",
-    "headSha": "a7d0227008a2a300c491cb4ccc76506e89be9647",
+    "updatedAt": "2026-03-22T08:12:43Z",
+    "headSha": "5de88a04b8d22317bf938995f46240a94a8031aa",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/403",
     "authorLogin": "malc3om"
   },
   "inputs": {
-    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-22_Int6_MLP3x_SmearGate_BigramHash_MuonWD_SWA/README.md"
+      "records/track_10min_16mb/2026-03-22_Int6_MLP3x_SmearGate_BigramHash_MuonWD_SWA/README.md",
+      "records/track_10min_16mb/2026-03-22_10L_Int5MLP_Bigram_SWA_Prune/README.md"
     ],
-    "submissionCount": 1
+    "submissionCount": 2
   },
   "output": {
-    "summary": "Int6 QAT with a 3× MLP, bigram context, orthogonal init, Muon+WD and SWA/stride eval to strengthen quantization robustness.",
+    "summary": "Uses Int6 QAT, 3× MLP, SmearGate+BigramHash, Muon WD, SWA, and sliding eval to shape quantization-friendly weights before export.",
     "tags": [
       "quantization",
       "architecture",
-      "training-schedule",
-      "optimizer"
+      "optimizer",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Int6 QAT with delayed STE",
-      "3× MLP plus SmearGate/BigramHash context",
-      "Muon WD plus SWA and sliding-window eval"
+      "Int6 QAT with STE ramped in after 30% of training",
+      "Expanded MLP plus SmearGate/BigramHash context fusion",
+      "Muon WD with SWA over final half plus sliding-window eval"
     ]
   },
   "compatibility": {

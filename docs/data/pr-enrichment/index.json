@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T08:07:34.058Z",
+  "generatedAt": "2026-03-22T08:37:50.803Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -193,15 +193,15 @@
       "prNumber": 403,
       "title": "Submit Int6 QAT parameter-golf entry",
       "status": "open",
-      "updatedAt": "2026-03-22T05:25:03Z",
-      "headSha": "a7d0227008a2a300c491cb4ccc76506e89be9647",
-      "generatedAt": "2026-03-22T05:36:46.432Z",
-      "summary": "Int6 QAT with a 3× MLP, bigram context, orthogonal init, Muon+WD and SWA/stride eval to strengthen quantization robustness.",
+      "updatedAt": "2026-03-22T08:12:43Z",
+      "headSha": "5de88a04b8d22317bf938995f46240a94a8031aa",
+      "generatedAt": "2026-03-22T08:37:50.741Z",
+      "summary": "Uses Int6 QAT, 3× MLP, SmearGate+BigramHash, Muon WD, SWA, and sliding eval to shape quantization-friendly weights before export.",
       "tags": [
         "quantization",
         "architecture",
-        "training-schedule",
-        "optimizer"
+        "optimizer",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
