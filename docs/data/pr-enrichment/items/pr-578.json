@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T22:19:11.155Z",
+  "generatedAt": "2026-03-23T22:49:25.451Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 578,
     "title": "GPTQ + Early QAT + Legal TTT — 3-seed mean val_bpb 1.1215",
     "state": "open",
-    "updatedAt": "2026-03-23T22:13:56Z",
+    "updatedAt": "2026-03-23T22:19:09Z",
     "headSha": "e605d1c53f892d235e9cfbb521e93c9548b031d5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/578",
     "authorLogin": "newjordan"
@@ -20,7 +20,7 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Combines GPTQ-aware int6 quantization with longer QAT adaptation and EMA-scored Legal TTT on the 11L/512d stack to shrink quant tax before TTT evaluation.",
+    "summary": "GPTQ-aware int6 quantization with extended QAT and Legal Score-First TTT (EMA+cosine) on the 11L/512d U-Net-style stack.",
     "tags": [
       "quantization",
       "training-schedule",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GPTQ per-row int6 with Hessian-aware error compensation",
-      "Extended QAT with matched percentile clipping",
-      "EMA-scored Legal TTT with fixed cosine decay"
+      "GPTQ Hessian-aware int6 quantization with column reordering",
+      "Extended QAT with matched 99.95th percentile clipping",
+      "Legal Score-First TTT using EMA scoring and fixed cosine decay"
     ]
   },
   "compatibility": {

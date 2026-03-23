@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-23T22:49:10.370Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 583,
+    "title": "Record: 10L Int5-MLP3x BigramHash4096 SlidingEval — mean val_bpb 1.1489",
+    "state": "open",
+    "updatedAt": "2026-03-23T22:39:29Z",
+    "headSha": "edcc5e449787d3483403e06597271821abd46141",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/583",
+    "authorLogin": "suchihype"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-23_10L_Int5MLP3x_BigramHash4096_SlidingEval/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "10-layer transformer mixes 3× Int5 MLPs, full-run Int6 QAT with Muon+AdamW schedule tuned via Optuna, then uses sliding eval stride 64.",
+    "tags": [
+      "quantization",
+      "optimizer",
+      "sliding-window-eval"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Full-run Int6 QAT with STE export matching",
+      "Muon optimizer + AdamW blend with Optuna-tuned LR/momentum",
+      "Sliding-window evaluation (stride 64) after training"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

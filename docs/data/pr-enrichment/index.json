@@ -1,8 +1,77 @@
 {
-  "generatedAt": "2026-03-23T22:19:26.561Z",
+  "generatedAt": "2026-03-23T22:49:25.541Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 583,
+      "title": "Record: 10L Int5-MLP3x BigramHash4096 SlidingEval — mean val_bpb 1.1489",
+      "status": "open",
+      "updatedAt": "2026-03-23T22:39:29Z",
+      "headSha": "edcc5e449787d3483403e06597271821abd46141",
+      "generatedAt": "2026-03-23T22:49:10.370Z",
+      "summary": "10-layer transformer mixes 3× Int5 MLPs, full-run Int6 QAT with Muon+AdamW schedule tuned via Optuna, then uses sliding eval stride 64.",
+      "tags": [
+        "quantization",
+        "optimizer",
+        "sliding-window-eval"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-583.json"
+    },
+    {
+      "prNumber": 581,
+      "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — val_bpb≈1.10",
+      "status": "open",
+      "updatedAt": "2026-03-23T22:38:22Z",
+      "headSha": "3594823a8233bb6f46305cec4b305c87489880f0",
+      "generatedAt": "2026-03-23T22:49:15.907Z",
+      "summary": "Extends the sparse sidecar base with AdamW test-time training over 20 epochs using cosine LR with warmup and light weight decay to adapt from the validation shard.",
+      "tags": [
+        "val-only",
+        "training-schedule",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-581.json"
+    },
+    {
+      "prNumber": 580,
+      "title": "[Non-record] Azure 1xH100 frontier-family engineering run (val_bpb=1.2623)",
+      "status": "open",
+      "updatedAt": "2026-03-23T22:28:35Z",
+      "headSha": "bc96db4821b496a2c7334744a1f4c5f50cb9a901",
+      "generatedAt": "2026-03-23T22:49:19.815Z",
+      "summary": "Single-H100 engineering run replays the March 20 frontier int5 stack with a 10-layer BigramHash model and exact int8+zlib validation before 8xH100 builds.",
+      "tags": [
+        "non-record",
+        "quantization",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-580.json"
+    },
     {
       "prNumber": 579,
       "title": "The Frugendorff: Recursive Weight Sharing for Transformer Compression (1.1478 BPB, 15.19MB)",
@@ -30,10 +99,10 @@
       "prNumber": 578,
       "title": "GPTQ + Early QAT + Legal TTT — 3-seed mean val_bpb 1.1215",
       "status": "open",
-      "updatedAt": "2026-03-23T22:13:56Z",
+      "updatedAt": "2026-03-23T22:19:09Z",
       "headSha": "e605d1c53f892d235e9cfbb521e93c9548b031d5",
-      "generatedAt": "2026-03-23T22:19:11.155Z",
-      "summary": "Combines GPTQ-aware int6 quantization with longer QAT adaptation and EMA-scored Legal TTT on the 11L/512d stack to shrink quant tax before TTT evaluation.",
+      "generatedAt": "2026-03-23T22:49:25.451Z",
+      "summary": "GPTQ-aware int6 quantization with extended QAT and Legal Score-First TTT (EMA+cosine) on the 11L/512d U-Net-style stack.",
       "tags": [
         "quantization",
         "training-schedule",

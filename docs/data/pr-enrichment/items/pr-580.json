@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-23T22:49:19.815Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 580,
+    "title": "[Non-record] Azure 1xH100 frontier-family engineering run (val_bpb=1.2623)",
+    "state": "open",
+    "updatedAt": "2026-03-23T22:28:35Z",
+    "headSha": "bc96db4821b496a2c7334744a1f4c5f50cb9a901",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/580",
+    "authorLogin": "micoverde"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-22_Azure1xH100_FrontierRepro_Int5/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Single-H100 engineering run replays the March 20 frontier int5 stack with a 10-layer BigramHash model and exact int8+zlib validation before 8xH100 builds.",
+    "tags": [
+      "non-record",
+      "quantization",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "single H100 engineering capture",
+      "BigramHash(10240)+Int5 architecture",
+      "exact int8+zlib roundtrip eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
