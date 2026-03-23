@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-03-23T15:17:10.003Z",
+  "generatedAt": "2026-03-23T16:47:00.865Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 525,
-    "title": "Non-record: 10L + LoRA TTT (val_bpb=1.1039, base=1.1485)",
+    "title": "Non-record: 10L + Batched LoRA TTT (val_bpb=1.1160)",
     "state": "open",
-    "updatedAt": "2026-03-23T15:02:16Z",
-    "headSha": "c16b51f78276015e5ee481cd203c59b1c381e9ad",
+    "updatedAt": "2026-03-23T16:20:45Z",
+    "headSha": "1fc94e56b7f1d434297327f64dd6a37b57e55beb",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/525",
     "authorLogin": "hypery11"
   },
   "inputs": {
     "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-23_10L_Optimized/2026-03-23_10L_Optimized/README.md",
-      "records/track_10min_16mb/2026-03-23_10L_Optimized/README.md"
+      "records/track_10min_16mb/2026-03-23_10L_Optimized/README.md",
+      "records/track_10min_16mb/2026-03-23_10L_Optimized/2026-03-23_10L_Optimized/README.md"
     ],
     "submissionCount": 2
   },
   "output": {
-    "summary": "10-layer transformer uses mixed int5/int6 quantization and Muon+AdamW training, augmented by per-document LoRA TTT on Q/V/LM projections.",
+    "summary": "10-layer quantized transformer with improved activations and batched per-document LoRA test-time training on 256-token chunks.",
     "tags": [
+      "architecture",
       "quantization",
-      "attention",
-      "regularization"
+      "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "No explicit validation-shard training; LoRA adaptation happens during test-time evaluation.",
     "techniques": [
-      "mixed int5/int6 quantization + zstd-22",
-      "per-document LoRA TTT on Q/V/LM projections",
-      "Muon optimizer + AdamW with EMA"
+      "10-layer 512d transformer with GQA heads and U-Net skips",
+      "Mixed int5/int6 quantization with zstd-22 compression",
+      "Batched rank-8 LoRA test-time training per document"
     ]
   },
   "compatibility": {

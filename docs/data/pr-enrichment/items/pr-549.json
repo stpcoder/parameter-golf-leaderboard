@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T16:16:43.069Z",
+  "generatedAt": "2026-03-23T16:46:54.009Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 549,
-    "title": "Record: LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1195 (3-seed mean)",
+    "title": "Record: LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1194 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-23T16:08:26Z",
-    "headSha": "f6a0b0dca3ccf1ef60305b8eb31a091c016fcf7e",
+    "updatedAt": "2026-03-23T16:28:08Z",
+    "headSha": "8ff3e0ef479635bb9e59462ee1513c0088ad3aad",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/549",
     "authorLogin": "abaybektursun"
   },
@@ -19,24 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines LeakyReLU(0.5)² MLPs with legal score-first TTT and Parallel Muon/Parameter Banking on the PR #414 stack for enhanced adaptation.",
+    "summary": "Adapts the PR#414 stack with LeakyReLU(0.5)² MLPs, legal score-first TTT, and Parameter Banking + Parallel Muon optimizer.",
     "tags": [
+      "val-only",
       "architecture",
       "optimizer",
-      "training-schedule"
+      "evaluation"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "TTT protocol trains on validation chunks after scoring each chunk under torch.inference_mode, so all adaptation happens on the validation shards.",
     "techniques": [
-      "LeakyReLU(0.5)² MLP activations",
-      "Score-first chunked TTT eval+adaptation",
-      "Parameter Banking with Parallel Muon optimizer"
+      "LeakyReLU(0.5)² MLP layers",
+      "Score-first legal TTT with inference_mode",
+      "Parameter Banking + Parallel Muon optimizer"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

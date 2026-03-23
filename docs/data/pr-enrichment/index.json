@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-03-23T16:17:13.914Z",
+  "generatedAt": "2026-03-23T16:47:00.949Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
-      "prNumber": 549,
-      "title": "Record: LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1195 (3-seed mean)",
+      "prNumber": 552,
+      "title": "Non-record subimission: RecurrentTiedDepth_8x2_FiLM records",
       "status": "open",
-      "updatedAt": "2026-03-23T16:08:26Z",
-      "headSha": "f6a0b0dca3ccf1ef60305b8eb31a091c016fcf7e",
-      "generatedAt": "2026-03-23T16:16:43.069Z",
-      "summary": "Combines LeakyReLU(0.5)² MLPs with legal score-first TTT and Parallel Muon/Parameter Banking on the PR #414 stack for enhanced adaptation.",
+      "updatedAt": "2026-03-23T16:45:59Z",
+      "headSha": "59c8382d5c05c0e81f41b80922cd12e7ae3255d6",
+      "generatedAt": "2026-03-23T16:46:47.377Z",
+      "summary": "Shared 8-block transformer loops twice with FiLM+U-Net gating to reuse parameters and widen effective depth while staying under 16MB.",
       "tags": [
         "architecture",
-        "optimizer",
-        "training-schedule"
+        "regularization",
+        "quantization",
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,
@@ -23,6 +24,30 @@
       },
       "compatibility": {
         "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-552.json"
+    },
+    {
+      "prNumber": 549,
+      "title": "Record: LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1194 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-23T16:28:08Z",
+      "headSha": "8ff3e0ef479635bb9e59462ee1513c0088ad3aad",
+      "generatedAt": "2026-03-23T16:46:54.009Z",
+      "summary": "Adapts the PR#414 stack with LeakyReLU(0.5)² MLPs, legal score-first TTT, and Parameter Banking + Parallel Muon optimizer.",
+      "tags": [
+        "val-only",
+        "architecture",
+        "optimizer",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-549.json"
     },
@@ -399,16 +424,16 @@
     },
     {
       "prNumber": 525,
-      "title": "Non-record: 10L + LoRA TTT (val_bpb=1.1039, base=1.1485)",
+      "title": "Non-record: 10L + Batched LoRA TTT (val_bpb=1.1160)",
       "status": "open",
-      "updatedAt": "2026-03-23T15:02:16Z",
-      "headSha": "c16b51f78276015e5ee481cd203c59b1c381e9ad",
-      "generatedAt": "2026-03-23T15:17:10.003Z",
-      "summary": "10-layer transformer uses mixed int5/int6 quantization and Muon+AdamW training, augmented by per-document LoRA TTT on Q/V/LM projections.",
+      "updatedAt": "2026-03-23T16:20:45Z",
+      "headSha": "1fc94e56b7f1d434297327f64dd6a37b57e55beb",
+      "generatedAt": "2026-03-23T16:47:00.865Z",
+      "summary": "10-layer quantized transformer with improved activations and batched per-document LoRA test-time training on 256-token chunks.",
       "tags": [
+        "architecture",
         "quantization",
-        "attention",
-        "regularization"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
