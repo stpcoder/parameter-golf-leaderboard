@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-23T00:43:52.171Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 482,
+    "title": "Record: 10L CountInitBigram + XSA + PartialRoPE (val_bpb=1.1522)",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:35:29Z",
+    "headSha": "f83e7f7dc41e2cf40a15c71c7c5633c61e2d39f3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/482",
+    "authorLogin": "harsha-gouru"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_10L_CountInitBigram_XSA_PartialRoPE/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Count-initialized bigram logit biases (int4 nibble-packed) plus XSA/Partial RoPE atop a 10L 512d stack to bootstrap learning before softcap.",
+    "tags": [
+      "attention",
+      "architecture",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Count-initialized exact bigram logit head before softcap",
+      "Nibble-packed int4 bigram table with int5/6 quantized weights",
+      "XSA on last layers with Partial RoPE and LN scale"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

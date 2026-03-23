@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T00:27:19.762Z",
+  "generatedAt": "2026-03-23T00:45:45.434Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 277,
     "title": "Non-record: 11L Int6 + XSA + TTT + SmearGate + BigramHash (pending compute)",
     "state": "open",
-    "updatedAt": "2026-03-20T23:59:20Z",
-    "headSha": "a3817a1759d9bac43fcbb546cf83f454d64a82a3",
+    "updatedAt": "2026-03-23T00:19:23Z",
+    "headSha": "af190d54fda6274c6c11ac400bbabcaba943eb1f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/277",
     "authorLogin": "mohosy"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines XSA on final layers, Test-Time Training SGD, and a meta-stack with SmearGate/BigramHash plus int6 quant to squeeze eval-time gains.",
+    "summary": "11-layer SwiGLU+U-Net stack adds XSA, EMA, and AdamW-powered test-time training atop BigramHash/int6 quantized weights with sliding-window eval.",
     "tags": [
+      "architecture",
       "attention",
       "quantization",
-      "optimizer",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Exclusive Self Attention on last layers",
-      "Test-Time Training SGD adaptation on val data",
-      "Int6 quant plus SmearGate/BigramHash meta-stack"
+      "SwiGLU+U-Net transformer stack",
+      "XSA with EMA and AdamW test-time training",
+      "Int6 per-row quantization plus BigramHash"
     ]
   },
   "compatibility": {

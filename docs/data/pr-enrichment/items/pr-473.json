@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T23:43:14.813Z",
+  "generatedAt": "2026-03-23T00:44:34.277Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 473,
-    "title": "Record: Legal Score-First TTT + Parallel Muon — val_bpb 1.1213",
+    "title": "Record: Legal Score-First TTT + Parallel Muon — val_bpb 1.1218 (2-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-22T23:30:44Z",
-    "headSha": "40de2786fdf2c65d54b8eb306e7581546e73f0ce",
+    "updatedAt": "2026-03-23T00:25:43Z",
+    "headSha": "a33f0751feb12a2e01748bd5799fc68557d0cd3e",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/473",
     "authorLogin": "abaybektursun"
   },
@@ -19,24 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Applies legal score-first TTT plus Parameter Banking and Parallel Muon on the quantized GPTQ-lite/VE128 stack to improve validation bpb.",
+    "summary": "Runs legal score-first TTT (SGD+momentum with frozen early blocks) atop the #414 quantized stack while Parameter Banking and Parallel Muon accelerate the optimizer.",
     "tags": [
-      "val-only",
       "optimizer",
-      "training-schedule"
+      "training-schedule",
+      "evaluation",
+      "quantization"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "TTT trains on validation chunks after scoring them under inference mode to keep the protocol legal.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Legal score-first TTT scoring before updates",
-      "Parameter Banking + Parallel Muon for banked weights",
-      "Quantized GPTQ-lite stack with VE128, Tight SWA, Partial RoPE"
+      "Legal score-first scoring before updates with frozen early blocks",
+      "Parameter Banking plus Parallel Muon optimizer flow",
+      "GPTQ-lite stack with VE128, Tight SWA, XSA4, Partial RoPE"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

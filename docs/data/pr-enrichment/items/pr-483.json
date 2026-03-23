@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T00:43:46.973Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 483,
+    "title": "Track 10min_16mb: PR #287 family rerun at 585s wallclock (mean val_bpb=1.1346)",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:32:52Z",
+    "headSha": "46b85783ec9c8c86b6c2cd8fa99b0f41f929d0b1",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/483",
+    "authorLogin": "tmustier"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-23_PR287_XSA4_EMA_FA3_585s/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Rerun of PR#287 family using FlashAttention3, XSA4, and BigramHash with EMA/QAT export within a 585s cap to stay under the 16MB artifact limit.",
+    "tags": [
+      "attention",
+      "architecture",
+      "mixed-precision",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "FlashAttention3 + XSA4 + BigramHash recipe",
+      "EMA-enabled training with QAT and int6 export",
+      "585s wallclock cap to constrain artifacts"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

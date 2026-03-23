@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T17:35:08.880Z",
+  "generatedAt": "2026-03-23T00:45:40.597Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 287,
     "title": "Record: 11L XSA + EMA + Int6 MLP3x + WD=0.04 (val_bpb: 1.1271)",
     "state": "open",
-    "updatedAt": "2026-03-21T17:01:36Z",
+    "updatedAt": "2026-03-23T00:25:28Z",
     "headSha": "d7583288464f252eeec6657c80f4cd3a74c0e5c5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/287",
     "authorLogin": "jfprincz"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines an 11-layer muP transformer with Exclusive Self Attention on the final layers, EMA averaging, and int6/zstd compression.",
+    "summary": "11-layer MuP transformer pairs final-layer Exclusive Self Attention with EMA averaging and int6 quantization for a compact, well-generalized checkpoint.",
     "tags": [
       "attention",
-      "training-schedule",
-      "quantization",
-      "architecture"
+      "optimizer",
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
       "Exclusive Self Attention on last four layers",
-      "EMA weight averaging instead of SWA",
-      "Int6 mixed quantization with zstd-22"
+      "EMA shadow averaging each step",
+      "Int6 mixed quantization with muP init"
     ]
   },
   "compatibility": {

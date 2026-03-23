@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-22T20:12:06.875Z",
+  "generatedAt": "2026-03-23T00:45:15.094Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 455,
     "title": "Record: 11L Tight SWA + VE128 + XSA4 + TTT (3-seed mean val_bpb=1.1299)",
     "state": "open",
-    "updatedAt": "2026-03-22T19:44:12Z",
+    "updatedAt": "2026-03-23T00:23:11Z",
     "headSha": "6b36249645c1ee070b7a9ee2d7c3cb59a996bd9a",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/455",
     "authorLogin": "kasimte"
@@ -19,25 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11L VE128 GQA model extends Tight SWA with late int6 quant and adds test-time SGD on val tokens before sliding-window evaluation.",
+    "summary": "Tight SWA on VE128/XSA layers with late int6 QAT and test-time SGD on val tokens before sliding-window evaluation.",
     "tags": [
-      "architecture",
-      "attention",
+      "val-only",
+      "training-schedule",
       "quantization",
       "evaluation"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Test-time training runs SGD for several epochs on already-evaluated validation tokens before the final sliding-window evaluation.",
     "techniques": [
-      "Tight SWA plus late int6 QAT during warmdown",
-      "Shared VE128 value embeddings with partial XSA layers",
-      "Test-time SGD on val tokens prior to sliding-window eval"
+      "Tight SWA averaging over low-scale checkpoints",
+      "Test-time SGD finetuning on validation tokens before final eval",
+      "Late STE int6 QAT preceding sliding-window evaluation"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

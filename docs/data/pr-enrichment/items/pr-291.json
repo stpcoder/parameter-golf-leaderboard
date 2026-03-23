@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T04:28:54.391Z",
+  "generatedAt": "2026-03-23T00:45:35.712Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 291,
-    "title": "Non-record: 11L EMA + XSA + Int6 MLP3x (pending compute)",
+    "title": "Non-record: 11L SwiGLU + XSA4 + EMA + U-Net + AdamW TTT (pending compute)",
     "state": "open",
-    "updatedAt": "2026-03-21T04:16:30Z",
+    "updatedAt": "2026-03-23T00:19:41Z",
     "headSha": "c57bfbeb2bc578fba56b0b90cd39b505a5f47497",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/291",
     "authorLogin": "mohosy"
@@ -20,19 +20,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "11-layer transformer uses EMA+Muon, XSA on late layers, Int6 mixed quant, SmearGate BigramHash plus zstd compression for a compact run.",
+    "summary": "Stacks SwiGLU U-Net blocks with gated skips, XSA4, EMA, AdamW TTT, partial RoPE, LN scaling, and BigramHash plus Int6+GPTQ-lite quantization.",
     "tags": [
-      "quantization",
-      "optimizer",
+      "architecture",
       "attention",
-      "compression"
+      "quantization",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Exclusive Self Attention on final layers",
-      "Mixed Int6 quantization for MLP and attention with zstd compression",
-      "EMA with Muon optimizer plus SmearGate and BigramHash context injection"
+      "SwiGLU U-Net stack with learned gating",
+      "XSA4, partial RoPE, and per-layer LN scaling",
+      "AdamW TTT + EMA with Int6 + GPTQ-lite quantization"
     ]
   },
   "compatibility": {

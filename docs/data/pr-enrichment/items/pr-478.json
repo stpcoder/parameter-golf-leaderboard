@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T00:44:14.635Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 478,
+    "title": "New SOTA: 1.12676 BPB - 11L XSA-all(11) + GPTQ-lite + EMA + Late QAT",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:33:24Z",
+    "headSha": "07884e6ce1c41105b5a8e83e6eb39cfe3d866c9a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/478",
+    "authorLogin": "gowtham0992"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_11L_XSA-all_GPTQ-lite_EMA_LateQAT_1.1271/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Apply Exclusive Self Attention on every layer plus GPTQ-lite clipping, EMA/SWA smoothing, and late int6 QAT with raw binary serialization.",
+    "tags": [
+      "quantization",
+      "optimizer",
+      "attention",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "XSA applied to all 11 layers",
+      "GPTQ-lite optimal clip search with late int6 QAT",
+      "EMA(0.997)+tight SWA smoothing with raw binary serialization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

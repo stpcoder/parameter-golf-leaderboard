@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-23T00:43:42.143Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 484,
+    "title": "Non-record: EBLS (Empirical Bayes Layer Sharing) — learned sharing patterns",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:40:58Z",
+    "headSha": "0e144e9a2e5174613478eb0ed63b7cb139e70d0b",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/484",
+    "authorLogin": "Robby955"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_EBLS_Learned_Sharing/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "EBLS uses James-Stein shrinkage gammas to gate LoRA deviations across shared blocks, revealing layer-specific sharing while exposing quantization amplification.",
+    "tags": [
+      "architecture",
+      "compression",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "James-Stein gating of LoRA deviations",
+      "Shared blocks with virtual layers",
+      "Int6 QAT with zstd-22 compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

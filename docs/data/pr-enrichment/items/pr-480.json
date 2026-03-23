@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-23T00:44:02.700Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 480,
+    "title": "Non-record: MoE exploration + multi-bit quantization analysis",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:25:02Z",
+    "headSha": "d7da25668eecae5de92a5e6210c1dfb81659c3d4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/480",
+    "authorLogin": "imyesung"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_MoE_MultibitQuant_Analysis/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Documented that a 2-expert soft-gated MoE underperforms dense and that int4/int5/int6 quant trades off MB savings vs deformation, closing MoE expansion headroom under 16MB.",
+    "tags": [
+      "non-record",
+      "quantization",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "2-expert soft-gated MoE vs dense baseline",
+      "int4/5/6 quant sweep on shared trained model"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

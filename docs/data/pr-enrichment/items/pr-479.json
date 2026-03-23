@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T00:44:08.554Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 479,
+    "title": "Record: 10L QAT + SwiGLU + BigramHash(10240) (val_bpb=TBD)",
+    "state": "open",
+    "updatedAt": "2026-03-23T00:23:14Z",
+    "headSha": "99b173df53fd2e8e0a8a56a346b612f20cd6ed89",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/479",
+    "authorLogin": "chirag-bajaj"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-22_QAT_SwiGLU_ImprovedHash/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines STE-based int5/int6 QAT with SwiGLU MLP, BigramHash+SmearGate attention, muP-scaled init, muon optimizer, and SWA on a 10L 512d GQA model.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "optimizer",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "STE QAT with mixed int5/int6 clips and zstd-22 quantization",
+      "SwiGLU gating with parameter-matched hidden dim plus BigramHash/SmearGate attention",
+      "Muon optimizer with SWA start_frac=0.4, orthogonal init, and warmdown schedule"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

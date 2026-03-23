@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-22T21:12:28.650Z",
+  "generatedAt": "2026-03-23T00:44:58.664Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 459,
     "title": "Weight Entropy Regularization: Improved SWA Averaging (+0.028 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-22T21:03:38Z",
+    "updatedAt": "2026-03-23T00:42:30Z",
     "headSha": "17c37b828d3c78d1bda0d50aba9e655a8841a751",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/459",
     "authorLogin": "mer2234"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Add weight entropy regularization to concentrate checkpoint weights so SWA warmdown averages lower-variance models more effectively.",
+    "summary": "Adds weight entropy regularization so late-stage checkpoints vary less, letting SWA warmdown produce better averaged weights without changing baseline training.",
     "tags": [
       "regularization",
       "training-schedule"
@@ -27,8 +27,8 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Entropy regularization to concentrate weight distributions",
-      "SWA warmdown averages lower-variance checkpoints for better aggregation"
+      "Weight entropy regularization on large parameters",
+      "SWA warmdown averaging over lower-variance checkpoints"
     ]
   },
   "compatibility": {
