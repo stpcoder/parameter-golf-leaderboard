@@ -1,8 +1,56 @@
 {
-  "generatedAt": "2026-03-22T23:43:23.109Z",
+  "generatedAt": "2026-03-23T00:13:24.059Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 476,
+      "title": "[Non-record]  MHALM v1 (1.4574 bpb)",
+      "status": "open",
+      "updatedAt": "2026-03-23T00:11:30Z",
+      "headSha": "2568eecf463caedcdc073a48f665dd5b376f9888",
+      "generatedAt": "2026-03-23T00:13:17.617Z",
+      "summary": "Combines five kernel-based readout heads in Stäckel space with ComplexSSM plus attention and a learned mixer for multi-kernel language modeling.",
+      "tags": [
+        "architecture",
+        "attention",
+        "muon",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-476.json"
+    },
+    {
+      "prNumber": 474,
+      "title": "Non-record: 6-Technique Stack — Catalytic Residuals + Value Residual + Gated Attention + BigramHash(10240) + 12L (val_bpb=1.1690)",
+      "status": "open",
+      "updatedAt": "2026-03-22T23:49:28Z",
+      "headSha": "cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99",
+      "generatedAt": "2026-03-23T00:13:23.982Z",
+      "summary": "Stacks catalytic/value residuals and gated attention with BigramHash embeddings in a 12-layer 3×MLP transformer to fit the 16MB int6 budget.",
+      "tags": [
+        "architecture",
+        "attention",
+        "tokenization",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-474.json"
+    },
     {
       "prNumber": 473,
       "title": "Record: Legal Score-First TTT + Parallel Muon — val_bpb 1.1213",

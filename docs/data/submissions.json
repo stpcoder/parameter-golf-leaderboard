@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T23:43:07.913Z",
+  "generatedAt": "2026-03-23T00:13:10.515Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -21195,6 +21195,83 @@
       }
     },
     {
+      "id": "record-records-track_non_record_16mb-2026-03-23_MHALMv1",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-23_MHALMv1",
+        "folderPath": "records/track_non_record_16mb/2026-03-23_MHALMv1",
+        "submissionPath": "records/track_non_record_16mb/2026-03-23_MHALMv1/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-23_MHALMv1/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-23_MHALMv1/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-23_MHALMv1/train_gpt.py"
+      },
+      "submission": {
+        "author": "Alexandre Quemy",
+        "githubId": "aquemy",
+        "name": "MHALM — Multi-Head Atlas Language Model",
+        "blurb": null,
+        "date": "2026-03-23T00:11:30Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 476,
+        "title": "[Non-record]  MHALM v1 (1.4574 bpb)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/476",
+        "authorLogin": "aquemy",
+        "authorName": null,
+        "createdAt": "2026-03-23T00:11:30Z",
+        "updatedAt": "2026-03-23T00:11:30Z",
+        "headSha": "2568eecf463caedcdc073a48f665dd5b376f9888",
+        "headRepo": "aquemy/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2568eecf463caedcdc073a48f665dd5b376f9888/records/track_non_record_16mb/2026-03-23_MHALMv1/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/2568eecf463caedcdc073a48f665dd5b376f9888/records/track_non_record_16mb/2026-03-23_MHALMv1/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/2568eecf463caedcdc073a48f665dd5b376f9888/records/track_non_record_16mb/2026-03-23_MHALMv1/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/2568eecf463caedcdc073a48f665dd5b376f9888/records/track_non_record_16mb/2026-03-23_MHALMv1/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/2568eecf463caedcdc073a48f665dd5b376f9888/records/track_non_record_16mb/2026-03-23_MHALMv1",
+        "pr": "https://github.com/openai/parameter-golf/pull/476",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-23_LoRA_TTT_Int5Int6",
       "source": "pull_request",
       "status": "open",
@@ -21263,6 +21340,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/b8d53d4917af449fd6892d3ddcb7922724a7063c/records/track_10min_16mb/2026-03-23_LoRA_TTT_Int5Int6/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/b8d53d4917af449fd6892d3ddcb7922724a7063c/records/track_10min_16mb/2026-03-23_LoRA_TTT_Int5Int6",
         "pr": "https://github.com/openai/parameter-golf/pull/467",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240",
+        "folderPath": "records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240",
+        "submissionPath": "records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/train_gpt.py"
+      },
+      "submission": {
+        "author": "joshuaswarren",
+        "githubId": "joshuaswarren",
+        "name": "Joshua Warren",
+        "blurb": null,
+        "date": "2026-03-22T23:49:28Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 474,
+        "title": "Non-record: 6-Technique Stack — Catalytic Residuals + Value Residual + Gated Attention + BigramHash(10240) + 12L (val_bpb=1.1690)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/474",
+        "authorLogin": "joshuaswarren",
+        "authorName": null,
+        "createdAt": "2026-03-22T23:49:28Z",
+        "updatedAt": "2026-03-22T23:49:28Z",
+        "headSha": "cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99",
+        "headRepo": "joshuaswarren/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99/records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99/records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99/records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99/records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/cd3b1385d5244ffcd8b2dd699b5c9d028a68ce99/records/track_10min_16mb/2026-03-22_6TechniqueStack_CatalyticRes_ValueRes_GatedAttn_BigramHash10240",
+        "pr": "https://github.com/openai/parameter-golf/pull/474",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
