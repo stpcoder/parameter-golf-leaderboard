@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T13:16:25.047Z",
+  "generatedAt": "2026-03-23T14:16:05.047Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 512,
     "title": "Record: PROTEUS v7 — 11L INT6 + LoRA TTT (mean val_bpb=0.9512, 3 seeds)",
     "state": "open",
-    "updatedAt": "2026-03-23T12:56:43Z",
+    "updatedAt": "2026-03-23T13:58:53Z",
     "headSha": "502a29f01510b50a872a8b3737dfe874a3478e2d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/512",
     "authorLogin": "MatoTeziTanka"
@@ -19,25 +19,24 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "PROTEUS v7 pairs an 11-layer INT6 transformer with depth-scaled residuals and backward-looking per-document LoRA TTT on fresh copies.",
+    "summary": "11-layer PROTEUS pairs INT6 uniform quantization and depth-scaled residuals with backward-looking per-document LoRA test-time training.",
     "tags": [
-      "val-only",
       "quantization",
       "architecture",
       "evaluation"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Per-document backward-looking LoRA test-time training adapts exclusively on validation data.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "INT6 uniform quantization with depth-scaled residuals",
-      "Backward-looking per-document LoRA TTT on fresh model copies",
-      "Chunked multi-epoch eval adaptation with short-doc skip"
+      "INT6 uniform quant for all weight matrices",
+      "Depth-scaled residual attenuation per block",
+      "Backward-looking LoRA TTT per document"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }
