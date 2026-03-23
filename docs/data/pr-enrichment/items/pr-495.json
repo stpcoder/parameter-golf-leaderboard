@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-23T03:14:10.785Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 495,
+    "title": "Non-record: Add submission track_non_record_16mb/2026-03-23_DepthRecurrent_TTT",
+    "state": "open",
+    "updatedAt": "2026-03-23T02:49:01Z",
+    "headSha": "1e72866037bcad06c6c0ea145a736d16359260d5",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/495",
+    "authorLogin": "SergiuDeveloper"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_DepthRecurrent_TTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Repeats encoder/decoder layers twice to mimic extra depth and applies chunk-causal test-time LoRA for per-document adaptation under the 16MB cap.",
+    "tags": [
+      "architecture",
+      "evaluation",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Depth recurrence loops over encoder and decoder blocks",
+      "Chunk-causal test-time LoRA adaptation per document"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

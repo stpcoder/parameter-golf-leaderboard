@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T10:08:54.634Z",
+  "generatedAt": "2026-03-23T03:14:39.242Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 64,
-    "title": "Record: DominationV3 + TTT25 (mean val_bpb=1.1260, 3 seeds)",
+    "title": "Record: DominationV3 + GPTQ-lite + TTT25 (mean val_bpb=1.1250, 3 seeds)",
     "state": "open",
-    "updatedAt": "2026-03-22T08:47:53Z",
-    "headSha": "044f75b3421624a3d8c6c70864c0ace6670e0ec5",
+    "updatedAt": "2026-03-23T02:55:53Z",
+    "headSha": "fc21ea04121a3f0d4c5c8403bd9130e944e3040b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/64",
     "authorLogin": "yesbhautik"
   },
@@ -20,25 +20,25 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "11-layer GQA stack drops XSA, uses Partial RoPE, LN Scale, EMA, int6 quantization, and 25-epoch SGD TTT on graded tokens.",
+    "summary": "Combines partial RoPE/LN scale in an 11L GPT with GPTQ-lite int6 quant and 25-epoch SGD TTT on graded tokens to extend training/eval cycles.",
     "tags": [
-      "val-only",
-      "training-schedule",
       "quantization",
-      "sliding-window-eval"
+      "optimizer",
+      "attention",
+      "evaluation"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Test-time training runs SGD for 25 epochs on already-graded validation tokens.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Partial RoPE + LN Scale + full-model EMA in 11-layer GQA",
-      "Int6 per-row quantization (mlp/attn/tok_emb) with zstd-22",
-      "25-epoch aggressive SGD TTT on graded tokens with XSA disabled"
+      "Partial RoPE plus LN scale damping in 11-layer GPT",
+      "GPTQ-lite per-row clip search enabling int6 quant",
+      "25-epoch aggressive SGD TTT on already-graded tokens"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

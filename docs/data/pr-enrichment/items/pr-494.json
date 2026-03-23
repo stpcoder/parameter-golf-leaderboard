@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T03:14:14.262Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 494,
+    "title": "Non-record: Phase 1 Legal Score-First TTT + Meta-TTT (FOMAML) — awaiting compute",
+    "state": "open",
+    "updatedAt": "2026-03-23T02:46:53Z",
+    "headSha": "3e058d4cac8ecb83109d5108bb13b14506161407",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/494",
+    "authorLogin": "george11642"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/gteifel_phase1_meta_ttt/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Expands PR #462’s Star-ReLU U-Net by adding XSA on all 11 layers, layer-wise TTT LR groups, GPTQ-lite clipping, and a planned Meta-TTT (FOMAML) adaptation regime.",
+    "tags": [
+      "attention",
+      "architecture",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "layer-wise cosine TTT LR grouping",
+      "per-row GPTQ-lite clip search",
+      "Meta-TTT via FOMAML"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T03:14:04.907Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 496,
+    "title": "Non-record: O(n) field LM, 2L FP16 (no attention)",
+    "state": "open",
+    "updatedAt": "2026-03-23T02:52:55Z",
+    "headSha": "33b5ab1a1ae958c18dd2ab4c5bf159c7a0c89611",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/496",
+    "authorLogin": "galaxy4552"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_PipeOwl-1.8-jp-parameter-golf/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Field-based Japanese LM uses linear scoring over compressed embeddings to replace transformer attention for deterministic CPU inference.",
+    "tags": [
+      "architecture",
+      "compression",
+      "mixed-precision",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "linear field-based scoring vs. pairwise attention",
+      "static embeddings with Δfield bias",
+      "FP16 inference tuned for CPU latency"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

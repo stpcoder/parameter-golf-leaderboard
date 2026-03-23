@@ -1,42 +1,43 @@
 {
-  "generatedAt": "2026-03-23T02:44:34.675Z",
+  "generatedAt": "2026-03-23T03:14:24.713Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 430,
     "title": "TrigramHash + XSA + TTT on thwu1 SOTA stack - val_bpb pending H100",
     "state": "open",
-    "updatedAt": "2026-03-23T02:41:15Z",
-    "headSha": "95afb69858b96213d7faaefb3da0e1729eff5587",
+    "updatedAt": "2026-03-23T03:01:51Z",
+    "headSha": "25ba8251e030499817d211860f1b2b76f606f3ed",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/430",
     "authorLogin": "sahiee-dev"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-22_TrigramHash_sahiee-dev/README.md"
+      "records/track_10min_16mb/2026-03-22_XSA_EMA_TTT_sahiee-dev/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines trigram hash embeddings with bigram budget rebalancing, last-layer exclusive self-attention, EMA, and test-time SGD tuning before eval.",
+    "summary": "Combines trigram hash embeddings, Exclusive Self-Attention in final layers, EMA, and test-time SGD on validation tokens atop thwu1's stack.",
     "tags": [
-      "architecture",
       "attention",
-      "evaluation"
+      "tokenization",
+      "evaluation",
+      "val-only"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Runs deterministic test-time SGD over validation tokens before evaluation with frozen lower layers and restores weights afterward.",
     "techniques": [
-      "- Trigram hash plus reduced bigram embeddings to enrich tokenization",
-      "- Exclusive self-attention applied in final layers for cleaner context signals",
-      "- EMA weights with frozen-layer test-time SGD over validation tokens"
+      "TrigramHash token embedding mix",
+      "XSA removing self-value bias in final layers",
+      "Test-time SGD on validation tokens with EMA"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

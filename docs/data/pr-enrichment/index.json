@@ -1,8 +1,79 @@
 {
-  "generatedAt": "2026-03-23T02:44:41.707Z",
+  "generatedAt": "2026-03-23T03:14:39.249Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 496,
+      "title": "Non-record: O(n) field LM, 2L FP16 (no attention)",
+      "status": "open",
+      "updatedAt": "2026-03-23T02:52:55Z",
+      "headSha": "33b5ab1a1ae958c18dd2ab4c5bf159c7a0c89611",
+      "generatedAt": "2026-03-23T03:14:04.907Z",
+      "summary": "Field-based Japanese LM uses linear scoring over compressed embeddings to replace transformer attention for deterministic CPU inference.",
+      "tags": [
+        "architecture",
+        "compression",
+        "mixed-precision",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-496.json"
+    },
+    {
+      "prNumber": 495,
+      "title": "Non-record: Add submission track_non_record_16mb/2026-03-23_DepthRecurrent_TTT",
+      "status": "open",
+      "updatedAt": "2026-03-23T02:49:01Z",
+      "headSha": "1e72866037bcad06c6c0ea145a736d16359260d5",
+      "generatedAt": "2026-03-23T03:14:10.785Z",
+      "summary": "Repeats encoder/decoder layers twice to mimic extra depth and applies chunk-causal test-time LoRA for per-document adaptation under the 16MB cap.",
+      "tags": [
+        "architecture",
+        "evaluation",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-495.json"
+    },
+    {
+      "prNumber": 494,
+      "title": "Non-record: Phase 1 Legal Score-First TTT + Meta-TTT (FOMAML) — awaiting compute",
+      "status": "open",
+      "updatedAt": "2026-03-23T02:46:53Z",
+      "headSha": "3e058d4cac8ecb83109d5108bb13b14506161407",
+      "generatedAt": "2026-03-23T03:14:14.262Z",
+      "summary": "Expands PR #462’s Star-ReLU U-Net by adding XSA on all 11 layers, layer-wise TTT LR groups, GPTQ-lite clipping, and a planned Meta-TTT (FOMAML) adaptation regime.",
+      "tags": [
+        "attention",
+        "architecture",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-494.json"
+    },
     {
       "prNumber": 493,
       "title": "Record: 11L EMA + Int6 + XSA + LeakyReLU² + Partial RoPE (val_bpb: 1.1309)",
@@ -148,13 +219,14 @@
       "prNumber": 486,
       "title": "Record: 11L TrigramHash + ValueResidual + GradQuant + AdamW TTT (mean val_bpb=1.1132, best 1.1101)",
       "status": "open",
-      "updatedAt": "2026-03-23T01:14:27Z",
-      "headSha": "b39ce05e18ff6fd26f83f661ccc75806fcca1001",
-      "generatedAt": "2026-03-23T01:43:37.962Z",
-      "summary": "Adds trigram hash embeddings, value-residual blending, and gradient-guided adaptive quantization to the 11-layer TTT stack for better quality-per-step.",
+      "updatedAt": "2026-03-23T02:59:38Z",
+      "headSha": "1c2a47ea8cd4687fbb27b418f50ef1cef722428f",
+      "generatedAt": "2026-03-23T03:14:19.136Z",
+      "summary": "Adds TrigramHash embedding plus ResFormer-style value residuals atop the 11L baseline and ranks tensors by gradient sensitivity for adaptive Int5/6/7 quantization.",
       "tags": [
         "architecture",
-        "quantization"
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1248,22 +1320,23 @@
       "prNumber": 430,
       "title": "TrigramHash + XSA + TTT on thwu1 SOTA stack - val_bpb pending H100",
       "status": "open",
-      "updatedAt": "2026-03-23T02:41:15Z",
-      "headSha": "95afb69858b96213d7faaefb3da0e1729eff5587",
-      "generatedAt": "2026-03-23T02:44:34.675Z",
-      "summary": "Combines trigram hash embeddings with bigram budget rebalancing, last-layer exclusive self-attention, EMA, and test-time SGD tuning before eval.",
+      "updatedAt": "2026-03-23T03:01:51Z",
+      "headSha": "25ba8251e030499817d211860f1b2b76f606f3ed",
+      "generatedAt": "2026-03-23T03:14:24.713Z",
+      "summary": "Combines trigram hash embeddings, Exclusive Self-Attention in final layers, EMA, and test-time SGD on validation tokens atop thwu1's stack.",
       "tags": [
-        "architecture",
         "attention",
-        "evaluation"
+        "tokenization",
+        "evaluation",
+        "val-only"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-430.json"
     },
@@ -1717,15 +1790,15 @@
       "prNumber": 401,
       "title": "Record: 11L + EMA + Tight SWA + QAT0.15 + VE128 + Partial RoPE + LN Scale (val_bpb: 1.1243)",
       "status": "open",
-      "updatedAt": "2026-03-23T02:40:56Z",
-      "headSha": "bd1e51d76d515816983870e4eb4306496128005e",
-      "generatedAt": "2026-03-23T02:44:41.648Z",
-      "summary": "Stacks EMA-fed tight SWA on an 11-layer GQA transformer with U-Net skips, partial RoPE, LN scaling, and late int6 QAT plus longer warmdown.",
+      "updatedAt": "2026-03-23T03:10:13Z",
+      "headSha": "4fafae889759000e049436df41fb61883567a74d",
+      "generatedAt": "2026-03-23T03:14:29.062Z",
+      "summary": "Stacks EMA with tight SWA on an 11-layer GQA transformer, extends warmdown, and shifts late-stage int6 QAT earlier while using VE128 and partial RoPE.",
       "tags": [
-        "architecture",
-        "optimizer",
+        "training-schedule",
         "quantization",
-        "training-schedule"
+        "optimizer",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -7389,25 +7462,25 @@
     },
     {
       "prNumber": 64,
-      "title": "Record: DominationV3 + TTT25 (mean val_bpb=1.1260, 3 seeds)",
+      "title": "Record: DominationV3 + GPTQ-lite + TTT25 (mean val_bpb=1.1250, 3 seeds)",
       "status": "open",
-      "updatedAt": "2026-03-22T08:47:53Z",
-      "headSha": "044f75b3421624a3d8c6c70864c0ace6670e0ec5",
-      "generatedAt": "2026-03-22T10:08:54.634Z",
-      "summary": "11-layer GQA stack drops XSA, uses Partial RoPE, LN Scale, EMA, int6 quantization, and 25-epoch SGD TTT on graded tokens.",
+      "updatedAt": "2026-03-23T02:55:53Z",
+      "headSha": "fc21ea04121a3f0d4c5c8403bd9130e944e3040b",
+      "generatedAt": "2026-03-23T03:14:39.242Z",
+      "summary": "Combines partial RoPE/LN scale in an 11L GPT with GPTQ-lite int6 quant and 25-epoch SGD TTT on graded tokens to extend training/eval cycles.",
       "tags": [
-        "val-only",
-        "training-schedule",
         "quantization",
-        "sliding-window-eval"
+        "optimizer",
+        "attention",
+        "evaluation"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-64.json"
     },
