@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-23T05:14:17.249Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 504,
+    "title": "Non-record: TrigramHash — iso-parametric bigram(96)+trigram(32), val_bpb=1.5275 (1xH100)",
+    "state": "open",
+    "updatedAt": "2026-03-23T05:00:45Z",
+    "headSha": "618b309e905a1437c58e0ac9541aa08cb3dcd87c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/504",
+    "authorLogin": "fleeb83"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-23_TrigramHash/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Iso-parametric split swaps a 128-dim bigram hash for 96-dim bigram plus 32-dim trigram hash embeddings to inject 3-gram signal.",
+    "tags": [
+      "architecture",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Iso-parametric bigram/trigram hash split",
+      "Custom TrigramHash embedding with prime-based hash and zero-init projection",
+      "Int6 quantization applied to trigram embedding"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T03:14:19.136Z",
+  "generatedAt": "2026-03-23T05:14:27.174Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 486,
-    "title": "Record: 11L TrigramHash + ValueResidual + GradQuant + AdamW TTT (mean val_bpb=1.1132, best 1.1101)",
+    "title": "Record: 11L TrigramHash + ValueResidual + GradQuant + Cosine TTT (mean val_bpb=1.0887, best 1.0879)",
     "state": "open",
-    "updatedAt": "2026-03-23T02:59:38Z",
+    "updatedAt": "2026-03-23T04:59:07Z",
     "headSha": "1c2a47ea8cd4687fbb27b418f50ef1cef722428f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/486",
     "authorLogin": "ndokutovich"
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds TrigramHash embedding plus ResFormer-style value residuals atop the 11L baseline and ranks tensors by gradient sensitivity for adaptive Int5/6/7 quantization.",
+    "summary": "Combines TrigramHash embedding, ResFormer-style value residuals, and gradient-guided adaptive quantization on the 11L EMA+AdamW TTT stack.",
     "tags": [
       "architecture",
-      "quantization",
-      "training-schedule"
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "TrigramHash cross-token embedding",
-      "ValueResidual blending from first attention layer",
-      "Gradient-guided adaptive Int5/6/7 quantization"
+      "TrigramHash embedding for 3-token contexts",
+      "Value residual blending from first attention layer",
+      "Gradient-ranked Int5/6/7 quantization per tensor"
     ]
   },
   "compatibility": {

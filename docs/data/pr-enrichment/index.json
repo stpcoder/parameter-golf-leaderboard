@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-03-23T04:44:30.467Z",
+  "generatedAt": "2026-03-23T05:14:32.710Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 504,
+      "title": "Non-record: TrigramHash — iso-parametric bigram(96)+trigram(32), val_bpb=1.5275 (1xH100)",
+      "status": "open",
+      "updatedAt": "2026-03-23T05:00:45Z",
+      "headSha": "618b309e905a1437c58e0ac9541aa08cb3dcd87c",
+      "generatedAt": "2026-03-23T05:14:17.249Z",
+      "summary": "Iso-parametric split swaps a 128-dim bigram hash for 96-dim bigram plus 32-dim trigram hash embeddings to inject 3-gram signal.",
+      "tags": [
+        "architecture",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-504.json"
+    },
     {
       "prNumber": 502,
       "title": "Non-record: 1xH100 auto-research int6 policy sweep",
@@ -76,15 +98,14 @@
       "prNumber": 499,
       "title": "The Frugendorff: Recursive Weight Sharing + MLP 4x (1.1478 BPB, 15.19MB)",
       "status": "open",
-      "updatedAt": "2026-03-23T04:31:05Z",
+      "updatedAt": "2026-03-23T04:48:40Z",
       "headSha": "5305a17cb19ec97c0d0b2afa09fb65f466911592",
-      "generatedAt": "2026-03-23T04:44:25.544Z",
-      "summary": "Fractal weight sharing loops 6 unique transformer blocks twice to afford a 4x MLP expansion within the 16MB limit.",
+      "generatedAt": "2026-03-23T05:14:21.841Z",
+      "summary": "Fractal weight sharing runs six unique blocks twice so the budget supports a 4x MLP with relu-squared and QR loop embeddings plus U-Net skips.",
       "tags": [
         "architecture",
-        "compression",
-        "optimizer",
-        "evaluation"
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -334,16 +355,15 @@
     },
     {
       "prNumber": 486,
-      "title": "Record: 11L TrigramHash + ValueResidual + GradQuant + AdamW TTT (mean val_bpb=1.1132, best 1.1101)",
+      "title": "Record: 11L TrigramHash + ValueResidual + GradQuant + Cosine TTT (mean val_bpb=1.0887, best 1.0879)",
       "status": "open",
-      "updatedAt": "2026-03-23T02:59:38Z",
+      "updatedAt": "2026-03-23T04:59:07Z",
       "headSha": "1c2a47ea8cd4687fbb27b418f50ef1cef722428f",
-      "generatedAt": "2026-03-23T03:14:19.136Z",
-      "summary": "Adds TrigramHash embedding plus ResFormer-style value residuals atop the 11L baseline and ranks tensors by gradient sensitivity for adaptive Int5/6/7 quantization.",
+      "generatedAt": "2026-03-23T05:14:27.174Z",
+      "summary": "Combines TrigramHash embedding, ResFormer-style value residuals, and gradient-guided adaptive quantization on the 11L EMA+AdamW TTT stack.",
       "tags": [
         "architecture",
-        "quantization",
-        "training-schedule"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1907,14 +1927,14 @@
       "prNumber": 401,
       "title": "Record: 11L + EMA + Tight SWA + QAT0.15 + VE128 + Partial RoPE + LN Scale (val_bpb: 1.1243)",
       "status": "open",
-      "updatedAt": "2026-03-23T04:29:05Z",
-      "headSha": "8e0a01f7ee8f359dce060946cf45de42433c3221",
-      "generatedAt": "2026-03-23T04:44:30.405Z",
-      "summary": "Stacks EMA into Tight SWA, extends warmdown, and kicks off int6 QAT early on an 11-layer Partial RoPE + VE128 transformer with U-Net skips.",
+      "updatedAt": "2026-03-23T05:06:32Z",
+      "headSha": "217eaad51ba9b3213da2cd6dbf73531425918dda",
+      "generatedAt": "2026-03-23T05:14:32.652Z",
+      "summary": "Stacks EMA with tight SWA for dual averaging, prolongs warmdown, and starts late QAT earlier on a U-Net hooked 11-layer transformer with VE128.",
       "tags": [
-        "architecture",
-        "training-schedule",
-        "quantization"
+        "optimizer",
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
