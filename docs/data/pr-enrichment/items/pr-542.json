@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-23T15:46:51.699Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 542,
+    "title": "Non-Record: DG Attention, Differential-Gated Attention with Depth-Scheduled Novelty Encoding: (val_bpb=1.1898)",
+    "state": "open",
+    "updatedAt": "2026-03-23T15:34:59Z",
+    "headSha": "b3c24d97fdd00372707ec1d79ac84fcda2adb259",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/542",
+    "authorLogin": "ddavidgao"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_DGAttention_DavidGao/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "DG Attention transmits novelty-weighted value deltas in deep layers via an empirical depth schedule instead of raw content.",
+    "tags": [
+      "attention",
+      "architecture",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Differential payload relative to a causal baseline",
+      "Depth-scheduled β gating per layer",
+      "Asymmetric designator/gradient matching with Flash Attention"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,8 +1,56 @@
 {
-  "generatedAt": "2026-03-23T15:17:10.084Z",
+  "generatedAt": "2026-03-23T15:47:27.617Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 543,
+      "title": "Non-record: 11L Partial RoPE + XSA4 + VE128 + Tight SWA + GPTQ-lite (val_bpb=1.1804)",
+      "status": "open",
+      "updatedAt": "2026-03-23T15:40:57Z",
+      "headSha": "9096bd9f1930642eab007e5485a319ddb43af747",
+      "generatedAt": "2026-03-23T15:46:47.143Z",
+      "summary": "Combines PR#374 stack (Partial RoPE, XSA, VE, Tight SWA) with GPTQ-lite and MLP=1408 to squeeze under 16MB and get more training steps before quantization.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "quantization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-543.json"
+    },
+    {
+      "prNumber": 542,
+      "title": "Non-Record: DG Attention, Differential-Gated Attention with Depth-Scheduled Novelty Encoding: (val_bpb=1.1898)",
+      "status": "open",
+      "updatedAt": "2026-03-23T15:34:59Z",
+      "headSha": "b3c24d97fdd00372707ec1d79ac84fcda2adb259",
+      "generatedAt": "2026-03-23T15:46:51.699Z",
+      "summary": "DG Attention transmits novelty-weighted value deltas in deep layers via an empirical depth schedule instead of raw content.",
+      "tags": [
+        "attention",
+        "architecture",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-542.json"
+    },
     {
       "prNumber": 540,
       "title": "[DRAFT] BitNet b1.58 ternary QAT + depth recurrence submission",
@@ -30,10 +78,10 @@
       "prNumber": 539,
       "title": "Add test submission: 2026-03-23_naive_solution",
       "status": "open",
-      "updatedAt": "2026-03-23T15:07:59Z",
+      "updatedAt": "2026-03-23T15:23:30Z",
       "headSha": "c54484207301787b83bb6e43ffb7a1816cd3f479",
-      "generatedAt": "2026-03-23T15:16:37.867Z",
-      "summary": "Submits the unmodified GPT baseline for a 100-step single-GPU run to confirm leaderboard submission formatting.",
+      "generatedAt": "2026-03-23T15:46:57.411Z",
+      "summary": "Submitting an unmodified train_gpt baseline run of 100 steps on one GPU to verify leaderboard format.",
       "tags": [
         "non-record"
       ],
@@ -72,16 +120,15 @@
     },
     {
       "prNumber": 537,
-      "title": "BPB 1.13872 — LeakyReLU(0.5)² + Per-Layer LR Legal TTT (3 seeds)",
+      "title": "Non-Record: BPB 1.13872 — LeakyReLU(0.5)² + Per-Layer LR Legal TTT (3 seeds)",
       "status": "open",
-      "updatedAt": "2026-03-23T15:02:29Z",
-      "headSha": "e15a4477663a86e2f3f8a3feea91ac76e4c405be",
-      "generatedAt": "2026-03-23T15:16:49.758Z",
-      "summary": "Depth-recurrent 11-layer GPT pairs LeakyReLU(0.5)² SmearGate MLPs with Partial RoPE/VE and legal score-first TTT using per-layer/intra-chunk cosine LR.",
+      "updatedAt": "2026-03-23T15:18:44Z",
+      "headSha": "3b619c756cd8849f476c91635632f19f8c1b8e2f",
+      "generatedAt": "2026-03-23T15:47:06.662Z",
+      "summary": "11-layer depth-recurrence GPT uses LeakyReLU(0.5)² and per-layer/intra-chunk LR tweaks inside the legal score-first TTT recipe for improved pre-TTT modeling.",
       "tags": [
         "architecture",
         "training-schedule",
-        "optimizer",
         "non-record"
       ],
       "flags": {
@@ -139,29 +186,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-535.json"
-    },
-    {
-      "prNumber": 534,
-      "title": "Non-record: 11L Partial RoPE + XSA4 + VE128 + Tight SWA + GPTQ-lite (val_bpb=1.1804)",
-      "status": "open",
-      "updatedAt": "2026-03-23T14:45:12Z",
-      "headSha": "a9ec87ab4d0c920fdcc86ca102850f5345fa292e",
-      "generatedAt": "2026-03-23T14:46:32.996Z",
-      "summary": "Stacks Partial RoPE/XSA4/VE128/Tight SWA while slimming MLP to 1,408 hidden and adding GPTQ-lite quantization to squeeze under 16MB with extra steps.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-534.json"
     },
     {
       "prNumber": 533,
@@ -282,14 +306,14 @@
       "prNumber": 526,
       "title": "Non-record: 11L + 30-Epoch Legal TTT (BPB 1.14252)",
       "status": "open",
-      "updatedAt": "2026-03-23T13:09:45Z",
-      "headSha": "dd1564191336510e5ce9e33a8bbd46bbc1ff30e6",
-      "generatedAt": "2026-03-23T13:16:18.373Z",
-      "summary": "11-layer depth-recurrent network runs 30-epoch legal score-first SGD TTT with frozen early blocks to boost chunk-wise adaptation on validation data.",
+      "updatedAt": "2026-03-23T15:36:19Z",
+      "headSha": "6edbca9ad12381132432394654c908c9c135b37e",
+      "generatedAt": "2026-03-23T15:47:13.387Z",
+      "summary": "Depth-recurrent 11-layer GPT layers reuse BlockCores while using partial RoPE/value embeddings and legal score-first 30-epoch SGD TTT with frozen early layers.",
       "tags": [
         "val-only",
         "architecture",
-        "training-schedule",
+        "optimizer",
         "evaluation"
       ],
       "flags": {
@@ -395,13 +419,14 @@
     },
     {
       "prNumber": 517,
-      "title": "Record: 0.978 BPB — Goldfish ML Autonomous Research (100ep Cosine TTT)",
+      "title": "Record*: val_bpb=0.978 BPB — Goldfish ML Autonomous Research (100ep Cosine *leaky* TTT)",
       "status": "open",
-      "updatedAt": "2026-03-23T09:46:19Z",
+      "updatedAt": "2026-03-23T15:33:05Z",
       "headSha": "5c2901a63a73adceae10f2a6f492d86427a6e4a8",
-      "generatedAt": "2026-03-23T10:15:25.332Z",
-      "summary": "Goldfish ML agents iterated cosine Annealing LR on AdamW test-time training for 100 epochs to curb position overfit and enable the 0.978 BPB record.",
+      "generatedAt": "2026-03-23T15:47:18.846Z",
+      "summary": "Autonomous Goldfish ML agent orchestrates cosine-annealed 100-epoch AdamW TTT to tame position overfitting during extensive test-time training.",
       "tags": [
+        "optimizer",
         "training-schedule",
         "evaluation"
       ],
@@ -1518,14 +1543,14 @@
       "prNumber": 456,
       "title": "Non-record submission: Depth Recurrence + Legal Score-First TTT (10L, 1.1532 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-22T21:22:43Z",
-      "headSha": "ec44c240e36753d77ad28c4b45f9d5b149521f76",
-      "generatedAt": "2026-03-22T21:42:36.466Z",
-      "summary": "Chunked score-first sliding-window TTT updates all weights for persistent adaptation before eval on a mixed int5/int6 quantized 10-layer GPT.",
+      "updatedAt": "2026-03-23T15:39:38Z",
+      "headSha": "f5e802ba4cf4f9577d430c84b4e669c84af08330",
+      "generatedAt": "2026-03-23T15:47:27.550Z",
+      "summary": "Mixed int5/int6 quantized 10-layer GPT uses chunked score-first full-model TTT to maintain persistent adaptation across validation chunks.",
       "tags": [
         "val-only",
-        "quantization",
         "sliding-window-eval",
+        "quantization",
         "non-record"
       ],
       "flags": {

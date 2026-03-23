@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T13:16:18.373Z",
+  "generatedAt": "2026-03-23T15:47:13.387Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 526,
     "title": "Non-record: 11L + 30-Epoch Legal TTT (BPB 1.14252)",
     "state": "open",
-    "updatedAt": "2026-03-23T13:09:45Z",
-    "headSha": "dd1564191336510e5ce9e33a8bbd46bbc1ff30e6",
+    "updatedAt": "2026-03-23T15:36:19Z",
+    "headSha": "6edbca9ad12381132432394654c908c9c135b37e",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/526",
     "authorLogin": "Christopher-Lee-McClendon"
   },
@@ -20,19 +20,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "11-layer depth-recurrent network runs 30-epoch legal score-first SGD TTT with frozen early blocks to boost chunk-wise adaptation on validation data.",
+    "summary": "Depth-recurrent 11-layer GPT layers reuse BlockCores while using partial RoPE/value embeddings and legal score-first 30-epoch SGD TTT with frozen early layers.",
     "tags": [
       "val-only",
       "architecture",
-      "training-schedule",
+      "optimizer",
       "evaluation"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Legal score-first TTT performs SGD updates on each validation chunk before scoring, so all adaptation occurs on evaluation data.",
+    "valOnlyReasoning": "Score-first legal test-time training runs SGD solely on validation chunks after scoring, so adaptation occurs entirely at evaluation time.",
     "techniques": [
-      "30-epoch SGD TTT with frozen first blocks",
-      "Depth recurrence with shared BlockCores, partial RoPE, and deep value embeddings",
-      "int6+zstd quantization with Late QAT"
+      "SGD+momentum 30-epoch per 32K chunk TTT with freeze=2",
+      "Depth recurrence with shared BlockCores plus Partial RoPE and value embeddings",
+      "Score-first legal evaluation enforced via torch.inference_mode"
     ]
   },
   "compatibility": {

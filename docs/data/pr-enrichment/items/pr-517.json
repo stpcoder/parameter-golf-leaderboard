@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T10:15:25.332Z",
+  "generatedAt": "2026-03-23T15:47:18.846Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 517,
-    "title": "Record: 0.978 BPB — Goldfish ML Autonomous Research (100ep Cosine TTT)",
+    "title": "Record*: val_bpb=0.978 BPB — Goldfish ML Autonomous Research (100ep Cosine *leaky* TTT)",
     "state": "open",
-    "updatedAt": "2026-03-23T09:46:19Z",
+    "updatedAt": "2026-03-23T15:33:05Z",
     "headSha": "5c2901a63a73adceae10f2a6f492d86427a6e4a8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/517",
     "authorLogin": "lukacf"
@@ -19,16 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Goldfish ML agents iterated cosine Annealing LR on AdamW test-time training for 100 epochs to curb position overfit and enable the 0.978 BPB record.",
+    "summary": "Autonomous Goldfish ML agent orchestrates cosine-annealed 100-epoch AdamW TTT to tame position overfitting during extensive test-time training.",
     "tags": [
+      "optimizer",
       "training-schedule",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "CosineAnnealingLR over 100-epoch AdamW TTT",
-      "Autonomous Goldfish ML experiment orchestration"
+      "CosineAnnealingLR on AdamW TTT extends test-time training to 100 epochs",
+      "Goldfish ML agent runs full research loop autonomously with provenance tracking",
+      "Per-layer TTT LR scaling halves the sliding vs roundtrip gap"
     ]
   },
   "compatibility": {

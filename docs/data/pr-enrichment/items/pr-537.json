@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T15:16:49.758Z",
+  "generatedAt": "2026-03-23T15:47:06.662Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 537,
-    "title": "BPB 1.13872 — LeakyReLU(0.5)² + Per-Layer LR Legal TTT (3 seeds)",
+    "title": "Non-Record: BPB 1.13872 — LeakyReLU(0.5)² + Per-Layer LR Legal TTT (3 seeds)",
     "state": "open",
-    "updatedAt": "2026-03-23T15:02:29Z",
-    "headSha": "e15a4477663a86e2f3f8a3feea91ac76e4c405be",
+    "updatedAt": "2026-03-23T15:18:44Z",
+    "headSha": "3b619c756cd8849f476c91635632f19f8c1b8e2f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/537",
     "authorLogin": "Christopher-Lee-McClendon"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Depth-recurrent 11-layer GPT pairs LeakyReLU(0.5)² SmearGate MLPs with Partial RoPE/VE and legal score-first TTT using per-layer/intra-chunk cosine LR.",
+    "summary": "11-layer depth-recurrence GPT uses LeakyReLU(0.5)² and per-layer/intra-chunk LR tweaks inside the legal score-first TTT recipe for improved pre-TTT modeling.",
     "tags": [
       "architecture",
       "training-schedule",
-      "optimizer",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU(0.5)² SmearGate MLP in 11-layer depth recurrence with Partial RoPE and value embeddings",
-      "Legal score-first TTT via SGD with frozen blocks, per-layer LR multipliers, and intra-chunk cosine decay",
-      "BigramHash + XSA skips within int6-quantized model under 16MB"
+      "LeakyReLU(0.5)² MLP activation across shared BlockCores",
+      "Per-layer LR multipliers plus intra-chunk cosine decay during legal score-first TTT",
+      "Score-first TTT with frozen early blocks and SGD momentum"
     ]
   },
   "compatibility": {

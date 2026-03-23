@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-22T21:42:36.466Z",
+  "generatedAt": "2026-03-23T15:47:27.550Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 456,
     "title": "Non-record submission: Depth Recurrence + Legal Score-First TTT (10L, 1.1532 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-22T21:22:43Z",
-    "headSha": "ec44c240e36753d77ad28c4b45f9d5b149521f76",
+    "updatedAt": "2026-03-23T15:39:38Z",
+    "headSha": "f5e802ba4cf4f9577d430c84b4e669c84af08330",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/456",
     "authorLogin": "Christopher-Lee-McClendon"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Chunked score-first sliding-window TTT updates all weights for persistent adaptation before eval on a mixed int5/int6 quantized 10-layer GPT.",
+    "summary": "Mixed int5/int6 quantized 10-layer GPT uses chunked score-first full-model TTT to maintain persistent adaptation across validation chunks.",
     "tags": [
       "val-only",
-      "quantization",
       "sliding-window-eval",
+      "quantization",
       "non-record"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Validation shards are used for competition-legal score-first test-time training chunks that update the full model before scoring.",
+    "valOnlyReasoning": "Runs competition-legal full-model test-time training that trains on already-scored validation chunks.",
     "techniques": [
-      "Score-first chunked TTT over full model",
-      "Persistent adaptation across validation chunks",
-      "Mixed int5/int6 quantization"
+      "Chunked score-first full-model TTT with cosine LR decay",
+      "Persistent adaptation across sliding-window validation chunks",
+      "Mixed int5/int6 quantization with Late QAT and GPTQ-lite"
     ]
   },
   "compatibility": {
