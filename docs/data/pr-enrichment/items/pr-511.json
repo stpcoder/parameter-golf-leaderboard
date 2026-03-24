@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T13:16:31.783Z",
+  "generatedAt": "2026-03-24T07:22:26.126Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 511,
-    "title": "Record: Add PPM heuristic for test time learning ",
+    "title": "Non Record: Add PPM heuristic for test time learning ",
     "state": "open",
-    "updatedAt": "2026-03-23T12:54:46Z",
+    "updatedAt": "2026-03-24T07:13:28Z",
     "headSha": "0bfdfe4453bd6319db2758c313be459d10bb9ac1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/511",
     "authorLogin": "AnirudhRahul"
@@ -19,17 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds a delayed outside-context-only PPM bank at inference to feed long-range repetitions into the existing 10L Int5-MLP+BigramHash model.",
+    "summary": "Adds a strictly causal delayed PPM bank with a 2048-token gap to the 10-layer Int5-MLP + BigramHash inference so the transformer handles local context and PPM catches long-range repeats.",
     "tags": [
       "evaluation",
-      "compression"
+      "compression",
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Delayed PPM bank only uses targets ≥2048 tokens behind to avoid overlapping the transformer window",
-      "Fixed multi-level PPM config (k_values, min_confidence, min_count, boost_k) chosen from seed sweep",
-      "Inference-only enhancement atop 10L Int5-MLP + BigramHash(10240) base"
+      "Delayed outside-context-only PPM bank",
+      "Fixed k/min_conf/min_count/K=15 inference config"
     ]
   },
   "compatibility": {

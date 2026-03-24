@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-24T07:22:16.790Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 602,
+    "title": "Add non-record 4xH100 10L Int5-MLP submission",
+    "state": "open",
+    "updatedAt": "2026-03-24T07:09:07Z",
+    "headSha": "3455bb2f10d2eb8c1ecd9b0cec79efac4016b654",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/602",
+    "authorLogin": "ReNothingg"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Rerunning the 10L Int5-MLP recipe on 4xH100 with built-in gradient accumulation, a 1200s cap, and sliding-window evaluation.",
+    "tags": [
+      "quantization",
+      "compression",
+      "sliding-window-eval",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Int5-MLP quantized training",
+      "1200s 4xH100 run with automatic grad accumulation",
+      "sliding-window stride=64 evaluation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

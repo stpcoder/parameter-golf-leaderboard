@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-24T06:52:24.733Z",
+  "generatedAt": "2026-03-24T07:22:26.204Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 602,
+      "title": "Add non-record 4xH100 10L Int5-MLP submission",
+      "status": "open",
+      "updatedAt": "2026-03-24T07:09:07Z",
+      "headSha": "3455bb2f10d2eb8c1ecd9b0cec79efac4016b654",
+      "generatedAt": "2026-03-24T07:22:16.790Z",
+      "summary": "Rerunning the 10L Int5-MLP recipe on 4xH100 with built-in gradient accumulation, a 1200s cap, and sliding-window evaluation.",
+      "tags": [
+        "quantization",
+        "compression",
+        "sliding-window-eval",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-602.json"
+    },
     {
       "prNumber": 601,
       "title": "Non-record: VR + GA + Late QAT + Full GPTQ — 1.1418 BPB, 15.7 MB",
@@ -1495,15 +1519,16 @@
     },
     {
       "prNumber": 511,
-      "title": "Record: Add PPM heuristic for test time learning ",
+      "title": "Non Record: Add PPM heuristic for test time learning ",
       "status": "open",
-      "updatedAt": "2026-03-23T12:54:46Z",
+      "updatedAt": "2026-03-24T07:13:28Z",
       "headSha": "0bfdfe4453bd6319db2758c313be459d10bb9ac1",
-      "generatedAt": "2026-03-23T13:16:31.783Z",
-      "summary": "Adds a delayed outside-context-only PPM bank at inference to feed long-range repetitions into the existing 10L Int5-MLP+BigramHash model.",
+      "generatedAt": "2026-03-24T07:22:26.126Z",
+      "summary": "Adds a strictly causal delayed PPM bank with a 2048-token gap to the 10-layer Int5-MLP + BigramHash inference so the transformer handles local context and PPM catches long-range repeats.",
       "tags": [
         "evaluation",
-        "compression"
+        "compression",
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,

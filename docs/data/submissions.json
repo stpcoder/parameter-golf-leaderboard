@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T06:52:00.247Z",
+  "generatedAt": "2026-03-24T07:22:08.588Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -5685,7 +5685,7 @@
       },
       "pr": {
         "number": 511,
-        "title": "Record: Add PPM heuristic for test time learning ",
+        "title": "Non Record: Add PPM heuristic for test time learning ",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -5693,7 +5693,7 @@
         "authorLogin": "AnirudhRahul",
         "authorName": null,
         "createdAt": "2026-03-23T07:45:03Z",
-        "updatedAt": "2026-03-23T12:54:46Z",
+        "updatedAt": "2026-03-24T07:13:28Z",
         "headSha": "0bfdfe4453bd6319db2758c313be459d10bb9ac1",
         "headRepo": "AnirudhRahul/parameter-golf"
       },
@@ -5935,6 +5935,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/40ffdcfba9e65efabb9d4bb0f566b00a58ea9d51/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x_WD04/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/40ffdcfba9e65efabb9d4bb0f566b00a58ea9d51/records/track_10min_16mb/2026-03-21_11L_XSA4_EMA_TTT_Int6_MLP3x_WD04",
         "pr": "https://github.com/openai/parameter-golf/pull/317",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-24_4xH100_20min_10L_Int5MLP_seed1337",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-24_4xH100_20min_10L_Int5MLP_seed1337",
+        "folderPath": "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337",
+        "submissionPath": "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/train_gpt.py"
+      },
+      "submission": {
+        "author": "Pasha",
+        "githubId": "ReNothingg",
+        "name": "Non-record: 10L Int5-MLP on 4xH100 for 1200s",
+        "blurb": "4xH100 non-record run for 1200s with sliding-window eval stride=64 and int5/int6+zstd compression.",
+        "date": "2026-03-24T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.14222237,
+        "valLoss": 1.92858953,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15803072,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 602,
+        "title": "Add non-record 4xH100 10L Int5-MLP submission",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/602",
+        "authorLogin": "ReNothingg",
+        "authorName": null,
+        "createdAt": "2026-03-24T07:09:07Z",
+        "updatedAt": "2026-03-24T07:09:07Z",
+        "headSha": "3455bb2f10d2eb8c1ecd9b0cec79efac4016b654",
+        "headRepo": "ReNothingg/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3455bb2f10d2eb8c1ecd9b0cec79efac4016b654/records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/3455bb2f10d2eb8c1ecd9b0cec79efac4016b654/records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/3455bb2f10d2eb8c1ecd9b0cec79efac4016b654/records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/3455bb2f10d2eb8c1ecd9b0cec79efac4016b654/records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/3455bb2f10d2eb8c1ecd9b0cec79efac4016b654/records/track_non_record_16mb/2026-03-24_4xH100_20min_10L_Int5MLP_seed1337",
+        "pr": "https://github.com/openai/parameter-golf/pull/602",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
