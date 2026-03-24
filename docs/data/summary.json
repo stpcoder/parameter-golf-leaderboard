@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-24T10:53:51.028Z",
+  "generatedAt": "2026-03-24T11:23:54.308Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 474,
+    "submissions": 476,
     "official": 1,
-    "openPr": 396,
+    "openPr": 398,
     "mergedPr": 20,
     "closedPr": 57,
-    "prBacked": 474,
+    "prBacked": 476,
     "readmeListed": 19,
     "collectorErrors": 0
   },
@@ -91,7 +91,7 @@
       }
     },
     "openPrMainTrack": {
-      "id": "record-records-track_10min_16mb-2026-03-24_DeepQuant_V10b",
+      "id": "record-records-track_10min_16mb-chimera_submission",
       "source": "pull_request",
       "status": "open",
       "category": "main-track",
@@ -103,31 +103,31 @@
         "category": "main-track"
       },
       "record": {
-        "folderName": "2026-03-24_DeepQuant_V10b",
-        "folderPath": "records/track_10min_16mb/2026-03-24_DeepQuant_V10b",
-        "submissionPath": "records/track_10min_16mb/2026-03-24_DeepQuant_V10b/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-24_DeepQuant_V10b/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-24_DeepQuant_V10b/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-24_DeepQuant_V10b/train_gpt.py"
+        "folderName": "chimera_submission",
+        "folderPath": "records/track_10min_16mb/chimera_submission",
+        "submissionPath": "records/track_10min_16mb/chimera_submission/submission.json",
+        "readmePath": "records/track_10min_16mb/chimera_submission/README.md",
+        "trainLogPath": "records/track_10min_16mb/chimera_submission/train.log",
+        "scriptPath": "records/track_10min_16mb/chimera_submission/train_gpt.py"
       },
       "submission": {
-        "author": "UrukHan",
-        "githubId": "UrukHan",
-        "name": "DeepQuant — 11L INT6 + 8-epoch Cosine LoRA TTT",
-        "blurb": "8ep cosine TTT + LM rank-16 + bias tuning + zigzag GPU balancing",
-        "date": "2026-03-24T00:00:00Z"
+        "author": "chimera",
+        "githubId": "chimera",
+        "name": "Chimera TTT",
+        "blurb": null,
+        "date": "2026-03-24T11:19:24Z"
       },
       "metrics": {
-        "valBpb": 0.6235,
-        "valLoss": 1.0528,
+        "valBpb": 0.5601,
+        "valLoss": null,
         "preQuantValBpb": null,
         "preQuantValLoss": null,
         "stepStop": null,
         "wallclockSeconds": null,
-        "evalTimeSeconds": null
+        "evalTimeSeconds": 780
       },
       "artifact": {
-        "bytesTotal": 15413092,
+        "bytesTotal": null,
         "bytesCode": null,
         "bytesModelInt8Zlib": null
       },
@@ -139,26 +139,26 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 596,
-        "title": "Record: DeepQuant V10b — 11L INT6 + 8ep LoRA TTT (val_bpb=0.6430)",
+        "number": 611,
+        "title": "Record: Chimera TTT — K-Projection LoRA + Min-NLL (0.5601 BPB, 3-seed mean)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/596",
-        "authorLogin": "AriaAnima",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/611",
+        "authorLogin": "teddyoweh",
         "authorName": null,
-        "createdAt": "2026-03-24T03:09:15Z",
-        "updatedAt": "2026-03-24T10:13:33Z",
-        "headSha": "e7df1101d1f13eada6885a9dd44197ceef33f337",
-        "headRepo": "AriaAnima/parameter-golf"
+        "createdAt": "2026-03-24T11:19:24Z",
+        "updatedAt": "2026-03-24T11:19:24Z",
+        "headSha": "c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72",
+        "headRepo": "teddyoweh/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e7df1101d1f13eada6885a9dd44197ceef33f337/records/track_10min_16mb/2026-03-24_DeepQuant_V10b/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/e7df1101d1f13eada6885a9dd44197ceef33f337/records/track_10min_16mb/2026-03-24_DeepQuant_V10b/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/e7df1101d1f13eada6885a9dd44197ceef33f337/records/track_10min_16mb/2026-03-24_DeepQuant_V10b/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/e7df1101d1f13eada6885a9dd44197ceef33f337/records/track_10min_16mb/2026-03-24_DeepQuant_V10b/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/e7df1101d1f13eada6885a9dd44197ceef33f337/records/track_10min_16mb/2026-03-24_DeepQuant_V10b",
-        "pr": "https://github.com/openai/parameter-golf/pull/596",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72/records/track_10min_16mb/chimera_submission/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72/records/track_10min_16mb/chimera_submission/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72/records/track_10min_16mb/chimera_submission/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72/records/track_10min_16mb/chimera_submission/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72/records/track_10min_16mb/chimera_submission",
+        "pr": "https://github.com/openai/parameter-golf/pull/611",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

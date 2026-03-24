@@ -1,8 +1,55 @@
 {
-  "generatedAt": "2026-03-24T10:53:59.488Z",
+  "generatedAt": "2026-03-24T11:24:11.496Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 611,
+      "title": "Record: Chimera TTT — K-Projection LoRA + Min-NLL (0.5601 BPB, 3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-24T11:19:24Z",
+      "headSha": "c24037678d5bbacb9f7b0aa0ac1a43e25ed87e72",
+      "generatedAt": "2026-03-24T11:23:59.144Z",
+      "summary": "Adds K-projection LoRA plus min-NLL per-document epoch selection so Chimera TTT adapts keys and safely extends LoRA tuning without late-epoch overfitting.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-611.json"
+    },
+    {
+      "prNumber": 610,
+      "title": "GPTQ Int6 + SGD Test-Time Training — A800 1.1190 bpb",
+      "status": "open",
+      "updatedAt": "2026-03-24T10:59:42Z",
+      "headSha": "1a4c3a9882b38ee23d641d91894991a96a22f349",
+      "generatedAt": "2026-03-24T11:24:04.981Z",
+      "summary": "11-layer GPT with PR#414 stack and LeakyReLU², Hessian-guided GPTQ int6, plus SGD test-time training on causal validation chunks.",
+      "tags": [
+        "val-only",
+        "quantization",
+        "training-schedule",
+        "optimizer"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-610.json"
+    },
     {
       "prNumber": 609,
       "title": "Record: 11L XSA-all + Full GPTQ + Selective Pruning (val_bpb=1.1154, 3-seed)",
@@ -434,14 +481,14 @@
       "prNumber": 583,
       "title": "Record: 10L Int5-MLP3x BigramHash4096 SlidingEval — mean val_bpb 1.1489",
       "status": "open",
-      "updatedAt": "2026-03-23T22:39:29Z",
-      "headSha": "edcc5e449787d3483403e06597271821abd46141",
-      "generatedAt": "2026-03-23T22:49:10.370Z",
-      "summary": "10-layer transformer mixes 3× Int5 MLPs, full-run Int6 QAT with Muon+AdamW schedule tuned via Optuna, then uses sliding eval stride 64.",
+      "updatedAt": "2026-03-24T11:15:19Z",
+      "headSha": "a0225f7e4889cceb021689fcf352302b29e73989",
+      "generatedAt": "2026-03-24T11:24:11.406Z",
+      "summary": "10-layer transformer with 3× MLP, BigramHash, full-run Int6 QAT plus Int5 MLP compression, sliding-window eval, and Optuna-tuned schedule.",
       "tags": [
         "quantization",
-        "optimizer",
-        "sliding-window-eval"
+        "sliding-window-eval",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,

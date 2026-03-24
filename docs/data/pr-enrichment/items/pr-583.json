@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T22:49:10.370Z",
+  "generatedAt": "2026-03-24T11:24:11.406Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 583,
     "title": "Record: 10L Int5-MLP3x BigramHash4096 SlidingEval — mean val_bpb 1.1489",
     "state": "open",
-    "updatedAt": "2026-03-23T22:39:29Z",
-    "headSha": "edcc5e449787d3483403e06597271821abd46141",
+    "updatedAt": "2026-03-24T11:15:19Z",
+    "headSha": "a0225f7e4889cceb021689fcf352302b29e73989",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/583",
     "authorLogin": "suchihype"
   },
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer transformer mixes 3× Int5 MLPs, full-run Int6 QAT with Muon+AdamW schedule tuned via Optuna, then uses sliding eval stride 64.",
+    "summary": "10-layer transformer with 3× MLP, BigramHash, full-run Int6 QAT plus Int5 MLP compression, sliding-window eval, and Optuna-tuned schedule.",
     "tags": [
       "quantization",
-      "optimizer",
-      "sliding-window-eval"
+      "sliding-window-eval",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Full-run Int6 QAT with STE export matching",
-      "Muon optimizer + AdamW blend with Optuna-tuned LR/momentum",
-      "Sliding-window evaluation (stride 64) after training"
+      "Int6 QAT aligned with export scaling",
+      "Int5-quantized MLP 3× plus BigramHash vocab extension",
+      "Optuna TPE sweep for LR and warmdown"
     ]
   },
   "compatibility": {
