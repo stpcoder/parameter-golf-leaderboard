@@ -2,7 +2,7 @@
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
-  "generatedAt": "2026-03-24T12:24:48.379Z",
+  "generatedAt": "2026-03-24T12:55:15.496Z",
   "prs": {
     "6": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:11373420c1f50e6a83599fb25bb73f38a6555cb7:closed:2026-03-18T18:34:32Z",
@@ -1367,10 +1367,10 @@
       "headSha": "5761d2f296d76d6bf325ef6469bfd94db59a000b"
     },
     "340": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:5df76dfd360413235dad4b1529f9e0ba808189d6:open:2026-03-24T06:36:28Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:4bd9884524c6ca3e963dbf6be47a7dbedf522aaf:open:2026-03-24T12:52:17Z",
       "file": "items/pr-340.json",
-      "updatedAt": "2026-03-24T06:36:28Z",
-      "headSha": "5df76dfd360413235dad4b1529f9e0ba808189d6"
+      "updatedAt": "2026-03-24T12:52:17Z",
+      "headSha": "4bd9884524c6ca3e963dbf6be47a7dbedf522aaf"
     },
     "341": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:c821a8c4d174b0ae69ef75a42c7d1a4a40c12f18:open:2026-03-21T12:59:20Z",
@@ -2477,10 +2477,10 @@
       "headSha": "30bdc5d7bf129b3f7456176ac1febb3bfdcd1bda"
     },
     "593": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:ce4c4a2018c12fb19e7e784d881b91d4137bf4ed:open:2026-03-24T12:23:37Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:7703e5edce103b810cf0dd048c72a95667820183:open:2026-03-24T12:30:48Z",
       "file": "items/pr-593.json",
-      "updatedAt": "2026-03-24T12:23:37Z",
-      "headSha": "ce4c4a2018c12fb19e7e784d881b91d4137bf4ed"
+      "updatedAt": "2026-03-24T12:30:48Z",
+      "headSha": "7703e5edce103b810cf0dd048c72a95667820183"
     },
     "595": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:7868f1244e333c7b7af2af2a51c67ea00a427f86:open:2026-03-24T03:02:11Z",
@@ -2555,9 +2555,9 @@
       "headSha": "c1d5cb45c9afbd4d421b8e882c83acf0e2d1d2be"
     },
     "609": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:e2868b319e4e1d2db4bf03703d686ccec4f6e94a:open:2026-03-24T10:01:14Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:e2868b319e4e1d2db4bf03703d686ccec4f6e94a:open:2026-03-24T12:40:40Z",
       "file": "items/pr-609.json",
-      "updatedAt": "2026-03-24T10:01:14Z",
+      "updatedAt": "2026-03-24T12:40:40Z",
       "headSha": "e2868b319e4e1d2db4bf03703d686ccec4f6e94a"
     },
     "610": {

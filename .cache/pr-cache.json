@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-24T12:24:20.413Z",
-  "lastSeenUpdatedAt": "2026-03-24T12:23:37Z",
+  "generatedAt": "2026-03-24T12:54:48.288Z",
+  "lastSeenUpdatedAt": "2026-03-24T12:52:17Z",
   "prs": {
     "1": {
       "number": 1,
@@ -27034,7 +27034,7 @@
     },
     "340": {
       "number": 340,
-      "updatedAt": "2026-03-24T06:36:28Z",
+      "updatedAt": "2026-03-24T12:52:17Z",
       "pr": {
         "number": 340,
         "title": "V2 Prototype: SwiGLU + Dropout + MuonWD + MidLayerLoop",
@@ -27045,8 +27045,8 @@
         "authorLogin": "starfly-web",
         "authorName": null,
         "createdAt": "2026-03-21T12:44:14Z",
-        "updatedAt": "2026-03-24T06:36:28Z",
-        "headSha": "5df76dfd360413235dad4b1529f9e0ba808189d6",
+        "updatedAt": "2026-03-24T12:52:17Z",
+        "headSha": "4bd9884524c6ca3e963dbf6be47a7dbedf522aaf",
         "headRepo": "starfly-web/parameter-golf"
       },
       "submissions": [
@@ -27073,17 +27073,17 @@
           "submission": {
             "author": "starfly-web",
             "githubId": "starfly-web",
-            "name": "Compute Request: SwiGLU + Dropout + MuonWD + MidLayerLoop (2080 Ti)",
-            "blurb": "Formal Request for Compute (H100). Verified 16MB constraint compliance (4.8MB) via 1-iteration smoke test on 2080 Ti. Architecture features SwiGLU, 10% Dropout, extreme MuonWD, and Mid-layer Recurrence.",
-            "date": "2026-03-21T00:00:00Z"
+            "name": "V2.1 Prototype: SwiGLU + MuonWD + Recurrence + EMA",
+            "blurb": "Enhancement of validated V2 (1.2182 bpb) architecture. Now includes EMA (Exponential Moving Average) for improved convergence and stabilization. Included as a proposal for the full 8xH100 compute grant.",
+            "date": "2026-03-24T00:00:00Z"
           },
           "metrics": {
-            "valBpb": 8.0797,
-            "valLoss": 13.6422,
+            "valBpb": 1.2182,
+            "valLoss": 2.0568,
             "preQuantValBpb": null,
             "preQuantValLoss": null,
-            "stepStop": 1,
-            "wallclockSeconds": 65,
+            "stepStop": 8301,
+            "wallclockSeconds": 3600,
             "evalTimeSeconds": null
           },
           "artifact": {
@@ -27108,16 +27108,16 @@
             "authorLogin": "starfly-web",
             "authorName": null,
             "createdAt": "2026-03-21T12:44:14Z",
-            "updatedAt": "2026-03-24T06:36:28Z",
-            "headSha": "5df76dfd360413235dad4b1529f9e0ba808189d6",
+            "updatedAt": "2026-03-24T12:52:17Z",
+            "headSha": "4bd9884524c6ca3e963dbf6be47a7dbedf522aaf",
             "headRepo": "starfly-web/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/5df76dfd360413235dad4b1529f9e0ba808189d6/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/5df76dfd360413235dad4b1529f9e0ba808189d6/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/5df76dfd360413235dad4b1529f9e0ba808189d6/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/5df76dfd360413235dad4b1529f9e0ba808189d6/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/5df76dfd360413235dad4b1529f9e0ba808189d6/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/4bd9884524c6ca3e963dbf6be47a7dbedf522aaf/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/4bd9884524c6ca3e963dbf6be47a7dbedf522aaf/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/4bd9884524c6ca3e963dbf6be47a7dbedf522aaf/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/4bd9884524c6ca3e963dbf6be47a7dbedf522aaf/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/4bd9884524c6ca3e963dbf6be47a7dbedf522aaf/records/track_non_record_16mb/2026-03-21_SwiGLU_Dropout_MuonWD_MidLayerLoop",
             "pr": "https://github.com/openai/parameter-golf/pull/340"
           }
         }
@@ -50454,7 +50454,7 @@
     },
     "593": {
       "number": 593,
-      "updatedAt": "2026-03-24T12:23:37Z",
+      "updatedAt": "2026-03-24T12:30:48Z",
       "pr": {
         "number": 593,
         "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon + BigramHash 3072 (val_bpb 1.1163, 3-seed mean)",
@@ -50465,8 +50465,8 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-24T01:45:34Z",
-        "updatedAt": "2026-03-24T12:23:37Z",
-        "headSha": "ce4c4a2018c12fb19e7e784d881b91d4137bf4ed",
+        "updatedAt": "2026-03-24T12:30:48Z",
+        "headSha": "7703e5edce103b810cf0dd048c72a95667820183",
         "headRepo": "abaybektursun/parameter-golf"
       },
       "submissions": [
@@ -50494,7 +50494,7 @@
             "author": "abaybektursun",
             "githubId": "abaybektursun",
             "name": "Full GPTQ + LeakyReLU² + Parallel Muon + BigramHash 3072",
-            "blurb": "Full Hessian GPTQ + LeakyReLU(0.5)² + Parameter Banking + Parallel Muon (PR #399) + BigramHash 3072×80 (coverage-over-fidelity budget allocation). No TTT. 3-seed mean: 1.1163 (std 0.0012). Built on PR #414 by @signalrush, GPTQ from PR #569.",
+            "blurb": "Full Hessian GPTQ + LeakyReLU(0.5)² + Parameter Banking + Parallel Muon (PR #399) + BigramHash 3072×80 (coverage-over-fidelity budget allocation). No TTT. 3-seed mean: 1.1163 (std 0.0012). Built on PR #414 by @signalrush, GPTQ technique from PR #535 by @raahilshah and PR #569 by @gowtham0992.",
             "date": "2026-03-24"
           },
           "metrics": {
@@ -50528,16 +50528,16 @@
             "authorLogin": "abaybektursun",
             "authorName": null,
             "createdAt": "2026-03-24T01:45:34Z",
-            "updatedAt": "2026-03-24T12:23:37Z",
-            "headSha": "ce4c4a2018c12fb19e7e784d881b91d4137bf4ed",
+            "updatedAt": "2026-03-24T12:30:48Z",
+            "headSha": "7703e5edce103b810cf0dd048c72a95667820183",
             "headRepo": "abaybektursun/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ce4c4a2018c12fb19e7e784d881b91d4137bf4ed/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/ce4c4a2018c12fb19e7e784d881b91d4137bf4ed/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/ce4c4a2018c12fb19e7e784d881b91d4137bf4ed/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/ce4c4a2018c12fb19e7e784d881b91d4137bf4ed/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/ce4c4a2018c12fb19e7e784d881b91d4137bf4ed/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7703e5edce103b810cf0dd048c72a95667820183/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/7703e5edce103b810cf0dd048c72a95667820183/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/7703e5edce103b810cf0dd048c72a95667820183/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/7703e5edce103b810cf0dd048c72a95667820183/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/7703e5edce103b810cf0dd048c72a95667820183/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon",
             "pr": "https://github.com/openai/parameter-golf/pull/593"
           }
         }
@@ -51675,7 +51675,7 @@
     },
     "609": {
       "number": 609,
-      "updatedAt": "2026-03-24T10:01:14Z",
+      "updatedAt": "2026-03-24T12:40:40Z",
       "pr": {
         "number": 609,
         "title": "Record: 11L XSA-all + Full GPTQ + Selective Pruning (val_bpb=1.1154, 3-seed)",
@@ -51686,7 +51686,7 @@
         "authorLogin": "saml212",
         "authorName": null,
         "createdAt": "2026-03-24T10:01:14Z",
-        "updatedAt": "2026-03-24T10:01:14Z",
+        "updatedAt": "2026-03-24T12:40:40Z",
         "headSha": "e2868b319e4e1d2db4bf03703d686ccec4f6e94a",
         "headRepo": "saml212/parameter-golf"
       },
@@ -51749,7 +51749,7 @@
             "authorLogin": "saml212",
             "authorName": null,
             "createdAt": "2026-03-24T10:01:14Z",
-            "updatedAt": "2026-03-24T10:01:14Z",
+            "updatedAt": "2026-03-24T12:40:40Z",
             "headSha": "e2868b319e4e1d2db4bf03703d686ccec4f6e94a",
             "headRepo": "saml212/parameter-golf"
           },
