@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T19:47:54.584Z",
+  "generatedAt": "2026-03-24T07:52:46.605Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 484,
-    "title": "Non-record: SwiGLU + EMA + TTT Memorization Analysis (val_bpb=1.1679)",
+    "title": "Non-record: Empirical Bayes Adaptive TTT (val_bpb=1.1185)",
     "state": "open",
-    "updatedAt": "2026-03-23T19:46:20Z",
-    "headSha": "1d7c2488fa490723ac228cfc2119f987cc62cb32",
+    "updatedAt": "2026-03-24T07:39:40Z",
+    "headSha": "e98266da86fa3302fa7b44ec1e2232333e76d12f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/484",
     "authorLogin": "Robby955"
   },
@@ -19,19 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines int5-quantized SwiGLU+EMA architecture with pruning and a sliding-window diagnostic plus cosine LR scheduling to detect TTT memorization.",
+    "summary": "Extends frontier arch with per-layer Empirical Bayes gradient scaling, embedding freeze, and EMA burst to stabilize single-pass TTT.",
     "tags": [
       "architecture",
-      "quantization",
-      "evaluation",
       "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "TTT memorization diagnostic comparing sliding eval versus loop scores",
-      "global cosine LR with per-layer multipliers for multi-epoch TTT",
-      "SwiGLU+EMA int5-quantized 10-layer model with pruning and BigramHash"
+      "Empirical Bayes per-layer gradient SNR scaling for TTT",
+      "Embedding/bigram freeze with EMA burst before sliding-window evaluation"
     ]
   },
   "compatibility": {

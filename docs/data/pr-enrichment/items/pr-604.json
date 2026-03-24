@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-24T07:52:34.495Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 604,
+    "title": "GolfStudent 14L: Hybrid GatedMLP+Attn, d=288, vocab=1024, Muon+EMA, INT8+zlib",
+    "state": "open",
+    "updatedAt": "2026-03-24T07:42:35Z",
+    "headSha": "233f7601a0e08febe8d63148667198beb60a059c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/604",
+    "authorLogin": "whitestone1121-web"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/alan_samaha_golf/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Hybrid 14-layer model alternates gated recurrence layers with Flash Attention, trained with Muon/EMA and quantized per-row INT8+zlib.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Hybrid GatedMLP + Flash attention mix",
+      "Muon optimizer with EMA and warmdown",
+      "Per-row INT8 quantization with zlib"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

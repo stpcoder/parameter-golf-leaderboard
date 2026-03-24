@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-24T07:52:29.058Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 605,
+    "title": "Record: 0.7227 BPB — 10L LoRA TTT 6ep + FlashAttention-3",
+    "state": "open",
+    "updatedAt": "2026-03-24T07:49:42Z",
+    "headSha": "d65b3b2d8f1939153dcdb1f4e7295bf8bb71e0cb",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/605",
+    "authorLogin": "bigbag"
+  },
+  "inputs": {
+    "hash": "072662c123505c465dfcb1e80cbfb797fc5a748edd0e2a3564b0b095cec763f8",
+    "readmePaths": [],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "10L GQA model adds LoRA TTT per-document adaptation plus FlashAttention-3, EMA/SWA, and late QAT/int6 quantization with compiled Muon optimizer.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "optimizer",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "LoRA TTT per-document adaptation with bias tuning",
+      "FlashAttention-3 plus compiled Muon Newton-Schulz optimizer",
+      "Late QAT int6 quantization alongside EMA/SWA"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

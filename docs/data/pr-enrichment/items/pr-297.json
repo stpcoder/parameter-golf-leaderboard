@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T00:56:33.860Z",
+  "generatedAt": "2026-03-24T07:52:51.728Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 297,
     "title": "Late STE QAT + Int6 MLP3x + SmearGate + BigramHash + OrthoInit + Overtone + SWA + SGD TTT (int6+zstd-22)",
     "state": "open",
-    "updatedAt": "2026-03-21T00:28:53Z",
+    "updatedAt": "2026-03-24T07:35:56Z",
     "headSha": "6b710c10e331ab8bfff3d779f381278e35a56ca3",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/297",
     "authorLogin": "davidpuertolas"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines a 9-layer 512 GPT with SmearGate/BigramHash, late STE QAT + SWA, int6+zstd compression, and full-model SGD TTT after sliding-window eval.",
+    "summary": "Late STE QAT on a dense 9×512 stack with SmearGate/BigramHash, Muon+AdamW with SWA, per-row int6+zstd, and full-model SGD TTT after sliding-window eval.",
     "tags": [
-      "quantization",
       "architecture",
-      "optimizer",
-      "training-schedule"
+      "quantization",
+      "training-schedule",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "late STE QAT tail with LR halving",
-      "per-row int6 quant + zstd-22 blob",
-      "full-model SGD TTT after sliding-window eval"
+      "- Late STE QAT tail with Muon+AdamW and SWA",
+      "- Per-row int6 quantization + zstd-22 compression to stay under 16MB",
+      "- SmearGate+BigramHash stack with full-model SGD TTT after sliding-window eval"
     ]
   },
   "compatibility": {

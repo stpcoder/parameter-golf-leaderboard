@@ -1,8 +1,79 @@
 {
-  "generatedAt": "2026-03-24T07:22:26.204Z",
+  "generatedAt": "2026-03-24T07:52:51.772Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 606,
+      "title": "Record: int5 GPTQ + Soft-Round QAT (3-seed mean 1.1162)",
+      "status": "open",
+      "updatedAt": "2026-03-24T07:50:22Z",
+      "headSha": "17836df54df77a51e47120c775cd7e722862c3e0",
+      "generatedAt": "2026-03-24T07:52:23.718Z",
+      "summary": "Combines int5 GPTQ with Soft-Round QAT and legal score-first TTT on a 33.6M XSA/BigramHash architecture to squeeze under 16MB.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-606.json"
+    },
+    {
+      "prNumber": 605,
+      "title": "Record: 0.7227 BPB — 10L LoRA TTT 6ep + FlashAttention-3",
+      "status": "open",
+      "updatedAt": "2026-03-24T07:49:42Z",
+      "headSha": "d65b3b2d8f1939153dcdb1f4e7295bf8bb71e0cb",
+      "generatedAt": "2026-03-24T07:52:29.058Z",
+      "summary": "10L GQA model adds LoRA TTT per-document adaptation plus FlashAttention-3, EMA/SWA, and late QAT/int6 quantization with compiled Muon optimizer.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "optimizer",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-605.json"
+    },
+    {
+      "prNumber": 604,
+      "title": "GolfStudent 14L: Hybrid GatedMLP+Attn, d=288, vocab=1024, Muon+EMA, INT8+zlib",
+      "status": "open",
+      "updatedAt": "2026-03-24T07:42:35Z",
+      "headSha": "233f7601a0e08febe8d63148667198beb60a059c",
+      "generatedAt": "2026-03-24T07:52:34.495Z",
+      "summary": "Hybrid 14-layer model alternates gated recurrence layers with Flash Attention, trained with Muon/EMA and quantized per-row INT8+zlib.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-604.json"
+    },
     {
       "prNumber": 602,
       "title": "Add non-record 4xH100 10L Int5-MLP submission",
@@ -311,29 +382,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-586.json"
-    },
-    {
-      "prNumber": 585,
-      "title": "Record: int5 GPTQ + 33.6M model (3-seed mean val_bpb=1.1179)",
-      "status": "closed",
-      "updatedAt": "2026-03-23T23:51:17Z",
-      "headSha": "e1595978f7da5e674ea976d4b832e7f81b4a94ed",
-      "generatedAt": "2026-03-24T00:19:41.585Z",
-      "summary": "int5 GPTQ compression with Hessian-aware compensation lets a 33.6M BigramHash+MLP 3.5× LM fit under 16MB while using legal score-first TTT.",
-      "tags": [
-        "quantization",
-        "architecture",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-585.json"
     },
     {
       "prNumber": 583,
@@ -2005,16 +2053,14 @@
     },
     {
       "prNumber": 484,
-      "title": "Non-record: SwiGLU + EMA + TTT Memorization Analysis (val_bpb=1.1679)",
+      "title": "Non-record: Empirical Bayes Adaptive TTT (val_bpb=1.1185)",
       "status": "open",
-      "updatedAt": "2026-03-23T19:46:20Z",
-      "headSha": "1d7c2488fa490723ac228cfc2119f987cc62cb32",
-      "generatedAt": "2026-03-23T19:47:54.584Z",
-      "summary": "Combines int5-quantized SwiGLU+EMA architecture with pruning and a sliding-window diagnostic plus cosine LR scheduling to detect TTT memorization.",
+      "updatedAt": "2026-03-24T07:39:40Z",
+      "headSha": "e98266da86fa3302fa7b44ec1e2232333e76d12f",
+      "generatedAt": "2026-03-24T07:52:46.605Z",
+      "summary": "Extends frontier arch with per-layer Empirical Bayes gradient scaling, embedding freeze, and EMA burst to stabilize single-pass TTT.",
       "tags": [
         "architecture",
-        "quantization",
-        "evaluation",
         "training-schedule"
       ],
       "flags": {
@@ -5409,15 +5455,15 @@
       "prNumber": 297,
       "title": "Late STE QAT + Int6 MLP3x + SmearGate + BigramHash + OrthoInit + Overtone + SWA + SGD TTT (int6+zstd-22)",
       "status": "open",
-      "updatedAt": "2026-03-21T00:28:53Z",
+      "updatedAt": "2026-03-24T07:35:56Z",
       "headSha": "6b710c10e331ab8bfff3d779f381278e35a56ca3",
-      "generatedAt": "2026-03-21T00:56:33.860Z",
-      "summary": "Combines a 9-layer 512 GPT with SmearGate/BigramHash, late STE QAT + SWA, int6+zstd compression, and full-model SGD TTT after sliding-window eval.",
+      "generatedAt": "2026-03-24T07:52:51.728Z",
+      "summary": "Late STE QAT on a dense 9×512 stack with SmearGate/BigramHash, Muon+AdamW with SWA, per-row int6+zstd, and full-model SGD TTT after sliding-window eval.",
       "tags": [
-        "quantization",
         "architecture",
-        "optimizer",
-        "training-schedule"
+        "quantization",
+        "training-schedule",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
