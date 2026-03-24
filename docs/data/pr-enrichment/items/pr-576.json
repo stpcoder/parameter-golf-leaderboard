@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T22:19:16.264Z",
+  "generatedAt": "2026-03-24T14:56:04.473Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 576,
     "title": "Record: Train Larger, Quantize Harder - 33.6M params + int5 GPTQ / (val_bpb: 1.1164)",
-    "state": "open",
-    "updatedAt": "2026-03-23T21:51:04Z",
+    "state": "closed",
+    "updatedAt": "2026-03-24T14:44:51Z",
     "headSha": "011a09946e9f789c688caeac4a10ee0eb136d605",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/576",
     "authorLogin": "cmcdnd"
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Int5 QAT-trained 33.6M model uses Hessian GPTQ with pruning plus a post-TTT temperature rescore to squeeze more capacity while correcting overconfidence.",
+    "summary": "11-layer 512d GPT packs int5 per-row GPTQ (with QAT/pruning/EMA) plus post-score-first TTT temperature rescaling (T=0.98) to tame overconfidence.",
     "tags": [
       "quantization",
-      "architecture",
-      "evaluation"
+      "evaluation",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Int5 QAT with per-row Hessian GPTQ and pruning to fit 33.6M params",
-      "Score-first TTT followed by fixed T=0.98 rescore to undo TTT-induced overconfidence"
+      "- Int5 per-row GPTQ with early QAT, EMA, and 2% pruning",
+      "- Post-score-first TTT temperature rescaling (T=0.98) to correct overconfidence",
+      "- 11L/512d with LeakyReLU², BigramHash, XSA-all, VE128"
     ]
   },
   "compatibility": {

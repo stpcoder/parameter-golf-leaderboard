@@ -1,16 +1,39 @@
 {
-  "generatedAt": "2026-03-24T14:26:52.261Z",
+  "generatedAt": "2026-03-24T14:56:32.264Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 624,
+      "title": "Rajat submission",
+      "status": "open",
+      "updatedAt": "2026-03-24T14:25:33Z",
+      "headSha": "fd0a6d3aa84a5a9bdb0a4e8db2b9c245b7c4c59c",
+      "generatedAt": "2026-03-24T14:55:27.106Z",
+      "summary": "Combines Hessian-guided int6 GPTQ, soft-round QAT, and per-chunk LoRA TTT with entropy-coded compression for the 10min/16MB challenge.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-624.json"
+    },
+    {
       "prNumber": 623,
       "title": "[10min/16MB]  AWQ + Cyclic Momentum + ReLU² + 11L Shared — 1.1507 bpb",
       "status": "open",
-      "updatedAt": "2026-03-24T14:22:27Z",
-      "headSha": "db9ea395e16ccc078847e64204c640a631d0925c",
-      "generatedAt": "2026-03-24T14:25:20.010Z",
-      "summary": "Combines AWQ per-channel scaling with cyclic Muon momentum, ReLU² MLPs, and 11-layer shared weights to power an efficient int5/int6 quantized 10min/16MB model.",
+      "updatedAt": "2026-03-24T14:54:41Z",
+      "headSha": "a029a319a44a3c4369b32facc45b7ba7967d899e",
+      "generatedAt": "2026-03-24T14:55:32.499Z",
+      "summary": "Combines AWQ int5/int6 calibration, cyclic Muon momentum, ReLU² MLPs, and 11-layer weight sharing for a compact 16MB model.",
       "tags": [
         "quantization",
         "optimizer",
@@ -526,15 +549,15 @@
       "prNumber": 595,
       "title": "Record: Loqui Auris — 10L + SWA + Standard TTT (val_bpb=1.1100)",
       "status": "closed",
-      "updatedAt": "2026-03-24T14:12:38Z",
+      "updatedAt": "2026-03-24T14:50:13Z",
       "headSha": "7868f1244e333c7b7af2af2a51c67ea00a427f86",
-      "generatedAt": "2026-03-24T14:25:39.464Z",
-      "summary": "10-layer GQA transformer with ReLU², SmearGate+BigramHash skips, SWA, and standard AdamW TTT on the quantized weights for final tuning.",
+      "generatedAt": "2026-03-24T14:55:47.606Z",
+      "summary": "10L GQA model with SmearGate/BigramHash + SWA, then quantize and run standard AdamW TTT on validation data.",
       "tags": [
         "val-only",
         "architecture",
-        "training-schedule",
-        "optimizer"
+        "optimizer",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": true,
@@ -549,16 +572,16 @@
     {
       "prNumber": 593,
       "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon + BigramHash 3072 (val_bpb 1.1163, 3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-24T12:30:48Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T14:53:58Z",
       "headSha": "7703e5edce103b810cf0dd048c72a95667820183",
-      "generatedAt": "2026-03-24T12:55:05.563Z",
-      "summary": "Parallel Muon/Parameter Banking with LeakyReLU² and a budgeted BigramHash table train within 16MB before Full Hessian GPTQ squeezes the weights.",
+      "generatedAt": "2026-03-24T14:55:55.639Z",
+      "summary": "Combines Full Hessian GPTQ quantization, LeakyReLU² MLP, Parallel Muon optimizer, and wider BigramHash buckets with narrow embeddings.",
       "tags": [
-        "architecture",
         "quantization",
         "optimizer",
-        "compression"
+        "architecture",
+        "tokenization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -782,15 +805,15 @@
     {
       "prNumber": 576,
       "title": "Record: Train Larger, Quantize Harder - 33.6M params + int5 GPTQ / (val_bpb: 1.1164)",
-      "status": "open",
-      "updatedAt": "2026-03-23T21:51:04Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T14:44:51Z",
       "headSha": "011a09946e9f789c688caeac4a10ee0eb136d605",
-      "generatedAt": "2026-03-23T22:19:16.264Z",
-      "summary": "Int5 QAT-trained 33.6M model uses Hessian GPTQ with pruning plus a post-TTT temperature rescore to squeeze more capacity while correcting overconfidence.",
+      "generatedAt": "2026-03-24T14:56:04.473Z",
+      "summary": "11-layer 512d GPT packs int5 per-row GPTQ (with QAT/pruning/EMA) plus post-score-first TTT temperature rescaling (T=0.98) to tame overconfidence.",
       "tags": [
         "quantization",
-        "architecture",
-        "evaluation"
+        "evaluation",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -828,15 +851,14 @@
     {
       "prNumber": 573,
       "title": "Record: 11L XSA4 + Multi-Pass Streaming Score-First Legal TTT (3-seed mean val_bpb=1.0523) ",
-      "status": "open",
-      "updatedAt": "2026-03-24T04:02:01Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T14:48:36Z",
       "headSha": "45a4408c7005a812af8a2a0cb4f99b26e533860a",
-      "generatedAt": "2026-03-24T04:20:58.943Z",
-      "summary": "Multi-pass streaming score-first legal TTT uses shifted data orderings and per-token min-NLL with a RoPE cache clone fix for backprop.",
+      "generatedAt": "2026-03-24T14:56:13.761Z",
+      "summary": "Multi-pass streaming score-first legal TTT ensembles three shifted passes, taking each token’s min NLL so late-stage adaptation benefits every position.",
       "tags": [
         "val-only",
-        "evaluation",
-        "training-schedule"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": true,
@@ -944,14 +966,14 @@
     {
       "prNumber": 568,
       "title": "Record: PROTEUS v8 — 11L INT6 + LoRA TTT 5ep cosine (mean val_bpb=0.7853, 4 seeds)",
-      "status": "open",
-      "updatedAt": "2026-03-23T23:43:26Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T14:35:56Z",
       "headSha": "6b59f5e9e2c286ed655666b236e796e08163c8b4",
-      "generatedAt": "2026-03-23T23:49:49.502Z",
-      "summary": "PROTEUS v8 keeps the 11L INT6 backbone while using five-epoch cosine-scheduled LoRA TTT that scores every epoch before training each chunk.",
+      "generatedAt": "2026-03-24T14:56:20.632Z",
+      "summary": "11L INT6 transformer adds backward-looking LoRA TTT with a 5-epoch cosine schedule and epoch-wise scoring for compliant eval conditioning.",
       "tags": [
-        "training-schedule",
         "quantization",
+        "training-schedule",
         "evaluation"
       ],
       "flags": {
@@ -1291,11 +1313,11 @@
     {
       "prNumber": 548,
       "title": "Record: Loqui Auris — 10L + LoRA TTT (mean val_bpb=1.0865, 2 seeds)",
-      "status": "open",
-      "updatedAt": "2026-03-24T03:01:02Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T14:37:30Z",
       "headSha": "c0d2a504839c847e3f9ea7380599bcb529551520",
-      "generatedAt": "2026-03-24T03:20:57.260Z",
-      "summary": "10-layer GQA Transformer with Int6 quantization, Muon+EMA training, and per-document LoRA TTT after torch.compile reset to keep adaptation paths active.",
+      "generatedAt": "2026-03-24T14:56:32.179Z",
+      "summary": "10-layer GQA transformer with EMA and Int6 compression paired with batched per-document LoRA test-time training.",
       "tags": [
         "val-only",
         "quantization",

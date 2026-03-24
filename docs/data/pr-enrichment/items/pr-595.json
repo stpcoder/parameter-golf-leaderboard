@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-24T14:25:39.464Z",
+  "generatedAt": "2026-03-24T14:55:47.606Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 595,
     "title": "Record: Loqui Auris — 10L + SWA + Standard TTT (val_bpb=1.1100)",
     "state": "closed",
-    "updatedAt": "2026-03-24T14:12:38Z",
+    "updatedAt": "2026-03-24T14:50:13Z",
     "headSha": "7868f1244e333c7b7af2af2a51c67ea00a427f86",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/595",
     "authorLogin": "LoquiAuris"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer GQA transformer with ReLU², SmearGate+BigramHash skips, SWA, and standard AdamW TTT on the quantized weights for final tuning.",
+    "summary": "10L GQA model with SmearGate/BigramHash + SWA, then quantize and run standard AdamW TTT on validation data.",
     "tags": [
       "val-only",
       "architecture",
-      "training-schedule",
-      "optimizer"
+      "optimizer",
+      "quantization"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Standard AdamW TTT fine-tunes the quantized weights on validation data after training.",
+    "valOnlyReasoning": "Final Standard AdamW TTT stage fine-tunes the quantized weights on the validation set before evaluation.",
     "techniques": [
-      "10-layer GQA w/ ReLU², SmearGate, BigramHash, U-Net skips",
-      "SWA averaging with Muon+AdamW optimizer mix",
-      "Post-training AdamW TTT on quantized weights"
+      "SWA-averaged 10-layer RoPE stack with SmearGate/BigramHash",
+      "Int5/Int6 quantization with zstd-22 artifact",
+      "Standard AdamW TTT on validation after quantize-dequantize"
     ]
   },
   "compatibility": {

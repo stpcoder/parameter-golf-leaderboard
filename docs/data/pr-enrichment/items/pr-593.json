@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-24T12:55:05.563Z",
+  "generatedAt": "2026-03-24T14:55:55.639Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 593,
     "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon + BigramHash 3072 (val_bpb 1.1163, 3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-24T12:30:48Z",
+    "state": "closed",
+    "updatedAt": "2026-03-24T14:53:58Z",
     "headSha": "7703e5edce103b810cf0dd048c72a95667820183",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/593",
     "authorLogin": "abaybektursun"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Parallel Muon/Parameter Banking with LeakyReLU² and a budgeted BigramHash table train within 16MB before Full Hessian GPTQ squeezes the weights.",
+    "summary": "Combines Full Hessian GPTQ quantization, LeakyReLU² MLP, Parallel Muon optimizer, and wider BigramHash buckets with narrow embeddings.",
     "tags": [
-      "architecture",
       "quantization",
       "optimizer",
-      "compression"
+      "architecture",
+      "tokenization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Parallel Muon + Parameter Banking for faster training steps",
-      "Full Hessian GPTQ with Cholesky error compensation and actorder",
-      "BigramHash 3072×80 coverage-first hashing with learned projection"
+      "Full Hessian GPTQ w/ Cholesky compensation",
+      "LeakyReLU² MLP + Parameter Banking Parallel Muon optimizer",
+      "BigramHash 3072×80 reallocates budget toward coverage"
     ]
   },
   "compatibility": {
