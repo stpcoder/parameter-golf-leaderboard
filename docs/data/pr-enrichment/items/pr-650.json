@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-24T22:27:01.589Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 650,
+    "title": "-0.0041 BPB by Reordering Training Data (Curriculum Learning)",
+    "state": "open",
+    "updatedAt": "2026-03-24T22:26:28Z",
+    "headSha": "34ec67812f97c0a0d9e2dd37bf571c7c963fdbb9",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/650",
+    "authorLogin": "abaybektursun"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-24_ShardOrdering_CaseStudy/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Score shards with a tiny proxy model, sort hardest-first, and feed that curriculum via SHARD_ORDER so the base recipe trains on difficult data early.",
+    "tags": [
+      "training-schedule",
+      "evaluation",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Model-scored curriculum ordering",
+      "Tiny proxy model for shard difficulty",
+      "SHARD_ORDER env var injection"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

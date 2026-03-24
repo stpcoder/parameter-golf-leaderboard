@@ -1,8 +1,53 @@
 {
-  "generatedAt": "2026-03-24T21:57:00.685Z",
+  "generatedAt": "2026-03-24T22:27:06.697Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 651,
+      "title": "[WIP] Record: Hybrid architecture 8L 3:1 GDN/Transformer (val_bpb=1.2093)",
+      "status": "open",
+      "updatedAt": "2026-03-24T22:13:05Z",
+      "headSha": "9e73b535483ff5754291e0ae4a522bc2678237f3",
+      "generatedAt": "2026-03-24T22:26:56.658Z",
+      "summary": "Alternating three GDN layers with one Transformer within an 8-layer SP-1024 8x512 stack while reusing baseline training steps with cosine LR decay.",
+      "tags": [
+        "architecture",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-651.json"
+    },
+    {
+      "prNumber": 650,
+      "title": "-0.0041 BPB by Reordering Training Data (Curriculum Learning)",
+      "status": "open",
+      "updatedAt": "2026-03-24T22:26:28Z",
+      "headSha": "34ec67812f97c0a0d9e2dd37bf571c7c963fdbb9",
+      "generatedAt": "2026-03-24T22:27:01.589Z",
+      "summary": "Score shards with a tiny proxy model, sort hardest-first, and feed that curriculum via SHARD_ORDER so the base recipe trains on difficult data early.",
+      "tags": [
+        "training-schedule",
+        "evaluation",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-650.json"
+    },
     {
       "prNumber": 648,
       "title": "Depth Recurrence (3+3 x 2 loops) + HW Optimizations",
@@ -124,15 +169,15 @@
     {
       "prNumber": 642,
       "title": "Record: 11L + Score-Every-Epoch LoRA TTT 5ep (val_bpb=0.8186)",
-      "status": "open",
-      "updatedAt": "2026-03-24T20:21:24Z",
+      "status": "closed",
+      "updatedAt": "2026-03-24T22:11:34Z",
       "headSha": "f7e12fdf338681a4d028eb98f08a3613ee0e0c00",
-      "generatedAt": "2026-03-24T20:27:00.845Z",
-      "summary": "Score-every-epoch LoRA TTT on PR#414’s 11L stack, using multi-scale ranks, bias tuning, cosine decay, and T=0.98 rescale.",
+      "generatedAt": "2026-03-24T22:27:06.594Z",
+      "summary": "Score-every-epoch multi-scale LoRA TTT adapts per-document chunks on PR#414 base with differentiated ranks, bias tuning, and cosine decay.",
       "tags": [
-        "architecture",
         "training-schedule",
-        "attention"
+        "optimizer",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,

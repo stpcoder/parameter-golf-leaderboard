@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-03-24T22:26:56.658Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 651,
+    "title": "[WIP] Record: Hybrid architecture 8L 3:1 GDN/Transformer (val_bpb=1.2093)",
+    "state": "open",
+    "updatedAt": "2026-03-24T22:13:05Z",
+    "headSha": "9e73b535483ff5754291e0ae4a522bc2678237f3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/651",
+    "authorLogin": "phulin"
+  },
+  "inputs": {
+    "hash": "072662c123505c465dfcb1e80cbfb797fc5a748edd0e2a3564b0b095cec763f8",
+    "readmePaths": [],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Alternating three GDN layers with one Transformer within an 8-layer SP-1024 8x512 stack while reusing baseline training steps with cosine LR decay.",
+    "tags": [
+      "architecture",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "alternating GDN and Transformer blocks",
+      "cosine LR decay",
+      "SP-1024 8x512 configuration"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
