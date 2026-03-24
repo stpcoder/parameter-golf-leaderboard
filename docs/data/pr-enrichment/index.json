@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T20:56:52.908Z",
+  "generatedAt": "2026-03-24T21:26:39.810Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -53,12 +53,12 @@
     },
     {
       "prNumber": 644,
-      "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944)",
+      "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944) - unlimited compute category",
       "status": "open",
-      "updatedAt": "2026-03-24T20:25:07Z",
+      "updatedAt": "2026-03-24T21:05:59Z",
       "headSha": "a1fa11bd90a8b407df9363fd4ba75735a94f8453",
-      "generatedAt": "2026-03-24T20:26:49.147Z",
-      "summary": "11-layer GEPA trained 25k steps with a 13k-step warmdown, pure int6 GPTQ-lite compression, and legal score-first TTT for compact leaderboard-ready submission.",
+      "generatedAt": "2026-03-24T21:26:39.711Z",
+      "summary": "Uses 11L GEPA with extended 12k peak/13k warmdown training, pure int6 GPTQ-lite quant, and legal score-first TTT for incremental BPP gains.",
       "tags": [
         "architecture",
         "training-schedule",

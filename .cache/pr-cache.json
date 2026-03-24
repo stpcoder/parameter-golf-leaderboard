@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-24T20:56:37.656Z",
-  "lastSeenUpdatedAt": "2026-03-24T20:42:48Z",
+  "generatedAt": "2026-03-24T21:26:33.773Z",
+  "lastSeenUpdatedAt": "2026-03-24T21:16:51Z",
   "prs": {
     "1": {
       "number": 1,
@@ -54174,10 +54174,10 @@
     },
     "644": {
       "number": 644,
-      "updatedAt": "2026-03-24T20:25:07Z",
+      "updatedAt": "2026-03-24T21:05:59Z",
       "pr": {
         "number": 644,
-        "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944)",
+        "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944) - unlimited compute category",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -54185,7 +54185,7 @@
         "authorLogin": "Christopher-Lee-McClendon",
         "authorName": null,
         "createdAt": "2026-03-24T20:25:07Z",
-        "updatedAt": "2026-03-24T20:25:07Z",
+        "updatedAt": "2026-03-24T21:05:59Z",
         "headSha": "a1fa11bd90a8b407df9363fd4ba75735a94f8453",
         "headRepo": "Christopher-Lee-McClendon/parameter-golf"
       },
@@ -54240,7 +54240,7 @@
           },
           "pr": {
             "number": 644,
-            "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944)",
+            "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944) - unlimited compute category",
             "state": "open",
             "draft": false,
             "mergedAt": null,
@@ -54248,7 +54248,7 @@
             "authorLogin": "Christopher-Lee-McClendon",
             "authorName": null,
             "createdAt": "2026-03-24T20:25:07Z",
-            "updatedAt": "2026-03-24T20:25:07Z",
+            "updatedAt": "2026-03-24T21:05:59Z",
             "headSha": "a1fa11bd90a8b407df9363fd4ba75735a94f8453",
             "headRepo": "Christopher-Lee-McClendon/parameter-golf"
           },
@@ -54444,6 +54444,25 @@
           }
         }
       ]
+    },
+    "647": {
+      "number": 647,
+      "updatedAt": "2026-03-24T21:16:51Z",
+      "pr": {
+        "number": 647,
+        "title": "[non-record] AutoEvolve: competition-faithful autonomous search loop for Parameter Golf",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/647",
+        "authorLogin": "zanwenfu",
+        "authorName": null,
+        "createdAt": "2026-03-24T21:12:06Z",
+        "updatedAt": "2026-03-24T21:16:51Z",
+        "headSha": "bf076e38a4a57fc31c37ec627211f59d24ae6084",
+        "headRepo": "zanwenfu/parameter-golf"
+      },
+      "submissions": []
     }
   }
 }
