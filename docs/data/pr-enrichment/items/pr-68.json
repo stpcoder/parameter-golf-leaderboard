@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-03-24T17:26:25.176Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 68,
+    "title": "Add 1.9105 BPB submission (M3 Pro Optimized)",
+    "state": "open",
+    "updatedAt": "2026-03-24T16:58:24Z",
+    "headSha": "81b2ec4843eb05ba104b9efb90ca3e5a309875a8",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/68",
+    "authorLogin": "swangai7178"
+  },
+  "inputs": {
+    "hash": "072662c123505c465dfcb1e80cbfb797fc5a748edd0e2a3564b0b095cec763f8",
+    "readmePaths": [],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Runs a weight-tied 12×384 Muon-optimized model on M3 Pro MacBook, pairing manual thermal tuning to keep 14.5k tok/s under the 600s compute cap.",
+    "tags": [
+      "muon",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Muon-optimized 12L×384 weight-tied setup",
+      "Manual thermal control to sustain 14.5k tok/s within cap"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

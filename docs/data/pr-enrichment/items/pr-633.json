@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-24T17:26:05.820Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 633,
+    "title": "PROTEUS v9 — 11L INT6 + single-epoch LoRA TTT (mean val_bpb=1.1526, 3 seeds)",
+    "state": "open",
+    "updatedAt": "2026-03-24T17:12:33Z",
+    "headSha": "40d8baf3dbc2b252e6080986710ab950b1468b24",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/633",
+    "authorLogin": "MatoTeziTanka"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-24_PROTEUS_v9/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "PROTEUS v9 uses single-epoch score-then-train LoRA TTT atop an 11-layer depth-scaled residual net with INT6 GPTQ-lite quantization.",
+    "tags": [
+      "val-only",
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": true,
+    "valOnlyReasoning": "LoRA test-time training adapts per document by training on the evaluation chunk after scoring each token exactly once.",
+    "techniques": [
+      "Single-epoch score-then-train LoRA TTT",
+      "11-layer depth-scaled residual with GQA",
+      "INT6 GPTQ-lite + zstd-22 compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
+  }
+}

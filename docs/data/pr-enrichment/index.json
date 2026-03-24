@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-24T16:56:09.784Z",
+  "generatedAt": "2026-03-24T17:26:25.183Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 633,
+      "title": "PROTEUS v9 — 11L INT6 + single-epoch LoRA TTT (mean val_bpb=1.1526, 3 seeds)",
+      "status": "open",
+      "updatedAt": "2026-03-24T17:12:33Z",
+      "headSha": "40d8baf3dbc2b252e6080986710ab950b1468b24",
+      "generatedAt": "2026-03-24T17:26:05.820Z",
+      "summary": "PROTEUS v9 uses single-epoch score-then-train LoRA TTT atop an 11-layer depth-scaled residual net with INT6 GPTQ-lite quantization.",
+      "tags": [
+        "val-only",
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": false
+      },
+      "file": "items/pr-633.json"
+    },
     {
       "prNumber": 631,
       "title": "submission: XSA-all + Soft-Round QAT + Full GPTQ + MLP 3.5x + AdamW TTT",
@@ -1080,11 +1104,12 @@
       "prNumber": 568,
       "title": "Record: PROTEUS v8 — 11L INT6 + LoRA TTT 5ep cosine (mean val_bpb=0.7853, 4 seeds)",
       "status": "closed",
-      "updatedAt": "2026-03-24T14:35:56Z",
+      "updatedAt": "2026-03-24T17:05:34Z",
       "headSha": "6b59f5e9e2c286ed655666b236e796e08163c8b4",
-      "generatedAt": "2026-03-24T14:56:20.632Z",
-      "summary": "11L INT6 transformer adds backward-looking LoRA TTT with a 5-epoch cosine schedule and epoch-wise scoring for compliant eval conditioning.",
+      "generatedAt": "2026-03-24T17:26:12.210Z",
+      "summary": "PROTEUS v8 keeps the 11-layer INT6 depth-scaled Transformer but runs LoRA TTT for 5 cosine-decay epochs, scoring every pass before training.",
       "tags": [
+        "architecture",
         "quantization",
         "training-schedule",
         "evaluation"
@@ -1403,23 +1428,23 @@
       "prNumber": 549,
       "title": "Record: LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1194 (3-seed mean)",
       "status": "closed",
-      "updatedAt": "2026-03-24T13:33:44Z",
+      "updatedAt": "2026-03-24T17:15:56Z",
       "headSha": "b08d72a96e98cac8add0543982fccd35bc8f4f4d",
-      "generatedAt": "2026-03-24T13:55:21.273Z",
-      "summary": "11-layer stack pairs LeakyReLU(0.5)² MLPs with Parameter Banking/Parallel Muon and legal score-first sliding-window TTT before SGD adaptation.",
+      "generatedAt": "2026-03-24T17:26:18.714Z",
+      "summary": "Builds on the PR#414 stack with a LeakyReLU(0.5)² MLP, legal score-first TTT with unfrozen blocks, and Parallel Muon/Parameter Banking acceleration.",
       "tags": [
+        "val-only",
         "architecture",
-        "optimizer",
-        "sliding-window-eval",
-        "quantization"
+        "training-schedule",
+        "optimizer"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-549.json"
     },
@@ -9640,6 +9665,28 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-69.json"
+    },
+    {
+      "prNumber": 68,
+      "title": "Add 1.9105 BPB submission (M3 Pro Optimized)",
+      "status": "open",
+      "updatedAt": "2026-03-24T16:58:24Z",
+      "headSha": "81b2ec4843eb05ba104b9efb90ca3e5a309875a8",
+      "generatedAt": "2026-03-24T17:26:25.176Z",
+      "summary": "Runs a weight-tied 12×384 Muon-optimized model on M3 Pro MacBook, pairing manual thermal tuning to keep 14.5k tok/s under the 600s compute cap.",
+      "tags": [
+        "muon",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-68.json"
     },
     {
       "prNumber": 66,
