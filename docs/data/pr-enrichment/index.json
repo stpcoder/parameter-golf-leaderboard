@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-03-24T01:50:23.212Z",
+  "generatedAt": "2026-03-24T02:20:41.681Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
       "prNumber": 593,
-      "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1170 (3-seed mean, no TTT)",
+      "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1171 (3-seed mean, no TTT)",
       "status": "open",
-      "updatedAt": "2026-03-24T01:45:34Z",
-      "headSha": "7f652d2679759e18dce4daadf604c82e85424040",
-      "generatedAt": "2026-03-24T01:50:23.120Z",
-      "summary": "Augments the Parameter Banking + Parallel Muon stack with LeakyReLU² and full Hessian GPTQ (via an unbanked replica) to turn quantization into a net gain.",
+      "updatedAt": "2026-03-24T01:55:41Z",
+      "headSha": "63056a4624ca2cce278c746aa7ea9a2b70899c5d",
+      "generatedAt": "2026-03-24T02:20:31.300Z",
+      "summary": "LeakyReLU² stack with Parameter Banking and Parallel Muon feeds Full Hessian GPTQ quantization via banked-unbanked Hessian hooks.",
       "tags": [
         "quantization",
         "optimizer",
@@ -169,24 +169,24 @@
     },
     {
       "prNumber": 581,
-      "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — val_bpb≈1.10",
+      "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — 1.0698 BPB (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-23T22:38:22Z",
-      "headSha": "3594823a8233bb6f46305cec4b305c87489880f0",
-      "generatedAt": "2026-03-23T22:49:15.907Z",
-      "summary": "Extends the sparse sidecar base with AdamW test-time training over 20 epochs using cosine LR with warmup and light weight decay to adapt from the validation shard.",
+      "updatedAt": "2026-03-24T02:06:03Z",
+      "headSha": "3818043aecacf84460ac12c4216df85cc4d0b646",
+      "generatedAt": "2026-03-24T02:20:35.798Z",
+      "summary": "Shared sparse Sidecar48 base now runs 20-epoch test-time training with warmup, cosine LR decay, and WD to refine validation adaptation.",
       "tags": [
-        "val-only",
+        "architecture",
         "training-schedule",
         "regularization"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-581.json"
     },
@@ -1701,23 +1701,23 @@
       "prNumber": 490,
       "title": "Record: 11L VR + GA + LeakyReLU² + Legal Score-First TTT (val_bpb=pending)",
       "status": "open",
-      "updatedAt": "2026-03-23T22:16:14Z",
+      "updatedAt": "2026-03-24T01:59:03Z",
       "headSha": "05075423dddbc7d5055b77c8dec4435d772e35f3",
-      "generatedAt": "2026-03-23T22:19:20.415Z",
-      "summary": "11-layer stack adds Value Residual, Gated Attention, LeakyReLU², and legal score-first TTT scoring-before-training regime.",
+      "generatedAt": "2026-03-24T02:20:41.604Z",
+      "summary": "11-layer stack uses value-residual + gated attention, LeakyReLU² MLPs, and legal score-first test-time training before scoring each chunk.",
       "tags": [
+        "val-only",
         "architecture",
         "attention",
-        "training-schedule",
-        "evaluation"
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-490.json"
     },

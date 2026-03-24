@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T01:50:18.156Z",
+  "generatedAt": "2026-03-24T02:20:22.666Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -779,6 +779,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR",
+        "folderPath": "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR",
+        "submissionPath": "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/train_gpt.py"
+      },
+      "submission": {
+        "author": "teddyoweh",
+        "githubId": "teddyoweh",
+        "name": "11L Sidecar48 + Enhanced AdamW TTT (20 epochs, cosine LR)",
+        "blurb": "Built on ymrohit's shared sparse sidecar architecture (PR #555). Enhanced test-time training with cosine LR schedule (0.0005→0.00002), 1-epoch warmup, weight decay 0.01, and 20 TTT epochs (vs 10 flat LR). 3-seed mean BPB: 1.0698 (sliding s=64), a 2.0% improvement over PR #555's 1.0916.",
+        "date": "2026-03-24T02:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.06981831,
+        "valLoss": 1.80633862,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 16144402,
+        "bytesCode": 80761,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 581,
+        "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — 1.0698 BPB (3-seed mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/581",
+        "authorLogin": "teddyoweh",
+        "authorName": null,
+        "createdAt": "2026-03-23T22:38:22Z",
+        "updatedAt": "2026-03-24T02:06:03Z",
+        "headSha": "3818043aecacf84460ac12c4216df85cc4d0b646",
+        "headRepo": "teddyoweh/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3818043aecacf84460ac12c4216df85cc4d0b646/records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/3818043aecacf84460ac12c4216df85cc4d0b646/records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/3818043aecacf84460ac12c4216df85cc4d0b646/records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/3818043aecacf84460ac12c4216df85cc4d0b646/records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/3818043aecacf84460ac12c4216df85cc4d0b646/records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR",
+        "pr": "https://github.com/openai/parameter-golf/pull/581",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-23_LoquiAuris_10L_LoRA_TTT_1-0865",
       "source": "pull_request",
       "status": "open",
@@ -913,7 +990,7 @@
         "authorLogin": "amaljithkuttamath",
         "authorName": null,
         "createdAt": "2026-03-23T01:48:57Z",
-        "updatedAt": "2026-03-23T22:16:14Z",
+        "updatedAt": "2026-03-24T01:59:03Z",
         "headSha": "05075423dddbc7d5055b77c8dec4435d772e35f3",
         "headRepo": "amaljithkuttamath/parameter-golf"
       },
@@ -1155,83 +1232,6 @@
         "script": "https://github.com/openai/parameter-golf/blob/aef01ee4b91efc3f9ef0164b713b13551db91bf2/records/track_10min_16mb/2026-03-23_11L_EMA_AdamWTTT10ep_1.1027/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/aef01ee4b91efc3f9ef0164b713b13551db91bf2/records/track_10min_16mb/2026-03-23_11L_EMA_AdamWTTT10ep_1.1027",
         "pr": "https://github.com/openai/parameter-golf/pull/442",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
-      }
-    },
-    {
-      "id": "record-records-track_10min_16mb-2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR",
-      "source": "pull_request",
-      "status": "open",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR",
-        "folderPath": "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR",
-        "submissionPath": "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/train_gpt.py"
-      },
-      "submission": {
-        "author": "spawn-agent",
-        "githubId": "spawn-agent",
-        "name": "11L Sidecar48 + Enhanced AdamW TTT (20 epochs, cosine LR)",
-        "blurb": "Built on ymrohit's shared sparse sidecar architecture (PR #555). Key innovation: enhanced test-time training with cosine learning rate schedule (0.0005→0.00002), 1-epoch warmup, weight decay 0.01, and 20 epochs (vs 10 flat LR). On H200 with 2399 training steps, achieves 1.1014 BPB sliding window — expected to be significantly better on H100 with torch.compile (~5900 steps).",
-        "date": "2026-03-23T22:00:00Z"
-      },
-      "metrics": {
-        "valBpb": 1.10141981,
-        "valLoss": 1.85969629,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": 12717864,
-        "bytesCode": 80761,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 581,
-        "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — val_bpb≈1.10",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/581",
-        "authorLogin": "teddyoweh",
-        "authorName": null,
-        "createdAt": "2026-03-23T22:38:22Z",
-        "updatedAt": "2026-03-23T22:38:22Z",
-        "headSha": "3594823a8233bb6f46305cec4b305c87489880f0",
-        "headRepo": "teddyoweh/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3594823a8233bb6f46305cec4b305c87489880f0/records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/3594823a8233bb6f46305cec4b305c87489880f0/records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/3594823a8233bb6f46305cec4b305c87489880f0/records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/3594823a8233bb6f46305cec4b305c87489880f0/records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/3594823a8233bb6f46305cec4b305c87489880f0/records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR",
-        "pr": "https://github.com/openai/parameter-golf/pull/581",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -1501,11 +1501,11 @@
         "author": "abaybektursun",
         "githubId": "abaybektursun",
         "name": "Full GPTQ + LeakyReLU² + Parallel Muon",
-        "blurb": "Full Hessian GPTQ (Cholesky error compensation, actorder) + LeakyReLU(0.5)² + Parameter Banking + Parallel Muon (PR #399). No TTT. 3-seed mean: 1.1170 (std 0.0003). Built on PR #414 by @signalrush, GPTQ from PR #569.",
+        "blurb": "Full Hessian GPTQ (Cholesky error compensation, actorder) + LeakyReLU(0.5)² + Parameter Banking + Parallel Muon (PR #399). No TTT. 3-seed mean: 1.1171 (std 0.0003). Built on PR #414 by @signalrush, GPTQ from PR #569.",
         "date": "2026-03-23"
       },
       "metrics": {
-        "valBpb": 1.117,
+        "valBpb": 1.1171,
         "valLoss": null,
         "preQuantValBpb": null,
         "preQuantValLoss": null,
@@ -1527,7 +1527,7 @@
       },
       "pr": {
         "number": 593,
-        "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1170 (3-seed mean, no TTT)",
+        "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1171 (3-seed mean, no TTT)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -1535,16 +1535,16 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-24T01:45:34Z",
-        "updatedAt": "2026-03-24T01:45:34Z",
-        "headSha": "7f652d2679759e18dce4daadf604c82e85424040",
+        "updatedAt": "2026-03-24T01:55:41Z",
+        "headSha": "63056a4624ca2cce278c746aa7ea9a2b70899c5d",
         "headRepo": "abaybektursun/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7f652d2679759e18dce4daadf604c82e85424040/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/7f652d2679759e18dce4daadf604c82e85424040/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/7f652d2679759e18dce4daadf604c82e85424040/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/7f652d2679759e18dce4daadf604c82e85424040/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/7f652d2679759e18dce4daadf604c82e85424040/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/63056a4624ca2cce278c746aa7ea9a2b70899c5d/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/63056a4624ca2cce278c746aa7ea9a2b70899c5d/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/63056a4624ca2cce278c746aa7ea9a2b70899c5d/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/63056a4624ca2cce278c746aa7ea9a2b70899c5d/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/63056a4624ca2cce278c746aa7ea9a2b70899c5d/records/track_10min_16mb/2026-03-23_FullGPTQ_LeakyReLU_ParallelMuon",
         "pr": "https://github.com/openai/parameter-golf/pull/593",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

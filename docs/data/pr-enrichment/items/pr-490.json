@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-23T22:19:20.415Z",
+  "generatedAt": "2026-03-24T02:20:41.604Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 490,
     "title": "Record: 11L VR + GA + LeakyReLU² + Legal Score-First TTT (val_bpb=pending)",
     "state": "open",
-    "updatedAt": "2026-03-23T22:16:14Z",
+    "updatedAt": "2026-03-24T01:59:03Z",
     "headSha": "05075423dddbc7d5055b77c8dec4435d772e35f3",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/490",
     "authorLogin": "amaljithkuttamath"
@@ -19,25 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer stack adds Value Residual, Gated Attention, LeakyReLU², and legal score-first TTT scoring-before-training regime.",
+    "summary": "11-layer stack uses value-residual + gated attention, LeakyReLU² MLPs, and legal score-first test-time training before scoring each chunk.",
     "tags": [
+      "val-only",
       "architecture",
       "attention",
-      "training-schedule",
-      "evaluation"
+      "training-schedule"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Legal score-first TTT fine-tunes on each validation chunk before scoring it, so evaluation relies on validation-shard training.",
     "techniques": [
-      "Value Residual + Gated Attention blending across layers",
-      "LeakyReLU(0.5)² replacement in MLPs",
-      "Legal score-first TTT with scoring before training"
+      "Value residual and gated-attn mix per layer",
+      "LeakyReLU(0.5)² replaces relu² in MLPs",
+      "AdamW cosine TTT scoring with last blocks unfrozen"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

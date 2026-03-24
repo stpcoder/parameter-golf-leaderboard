@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-03-23T22:49:15.907Z",
+  "generatedAt": "2026-03-24T02:20:35.798Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 581,
-    "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — val_bpb≈1.10",
+    "title": "Record: 11L Sidecar48 + Enhanced TTT (cosine LR, 20 epochs) — 1.0698 BPB (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-23T22:38:22Z",
-    "headSha": "3594823a8233bb6f46305cec4b305c87489880f0",
+    "updatedAt": "2026-03-24T02:06:03Z",
+    "headSha": "3818043aecacf84460ac12c4216df85cc4d0b646",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/581",
     "authorLogin": "teddyoweh"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-23_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md"
+      "records/track_10min_16mb/2026-03-24_11L_Sidecar48_EnhancedTTT20_CosineLR/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Extends the sparse sidecar base with AdamW test-time training over 20 epochs using cosine LR with warmup and light weight decay to adapt from the validation shard.",
+    "summary": "Shared sparse Sidecar48 base now runs 20-epoch test-time training with warmup, cosine LR decay, and WD to refine validation adaptation.",
     "tags": [
-      "val-only",
+      "architecture",
       "training-schedule",
       "regularization"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "TTT phase retrains on the validation shard with AdamW after the base model training.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Cosine LR with warmup for TTT",
-      "20-epoch val-only AdamW adaptation",
-      "0.01 weight decay to regularize adaptation"
+      "20-epoch TTT with cosine annealing",
+      "1-epoch warmup plus 0.01 weight decay for stable adaptation"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

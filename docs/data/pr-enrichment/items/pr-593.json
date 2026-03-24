@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-24T01:50:23.120Z",
+  "generatedAt": "2026-03-24T02:20:31.300Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 593,
-    "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1170 (3-seed mean, no TTT)",
+    "title": "Record: Full GPTQ + LeakyReLU² + Parallel Muon — val_bpb 1.1171 (3-seed mean, no TTT)",
     "state": "open",
-    "updatedAt": "2026-03-24T01:45:34Z",
-    "headSha": "7f652d2679759e18dce4daadf604c82e85424040",
+    "updatedAt": "2026-03-24T01:55:41Z",
+    "headSha": "63056a4624ca2cce278c746aa7ea9a2b70899c5d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/593",
     "authorLogin": "abaybektursun"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Augments the Parameter Banking + Parallel Muon stack with LeakyReLU² and full Hessian GPTQ (via an unbanked replica) to turn quantization into a net gain.",
+    "summary": "LeakyReLU² stack with Parameter Banking and Parallel Muon feeds Full Hessian GPTQ quantization via banked-unbanked Hessian hooks.",
     "tags": [
       "quantization",
       "optimizer",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Full Hessian GPTQ with Cholesky error compensation",
-      "Parameter Banking coupled with Parallel Muon optimizer",
-      "LeakyReLU(0.5)² MLP + XSA/Partial RoPE topology"
+      "Full Hessian GPTQ with banked weight un-banking",
+      "LeakyReLU(0.5)² MLP on Parameter Banking architecture",
+      "Parallel Muon optimizer with EMA+tight SWA"
     ]
   },
   "compatibility": {
