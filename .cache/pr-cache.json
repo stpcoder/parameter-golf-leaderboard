@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-24T20:26:40.659Z",
-  "lastSeenUpdatedAt": "2026-03-24T20:25:07Z",
+  "generatedAt": "2026-03-24T20:56:37.656Z",
+  "lastSeenUpdatedAt": "2026-03-24T20:42:48Z",
   "prs": {
     "1": {
       "number": 1,
@@ -49612,18 +49612,18 @@
     },
     "579": {
       "number": 579,
-      "updatedAt": "2026-03-24T16:34:57Z",
+      "updatedAt": "2026-03-24T20:33:07Z",
       "pr": {
         "number": 579,
         "title": "The Frugendorff: Recursive Weight Sharing for Transformer Compression (1.1478 BPB, 15.19MB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/579",
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-23T22:14:38Z",
-        "updatedAt": "2026-03-24T16:34:57Z",
+        "updatedAt": "2026-03-24T20:33:07Z",
         "headSha": "d0c4271d9134cfbacb008d7a66899cec228c964d",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -49631,7 +49631,7 @@
         {
           "id": "pr-579-records-track_10min_16mb-2026-03-23_Frugendorff_Squared_6x2_640d_MLP4-submission-json",
           "source": "pull_request",
-          "status": "open",
+          "status": "closed",
           "category": "main-track",
           "track": {
             "path": "records/track_10min_16mb",
@@ -49679,14 +49679,14 @@
           "pr": {
             "number": 579,
             "title": "The Frugendorff: Recursive Weight Sharing for Transformer Compression (1.1478 BPB, 15.19MB)",
-            "state": "open",
+            "state": "closed",
             "draft": false,
             "mergedAt": null,
             "htmlUrl": "https://github.com/openai/parameter-golf/pull/579",
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-23T22:14:38Z",
-            "updatedAt": "2026-03-24T16:34:57Z",
+            "updatedAt": "2026-03-24T20:33:07Z",
             "headSha": "d0c4271d9134cfbacb008d7a66899cec228c964d",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -50708,7 +50708,7 @@
     },
     "596": {
       "number": 596,
-      "updatedAt": "2026-03-24T20:00:20Z",
+      "updatedAt": "2026-03-24T20:37:21Z",
       "pr": {
         "number": 596,
         "title": "Record: DeepQuant V10b — 11L INT6 + 8ep LoRA TTT (val_bpb=0.6430)",
@@ -50719,7 +50719,7 @@
         "authorLogin": "AriaAnima",
         "authorName": null,
         "createdAt": "2026-03-24T03:09:15Z",
-        "updatedAt": "2026-03-24T20:00:20Z",
+        "updatedAt": "2026-03-24T20:37:21Z",
         "headSha": "9e4f467b3647c584b53282e3eb1b0ae4ec771927",
         "headRepo": "AriaAnima/parameter-golf"
       },
@@ -50782,7 +50782,7 @@
             "authorLogin": "AriaAnima",
             "authorName": null,
             "createdAt": "2026-03-24T03:09:15Z",
-            "updatedAt": "2026-03-24T20:00:20Z",
+            "updatedAt": "2026-03-24T20:37:21Z",
             "headSha": "9e4f467b3647c584b53282e3eb1b0ae4ec771927",
             "headRepo": "AriaAnima/parameter-golf"
           },
@@ -54259,6 +54259,188 @@
             "script": "https://github.com/openai/parameter-golf/blob/a1fa11bd90a8b407df9363fd4ba75735a94f8453/records/track_non_record_16mb/2026-03-24_11L_GEPA_25kSteps_PureInt6_LegalTTT/train_gpt.py",
             "folder": "https://github.com/openai/parameter-golf/tree/a1fa11bd90a8b407df9363fd4ba75735a94f8453/records/track_non_record_16mb/2026-03-24_11L_GEPA_25kSteps_PureInt6_LegalTTT",
             "pr": "https://github.com/openai/parameter-golf/pull/644"
+          }
+        }
+      ]
+    },
+    "645": {
+      "number": 645,
+      "updatedAt": "2026-03-24T20:42:34Z",
+      "pr": {
+        "number": 645,
+        "title": "Non-record: Skill Forge — Autonomous ML Experimentation System (Local RTX 4070)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/645",
+        "authorLogin": "FlynnCruse",
+        "authorName": null,
+        "createdAt": "2026-03-24T20:33:24Z",
+        "updatedAt": "2026-03-24T20:42:34Z",
+        "headSha": "47253aa8ca61a82db268496b9dcc5b7bcc364dff",
+        "headRepo": "FlynnCruse/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-645-records-track_non_record_16mb-2026-03-24_SkillForge_LocalRTX4070-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "non-record",
+          "track": {
+            "path": "records/track_non_record_16mb",
+            "slug": "track_non_record_16mb",
+            "label": "Non-record / 16MB",
+            "official": false,
+            "category": "non-record"
+          },
+          "record": {
+            "folderName": "2026-03-24_SkillForge_LocalRTX4070",
+            "folderPath": "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070",
+            "submissionPath": "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/submission.json",
+            "readmePath": "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/README.md",
+            "trainLogPath": "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/train.log",
+            "scriptPath": "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/train_gpt.py"
+          },
+          "submission": {
+            "author": "Flynn Cruse",
+            "githubId": "FlynnCruse",
+            "name": "Skill Forge: Autonomous Experiment System (Local RTX 4070 Validation)",
+            "blurb": "Non-record submission demonstrating an autonomous ML experimentation system (Skill Forge) built with Claude Code skills. Inspired by Karpathy autoresearch + DeepMind AlphaEvolve. Local validation on RTX 4070 Laptop (8GB VRAM) at reduced model dimensions (7L/512d, seq512). Compute grant pending for 8×H100 competition runs.",
+            "date": "2026-03-24T14:00:00Z"
+          },
+          "metrics": {
+            "valBpb": 1.899,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 645,
+            "title": "Non-record: Skill Forge — Autonomous ML Experimentation System (Local RTX 4070)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/645",
+            "authorLogin": "FlynnCruse",
+            "authorName": null,
+            "createdAt": "2026-03-24T20:33:24Z",
+            "updatedAt": "2026-03-24T20:42:34Z",
+            "headSha": "47253aa8ca61a82db268496b9dcc5b7bcc364dff",
+            "headRepo": "FlynnCruse/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/47253aa8ca61a82db268496b9dcc5b7bcc364dff/records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/47253aa8ca61a82db268496b9dcc5b7bcc364dff/records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/47253aa8ca61a82db268496b9dcc5b7bcc364dff/records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/47253aa8ca61a82db268496b9dcc5b7bcc364dff/records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/47253aa8ca61a82db268496b9dcc5b7bcc364dff/records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070",
+            "pr": "https://github.com/openai/parameter-golf/pull/645"
+          }
+        }
+      ]
+    },
+    "646": {
+      "number": 646,
+      "updatedAt": "2026-03-24T20:42:48Z",
+      "pr": {
+        "number": 646,
+        "title": "SOTA Submission (1.1349 BPB) by weywey [10min_16mb track]",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/646",
+        "authorLogin": "Upsalla",
+        "authorName": null,
+        "createdAt": "2026-03-24T20:42:48Z",
+        "updatedAt": "2026-03-24T20:42:48Z",
+        "headSha": "8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf",
+        "headRepo": "Upsalla/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-646-records-track_10min_16mb-weywey_sota_submission_final-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "weywey_sota_submission_final",
+            "folderPath": "records/track_10min_16mb/weywey_sota_submission_final",
+            "submissionPath": "records/track_10min_16mb/weywey_sota_submission_final/submission.json",
+            "readmePath": "records/track_10min_16mb/weywey_sota_submission_final/README.md",
+            "trainLogPath": "records/track_10min_16mb/weywey_sota_submission_final/train.log",
+            "scriptPath": "records/track_10min_16mb/weywey_sota_submission_final/train_gpt.py"
+          },
+          "submission": {
+            "author": "Upsalla",
+            "githubId": "Upsalla",
+            "name": "weywey",
+            "blurb": null,
+            "date": "2026-03-24T20:42:48Z"
+          },
+          "metrics": {
+            "valBpb": 1.13496863,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 646,
+            "title": "SOTA Submission (1.1349 BPB) by weywey [10min_16mb track]",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/646",
+            "authorLogin": "Upsalla",
+            "authorName": null,
+            "createdAt": "2026-03-24T20:42:48Z",
+            "updatedAt": "2026-03-24T20:42:48Z",
+            "headSha": "8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf",
+            "headRepo": "Upsalla/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf/records/track_10min_16mb/weywey_sota_submission_final/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf/records/track_10min_16mb/weywey_sota_submission_final/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf/records/track_10min_16mb/weywey_sota_submission_final/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf/records/track_10min_16mb/weywey_sota_submission_final/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf/records/track_10min_16mb/weywey_sota_submission_final",
+            "pr": "https://github.com/openai/parameter-golf/pull/646"
           }
         }
       ]

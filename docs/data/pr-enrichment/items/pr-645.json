@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-24T20:56:47.620Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 645,
+    "title": "Non-record: Skill Forge — Autonomous ML Experimentation System (Local RTX 4070)",
+    "state": "open",
+    "updatedAt": "2026-03-24T20:42:34Z",
+    "headSha": "47253aa8ca61a82db268496b9dcc5b7bcc364dff",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/645",
+    "authorLogin": "FlynnCruse"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-24_SkillForge_LocalRTX4070/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Skill Forge is an autonomous Claude Code skill system that iterates hypothesis-driven train_gpt edits, evals, and meta-layer skill evolution for Parameter Golf.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Autoresearch loop with meta-layer skill evolution",
+      "Skills seeded from recent papers and leaderboard analyses",
+      "Hypothesis-driven experiment modifications"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

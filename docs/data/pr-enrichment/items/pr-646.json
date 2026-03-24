@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-03-24T20:56:43.715Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 646,
+    "title": "SOTA Submission (1.1349 BPB) by weywey [10min_16mb track]",
+    "state": "open",
+    "updatedAt": "2026-03-24T20:42:48Z",
+    "headSha": "8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/646",
+    "authorLogin": "Upsalla"
+  },
+  "inputs": {
+    "hash": "072662c123505c465dfcb1e80cbfb797fc5a748edd0e2a3564b0b095cec763f8",
+    "readmePaths": [],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer INT6 Weyhe architecture trained with OLR-FW TTT using R128, LR 0.001, beta2 0.95.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "optimizer",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "INT6 quantized 11-layer Weyhe architecture",
+      "OLR-FW TTT schedule with R128, LR 0.001 beta2 0.95"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

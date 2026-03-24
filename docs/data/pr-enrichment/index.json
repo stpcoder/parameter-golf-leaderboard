@@ -1,8 +1,56 @@
 {
-  "generatedAt": "2026-03-24T20:27:14.568Z",
+  "generatedAt": "2026-03-24T20:56:52.908Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 646,
+      "title": "SOTA Submission (1.1349 BPB) by weywey [10min_16mb track]",
+      "status": "open",
+      "updatedAt": "2026-03-24T20:42:48Z",
+      "headSha": "8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf",
+      "generatedAt": "2026-03-24T20:56:43.715Z",
+      "summary": "11-layer INT6 Weyhe architecture trained with OLR-FW TTT using R128, LR 0.001, beta2 0.95.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "optimizer",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-646.json"
+    },
+    {
+      "prNumber": 645,
+      "title": "Non-record: Skill Forge — Autonomous ML Experimentation System (Local RTX 4070)",
+      "status": "open",
+      "updatedAt": "2026-03-24T20:42:34Z",
+      "headSha": "47253aa8ca61a82db268496b9dcc5b7bcc364dff",
+      "generatedAt": "2026-03-24T20:56:47.620Z",
+      "summary": "Skill Forge is an autonomous Claude Code skill system that iterates hypothesis-driven train_gpt edits, evals, and meta-layer skill evolution for Parameter Golf.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-645.json"
+    },
     {
       "prNumber": 644,
       "title": "Non-record: 11L GEPA + 25k Steps + Pure Int6 + Legal TTT (val_bpb=1.0944)",
@@ -854,15 +902,14 @@
       "prNumber": 596,
       "title": "Record: DeepQuant V10b — 11L INT6 + 8ep LoRA TTT (val_bpb=0.6430)",
       "status": "closed",
-      "updatedAt": "2026-03-24T20:00:20Z",
+      "updatedAt": "2026-03-24T20:37:21Z",
       "headSha": "9e4f467b3647c584b53282e3eb1b0ae4ec771927",
-      "generatedAt": "2026-03-24T20:27:05.590Z",
-      "summary": "11-layer INT6 quantized transformer uses extended cosine LR LoRA TTT, bias tuning, and temp rescale to specialize per-document scoring within 16MB limit.",
+      "generatedAt": "2026-03-24T20:56:52.816Z",
+      "summary": "DeepQuant pairs an 11L INT6 transformer with 8-epoch cosine LoRA+bias test-time training, temp rescaling, and fallback policies per document.",
       "tags": [
-        "architecture",
-        "quantization",
         "training-schedule",
-        "evaluation"
+        "evaluation",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1083,29 +1130,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-580.json"
-    },
-    {
-      "prNumber": 579,
-      "title": "The Frugendorff: Recursive Weight Sharing for Transformer Compression (1.1478 BPB, 15.19MB)",
-      "status": "open",
-      "updatedAt": "2026-03-24T16:34:57Z",
-      "headSha": "d0c4271d9134cfbacb008d7a66899cec228c964d",
-      "generatedAt": "2026-03-24T16:56:09.684Z",
-      "summary": "Shared-transformer loops reuse six blocks to simulate deeper nets while asymmetric crawler blocks and bidirectional deliberation gates stabilize recursion.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "attention"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-579.json"
     },
     {
       "prNumber": 578,
