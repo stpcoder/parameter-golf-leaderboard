@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T14:01:38.512Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 720,
+    "title": "Record Submission: 1.1078 BPB — XSA6 + BigramHash4K on Hedge Mixer Stack",
+    "state": "open",
+    "updatedAt": "2026-03-25T13:47:10Z",
+    "headSha": "de025b4364f0468052eb12cbf01ef3ebf9e56fab",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/720",
+    "authorLogin": "agalimova"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_XSA6_BigramHash4K_HedgeMixer_1.1078/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Extends the Hedge Mixer stack by expanding XSA depth to 6 layers and doubling BigramHash vocab via autoresearch-multi search.",
+    "tags": [
+      "architecture",
+      "attention",
+      "tokenization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Expanded XSA_LAST_N to cover six layers",
+      "Scaled BIGRAM_VOCAB_SIZE to 4096 buckets",
+      "AutoResearch-multi combinatorial hyperparameter search"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

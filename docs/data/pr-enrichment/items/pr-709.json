@@ -1,35 +1,38 @@
 {
-  "generatedAt": "2026-03-25T13:32:35.740Z",
+  "generatedAt": "2026-03-25T14:02:05.454Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 709,
     "title": "Results of 2026-03-23_MixedQAT_Int5MLP_Int6Attn",
     "state": "open",
-    "updatedAt": "2026-03-25T13:27:20Z",
-    "headSha": "29b506b7dd7681d6d15fc2d2040dc8bc090996f4",
+    "updatedAt": "2026-03-25T13:54:58Z",
+    "headSha": "a1fb524f2866a0c187cfe4da2406ab6deec06198",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/709",
     "authorLogin": "StolbaJ"
   },
   "inputs": {
-    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "hash": "c4f8d017d13e812b0ad5a78b677f8350df1124736cd3f84c8d4e37f273206c70",
     "readmePaths": [
       "records/track_10min_16mb/2026-03-23_MixedQAT_Int5MLP_Int6Attn/README.md",
-      "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/README.md"
+      "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/README.md",
+      "records/track_10min_16mb/2026-03-23_11L_LeakyReLU2_TTT/README.md"
     ],
-    "submissionCount": 2
+    "submissionCount": 3
   },
   "output": {
-    "summary": "Int5 MLP/int6 attention STE-based mixed-precision QAT from step zero atop the current SOTA stack aligns training with the post-training export quantization.",
+    "summary": "Applies STE-based mixed int5/int6 QAT from step 0 atop the full SOTA stack, aligning training clips to the export quantization scheme.",
     "tags": [
+      "mixed-precision",
       "quantization",
-      "mixed-precision"
+      "attention"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Int5 MLP + int6 attention STE-based QAT",
-      "QAT clip ranges mirror the export quant scheme"
+      "STE-simulated quantization with export-aligned clip ranges",
+      "Full SOTA stack (BigramHash, SmearGate, Muon WD=0.04, SWA) preserved",
+      "Layerwise mixed int5 MLP and int6 attention precision"
     ]
   },
   "compatibility": {

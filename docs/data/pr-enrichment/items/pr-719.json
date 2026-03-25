@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T14:01:44.360Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 719,
+    "title": "Submit 1x A100 QAT Fix - 1.4078 BPB (Non-Record) [v4]",
+    "state": "open",
+    "updatedAt": "2026-03-25T13:49:26Z",
+    "headSha": "64e03ed2b8889300065380797d476b14fabd423d",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/719",
+    "authorLogin": "Shuvam-Banerji-Seal"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-23_Single_A100_QAT_FastFix/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Refits CastedLinear QAT on single A100 by swapping torch.quantile for weight max clamps and shrinking gradient accumulation to match the 10-minute schedule.",
+    "tags": [
+      "quantization",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Single-A100 QAT tuning via CastedLinear STE",
+      "Replaced torch.quantile with w.abs().amax to avoid Triton penalties",
+      "Reduced gradient accumulation to match 10-minute LR schedule"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

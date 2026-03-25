@@ -1,8 +1,77 @@
 {
-  "generatedAt": "2026-03-25T13:32:53.847Z",
+  "generatedAt": "2026-03-25T14:02:05.563Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 720,
+      "title": "Record Submission: 1.1078 BPB — XSA6 + BigramHash4K on Hedge Mixer Stack",
+      "status": "open",
+      "updatedAt": "2026-03-25T13:47:10Z",
+      "headSha": "de025b4364f0468052eb12cbf01ef3ebf9e56fab",
+      "generatedAt": "2026-03-25T14:01:38.512Z",
+      "summary": "Extends the Hedge Mixer stack by expanding XSA depth to 6 layers and doubling BigramHash vocab via autoresearch-multi search.",
+      "tags": [
+        "architecture",
+        "attention",
+        "tokenization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-720.json"
+    },
+    {
+      "prNumber": 719,
+      "title": "Submit 1x A100 QAT Fix - 1.4078 BPB (Non-Record) [v4]",
+      "status": "open",
+      "updatedAt": "2026-03-25T13:49:26Z",
+      "headSha": "64e03ed2b8889300065380797d476b14fabd423d",
+      "generatedAt": "2026-03-25T14:01:44.360Z",
+      "summary": "Refits CastedLinear QAT on single A100 by swapping torch.quantile for weight max clamps and shrinking gradient accumulation to match the 10-minute schedule.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-719.json"
+    },
+    {
+      "prNumber": 718,
+      "title": "Non-record Submission: CrystalGPT + Diamond Fusion — Ternary Crystal Architecture",
+      "status": "open",
+      "updatedAt": "2026-03-25T13:39:21Z",
+      "headSha": "d3eda5019c9d9d63669402193ca67ee830a98da9",
+      "generatedAt": "2026-03-25T14:01:52.159Z",
+      "summary": "CrystalGPT reuses a single transformer block with crystal modulation gates, ternary voting, and Diamond Fusion consensus to reduce parameters.",
+      "tags": [
+        "architecture",
+        "attention",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-718.json"
+    },
     {
       "prNumber": 717,
       "title": "Grant nonrecord tied blocks",
@@ -123,30 +192,6 @@
       "file": "items/pr-713.json"
     },
     {
-      "prNumber": 712,
-      "title": "Submit 1x A100 QAT Fix - 1.4078 BPB (Non-Record) [v3]",
-      "status": "open",
-      "updatedAt": "2026-03-25T13:15:13Z",
-      "headSha": "952a8003f65c514db587c85c9645651b12c36082",
-      "generatedAt": "2026-03-25T13:32:11.486Z",
-      "summary": "Adapts a modded-nanogpt QAT loop to single-A100 limits by swapping torch.quantile for per-row amax clipping and downscaling the LR schedule to 2.6K steps.",
-      "tags": [
-        "quantization",
-        "training-schedule",
-        "optimizer",
-        "non-record"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-712.json"
-    },
-    {
       "prNumber": 711,
       "title": "Partitioned MoE + BigramHash + SlidingWindow + Int5/Int6 (Complexity-ML)",
       "status": "open",
@@ -173,15 +218,14 @@
       "prNumber": 710,
       "title": "Submission: 11L EMA + GPTQ-lite + Int6 (val_bpb: 1.1240)",
       "status": "open",
-      "updatedAt": "2026-03-25T13:05:19Z",
-      "headSha": "b693c4fe59c47eb78fe52e94dfcc0448a6645b49",
-      "generatedAt": "2026-03-25T13:32:26.601Z",
-      "summary": "11-layer 512d transformer uses U-Net skips, partial XSA/RoPE, EMA+SWA+late QAT, and GPTQ-lite int6 quantization with Muon/AdamW training.",
+      "updatedAt": "2026-03-25T13:47:35Z",
+      "headSha": "c573d65cb4c89c970b463c4def81a7563f58e83c",
+      "generatedAt": "2026-03-25T14:01:57.561Z",
+      "summary": "11L transformer stacks Partial XSA/RoPE, SmearGate/BigramHash, EMA+tight SWA, and late GPTQ-lite int6 quantization on Muon optimizer.",
       "tags": [
         "architecture",
         "quantization",
-        "optimizer",
-        "training-schedule"
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
@@ -197,13 +241,14 @@
       "prNumber": 709,
       "title": "Results of 2026-03-23_MixedQAT_Int5MLP_Int6Attn",
       "status": "open",
-      "updatedAt": "2026-03-25T13:27:20Z",
-      "headSha": "29b506b7dd7681d6d15fc2d2040dc8bc090996f4",
-      "generatedAt": "2026-03-25T13:32:35.740Z",
-      "summary": "Int5 MLP/int6 attention STE-based mixed-precision QAT from step zero atop the current SOTA stack aligns training with the post-training export quantization.",
+      "updatedAt": "2026-03-25T13:54:58Z",
+      "headSha": "a1fb524f2866a0c187cfe4da2406ab6deec06198",
+      "generatedAt": "2026-03-25T14:02:05.454Z",
+      "summary": "Applies STE-based mixed int5/int6 QAT from step 0 atop the full SOTA stack, aligning training clips to the export quantization scheme.",
       "tags": [
+        "mixed-precision",
         "quantization",
-        "mixed-precision"
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,

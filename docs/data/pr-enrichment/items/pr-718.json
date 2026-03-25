@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T14:01:52.159Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 718,
+    "title": "Non-record Submission: CrystalGPT + Diamond Fusion — Ternary Crystal Architecture",
+    "state": "open",
+    "updatedAt": "2026-03-25T13:39:21Z",
+    "headSha": "d3eda5019c9d9d63669402193ca67ee830a98da9",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/718",
+    "authorLogin": "ivanontech"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-25_CrystalGPT_DiamondFusion_M4/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "CrystalGPT reuses a single transformer block with crystal modulation gates, ternary voting, and Diamond Fusion consensus to reduce parameters.",
+    "tags": [
+      "architecture",
+      "attention",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Recurrent single transformer block with per-iteration crystal modulation gates",
+      "Consensus-weighted Diamond Fusion experts with ternary voting states",
+      "Partial RoPE + GQA attention paired with LeakyReLU² MLP"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
