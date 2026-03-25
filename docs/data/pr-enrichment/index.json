@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-25T19:33:42.849Z",
+  "generatedAt": "2026-03-25T20:04:01.426Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 760,
+      "title": "Add BitNet b1.58 Ternary Quantization (non-record submission)",
+      "status": "closed",
+      "updatedAt": "2026-03-25T19:54:23Z",
+      "headSha": "7b54eb49fe27736d0c46f7919cc2db65d43d6903",
+      "generatedAt": "2026-03-25T20:03:45.677Z",
+      "summary": "Ternary BitNet quantizes weights to {-1,0,1} with STE to fit 67.5M params under 16MB while disabling EMA/SWA.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-760.json"
+    },
     {
       "prNumber": 759,
       "title": "Submission Record Series: BatchOpt+MLP4+RoPE100k and 8L EMA Int6 Bigram65k on Single 20GB GPU (val_bpb 1.7810 → 1.3092)",
@@ -124,13 +147,12 @@
       "prNumber": 753,
       "title": "Podracing II: Electric Bugaloo — 0.9625 BPB (3-seed mean, all sub-0.964)",
       "status": "open",
-      "updatedAt": "2026-03-25T19:15:04Z",
+      "updatedAt": "2026-03-25T19:43:44Z",
       "headSha": "8a5915085027019adec5f455bb660021b74fe672",
-      "generatedAt": "2026-03-25T19:33:38.141Z",
-      "summary": "Eval-time multi-order n-gram cache with entropy-adaptive alpha blends 2-7 order backoff into the Podracing GPTQ-lite base scoring.",
+      "generatedAt": "2026-03-25T20:03:50.644Z",
+      "summary": "Eval stacks 2-7-order n-gram backoff with entropy-adaptive alpha to mix cached counts and model output without touching training.",
       "tags": [
-        "evaluation",
-        "quantization"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1353,15 +1375,15 @@
       "prNumber": 675,
       "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
       "status": "open",
-      "updatedAt": "2026-03-25T03:58:35Z",
-      "headSha": "fe396537ccfa66c2e23165cff1a7d6dd3bee58d9",
-      "generatedAt": "2026-03-25T04:28:57.402Z",
-      "summary": "Stacks LeakyReLU², LAWA averaging, ramping weight decay, and val-set training on a 10-layer baseline with LZMA compression.",
+      "updatedAt": "2026-03-25T19:54:23Z",
+      "headSha": "2b04f15aae7a307801e0c4246e07041d09352278",
+      "generatedAt": "2026-03-25T20:03:55.656Z",
+      "summary": "Stacked a 10-layer model with LeakyReLU(0.5)², LAWA+warmdown weight decay, and val-set training to boost pre-quant quality before the int8+lzma roundtrip.",
       "tags": [
         "val-only",
+        "architecture",
         "compression",
-        "training-schedule",
-        "architecture"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": true,
@@ -1961,10 +1983,10 @@
       "prNumber": 638,
       "title": "Record: 11L XSA-all + LeakyReLU(0.5)² + VR + GA (val_bpb=1.1164, pending 3-seed)",
       "status": "open",
-      "updatedAt": "2026-03-25T18:57:34Z",
-      "headSha": "b92b5bf0a0146457708ebb849c8d5d71a02e6048",
-      "generatedAt": "2026-03-25T19:03:34.025Z",
-      "summary": "11-layer model runs Exclusive Self-Attention everywhere with LeakyReLU(0.5)² plus Value Residual/Gated Attention stack before int6 compression.",
+      "updatedAt": "2026-03-25T20:03:43Z",
+      "headSha": "443f565c2e522013a94d62d332a5d87b234c9c20",
+      "generatedAt": "2026-03-25T20:04:01.336Z",
+      "summary": "XSA on every layer, LeakyReLU(0.5)^2, and Value Residual with Gated Attention drive this int6-per-row quantized stack.",
       "tags": [
         "architecture",
         "attention",

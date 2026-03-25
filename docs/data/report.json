@@ -1,40 +1,20 @@
 {
-  "generatedAt": "2026-03-25T19:32:59.369Z",
+  "generatedAt": "2026-03-25T20:03:16.898Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
-  "skipped": [
-    {
-      "stage": "pull-request-readme",
-      "pr": 759,
-      "submissionPath": "records/track_10min_16mb/2026-03-22_BatchOpt_MLP4_RoPE100k/submission.json",
-      "reason": "missing-or-unreadable-readme"
-    },
-    {
-      "stage": "pull-request-readme",
-      "pr": 759,
-      "submissionPath": "records/track_10min_16mb/2026-03-23_8L_EMA_Int6_Bigram65k/submission.json",
-      "reason": "missing-or-unreadable-readme"
-    }
-  ],
-  "errors": [
-    {
-      "stage": "pull-request-file",
-      "pr": 679,
-      "filename": "records/track_non_record_16mb/2026-03-18_ASQU_MoC_BankedLinear/submission.json",
-      "message": "Expected double-quoted property name in JSON at position 491 (line 14 column 1)"
-    }
-  ],
+  "skipped": [],
+  "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-03-25T19:01:53Z",
+    "cutoffUpdatedAt": "2026-03-25T19:25:43Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 5,
-    "prsReused": 195,
+    "prsRefreshed": 4,
+    "prsReused": 196,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 725,
+    "cacheEntries": 726,
     "retryWindowRetained": false
   }
 }

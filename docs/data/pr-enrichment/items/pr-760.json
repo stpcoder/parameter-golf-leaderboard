@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T20:03:45.677Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 760,
+    "title": "Add BitNet b1.58 Ternary Quantization (non-record submission)",
+    "state": "closed",
+    "updatedAt": "2026-03-25T19:54:23Z",
+    "headSha": "7b54eb49fe27736d0c46f7919cc2db65d43d6903",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/760",
+    "authorLogin": "erikqu"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_BitNet_Ternary/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Ternary BitNet quantizes weights to {-1,0,1} with STE to fit 67.5M params under 16MB while disabling EMA/SWA.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "STE ternary quantization with global γ scaling",
+      "Base-3 packing for five ternary weights per byte",
+      "Disable EMA/SWA to avoid mismatch with ternary forward"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

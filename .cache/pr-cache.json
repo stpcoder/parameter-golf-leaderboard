@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-25T19:33:21.947Z",
-  "lastSeenUpdatedAt": "2026-03-25T19:25:43Z",
+  "generatedAt": "2026-03-25T20:03:37.389Z",
+  "lastSeenUpdatedAt": "2026-03-25T20:00:46Z",
   "prs": {
     "1": {
       "number": 1,
@@ -54199,7 +54199,7 @@
     },
     "638": {
       "number": 638,
-      "updatedAt": "2026-03-25T18:57:34Z",
+      "updatedAt": "2026-03-25T20:00:46Z",
       "pr": {
         "number": 638,
         "title": "Record: 11L XSA-all + LeakyReLU(0.5)² + VR + GA (val_bpb=1.1164, pending 3-seed)",
@@ -54210,8 +54210,8 @@
         "authorLogin": "Asukabot0",
         "authorName": null,
         "createdAt": "2026-03-24T18:36:15Z",
-        "updatedAt": "2026-03-25T18:57:34Z",
-        "headSha": "b92b5bf0a0146457708ebb849c8d5d71a02e6048",
+        "updatedAt": "2026-03-25T20:00:46Z",
+        "headSha": "435e7985d37b90e7373e8d2e84a7abd79378d9bc",
         "headRepo": "Asukabot0/parameter-golf"
       },
       "submissions": [
@@ -54273,16 +54273,16 @@
             "authorLogin": "Asukabot0",
             "authorName": null,
             "createdAt": "2026-03-24T18:36:15Z",
-            "updatedAt": "2026-03-25T18:57:34Z",
-            "headSha": "b92b5bf0a0146457708ebb849c8d5d71a02e6048",
+            "updatedAt": "2026-03-25T20:00:46Z",
+            "headSha": "435e7985d37b90e7373e8d2e84a7abd79378d9bc",
             "headRepo": "Asukabot0/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b92b5bf0a0146457708ebb849c8d5d71a02e6048/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/b92b5bf0a0146457708ebb849c8d5d71a02e6048/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/b92b5bf0a0146457708ebb849c8d5d71a02e6048/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/b92b5bf0a0146457708ebb849c8d5d71a02e6048/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/b92b5bf0a0146457708ebb849c8d5d71a02e6048/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/435e7985d37b90e7373e8d2e84a7abd79378d9bc/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/435e7985d37b90e7373e8d2e84a7abd79378d9bc/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/435e7985d37b90e7373e8d2e84a7abd79378d9bc/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/435e7985d37b90e7373e8d2e84a7abd79378d9bc/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/435e7985d37b90e7373e8d2e84a7abd79378d9bc/records/track_10min_16mb/2026-03-25_XSA_all_LeakyReLU_VR_GA",
             "pr": "https://github.com/openai/parameter-golf/pull/638"
           }
         }
@@ -56919,7 +56919,7 @@
     },
     "675": {
       "number": 675,
-      "updatedAt": "2026-03-25T03:58:35Z",
+      "updatedAt": "2026-03-25T19:54:23Z",
       "pr": {
         "number": 675,
         "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
@@ -56930,8 +56930,8 @@
         "authorLogin": "ChideraIbe123",
         "authorName": null,
         "createdAt": "2026-03-25T03:58:35Z",
-        "updatedAt": "2026-03-25T03:58:35Z",
-        "headSha": "fe396537ccfa66c2e23165cff1a7d6dd3bee58d9",
+        "updatedAt": "2026-03-25T19:54:23Z",
+        "headSha": "2b04f15aae7a307801e0c4246e07041d09352278",
         "headRepo": "ChideraIbe123/parameter-golf"
       },
       "submissions": [
@@ -56993,16 +56993,16 @@
             "authorLogin": "ChideraIbe123",
             "authorName": null,
             "createdAt": "2026-03-25T03:58:35Z",
-            "updatedAt": "2026-03-25T03:58:35Z",
-            "headSha": "fe396537ccfa66c2e23165cff1a7d6dd3bee58d9",
+            "updatedAt": "2026-03-25T19:54:23Z",
+            "headSha": "2b04f15aae7a307801e0c4246e07041d09352278",
             "headRepo": "ChideraIbe123/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/fe396537ccfa66c2e23165cff1a7d6dd3bee58d9/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/fe396537ccfa66c2e23165cff1a7d6dd3bee58d9/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/fe396537ccfa66c2e23165cff1a7d6dd3bee58d9/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/fe396537ccfa66c2e23165cff1a7d6dd3bee58d9/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/fe396537ccfa66c2e23165cff1a7d6dd3bee58d9/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2b04f15aae7a307801e0c4246e07041d09352278/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/2b04f15aae7a307801e0c4246e07041d09352278/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/2b04f15aae7a307801e0c4246e07041d09352278/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/2b04f15aae7a307801e0c4246e07041d09352278/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/2b04f15aae7a307801e0c4246e07041d09352278/records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100",
             "pr": "https://github.com/openai/parameter-golf/pull/675"
           }
         }
@@ -63175,7 +63175,7 @@
     },
     "753": {
       "number": 753,
-      "updatedAt": "2026-03-25T19:15:04Z",
+      "updatedAt": "2026-03-25T19:43:44Z",
       "pr": {
         "number": 753,
         "title": "Podracing II: Electric Bugaloo — 0.9625 BPB (3-seed mean, all sub-0.964)",
@@ -63186,7 +63186,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-25T17:53:09Z",
-        "updatedAt": "2026-03-25T19:15:04Z",
+        "updatedAt": "2026-03-25T19:43:44Z",
         "headSha": "8a5915085027019adec5f455bb660021b74fe672",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -63249,7 +63249,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-25T17:53:09Z",
-            "updatedAt": "2026-03-25T19:15:04Z",
+            "updatedAt": "2026-03-25T19:43:44Z",
             "headSha": "8a5915085027019adec5f455bb660021b74fe672",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -63805,6 +63805,97 @@
             "script": "https://github.com/openai/parameter-golf/blob/744c6c32b9e76af55e04c20b0e8e2ea0fc2aa89f/records/track_10min_16mb/2026-03-23_8L_EMA_Int6_Bigram65k/train_gpt.py",
             "folder": "https://github.com/openai/parameter-golf/tree/744c6c32b9e76af55e04c20b0e8e2ea0fc2aa89f/records/track_10min_16mb/2026-03-23_8L_EMA_Int6_Bigram65k",
             "pr": "https://github.com/openai/parameter-golf/pull/759"
+          }
+        }
+      ]
+    },
+    "760": {
+      "number": 760,
+      "updatedAt": "2026-03-25T19:54:23Z",
+      "pr": {
+        "number": 760,
+        "title": "Add BitNet b1.58 Ternary Quantization (non-record submission)",
+        "state": "closed",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/760",
+        "authorLogin": "erikqu",
+        "authorName": null,
+        "createdAt": "2026-03-25T19:52:58Z",
+        "updatedAt": "2026-03-25T19:54:23Z",
+        "headSha": "7b54eb49fe27736d0c46f7919cc2db65d43d6903",
+        "headRepo": "erikqu/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-760-records-track_10min_16mb-2026-03-25_BitNet_Ternary-submission-json",
+          "source": "pull_request",
+          "status": "closed",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-25_BitNet_Ternary",
+            "folderPath": "records/track_10min_16mb/2026-03-25_BitNet_Ternary",
+            "submissionPath": "records/track_10min_16mb/2026-03-25_BitNet_Ternary/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-25_BitNet_Ternary/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-25_BitNet_Ternary/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-25_BitNet_Ternary/train_gpt.py"
+          },
+          "submission": {
+            "author": "starq",
+            "githubId": "starq",
+            "name": "BitNet b1.58 Ternary Quantization",
+            "blurb": null,
+            "date": "2026-03-25"
+          },
+          "metrics": {
+            "valBpb": 1.2185,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 760,
+            "title": "Add BitNet b1.58 Ternary Quantization (non-record submission)",
+            "state": "closed",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/760",
+            "authorLogin": "erikqu",
+            "authorName": null,
+            "createdAt": "2026-03-25T19:52:58Z",
+            "updatedAt": "2026-03-25T19:54:23Z",
+            "headSha": "7b54eb49fe27736d0c46f7919cc2db65d43d6903",
+            "headRepo": "erikqu/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7b54eb49fe27736d0c46f7919cc2db65d43d6903/records/track_10min_16mb/2026-03-25_BitNet_Ternary/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/7b54eb49fe27736d0c46f7919cc2db65d43d6903/records/track_10min_16mb/2026-03-25_BitNet_Ternary/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/7b54eb49fe27736d0c46f7919cc2db65d43d6903/records/track_10min_16mb/2026-03-25_BitNet_Ternary/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/7b54eb49fe27736d0c46f7919cc2db65d43d6903/records/track_10min_16mb/2026-03-25_BitNet_Ternary/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/7b54eb49fe27736d0c46f7919cc2db65d43d6903/records/track_10min_16mb/2026-03-25_BitNet_Ternary",
+            "pr": "https://github.com/openai/parameter-golf/pull/760"
           }
         }
       ]
