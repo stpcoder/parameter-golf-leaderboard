@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T05:59:33.904Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 685,
+    "title": "Record: Chained TTT — Cosine Recovery + Multi-Pass Scoring (3-seed mean val_bpb=1.0366)",
+    "state": "open",
+    "updatedAt": "2026-03-25T05:44:18Z",
+    "headSha": "c6f2728a9a9d6608148bc18a6d577a2241353b66",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/685",
+    "authorLogin": "andrewbaggio1"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_ChainedTTT_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Chains cosine LR AdamW recovery with multi-pass score-first scoring to rehabilitate int6 quantized weights before ensembled evaluation.",
+    "tags": [
+      "training-schedule",
+      "evaluation",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Cosine AdamW TTT recovery for quantization damage",
+      "Multi-pass score-first evaluation with min-NLL selection",
+      "Ensembles shifted adaptation trajectories post-recovery"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-25T05:29:16.124Z",
+  "generatedAt": "2026-03-25T05:59:46.644Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 682,
     "title": "[WIP] Non-record: Local Ablation Pipeline — EMA + Int6 + Partial RoPE (GTX 1650)",
     "state": "open",
-    "updatedAt": "2026-03-25T05:24:49Z",
-    "headSha": "d0dcb4c607fd0afbba0eb60e6566358ffa807750",
+    "updatedAt": "2026-03-25T05:48:55Z",
+    "headSha": "8f16ebf3623557bc991be5eed940fcfb814299b1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/682",
     "authorLogin": "gthgomez"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Local GTX 1650 pipeline ports EMA, int6 clip-search quant, partial RoPE, LN scaling, and decoupled weight decay to validate full-scale features before 8×H100 runs.",
+    "summary": "Ported EMA smoothing, Int6 clip-search quantization, partial RoPE, LN scaling, and decoupled weight decay into a GTX 1650 local ablation pipeline ahead of leaderboard scaling.",
     "tags": [
       "quantization",
+      "optimizer",
       "attention",
-      "architecture",
-      "non-record"
+      "regularization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "EMA plus partial RoPE and LN scale ablations",
-      "Int6 clip-search quantization with inline comparison",
-      "Muon/Adam decoupled weight decay toggles"
+      "EMA smoothing with Muon/AdamW decoupled weight decay",
+      "Int6 clip-search quantization tuned for zlib compression",
+      "Partial RoPE plus LN scaling on constrained hardware"
     ]
   },
   "compatibility": {

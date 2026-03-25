@@ -1,21 +1,91 @@
 {
-  "generatedAt": "2026-03-25T05:29:27.896Z",
+  "generatedAt": "2026-03-25T05:59:57.865Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 686,
+      "title": "Submission/2026 03 25 recur layers ttt",
+      "status": "open",
+      "updatedAt": "2026-03-25T05:58:51Z",
+      "headSha": "174142c39b029b55031e4a60c155f1124571711f",
+      "generatedAt": "2026-03-25T05:59:27.985Z",
+      "summary": "Dual depth recurrence reuses layers 4/5 with independent block scalars for 13 virtual layers, paired with TTT/SWA and Muon optimizer under the 16MB budget.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "optimizer",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-686.json"
+    },
+    {
+      "prNumber": 685,
+      "title": "Record: Chained TTT — Cosine Recovery + Multi-Pass Scoring (3-seed mean val_bpb=1.0366)",
+      "status": "open",
+      "updatedAt": "2026-03-25T05:44:18Z",
+      "headSha": "c6f2728a9a9d6608148bc18a6d577a2241353b66",
+      "generatedAt": "2026-03-25T05:59:33.904Z",
+      "summary": "Chains cosine LR AdamW recovery with multi-pass score-first scoring to rehabilitate int6 quantized weights before ensembled evaluation.",
+      "tags": [
+        "training-schedule",
+        "evaluation",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-685.json"
+    },
+    {
+      "prNumber": 684,
+      "title": "Record: 11L Sidecar48 + Enhanced Attention + Async Data Pipeline + AdamW TTT (20 epochs, cosine LR, 3-seed mean val_bpb=1.0573)",
+      "status": "open",
+      "updatedAt": "2026-03-25T05:41:15Z",
+      "headSha": "4c77535a8b19beb61058dbfb7a5b00ccc95981cc",
+      "generatedAt": "2026-03-25T05:59:39.509Z",
+      "summary": "11L transformer augments attention with learned shift/gain mixes and local residuals while using async mmap coprime-shard sampling plus denser stride-32 eval for TTT.",
+      "tags": [
+        "attention",
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-684.json"
+    },
+    {
       "prNumber": 682,
       "title": "[WIP] Non-record: Local Ablation Pipeline — EMA + Int6 + Partial RoPE (GTX 1650)",
       "status": "open",
-      "updatedAt": "2026-03-25T05:24:49Z",
-      "headSha": "d0dcb4c607fd0afbba0eb60e6566358ffa807750",
-      "generatedAt": "2026-03-25T05:29:16.124Z",
-      "summary": "Local GTX 1650 pipeline ports EMA, int6 clip-search quant, partial RoPE, LN scaling, and decoupled weight decay to validate full-scale features before 8×H100 runs.",
+      "updatedAt": "2026-03-25T05:48:55Z",
+      "headSha": "8f16ebf3623557bc991be5eed940fcfb814299b1",
+      "generatedAt": "2026-03-25T05:59:46.644Z",
+      "summary": "Ported EMA smoothing, Int6 clip-search quantization, partial RoPE, LN scaling, and decoupled weight decay into a GTX 1650 local ablation pipeline ahead of leaderboard scaling.",
       "tags": [
         "quantization",
+        "optimizer",
         "attention",
-        "architecture",
-        "non-record"
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -609,16 +679,15 @@
     {
       "prNumber": 646,
       "title": "SOTA Submission (1.1349 BPB) by weywey [10min_16mb track]",
-      "status": "open",
-      "updatedAt": "2026-03-24T20:42:48Z",
+      "status": "closed",
+      "updatedAt": "2026-03-25T05:32:28Z",
       "headSha": "8c6f0be7eb8c69fbc53c598f61e8b17bc46ac7cf",
-      "generatedAt": "2026-03-24T20:56:43.715Z",
-      "summary": "11-layer INT6 Weyhe architecture trained with OLR-FW TTT using R128, LR 0.001, beta2 0.95.",
+      "generatedAt": "2026-03-25T05:59:53.089Z",
+      "summary": "11-layer INT6 model with OLR-FW TTT R128 recurrence built on the Weyhe framework and tuned LR=0.001 beta2=0.95.",
       "tags": [
         "quantization",
         "architecture",
-        "optimizer",
-        "training-schedule"
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
@@ -800,14 +869,15 @@
       "prNumber": 635,
       "title": "Non-record: 11L MLP3.5x LeakyReLU(0.5)^2 + Full SOTA Stack (mean val_bpb=1.1330, 8xH100 SXM)",
       "status": "open",
-      "updatedAt": "2026-03-24T17:48:12Z",
-      "headSha": "97212ce0c59651d660d87836b9bb970dd7553dce",
-      "generatedAt": "2026-03-24T17:56:12.329Z",
-      "summary": "11-layer 512d Transformer pairs MLP3.5x LeakyReLU² with Value Residual, gated attention, and hashing tricks plus sliding-window eval.",
+      "updatedAt": "2026-03-25T05:54:06Z",
+      "headSha": "f0abe79bd4ffe5d4f171537d7d9391da8c8777a2",
+      "generatedAt": "2026-03-25T05:59:57.768Z",
+      "summary": "11-layer 512d GQA transformer pairs MLP3.5x LeakyReLU(0.5)^2, SmearGate, hash embeddings, Value Residual/Gated Attention, and late QAT with int6 GPTQ-lite.",
       "tags": [
         "architecture",
         "quantization",
-        "sliding-window-eval"
+        "optimizer",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,

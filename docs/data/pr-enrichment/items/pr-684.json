@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T05:59:39.509Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 684,
+    "title": "Record: 11L Sidecar48 + Enhanced Attention + Async Data Pipeline + AdamW TTT (20 epochs, cosine LR, 3-seed mean val_bpb=1.0573)",
+    "state": "open",
+    "updatedAt": "2026-03-25T05:41:15Z",
+    "headSha": "4c77535a8b19beb61058dbfb7a5b00ccc95981cc",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/684",
+    "authorLogin": "DeepReinforce"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_Sidecar48_Enhanced_Attention_Async_Data_Pipeline_AdamW_TTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11L transformer augments attention with learned shift/gain mixes and local residuals while using async mmap coprime-shard sampling plus denser stride-32 eval for TTT.",
+    "tags": [
+      "attention",
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Learned k/v shift mix, per-head k_gain, and local value residuals",
+      "Async mmap data pipeline with coprime-stride shard mixing",
+      "Sliding-window eval with stride 32"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

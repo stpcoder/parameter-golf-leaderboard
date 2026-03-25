@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-25T05:59:27.985Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 686,
+    "title": "Submission/2026 03 25 recur layers ttt",
+    "state": "open",
+    "updatedAt": "2026-03-25T05:58:51Z",
+    "headSha": "174142c39b029b55031e4a60c155f1124571711f",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/686",
+    "authorLogin": "msisovic"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_RecurLayers/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Dual depth recurrence reuses layers 4/5 with independent block scalars for 13 virtual layers, paired with TTT/SWA and Muon optimizer under the 16MB budget.",
+    "tags": [
+      "architecture",
+      "training-schedule",
+      "optimizer",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Dual depth recurrence on layers 4/5 with independent block scalars",
+      "Test-time training (TTT) with SWA adaptation",
+      "Muon optimizer with weight decay"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

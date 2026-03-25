@@ -1,33 +1,27 @@
 {
-  "generatedAt": "2026-03-25T05:28:44.186Z",
+  "generatedAt": "2026-03-25T05:58:55.024Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
   "skipped": [
     {
-      "pr": 683,
-      "reason": "no-record-submission-json"
-    },
-    {
-      "pr": 640,
-      "reason": "no-record-submission-json"
-    },
-    {
-      "pr": 641,
-      "reason": "no-record-submission-json"
+      "stage": "pull-request-readme",
+      "pr": 646,
+      "submissionPath": "records/track_10min_16mb/weywey_sota_submission_final/submission.json",
+      "reason": "missing-or-unreadable-readme"
     }
   ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-03-25T04:57:12Z",
+    "cutoffUpdatedAt": "2026-03-25T05:28:44Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 7,
-    "prsReused": 193,
+    "prsRefreshed": 6,
+    "prsReused": 194,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 654,
+    "cacheEntries": 657,
     "retryWindowRetained": false
   }
 }
