@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-25T02:58:41.223Z",
+  "generatedAt": "2026-03-25T03:28:39.119Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 672,
+      "title": "Record: 30ep Cosine TTT on LeakyReLU² stack (3-seed mean val_bpb=1.0781)",
+      "status": "open",
+      "updatedAt": "2026-03-25T03:22:29Z",
+      "headSha": "3f9fa54e5975dba72598fa52828f496f803b2531",
+      "generatedAt": "2026-03-25T03:28:39.017Z",
+      "summary": "Extends PR518's LeakyReLU² 11-layer stack with a 30-epoch cosine TTT run to refine parameters before sliding eval.",
+      "tags": [
+        "training-schedule",
+        "architecture",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-672.json"
+    },
     {
       "prNumber": 671,
       "title": "Submission: Atris Labs v8 (audited seed42, clean branch)",

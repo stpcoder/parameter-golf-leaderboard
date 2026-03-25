@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-25T03:28:39.017Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 672,
+    "title": "Record: 30ep Cosine TTT on LeakyReLU² stack (3-seed mean val_bpb=1.0781)",
+    "state": "open",
+    "updatedAt": "2026-03-25T03:22:29Z",
+    "headSha": "3f9fa54e5975dba72598fa52828f496f803b2531",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/672",
+    "authorLogin": "andrewbaggio1"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_CosineTTT30ep_SwiGLU_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Extends PR518's LeakyReLU² 11-layer stack with a 30-epoch cosine TTT run to refine parameters before sliding eval.",
+    "tags": [
+      "training-schedule",
+      "architecture",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "30-epoch cosine TTT schedule",
+      "LeakyReLU² 11-layer stack",
+      "AdamW with per-layer LR scaling"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
