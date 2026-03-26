@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-03-26T14:42:17.431Z",
+  "generatedAt": "2026-03-26T16:41:32.755Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 808,
-    "title": "Record: 0.6364 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
+    "title": "Record: 0.6360 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
     "state": "open",
-    "updatedAt": "2026-03-26T14:24:53Z",
-    "headSha": "b00c823bc9e3e32214324efb68f18eea43f9f50c",
+    "updatedAt": "2026-03-26T16:33:13Z",
+    "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/808",
     "authorLogin": "Naazimsnh02"
   },
   "inputs": {
     "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/README.md",
+      "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/README.md",
       "records/track_10min_16mb/2026-03-25_DepthRecurrence_LoRATTT_ParallelMuon/README.md"
     ],
     "submissionCount": 2
   },
   "output": {
-    "summary": "Depth recurrence reuses layers 4/5 for virtual depth while eval-time multi-order n-gram backoff with entropy-adaptive blending plus multi-GPU prefill refines scoring.",
+    "summary": "Repeating layers 4/5 via depth recurrence pairs with eval-time multi-order n-gram backoff, entropy-adaptive blending, and multi-GPU prefill.",
     "tags": [
       "architecture",
       "evaluation"
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Depth recurrence repeating layers 4/5 for 13 virtual layers",
-      "Eval-time multi-order n-gram backoff (orders 2-7) with entropy-adaptive alpha",
-      "Multi-GPU n-gram prefill to avoid hash-table fragmentation"
+      "Depth recurrence on layers 4 and 5 for 13 virtual layers",
+      "Eval-time multi-order n-gram backoff with entropy-adaptive blending",
+      "Multi-GPU prefill to avoid n-gram table fragmentation"
     ]
   },
   "compatibility": {

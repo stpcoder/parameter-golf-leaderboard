@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T15:40:32.019Z",
+  "generatedAt": "2026-03-26T16:41:25.505Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 838,
     "title": "Non-Record: 11L Parallel Muon + LN Scale + LeakyReLU² MLP3x + Legal TTT — val_bpb 1.1215 (3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-26T15:11:03Z",
+    "state": "closed",
+    "updatedAt": "2026-03-26T16:27:24Z",
     "headSha": "5687f3ca15f7437f45821af8cac7e5d2210fe68d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/838",
     "authorLogin": "aryanbhosale"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Parallel Muon banking + LN Scale + LeakyReLU² MLP3x pairs with legal score-first TTT and GPTQ-lite int6 quantization.",
+    "summary": "Parallel Muon parameter banking pairs depth-scaled LN with LeakyReLU² MLP3x and legal score-first TTT adaptation before GPTQ-lite quantization.",
     "tags": [
+      "val-only",
       "muon",
-      "quantization",
-      "evaluation",
-      "val-only"
+      "architecture",
+      "training-schedule"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Training includes legal score-first TTT that scores and then trains on validation chunks, so the training regime runs on the validation shard.",
+    "valOnlyReasoning": "Legal score-first TTT runs SGD adaptation on each validation chunk before scoring, so those weight updates occur solely on the validation shards.",
     "techniques": [
-      "Parallel Muon banking with batched Newton-Schulz",
-      "LeakyReLU² MLP3x plus depth-dependent LN Scale",
-      "Legal score-first TTT with sliding-window evaluation"
+      "Parallel Muon banking with batched Newton-Schulz synchronization",
+      "Depth-aware LN Scale plus LeakyReLU² MLP3x within gated/XSA attention blocks",
+      "Legal score-first TTT SGD adaptation per 32K chunk prior to GPTQ-lite quantization"
     ]
   },
   "compatibility": {

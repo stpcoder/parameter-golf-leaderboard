@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T16:40:59.821Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 862,
+    "title": "RECORD: Denseformer+VRL+XSA on last 4 layers+Gradient Clipping (pending 8xH100 eval)",
+    "state": "open",
+    "updatedAt": "2026-03-26T16:24:33Z",
+    "headSha": "78c324119bf844ac1e6bb57c9ef8695e414c96c2",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/862",
+    "authorLogin": "grim-hitman0XX"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines DenseFormer depth-weighted pooling, LeakyReLU(0.5)², VRL value blending, last-4-layer XSA, and gradient clipping to stabilize cross-layer attention.",
+    "tags": [
+      "architecture",
+      "attention",
+      "regularization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "DenseFormer depth-weighted residual pooling",
+      "LeakyReLU(0.5)² with VRL value blending",
+      "Last-4-layer XSA coupled with gradient clipping"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

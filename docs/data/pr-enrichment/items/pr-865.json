@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T16:40:46.057Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 865,
+    "title": "Record: 11L Parallel Muon + N-gram Backoff Cache — val_bpb 0.2841 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-03-26T16:35:20Z",
+    "headSha": "8fbcf91980c280004a3f58d9817eb7d8e984f32c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/865",
+    "authorLogin": "aryanbhosale"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer Parallel Muon transformer integrates entropy-adaptive order-2-9 backward N-gram caching plus GPTQ-lite int6 quantization during eval for 16MB track.",
+    "tags": [
+      "architecture",
+      "muon",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Parallel Muon + banking transformer stack",
+      "Entropy-adaptive backward-looking N-gram cache",
+      "GPTQ-lite int6 quantization with Late QAT"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

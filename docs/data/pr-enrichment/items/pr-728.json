@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T02:36:13.629Z",
+  "generatedAt": "2026-03-26T16:41:39.918Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 728,
     "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-26T02:26:06Z",
+    "updatedAt": "2026-03-26T16:35:53Z",
     "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/728",
     "authorLogin": "abaybektursun"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "XSA-all 11L stack with Full Hessian GPTQ calibrated on validation tokens and widened BigramHash (3072×112) keeps quantization legal while boosting quality.",
+    "summary": "XSA-all 11L stack uses BigramHash 3072×112 and val-data Full Hessian GPTQ calibration to quantize int6 without touching train shards.",
     "tags": [
       "quantization",
-      "attention",
       "architecture",
-      "optimizer"
+      "attention"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Uses validation data only for read-only GPTQ calibration rather than val-only training.",
     "techniques": [
-      "Val-data Hessian GPTQ calibration",
-      "Wider BigramHash embedding table (3072×112)",
-      "Parallel Muon optimizer with XSA-all layers"
+      "Val-data Full Hessian GPTQ calibration",
+      "BigramHash 3072×112 embedding expansion",
+      "Sliding-window int6 evaluation"
     ]
   },
   "compatibility": {

@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-03-26T16:40:55.224Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 863,
+    "title": "v10 moonshot: ternary MLP quant + scaled model + hedge mixer + enhanced n-gram",
+    "state": "open",
+    "updatedAt": "2026-03-26T16:22:12Z",
+    "headSha": "7341e5f17dc69a7139cce516bd85d124342d39d0",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/863",
+    "authorLogin": "sunnypatneedi"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-24_sunnypatneedi_submission/README.md",
+      "records/track_10min_16mb/2026-03-22_FullStack_v51/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "Hedge Mixer, add-delta n-gram smoothing, and ternary/int4/int6 quant let the 42M-param moonshot model fit under 16MB while boosting generalization.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "compression",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Hedge Mixer multiplicative-weight ensembling",
+      "Add-delta n-gram smoothing",
+      "Ternary MLP + int4 attn + int6 embed quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

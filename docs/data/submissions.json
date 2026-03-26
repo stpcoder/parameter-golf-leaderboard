@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T16:10:09.070Z",
+  "generatedAt": "2026-03-26T16:40:38.498Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -138,7 +138,7 @@
         "authorLogin": "himanshudongre",
         "authorName": null,
         "createdAt": "2026-03-26T12:20:06Z",
-        "updatedAt": "2026-03-26T15:15:13Z",
+        "updatedAt": "2026-03-26T16:22:46Z",
         "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
         "headRepo": "himanshudongre/parameter-golf"
       },
@@ -226,6 +226,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/becf6819e43b2f8ffb4a67cf1ba56a404e523923/records/track_10min_16mb/2026-03-26_Order12_Chunk256K_AlphaMax070/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/becf6819e43b2f8ffb4a67cf1ba56a404e523923/records/track_10min_16mb/2026-03-26_Order12_Chunk256K_AlphaMax070",
         "pr": "https://github.com/openai/parameter-golf/pull/843",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-26_11L_ParallelMuon_NgramBackoff",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-26_11L_ParallelMuon_NgramBackoff",
+        "folderPath": "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff",
+        "submissionPath": "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/train_gpt.py"
+      },
+      "submission": {
+        "author": "Aryan Bhosale",
+        "githubId": "aryanbhosale",
+        "name": "11L Parallel Muon + N-gram Backoff Cache (mean val_bpb=0.2841)",
+        "blurb": "11-layer 512d transformer with Parallel Muon, BigramHash(1024), Value Residual, Gated Attention, XSA4, Partial RoPE(16/64), EMA(0.997)+SWA, Late QAT, GPTQ-lite int6+zstd-22. Eval-time order 2-9 N-gram backoff cache with entropy-adaptive alpha, 65K-token chunk updates. 3-seed mean 0.2841 BPB on 8xH100 SXM.",
+        "date": "2026-03-26T12:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 0.2841,
+        "valLoss": 0.4796,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15900000,
+        "bytesCode": 93397,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 865,
+        "title": "Record: 11L Parallel Muon + N-gram Backoff Cache — val_bpb 0.2841 (3-seed mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/865",
+        "authorLogin": "aryanbhosale",
+        "authorName": null,
+        "createdAt": "2026-03-26T16:35:20Z",
+        "updatedAt": "2026-03-26T16:35:20Z",
+        "headSha": "8fbcf91980c280004a3f58d9817eb7d8e984f32c",
+        "headRepo": "aryanbhosale/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f158dce667f4dfdd9f91b96933b95fa5f79546c7/records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f158dce667f4dfdd9f91b96933b95fa5f79546c7/records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f158dce667f4dfdd9f91b96933b95fa5f79546c7/records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f158dce667f4dfdd9f91b96933b95fa5f79546c7/records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f158dce667f4dfdd9f91b96933b95fa5f79546c7/records/track_10min_16mb/2026-03-26_11L_ParallelMuon_NgramBackoff",
+        "pr": "https://github.com/openai/parameter-golf/pull/865",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -1313,7 +1390,7 @@
       }
     },
     {
-      "id": "record-records-track_10min_16mb-2026-03-26_DepthRecurrence_NgramBackoff_0-6364",
+      "id": "record-records-track_10min_16mb-2026-03-26_DepthRecurrence_NgramBackoff_0-6360",
       "source": "pull_request",
       "status": "open",
       "category": "main-track",
@@ -1325,12 +1402,12 @@
         "category": "main-track"
       },
       "record": {
-        "folderName": "2026-03-26_DepthRecurrence_NgramBackoff_0.6364",
-        "folderPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364",
-        "submissionPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/train_gpt.py"
+        "folderName": "2026-03-26_DepthRecurrence_NgramBackoff_0.6360",
+        "folderPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360",
+        "submissionPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/train_gpt.py"
       },
       "submission": {
         "author": "naazimsnh02",
@@ -1340,8 +1417,8 @@
         "date": "2026-03-26"
       },
       "metrics": {
-        "valBpb": 0.63643074,
-        "valLoss": 1.0745838,
+        "valBpb": 0.63604457,
+        "valLoss": 1.07393178,
         "preQuantValBpb": null,
         "preQuantValLoss": null,
         "stepStop": null,
@@ -1349,7 +1426,7 @@
         "evalTimeSeconds": null
       },
       "artifact": {
-        "bytesTotal": 15951328,
+        "bytesTotal": 15942380,
         "bytesCode": null,
         "bytesModelInt8Zlib": null
       },
@@ -1362,7 +1439,7 @@
       },
       "pr": {
         "number": 808,
-        "title": "Record: 0.6364 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
+        "title": "Record: 0.6360 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -1370,16 +1447,16 @@
         "authorLogin": "Naazimsnh02",
         "authorName": null,
         "createdAt": "2026-03-26T04:18:04Z",
-        "updatedAt": "2026-03-26T14:24:53Z",
-        "headSha": "b00c823bc9e3e32214324efb68f18eea43f9f50c",
+        "updatedAt": "2026-03-26T16:33:13Z",
+        "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
         "headRepo": "Naazimsnh02/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b00c823bc9e3e32214324efb68f18eea43f9f50c/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/b00c823bc9e3e32214324efb68f18eea43f9f50c/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/b00c823bc9e3e32214324efb68f18eea43f9f50c/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/b00c823bc9e3e32214324efb68f18eea43f9f50c/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/b00c823bc9e3e32214324efb68f18eea43f9f50c/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6364",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6c1b833be9b0e11e468c01b92f87a8f5ed395b84/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/6c1b833be9b0e11e468c01b92f87a8f5ed395b84/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/6c1b833be9b0e11e468c01b92f87a8f5ed395b84/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/6c1b833be9b0e11e468c01b92f87a8f5ed395b84/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/6c1b833be9b0e11e468c01b92f87a8f5ed395b84/records/track_10min_16mb/2026-03-26_DepthRecurrence_NgramBackoff_0.6360",
         "pr": "https://github.com/openai/parameter-golf/pull/808",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -4603,17 +4680,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 771,
-        "title": "Record: AdamW TTT 30ep Cosine + Per-Layer LR (val_bpb: 1.0705)",
+        "number": 863,
+        "title": "v10 moonshot: ternary MLP quant + scaled model + hedge mixer + enhanced n-gram",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/771",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/863",
         "authorLogin": "sunnypatneedi",
         "authorName": null,
-        "createdAt": "2026-03-25T21:30:55Z",
-        "updatedAt": "2026-03-26T00:15:45Z",
-        "headSha": "318b9cc499e6eb9e2d39a4665470d68e54574e32",
+        "createdAt": "2026-03-26T16:22:12Z",
+        "updatedAt": "2026-03-26T16:22:12Z",
+        "headSha": "7341e5f17dc69a7139cce516bd85d124342d39d0",
         "headRepo": "sunnypatneedi/parameter-golf"
       },
       "links": {
@@ -4622,7 +4699,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/318b9cc499e6eb9e2d39a4665470d68e54574e32/records/track_10min_16mb/2026-03-24_sunnypatneedi_submission/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/318b9cc499e6eb9e2d39a4665470d68e54574e32/records/track_10min_16mb/2026-03-24_sunnypatneedi_submission/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/318b9cc499e6eb9e2d39a4665470d68e54574e32/records/track_10min_16mb/2026-03-24_sunnypatneedi_submission",
-        "pr": "https://github.com/openai/parameter-golf/pull/771",
+        "pr": "https://github.com/openai/parameter-golf/pull/863",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -6158,7 +6235,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-25T15:03:32Z",
-        "updatedAt": "2026-03-26T02:26:06Z",
+        "updatedAt": "2026-03-26T16:35:53Z",
         "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -7305,7 +7382,7 @@
       },
       "pr": {
         "number": 808,
-        "title": "Record: 0.6364 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
+        "title": "Record: 0.6360 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -7313,8 +7390,8 @@
         "authorLogin": "Naazimsnh02",
         "authorName": null,
         "createdAt": "2026-03-26T04:18:04Z",
-        "updatedAt": "2026-03-26T14:24:53Z",
-        "headSha": "b00c823bc9e3e32214324efb68f18eea43f9f50c",
+        "updatedAt": "2026-03-26T16:33:13Z",
+        "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
         "headRepo": "Naazimsnh02/parameter-golf"
       },
       "links": {
@@ -9722,7 +9799,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_11L_ParallelMuon_MLP3x_TTT",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -9770,14 +9847,14 @@
       "pr": {
         "number": 838,
         "title": "Non-Record: 11L Parallel Muon + LN Scale + LeakyReLU² MLP3x + Legal TTT — val_bpb 1.1215 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/838",
         "authorLogin": "aryanbhosale",
         "authorName": null,
         "createdAt": "2026-03-26T10:49:25Z",
-        "updatedAt": "2026-03-26T15:11:03Z",
+        "updatedAt": "2026-03-26T16:27:24Z",
         "headSha": "5687f3ca15f7437f45821af8cac7e5d2210fe68d",
         "headRepo": "aryanbhosale/parameter-golf"
       },
@@ -37368,6 +37445,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip",
+        "folderPath": "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip",
+        "submissionPath": "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/train_gpt.py"
+      },
+      "submission": {
+        "author": "Ashish",
+        "githubId": "grim-hitman0XX",
+        "name": "DenseFormer + LeakyReLU(0.5)^2 + VRL + XSA + GradClip",
+        "blurb": "DenseFormer depth-weighted averaging across all layers (54 params). LeakyReLU(0.5)^2 activation replacing relu^2 for better gradient flow. Value Residual Learning blends layer-0 V into all subsequent layers via learned softmax scalars. XSA on last 4 layers projects out self-value component. Gradient clipping at 0.3. All techniques add negligible parameters (<100 scalars total) while providing -0.041 BPB over baseline on 1xH100.",
+        "date": "2026-03-26T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": 1.3024,
+        "preQuantValLoss": 2.199,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 862,
+        "title": "RECORD: Denseformer+VRL+XSA on last 4 layers+Gradient Clipping (pending 8xH100 eval)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/862",
+        "authorLogin": "grim-hitman0XX",
+        "authorName": null,
+        "createdAt": "2026-03-26T16:21:17Z",
+        "updatedAt": "2026-03-26T16:24:33Z",
+        "headSha": "78c324119bf844ac1e6bb57c9ef8695e414c96c2",
+        "headRepo": "grim-hitman0XX/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/78c324119bf844ac1e6bb57c9ef8695e414c96c2/records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/78c324119bf844ac1e6bb57c9ef8695e414c96c2/records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/78c324119bf844ac1e6bb57c9ef8695e414c96c2/records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/78c324119bf844ac1e6bb57c9ef8695e414c96c2/records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/78c324119bf844ac1e6bb57c9ef8695e414c96c2/records/track_10min_16mb/2026-03-25_DenseFormer_LeakyRelu2_VRL_GradClip",
+        "pr": "https://github.com/openai/parameter-golf/pull/862",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-26_BankQAT_2048train_4096eval",
       "source": "pull_request",
       "status": "open",
@@ -38426,16 +38580,16 @@
         "authorLogin": "pappanick",
         "authorName": null,
         "createdAt": "2026-03-26T15:45:54Z",
-        "updatedAt": "2026-03-26T15:45:54Z",
-        "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
+        "updatedAt": "2026-03-26T16:39:30Z",
+        "headSha": "23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5",
         "headRepo": "pappanick/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram",
         "pr": "https://github.com/openai/parameter-golf/pull/860",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -45675,6 +45829,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/410fbbec48dc032b691f791a76a96884a275bc5c/records/track_10min_16mb/2026-03-22_SOTA_LoRA_TTT/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/410fbbec48dc032b691f791a76a96884a275bc5c/records/track_10min_16mb/2026-03-22_SOTA_LoRA_TTT",
         "pr": "https://github.com/openai/parameter-golf/pull/572",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-22_FullStack_v51",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-22_FullStack_v51",
+        "folderPath": "records/track_10min_16mb/2026-03-22_FullStack_v51",
+        "submissionPath": "records/track_10min_16mb/2026-03-22_FullStack_v51/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-22_FullStack_v51/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-22_FullStack_v51/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-22_FullStack_v51/train_gpt.py"
+      },
+      "submission": {
+        "author": "sunnypatneedi",
+        "githubId": "sunnypatneedi",
+        "name": "11L XSA + TrigramHash + ValueResidual + GradQuant + TTT",
+        "blurb": null,
+        "date": "2026-03-22"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 863,
+        "title": "v10 moonshot: ternary MLP quant + scaled model + hedge mixer + enhanced n-gram",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/863",
+        "authorLogin": "sunnypatneedi",
+        "authorName": null,
+        "createdAt": "2026-03-26T16:22:12Z",
+        "updatedAt": "2026-03-26T16:22:12Z",
+        "headSha": "7341e5f17dc69a7139cce516bd85d124342d39d0",
+        "headRepo": "sunnypatneedi/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7341e5f17dc69a7139cce516bd85d124342d39d0/records/track_10min_16mb/2026-03-22_FullStack_v51/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/7341e5f17dc69a7139cce516bd85d124342d39d0/records/track_10min_16mb/2026-03-22_FullStack_v51/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/7341e5f17dc69a7139cce516bd85d124342d39d0/records/track_10min_16mb/2026-03-22_FullStack_v51/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/7341e5f17dc69a7139cce516bd85d124342d39d0/records/track_10min_16mb/2026-03-22_FullStack_v51/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/7341e5f17dc69a7139cce516bd85d124342d39d0/records/track_10min_16mb/2026-03-22_FullStack_v51",
+        "pr": "https://github.com/openai/parameter-golf/pull/863",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

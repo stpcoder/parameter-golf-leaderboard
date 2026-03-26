@@ -1,8 +1,79 @@
 {
-  "generatedAt": "2026-03-26T16:10:41.723Z",
+  "generatedAt": "2026-03-26T16:41:40.029Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 865,
+      "title": "Record: 11L Parallel Muon + N-gram Backoff Cache — val_bpb 0.2841 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-26T16:35:20Z",
+      "headSha": "8fbcf91980c280004a3f58d9817eb7d8e984f32c",
+      "generatedAt": "2026-03-26T16:40:46.057Z",
+      "summary": "11-layer Parallel Muon transformer integrates entropy-adaptive order-2-9 backward N-gram caching plus GPTQ-lite int6 quantization during eval for 16MB track.",
+      "tags": [
+        "architecture",
+        "muon",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-865.json"
+    },
+    {
+      "prNumber": 863,
+      "title": "v10 moonshot: ternary MLP quant + scaled model + hedge mixer + enhanced n-gram",
+      "status": "open",
+      "updatedAt": "2026-03-26T16:22:12Z",
+      "headSha": "7341e5f17dc69a7139cce516bd85d124342d39d0",
+      "generatedAt": "2026-03-26T16:40:55.224Z",
+      "summary": "Hedge Mixer, add-delta n-gram smoothing, and ternary/int4/int6 quant let the 42M-param moonshot model fit under 16MB while boosting generalization.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "compression",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-863.json"
+    },
+    {
+      "prNumber": 862,
+      "title": "RECORD: Denseformer+VRL+XSA on last 4 layers+Gradient Clipping (pending 8xH100 eval)",
+      "status": "open",
+      "updatedAt": "2026-03-26T16:24:33Z",
+      "headSha": "78c324119bf844ac1e6bb57c9ef8695e414c96c2",
+      "generatedAt": "2026-03-26T16:40:59.821Z",
+      "summary": "Combines DenseFormer depth-weighted pooling, LeakyReLU(0.5)², VRL value blending, last-4-layer XSA, and gradient clipping to stabilize cross-layer attention.",
+      "tags": [
+        "architecture",
+        "attention",
+        "regularization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-862.json"
+    },
     {
       "prNumber": 861,
       "title": "Non-record: 11L Int5 QAT + Score-First TTT — val_bpb 1.1326 (15.51 MB)",
@@ -31,13 +102,14 @@
       "prNumber": 860,
       "title": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders (2-12)",
       "status": "open",
-      "updatedAt": "2026-03-26T15:45:54Z",
-      "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
-      "generatedAt": "2026-03-26T16:10:21.911Z",
-      "summary": "Pairing a learned Linear(512→12) mixer routing head with two-pass cold-cache rescoring and TTT-adapted n-gram eval using orders 2‑12 and 8M buckets.",
+      "updatedAt": "2026-03-26T16:39:30Z",
+      "headSha": "23c9f2609f4906c48ad7aa3a9c152fad3fc74fb5",
+      "generatedAt": "2026-03-26T16:41:03.984Z",
+      "summary": "Combines a learned Linear(512→12) routing head with two-pass cold-cache rescoring and extended 2-12 n-gram orders plus larger hash tables for the mixer.",
       "tags": [
         "architecture",
-        "evaluation"
+        "evaluation",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -309,10 +381,10 @@
       "prNumber": 846,
       "title": "Record: Two-Pass N-gram Rescoring (val_bpb 0.1434)",
       "status": "open",
-      "updatedAt": "2026-03-26T15:15:13Z",
+      "updatedAt": "2026-03-26T16:22:46Z",
       "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
-      "generatedAt": "2026-03-26T15:40:21.449Z",
-      "summary": "Two-pass n-gram eval rescoring uses the full cache for early chunks atop score-first TTT adaptation and GPTQ-Int5 quantization.",
+      "generatedAt": "2026-03-26T16:41:10.867Z",
+      "summary": "Two-pass eval rescores early chunks with the completed n-gram cache atop GPTQ-Int5 + score-first TTT to erase cold-cache BPB while staying within the budget.",
       "tags": [
         "evaluation",
         "quantization",
@@ -399,16 +471,16 @@
     {
       "prNumber": 838,
       "title": "Non-Record: 11L Parallel Muon + LN Scale + LeakyReLU² MLP3x + Legal TTT — val_bpb 1.1215 (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-26T15:11:03Z",
+      "status": "closed",
+      "updatedAt": "2026-03-26T16:27:24Z",
       "headSha": "5687f3ca15f7437f45821af8cac7e5d2210fe68d",
-      "generatedAt": "2026-03-26T15:40:32.019Z",
-      "summary": "Parallel Muon banking + LN Scale + LeakyReLU² MLP3x pairs with legal score-first TTT and GPTQ-lite int6 quantization.",
+      "generatedAt": "2026-03-26T16:41:25.505Z",
+      "summary": "Parallel Muon parameter banking pairs depth-scaled LN with LeakyReLU² MLP3x and legal score-first TTT adaptation before GPTQ-lite quantization.",
       "tags": [
+        "val-only",
         "muon",
-        "quantization",
-        "evaluation",
-        "val-only"
+        "architecture",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": true,
@@ -885,12 +957,12 @@
     },
     {
       "prNumber": 808,
-      "title": "Record: 0.6364 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
+      "title": "Record: 0.6360 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
       "status": "open",
-      "updatedAt": "2026-03-26T14:24:53Z",
-      "headSha": "b00c823bc9e3e32214324efb68f18eea43f9f50c",
-      "generatedAt": "2026-03-26T14:42:17.431Z",
-      "summary": "Depth recurrence reuses layers 4/5 for virtual depth while eval-time multi-order n-gram backoff with entropy-adaptive blending plus multi-GPU prefill refines scoring.",
+      "updatedAt": "2026-03-26T16:33:13Z",
+      "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
+      "generatedAt": "2026-03-26T16:41:32.755Z",
+      "summary": "Repeating layers 4/5 via depth recurrence pairs with eval-time multi-order n-gram backoff, entropy-adaptive blending, and multi-GPU prefill.",
       "tags": [
         "architecture",
         "evaluation"
@@ -1573,29 +1645,6 @@
       "file": "items/pr-773.json"
     },
     {
-      "prNumber": 771,
-      "title": "Record: AdamW TTT 30ep Cosine + Per-Layer LR (val_bpb: 1.0705)",
-      "status": "open",
-      "updatedAt": "2026-03-26T00:15:45Z",
-      "headSha": "318b9cc499e6eb9e2d39a4665470d68e54574e32",
-      "generatedAt": "2026-03-26T00:36:17.693Z",
-      "summary": "Whole-validation TTT uses AdamW with 30-epoch cosine decay and per-layer LR multipliers to adapt the PR #549 quantized model before sliding-window eval.",
-      "tags": [
-        "val-only",
-        "optimizer",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": false
-      },
-      "file": "items/pr-771.json"
-    },
-    {
       "prNumber": 770,
       "title": "Record: 11L + Multi-Order N-gram Backoff + Entropy-Adaptive Alpha (val_bpb=0.6672)",
       "status": "open",
@@ -2202,15 +2251,14 @@
       "prNumber": 728,
       "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-26T02:26:06Z",
+      "updatedAt": "2026-03-26T16:35:53Z",
       "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-      "generatedAt": "2026-03-26T02:36:13.629Z",
-      "summary": "XSA-all 11L stack with Full Hessian GPTQ calibrated on validation tokens and widened BigramHash (3072×112) keeps quantization legal while boosting quality.",
+      "generatedAt": "2026-03-26T16:41:39.918Z",
+      "summary": "XSA-all 11L stack uses BigramHash 3072×112 and val-data Full Hessian GPTQ calibration to quantize int6 without touching train shards.",
       "tags": [
         "quantization",
-        "attention",
         "architecture",
-        "optimizer"
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
