@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-26T20:42:45.230Z",
-  "lastSeenUpdatedAt": "2026-03-26T20:41:17Z",
+  "generatedAt": "2026-03-26T21:12:29.714Z",
+  "lastSeenUpdatedAt": "2026-03-26T20:46:36Z",
   "prs": {
     "1": {
       "number": 1,
@@ -70113,10 +70113,10 @@
     },
     "810": {
       "number": 810,
-      "updatedAt": "2026-03-26T14:16:54Z",
+      "updatedAt": "2026-03-26T20:44:18Z",
       "pr": {
         "number": 810,
-        "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
+        "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -70124,8 +70124,8 @@
         "authorLogin": "Idan3011",
         "authorName": null,
         "createdAt": "2026-03-26T04:39:04Z",
-        "updatedAt": "2026-03-26T14:16:54Z",
-        "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
+        "updatedAt": "2026-03-26T20:44:18Z",
+        "headSha": "a6db0190d798c7e8621d3ce5bc5157eb177827d8",
         "headRepo": "Idan3011/parameter-golf"
       },
       "submissions": [
@@ -70152,22 +70152,22 @@
           "submission": {
             "author": "Idanr",
             "githubId": "idan3011",
-            "name": "Two-Phase Shared N-gram Cache + EMA-GPU + Pre-Enrichment + XSA",
-            "blurb": "Two-phase eval: distributed GPU forward + global sequential n-gram cache (orders 2-11). Per-order adaptive alpha + PE confidence modulation. EMA on GPU (64.7ms/step). 10L 512d. 3-seed mean 0.2995 (std 0.0016).",
-            "date": "2026-03-26T07:45:00Z"
+            "name": "Phrase Cache + N-gram Backoff + EMA-GPU + Pre-Enrichment + XSA",
+            "blurb": "Long phrase cache (lengths 48-16) + multi-order n-gram backoff (2-11) with per-order adaptive alpha + PE confidence. Two-phase shared cache. EMA on GPU (64.7ms/step). 10L 512d.",
+            "date": "2026-03-26T20:15:00Z"
           },
           "metrics": {
-            "valBpb": 0.29953465,
+            "valBpb": 0.27222204,
             "valLoss": 1.93793804,
             "preQuantValBpb": 1.1646,
             "preQuantValLoss": 1.9663,
             "stepStop": 9268,
             "wallclockSeconds": 600.031,
-            "evalTimeSeconds": 204.138
+            "evalTimeSeconds": 211.362
           },
           "artifact": {
             "bytesTotal": 14942971,
-            "bytesCode": 66581,
+            "bytesCode": 64223,
             "bytesModelInt8Zlib": null
           },
           "flags": {
@@ -70179,7 +70179,7 @@
           },
           "pr": {
             "number": 810,
-            "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
+            "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
             "state": "open",
             "draft": false,
             "mergedAt": null,
@@ -70187,16 +70187,16 @@
             "authorLogin": "Idan3011",
             "authorName": null,
             "createdAt": "2026-03-26T04:39:04Z",
-            "updatedAt": "2026-03-26T14:16:54Z",
-            "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
+            "updatedAt": "2026-03-26T20:44:18Z",
+            "headSha": "a6db0190d798c7e8621d3ce5bc5157eb177827d8",
             "headRepo": "Idan3011/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/bdd17d5f474a23c4366512b159f2706e4285711d/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/bdd17d5f474a23c4366512b159f2706e4285711d/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/bdd17d5f474a23c4366512b159f2706e4285711d/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/bdd17d5f474a23c4366512b159f2706e4285711d/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/bdd17d5f474a23c4366512b159f2706e4285711d/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/a6db0190d798c7e8621d3ce5bc5157eb177827d8/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/a6db0190d798c7e8621d3ce5bc5157eb177827d8/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/a6db0190d798c7e8621d3ce5bc5157eb177827d8/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/a6db0190d798c7e8621d3ce5bc5157eb177827d8/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/a6db0190d798c7e8621d3ce5bc5157eb177827d8/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence",
             "pr": "https://github.com/openai/parameter-golf/pull/810"
           }
         }
@@ -76505,7 +76505,7 @@
     },
     "886": {
       "number": 886,
-      "updatedAt": "2026-03-26T20:38:45Z",
+      "updatedAt": "2026-03-26T20:46:36Z",
       "pr": {
         "number": 886,
         "title": "RFC: A framework for deciding the n-gram question",
@@ -76516,7 +76516,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-26T20:38:45Z",
+        "updatedAt": "2026-03-26T20:46:36Z",
         "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -76579,7 +76579,7 @@
             "authorLogin": "abaybektursun",
             "authorName": null,
             "createdAt": "2026-03-26T19:03:36Z",
-            "updatedAt": "2026-03-26T20:38:45Z",
+            "updatedAt": "2026-03-26T20:46:36Z",
             "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
             "headRepo": "abaybektursun/parameter-golf"
           },

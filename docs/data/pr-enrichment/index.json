@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T20:43:18.587Z",
+  "generatedAt": "2026-03-26T21:12:46.689Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -192,14 +192,14 @@
       "prNumber": 886,
       "title": "RFC: A framework for deciding the n-gram question",
       "status": "open",
-      "updatedAt": "2026-03-26T20:38:45Z",
+      "updatedAt": "2026-03-26T20:46:36Z",
       "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
-      "generatedAt": "2026-03-26T20:43:13.919Z",
-      "summary": "Eval-time n-gram cache builds hash tables from scored tokens, blends the estimates with neural logits, and leans on collisions to clear the min_count threshold.",
+      "generatedAt": "2026-03-26T21:12:40.932Z",
+      "summary": "Eval-time n-gram cache mixes causal hash-table counts with the base LM, improving BPB but swelling eval-time state and raising rule questions.",
       "tags": [
-        "non-record",
         "evaluation",
-        "compression"
+        "compression",
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1389,17 +1389,16 @@
     },
     {
       "prNumber": 810,
-      "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
+      "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:16:54Z",
-      "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
-      "generatedAt": "2026-03-26T14:41:38.628Z",
-      "summary": "Uses GPU-resident EMA, GELU pre-enrichment with SmearGate+BigramHash, and two-phase shared n-gram backoff with per-order adaptive alpha/confidence weighting.",
+      "updatedAt": "2026-03-26T20:44:18Z",
+      "headSha": "a6db0190d798c7e8621d3ce5bc5157eb177827d8",
+      "generatedAt": "2026-03-26T21:12:46.572Z",
+      "summary": "Combines GPU-resident EMA, int6 QAT, and GELU pre-enrichment with shared multi-order n-gram and long phrase caches to boost eval predictions.",
       "tags": [
-        "architecture",
-        "attention",
         "evaluation",
-        "training-schedule"
+        "quantization",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T20:42:45.271Z",
+  "generatedAt": "2026-03-26T21:12:29.750Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -23167,7 +23167,7 @@
       },
       "pr": {
         "number": 810,
-        "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
+        "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -23175,8 +23175,8 @@
         "authorLogin": "Idan3011",
         "authorName": null,
         "createdAt": "2026-03-26T04:39:04Z",
-        "updatedAt": "2026-03-26T14:16:54Z",
-        "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
+        "updatedAt": "2026-03-26T20:44:18Z",
+        "headSha": "a6db0190d798c7e8621d3ce5bc5157eb177827d8",
         "headRepo": "Idan3011/parameter-golf"
       },
       "links": {
@@ -40043,7 +40043,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-26T20:38:45Z",
+        "updatedAt": "2026-03-26T20:46:36Z",
         "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
         "headRepo": "abaybektursun/parameter-golf"
       },

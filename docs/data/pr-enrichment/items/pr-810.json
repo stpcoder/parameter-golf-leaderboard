@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T14:41:38.628Z",
+  "generatedAt": "2026-03-26T21:12:46.572Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 810,
-    "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
+    "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
     "state": "open",
-    "updatedAt": "2026-03-26T14:16:54Z",
-    "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
+    "updatedAt": "2026-03-26T20:44:18Z",
+    "headSha": "a6db0190d798c7e8621d3ce5bc5157eb177827d8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/810",
     "authorLogin": "Idan3011"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Uses GPU-resident EMA, GELU pre-enrichment with SmearGate+BigramHash, and two-phase shared n-gram backoff with per-order adaptive alpha/confidence weighting.",
+    "summary": "Combines GPU-resident EMA, int6 QAT, and GELU pre-enrichment with shared multi-order n-gram and long phrase caches to boost eval predictions.",
     "tags": [
-      "architecture",
-      "attention",
       "evaluation",
-      "training-schedule"
+      "quantization",
+      "optimizer"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GELU pre-enrichment + SmearGate/BigramHash front-end",
-      "GPU-resident EMA for faster updates",
-      "Two-phase shared n-gram cache with per-order adaptive alpha"
+      "Shared multi-order n-gram backoff + long phrase cache scoring",
+      "GPU-resident EMA + int6 QAT training",
+      "GELU pre-enrichment + XSA tweaks before transformer blocks"
     ]
   },
   "compatibility": {
