@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-25T16:03:09.626Z",
+  "generatedAt": "2026-03-26T14:10:10.998Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 330,
     "title": "Non-record: 11L Int6 + Online Logit Bias (val_bpb=1.1609)",
     "state": "open",
-    "updatedAt": "2026-03-25T15:34:24Z",
-    "headSha": "96cb9084602bcb632ee38e17a65ab58bedb2cf0e",
+    "updatedAt": "2026-03-26T13:52:00Z",
+    "headSha": "1c795387ef9bdd66c951e226ea28aa394e6f3fde",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/330",
     "authorLogin": "bopmite"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer int6 GPTQ model using gated attention/VRL, 7-gram cache, and online logit bias with cosine TTT.",
+    "summary": "11-layer Int6 GPTQ model combining VRL, gated attention, n-gram cache, and online logit bias with a 100-epoch cosine TTT schedule.",
     "tags": [
       "quantization",
-      "attention",
+      "architecture",
       "training-schedule",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Int6 GPTQ compression with pruning",
-      "7-gram adaptive cache plus online logit bias",
-      "100-epoch cosine test-time training (TTT)"
+      "Int6 GPTQ with VRL and gated attention",
+      "100-epoch cosine TTT plus online logit bias",
+      "7-gram cache with adaptive confidence weighting"
     ]
   },
   "compatibility": {

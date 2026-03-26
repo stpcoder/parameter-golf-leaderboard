@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T14:09:51.486Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 851,
+    "title": "submission: Order-Adaptive N-gram Cache — 0.2071 BPB",
+    "state": "open",
+    "updatedAt": "2026-03-26T13:40:06Z",
+    "headSha": "60f7c68deb6a8243a7fd37890b4d2a05a4e929c4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/851",
+    "authorLogin": "RoyiRa"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_OrderAdaptiveNgram_0.2071/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines order-adaptive n-gram caching, Hedge mixing, and score-first TTT with quantization-aware GPTQ to sharpen eval-time logits.",
+    "tags": [
+      "evaluation",
+      "optimizer",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Order-adaptive n-gram cache with logit calibration",
+      "Score-first TTT plus 5-expert Hedge mixer",
+      "CROWN-Q-aware GPTQ int5 quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

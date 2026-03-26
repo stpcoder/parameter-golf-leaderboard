@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-26T13:40:49.805Z",
+  "generatedAt": "2026-03-26T14:10:11.047Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 851,
+      "title": "submission: Order-Adaptive N-gram Cache — 0.2071 BPB",
+      "status": "open",
+      "updatedAt": "2026-03-26T13:40:06Z",
+      "headSha": "60f7c68deb6a8243a7fd37890b4d2a05a4e929c4",
+      "generatedAt": "2026-03-26T14:09:51.486Z",
+      "summary": "Combines order-adaptive n-gram caching, Hedge mixing, and score-first TTT with quantization-aware GPTQ to sharpen eval-time logits.",
+      "tags": [
+        "evaluation",
+        "optimizer",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-851.json"
+    },
     {
       "prNumber": 850,
       "title": "Record: 0.3212 BPB — Complementary N-gram 65K + Int5 GPTQ + LoRA TTT",
@@ -53,13 +76,14 @@
       "prNumber": 846,
       "title": "Record: Two-Pass N-gram Rescoring (val_bpb 0.1434)",
       "status": "open",
-      "updatedAt": "2026-03-26T12:20:06Z",
+      "updatedAt": "2026-03-26T14:05:24Z",
       "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
-      "generatedAt": "2026-03-26T12:39:07.445Z",
-      "summary": "Rescore early cold-cache n-gram chunks in a fast second pass after a GPTQ-Int5 + score-first TTT run to leverage the full cache.",
+      "generatedAt": "2026-03-26T14:09:58.468Z",
+      "summary": "Two-pass n-gram rescoring reuses the full cache to rewind early chunks while building on score-first TTT adaptation and GPTQ-Int5 export.",
       "tags": [
         "evaluation",
-        "quantization"
+        "quantization",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
@@ -143,14 +167,15 @@
       "prNumber": 838,
       "title": "Non-Record: 11L Parallel Muon + LN Scale + LeakyReLU² MLP3x + Legal TTT — val_bpb 1.1215 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-26T10:49:25Z",
-      "headSha": "b9b4808f6b4ff0e12d22b64cf9dd402a55507583",
-      "generatedAt": "2026-03-26T11:08:58.499Z",
-      "summary": "11-layer 512d transformer pairs Parallel Muon parameter banking with LN-scaled layers, LeakyReLU² MLP, and legal score-first TTT training.",
+      "updatedAt": "2026-03-26T13:51:44Z",
+      "headSha": "d7900e2f0052f3ced51f6d16ec45240dcb7035e0",
+      "generatedAt": "2026-03-26T14:10:04.899Z",
+      "summary": "11L transformer pairs Parallel Muon banking with LN Scale and LeakyReLU² MLP3x, then legal score-first TTT plus late QAT/GPTQ-lite int6 quantization.",
       "tags": [
-        "architecture",
+        "muon",
         "training-schedule",
-        "evaluation"
+        "quantization",
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -8393,13 +8418,13 @@
       "prNumber": 330,
       "title": "Non-record: 11L Int6 + Online Logit Bias (val_bpb=1.1609)",
       "status": "open",
-      "updatedAt": "2026-03-25T15:34:24Z",
-      "headSha": "96cb9084602bcb632ee38e17a65ab58bedb2cf0e",
-      "generatedAt": "2026-03-25T16:03:09.626Z",
-      "summary": "11-layer int6 GPTQ model using gated attention/VRL, 7-gram cache, and online logit bias with cosine TTT.",
+      "updatedAt": "2026-03-26T13:52:00Z",
+      "headSha": "1c795387ef9bdd66c951e226ea28aa394e6f3fde",
+      "generatedAt": "2026-03-26T14:10:10.998Z",
+      "summary": "11-layer Int6 GPTQ model combining VRL, gated attention, n-gram cache, and online logit bias with a 100-epoch cosine TTT schedule.",
       "tags": [
         "quantization",
-        "attention",
+        "architecture",
         "training-schedule",
         "evaluation"
       ],
