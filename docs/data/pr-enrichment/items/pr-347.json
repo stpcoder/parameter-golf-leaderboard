@@ -1,19 +1,20 @@
 {
-  "generatedAt": "2026-03-26T09:08:12.932Z",
+  "generatedAt": "2026-03-26T09:38:15.416Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
     "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
     "state": "open",
-    "updatedAt": "2026-03-26T09:07:14Z",
-    "headSha": "b937791c4f96a8a30d7fa23996e7391ab174eaac",
+    "updatedAt": "2026-03-26T09:34:20Z",
+    "headSha": "0b6146d1c5f0770ec68a5441edba2c28a7ec6fbb",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
   "inputs": {
-    "hash": "91206a35b78630edd324560142af570e5c3e70b496d2b7f0a8971106a4fd6406",
+    "hash": "0b1d87128e22dc6f06252ac5fe0239197cad107af0ef9c123d24be680ff456a1",
     "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_Int6_QAT_2048/README.md",
       "records/track_10min_16mb/2026-03-25_LongContext4096_Int4_BankQAT/README.md",
       "records/track_10min_16mb/2026-03-25_LongContext4096_Int6_QAT/README.md",
       "records/track_10min_16mb/2026-03-24_LongContext4096_FullSOTA/README.md",
@@ -22,10 +23,10 @@
       "records/track_10min_16mb/2026-03-21_LongContext4096_FullStack/README.md",
       "records/track_10min_16mb/2026-03-21_QAT_Int4_16L/README.md"
     ],
-    "submissionCount": 7
+    "submissionCount": 8
   },
   "output": {
-    "summary": "Extends PR #549 stack with 4k context, 16-layer int4 nibble depth, and bank-level int4 QAT (plus int6 baseline) under 16MB.",
+    "summary": "Extends the PR#549 stack with 4096-token training/eval and dynamic NTK RoPE, while enabling bank-aware int4/int6 QAT to pack 16 layers in 16MB.",
     "tags": [
       "quantization",
       "architecture",
@@ -34,9 +35,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Long-context 4096 training with dynamic NTK-scaled RoPE",
-      "Int4 nibble-packing to fit 16 transformer layers in 16MB",
-      "Quantization-aware training on CastedLinear and bank weights with safe int6 baseline"
+      "4096-token training/eval with NTK-adjusted RoPE base",
+      "Full-model int4/int6 QAT that fake-quantizes bank slices before GPTQ-lite export",
+      "Nibble-packed 16-layer transformer fitted within the 16MB artifact"
     ]
   },
   "compatibility": {
