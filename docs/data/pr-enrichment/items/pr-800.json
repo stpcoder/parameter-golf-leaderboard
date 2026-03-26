@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T03:06:26.895Z",
+  "generatedAt": "2026-03-26T03:36:51.000Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 800,
     "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
     "state": "open",
-    "updatedAt": "2026-03-26T02:57:16Z",
+    "updatedAt": "2026-03-26T03:26:10Z",
     "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/800",
     "authorLogin": "newjordan"
@@ -24,16 +24,16 @@
     "submissionCount": 6
   },
   "output": {
-    "summary": "Chunk-based shared n-gram tables give every rank the 62M-token view while Cubric per-order alpha scaling suppresses noisy low orders and boosts reliable high orders.",
+    "summary": "Chunked shared n-gram tables give every rank full token stats while Cubric per-order alphas suppress low orders and boost higher ones.",
     "tags": [
-      "evaluation",
-      "regularization"
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Shared chunk-level n-gram tables so all ranks update tables with the same tokens",
-      "Cubric per-order adaptive alpha scaling to suppress orders 2-3 and boost orders 5-7"
+      "Chunk-based shared n-gram table updates for all ranks",
+      "Cubric per-order adaptive alpha scaling",
+      "Score-first legality with chunk-aligned updates"
     ]
   },
   "compatibility": {

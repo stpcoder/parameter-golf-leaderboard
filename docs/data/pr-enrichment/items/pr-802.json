@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T03:36:38.949Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 802,
+    "title": "10L + Multi-Order N-gram Backoff (0.9123 BPB)",
+    "state": "open",
+    "updatedAt": "2026-03-26T03:25:40Z",
+    "headSha": "72501ea5757603af304f66936ecb46fda927791b",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/802",
+    "authorLogin": "Bortlesboat"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_10L_Int5MLP_BigramHash4096_SWA/README.md",
+      "records/track_10min_16mb/2026-03-20_Int5MLP_BigramHash_SWA_NeuralCache_TTT/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "10-layer GQA model with LeakyReLU² MLP, BigramHash+U-Net skips, and int5/int6 quantization feeding a multi-order n-gram backoff cache with entropy-adaptive weighting.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "10L GQA + LeakyReLU² MLP with BigramHash and U-Net skips",
+      "Mixed int5 MLP / int6 attention quantization plus zstd-22 compression",
+      "Multi-order hashed n-gram backoff with entropy-adaptive interpolation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

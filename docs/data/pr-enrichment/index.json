@@ -1,19 +1,87 @@
 {
-  "generatedAt": "2026-03-26T03:06:31.247Z",
+  "generatedAt": "2026-03-26T03:37:06.840Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 803,
+      "title": "Record: 0.4416 BPB -- Complementary Training + Backoff N-gram Mixer",
+      "status": "open",
+      "updatedAt": "2026-03-26T03:33:09Z",
+      "headSha": "d9cf80d9d26eab15896941004ef88e910ffe2700",
+      "generatedAt": "2026-03-26T03:36:33.888Z",
+      "summary": "Train a transformer to downweight bigram-predictable tokens so it complements a high-alpha Backoff N-gram Mixer with entropy-adaptive blending.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-803.json"
+    },
+    {
+      "prNumber": 802,
+      "title": "10L + Multi-Order N-gram Backoff (0.9123 BPB)",
+      "status": "open",
+      "updatedAt": "2026-03-26T03:25:40Z",
+      "headSha": "72501ea5757603af304f66936ecb46fda927791b",
+      "generatedAt": "2026-03-26T03:36:38.949Z",
+      "summary": "10-layer GQA model with LeakyReLU² MLP, BigramHash+U-Net skips, and int5/int6 quantization feeding a multi-order n-gram backoff cache with entropy-adaptive weighting.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-802.json"
+    },
+    {
+      "prNumber": 801,
+      "title": "Non-Record: Training on the Apple Neural Engine",
+      "status": "open",
+      "updatedAt": "2026-03-26T03:23:25Z",
+      "headSha": "23b27bb5b2c1deb2c97ccac31ec2fb70a74da1fb",
+      "generatedAt": "2026-03-26T03:36:44.498Z",
+      "summary": "Reverse-engineered ANE dispatch runs GolfWide matmuls/backward activations on the Apple Neural Engine while CPU handles grads and optimizer updates.",
+      "tags": [
+        "non-record",
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-801.json"
+    },
+    {
       "prNumber": 800,
       "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
       "status": "open",
-      "updatedAt": "2026-03-26T02:57:16Z",
+      "updatedAt": "2026-03-26T03:26:10Z",
       "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
-      "generatedAt": "2026-03-26T03:06:26.895Z",
-      "summary": "Chunk-based shared n-gram tables give every rank the 62M-token view while Cubric per-order alpha scaling suppresses noisy low orders and boosts reliable high orders.",
+      "generatedAt": "2026-03-26T03:36:51.000Z",
+      "summary": "Chunked shared n-gram tables give every rank full token stats while Cubric per-order alphas suppress low orders and boost higher ones.",
       "tags": [
-        "evaluation",
-        "regularization"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -145,12 +213,11 @@
       "prNumber": 794,
       "title": "Muon Optimizer Tuning: val_bpb 1.3346 by jeremyschied",
       "status": "open",
-      "updatedAt": "2026-03-26T01:26:41Z",
-      "headSha": "6684ee88985f5fa71c251b7f8857e03d9e874b6c",
-      "generatedAt": "2026-03-26T01:35:54.150Z",
-      "summary": "Adjusts NanoGPT's Muon optimizer hyperparameters (matrix LR 0.05, backend steps 6, momentum warmup 300, grad clip/warmdown tweaks) on a single H100.",
+      "updatedAt": "2026-03-26T03:09:08Z",
+      "headSha": "29fe0ad16bfb18cd174147cfac42c394e1e6c58b",
+      "generatedAt": "2026-03-26T03:36:55.913Z",
+      "summary": "Raised Muon matrix LR, backend steps, momentum warmup, and warmdown tweaks on NanoGPT to probe optimizer behavior on a single H100 for Project Pocket.",
       "tags": [
-        "muon",
         "optimizer"
       ],
       "flags": {
@@ -1789,30 +1856,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-695.json"
-    },
-    {
-      "prNumber": 694,
-      "title": "10L Int5-MLP + BigramHash(4096) + SWA (1.1507 BPB)",
-      "status": "open",
-      "updatedAt": "2026-03-25T08:16:17Z",
-      "headSha": "345f145c54d9c7526e010bdc19cf43b5902fe998",
-      "generatedAt": "2026-03-25T08:30:19.089Z",
-      "summary": "10-layer GQA model couples reduced BigramHash, SmearGate/U-Net skips, and Muon+SWA training with mixed int5/int6 weights plus zstd post-quant compression.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "regularization",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-694.json"
     },
     {
       "prNumber": 693,
@@ -6017,15 +6060,15 @@
       "prNumber": 430,
       "title": "Value Residual + Gated Attention + XSA + EMA + AdamW TTT — val_bpb pending H100",
       "status": "open",
-      "updatedAt": "2026-03-25T12:36:42Z",
-      "headSha": "474e715c93df9d8c9bed5ddb556de1d31b50773c",
-      "generatedAt": "2026-03-25T13:02:08.127Z",
-      "summary": "Combines SwiGLU, value-residual/gated attention, XSA, EMA, and AdamW test-time tuning atop the thwu1 base to sharpen per-layer control and evaluation robustness.",
+      "updatedAt": "2026-03-26T03:17:56Z",
+      "headSha": "61e1497dcd048664d96e0f6e2eeb53f2852773b3",
+      "generatedAt": "2026-03-26T03:37:01.715Z",
+      "summary": "Stacks SwiGLU, value-residual + gated attention, XSA, EMA, and AdamW test-time training atop thwu1 base to reinforce deep-layer signal flow.",
       "tags": [
         "val-only",
+        "architecture",
         "attention",
-        "evaluation",
-        "architecture"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": true,
@@ -10075,14 +10118,15 @@
       "prNumber": 187,
       "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
       "status": "open",
-      "updatedAt": "2026-03-26T03:05:18Z",
+      "updatedAt": "2026-03-26T03:07:24Z",
       "headSha": "777500efdd213b962844d1803918fe4e645d4815",
-      "generatedAt": "2026-03-26T03:06:31.219Z",
-      "summary": "GPU-resident EMA speeds up steps while GELU pre-enrichment, SmearGate/BigramHash, XSA, and entropy-adaptive multi-order n-gram backoff cache shape eval.",
+      "generatedAt": "2026-03-26T03:37:06.814Z",
+      "summary": "GPU-resident EMA fuels faster U-Net updates feeding GELU pre-enrichment plus XSA and entropy-adaptive multi-order n-gram backoff.",
       "tags": [
         "architecture",
-        "evaluation",
-        "training-schedule"
+        "optimizer",
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,

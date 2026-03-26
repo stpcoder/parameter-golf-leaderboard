@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T03:36:44.498Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 801,
+    "title": "Non-Record: Training on the Apple Neural Engine",
+    "state": "open",
+    "updatedAt": "2026-03-26T03:23:25Z",
+    "headSha": "23b27bb5b2c1deb2c97ccac31ec2fb70a74da1fb",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/801",
+    "authorLogin": "garindean"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-25_ANE_v1/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Reverse-engineered ANE dispatch runs GolfWide matmuls/backward activations on the Apple Neural Engine while CPU handles grads and optimizer updates.",
+    "tags": [
+      "non-record",
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Reverse-engineered private ANE APIs for transformer matmul and activation-derivative offload",
+      "GolfWide 9L dim512 SwiGLU stack with DeepNet residual scaling",
+      "Sliding-window eval with stride 64 via reusable artifact"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

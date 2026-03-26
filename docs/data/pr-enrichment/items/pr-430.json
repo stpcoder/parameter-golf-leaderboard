@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-25T13:02:08.127Z",
+  "generatedAt": "2026-03-26T03:37:01.715Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 430,
     "title": "Value Residual + Gated Attention + XSA + EMA + AdamW TTT — val_bpb pending H100",
     "state": "open",
-    "updatedAt": "2026-03-25T12:36:42Z",
-    "headSha": "474e715c93df9d8c9bed5ddb556de1d31b50773c",
+    "updatedAt": "2026-03-26T03:17:56Z",
+    "headSha": "61e1497dcd048664d96e0f6e2eeb53f2852773b3",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/430",
     "authorLogin": "sahiee-dev"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines SwiGLU, value-residual/gated attention, XSA, EMA, and AdamW test-time tuning atop the thwu1 base to sharpen per-layer control and evaluation robustness.",
+    "summary": "Stacks SwiGLU, value-residual + gated attention, XSA, EMA, and AdamW test-time training atop thwu1 base to reinforce deep-layer signal flow.",
     "tags": [
       "val-only",
+      "architecture",
       "attention",
-      "evaluation",
-      "architecture"
+      "training-schedule"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "AdamW test-time training runs on validation tokens before each evaluation.",
+    "valOnlyReasoning": "Runs AdamW test-time training on validation tokens (three epochs with frozen bottom layers) ahead of each evaluation.",
     "techniques": [
-      "SwiGLU plus per-layer value-residual and gated attention control",
-      "XSA on final layers paired with EMA shadow weights",
-      "AdamW test-time tuning on validation tokens"
+      "SwiGLU MLP plus value-residual and gated attention on the thwu1 10-layer base",
+      "EMA shadow weights paired with AdamW test-time training over validation data"
     ]
   },
   "compatibility": {

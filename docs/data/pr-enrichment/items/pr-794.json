@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T01:35:54.150Z",
+  "generatedAt": "2026-03-26T03:36:55.913Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 794,
     "title": "Muon Optimizer Tuning: val_bpb 1.3346 by jeremyschied",
     "state": "open",
-    "updatedAt": "2026-03-26T01:26:41Z",
-    "headSha": "6684ee88985f5fa71c251b7f8857e03d9e874b6c",
+    "updatedAt": "2026-03-26T03:09:08Z",
+    "headSha": "29fe0ad16bfb18cd174147cfac42c394e1e6c58b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/794",
     "authorLogin": "jeremyschied"
   },
@@ -21,17 +21,16 @@
     "submissionCount": 3
   },
   "output": {
-    "summary": "Adjusts NanoGPT's Muon optimizer hyperparameters (matrix LR 0.05, backend steps 6, momentum warmup 300, grad clip/warmdown tweaks) on a single H100.",
+    "summary": "Raised Muon matrix LR, backend steps, momentum warmup, and warmdown tweaks on NanoGPT to probe optimizer behavior on a single H100 for Project Pocket.",
     "tags": [
-      "muon",
       "optimizer"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Standard training run; no validation-only regime.",
     "techniques": [
-      "Matrix LR 0.05 Muon tuning",
-      "Extended momentum warmup with warmdown schedule",
-      "Gradient clipping for stability"
+      "Raised MATRIX_LR and MUON_BACKEND_STEPS",
+      "Longer Muon momentum warmup with GRAD_CLIP_NORM=1.0",
+      "Extended WARMDOWN_ITERS to 900"
     ]
   },
   "compatibility": {

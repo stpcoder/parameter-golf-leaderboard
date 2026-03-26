@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T03:36:33.888Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 803,
+    "title": "Record: 0.4416 BPB -- Complementary Training + Backoff N-gram Mixer",
+    "state": "open",
+    "updatedAt": "2026-03-26T03:33:09Z",
+    "headSha": "d9cf80d9d26eab15896941004ef88e910ffe2700",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/803",
+    "authorLogin": "pentxayc"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_ComplementaryBackoff_0.4416/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Train a transformer to downweight bigram-predictable tokens so it complements a high-alpha Backoff N-gram Mixer with entropy-adaptive blending.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Bigram-weighted loss to specialize on tokens n-grams miss",
+      "Entropy-adaptive α blending neural and Backoff N-gram Mixer",
+      "Int6 quantization with compression to meet 16MB"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
