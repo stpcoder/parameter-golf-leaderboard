@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-26T16:10:21.911Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 860,
+    "title": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders (2-12)",
+    "state": "open",
+    "updatedAt": "2026-03-26T15:45:54Z",
+    "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/860",
+    "authorLogin": "pappanick"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Pairing a learned Linear(512→12) mixer routing head with two-pass cold-cache rescoring and TTT-adapted n-gram eval using orders 2‑12 and 8M buckets.",
+    "tags": [
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "Not val-only training.",
+    "techniques": [
+      "Linear(512→12) mixer gating with frozen n-gram oracle and neural floor",
+      "Two-pass rescoring of first 15 chunks after full cache build",
+      "Extended orders 2‑12 with 8M buckets feeding TTT-adapted n-gram evaluation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

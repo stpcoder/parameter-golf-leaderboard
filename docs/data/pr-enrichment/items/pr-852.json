@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T15:11:43.197Z",
+  "generatedAt": "2026-03-26T16:10:30.275Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 852,
     "title": "Hymba-11L: SOTA High-Density Takeover (1.1189 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-26T14:58:43Z",
+    "updatedAt": "2026-03-26T15:42:17Z",
     "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/852",
     "authorLogin": "Prush69"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer Selective Scan + Rotary Attention hybrid pairs a sharded Muon optimizer/3D parameter bank with 3-epoch TTT and TurboQuant QAT for high-density compression.",
+    "summary": "Hybrid 11-layer Selective Scan + Rotary attention uses parallel Muon sharding and reclaimed time to run 3-epoch test-time training with QAT.",
     "tags": [
-      "optimizer",
       "architecture",
-      "training-schedule",
-      "quantization"
+      "optimizer",
+      "quantization",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Sharded Muon optimizer overlapping comms with backward pass",
-      "3D parameter bank for bulk sharding across 8×H100",
-      "3-epoch test-time training with TurboQuant QAT"
+      "Selective Scan (Mamba) hybrid with Rotary attention",
+      "Parallel Muon optimizer overlaps gradient reduce_scatter/all_gather with Newton-Schulz orthogonalization",
+      "3-epoch TTT plus TurboQuant QAT and BigramHash embeddings"
     ]
   },
   "compatibility": {

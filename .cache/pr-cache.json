@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-26T15:40:05.769Z",
-  "lastSeenUpdatedAt": "2026-03-26T15:29:48Z",
+  "generatedAt": "2026-03-26T16:10:09.035Z",
+  "lastSeenUpdatedAt": "2026-03-26T16:06:09Z",
   "prs": {
     "1": {
       "number": 1,
@@ -43924,18 +43924,18 @@
     },
     "505": {
       "number": 505,
-      "updatedAt": "2026-03-25T04:50:44Z",
+      "updatedAt": "2026-03-26T15:58:56Z",
       "pr": {
         "number": 505,
         "title": "Record: SwiGLU+VE128+NoTTT val_bpb=1.1181 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/505",
         "authorLogin": "JoeProAI",
         "authorName": null,
         "createdAt": "2026-03-23T05:10:22Z",
-        "updatedAt": "2026-03-25T04:50:44Z",
+        "updatedAt": "2026-03-26T15:58:56Z",
         "headSha": "340a3a44a2dbe412d7f866930ad53b36665d2e41",
         "headRepo": "JoeProAI/parameter-golf"
       },
@@ -65552,7 +65552,7 @@
     },
     "769": {
       "number": 769,
-      "updatedAt": "2026-03-26T14:31:24Z",
+      "updatedAt": "2026-03-26T15:46:23Z",
       "pr": {
         "number": 769,
         "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
@@ -65563,7 +65563,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-25T21:28:08Z",
-        "updatedAt": "2026-03-26T14:31:24Z",
+        "updatedAt": "2026-03-26T15:46:23Z",
         "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -65626,7 +65626,7 @@
             "authorLogin": "MatoTeziTanka",
             "authorName": null,
             "createdAt": "2026-03-25T21:28:08Z",
-            "updatedAt": "2026-03-26T14:31:24Z",
+            "updatedAt": "2026-03-26T15:46:23Z",
             "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
             "headRepo": "MatoTeziTanka/parameter-golf"
           },
@@ -71607,7 +71607,7 @@
     },
     "831": {
       "number": 831,
-      "updatedAt": "2026-03-26T08:02:01Z",
+      "updatedAt": "2026-03-26T15:45:48Z",
       "pr": {
         "number": 831,
         "title": "Research: Why Novel Architectures Fail at 16MB — Throughput-Quantization Co-optimization",
@@ -71618,7 +71618,7 @@
         "authorLogin": "sseanliu",
         "authorName": null,
         "createdAt": "2026-03-26T08:02:01Z",
-        "updatedAt": "2026-03-26T08:02:01Z",
+        "updatedAt": "2026-03-26T15:45:48Z",
         "headSha": "b11bcdb509cee46c3256e76e7f5b3e50aa112045",
         "headRepo": "sseanliu/parameter-golf"
       },
@@ -71681,7 +71681,7 @@
             "authorLogin": "sseanliu",
             "authorName": null,
             "createdAt": "2026-03-26T08:02:01Z",
-            "updatedAt": "2026-03-26T08:02:01Z",
+            "updatedAt": "2026-03-26T15:45:48Z",
             "headSha": "b11bcdb509cee46c3256e76e7f5b3e50aa112045",
             "headRepo": "sseanliu/parameter-golf"
           },
@@ -73079,7 +73079,7 @@
     },
     "852": {
       "number": 852,
-      "updatedAt": "2026-03-26T14:58:43Z",
+      "updatedAt": "2026-03-26T15:42:17Z",
       "pr": {
         "number": 852,
         "title": "Hymba-11L: SOTA High-Density Takeover (1.1189 BPB)",
@@ -73090,7 +73090,7 @@
         "authorLogin": "Prush69",
         "authorName": null,
         "createdAt": "2026-03-26T14:20:12Z",
-        "updatedAt": "2026-03-26T14:58:43Z",
+        "updatedAt": "2026-03-26T15:42:17Z",
         "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
         "headRepo": "Prush69/parameter-golf"
       },
@@ -73153,7 +73153,7 @@
             "authorLogin": "Prush69",
             "authorName": null,
             "createdAt": "2026-03-26T14:20:12Z",
-            "updatedAt": "2026-03-26T14:58:43Z",
+            "updatedAt": "2026-03-26T15:42:17Z",
             "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
             "headRepo": "Prush69/parameter-golf"
           },
@@ -73929,7 +73929,7 @@
     },
     "859": {
       "number": 859,
-      "updatedAt": "2026-03-26T15:29:48Z",
+      "updatedAt": "2026-03-26T16:06:09Z",
       "pr": {
         "number": 859,
         "title": "Record: 0.1582 BPB — Learned Mixer Head + No TTT + Matrix LR 0.03",
@@ -73940,8 +73940,8 @@
         "authorLogin": "bigbag",
         "authorName": null,
         "createdAt": "2026-03-26T15:29:48Z",
-        "updatedAt": "2026-03-26T15:29:48Z",
-        "headSha": "548fe6469aebd9efe59d3e3706d3f4d8c2fa5520",
+        "updatedAt": "2026-03-26T16:06:09Z",
+        "headSha": "66fd46de9971434a742e65683b81400539697f0f",
         "headRepo": "bigbag/parameter-golf"
       },
       "submissions": [
@@ -74003,17 +74003,199 @@
             "authorLogin": "bigbag",
             "authorName": null,
             "createdAt": "2026-03-26T15:29:48Z",
-            "updatedAt": "2026-03-26T15:29:48Z",
-            "headSha": "548fe6469aebd9efe59d3e3706d3f4d8c2fa5520",
+            "updatedAt": "2026-03-26T16:06:09Z",
+            "headSha": "66fd46de9971434a742e65683b81400539697f0f",
             "headRepo": "bigbag/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/548fe6469aebd9efe59d3e3706d3f4d8c2fa5520/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/548fe6469aebd9efe59d3e3706d3f4d8c2fa5520/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/548fe6469aebd9efe59d3e3706d3f4d8c2fa5520/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/548fe6469aebd9efe59d3e3706d3f4d8c2fa5520/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/548fe6469aebd9efe59d3e3706d3f4d8c2fa5520/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/66fd46de9971434a742e65683b81400539697f0f/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/66fd46de9971434a742e65683b81400539697f0f/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/66fd46de9971434a742e65683b81400539697f0f/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/66fd46de9971434a742e65683b81400539697f0f/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/66fd46de9971434a742e65683b81400539697f0f/records/track_10min_16mb/2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03",
             "pr": "https://github.com/openai/parameter-golf/pull/859"
+          }
+        }
+      ]
+    },
+    "860": {
+      "number": 860,
+      "updatedAt": "2026-03-26T15:45:54Z",
+      "pr": {
+        "number": 860,
+        "title": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders (2-12)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/860",
+        "authorLogin": "pappanick",
+        "authorName": null,
+        "createdAt": "2026-03-26T15:45:54Z",
+        "updatedAt": "2026-03-26T15:45:54Z",
+        "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
+        "headRepo": "pappanick/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-860-records-track_10min_16mb-2026-03-26_LearnedRouting_TwoPass_ExtendedNgram-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-26_LearnedRouting_TwoPass_ExtendedNgram",
+            "folderPath": "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram",
+            "submissionPath": "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train_gpt.py"
+          },
+          "submission": {
+            "author": "pappanick",
+            "githubId": "pappanick",
+            "name": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders",
+            "blurb": "Combines PR #834's learned multi-expert gate (Linear(512->12)) with PR #846's two-pass cold-cache rescoring. Extended n-gram orders 2-12 with 8M bucket hash tables. TTT-adapted model feeds into n-gram eval. Built on PR #834/414 stack.",
+            "date": "2026-03-26"
+          },
+          "metrics": {
+            "valBpb": null,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 860,
+            "title": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders (2-12)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/860",
+            "authorLogin": "pappanick",
+            "authorName": null,
+            "createdAt": "2026-03-26T15:45:54Z",
+            "updatedAt": "2026-03-26T15:45:54Z",
+            "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
+            "headRepo": "pappanick/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3/records/track_10min_16mb/2026-03-26_LearnedRouting_TwoPass_ExtendedNgram",
+            "pr": "https://github.com/openai/parameter-golf/pull/860"
+          }
+        }
+      ]
+    },
+    "861": {
+      "number": 861,
+      "updatedAt": "2026-03-26T15:58:39Z",
+      "pr": {
+        "number": 861,
+        "title": "Non-record: 11L Int5 QAT + Score-First TTT — val_bpb 1.1326 (15.51 MB)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/861",
+        "authorLogin": "JoeProAI",
+        "authorName": null,
+        "createdAt": "2026-03-26T15:58:39Z",
+        "updatedAt": "2026-03-26T15:58:39Z",
+        "headSha": "3d6acb16bc0d90080df1dd378b004f44f5f8755a",
+        "headRepo": "JoeProAI/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-861-records-track_10min_16mb-2026-03-26_JoeProAI_11L_Int5_TTT_1-1326-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-26_JoeProAI_11L_Int5_TTT_1.1326",
+            "folderPath": "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326",
+            "submissionPath": "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/train_gpt.py"
+          },
+          "submission": {
+            "author": "JoeProAI",
+            "githubId": "JoeProAI",
+            "name": "JoeProAI",
+            "blurb": null,
+            "date": "2026-03-26"
+          },
+          "metrics": {
+            "valBpb": 1.13256182,
+            "valLoss": 1.91228074,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": null,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 861,
+            "title": "Non-record: 11L Int5 QAT + Score-First TTT — val_bpb 1.1326 (15.51 MB)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/861",
+            "authorLogin": "JoeProAI",
+            "authorName": null,
+            "createdAt": "2026-03-26T15:58:39Z",
+            "updatedAt": "2026-03-26T15:58:39Z",
+            "headSha": "3d6acb16bc0d90080df1dd378b004f44f5f8755a",
+            "headRepo": "JoeProAI/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3d6acb16bc0d90080df1dd378b004f44f5f8755a/records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/3d6acb16bc0d90080df1dd378b004f44f5f8755a/records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/3d6acb16bc0d90080df1dd378b004f44f5f8755a/records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/3d6acb16bc0d90080df1dd378b004f44f5f8755a/records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/3d6acb16bc0d90080df1dd378b004f44f5f8755a/records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326",
+            "pr": "https://github.com/openai/parameter-golf/pull/861"
           }
         }
       ]

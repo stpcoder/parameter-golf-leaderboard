@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T16:10:16.882Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 861,
+    "title": "Non-record: 11L Int5 QAT + Score-First TTT — val_bpb 1.1326 (15.51 MB)",
+    "state": "open",
+    "updatedAt": "2026-03-26T15:58:39Z",
+    "headSha": "3d6acb16bc0d90080df1dd378b004f44f5f8755a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/861",
+    "authorLogin": "JoeProAI"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_JoeProAI_11L_Int5_TTT_1.1326/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer U-Net blends Int5 per-row QAT with pruning, bigram hash embeddings, and score-first TTT on MLPs plus XSA to pack under 16MB.",
+    "tags": [
+      "quantization",
+      "training-schedule",
+      "attention",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Int5 per-row QAT with 15% pre-pruning",
+      "Score-first TTT on MLP projections",
+      "U-Net with XSA layers plus bigram hash tokens"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,16 +1,62 @@
 {
-  "generatedAt": "2026-03-26T15:40:32.144Z",
+  "generatedAt": "2026-03-26T16:10:41.723Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 861,
+      "title": "Non-record: 11L Int5 QAT + Score-First TTT — val_bpb 1.1326 (15.51 MB)",
+      "status": "open",
+      "updatedAt": "2026-03-26T15:58:39Z",
+      "headSha": "3d6acb16bc0d90080df1dd378b004f44f5f8755a",
+      "generatedAt": "2026-03-26T16:10:16.882Z",
+      "summary": "11-layer U-Net blends Int5 per-row QAT with pruning, bigram hash embeddings, and score-first TTT on MLPs plus XSA to pack under 16MB.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "attention",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-861.json"
+    },
+    {
+      "prNumber": 860,
+      "title": "Learned Routing + Two-Pass N-gram Rescoring + Extended Orders (2-12)",
+      "status": "open",
+      "updatedAt": "2026-03-26T15:45:54Z",
+      "headSha": "a8e80277dfaf05cfbfc7137fede3bc0a6a5eeae3",
+      "generatedAt": "2026-03-26T16:10:21.911Z",
+      "summary": "Pairing a learned Linear(512→12) mixer routing head with two-pass cold-cache rescoring and TTT-adapted n-gram eval using orders 2‑12 and 8M buckets.",
+      "tags": [
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-860.json"
+    },
+    {
       "prNumber": 859,
       "title": "Record: 0.1582 BPB — Learned Mixer Head + No TTT + Matrix LR 0.03",
       "status": "open",
-      "updatedAt": "2026-03-26T15:29:48Z",
-      "headSha": "548fe6469aebd9efe59d3e3706d3f4d8c2fa5520",
-      "generatedAt": "2026-03-26T15:40:11.682Z",
-      "summary": "Learned mixer head combines transformer states with frozen n-gram experts and a higher matrix LR to beat prior work without any TTT updates.",
+      "updatedAt": "2026-03-26T16:06:09Z",
+      "headSha": "66fd46de9971434a742e65683b81400539697f0f",
+      "generatedAt": "2026-03-26T16:10:26.891Z",
+      "summary": "Learned mixer gating head predicts token-specific weights over frozen n-gram experts with higher matrix LR and no TTT.",
       "tags": [
         "architecture",
         "training-schedule",
@@ -170,15 +216,15 @@
       "prNumber": 852,
       "title": "Hymba-11L: SOTA High-Density Takeover (1.1189 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:58:43Z",
+      "updatedAt": "2026-03-26T15:42:17Z",
       "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
-      "generatedAt": "2026-03-26T15:11:43.197Z",
-      "summary": "11-layer Selective Scan + Rotary Attention hybrid pairs a sharded Muon optimizer/3D parameter bank with 3-epoch TTT and TurboQuant QAT for high-density compression.",
+      "generatedAt": "2026-03-26T16:10:30.275Z",
+      "summary": "Hybrid 11-layer Selective Scan + Rotary attention uses parallel Muon sharding and reclaimed time to run 3-epoch test-time training with QAT.",
       "tags": [
-        "optimizer",
         "architecture",
-        "training-schedule",
-        "quantization"
+        "optimizer",
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -423,13 +469,13 @@
       "prNumber": 831,
       "title": "Research: Why Novel Architectures Fail at 16MB — Throughput-Quantization Co-optimization",
       "status": "open",
-      "updatedAt": "2026-03-26T08:02:01Z",
+      "updatedAt": "2026-03-26T15:45:48Z",
       "headSha": "b11bcdb509cee46c3256e76e7f5b3e50aa112045",
-      "generatedAt": "2026-03-26T08:07:38.714Z",
-      "summary": "Shows six March-2026 architecture ideas fail because 16MB/600s demands tight throughput-quantization co-optimization across Muon, torch.compile, int6, and H100.",
+      "generatedAt": "2026-03-26T16:10:36.518Z",
+      "summary": "Testing six recent architecture ideas on the PR #549 stack shows throughput-quantization co-optimization is the binding constraint at 16MB/600s.",
       "tags": [
-        "quantization",
         "architecture",
+        "quantization",
         "evaluation"
       ],
       "flags": {
@@ -1576,12 +1622,13 @@
       "prNumber": 769,
       "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
       "status": "open",
-      "updatedAt": "2026-03-26T14:31:24Z",
+      "updatedAt": "2026-03-26T15:46:23Z",
       "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
-      "generatedAt": "2026-03-26T14:42:37.362Z",
-      "summary": "11L Proteus+Styx swaps in LeakyReLU(0.9)² and blends a backward-looking 5-gram hash cache during sliding-window eval for smoother predictions.",
+      "generatedAt": "2026-03-26T16:10:41.604Z",
+      "summary": "Light transformer uses LeakyReLU(0.9)² + mixed INT6/INT8 quantization while blending a backward-looking 5-gram eval cache with model logits during sliding evaluation.",
       "tags": [
         "architecture",
+        "quantization",
         "evaluation"
       ],
       "flags": {
