@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T17:42:32.136Z",
+  "generatedAt": "2026-03-26T20:13:12.522Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 728,
     "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-26T17:05:50Z",
+    "updatedAt": "2026-03-26T19:59:17Z",
     "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/728",
     "authorLogin": "abaybektursun"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "XSA-all + Full GPTQ stack swaps calibration to validation shards while widening BigramHash (3072×112) under 16MB for tighter int6 rounding.",
+    "summary": "GPTQ quantization calibrates on validation activations to avoid eval-time train data while using XSA-all and BigramHash 3072×112 within the 16MB stack.",
     "tags": [
       "quantization",
-      "architecture",
       "attention",
-      "optimizer"
+      "architecture"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Not training on validation data; calibration uses val tokens read-only after training.",
     "techniques": [
-      "Validation-shard GPTQ calibration",
-      "BigramHash 3072×112 expansion within budget",
-      "Parallel Muon optimizer to boost step throughput"
+      "Val-data GPTQ calibration for read-only Hessian rounding",
+      "11-layer XSA-all architecture with BigramHash 3072×112",
+      "Full Hessian int6 quantization pipeline"
     ]
   },
   "compatibility": {

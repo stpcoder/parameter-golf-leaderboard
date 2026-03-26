@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T19:43:59.118Z",
+  "generatedAt": "2026-03-26T20:13:02.803Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 886,
     "title": "RFC: A framework for deciding the n-gram question",
     "state": "open",
-    "updatedAt": "2026-03-26T19:43:04Z",
+    "updatedAt": "2026-03-26T20:11:11Z",
     "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/886",
     "authorLogin": "abaybektursun"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Eval-time n-gram caching blended with neural scores creates 272MB runtime state, prompting a cap on eval-state growth for 16MB models.",
+    "summary": "Eval-time n-gram hash caching mixed with transformer logits (and global sync) reveals how huge hash tables inflate effective model size during evaluation.",
     "tags": [
       "evaluation",
       "compression",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "This is a non-record evaluation study, not a val-only training regime.",
     "techniques": [
-      "Strictly causal n-gram cache mixed with neural probabilities",
-      "All-reduce hash-table sync across GPUs",
-      "Proposal to cap peak eval-time state"
+      "- causal n-gram hash cache mixed with neural logits",
+      "- global cache synchronization via all-reduce",
+      "- hash collisions acting as lossy sketches for high orders"
     ]
   },
   "compatibility": {

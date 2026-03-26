@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-26T19:42:58.626Z",
-  "lastSeenUpdatedAt": "2026-03-26T19:41:10Z",
+  "generatedAt": "2026-03-26T20:12:51.867Z",
+  "lastSeenUpdatedAt": "2026-03-26T20:12:26Z",
   "prs": {
     "1": {
       "number": 1,
@@ -62495,7 +62495,7 @@
     },
     "728": {
       "number": 728,
-      "updatedAt": "2026-03-26T17:05:50Z",
+      "updatedAt": "2026-03-26T19:59:17Z",
       "pr": {
         "number": 728,
         "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
@@ -62506,7 +62506,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-25T15:03:32Z",
-        "updatedAt": "2026-03-26T17:05:50Z",
+        "updatedAt": "2026-03-26T19:59:17Z",
         "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -62569,7 +62569,7 @@
             "authorLogin": "abaybektursun",
             "authorName": null,
             "createdAt": "2026-03-25T15:03:32Z",
-            "updatedAt": "2026-03-26T17:05:50Z",
+            "updatedAt": "2026-03-26T19:59:17Z",
             "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
             "headRepo": "abaybektursun/parameter-golf"
           },
@@ -64442,7 +64442,7 @@
     },
     "756": {
       "number": 756,
-      "updatedAt": "2026-03-26T17:06:31Z",
+      "updatedAt": "2026-03-26T19:58:20Z",
       "pr": {
         "number": 756,
         "title": "Non-record: Negative results — quantization algorithms, TTT, architecture, and self-generated GPTQ calibration study",
@@ -64453,7 +64453,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-25T18:57:51Z",
-        "updatedAt": "2026-03-26T17:06:31Z",
+        "updatedAt": "2026-03-26T19:58:20Z",
         "headSha": "e16f7aac737d8a8e960f740c0828c61b3bdc524b",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -76505,7 +76505,7 @@
     },
     "886": {
       "number": 886,
-      "updatedAt": "2026-03-26T19:41:10Z",
+      "updatedAt": "2026-03-26T20:11:11Z",
       "pr": {
         "number": 886,
         "title": "RFC: A framework for deciding the n-gram question",
@@ -76516,7 +76516,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-26T19:41:10Z",
+        "updatedAt": "2026-03-26T20:11:11Z",
         "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -76579,7 +76579,7 @@
             "authorLogin": "abaybektursun",
             "authorName": null,
             "createdAt": "2026-03-26T19:03:36Z",
-            "updatedAt": "2026-03-26T19:41:10Z",
+            "updatedAt": "2026-03-26T20:11:11Z",
             "headSha": "4555280179944f63c90a7c73572a6a26d8651ee0",
             "headRepo": "abaybektursun/parameter-golf"
           },
@@ -77301,6 +77301,25 @@
           }
         }
       ]
+    },
+    "894": {
+      "number": 894,
+      "updatedAt": "2026-03-26T20:12:26Z",
+      "pr": {
+        "number": 894,
+        "title": "Non-record: Semantic Tube Regularization — Geometry Improves, BPB Doesn't (Compute–Regularization Tradeoff)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/894",
+        "authorLogin": "albertorkive",
+        "authorName": null,
+        "createdAt": "2026-03-26T19:46:10Z",
+        "updatedAt": "2026-03-26T20:12:26Z",
+        "headSha": "f1b22b815d7920d32def86a7329e6ae7fe994360",
+        "headRepo": "albertorkive/parameter-golf"
+      },
+      "submissions": []
     }
   }
 }
