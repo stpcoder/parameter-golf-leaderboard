@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T02:35:49.993Z",
+  "generatedAt": "2026-03-26T03:06:17.280Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -369,7 +369,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -1450,7 +1450,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -1917,7 +1917,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -7082,7 +7082,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -9084,7 +9084,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -13165,7 +13165,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -13786,11 +13786,11 @@
         "headRepo": "SPThole/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared",
         "pr": "https://github.com/openai/parameter-golf/pull/737",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -20472,7 +20472,7 @@
       },
       "pr": {
         "number": 187,
-        "title": "Record: EMA-GPU + 5-gram eval cache (val_bpb=1.0689)",
+        "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -20480,8 +20480,8 @@
         "authorLogin": "Idan3011",
         "authorName": null,
         "createdAt": "2026-03-20T07:23:51Z",
-        "updatedAt": "2026-03-25T23:26:16Z",
-        "headSha": "f3ace441b53f4981cfb58ea0d4c1671e83567070",
+        "updatedAt": "2026-03-26T03:05:18Z",
+        "headSha": "777500efdd213b962844d1803918fe4e645d4815",
         "headRepo": "Idan3011/parameter-golf"
       },
       "links": {

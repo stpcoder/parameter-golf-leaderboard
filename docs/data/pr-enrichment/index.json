@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T02:36:13.733Z",
+  "generatedAt": "2026-03-26T03:06:31.247Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,12 +7,13 @@
       "prNumber": 800,
       "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
       "status": "open",
-      "updatedAt": "2026-03-26T02:31:39Z",
+      "updatedAt": "2026-03-26T02:57:16Z",
       "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
-      "generatedAt": "2026-03-26T02:36:01.594Z",
-      "summary": "Chunked shared n-gram tables give every GPU the full 62M-token context while Cubric per-order adaptive alpha reweights orders 2-7.",
+      "generatedAt": "2026-03-26T03:06:26.895Z",
+      "summary": "Chunk-based shared n-gram tables give every rank the 62M-token view while Cubric per-order alpha scaling suppresses noisy low orders and boosts reliable high orders.",
       "tags": [
-        "evaluation"
+        "evaluation",
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -10072,16 +10073,16 @@
     },
     {
       "prNumber": 187,
-      "title": "Record: EMA-GPU + 5-gram eval cache (val_bpb=1.0689)",
+      "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
       "status": "open",
-      "updatedAt": "2026-03-25T23:26:16Z",
-      "headSha": "f3ace441b53f4981cfb58ea0d4c1671e83567070",
-      "generatedAt": "2026-03-25T23:36:15.454Z",
-      "summary": "GPU-resident EMA accelerates training while GELU pre-enrichment and XSA feed a transformer whose sliding eval is smoothed with a 5-gram score-first cache.",
+      "updatedAt": "2026-03-26T03:05:18Z",
+      "headSha": "777500efdd213b962844d1803918fe4e645d4815",
+      "generatedAt": "2026-03-26T03:06:31.219Z",
+      "summary": "GPU-resident EMA speeds up steps while GELU pre-enrichment, SmearGate/BigramHash, XSA, and entropy-adaptive multi-order n-gram backoff cache shape eval.",
       "tags": [
         "architecture",
-        "attention",
-        "evaluation"
+        "evaluation",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,

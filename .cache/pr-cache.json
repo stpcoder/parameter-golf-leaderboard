@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-26T02:35:49.961Z",
-  "lastSeenUpdatedAt": "2026-03-26T02:31:39Z",
+  "generatedAt": "2026-03-26T03:06:17.248Z",
+  "lastSeenUpdatedAt": "2026-03-26T03:05:18Z",
   "prs": {
     "1": {
       "number": 1,
@@ -14304,10 +14304,10 @@
     },
     "187": {
       "number": 187,
-      "updatedAt": "2026-03-25T23:26:16Z",
+      "updatedAt": "2026-03-26T03:05:18Z",
       "pr": {
         "number": 187,
-        "title": "Record: EMA-GPU + 5-gram eval cache (val_bpb=1.0689)",
+        "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -14315,8 +14315,8 @@
         "authorLogin": "Idan3011",
         "authorName": null,
         "createdAt": "2026-03-20T07:23:51Z",
-        "updatedAt": "2026-03-25T23:26:16Z",
-        "headSha": "f3ace441b53f4981cfb58ea0d4c1671e83567070",
+        "updatedAt": "2026-03-26T03:05:18Z",
+        "headSha": "777500efdd213b962844d1803918fe4e645d4815",
         "headRepo": "Idan3011/parameter-golf"
       },
       "submissions": [
@@ -14343,22 +14343,22 @@
           "submission": {
             "author": "Idanr",
             "githubId": "idan3011",
-            "name": "EMA-GPU + 5-gram Cache + Pre-Enrichment + XSA + SmearGate + BigramHash",
-            "blurb": "EMA on GPU (64ms/step, 9312 steps). 5-gram eval cache with score-first backward-looking n-gram mixing (alpha=0.20). GELU pre-enrichment + XSA-4 + SmearGate + BigramHash + int6 QAT + lzma. 10L 512d.",
-            "date": "2026-03-25T22:45:00Z"
+            "name": "EMA-GPU + Multi-Order N-gram Backoff + Pre-Enrichment + XSA",
+            "blurb": "EMA on GPU (64.7ms/step, 9268 steps). Multi-order n-gram backoff (2-7) with entropy-adaptive alpha, score-first backward-looking. GELU pre-enrichment + XSA-4 + SmearGate + BigramHash + int6 QAT + lzma. 10L 512d.",
+            "date": "2026-03-26T03:00:00Z"
           },
           "metrics": {
-            "valBpb": 1.06885331,
-            "valLoss": 1.93771,
-            "preQuantValBpb": 1.1643,
-            "preQuantValLoss": 1.9659,
-            "stepStop": 9312,
-            "wallclockSeconds": 600.041,
-            "evalTimeSeconds": 182.423
+            "valBpb": 0.97840827,
+            "valLoss": 1.93793804,
+            "preQuantValBpb": 1.1646,
+            "preQuantValLoss": 1.9663,
+            "stepStop": 9268,
+            "wallclockSeconds": 600.031,
+            "evalTimeSeconds": 186.843
           },
           "artifact": {
-            "bytesTotal": 14948991,
-            "bytesCode": 65591,
+            "bytesTotal": 14942971,
+            "bytesCode": 64223,
             "bytesModelInt8Zlib": null
           },
           "flags": {
@@ -14370,7 +14370,7 @@
           },
           "pr": {
             "number": 187,
-            "title": "Record: EMA-GPU + 5-gram eval cache (val_bpb=1.0689)",
+            "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
             "state": "open",
             "draft": false,
             "mergedAt": null,
@@ -14378,16 +14378,16 @@
             "authorLogin": "Idan3011",
             "authorName": null,
             "createdAt": "2026-03-20T07:23:51Z",
-            "updatedAt": "2026-03-25T23:26:16Z",
-            "headSha": "f3ace441b53f4981cfb58ea0d4c1671e83567070",
+            "updatedAt": "2026-03-26T03:05:18Z",
+            "headSha": "777500efdd213b962844d1803918fe4e645d4815",
             "headRepo": "Idan3011/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f3ace441b53f4981cfb58ea0d4c1671e83567070/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/f3ace441b53f4981cfb58ea0d4c1671e83567070/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/f3ace441b53f4981cfb58ea0d4c1671e83567070/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/f3ace441b53f4981cfb58ea0d4c1671e83567070/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/f3ace441b53f4981cfb58ea0d4c1671e83567070/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/777500efdd213b962844d1803918fe4e645d4815/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/777500efdd213b962844d1803918fe4e645d4815/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/777500efdd213b962844d1803918fe4e645d4815/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/777500efdd213b962844d1803918fe4e645d4815/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/777500efdd213b962844d1803918fe4e645d4815/records/track_10min_16mb/2026-03-20_PreEnrich_EncoderRecurrence",
             "pr": "https://github.com/openai/parameter-golf/pull/187"
           }
         }
@@ -53282,7 +53282,7 @@
     },
     "623": {
       "number": 623,
-      "updatedAt": "2026-03-25T04:29:45Z",
+      "updatedAt": "2026-03-26T03:04:54Z",
       "pr": {
         "number": 623,
         "title": "[10min/16MB]  AWQ + Cyclic Momentum + ReLU² + 11L Shared — 1.1507 bpb",
@@ -53293,8 +53293,8 @@
         "authorLogin": "SPThole",
         "authorName": null,
         "createdAt": "2026-03-24T14:22:27Z",
-        "updatedAt": "2026-03-25T04:29:45Z",
-        "headSha": "3019166619ecf05286820a336917f94da324ca40",
+        "updatedAt": "2026-03-26T03:04:54Z",
+        "headSha": "940cb5710e3d890273ebbee0f48570f793c4afb3",
         "headRepo": "SPThole/parameter-golf"
       },
       "submissions": [
@@ -53356,16 +53356,16 @@
             "authorLogin": "SPThole",
             "authorName": null,
             "createdAt": "2026-03-24T14:22:27Z",
-            "updatedAt": "2026-03-25T04:29:45Z",
-            "headSha": "3019166619ecf05286820a336917f94da324ca40",
+            "updatedAt": "2026-03-26T03:04:54Z",
+            "headSha": "940cb5710e3d890273ebbee0f48570f793c4afb3",
             "headRepo": "SPThole/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/3019166619ecf05286820a336917f94da324ca40/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/940cb5710e3d890273ebbee0f48570f793c4afb3/records/track_10min_16mb/2025-03-24_AWQ_CyclMom_11L_shared",
             "pr": "https://github.com/openai/parameter-golf/pull/623"
           }
         }
@@ -67854,7 +67854,7 @@
     },
     "800": {
       "number": 800,
-      "updatedAt": "2026-03-26T02:31:39Z",
+      "updatedAt": "2026-03-26T02:57:16Z",
       "pr": {
         "number": 800,
         "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
@@ -67865,7 +67865,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-26T02:31:02Z",
-        "updatedAt": "2026-03-26T02:31:39Z",
+        "updatedAt": "2026-03-26T02:57:16Z",
         "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -67928,7 +67928,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -67999,7 +67999,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -68070,7 +68070,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -68141,7 +68141,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -68212,7 +68212,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },
@@ -68283,7 +68283,7 @@
             "authorLogin": "newjordan",
             "authorName": null,
             "createdAt": "2026-03-26T02:31:02Z",
-            "updatedAt": "2026-03-26T02:31:39Z",
+            "updatedAt": "2026-03-26T02:57:16Z",
             "headSha": "77a9267af960b12d8f21250a3bc8f4921b25c225",
             "headRepo": "newjordan/parameter-golf-1"
           },

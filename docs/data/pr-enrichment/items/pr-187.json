@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-25T23:36:15.454Z",
+  "generatedAt": "2026-03-26T03:06:31.219Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 187,
-    "title": "Record: EMA-GPU + 5-gram eval cache (val_bpb=1.0689)",
+    "title": "Record: EMA-GPU + Multi-Order N-gram Backoff (val_bpb=0.9784)",
     "state": "open",
-    "updatedAt": "2026-03-25T23:26:16Z",
-    "headSha": "f3ace441b53f4981cfb58ea0d4c1671e83567070",
+    "updatedAt": "2026-03-26T03:05:18Z",
+    "headSha": "777500efdd213b962844d1803918fe4e645d4815",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/187",
     "authorLogin": "Idan3011"
   },
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "GPU-resident EMA accelerates training while GELU pre-enrichment and XSA feed a transformer whose sliding eval is smoothed with a 5-gram score-first cache.",
+    "summary": "GPU-resident EMA speeds up steps while GELU pre-enrichment, SmearGate/BigramHash, XSA, and entropy-adaptive multi-order n-gram backoff cache shape eval.",
     "tags": [
       "architecture",
-      "attention",
-      "evaluation"
+      "evaluation",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GPU-resident EMA to cut step time",
-      "GELU pre-enrichment + SmearGate + BigramHash prep",
-      "Score-first 5-gram cache for sliding eval"
+      "GPU-resident EMA with delayed CPU serialization",
+      "GELU pre-enrichment plus SmearGate and BigramHash pre-block transforms",
+      "Entropy-adaptive multi-order n-gram backoff cache paired with XSA in final layers"
     ]
   },
   "compatibility": {
