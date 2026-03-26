@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T00:36:05.065Z",
+  "generatedAt": "2026-03-26T02:06:19.547Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 780,
-    "title": "Non-record WIP: OAG Neurosymbolic Hybrid — FST + N-gram Cache + Entropy-Adaptive Gating",
+    "title": "Non-record WIP: Systematic Eval-Time Prediction Mixing | Requesting compute credits for full 8xH100 evaluation.",
     "state": "open",
-    "updatedAt": "2026-03-26T00:19:02Z",
+    "updatedAt": "2026-03-26T01:40:32Z",
     "headSha": "14d1a2d40e1dcd3b373bb47722a7a0f177ce43c0",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/780",
     "authorLogin": "sargonxg"
@@ -17,17 +17,19 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Systematically mixes zero-cost eval-time predictors (LZ77 match, n-gram cache, FST) with entropy-adaptive gating to boost Parameter Golf performance.",
+    "summary": "Ablates eval-time mixing of match, n-gram cache, and FST predictors atop an S4D/PKM neural base with a custom 1536 tokenizer.",
     "tags": [
       "evaluation",
+      "architecture",
+      "tokenization",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Eval-time mixing of LZ77, n-gram cache, and FST predictors",
-      "Entropy-adaptive gating weights for predictor blending",
-      "Zero-artifact-cost historic match model"
+      "LZ77 match + cache + FST predictor blend",
+      "S4D state-space + PKM neural backbone",
+      "Custom 1536-token tokenizer"
     ]
   },
   "compatibility": {

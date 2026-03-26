@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-26T01:35:42.444Z",
+  "generatedAt": "2026-03-26T02:05:48.758Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 616,
+    "submissions": 619,
     "official": 1,
-    "openPr": 490,
+    "openPr": 493,
     "mergedPr": 22,
     "closedPr": 103,
-    "prBacked": 616,
+    "prBacked": 619,
     "readmeListed": 20,
     "collectorErrors": 0
   },
@@ -91,7 +91,7 @@
       }
     },
     "openPrMainTrack": {
-      "id": "record-records-track_10min_16mb-2026-03-25_Julius_LeakyReLU_Chimera",
+      "id": "record-records-track_10min_16mb-2026-03-26_OAEG_BackoffNgram_PR779_0-5466",
       "source": "pull_request",
       "status": "open",
       "category": "main-track",
@@ -103,23 +103,23 @@
         "category": "main-track"
       },
       "record": {
-        "folderName": "2026-03-25_Julius_LeakyReLU_Chimera",
-        "folderPath": "records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera",
-        "submissionPath": "records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/train_gpt.py"
+        "folderName": "2026-03-26_OAEG_BackoffNgram_PR779_0.5466",
+        "folderPath": "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466",
+        "submissionPath": "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/train_gpt.py"
       },
       "submission": {
-        "author": "julius",
-        "githubId": "julius",
-        "name": "Chimera tweaks - LeakyReLU(0.5)^2 + 2048 Context + 3500 Warmdown",
-        "blurb": "Applying LeakyReLU with 2048 sequence length, expanded BigramHash, and extended warmdown to the Chimera baseline",
-        "date": "2026-03-25T00:00:00Z"
+        "author": "travispchen",
+        "githubId": "travispchen",
+        "name": "Order-Adaptive Entropy Gating + BackoffNgramMixer + Drift-Free TTT",
+        "blurb": "Novel order-adaptive entropy gating: per-order entropy centers (order 7→3.0, order 2→4.5) replace single-threshold mixing, trusting higher n-gram orders at lower model entropy. 18% improvement over PR #779 baseline (0.6713→0.5466). BackoffNgramMixer (orders 2-7) + drift-free TTT (Q-proj only, Polyak averaging). 3-seed mean: 0.5466 (std 0.0010). All artifacts strictly under 16MB.",
+        "date": "2026-03-26"
       },
       "metrics": {
-        "valBpb": 0.5588,
-        "valLoss": 0.9435,
+        "valBpb": 0.5466,
+        "valLoss": null,
         "preQuantValBpb": null,
         "preQuantValLoss": null,
         "stepStop": null,
@@ -127,7 +127,7 @@
         "evalTimeSeconds": null
       },
       "artifact": {
-        "bytesTotal": 15302060,
+        "bytesTotal": 15994227,
         "bytesCode": null,
         "bytesModelInt8Zlib": null
       },
@@ -139,26 +139,26 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 722,
-        "title": "parameter golf submission - Julius",
+        "number": 798,
+        "title": "Record: Order-Adaptive Entropy Gating + BackoffNgramMixer (val_bpb=0.5466)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/722",
-        "authorLogin": "magicjulio",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/798",
+        "authorLogin": "travispchen",
         "authorName": null,
-        "createdAt": "2026-03-25T14:19:58Z",
-        "updatedAt": "2026-03-25T14:19:58Z",
-        "headSha": "98072979e3edc6857d2ec811629292d9644d9166",
-        "headRepo": "magicjulio/parameter-golf"
+        "createdAt": "2026-03-26T02:01:22Z",
+        "updatedAt": "2026-03-26T02:01:22Z",
+        "headSha": "ab9681a7cb21df7b5994b5c8131dea4dc96a0684",
+        "headRepo": "travispchen/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/98072979e3edc6857d2ec811629292d9644d9166/records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/98072979e3edc6857d2ec811629292d9644d9166/records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/98072979e3edc6857d2ec811629292d9644d9166/records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/98072979e3edc6857d2ec811629292d9644d9166/records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/98072979e3edc6857d2ec811629292d9644d9166/records/track_10min_16mb/2026-03-25_Julius_LeakyReLU_Chimera",
-        "pr": "https://github.com/openai/parameter-golf/pull/722",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ab9681a7cb21df7b5994b5c8131dea4dc96a0684/records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/ab9681a7cb21df7b5994b5c8131dea4dc96a0684/records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/ab9681a7cb21df7b5994b5c8131dea4dc96a0684/records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/ab9681a7cb21df7b5994b5c8131dea4dc96a0684/records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/ab9681a7cb21df7b5994b5c8131dea4dc96a0684/records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466",
+        "pr": "https://github.com/openai/parameter-golf/pull/798",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

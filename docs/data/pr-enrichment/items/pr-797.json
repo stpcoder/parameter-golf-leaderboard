@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T02:06:01.420Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 797,
+    "title": "Record: 7-gram N-gram Cache (0.8960 bpb)",
+    "state": "open",
+    "updatedAt": "2026-03-26T01:46:28Z",
+    "headSha": "7df51367caa75559f1b00c51e72b27ad7dfafe42",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/797",
+    "authorLogin": "armantsaturian"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_7gram_NgramCache_0.8960/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Adds a streaming 7-gram cache with fixed 80/20 blending during sliding-window eval on the LeakyReLU² + Parallel Muon base to boost arity.",
+    "tags": [
+      "sliding-window-eval",
+      "quantization",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Streaming 7-gram cache with near-zero backoff and fixed cache/neural blend",
+      "Sliding-window (stride 64) scoring with score-before-update cache updates",
+      "LeakyReLU² + Parallel Muon base architecture with GPTQ-lite int6 quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

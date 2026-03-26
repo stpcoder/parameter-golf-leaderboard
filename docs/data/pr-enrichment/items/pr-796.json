@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T02:06:08.393Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 796,
+    "title": "Record: 0.6567 BPB — Prefill Cache + 7-Gram Entropy-Adaptive + EBLS",
+    "state": "open",
+    "updatedAt": "2026-03-26T01:41:00Z",
+    "headSha": "5a9adcf78905d47c5589dd9678f5701a645e923d",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/796",
+    "authorLogin": "Robby955"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-25_PrefillCache_7gram_EBLS/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Each rank pre-fills causal 7-gram caches before sliding evaluation, entropy-gating n-gram/model blends on top of EBLS+XSA-all with Val-GPTQ quantization.",
+    "tags": [
+      "evaluation",
+      "quantization",
+      "architecture",
+      "sliding-window-eval"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "distributed pre-fill of n-gram caches",
+      "entropy-adaptive blending during sliding eval",
+      "EBLS with XSA-all + Val-GPTQ int6"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

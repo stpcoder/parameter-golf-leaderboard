@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-03-26T02:05:55.498Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 798,
+    "title": "Record: Order-Adaptive Entropy Gating + BackoffNgramMixer (val_bpb=0.5466)",
+    "state": "open",
+    "updatedAt": "2026-03-26T02:01:22Z",
+    "headSha": "ab9681a7cb21df7b5994b5c8131dea4dc96a0684",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/798",
+    "authorLogin": "travispchen"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_OAEG_BackoffNgram_PR779_0.5466/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Eval-time BackoffNgramMixer uses per-order entropy centers so higher-order n-grams influence confident contexts while lower orders wait for high entropy.",
+    "tags": [
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Order-adaptive entropy centers for each n-gram order",
+      "BackoffNgramMixer combining neural and cached predictions at eval",
+      "Score-first cache updates with Drift-Free TTT stack"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

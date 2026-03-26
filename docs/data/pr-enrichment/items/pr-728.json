@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T01:36:05.824Z",
+  "generatedAt": "2026-03-26T02:06:24.800Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 728,
     "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-26T01:18:16Z",
+    "updatedAt": "2026-03-26T01:40:27Z",
     "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/728",
     "authorLogin": "abaybektursun"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Val-shard Hessian GPTQ calibration keeps the Full GPTQ+XSA-all stack legal while BigramHash(3072×112), LZMA9 compression, and Parallel Muon optimizer drive quality.",
+    "summary": "Applies full Hessian GPTQ calibrated on validation shards within a BigramHash 3072×112 XSA-all stack to avoid eval-time train data access.",
     "tags": [
       "quantization",
-      "optimizer",
-      "architecture"
+      "architecture",
+      "optimizer"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Val-data Hessian GPTQ calibration to avoid eval-time train access",
-      "BigramHash(3072×112) table plus LZMA preset=9 artifact tuning",
-      "Parallel Muon optimizer with parameter banking and overlapped communication"
+      "Val-data GPTQ calibration to replace train-shard access",
+      "BigramHash 3072×112 embedding table expansion",
+      "XSA-all attention with Parallel Muon optimizer context"
     ]
   },
   "compatibility": {

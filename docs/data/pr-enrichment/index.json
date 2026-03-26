@@ -1,8 +1,76 @@
 {
-  "generatedAt": "2026-03-26T01:36:12.800Z",
+  "generatedAt": "2026-03-26T02:06:24.911Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 798,
+      "title": "Record: Order-Adaptive Entropy Gating + BackoffNgramMixer (val_bpb=0.5466)",
+      "status": "open",
+      "updatedAt": "2026-03-26T02:01:22Z",
+      "headSha": "ab9681a7cb21df7b5994b5c8131dea4dc96a0684",
+      "generatedAt": "2026-03-26T02:05:55.498Z",
+      "summary": "Eval-time BackoffNgramMixer uses per-order entropy centers so higher-order n-grams influence confident contexts while lower orders wait for high entropy.",
+      "tags": [
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-798.json"
+    },
+    {
+      "prNumber": 797,
+      "title": "Record: 7-gram N-gram Cache (0.8960 bpb)",
+      "status": "open",
+      "updatedAt": "2026-03-26T01:46:28Z",
+      "headSha": "7df51367caa75559f1b00c51e72b27ad7dfafe42",
+      "generatedAt": "2026-03-26T02:06:01.420Z",
+      "summary": "Adds a streaming 7-gram cache with fixed 80/20 blending during sliding-window eval on the LeakyReLU² + Parallel Muon base to boost arity.",
+      "tags": [
+        "sliding-window-eval",
+        "quantization",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-797.json"
+    },
+    {
+      "prNumber": 796,
+      "title": "Record: 0.6567 BPB — Prefill Cache + 7-Gram Entropy-Adaptive + EBLS",
+      "status": "open",
+      "updatedAt": "2026-03-26T01:41:00Z",
+      "headSha": "5a9adcf78905d47c5589dd9678f5701a645e923d",
+      "generatedAt": "2026-03-26T02:06:08.393Z",
+      "summary": "Each rank pre-fills causal 7-gram caches before sliding evaluation, entropy-gating n-gram/model blends on top of EBLS+XSA-all with Val-GPTQ quantization.",
+      "tags": [
+        "evaluation",
+        "quantization",
+        "architecture",
+        "sliding-window-eval"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-796.json"
+    },
     {
       "prNumber": 795,
       "title": "Record: 11L + order-adaptive 11-gram (mean val_bpb=0.8881)",
@@ -305,14 +373,16 @@
     },
     {
       "prNumber": 780,
-      "title": "Non-record WIP: OAG Neurosymbolic Hybrid — FST + N-gram Cache + Entropy-Adaptive Gating",
+      "title": "Non-record WIP: Systematic Eval-Time Prediction Mixing | Requesting compute credits for full 8xH100 evaluation.",
       "status": "open",
-      "updatedAt": "2026-03-26T00:19:02Z",
+      "updatedAt": "2026-03-26T01:40:32Z",
       "headSha": "14d1a2d40e1dcd3b373bb47722a7a0f177ce43c0",
-      "generatedAt": "2026-03-26T00:36:05.065Z",
-      "summary": "Systematically mixes zero-cost eval-time predictors (LZ77 match, n-gram cache, FST) with entropy-adaptive gating to boost Parameter Golf performance.",
+      "generatedAt": "2026-03-26T02:06:19.547Z",
+      "summary": "Ablates eval-time mixing of match, n-gram cache, and FST predictors atop an S4D/PKM neural base with a custom 1536 tokenizer.",
       "tags": [
         "evaluation",
+        "architecture",
+        "tokenization",
         "non-record"
       ],
       "flags": {
@@ -1138,14 +1208,14 @@
       "prNumber": 728,
       "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-26T01:18:16Z",
+      "updatedAt": "2026-03-26T01:40:27Z",
       "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-      "generatedAt": "2026-03-26T01:36:05.824Z",
-      "summary": "Val-shard Hessian GPTQ calibration keeps the Full GPTQ+XSA-all stack legal while BigramHash(3072×112), LZMA9 compression, and Parallel Muon optimizer drive quality.",
+      "generatedAt": "2026-03-26T02:06:24.800Z",
+      "summary": "Applies full Hessian GPTQ calibrated on validation shards within a BigramHash 3072×112 XSA-all stack to avoid eval-time train data access.",
       "tags": [
         "quantization",
-        "optimizer",
-        "architecture"
+        "architecture",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
