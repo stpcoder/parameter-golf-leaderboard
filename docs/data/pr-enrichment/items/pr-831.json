@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T08:07:38.714Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 831,
+    "title": "Research: Why Novel Architectures Fail at 16MB — Throughput-Quantization Co-optimization",
+    "state": "open",
+    "updatedAt": "2026-03-26T08:02:01Z",
+    "headSha": "b11bcdb509cee46c3256e76e7f5b3e50aa112045",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/831",
+    "authorLogin": "sseanliu"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-21_NeuralCache_Research/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Shows six March-2026 architecture ideas fail because 16MB/600s demands tight throughput-quantization co-optimization across Muon, torch.compile, int6, and H100.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Throughput-quantization co-optimization lens",
+      "Per-row int6 quantization stress tests",
+      "Benchmarking new blocks on PR #549 SOTA stack"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T08:07:33.139Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 832,
+    "title": "Non-record: Byte-level transformer + JEPA auxiliary loss (val_bpb: 1.1903)",
+    "state": "open",
+    "updatedAt": "2026-03-26T08:03:20Z",
+    "headSha": "263276327b05ba64b6ace7a8386fce6418f9cb12",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/832",
+    "authorLogin": "jfprincz"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_ByteJEPA_Compression_1.1903/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Byte-level AR transformer augments next-byte CE with JEPA chunk-latent prediction and SIGReg regularization via a phased λ schedule.",
+    "tags": [
+      "architecture",
+      "training-schedule",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Byte-level AR backbone with JEPA chunk-latent predictor",
+      "SIGReg Epps-Pulley regularization on latent projections",
+      "Phased JEPA ramp schedule surrounding pure AR phases"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

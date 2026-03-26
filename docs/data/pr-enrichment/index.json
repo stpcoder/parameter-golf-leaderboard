@@ -1,8 +1,99 @@
 {
-  "generatedAt": "2026-03-26T07:37:23.148Z",
+  "generatedAt": "2026-03-26T08:08:10.576Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 832,
+      "title": "Non-record: Byte-level transformer + JEPA auxiliary loss (val_bpb: 1.1903)",
+      "status": "open",
+      "updatedAt": "2026-03-26T08:03:20Z",
+      "headSha": "263276327b05ba64b6ace7a8386fce6418f9cb12",
+      "generatedAt": "2026-03-26T08:07:33.139Z",
+      "summary": "Byte-level AR transformer augments next-byte CE with JEPA chunk-latent prediction and SIGReg regularization via a phased λ schedule.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-832.json"
+    },
+    {
+      "prNumber": 831,
+      "title": "Research: Why Novel Architectures Fail at 16MB — Throughput-Quantization Co-optimization",
+      "status": "open",
+      "updatedAt": "2026-03-26T08:02:01Z",
+      "headSha": "b11bcdb509cee46c3256e76e7f5b3e50aa112045",
+      "generatedAt": "2026-03-26T08:07:38.714Z",
+      "summary": "Shows six March-2026 architecture ideas fail because 16MB/600s demands tight throughput-quantization co-optimization across Muon, torch.compile, int6, and H100.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-831.json"
+    },
+    {
+      "prNumber": 830,
+      "title": "LeakyMixer: 11L leaky_relu(0.5)^2 + backoff n-gram mixer",
+      "status": "open",
+      "updatedAt": "2026-03-26T07:55:54Z",
+      "headSha": "64da311ceb52e24a49a5d4647ebc3e44f950316e",
+      "generatedAt": "2026-03-26T08:07:43.655Z",
+      "summary": "11-layer leaky_relu(0.5)^2 MLPs with longer warmdown mix neural logits with an eval-time C backoff n-gram cache via entropy-adaptive alpha.",
+      "tags": [
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-830.json"
+    },
+    {
+      "prNumber": 828,
+      "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
+      "status": "open",
+      "updatedAt": "2026-03-26T07:48:46Z",
+      "headSha": "3054956edded5ed9624d793371bacb8f1abe0dd8",
+      "generatedAt": "2026-03-26T08:07:49.710Z",
+      "summary": "10-layer GQA model with 3×LeakyReLU MLPs raises Muon matrix LR to 0.03, mixes int5/int6 quantization, and keeps multi-order n-gram backoff scoring.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-828.json"
+    },
     {
       "prNumber": 826,
       "title": "Record: Order-9 N-gram Backoff + Score-First TTT + GPTQ-Int5 (0.2951 BPB)",
@@ -308,17 +399,17 @@
     },
     {
       "prNumber": 810,
-      "title": "Record: Two-Phase Shared N-gram Cache + EMA-GPU (val_bpb=0.3001)",
+      "title": "Record: Per-Order Adaptive Alpha + N-gram Backoff (val_bpb=0.2995, 3-seed)",
       "status": "open",
-      "updatedAt": "2026-03-26T06:49:35Z",
-      "headSha": "c504e5cc8bca46ac8eb289fd04f1a9a832b7aa16",
-      "generatedAt": "2026-03-26T07:07:31.279Z",
-      "summary": "Per-order entropy-weighted n-gram cache with PE-confidence gating, phase-synced sharing, and GPU EMA-enabled GELU pre-enrichment.",
+      "updatedAt": "2026-03-26T07:52:52Z",
+      "headSha": "bdd17d5f474a23c4366512b159f2706e4285711d",
+      "generatedAt": "2026-03-26T08:07:57.235Z",
+      "summary": "Combines two-phase shared global n-gram cache with per-order entropy-adaptive alpha, pre-enrichment confidence signals, and GPU-resident EMA.",
       "tags": [
-        "quantization",
-        "attention",
         "architecture",
-        "evaluation"
+        "evaluation",
+        "optimizer",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -626,16 +717,16 @@
     },
     {
       "prNumber": 796,
-      "title": "Record: 0.4374 BPB — Distributed Prefill + Order-Adaptive 15-Gram + EBLS",
+      "title": "Record: 0.2880 BPB — Complementary Training + Per-Order Multipliers + Distributed Prefill + 15-Gram + EBLS",
       "status": "open",
-      "updatedAt": "2026-03-26T06:35:56Z",
-      "headSha": "d19036d842535f8acce816fcdc5b2c93fa0a4d9c",
-      "generatedAt": "2026-03-26T06:36:47.354Z",
-      "summary": "Looped EBLS + per-layer LoRA meets distributed n-gram cache prefill and order-adaptive entropy gating to align 8-GPU sliding eval with sequential scoring.",
+      "updatedAt": "2026-03-26T07:50:17Z",
+      "headSha": "c191be861e999259d25777591bc467d3d1ddcf4f",
+      "generatedAt": "2026-03-26T08:08:03.367Z",
+      "summary": "EBLS looped transformer + per-order gated 15-gram cache with complementary training focus and distributed prefill for consistent sliding eval.",
       "tags": [
         "architecture",
-        "evaluation",
-        "quantization"
+        "training-schedule",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1416,23 +1507,23 @@
       "prNumber": 754,
       "title": "Non-Record: 11L Parallel Muon + LeakyReLU² MLP3x + Legal TTT (val_bpb 1.1253)",
       "status": "open",
-      "updatedAt": "2026-03-26T07:25:19Z",
-      "headSha": "51af1baf30f05a5a1808cbcb5824a3850b968f8a",
-      "generatedAt": "2026-03-26T07:37:23.039Z",
-      "summary": "11L Transformer couples Parallel Muon parameter banking with LeakyReLU² MLP3x and a legal score-first TTT workflow to fine-tune quantized weights.",
+      "updatedAt": "2026-03-26T07:51:54Z",
+      "headSha": "a82f3b63aa09473545cb3e741364fdc2c4b1c2ae",
+      "generatedAt": "2026-03-26T08:08:10.465Z",
+      "summary": "11-layer model couples Parallel Muon banking, LeakyReLU² MLP3x, and legal score-first TTT SGD fine-tuning under inference-mode token scoring.",
       "tags": [
-        "muon",
-        "quantization",
-        "training-schedule",
-        "architecture"
+        "val-only",
+        "architecture",
+        "optimizer",
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-754.json"
     },
@@ -8396,29 +8487,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-319.json"
-    },
-    {
-      "prNumber": 318,
-      "title": "Neural Cache: Cross-Window KV Caching for Extended Eval Context (research proposal)",
-      "status": "open",
-      "updatedAt": "2026-03-21T06:35:35Z",
-      "headSha": "2f278eb6239af20c896f5a15c59e4fb659fbfd0c",
-      "generatedAt": "2026-03-21T06:59:35.849Z",
-      "summary": "Neural Cache keeps per-layer KV caches across sliding windows so each eval window attends to past contexts beyond 2K tokens without model changes.",
-      "tags": [
-        "attention",
-        "evaluation",
-        "architecture"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-318.json"
     },
     {
       "prNumber": 317,

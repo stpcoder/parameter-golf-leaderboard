@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T08:07:49.710Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 828,
+    "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
+    "state": "open",
+    "updatedAt": "2026-03-26T07:48:46Z",
+    "headSha": "3054956edded5ed9624d793371bacb8f1abe0dd8",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/828",
+    "authorLogin": "bigbag"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_10L_NgramBackoff_MatrixLR03/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "10-layer GQA model with 3×LeakyReLU MLPs raises Muon matrix LR to 0.03, mixes int5/int6 quantization, and keeps multi-order n-gram backoff scoring.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Systematic screening raised Muon matrix LR to 0.03",
+      "Mixed int5-MLP/int6-attn quantization with EMA and pruning",
+      "Multi-order backward n-gram backoff scoring"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

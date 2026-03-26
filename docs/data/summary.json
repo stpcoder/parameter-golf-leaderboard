@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-26T07:36:52.028Z",
+  "generatedAt": "2026-03-26T08:07:25.288Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 644,
+    "submissions": 647,
     "official": 1,
-    "openPr": 515,
+    "openPr": 518,
     "mergedPr": 22,
     "closedPr": 106,
-    "prBacked": 644,
+    "prBacked": 647,
     "readmeListed": 20,
     "collectorErrors": 0
   },
@@ -91,7 +91,7 @@
       }
     },
     "openPrMainTrack": {
-      "id": "record-records-track_10min_16mb-2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5",
+      "id": "record-records-track_10min_16mb-2026-03-26_PrefillCache_15gram_AdaptiveGating",
       "source": "pull_request",
       "status": "open",
       "category": "main-track",
@@ -103,32 +103,32 @@
         "category": "main-track"
       },
       "record": {
-        "folderName": "2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5",
-        "folderPath": "records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5",
-        "submissionPath": "records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/train_gpt.py"
+        "folderName": "2026-03-26_PrefillCache_15gram_AdaptiveGating",
+        "folderPath": "records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating",
+        "submissionPath": "records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/train_gpt.py"
       },
       "submission": {
-        "author": "AayushBaniya2006",
-        "githubId": "AayushBaniya2006",
-        "name": "Chunk-Based N-gram Backoff + Score-First TTT + LeakyReLU(0.9)² + GPTQ-Int5",
-        "blurb": "Order-9 chunk-based N-gram eval cache with entropy-adaptive alpha and per-order multipliers. Score-first TTT with LoRA. 11L 512d GQA 8/4, MLP 3.0x, XSA-4, LeakyReLU(0.9)², BigramHash(4096), GPTQ int5. Mean of 3 seeds: val_bpb 0.29519 (std 0.00013). N-gram cache processes 1M-token chunks with all ranks sharing cache state. Training 525s on 8xH100 SXM, eval 340s.",
+        "author": "Robert Sneiderman",
+        "githubId": "Robby955",
+        "name": "Complementary Training + Per-Order Multipliers + Distributed Prefill + 15-Gram + EBLS",
+        "blurb": "Four stacked ideas: (1) complementary training — downweight loss on n-gram-predictable tokens so the neural model focuses where caching can't help (from @pentxayc #803); (2) per-order multipliers — bigrams 0.3x, orders 5-15 at 2.0x with alpha_max=0.95 (from @AayushBaniya2006 #809); (3) distributed cache pre-fill — each rank pre-populates 15-gram hash tables from preceding positions, making 8-GPU eval identical to sequential; (4) order-adaptive entropy gating — per-order thresholds interpolating from center=2.5 (15-grams) to center=4.5 (bigrams). Built on EBLS architecture with the community n-gram backoff framework. 3-seed mean: 0.2880 BPB (std 0.00006).",
         "date": "2026-03-26"
       },
       "metrics": {
-        "valBpb": 0.29519,
-        "valLoss": 0.49841,
-        "preQuantValBpb": 1.1408,
+        "valBpb": 0.288,
+        "valLoss": null,
+        "preQuantValBpb": null,
         "preQuantValLoss": null,
-        "stepStop": 6091,
-        "wallclockSeconds": 525,
-        "evalTimeSeconds": 340
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
       },
       "artifact": {
-        "bytesTotal": 13413539,
-        "bytesCode": 180859,
+        "bytesTotal": 15324143,
+        "bytesCode": null,
         "bytesModelInt8Zlib": null
       },
       "flags": {
@@ -139,26 +139,26 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 809,
-        "title": "Record: Chunk-Based N-gram Backoff + Score-First TTT (0.295 BPB)",
+        "number": 796,
+        "title": "Record: 0.2880 BPB — Complementary Training + Per-Order Multipliers + Distributed Prefill + 15-Gram + EBLS",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/809",
-        "authorLogin": "AayushBaniya2006",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/796",
+        "authorLogin": "Robby955",
         "authorName": null,
-        "createdAt": "2026-03-26T04:20:24Z",
-        "updatedAt": "2026-03-26T05:24:48Z",
-        "headSha": "e6aca8ce6cea140349bf70f5a3245b81a67d4651",
-        "headRepo": "AayushBaniya2006/parameter-golf"
+        "createdAt": "2026-03-26T01:41:00Z",
+        "updatedAt": "2026-03-26T07:50:17Z",
+        "headSha": "c191be861e999259d25777591bc467d3d1ddcf4f",
+        "headRepo": "Robby955/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e6aca8ce6cea140349bf70f5a3245b81a67d4651/records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/e6aca8ce6cea140349bf70f5a3245b81a67d4651/records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/e6aca8ce6cea140349bf70f5a3245b81a67d4651/records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/e6aca8ce6cea140349bf70f5a3245b81a67d4651/records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/e6aca8ce6cea140349bf70f5a3245b81a67d4651/records/track_10min_16mb/2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5",
-        "pr": "https://github.com/openai/parameter-golf/pull/809",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c191be861e999259d25777591bc467d3d1ddcf4f/records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c191be861e999259d25777591bc467d3d1ddcf4f/records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c191be861e999259d25777591bc467d3d1ddcf4f/records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c191be861e999259d25777591bc467d3d1ddcf4f/records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c191be861e999259d25777591bc467d3d1ddcf4f/records/track_10min_16mb/2026-03-26_PrefillCache_15gram_AdaptiveGating",
+        "pr": "https://github.com/openai/parameter-golf/pull/796",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
