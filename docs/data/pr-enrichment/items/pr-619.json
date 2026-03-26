@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T17:42:55.020Z",
+  "generatedAt": "2026-03-26T18:12:38.708Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 619,
     "title": "non-record 16MB A100 SXM run (10L mixed int5/int6 + EMA + QAT)",
     "state": "open",
-    "updatedAt": "2026-03-26T17:23:44Z",
-    "headSha": "90b1916b401c1a6a46fee34f150d6328aac8fe27",
+    "updatedAt": "2026-03-26T18:02:49Z",
+    "headSha": "ef4e06002b758dae775c465de9c8555af7056f8c",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/619",
     "authorLogin": "zeal175"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer GPT uses mixed int5/int6 quantization with EMA-exported weights and late-stage QAT plus bigram hashing for a 16MB SXM run.",
+    "summary": "10-layer model uses mixed int5/int6 quantization with EMA-exported weights and final-fraction QAT plus BigramHash tokenization.",
     "tags": [
       "quantization",
+      "mixed-precision",
       "tokenization",
-      "regularization",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "mixed int5/int6 quantization separating MLP vs attention/bigram weights",
-      "EMA-exported weights combined with final-fraction QAT (0.15)",
-      "BigramHash vocabulary compression to fit 16MB limit"
+      "mixed int5/int6 quantization for MLP vs attention",
+      "EMA-exported weights with late QAT for deployment",
+      "BigramHash tokenization to enrich vocabulary"
     ]
   },
   "compatibility": {

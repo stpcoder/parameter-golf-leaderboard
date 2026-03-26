@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T08:08:03.367Z",
+  "generatedAt": "2026-03-26T18:12:16.353Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 796,
-    "title": "Record: 0.2880 BPB — Complementary Training + Per-Order Multipliers + Distributed Prefill + 15-Gram + EBLS",
+    "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
     "state": "open",
-    "updatedAt": "2026-03-26T07:50:17Z",
-    "headSha": "c191be861e999259d25777591bc467d3d1ddcf4f",
+    "updatedAt": "2026-03-26T18:02:31Z",
+    "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/796",
     "authorLogin": "Robby955"
   },
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "EBLS looped transformer + per-order gated 15-gram cache with complementary training focus and distributed prefill for consistent sliding eval.",
+    "summary": "Hierarchical n-gram cache mixes counts with a neural prior via one Dirichlet-Multinomial concentration, atop EBLS and distributed prefill.",
     "tags": [
-      "architecture",
-      "training-schedule",
-      "evaluation"
+      "evaluation",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Complementary training downweights cache-predictable tokens",
-      "Per-order multipliers boost high-order n-grams while suppressing noisy bigrams",
-      "Distributed cache prefill aligns multi-GPU sliding eval with sequential results"
+      "Dirichlet-Multinomial smoothing with neural prior",
+      "Recursive 2-15 gram cache backoff",
+      "Distributed prefill for multi-rank evaluation"
     ]
   },
   "compatibility": {

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T17:42:13.858Z",
+  "generatedAt": "2026-03-26T18:12:02.764Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 814,
     "title": "Record: X-WING 3D Cubric + Complementary Training (val_bpb=0.4820)",
     "state": "open",
-    "updatedAt": "2026-03-26T17:27:02Z",
-    "headSha": "88ec4cabaed7359a754f2f68e4874812e0f98d9c",
+    "updatedAt": "2026-03-26T17:46:18Z",
+    "headSha": "5876cf5cfb9833dc529f3d378a30bd3eb6d648c3",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/814",
     "authorLogin": "newjordan"
   },
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Chunk-shared n-gram tables feed 3D cubric multipliers and complementary training to adaptively weight order/entropy regimes before mixing with neural outputs.",
+    "summary": "Chunk-shared n-gram tables combine with warm-started 3D cubric multipliers and complementary bigram-reweighted training to adapt the mixture alpha per regime.",
     "tags": [
-      "evaluation",
-      "regularization"
+      "architecture",
+      "regularization",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Shared chunk-based n-gram tables across ranks",
-      "3D cubric multipliers conditioned on order, entropy, and count with warm start",
-      "Complementary bigram-weighted training loss"
+      "Warm-started 3D cubric multipliers gating alpha by order/entropy/count",
+      "Complementary training downweights bigram-predictable tokens during model training",
+      "Shared chunk-based n-gram tables expose every rank to the full token stream"
     ]
   },
   "compatibility": {

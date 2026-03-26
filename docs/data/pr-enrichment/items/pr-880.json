@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-26T18:11:41.197Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 880,
+    "title": "Record: PhraseCache + OrderAdaptive N-gram + RegimeTracker — val_bpb 0.1003 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-03-26T18:06:42Z",
+    "headSha": "56905be419483309a413735ba8f7e457da3a18f7",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/880",
+    "authorLogin": "RoyiRa"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_PhraseCache_OrderAdaptiveNgram_RegimeTracker_0.1003/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines long variable-length phrase cache plus order-adaptive n-gram/regime gating with score-first TTT and GPTQ-aware mixing to curb eval redundancy.",
+    "tags": [
+      "evaluation",
+      "quantization",
+      "optimizer"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Long suffix-matching phrase cache probing multiple lengths via rolling hashes",
+      "Order-adaptive entropy gating with regime-aware alpha multipliers over orders 2–9",
+      "Score-first TTT with GPTQ int5-aware Hedge mixer and Polyak EMA"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

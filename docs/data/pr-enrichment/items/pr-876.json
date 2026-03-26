@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-03-26T18:11:51.562Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 876,
+    "title": "10L + Two-Pass Order-11 N-gram Backoff (0.5863 BPB)",
+    "state": "open",
+    "updatedAt": "2026-03-26T17:47:45Z",
+    "headSha": "7a81a23a5ad782a2eaeee36d2fefea894cb9ca9b",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/876",
+    "authorLogin": "Bortlesboat"
+  },
+  "inputs": {
+    "hash": "c4f8d017d13e812b0ad5a78b677f8350df1124736cd3f84c8d4e37f273206c70",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_10L_TwoPass_Order11_Ngram/README.md",
+      "records/track_10min_16mb/2026-03-25_10L_NgramBackoff_EntropyAlpha/README.md",
+      "records/track_10min_16mb/2026-03-20_Int5MLP_BigramHash_SWA_NeuralCache_TTT/README.md"
+    ],
+    "submissionCount": 3
+  },
+  "output": {
+    "summary": "10L GQA model with mixed int5/int6 quantization uses two-pass order-11 hashed n-gram cache with entropy-adaptive interpolation.",
+    "tags": [
+      "evaluation",
+      "quantization",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Two-pass order-11 hashed n-gram backoff",
+      "Entropy-adaptive gating for cache interpolation",
+      "Mixed int5/int6 quantized GQA architecture"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,8 +1,100 @@
 {
-  "generatedAt": "2026-03-26T17:42:55.112Z",
+  "generatedAt": "2026-03-26T18:12:47.803Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 880,
+      "title": "Record: PhraseCache + OrderAdaptive N-gram + RegimeTracker — val_bpb 0.1003 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-26T18:06:42Z",
+      "headSha": "56905be419483309a413735ba8f7e457da3a18f7",
+      "generatedAt": "2026-03-26T18:11:41.197Z",
+      "summary": "Combines long variable-length phrase cache plus order-adaptive n-gram/regime gating with score-first TTT and GPTQ-aware mixing to curb eval redundancy.",
+      "tags": [
+        "evaluation",
+        "quantization",
+        "optimizer"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-880.json"
+    },
+    {
+      "prNumber": 877,
+      "title": "Non-record: sin² activation + causal screening pipeline",
+      "status": "open",
+      "updatedAt": "2026-03-26T18:00:01Z",
+      "headSha": "94ca331c663a4c988eafc4bb9f67be038d119327",
+      "generatedAt": "2026-03-26T18:11:45.449Z",
+      "summary": "sin² periodic activation replaces relu² in MLPs guided by DAG-driven causal screening plus adaptive multi-token and rho1 masking experiments.",
+      "tags": [
+        "architecture",
+        "non-record",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-877.json"
+    },
+    {
+      "prNumber": 876,
+      "title": "10L + Two-Pass Order-11 N-gram Backoff (0.5863 BPB)",
+      "status": "open",
+      "updatedAt": "2026-03-26T17:47:45Z",
+      "headSha": "7a81a23a5ad782a2eaeee36d2fefea894cb9ca9b",
+      "generatedAt": "2026-03-26T18:11:51.562Z",
+      "summary": "10L GQA model with mixed int5/int6 quantization uses two-pass order-11 hashed n-gram cache with entropy-adaptive interpolation.",
+      "tags": [
+        "evaluation",
+        "quantization",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-876.json"
+    },
+    {
+      "prNumber": 875,
+      "title": "New Record: Pure Neural GDN 1.0226 BPB (shalyhinpavel)",
+      "status": "open",
+      "updatedAt": "2026-03-26T17:45:57Z",
+      "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
+      "generatedAt": "2026-03-26T18:11:56.157Z",
+      "summary": "Gated DeltaNet stack plus FastLoader and curriculum batch scaling to fit a zero-shot pure-neural model under 16MB in 10min without TTT.",
+      "tags": [
+        "architecture",
+        "training-schedule",
+        "mixed-precision"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-875.json"
+    },
     {
       "prNumber": 874,
       "title": "Non-record: Random Linear Maps + Learned Adapters (val_bpb=1.607, 1.92MB artifact)",
@@ -929,13 +1021,14 @@
       "prNumber": 814,
       "title": "Record: X-WING 3D Cubric + Complementary Training (val_bpb=0.4820)",
       "status": "open",
-      "updatedAt": "2026-03-26T17:27:02Z",
-      "headSha": "88ec4cabaed7359a754f2f68e4874812e0f98d9c",
-      "generatedAt": "2026-03-26T17:42:13.858Z",
-      "summary": "Chunk-shared n-gram tables feed 3D cubric multipliers and complementary training to adaptively weight order/entropy regimes before mixing with neural outputs.",
+      "updatedAt": "2026-03-26T17:46:18Z",
+      "headSha": "5876cf5cfb9833dc529f3d378a30bd3eb6d648c3",
+      "generatedAt": "2026-03-26T18:12:02.764Z",
+      "summary": "Chunk-shared n-gram tables combine with warm-started 3D cubric multipliers and complementary bigram-reweighted training to adapt the mixture alpha per regime.",
       "tags": [
-        "evaluation",
-        "regularization"
+        "architecture",
+        "regularization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1045,21 +1138,22 @@
       "prNumber": 809,
       "title": "Record: Chunk-Based N-gram Backoff + Score-First TTT (0.295 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-26T05:24:48Z",
+      "updatedAt": "2026-03-26T18:10:20Z",
       "headSha": "e6aca8ce6cea140349bf70f5a3245b81a67d4651",
-      "generatedAt": "2026-03-26T05:37:10.715Z",
-      "summary": "Chunk-based order-9 n-gram backoff with entropy-adaptive interpolation and synchronized multi-GPU cache updates complements the GPTQ int5 model plus score-first TTT.",
+      "generatedAt": "2026-03-26T18:12:09.630Z",
+      "summary": "Chunk-synchronized order-9 N-gram cache interpolates with the model using entropy/order-adaptive mixing while score-first TTT LoRA tunes on validation chunks.",
       "tags": [
+        "val-only",
         "evaluation",
         "quantization"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-809.json"
     },
@@ -1200,29 +1294,6 @@
       "file": "items/pr-803.json"
     },
     {
-      "prNumber": 802,
-      "title": "10L + Multi-Order N-gram Backoff (0.9123 BPB)",
-      "status": "open",
-      "updatedAt": "2026-03-26T03:49:03Z",
-      "headSha": "e5a23775c260a7a30f111b03268d4f9b9b4e1dfc",
-      "generatedAt": "2026-03-26T04:07:01.728Z",
-      "summary": "10-layer Int5/Int6 GQA model with Partial RoPE/XSA and BigramHash feeding a multi-order n-gram cache interpolated by entropy-adaptive alpha.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-802.json"
-    },
-    {
       "prNumber": 801,
       "title": "Non-Record: Training on the Apple Neural Engine",
       "status": "open",
@@ -1337,16 +1408,15 @@
     },
     {
       "prNumber": 796,
-      "title": "Record: 0.2880 BPB — Complementary Training + Per-Order Multipliers + Distributed Prefill + 15-Gram + EBLS",
+      "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
       "status": "open",
-      "updatedAt": "2026-03-26T07:50:17Z",
-      "headSha": "c191be861e999259d25777591bc467d3d1ddcf4f",
-      "generatedAt": "2026-03-26T08:08:03.367Z",
-      "summary": "EBLS looped transformer + per-order gated 15-gram cache with complementary training focus and distributed prefill for consistent sliding eval.",
+      "updatedAt": "2026-03-26T18:02:31Z",
+      "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
+      "generatedAt": "2026-03-26T18:12:16.353Z",
+      "summary": "Hierarchical n-gram cache mixes counts with a neural prior via one Dirichlet-Multinomial concentration, atop EBLS and distributed prefill.",
       "tags": [
-        "architecture",
-        "training-schedule",
-        "evaluation"
+        "evaluation",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -3241,15 +3311,15 @@
       "prNumber": 675,
       "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
       "status": "open",
-      "updatedAt": "2026-03-26T17:35:11Z",
-      "headSha": "4d3f2e5eda96ead2e9f2506b83deca0048b10ffa",
-      "generatedAt": "2026-03-26T17:42:45.771Z",
-      "summary": "Stacked LeakyReLU² baseline with LAWA averaging, lzma compression, ramped WD, and val-set training on 1xH100 for a compact leaderboard entry.",
+      "updatedAt": "2026-03-26T18:08:45Z",
+      "headSha": "65b5ee4dfb43c63481e698d2a03e8a7ce21416fd",
+      "generatedAt": "2026-03-26T18:12:23.469Z",
+      "summary": "10-layer model with LeakyReLU², LAWA averaging, ramped WD, lzma compression, and val-set training to boost quality on 1xH100.",
       "tags": [
         "val-only",
-        "compression",
         "training-schedule",
-        "regularization"
+        "regularization",
+        "compression"
       ],
       "flags": {
         "usesValOnly": true,
@@ -3847,16 +3917,16 @@
     },
     {
       "prNumber": 634,
-      "title": "Record: 11L XSA-all + Full GPTQ + Parallel Muon + Selective Pruning (val_bpb: 1.1171)",
+      "title": "Record: 11L XSA-all + Full GPTQ (Budget-Legal) + Parallel Muon + Selective Pruning (val_bpb: 1.1178, 3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-24T17:45:38Z",
-      "headSha": "4315a016ddfaec02f17120afddafcf12d43b9ed9",
-      "generatedAt": "2026-03-24T17:56:17.533Z",
-      "summary": "Combines XSA on all 11 layers with Parallel Muon plus Hessian-aware GPTQ, selective ±1 pruning, and LZMA-compressed int6 weights.",
+      "updatedAt": "2026-03-26T17:47:18Z",
+      "headSha": "864d15389c668e1e7db5cd2399a4a2d7f0b38d74",
+      "generatedAt": "2026-03-26T18:12:33.418Z",
+      "summary": "XSA across all 11 layers pairs with Parallel Muon + parameter banking, budget-legal Hessian GPTQ int6, selective pruning, and LZMA compression.",
       "tags": [
         "architecture",
-        "quantization",
         "optimizer",
+        "quantization",
         "compression"
       ],
       "flags": {
@@ -4084,14 +4154,14 @@
       "prNumber": 619,
       "title": "non-record 16MB A100 SXM run (10L mixed int5/int6 + EMA + QAT)",
       "status": "open",
-      "updatedAt": "2026-03-26T17:23:44Z",
-      "headSha": "90b1916b401c1a6a46fee34f150d6328aac8fe27",
-      "generatedAt": "2026-03-26T17:42:55.020Z",
-      "summary": "10-layer GPT uses mixed int5/int6 quantization with EMA-exported weights and late-stage QAT plus bigram hashing for a 16MB SXM run.",
+      "updatedAt": "2026-03-26T18:02:49Z",
+      "headSha": "ef4e06002b758dae775c465de9c8555af7056f8c",
+      "generatedAt": "2026-03-26T18:12:38.708Z",
+      "summary": "10-layer model uses mixed int5/int6 quantization with EMA-exported weights and final-fraction QAT plus BigramHash tokenization.",
       "tags": [
         "quantization",
+        "mixed-precision",
         "tokenization",
-        "regularization",
         "non-record"
       ],
       "flags": {
@@ -11261,17 +11331,17 @@
     },
     {
       "prNumber": 181,
-      "title": "Aweb Ultimate — 1.1210 BPB | 11L LeakyReLU² XSA4 PartialRoPE EMA ParallelMuon",
+      "title": "Aweb Ultimate — 1.1190 BPB | #1 | 11L LeakyReLU² XSA4 EMA TTT",
       "status": "open",
-      "updatedAt": "2026-03-26T15:09:57Z",
-      "headSha": "f1ab6c85bee065db27650e82467a9dd4abd758e2",
-      "generatedAt": "2026-03-26T15:12:23.154Z",
-      "summary": "11-layer LeakyReLU² model with last-layer XSA, Partial RoPE, EMA, and Parallel Muon training, then GPTQ-lite int6/int8 quantization plus LZMA compression.",
+      "updatedAt": "2026-03-26T18:10:37Z",
+      "headSha": "de6008cfb19b47412822d73d72427b78b4064a1b",
+      "generatedAt": "2026-03-26T18:12:47.778Z",
+      "summary": "Combines an 11L GQA+LeakyReLU² stack with Partial RoPE/U-Net skips, Muon optimizer, GPTQ-lite int6 quant, and sliding-window TTT/EMA evaluation.",
       "tags": [
         "architecture",
-        "attention",
         "optimizer",
-        "quantization"
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
