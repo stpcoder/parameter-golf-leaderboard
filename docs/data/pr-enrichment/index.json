@@ -1,16 +1,62 @@
 {
-  "generatedAt": "2026-03-26T01:06:14.216Z",
+  "generatedAt": "2026-03-26T01:36:12.800Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 795,
+      "title": "Record: 11L + order-adaptive 11-gram (mean val_bpb=0.8881)",
+      "status": "open",
+      "updatedAt": "2026-03-26T01:31:55Z",
+      "headSha": "aa7cb3c537d4a1e2cc49bc44913b724400a0fa5e",
+      "generatedAt": "2026-03-26T01:35:49.064Z",
+      "summary": "11-layer XSA-all transformer pairs GPTQ-lite int6 quantization with an order-adaptive entropy-gated 2-11 n-gram cache for deterministic score-first evaluation.",
+      "tags": [
+        "architecture",
+        "evaluation",
+        "quantization",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-795.json"
+    },
+    {
+      "prNumber": 794,
+      "title": "Muon Optimizer Tuning: val_bpb 1.3346 by jeremyschied",
+      "status": "open",
+      "updatedAt": "2026-03-26T01:26:41Z",
+      "headSha": "6684ee88985f5fa71c251b7f8857e03d9e874b6c",
+      "generatedAt": "2026-03-26T01:35:54.150Z",
+      "summary": "Adjusts NanoGPT's Muon optimizer hyperparameters (matrix LR 0.05, backend steps 6, momentum warmup 300, grad clip/warmdown tweaks) on a single H100.",
+      "tags": [
+        "muon",
+        "optimizer"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-794.json"
+    },
+    {
       "prNumber": 792,
       "title": "11L LeakyReLU² + XSA-all + Full GPTQ + 5-gram Backoff (1.0340 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-26T01:03:13Z",
-      "headSha": "bd39645ecc2ad18df62c9c38840b333ba783b7a3",
-      "generatedAt": "2026-03-26T01:05:50.145Z",
-      "summary": "11L/512d transformer uses LeakyReLU(0.5)², XSA on every layer, Hessian GPTQ quantization, and entropy-weighted 5-gram backoff during evaluation.",
+      "updatedAt": "2026-03-26T01:05:47Z",
+      "headSha": "c7a9540ef9630c87443e2fc750ceab5bef6c3c83",
+      "generatedAt": "2026-03-26T01:35:59.219Z",
+      "summary": "11-layer transformer pairs LeakyReLU(0.5)^2, XSA in every block, and Hessian GPTQ with entropy-steered 5-gram backoff for eval scoring.",
       "tags": [
         "architecture",
         "attention",
@@ -278,28 +324,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-780.json"
-    },
-    {
-      "prNumber": 779,
-      "title": "Record: BackoffNgramMixer + Drift-Free TTT (3-seed mean val_bpb=0.6683)",
-      "status": "open",
-      "updatedAt": "2026-03-26T00:35:02Z",
-      "headSha": "bd5e1b9c1e70fbc4e3ada5b5f061b684666ee33b",
-      "generatedAt": "2026-03-26T00:36:09.167Z",
-      "summary": "Uses entropy-adaptive multi-order n-gram backoff plus drift-free Q-projection TTT to replace the oracle gate with compliant eval-time mixing.",
-      "tags": [
-        "evaluation",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-779.json"
     },
     {
       "prNumber": 778,
@@ -1112,16 +1136,16 @@
     },
     {
       "prNumber": 728,
-      "title": "WIP: GPTQ + XSA-all + BigramHash 3072×112",
+      "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-25T20:50:51Z",
+      "updatedAt": "2026-03-26T01:18:16Z",
       "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-      "generatedAt": "2026-03-25T21:04:14.137Z",
-      "summary": "Full-Hessian GPTQ calibrated on val shards and a 3072×112 BigramHash stack keep the XSA-all/Parallel Muon pipeline within the 16MB budget.",
+      "generatedAt": "2026-03-26T01:36:05.824Z",
+      "summary": "Val-shard Hessian GPTQ calibration keeps the Full GPTQ+XSA-all stack legal while BigramHash(3072×112), LZMA9 compression, and Parallel Muon optimizer drive quality.",
       "tags": [
         "quantization",
-        "architecture",
-        "optimizer"
+        "optimizer",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2299,27 +2323,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-660.json"
-    },
-    {
-      "prNumber": 659,
-      "title": "Record: 5-gram Eval Cache + LeakyReLU² + Parallel Muon val_bpb: 1.0920 (3-seed mean, std 0.0007) | ~15.9 MB | 8×H100 SXM",
-      "status": "closed",
-      "updatedAt": "2026-03-25T01:56:47Z",
-      "headSha": "d9349d06fca5021e39ecb906d09516b2146f8114",
-      "generatedAt": "2026-03-26T00:36:27.099Z",
-      "summary": "Introduces a CPU-side confidence-gated 5-gram cache that mixes with sliding-window base scores to boost eval predictions without extra training overhead.",
-      "tags": [
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-659.json"
     },
     {
       "prNumber": 658,
@@ -10113,15 +10116,14 @@
       "prNumber": 182,
       "title": "Non-record: Linearized Neural Memory + TTT (val_bpb=1.1844)",
       "status": "open",
-      "updatedAt": "2026-03-26T00:53:39Z",
-      "headSha": "57ae677edb2b8fe2d3d06d7002b4f9f8a5b8c9b2",
-      "generatedAt": "2026-03-26T01:06:14.191Z",
-      "summary": "Adds Titans-style linearized neural memory per block via causal cumsum attention alongside LoRA TTT, overtone init, and quantized layers.",
+      "updatedAt": "2026-03-26T01:17:15Z",
+      "headSha": "bb6b8fd61c5c846334d0b0ebc589a6d12a4764b9",
+      "generatedAt": "2026-03-26T01:36:12.774Z",
+      "summary": "Titans-style neural memory per block is linearized into causal linear attention via cumsum and paired with LoRA TTT, overtone init, and int6 mixed precision.",
       "tags": [
         "architecture",
         "attention",
-        "quantization",
-        "evaluation"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,

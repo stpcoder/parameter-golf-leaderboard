@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T01:35:54.150Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 794,
+    "title": "Muon Optimizer Tuning: val_bpb 1.3346 by jeremyschied",
+    "state": "open",
+    "updatedAt": "2026-03-26T01:26:41Z",
+    "headSha": "6684ee88985f5fa71c251b7f8857e03d9e874b6c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/794",
+    "authorLogin": "jeremyschied"
+  },
+  "inputs": {
+    "hash": "c4f8d017d13e812b0ad5a78b677f8350df1124736cd3f84c8d4e37f273206c70",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-24_5gram_LeakyReLU_ParallelMuon/README.md",
+      "records/track_10min_16mb/2026-03-25_MuonTuned_SingleH100_jeremyschied/README.md",
+      "records/track_10min_16mb/2026-03-25_BackoffNgramMixer_DriftFreeTTT_0.6683/README.md"
+    ],
+    "submissionCount": 3
+  },
+  "output": {
+    "summary": "Adjusts NanoGPT's Muon optimizer hyperparameters (matrix LR 0.05, backend steps 6, momentum warmup 300, grad clip/warmdown tweaks) on a single H100.",
+    "tags": [
+      "muon",
+      "optimizer"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Matrix LR 0.05 Muon tuning",
+      "Extended momentum warmup with warmdown schedule",
+      "Gradient clipping for stability"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

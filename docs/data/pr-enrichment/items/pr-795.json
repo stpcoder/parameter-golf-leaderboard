@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-26T01:35:49.064Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 795,
+    "title": "Record: 11L + order-adaptive 11-gram (mean val_bpb=0.8881)",
+    "state": "open",
+    "updatedAt": "2026-03-26T01:31:55Z",
+    "headSha": "aa7cb3c537d4a1e2cc49bc44913b724400a0fa5e",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/795",
+    "authorLogin": "hypery11"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_11L_order_adaptive_11gram/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer XSA-all transformer pairs GPTQ-lite int6 quantization with an order-adaptive entropy-gated 2-11 n-gram cache for deterministic score-first evaluation.",
+    "tags": [
+      "architecture",
+      "evaluation",
+      "quantization",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "11L XSA-all with LeakyReLU², 3x MLP, GQA, and LN scaling",
+      "GPTQ-lite int6 quantization with EMA, Tight SWA, Late QAT, and zstd-22 packaging",
+      "Order-adaptive entropy-gated n-gram cache (orders 2-11) with Score-first deterministic eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
