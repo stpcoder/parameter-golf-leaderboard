@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T20:48:18.079Z",
+  "generatedAt": "2026-03-27T21:18:24.790Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -680,7 +680,7 @@
         "authorLogin": "haikosys",
         "authorName": null,
         "createdAt": "2026-03-27T20:42:52Z",
-        "updatedAt": "2026-03-27T20:42:52Z",
+        "updatedAt": "2026-03-27T20:57:05Z",
         "headSha": "2c970e959c151916411737173c7eba618975d879",
         "headRepo": "haikosys/parameter-golf"
       },
@@ -1934,7 +1934,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_PrefillCache_15gram_AdaptiveGating",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1982,14 +1982,14 @@
       "pr": {
         "number": 796,
         "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/796",
         "authorLogin": "Robby955",
         "authorName": null,
         "createdAt": "2026-03-26T01:41:00Z",
-        "updatedAt": "2026-03-26T19:35:45Z",
+        "updatedAt": "2026-03-27T20:56:42Z",
         "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
         "headRepo": "Robby955/parameter-golf"
       },
@@ -2520,7 +2520,7 @@
       },
       "pr": {
         "number": 978,
-        "title": "Rerun of #972 with actual full-vocab normalization",
+        "title": "Review: Rerun of #972 with actual full-vocab normalization",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -2528,7 +2528,7 @@
         "authorLogin": "AnirudhRahul",
         "authorName": null,
         "createdAt": "2026-03-27T19:43:35Z",
-        "updatedAt": "2026-03-27T19:57:37Z",
+        "updatedAt": "2026-03-27T21:02:04Z",
         "headSha": "6aada6ccb6af51539c9b2a11292f95284dfe9b62",
         "headRepo": "AnirudhRahul/parameter-golf"
       },
@@ -5022,7 +5022,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_7gram_Cache_XSA11_EBLS",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -5070,14 +5070,14 @@
       "pr": {
         "number": 777,
         "title": "Record: 0.9623 BPB — 7-Gram Entropy Cache + XSA-all + EBLS",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/777",
         "authorLogin": "Robby955",
         "authorName": null,
         "createdAt": "2026-03-25T22:02:26Z",
-        "updatedAt": "2026-03-25T22:02:26Z",
+        "updatedAt": "2026-03-27T20:56:44Z",
         "headSha": "2e3d0cc2863eb71a4befd01e670c9da940694ff3",
         "headRepo": "Robby955/parameter-golf"
       },
@@ -33333,17 +33333,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 950,
-        "title": "2026-03-27_PhaseCoherenceGatedGradients submission",
+        "number": 984,
+        "title": "submission 2026-03-27_PhaseCoherenceGatedGradients PIC-GID + ParallelMuon",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/950",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/984",
         "authorLogin": "jzgdev",
         "authorName": null,
-        "createdAt": "2026-03-27T12:12:02Z",
-        "updatedAt": "2026-03-27T12:12:02Z",
-        "headSha": "1707e27de0be3b008987ee23d31abed9109e8bfc",
+        "createdAt": "2026-03-27T21:14:25Z",
+        "updatedAt": "2026-03-27T21:16:33Z",
+        "headSha": "cc5cda4a4b4eb1151812caa49e228282618cf9b4",
         "headRepo": "jzgdev/parameter-golf"
       },
       "links": {
@@ -33352,7 +33352,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/3d29b3296fea2f5cd8bdbe021c0e9ca714a2410a/records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/3d29b3296fea2f5cd8bdbe021c0e9ca714a2410a/records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/3d29b3296fea2f5cd8bdbe021c0e9ca714a2410a/records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients",
-        "pr": "https://github.com/openai/parameter-golf/pull/950",
+        "pr": "https://github.com/openai/parameter-golf/pull/984",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -42906,6 +42906,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/ecd1e233b73c86ee1302dd77b7581757775297df/records/track_10min_16mb/2026-03-27_EntropyRegularized/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/ecd1e233b73c86ee1302dd77b7581757775297df/records/track_10min_16mb/2026-03-27_EntropyRegularized",
         "pr": "https://github.com/openai/parameter-golf/pull/930",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-27_11L_LeakyReLU_EMA_Int6",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_11L_LeakyReLU_EMA_Int6",
+        "folderPath": "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/train_gpt.py"
+      },
+      "submission": {
+        "author": "Glorry Sibomana",
+        "githubId": "WHITELOTUS0",
+        "name": "11L LeakyReLU(0.5)^2 + EMA + Int6 + Tuned Hyperparams",
+        "blurb": "11 layers 3x MLP with LeakyReLU(0.5)^2 activation, EMA(0.997) weight averaging, int6+zstd-22 quantization, seq_len 2048 with NTK RoPE, Muon momentum 0.99, grad clip 0.3, warmdown 3000",
+        "date": "2026-03-27T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 983,
+        "title": "Non-record: 11L LeakyReLU(0.5)^2 + EMA + Int6 Quantization",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/983",
+        "authorLogin": "WHITELOTUS0",
+        "authorName": null,
+        "createdAt": "2026-03-27T20:50:23Z",
+        "updatedAt": "2026-03-27T20:50:23Z",
+        "headSha": "08e1320e4ef31694c8a1b49e1fd04fc6ccd65986",
+        "headRepo": "WHITELOTUS0/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/08e1320e4ef31694c8a1b49e1fd04fc6ccd65986/records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/08e1320e4ef31694c8a1b49e1fd04fc6ccd65986/records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/08e1320e4ef31694c8a1b49e1fd04fc6ccd65986/records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/08e1320e4ef31694c8a1b49e1fd04fc6ccd65986/records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/08e1320e4ef31694c8a1b49e1fd04fc6ccd65986/records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6",
+        "pr": "https://github.com/openai/parameter-golf/pull/983",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

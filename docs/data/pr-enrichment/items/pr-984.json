@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-27T21:18:30.940Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 984,
+    "title": "submission 2026-03-27_PhaseCoherenceGatedGradients PIC-GID + ParallelMuon",
+    "state": "open",
+    "updatedAt": "2026-03-27T21:16:33Z",
+    "headSha": "cc5cda4a4b4eb1151812caa49e228282618cf9b4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/984",
+    "authorLogin": "jzgdev"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "PIC-GD adapts Muon+Adam transformer training with pseudo-complex coherence gates that fade to Adam/Muon finetuning.",
+    "tags": [
+      "optimizer",
+      "muon",
+      "regularization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Phase-coherence gated gradient scaling",
+      "Pseudo-complex latent-reference pairing",
+      "Late-stage switch to standard Adam/Muon finetuning"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T20:48:25.453Z",
+  "generatedAt": "2026-03-27T21:18:41.404Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 982,
     "title": " Record: Fort Knox — Legal Packed Training Cache, Zero Val Adaptation (val_bpb 0.0638, 3-seed)",
     "state": "open",
-    "updatedAt": "2026-03-27T20:42:52Z",
+    "updatedAt": "2026-03-27T20:57:05Z",
     "headSha": "2c970e959c151916411737173c7eba618975d879",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/982",
     "authorLogin": "haikosys"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Tiny 6L/256d FP16 model blends frozen training-built packed n-gram cache with tempered logits, keeping eval stateless and legal.",
+    "summary": "Fort Knox trains a 6L FP16 transformer and packs a frozen order-2-9 n-gram cache into the artifact, then blends neural logits with cached stats during single-pass eval.",
     "tags": [
       "val-only",
       "architecture",
@@ -27,10 +27,11 @@
       "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Training and evaluation only use the artifact; no validation-only training.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "- Packed training n-gram cache serialized with FP16 weights",
-      "- Single-pass eval blending frozen cache stats and neural logits with temperature sharpening"
+      "Packed training-built order-2-9 n-gram cache stored in artifact",
+      "Temperature-sharpened logits blended with frozen cache during single-pass evaluation",
+      "6L/256d FP16 transformer trained within the 600s budget"
     ]
   },
   "compatibility": {

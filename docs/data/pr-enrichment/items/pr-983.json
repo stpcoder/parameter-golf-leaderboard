@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T21:18:36.099Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 983,
+    "title": "Non-record: 11L LeakyReLU(0.5)^2 + EMA + Int6 Quantization",
+    "state": "open",
+    "updatedAt": "2026-03-27T20:50:23Z",
+    "headSha": "08e1320e4ef31694c8a1b49e1fd04fc6ccd65986",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/983",
+    "authorLogin": "WHITELOTUS0"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_11L_LeakyReLU_EMA_Int6/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer transformer with 3× MLP, LeakyReLU(0.5)^2, EMA averaging, and int6+zstd-22 quantization packs 26.5M params into 16MB.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "11L transformer with 3× MLP expansion",
+      "LeakyReLU(0.5)^2 plus EMA(0.997) weight averaging",
+      "Int6 weight quantization with zstd-22 compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

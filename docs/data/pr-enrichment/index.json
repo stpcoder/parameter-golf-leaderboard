@@ -1,16 +1,63 @@
 {
-  "generatedAt": "2026-03-27T20:48:38.138Z",
+  "generatedAt": "2026-03-27T21:19:00.182Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 984,
+      "title": "submission 2026-03-27_PhaseCoherenceGatedGradients PIC-GID + ParallelMuon",
+      "status": "open",
+      "updatedAt": "2026-03-27T21:16:33Z",
+      "headSha": "cc5cda4a4b4eb1151812caa49e228282618cf9b4",
+      "generatedAt": "2026-03-27T21:18:30.940Z",
+      "summary": "PIC-GD adapts Muon+Adam transformer training with pseudo-complex coherence gates that fade to Adam/Muon finetuning.",
+      "tags": [
+        "optimizer",
+        "muon",
+        "regularization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-984.json"
+    },
+    {
+      "prNumber": 983,
+      "title": "Non-record: 11L LeakyReLU(0.5)^2 + EMA + Int6 Quantization",
+      "status": "open",
+      "updatedAt": "2026-03-27T20:50:23Z",
+      "headSha": "08e1320e4ef31694c8a1b49e1fd04fc6ccd65986",
+      "generatedAt": "2026-03-27T21:18:36.099Z",
+      "summary": "11-layer transformer with 3× MLP, LeakyReLU(0.5)^2, EMA averaging, and int6+zstd-22 quantization packs 26.5M params into 16MB.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-983.json"
+    },
+    {
       "prNumber": 982,
       "title": " Record: Fort Knox — Legal Packed Training Cache, Zero Val Adaptation (val_bpb 0.0638, 3-seed)",
       "status": "open",
-      "updatedAt": "2026-03-27T20:42:52Z",
+      "updatedAt": "2026-03-27T20:57:05Z",
       "headSha": "2c970e959c151916411737173c7eba618975d879",
-      "generatedAt": "2026-03-27T20:48:25.453Z",
-      "summary": "Tiny 6L/256d FP16 model blends frozen training-built packed n-gram cache with tempered logits, keeping eval stateless and legal.",
+      "generatedAt": "2026-03-27T21:18:41.404Z",
+      "summary": "Fort Knox trains a 6L FP16 transformer and packs a frozen order-2-9 n-gram cache into the artifact, then blends neural logits with cached stats during single-pass eval.",
       "tags": [
         "val-only",
         "architecture",
@@ -75,12 +122,12 @@
     },
     {
       "prNumber": 978,
-      "title": "Rerun of #972 with actual full-vocab normalization",
+      "title": "Review: Rerun of #972 with actual full-vocab normalization",
       "status": "open",
-      "updatedAt": "2026-03-27T19:57:37Z",
+      "updatedAt": "2026-03-27T21:02:04Z",
       "headSha": "6aada6ccb6af51539c9b2a11292f95284dfe9b62",
-      "generatedAt": "2026-03-27T20:18:23.325Z",
-      "summary": "Full-vocab 1024-token n-gram scoring now divides by the hashed-vocab mass before Bayesian blending with the neural sliding baseline.",
+      "generatedAt": "2026-03-27T21:18:47.740Z",
+      "summary": "Rerun normalizes full-vocab 1024-token hashed n-gram scores with Bayesian blending to ensure an honest evaluation against the neural sliding baseline.",
       "tags": [
         "evaluation"
       ],
@@ -551,30 +598,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-951.json"
-    },
-    {
-      "prNumber": 950,
-      "title": "2026-03-27_PhaseCoherenceGatedGradients submission",
-      "status": "open",
-      "updatedAt": "2026-03-27T12:12:02Z",
-      "headSha": "1707e27de0be3b008987ee23d31abed9109e8bfc",
-      "generatedAt": "2026-03-27T12:15:53.693Z",
-      "summary": "Adapts baseline loop with phase-coherence gated gradients (PIC-GD) on Muon+Adam, pairing pseudo-complex latents for gate-weighted loss before full fine-tuning.",
-      "tags": [
-        "muon",
-        "optimizer",
-        "regularization",
-        "non-record"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-950.json"
     },
     {
       "prNumber": 947,
@@ -3061,14 +3084,13 @@
     {
       "prNumber": 796,
       "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
-      "status": "open",
-      "updatedAt": "2026-03-26T19:35:45Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T20:56:42Z",
       "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
-      "generatedAt": "2026-03-26T19:44:07.870Z",
-      "summary": "Hierarchical Dirichlet-Multinomial mixing uses the neural LM as a prior across 2–15-gram orders with one concentration, replacing per-order weights ahead of distributed cache prefill.",
+      "generatedAt": "2026-03-27T21:18:54.470Z",
+      "summary": "Recursive Dirichlet-Multinomial smoothing mixes the neural LM prior with up to 15-gram counts via one global concentration, replacing heuristic multiplier tuning.",
       "tags": [
-        "evaluation",
-        "architecture"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -3384,15 +3406,15 @@
     {
       "prNumber": 777,
       "title": "Record: 0.9623 BPB — 7-Gram Entropy Cache + XSA-all + EBLS",
-      "status": "open",
-      "updatedAt": "2026-03-25T22:02:26Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T20:56:44Z",
       "headSha": "2e3d0cc2863eb71a4befd01e670c9da940694ff3",
-      "generatedAt": "2026-03-25T22:04:16.564Z",
-      "summary": "Blends a backward-only 7-gram PPM cache with entropy-adaptive mixing on top of EBLS/XSA-all layers plus val-calibrated GPTQ int6 quantization.",
+      "generatedAt": "2026-03-27T21:19:00.071Z",
+      "summary": "Backwards-looking 7-gram entropy-adaptive cache blends with an EBLS+LoRA XSA-all base model before val-GPTQ int6 compression for the final artifact.",
       "tags": [
         "evaluation",
-        "quantization",
-        "architecture"
+        "architecture",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
