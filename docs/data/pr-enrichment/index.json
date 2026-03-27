@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-27T11:46:18.058Z",
+  "generatedAt": "2026-03-27T12:16:11.510Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 950,
+      "title": "2026-03-27_PhaseCoherenceGatedGradients submission",
+      "status": "open",
+      "updatedAt": "2026-03-27T12:12:02Z",
+      "headSha": "1707e27de0be3b008987ee23d31abed9109e8bfc",
+      "generatedAt": "2026-03-27T12:15:53.693Z",
+      "summary": "Adapts baseline loop with phase-coherence gated gradients (PIC-GD) on Muon+Adam, pairing pseudo-complex latents for gate-weighted loss before full fine-tuning.",
+      "tags": [
+        "muon",
+        "optimizer",
+        "regularization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-950.json"
+    },
     {
       "prNumber": 948,
       "title": "Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
@@ -9669,12 +9693,13 @@
       "prNumber": 347,
       "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
       "status": "open",
-      "updatedAt": "2026-03-27T11:25:00Z",
-      "headSha": "d1563e1aae34773a991fb584ae1d73a563452cb3",
-      "generatedAt": "2026-03-27T11:46:18.007Z",
-      "summary": "Extends PR#549’s SOTA stack to 4096 context while unifying GPTQ-lite int6/int4 QAT (now covering bank weights) to fit 16 layers under 16MB.",
+      "updatedAt": "2026-03-27T12:09:07Z",
+      "headSha": "435519487d312b85d319825bc30e8f09ac054f67",
+      "generatedAt": "2026-03-27T12:16:11.456Z",
+      "summary": "Extends PR#549's full SOTA stack to 4k-context training with int4/int6 QAT across bank weights and nibble-packed 16-layer variants.",
       "tags": [
         "quantization",
+        "training-schedule",
         "architecture"
       ],
       "flags": {

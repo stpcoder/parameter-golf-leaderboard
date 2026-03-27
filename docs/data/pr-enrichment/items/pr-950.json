@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-27T12:15:53.693Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 950,
+    "title": "2026-03-27_PhaseCoherenceGatedGradients submission",
+    "state": "open",
+    "updatedAt": "2026-03-27T12:12:02Z",
+    "headSha": "1707e27de0be3b008987ee23d31abed9109e8bfc",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/950",
+    "authorLogin": "jzgdev"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Adapts baseline loop with phase-coherence gated gradients (PIC-GD) on Muon+Adam, pairing pseudo-complex latents for gate-weighted loss before full fine-tuning.",
+    "tags": [
+      "muon",
+      "optimizer",
+      "regularization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Phase coherence gating via paired latents",
+      "Pseudo-complex target pairing for coherence score",
+      "Late fade to plain Adam/Muon tuning"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-27T11:46:18.007Z",
+  "generatedAt": "2026-03-27T12:16:11.456Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
     "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
     "state": "open",
-    "updatedAt": "2026-03-27T11:25:00Z",
-    "headSha": "d1563e1aae34773a991fb584ae1d73a563452cb3",
+    "updatedAt": "2026-03-27T12:09:07Z",
+    "headSha": "435519487d312b85d319825bc30e8f09ac054f67",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
@@ -27,17 +27,18 @@
     "submissionCount": 10
   },
   "output": {
-    "summary": "Extends PR#549’s SOTA stack to 4096 context while unifying GPTQ-lite int6/int4 QAT (now covering bank weights) to fit 16 layers under 16MB.",
+    "summary": "Extends PR#549's full SOTA stack to 4k-context training with int4/int6 QAT across bank weights and nibble-packed 16-layer variants.",
     "tags": [
       "quantization",
+      "training-schedule",
       "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Full SOTA stack at 4096 seq length",
-      "GPTQ-lite int6/int4 QAT covering bank weights",
-      "Nibble-packed int4 depth scaling for 16 layers"
+      "- 4k-context training while preserving the entire PR#549 technique stack",
+      "- Full-model int4/int6 QAT (CastedLinear + banks) aligned with export precision",
+      "- Nibble-packed 16-layer int4 export crammed into the 16MB artifact budget"
     ]
   },
   "compatibility": {
