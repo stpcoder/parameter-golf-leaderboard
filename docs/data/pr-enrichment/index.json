@@ -1,8 +1,54 @@
 {
-  "generatedAt": "2026-03-27T03:13:39.527Z",
+  "generatedAt": "2026-03-27T03:43:53.359Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 927,
+      "title": "Recursive Transformer 4B/7L + VE + QAT + TTT — val_bpb 1.1696 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-27T03:36:19Z",
+      "headSha": "dba058ba81d969d752ed0e67ead7f4df54999b4a",
+      "generatedAt": "2026-03-27T03:43:36.427Z",
+      "summary": "Four-block recursive transformer loops seven times at dim1024 with U-Net skips, VE/SmearGate/BigramHash, int6 QAT, and score-first TTT sliding eval.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-927.json"
+    },
+    {
+      "prNumber": 926,
+      "title": "Record: 11L EMA + GPTQ-lite + LeakyReLU^2 + QAT@0.15",
+      "status": "open",
+      "updatedAt": "2026-03-27T03:37:59Z",
+      "headSha": "c0b904123939d073cdaea69cd48a1aa1cd1b6a8c",
+      "generatedAt": "2026-03-27T03:43:44.353Z",
+      "summary": "11-layer EMA/GPTQ-lite stack uses LeakyReLU(0.5)^2 MLP, late QAT @0.15, and portable int6 export for compact 10-min/16MB submission.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-926.json"
+    },
     {
       "prNumber": 925,
       "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
@@ -4555,15 +4601,14 @@
       "prNumber": 636,
       "title": "Add non-record 10min submission: 11L XSA4 + EMA + GPTQ + FA3 (1.12336724)",
       "status": "open",
-      "updatedAt": "2026-03-24T18:20:23Z",
+      "updatedAt": "2026-03-27T03:39:45Z",
       "headSha": "34494eb6d1cae616587dfa404ab2c8ed8e83ba5a",
-      "generatedAt": "2026-03-24T18:26:14.803Z",
-      "summary": "Stack pairs an 11-layer GQA with BigramHash/SmearGate mixing, late XSA+VE modules, and EMA plus late-QAT before FlashAttention/GPTQ int6 export.",
+      "generatedAt": "2026-03-27T03:43:48.362Z",
+      "summary": "11-layer GQA stack uses BigramHash+SmearGate token mixing, XSA late layers, VE, EMA, and GPTQ int6 export with FlashAttention-backed training.",
       "tags": [
-        "quantization",
-        "attention",
         "architecture",
-        "optimizer"
+        "attention",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -11946,14 +11991,15 @@
       "prNumber": 182,
       "title": "Non-record: Linearized Neural Memory + TTT (val_bpb=1.1844)",
       "status": "open",
-      "updatedAt": "2026-03-26T01:17:15Z",
-      "headSha": "bb6b8fd61c5c846334d0b0ebc589a6d12a4764b9",
-      "generatedAt": "2026-03-26T01:36:12.774Z",
-      "summary": "Titans-style neural memory per block is linearized into causal linear attention via cumsum and paired with LoRA TTT, overtone init, and int6 mixed precision.",
+      "updatedAt": "2026-03-27T03:25:02Z",
+      "headSha": "8f052a028dead780f9e727434ac1d89df622b2a5",
+      "generatedAt": "2026-03-27T03:43:53.331Z",
+      "summary": "Titans-style neural memory linearized to causal attention via cumsum between attention and MLP, paired with LoRA TTT, int6, Muon WD, and overtone init.",
       "tags": [
         "architecture",
         "attention",
-        "quantization"
+        "quantization",
+        "muon"
       ],
       "flags": {
         "usesValOnly": false,

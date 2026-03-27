@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T03:43:36.427Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 927,
+    "title": "Recursive Transformer 4B/7L + VE + QAT + TTT — val_bpb 1.1696 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-03-27T03:36:19Z",
+    "headSha": "dba058ba81d969d752ed0e67ead7f4df54999b4a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/927",
+    "authorLogin": "Tonyy1977"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Four-block recursive transformer loops seven times at dim1024 with U-Net skips, VE/SmearGate/BigramHash, int6 QAT, and score-first TTT sliding eval.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Looped 4-block recursive transformer with encoder-decoder skips",
+      "ValueEmbedding + SmearGate + BigramHash reinjection",
+      "Int6 QAT from step0 paired with score-first TTT sliding eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
