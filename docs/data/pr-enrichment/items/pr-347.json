@@ -1,44 +1,36 @@
 {
-  "generatedAt": "2026-03-27T12:16:11.456Z",
+  "generatedAt": "2026-03-27T13:46:37.315Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
-    "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
+    "title": "GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
     "state": "open",
-    "updatedAt": "2026-03-27T12:09:07Z",
-    "headSha": "435519487d312b85d319825bc30e8f09ac054f67",
+    "updatedAt": "2026-03-27T13:15:34Z",
+    "headSha": "7fc776c3e40f8fc7c6f253b4d9051f59f8e8ed2d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
   "inputs": {
-    "hash": "74539e002411f24c69bfa8a88c0eedb9aa9b324567a5789fb5e36ff8ba262e93",
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
-      "records/track_10min_16mb/2026-03-26_BankQAT_2048train_4096eval/README.md",
-      "records/track_10min_16mb/2026-03-25_LongContext4096_Int4_BankQAT/README.md",
-      "records/track_10min_16mb/2026-03-25_LongContext4096_Int6_QAT/README.md",
-      "records/track_10min_16mb/2026-03-24_LongContext4096_FullSOTA/README.md",
-      "records/track_10min_16mb/2026-03-24_LongContext4096_Int4_16L_FullSOTA/README.md",
-      "records/track_10min_16mb/2026-03-24_QAT_Int4_16L_FullSOTA/README.md",
-      "records/track_10min_16mb/2026-03-21_LongContext4096_FullStack/README.md",
-      "records/track_10min_16mb/2026-03-21_QAT_Int4_16L/README.md"
+      "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md"
     ],
-    "submissionCount": 10
+    "submissionCount": 1
   },
   "output": {
-    "summary": "Extends PR#549's full SOTA stack to 4k-context training with int4/int6 QAT across bank weights and nibble-packed 16-layer variants.",
+    "summary": "Combines gated attention/value residual with full-step int6 QAT plus lzma-9 compression to fit a 2048 BigramHash into the 16MB GPTQLite build.",
     "tags": [
+      "architecture",
       "quantization",
-      "training-schedule",
-      "architecture"
+      "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- 4k-context training while preserving the entire PR#549 technique stack",
-      "- Full-model int4/int6 QAT (CastedLinear + banks) aligned with export precision",
-      "- Nibble-packed 16-layer int4 export crammed into the 16MB artifact budget"
+      "GatedAttention with per-head sigmoid gating",
+      "ValueResidual mixing layer-0 value across layers",
+      "Full-step int6 QAT + lzma-9 enabling larger BigramHash"
     ]
   },
   "compatibility": {

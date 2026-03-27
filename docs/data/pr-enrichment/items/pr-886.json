@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-27T05:44:42.636Z",
+  "generatedAt": "2026-03-27T13:46:30.912Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 886,
     "title": "RFC: A framework for deciding the n-gram question",
     "state": "open",
-    "updatedAt": "2026-03-27T05:36:34Z",
-    "headSha": "638c49b75be824b691d6a8679d97b1edfdfdcd51",
+    "updatedAt": "2026-03-27T13:34:36Z",
+    "headSha": "ecd339f91571c72ea3c4b57603ea130a597b3377",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/886",
     "authorLogin": "abaybektursun"
   },
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Studied eval-time n-gram caching that stays causal but bloats hash tables to hundreds of MB, highlighting the artifact vs. eval-state gap and proposing caps.",
+    "summary": "Study probes causal eval-time n-gram mixing with hash-collision analysis to decide if auxiliary eval state should count toward the 16MB artifact limit.",
     "tags": [
       "evaluation",
-      "compression",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Study describes eval-time caching and rule proposals rather than val-only training.",
     "techniques": [
-      "eval-time n-gram hash-table mixing",
-      "collision-normalization analysis",
-      "auxiliary-state and per-token overhead caps"
+      "Eval-time n-gram cache with strict causality",
+      "Hash-collision auditing of reported BPB",
+      "Rule proposals limiting aux eval state and latency"
     ]
   },
   "compatibility": {
