@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T09:15:15.141Z",
+  "generatedAt": "2026-03-27T09:44:59.533Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -51,13 +51,14 @@
       "prNumber": 941,
       "title": "submission: LeakyReLU² + EMA + BigramHash(20480) + MLP3.5x",
       "status": "open",
-      "updatedAt": "2026-03-27T08:39:46Z",
-      "headSha": "83e01a91ab06df5655950c5c51e5015c4081e7a4",
-      "generatedAt": "2026-03-27T08:44:55.680Z",
-      "summary": "11-layer 512d net pairs LeakyReLU², EMA/late QAT, Partial RoPE+LN scale with BigramHash(20K) and MLP3.5x before mixed int5/int6 quantization.",
+      "updatedAt": "2026-03-27T09:41:02Z",
+      "headSha": "ff9a5fc8786819750511e468a5fcf48cd0f05ff2",
+      "generatedAt": "2026-03-27T09:44:54.917Z",
+      "summary": "11-layer 512d Transformer stacks LeakyReLU², EMA with late QAT, Partial RoPE/LN scale, wider MLP, and BigramHash alongside mixed int5/int6 quantization.",
       "tags": [
         "architecture",
         "optimizer",
+        "training-schedule",
         "quantization"
       ],
       "flags": {
@@ -8167,15 +8168,14 @@
       "prNumber": 435,
       "title": "Radial bitnet submission",
       "status": "open",
-      "updatedAt": "2026-03-27T01:56:12Z",
+      "updatedAt": "2026-03-27T09:42:55Z",
       "headSha": "fabca72d94fce88e7c4cc4856f4db126f7fe1b5e",
-      "generatedAt": "2026-03-27T02:13:53.121Z",
-      "summary": "Combines FRO Stable optimizer with radial token geometry, bigram-hash branch, and residual_b fusion fine-tuned for H100 token-density in the 16MB track.",
+      "generatedAt": "2026-03-27T09:44:59.473Z",
+      "summary": "Dual-branch transformer fuses asymmetric layers with radial 10-bit token geometry and bigram hash context while training via FROStable+AdamW on H100.",
       "tags": [
-        "optimizer",
         "architecture",
-        "mixed-precision",
-        "training-schedule"
+        "tokenization",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,

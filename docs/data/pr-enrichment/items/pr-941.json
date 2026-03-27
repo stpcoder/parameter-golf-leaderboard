@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-27T08:44:55.680Z",
+  "generatedAt": "2026-03-27T09:44:54.917Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 941,
     "title": "submission: LeakyReLU² + EMA + BigramHash(20480) + MLP3.5x",
     "state": "open",
-    "updatedAt": "2026-03-27T08:39:46Z",
-    "headSha": "83e01a91ab06df5655950c5c51e5015c4081e7a4",
+    "updatedAt": "2026-03-27T09:41:02Z",
+    "headSha": "ff9a5fc8786819750511e468a5fcf48cd0f05ff2",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/941",
     "authorLogin": "aptsalt"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer 512d net pairs LeakyReLU², EMA/late QAT, Partial RoPE+LN scale with BigramHash(20K) and MLP3.5x before mixed int5/int6 quantization.",
+    "summary": "11-layer 512d Transformer stacks LeakyReLU², EMA with late QAT, Partial RoPE/LN scale, wider MLP, and BigramHash alongside mixed int5/int6 quantization.",
     "tags": [
       "architecture",
       "optimizer",
+      "training-schedule",
       "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU²+EMA+late QAT workflow",
-      "BigramHash(20480)+MLP3.5x scale-up",
-      "Mixed int5/int6 quantization + zstd-22"
+      "LeakyReLU² + EMA with late QAT and Partial RoPE",
+      "BigramHash(20480) with 3.5x MLP width",
+      "Mixed int5/int6 quantization with zstd-22"
     ]
   },
   "compatibility": {
