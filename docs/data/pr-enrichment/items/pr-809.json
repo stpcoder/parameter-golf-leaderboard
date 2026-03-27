@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T18:12:09.630Z",
+  "generatedAt": "2026-03-27T23:20:29.726Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 809,
     "title": "Record: Chunk-Based N-gram Backoff + Score-First TTT (0.295 BPB)",
-    "state": "open",
-    "updatedAt": "2026-03-26T18:10:20Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:52:18Z",
     "headSha": "e6aca8ce6cea140349bf70f5a3245b81a67d4651",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/809",
     "authorLogin": "AayushBaniya2006"
@@ -19,24 +19,24 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Chunk-synchronized order-9 N-gram cache interpolates with the model using entropy/order-adaptive mixing while score-first TTT LoRA tunes on validation chunks.",
+    "summary": "Chunked order-9 N-gram backoff with entropy/order-aware mixing plus score-first LoRA TTT on a compact GQA model (GPTQ int5).",
     "tags": [
-      "val-only",
       "evaluation",
-      "quantization"
+      "quantization",
+      "training-schedule"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Score-first TTT trains LoRA adapters on already-scored validation chunks during evaluation rather than standard training data.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "Standard training plus eval/TTT workflow without dedicated validation-only training.",
     "techniques": [
-      "Chunk-synchronized order-9 N-gram backoff with entropy- and order-adaptive interpolation",
-      "Score-first TTT LoRA tuning via AdamW and cosine decay on validation chunks",
-      "GPTQ int5 export to keep the weight artifact within budget"
+      "Order-9 chunked N-gram cache with entropy and per-order multipliers",
+      "Score-first LoRA TTT with AdamW and Polyak averaging",
+      "GPTQ int5 export with synchronized chunk cache updates"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T14:09:51.486Z",
+  "generatedAt": "2026-03-27T23:20:03.947Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 851,
     "title": "submission: Order-Adaptive N-gram Cache — 0.2071 BPB",
-    "state": "open",
-    "updatedAt": "2026-03-26T13:40:06Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:04:28Z",
     "headSha": "60f7c68deb6a8243a7fd37890b4d2a05a4e929c4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/851",
     "authorLogin": "RoyiRa"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines order-adaptive n-gram caching, Hedge mixing, and score-first TTT with quantization-aware GPTQ to sharpen eval-time logits.",
+    "summary": "Blends order-adaptive multi-order n-gram cache gating, score-first TTT with calibration, Hedge mixing, and quantization-aware training.",
     "tags": [
-      "evaluation",
+      "quantization",
       "optimizer",
-      "quantization"
+      "architecture",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Order-adaptive n-gram cache with logit calibration",
-      "Score-first TTT plus 5-expert Hedge mixer",
-      "CROWN-Q-aware GPTQ int5 quantization"
+      "Order-adaptive n-gram cache with entropy gating and shared full-chunk updates",
+      "Score-first TTT with Polyak EMA, temperature sharpening, and logit calibration",
+      "CROWN-Q-aware GPTQ int5 quantization paired with a Hedge mixer of neural/ngram experts"
     ]
   },
   "compatibility": {

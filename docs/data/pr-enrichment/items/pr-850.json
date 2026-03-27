@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T13:39:38.254Z",
+  "generatedAt": "2026-03-27T23:20:08.906Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 850,
     "title": "Record: 0.3212 BPB — Complementary N-gram 65K + Int5 GPTQ + LoRA TTT",
-    "state": "open",
-    "updatedAt": "2026-03-26T13:34:01Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:52:34Z",
     "headSha": "0444ef13e132a596356801dc7fa1da5bca7f1269",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/850",
     "authorLogin": "callithyia"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines complementary training with entropy-adaptive order-9 n-gram caching on 65K chunks plus LoRA TTT and full Hessian GPTQ int5.",
+    "summary": "Combines complementary bigram-downweighting with 65K-token order-9 n-gram cache refresh, LoRA TTT adaptation, and full Hessian GPTQ int5 quantization.",
     "tags": [
       "quantization",
-      "optimizer",
-      "evaluation"
+      "training-schedule",
+      "evaluation",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Complementary training with per-order entropy multipliers and 65K-token n-gram cache refresh",
-      "- LoRA TTT (rank 8, Polyak-decayed adaptation) for chunk-wise updates with backward-looking scoring",
-      "- Full Hessian GPTQ int5 with Soft-Round QAT and Cholesky error correction"
+      "Complementary training plus 65K-token order-9 n-gram cache refresh",
+      "Full Hessian GPTQ int5 with Soft-Round quantization-aware training",
+      "LoRA TTT with Polyak averaging for chunk-wise adaptation"
     ]
   },
   "compatibility": {

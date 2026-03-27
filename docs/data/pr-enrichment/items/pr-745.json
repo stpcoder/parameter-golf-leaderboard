@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T17:33:07.289Z",
+  "generatedAt": "2026-03-27T23:20:45.141Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 745,
     "title": "Record: XSA-all + Depth Recurrence + Hedge Mixer TTT (val_bpb=1.0222, 3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-25T17:08:04Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:49:35Z",
     "headSha": "4df68eebf2e83494de4ad0a0b8c4d402a422490d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/745",
     "authorLogin": "stukenov"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines XSA-all, gated value residuals, depth recurrence, CROWN-Q quant, and Hedge-Mixer TTT mixing neural and n-gram experts with GPTQ-lite.",
+    "summary": "Combines XSA-all, VRL, gated attention, depth recurrence, and CROWN-Q before using Hedge Mixer TTT to blend neural/ngram experts in score-first eval.",
     "tags": [
-      "architecture",
       "attention",
       "quantization",
+      "training-schedule",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "XSA-all with gated value residual attention",
-      "Depth recurrence over reused layers",
-      "Hedge-Mixer TTT plus CROWN-Q/GPTQ-lite quantization"
+      "XSA-all + VRL + gated attention over depth-recurrent layers",
+      "CROWN-Q warmdown steering weights toward flat minima for GPTQ-lite int6",
+      "Hedge Mixer TTT blending neural/unigram/bigram/trigram/entropy experts"
     ]
   },
   "compatibility": {

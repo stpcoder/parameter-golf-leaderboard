@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T22:48:46.777Z",
+  "generatedAt": "2026-03-27T23:19:09.244Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -83,7 +83,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_ComplianceFirst_PCM_Dirichlet_Phrase_8xH100",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -131,14 +131,14 @@
       "pr": {
         "number": 944,
         "title": "Record: Compliance-First Packed Causal Memory + Dirichlet Mixing — val_bpb 0.01654407 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/944",
         "authorLogin": "aamodbhatt",
         "authorName": null,
         "createdAt": "2026-03-27T09:03:29Z",
-        "updatedAt": "2026-03-27T09:04:24Z",
+        "updatedAt": "2026-03-27T23:01:44Z",
         "headSha": "2c6b8082d30626563556fe8f68475a19b888cacd",
         "headRepo": "aamodbhatt/parameter-golf"
       },
@@ -237,7 +237,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_Order16_FrozenOracle_TTT_0-0274",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -285,14 +285,14 @@
       "pr": {
         "number": 945,
         "title": "Record: Order-16 Frozen N-gram Oracle + Learned Gate + TTT — val_bpb 0.0274 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/945",
         "authorLogin": "TimPietrusky",
         "authorName": null,
         "createdAt": "2026-03-27T09:04:20Z",
-        "updatedAt": "2026-03-27T09:04:20Z",
+        "updatedAt": "2026-03-27T23:04:01Z",
         "headSha": "06ff423a038e0bf11a12d66fa69a0a72de5c1cbc",
         "headRepo": "TimPietrusky/parameter-golf"
       },
@@ -391,7 +391,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -439,14 +439,14 @@
       "pr": {
         "number": 925,
         "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/925",
         "authorLogin": "THUQiXuan",
         "authorName": null,
         "createdAt": "2026-03-27T02:45:21Z",
-        "updatedAt": "2026-03-27T04:54:26Z",
+        "updatedAt": "2026-03-27T23:01:37Z",
         "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
         "headRepo": "THUQiXuan/parameter-golf"
       },
@@ -622,7 +622,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_FortKnox_ZeroValAdaptation_6L256d",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -673,14 +673,14 @@
       "pr": {
         "number": 982,
         "title": " Record: Fort Knox — Legal Packed Training Cache, Zero Val Adaptation (val_bpb 0.0638, 3-seed)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/982",
         "authorLogin": "haikosys",
         "authorName": null,
         "createdAt": "2026-03-27T20:42:52Z",
-        "updatedAt": "2026-03-27T21:47:02Z",
+        "updatedAt": "2026-03-27T23:01:56Z",
         "headSha": "2c970e959c151916411737173c7eba618975d879",
         "headRepo": "haikosys/parameter-golf"
       },
@@ -1780,7 +1780,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_TwoPass_Order12_Chunk256K_0-1315",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1828,14 +1828,14 @@
       "pr": {
         "number": 853,
         "title": "Record: Two-Pass Order-12 N-gram Backoff + 256K Chunks — 0.1315 BPB",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/853",
         "authorLogin": "quietsmile",
         "authorName": null,
         "createdAt": "2026-03-26T14:20:25Z",
-        "updatedAt": "2026-03-26T14:20:25Z",
+        "updatedAt": "2026-03-27T23:00:56Z",
         "headSha": "8ddb8871b4cf61942282639a8ce11429db67eab8",
         "headRepo": "quietsmile/parameter-golf"
       },
@@ -2088,7 +2088,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_Order12_Chunk256K_AlphaMax070",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -2136,14 +2136,14 @@
       "pr": {
         "number": 843,
         "title": "Record: Order-12 N-gram Backoff + 256K Chunks — 0.2834 BPB",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/843",
         "authorLogin": "quietsmile",
         "authorName": null,
         "createdAt": "2026-03-26T12:03:37Z",
-        "updatedAt": "2026-03-26T12:03:37Z",
+        "updatedAt": "2026-03-27T23:00:42Z",
         "headSha": "becf6819e43b2f8ffb4a67cf1ba56a404e523923",
         "headRepo": "quietsmile/parameter-golf"
       },
@@ -2288,17 +2288,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 843,
-        "title": "Record: Order-12 N-gram Backoff + 256K Chunks — 0.2834 BPB",
+        "number": 840,
+        "title": "Record: 0.2873 BPB — Fine-Grained N-gram Cache (65K chunks)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/843",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/840",
         "authorLogin": "quietsmile",
         "authorName": null,
-        "createdAt": "2026-03-26T12:03:37Z",
-        "updatedAt": "2026-03-26T12:03:37Z",
-        "headSha": "becf6819e43b2f8ffb4a67cf1ba56a404e523923",
+        "createdAt": "2026-03-26T11:03:07Z",
+        "updatedAt": "2026-03-26T11:03:07Z",
+        "headSha": "f1da25d4abf3e309822099110c62d14b033ed093",
         "headRepo": "quietsmile/parameter-golf"
       },
       "links": {
@@ -2307,7 +2307,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/f1da25d4abf3e309822099110c62d14b033ed093/records/track_10min_16mb/2026-03-26_NgramChunk65K_LeakyReLU09_GPTQ5/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/f1da25d4abf3e309822099110c62d14b033ed093/records/track_10min_16mb/2026-03-26_NgramChunk65K_LeakyReLU09_GPTQ5/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/f1da25d4abf3e309822099110c62d14b033ed093/records/track_10min_16mb/2026-03-26_NgramChunk65K_LeakyReLU09_GPTQ5",
-        "pr": "https://github.com/openai/parameter-golf/pull/843",
+        "pr": "https://github.com/openai/parameter-golf/pull/840",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -2396,7 +2396,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_ChunkNgram_TTT_LeakyReLU09_GPTQ5",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -2444,14 +2444,14 @@
       "pr": {
         "number": 809,
         "title": "Record: Chunk-Based N-gram Backoff + Score-First TTT (0.295 BPB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/809",
         "authorLogin": "AayushBaniya2006",
         "authorName": null,
         "createdAt": "2026-03-26T04:20:24Z",
-        "updatedAt": "2026-03-26T18:10:20Z",
+        "updatedAt": "2026-03-27T22:52:18Z",
         "headSha": "e6aca8ce6cea140349bf70f5a3245b81a67d4651",
         "headRepo": "AayushBaniya2006/parameter-golf"
       },
@@ -2473,7 +2473,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_ComplementaryNgram65K_Int5GPTQ_LoRATTT",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -2521,14 +2521,14 @@
       "pr": {
         "number": 850,
         "title": "Record: 0.3212 BPB — Complementary N-gram 65K + Int5 GPTQ + LoRA TTT",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/850",
         "authorLogin": "callithyia",
         "authorName": null,
         "createdAt": "2026-03-26T13:34:01Z",
-        "updatedAt": "2026-03-26T13:34:01Z",
+        "updatedAt": "2026-03-27T22:52:34Z",
         "headSha": "0444ef13e132a596356801dc7fa1da5bca7f1269",
         "headRepo": "callithyia/parameter-golf"
       },
@@ -2904,17 +2904,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 814,
-        "title": "Record: X-WING 3D Cubric + Complementary Training (val_bpb=0.4820)",
+        "number": 800,
+        "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/814",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/800",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-03-26T05:24:29Z",
-        "updatedAt": "2026-03-26T18:57:06Z",
-        "headSha": "a37d7c349642972ad334dbfb57df6bbd7fc9c14a",
+        "createdAt": "2026-03-26T02:31:02Z",
+        "updatedAt": "2026-03-27T02:05:12Z",
+        "headSha": "7b29d6b5e32db72c66f6a6db26109fda8e46b5e0",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -2923,7 +2923,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/814",
+        "pr": "https://github.com/openai/parameter-golf/pull/800",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -4170,7 +4170,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_PROTEUS_STYX_Ngram_0-8508",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -4218,14 +4218,14 @@
       "pr": {
         "number": 769,
         "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/769",
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-25T21:28:08Z",
-        "updatedAt": "2026-03-26T15:46:23Z",
+        "updatedAt": "2026-03-27T22:50:30Z",
         "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -5407,7 +5407,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_Backoff_Entropy_Adaptive",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -5455,14 +5455,14 @@
       "pr": {
         "number": 727,
         "title": "Record: First Legal Sub-1.0 BPB — Multi-order N-gram Backoff + Entropy-Adaptive Alpha (val_bpb=0.9674, 3-seed)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/727",
         "authorLogin": "Asukabot0",
         "authorName": null,
         "createdAt": "2026-03-25T14:58:23Z",
-        "updatedAt": "2026-03-25T15:17:52Z",
+        "updatedAt": "2026-03-27T23:05:19Z",
         "headSha": "091afd7b00f5d1beb759496ec51e17caee1828b7",
         "headRepo": "Asukabot0/parameter-golf"
       },
@@ -6023,7 +6023,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_v4_XSA11_VRL_CROWNQ_DepthRecur_HedgeMixer_TTT",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -6071,14 +6071,14 @@
       "pr": {
         "number": 745,
         "title": "Record: XSA-all + Depth Recurrence + Hedge Mixer TTT (val_bpb=1.0222, 3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/745",
         "authorLogin": "stukenov",
         "authorName": null,
         "createdAt": "2026-03-25T17:02:35Z",
-        "updatedAt": "2026-03-25T17:08:04Z",
+        "updatedAt": "2026-03-27T22:49:35Z",
         "headSha": "4df68eebf2e83494de4ad0a0b8c4d402a422490d",
         "headRepo": "stukenov/parameter-golf"
       },
@@ -6254,7 +6254,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_LeakyReLU2_XSA11_GPTQ_NgramBackoff_1-0340",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -6302,14 +6302,14 @@
       "pr": {
         "number": 792,
         "title": "11L LeakyReLU² + XSA-all + Full GPTQ + 5-gram Backoff (1.0340 BPB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/792",
         "authorLogin": "xexyz",
         "authorName": null,
         "createdAt": "2026-03-26T01:03:13Z",
-        "updatedAt": "2026-03-26T01:05:47Z",
+        "updatedAt": "2026-03-27T23:04:43Z",
         "headSha": "c7a9540ef9630c87443e2fc750ceab5bef6c3c83",
         "headRepo": "xexyz/parameter-golf"
       },
@@ -11111,7 +11111,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_FullGPTQ_XSA4_ScoreFirstTTT",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -11159,14 +11159,14 @@
       "pr": {
         "number": 734,
         "title": "Non-record: Full GPTQ + XSA-4 + Score-First TTT (3-seed mean 1.1198)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/734",
         "authorLogin": "Robby955",
         "authorName": null,
         "createdAt": "2026-03-25T15:24:50Z",
-        "updatedAt": "2026-03-25T15:24:50Z",
+        "updatedAt": "2026-03-27T23:04:41Z",
         "headSha": "281a26e10733e564da0aaf1b9384b192930de79b",
         "headRepo": "Robby955/parameter-golf"
       },
@@ -11928,7 +11928,7 @@
       },
       "pr": {
         "number": 898,
-        "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
+        "title": "Frequency-Weighted Embedding Quantization (1.1217 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -11936,16 +11936,16 @@
         "authorLogin": "pattern4bots",
         "authorName": null,
         "createdAt": "2026-03-26T21:54:45Z",
-        "updatedAt": "2026-03-27T22:40:56Z",
-        "headSha": "62d902092f2697cc0cd8f4ad6b61b28b22d54016",
+        "updatedAt": "2026-03-27T23:05:01Z",
+        "headSha": "e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2",
         "headRepo": "pattern4bots/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
         "pr": "https://github.com/openai/parameter-golf/pull/898",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -43302,7 +43302,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_CacheIsAllYouNeed_622KB_0-0887",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -43350,14 +43350,14 @@
       "pr": {
         "number": 913,
         "title": "Record: Cache Is All You Need — val_bpb 0.0887, 622KB artifact (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/913",
         "authorLogin": "RoyiRa",
         "authorName": null,
         "createdAt": "2026-03-27T00:12:28Z",
-        "updatedAt": "2026-03-27T19:16:01Z",
+        "updatedAt": "2026-03-27T22:53:06Z",
         "headSha": "64c9d07a00e618ebd4f74ee9b2e2d6f2a7ef4f58",
         "headRepo": "RoyiRa/parameter-golf"
       },
@@ -44919,7 +44919,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_10L_NgramBackoff_MatrixLR03",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -44967,14 +44967,14 @@
       "pr": {
         "number": 828,
         "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/828",
         "authorLogin": "bigbag",
         "authorName": null,
         "createdAt": "2026-03-26T07:48:46Z",
-        "updatedAt": "2026-03-27T04:56:49Z",
+        "updatedAt": "2026-03-27T23:02:22Z",
         "headSha": "34c1781c54b1ccc310ecfd3c18c357f142c1ab27",
         "headRepo": "bigbag/parameter-golf"
       },
@@ -44996,7 +44996,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_OrderAdaptiveNgram_0-2071",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -45044,14 +45044,14 @@
       "pr": {
         "number": 851,
         "title": "submission: Order-Adaptive N-gram Cache — 0.2071 BPB",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/851",
         "authorLogin": "RoyiRa",
         "authorName": null,
         "createdAt": "2026-03-26T13:40:06Z",
-        "updatedAt": "2026-03-26T13:40:06Z",
+        "updatedAt": "2026-03-27T23:04:28Z",
         "headSha": "60f7c68deb6a8243a7fd37890b4d2a05a4e929c4",
         "headRepo": "RoyiRa/parameter-golf"
       },
@@ -45150,7 +45150,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_LearnedMixerHead_NoTTT_MatrixLR03",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -45198,14 +45198,14 @@
       "pr": {
         "number": 859,
         "title": "Record: 0.1582 BPB — Learned Mixer Head + No TTT + Matrix LR 0.03",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/859",
         "authorLogin": "bigbag",
         "authorName": null,
         "createdAt": "2026-03-26T15:29:48Z",
-        "updatedAt": "2026-03-27T11:26:27Z",
+        "updatedAt": "2026-03-27T22:56:28Z",
         "headSha": "e105777aced31916284d10f51292ecd35595d744",
         "headRepo": "bigbag/parameter-golf"
       },
@@ -45304,7 +45304,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_PhraseCache_OrderAdaptiveNgram_RegimeTracker_0-1003",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -45352,14 +45352,14 @@
       "pr": {
         "number": 880,
         "title": "Record: PhraseCache + OrderAdaptive N-gram + RegimeTracker — val_bpb 0.1003 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/880",
         "authorLogin": "RoyiRa",
         "authorName": null,
         "createdAt": "2026-03-26T18:06:42Z",
-        "updatedAt": "2026-03-26T18:06:42Z",
+        "updatedAt": "2026-03-27T22:52:40Z",
         "headSha": "56905be419483309a413735ba8f7e457da3a18f7",
         "headRepo": "RoyiRa/parameter-golf"
       },
@@ -48384,7 +48384,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-24_HedgeMixer_TTT",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -48432,14 +48432,14 @@
       "pr": {
         "number": 688,
         "title": "Record: 5-expert Hedge Mixer + TTT (3-seed mean val_bpb=1.0745)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/688",
         "authorLogin": "RoyiRa",
         "authorName": null,
         "createdAt": "2026-03-25T06:32:22Z",
-        "updatedAt": "2026-03-25T10:41:37Z",
+        "updatedAt": "2026-03-27T22:49:21Z",
         "headSha": "a366675fbcda83df0f634a8967d6f041b868a651",
         "headRepo": "RoyiRa/parameter-golf"
       },

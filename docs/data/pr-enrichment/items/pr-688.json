@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T11:01:01.303Z",
+  "generatedAt": "2026-03-27T23:21:02.336Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 688,
     "title": "Record: 5-expert Hedge Mixer + TTT (3-seed mean val_bpb=1.0745)",
-    "state": "open",
-    "updatedAt": "2026-03-25T10:41:37Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:49:21Z",
     "headSha": "a366675fbcda83df0f634a8967d6f041b868a651",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/688",
     "authorLogin": "RoyiRa"
@@ -19,25 +19,24 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "TTT run augments validation-only adaptation with a GPU Hedge mixer that blends neural logits with n-gram experts via online weight updates during chunked scoring.",
+    "summary": "GPU-vectorized 5-expert Hedge context mixer during TTT blends neural logits with incremental n-gram and entropy experts for post-training adaptation.",
     "tags": [
-      "val-only",
       "evaluation",
       "training-schedule",
-      "optimizer"
+      "quantization"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Score-first TTT trains only on previously scored validation chunks with AdamW adaptation before reporting validation metrics.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "GPU-vectorized 5-expert Hedge mixer in log-prob space",
-      "Online Hedge weight updates per token during TTT",
-      "Chunked score-first AdamW adaptation on validation tokens"
+      "Hedge-based logistic mixer combining neural log-softmax, unigram/bigram/trigram buckets, and entropy confidence",
+      "Score-first sliding-window TTT with frozen early layers, Polyak averaging, and AdamW chunked training",
+      "GPTQ calibration followed by full int5 quantization within the 600s budget"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

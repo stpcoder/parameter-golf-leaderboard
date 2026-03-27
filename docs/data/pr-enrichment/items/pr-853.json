@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T14:40:25.539Z",
+  "generatedAt": "2026-03-27T23:19:58.052Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 853,
     "title": "Record: Two-Pass Order-12 N-gram Backoff + 256K Chunks — 0.1315 BPB",
-    "state": "open",
-    "updatedAt": "2026-03-26T14:20:25Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:00:56Z",
     "headSha": "8ddb8871b4cf61942282639a8ce11429db67eab8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/853",
     "authorLogin": "quietsmile"
@@ -19,16 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Two-pass eval-time n-gram rescoring with order-12 backoff on 256K token chunks and α_max=0.70 for cache-driven compression.",
+    "summary": "Uses two-pass n-gram rescoring plus order-12 backoff on 256K chunks with alpha_max 0.70 to sharpen eval cache estimates.",
     "tags": [
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "two-pass n-gram cache rescoring",
-      "order-12 backoff primes",
-      "256K token chunk granularity with α_max=0.70"
+      "Two-pass n-gram rescoring for first 50 cold-cache chunks",
+      "Order-12 backoff with 256K chunks and higher alpha mixing",
+      "Eval-time-only, score-first compliant setup"
     ]
   },
   "compatibility": {

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T16:10:41.604Z",
+  "generatedAt": "2026-03-27T23:20:39.086Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 769,
     "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
-    "state": "open",
-    "updatedAt": "2026-03-26T15:46:23Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:50:30Z",
     "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/769",
     "authorLogin": "MatoTeziTanka"
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Light transformer uses LeakyReLU(0.9)² + mixed INT6/INT8 quantization while blending a backward-looking 5-gram eval cache with model logits during sliding evaluation.",
+    "summary": "11L GQA stack pairs LeakyReLU(0.9)² activations with a backward-looking 5-gram eval cache blended into sliding-window outputs.",
     "tags": [
       "architecture",
-      "quantization",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU(0.9)² activation in 11L GQA stack",
-      "Backward-looking 5-gram eval cache blended at fixed alpha",
-      "Mixed INT6/INT8 quantization with LZMA compression"
+      "LeakyReLU(0.9)² activation in compact 11-layer GQA model",
+      "Backward-looking 5-gram eval cache with fixed 0.2 blend",
+      "Sliding-window stride verification (64→2048)"
     ]
   },
   "compatibility": {

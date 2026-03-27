@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T22:50:08.618Z",
+  "generatedAt": "2026-03-27T23:21:02.435Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -145,15 +145,14 @@
     {
       "prNumber": 982,
       "title": " Record: Fort Knox — Legal Packed Training Cache, Zero Val Adaptation (val_bpb 0.0638, 3-seed)",
-      "status": "open",
-      "updatedAt": "2026-03-27T21:47:02Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:01:56Z",
       "headSha": "2c970e959c151916411737173c7eba618975d879",
-      "generatedAt": "2026-03-27T21:48:42.553Z",
-      "summary": "Fuses a frozen 6L transformer with packed training-only n-gram stats and sharpened logits so eval uses no validation-time adaptation.",
+      "generatedAt": "2026-03-27T23:19:17.413Z",
+      "summary": "Blends a frozen 6L transformer with a packed training-only n-gram cache and zero validation adaptation to establish an ultra-conservative legality baseline.",
       "tags": [
         "val-only",
         "architecture",
-        "compression",
         "evaluation"
       ],
       "flags": {
@@ -739,15 +738,16 @@
     {
       "prNumber": 945,
       "title": "Record: Order-16 Frozen N-gram Oracle + Learned Gate + TTT — val_bpb 0.0274 (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-27T09:04:20Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:04:01Z",
       "headSha": "06ff423a038e0bf11a12d66fa69a0a72de5c1cbc",
-      "generatedAt": "2026-03-27T09:15:00.480Z",
-      "summary": "Frozen order-16 n-gram oracle blended by a learned gate, complementary training, and score-first TTT on a compact 11-layer backbone.",
+      "generatedAt": "2026-03-27T23:19:23.685Z",
+      "summary": "Frozen order-16 n-gram oracle feeds a learned per-token gate plus complementary training and score-first TTT on an 11-layer model.",
       "tags": [
-        "quantization",
         "architecture",
-        "training-schedule"
+        "training-schedule",
+        "evaluation",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -762,12 +762,13 @@
     {
       "prNumber": 944,
       "title": "Record: Compliance-First Packed Causal Memory + Dirichlet Mixing — val_bpb 0.01654407 (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-27T09:04:24Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:01:44Z",
       "headSha": "2c6b8082d30626563556fe8f68475a19b888cacd",
-      "generatedAt": "2026-03-27T09:15:08.978Z",
-      "summary": "Packed causal n-gram memory plus Dirichlet-normalized multi-order mixing powers the compliance-first score-first evaluation stack.",
+      "generatedAt": "2026-03-27T23:19:28.746Z",
+      "summary": "Packed causal n-gram memory plus Dirichlet-normalized multi-order mixing drives compliance-first score-first evaluation without model changes.",
       "tags": [
+        "architecture",
         "evaluation"
       ],
       "flags": {
@@ -1159,15 +1160,15 @@
     {
       "prNumber": 925,
       "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
-      "status": "open",
-      "updatedAt": "2026-03-27T04:54:26Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:01:37Z",
       "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
-      "generatedAt": "2026-03-27T05:14:34.715Z",
-      "summary": "Frozen order-16 n-gram oracle with learned alpha mixer and complement-weighted loss, coupled with score-first TTT updates per 32K chunk.",
+      "generatedAt": "2026-03-27T23:19:33.803Z",
+      "summary": "Combines an order-16 frozen n-gram oracle mixture with learned alpha gating and complementary loss weighting under score-first TTT scheduling.",
       "tags": [
         "architecture",
-        "evaluation",
-        "regularization"
+        "training-schedule",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1367,14 +1368,14 @@
     {
       "prNumber": 913,
       "title": "Record: Cache Is All You Need — val_bpb 0.0887, 622KB artifact (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-27T19:16:01Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:53:06Z",
       "headSha": "64c9d07a00e618ebd4f74ee9b2e2d6f2a7ef4f58",
-      "generatedAt": "2026-03-27T19:18:19.546Z",
-      "summary": "Adds an eval-time adaptive n-gram and phrase cache atop the tiny GPT baseline, blending logits per sliding window chunk with entropy-weighted mixing.",
+      "generatedAt": "2026-03-27T23:19:37.982Z",
+      "summary": "Eval-time n-gram and phrase caches with entropy-weighted blending augment the tiny GPT baseline during sliding-window evaluation.",
       "tags": [
         "evaluation",
-        "sliding-window-eval"
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1571,15 +1572,15 @@
     },
     {
       "prNumber": 898,
-      "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
+      "title": "Frequency-Weighted Embedding Quantization (1.1217 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-27T22:40:56Z",
-      "headSha": "62d902092f2697cc0cd8f4ad6b61b28b22d54016",
-      "generatedAt": "2026-03-27T22:49:20.366Z",
-      "summary": "Apply mixed quantization that keeps the most frequent tokens in int8 while quantizing the rest of the embedding rows to int6 to preserve precision where data concentrates.",
+      "updatedAt": "2026-03-27T23:05:01Z",
+      "headSha": "e484fd2039b43fb0d290ea8fcaa9eebd90f7b3b2",
+      "generatedAt": "2026-03-27T23:19:42.134Z",
+      "summary": "Top 100 frequent tokens get int8 embeddings while the rest remain int6, reducing quantization error for the most common vocabulary.",
       "tags": [
         "quantization",
-        "mixed-precision"
+        "tokenization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1826,14 +1827,15 @@
     {
       "prNumber": 880,
       "title": "Record: PhraseCache + OrderAdaptive N-gram + RegimeTracker — val_bpb 0.1003 (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-26T18:06:42Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:52:40Z",
       "headSha": "56905be419483309a413735ba8f7e457da3a18f7",
-      "generatedAt": "2026-03-26T18:11:41.197Z",
-      "summary": "Combines long variable-length phrase cache plus order-adaptive n-gram/regime gating with score-first TTT and GPTQ-aware mixing to curb eval redundancy.",
+      "generatedAt": "2026-03-27T23:19:48.349Z",
+      "summary": "Variable-length phrase cache plus order-adaptive entropy gating and regime tracking layered on score-first TTT/Hedge mixing to boost cache use.",
       "tags": [
         "evaluation",
         "quantization",
+        "training-schedule",
         "optimizer"
       ],
       "flags": {
@@ -2098,14 +2100,15 @@
     {
       "prNumber": 859,
       "title": "Record: 0.1582 BPB — Learned Mixer Head + No TTT + Matrix LR 0.03",
-      "status": "open",
-      "updatedAt": "2026-03-27T11:26:27Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:56:28Z",
       "headSha": "e105777aced31916284d10f51292ecd35595d744",
-      "generatedAt": "2026-03-27T11:46:07.342Z",
-      "summary": "Learned mixer head model drops TTT and raises matrix LR to 0.03, relying on frozen n-gram oracle to drive per-token gating.",
+      "generatedAt": "2026-03-27T23:19:52.823Z",
+      "summary": "Learned mixer head gating with MATRIX_LR=0.03 and no TTT lets the neural expert blend training-derived n-grams without validation-time updates.",
       "tags": [
         "architecture",
-        "training-schedule"
+        "optimizer",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2215,11 +2218,11 @@
     {
       "prNumber": 853,
       "title": "Record: Two-Pass Order-12 N-gram Backoff + 256K Chunks — 0.1315 BPB",
-      "status": "open",
-      "updatedAt": "2026-03-26T14:20:25Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:00:56Z",
       "headSha": "8ddb8871b4cf61942282639a8ce11429db67eab8",
-      "generatedAt": "2026-03-26T14:40:25.539Z",
-      "summary": "Two-pass eval-time n-gram rescoring with order-12 backoff on 256K token chunks and α_max=0.70 for cache-driven compression.",
+      "generatedAt": "2026-03-27T23:19:58.052Z",
+      "summary": "Uses two-pass n-gram rescoring plus order-12 backoff on 256K chunks with alpha_max 0.70 to sharpen eval cache estimates.",
       "tags": [
         "evaluation"
       ],
@@ -2260,15 +2263,16 @@
     {
       "prNumber": 851,
       "title": "submission: Order-Adaptive N-gram Cache — 0.2071 BPB",
-      "status": "open",
-      "updatedAt": "2026-03-26T13:40:06Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:04:28Z",
       "headSha": "60f7c68deb6a8243a7fd37890b4d2a05a4e929c4",
-      "generatedAt": "2026-03-26T14:09:51.486Z",
-      "summary": "Combines order-adaptive n-gram caching, Hedge mixing, and score-first TTT with quantization-aware GPTQ to sharpen eval-time logits.",
+      "generatedAt": "2026-03-27T23:20:03.947Z",
+      "summary": "Blends order-adaptive multi-order n-gram cache gating, score-first TTT with calibration, Hedge mixing, and quantization-aware training.",
       "tags": [
-        "evaluation",
+        "quantization",
         "optimizer",
-        "quantization"
+        "architecture",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2283,15 +2287,16 @@
     {
       "prNumber": 850,
       "title": "Record: 0.3212 BPB — Complementary N-gram 65K + Int5 GPTQ + LoRA TTT",
-      "status": "open",
-      "updatedAt": "2026-03-26T13:34:01Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:52:34Z",
       "headSha": "0444ef13e132a596356801dc7fa1da5bca7f1269",
-      "generatedAt": "2026-03-26T13:39:38.254Z",
-      "summary": "Combines complementary training with entropy-adaptive order-9 n-gram caching on 65K chunks plus LoRA TTT and full Hessian GPTQ int5.",
+      "generatedAt": "2026-03-27T23:20:08.906Z",
+      "summary": "Combines complementary bigram-downweighting with 65K-token order-9 n-gram cache refresh, LoRA TTT adaptation, and full Hessian GPTQ int5 quantization.",
       "tags": [
         "quantization",
-        "optimizer",
-        "evaluation"
+        "training-schedule",
+        "evaluation",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2352,11 +2357,11 @@
     {
       "prNumber": 843,
       "title": "Record: Order-12 N-gram Backoff + 256K Chunks — 0.2834 BPB",
-      "status": "open",
-      "updatedAt": "2026-03-26T12:03:37Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:00:42Z",
       "headSha": "becf6819e43b2f8ffb4a67cf1ba56a404e523923",
-      "generatedAt": "2026-03-26T12:09:04.435Z",
-      "summary": "Eval-only tweak ups n-gram pipeline: extend order to 12, refresh cache with 256K chunks, and raise alpha_max to 0.70 for stronger mixing.",
+      "generatedAt": "2026-03-27T23:20:13.230Z",
+      "summary": "Eval-only update extends n-gram backoff to order 12 with faster 256K chunk refresh and stronger alpha mixing on the existing 11L GQA stack.",
       "tags": [
         "evaluation"
       ],
@@ -2416,6 +2421,28 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-841.json"
+    },
+    {
+      "prNumber": 840,
+      "title": "Record: 0.2873 BPB — Fine-Grained N-gram Cache (65K chunks)",
+      "status": "open",
+      "updatedAt": "2026-03-26T11:03:07Z",
+      "headSha": "f1da25d4abf3e309822099110c62d14b033ed093",
+      "generatedAt": "2026-03-27T23:20:17.417Z",
+      "summary": "Eval cache updates occur every 65K tokens so the N-gram stats refresh 15× faster atop the 11L GQA + GPTQ-Int5 stack without altering training.",
+      "tags": [
+        "evaluation",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-840.json"
     },
     {
       "prNumber": 838,
@@ -2535,14 +2562,13 @@
     {
       "prNumber": 828,
       "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
-      "status": "open",
-      "updatedAt": "2026-03-27T04:56:49Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:02:22Z",
       "headSha": "34c1781c54b1ccc310ecfd3c18c357f142c1ab27",
-      "generatedAt": "2026-03-27T05:14:49.882Z",
-      "summary": "10-layer GQA/LeakyReLU stack tunes matrix LR to 0.03 and leverages multi-order n-gram backoff with entropy-adaptive mixing for evaluation.",
+      "generatedAt": "2026-03-27T23:20:23.565Z",
+      "summary": "Raised Matrix LR to 0.03 on the 10L GQA model with multi-order n-gram backoff after systematic hyperparameter screening.",
       "tags": [
-        "architecture",
-        "training-schedule",
+        "optimizer",
         "evaluation"
       ],
       "flags": {
@@ -2743,28 +2769,6 @@
       "file": "items/pr-816.json"
     },
     {
-      "prNumber": 814,
-      "title": "Record: X-WING 3D Cubric + Complementary Training (val_bpb=0.4820)",
-      "status": "open",
-      "updatedAt": "2026-03-26T18:57:06Z",
-      "headSha": "a37d7c349642972ad334dbfb57df6bbd7fc9c14a",
-      "generatedAt": "2026-03-26T19:12:56.813Z",
-      "summary": "Shared n-gram tables feed warm-started 3D cubric multipliers with entropy/count bins plus complementary training to tune α blending per context.",
-      "tags": [
-        "architecture",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-814.json"
-    },
-    {
       "prNumber": 813,
       "title": "Record: BackoffNgramMixer (mean val_bpb=0.6671)",
       "status": "open",
@@ -2860,23 +2864,23 @@
     {
       "prNumber": 809,
       "title": "Record: Chunk-Based N-gram Backoff + Score-First TTT (0.295 BPB)",
-      "status": "open",
-      "updatedAt": "2026-03-26T18:10:20Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:52:18Z",
       "headSha": "e6aca8ce6cea140349bf70f5a3245b81a67d4651",
-      "generatedAt": "2026-03-26T18:12:09.630Z",
-      "summary": "Chunk-synchronized order-9 N-gram cache interpolates with the model using entropy/order-adaptive mixing while score-first TTT LoRA tunes on validation chunks.",
+      "generatedAt": "2026-03-27T23:20:29.726Z",
+      "summary": "Chunked order-9 N-gram backoff with entropy/order-aware mixing plus score-first LoRA TTT on a compact GQA model (GPTQ int5).",
       "tags": [
-        "val-only",
         "evaluation",
-        "quantization"
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-809.json"
     },
@@ -3197,14 +3201,13 @@
     {
       "prNumber": 792,
       "title": "11L LeakyReLU² + XSA-all + Full GPTQ + 5-gram Backoff (1.0340 BPB)",
-      "status": "open",
-      "updatedAt": "2026-03-26T01:05:47Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:04:43Z",
       "headSha": "c7a9540ef9630c87443e2fc750ceab5bef6c3c83",
-      "generatedAt": "2026-03-26T01:35:59.219Z",
-      "summary": "11-layer transformer pairs LeakyReLU(0.5)^2, XSA in every block, and Hessian GPTQ with entropy-steered 5-gram backoff for eval scoring.",
+      "generatedAt": "2026-03-27T23:20:34.761Z",
+      "summary": "11-layer 512d transformer uses LeakyReLU(0.5)² with XSA on every layer, full GPTQ int6 quantization, and entropy-weighted 5-gram backoff caching.",
       "tags": [
         "architecture",
-        "attention",
         "quantization",
         "evaluation"
       ],
@@ -3569,14 +3572,13 @@
     {
       "prNumber": 769,
       "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
-      "status": "open",
-      "updatedAt": "2026-03-26T15:46:23Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:50:30Z",
       "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
-      "generatedAt": "2026-03-26T16:10:41.604Z",
-      "summary": "Light transformer uses LeakyReLU(0.9)² + mixed INT6/INT8 quantization while blending a backward-looking 5-gram eval cache with model logits during sliding evaluation.",
+      "generatedAt": "2026-03-27T23:20:39.086Z",
+      "summary": "11L GQA stack pairs LeakyReLU(0.9)² activations with a backward-looking 5-gram eval cache blended into sliding-window outputs.",
       "tags": [
         "architecture",
-        "quantization",
         "evaluation"
       ],
       "flags": {
@@ -3917,15 +3919,15 @@
     {
       "prNumber": 745,
       "title": "Record: XSA-all + Depth Recurrence + Hedge Mixer TTT (val_bpb=1.0222, 3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-25T17:08:04Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:49:35Z",
       "headSha": "4df68eebf2e83494de4ad0a0b8c4d402a422490d",
-      "generatedAt": "2026-03-25T17:33:07.289Z",
-      "summary": "Combines XSA-all, gated value residuals, depth recurrence, CROWN-Q quant, and Hedge-Mixer TTT mixing neural and n-gram experts with GPTQ-lite.",
+      "generatedAt": "2026-03-27T23:20:45.141Z",
+      "summary": "Combines XSA-all, VRL, gated attention, depth recurrence, and CROWN-Q before using Hedge Mixer TTT to blend neural/ngram experts in score-first eval.",
       "tags": [
-        "architecture",
         "attention",
         "quantization",
+        "training-schedule",
         "evaluation"
       ],
       "flags": {
@@ -4079,23 +4081,24 @@
     {
       "prNumber": 734,
       "title": "Non-record: Full GPTQ + XSA-4 + Score-First TTT (3-seed mean 1.1198)",
-      "status": "open",
-      "updatedAt": "2026-03-25T15:24:50Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:04:41Z",
       "headSha": "281a26e10733e564da0aaf1b9384b192930de79b",
-      "generatedAt": "2026-03-25T15:32:15.813Z",
-      "summary": "Combines Hessian-aware GPTQ, cross-sequence attention on late layers, and SWA/EMA blending before score-first TTT adaptation.",
+      "generatedAt": "2026-03-27T23:20:51.863Z",
+      "summary": "Combines Hessian-aware GPTQ, XSA on the last four layers, and score-first TTT with EMA/SWA blending to adapt int6 weights within the 10-minute regime.",
       "tags": [
+        "val-only",
         "quantization",
         "attention",
         "training-schedule"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-734.json"
     },
@@ -4149,13 +4152,15 @@
     {
       "prNumber": 727,
       "title": "Record: First Legal Sub-1.0 BPB — Multi-order N-gram Backoff + Entropy-Adaptive Alpha (val_bpb=0.9674, 3-seed)",
-      "status": "open",
-      "updatedAt": "2026-03-25T15:17:52Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T23:05:19Z",
       "headSha": "091afd7b00f5d1beb759496ec51e17caee1828b7",
-      "generatedAt": "2026-03-25T15:32:48.642Z",
-      "summary": "Eval-time n-gram cache uses 2–7 order backoff with entropy-adaptive interpolation to augment logits from the 11-layer GQA LM.",
+      "generatedAt": "2026-03-27T23:20:56.592Z",
+      "summary": "11-layer GQA/XSA model uses a multi-order n-gram cache with entropy-adaptive interpolation to bias eval logits based on confidence.",
       "tags": [
-        "evaluation"
+        "architecture",
+        "evaluation",
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4777,24 +4782,23 @@
     {
       "prNumber": 688,
       "title": "Record: 5-expert Hedge Mixer + TTT (3-seed mean val_bpb=1.0745)",
-      "status": "open",
-      "updatedAt": "2026-03-25T10:41:37Z",
+      "status": "closed",
+      "updatedAt": "2026-03-27T22:49:21Z",
       "headSha": "a366675fbcda83df0f634a8967d6f041b868a651",
-      "generatedAt": "2026-03-25T11:01:01.303Z",
-      "summary": "TTT run augments validation-only adaptation with a GPU Hedge mixer that blends neural logits with n-gram experts via online weight updates during chunked scoring.",
+      "generatedAt": "2026-03-27T23:21:02.336Z",
+      "summary": "GPU-vectorized 5-expert Hedge context mixer during TTT blends neural logits with incremental n-gram and entropy experts for post-training adaptation.",
       "tags": [
-        "val-only",
         "evaluation",
         "training-schedule",
-        "optimizer"
+        "quantization"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-688.json"
     },

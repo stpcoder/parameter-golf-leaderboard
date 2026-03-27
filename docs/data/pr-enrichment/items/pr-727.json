@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T15:32:48.642Z",
+  "generatedAt": "2026-03-27T23:20:56.592Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 727,
     "title": "Record: First Legal Sub-1.0 BPB — Multi-order N-gram Backoff + Entropy-Adaptive Alpha (val_bpb=0.9674, 3-seed)",
-    "state": "open",
-    "updatedAt": "2026-03-25T15:17:52Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:05:19Z",
     "headSha": "091afd7b00f5d1beb759496ec51e17caee1828b7",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/727",
     "authorLogin": "Asukabot0"
@@ -19,16 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Eval-time n-gram cache uses 2–7 order backoff with entropy-adaptive interpolation to augment logits from the 11-layer GQA LM.",
+    "summary": "11-layer GQA/XSA model uses a multi-order n-gram cache with entropy-adaptive interpolation to bias eval logits based on confidence.",
     "tags": [
-      "evaluation"
+      "architecture",
+      "evaluation",
+      "quantization"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Technique is an evaluation-time cache interpolation; training was standard and did not use validation-only data.",
+    "valOnlyReasoning": "",
     "techniques": [
       "Multi-order n-gram backoff cache",
       "Entropy-adaptive interpolation weight",
-      "Muon-optimized 11L GQA LM"
+      "LeakyReLU² + GQA + XSA-all stack"
     ]
   },
   "compatibility": {

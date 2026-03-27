@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T15:32:15.813Z",
+  "generatedAt": "2026-03-27T23:20:51.863Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 734,
     "title": "Non-record: Full GPTQ + XSA-4 + Score-First TTT (3-seed mean 1.1198)",
-    "state": "open",
-    "updatedAt": "2026-03-25T15:24:50Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:04:41Z",
     "headSha": "281a26e10733e564da0aaf1b9384b192930de79b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/734",
     "authorLogin": "Robby955"
@@ -19,24 +19,25 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines Hessian-aware GPTQ, cross-sequence attention on late layers, and SWA/EMA blending before score-first TTT adaptation.",
+    "summary": "Combines Hessian-aware GPTQ, XSA on the last four layers, and score-first TTT with EMA/SWA blending to adapt int6 weights within the 10-minute regime.",
     "tags": [
+      "val-only",
       "quantization",
       "attention",
       "training-schedule"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Score-first TTT sequentially scores validation chunks under inference_mode and then trains on those chunks, so adaptation happens using only validation shards.",
     "techniques": [
-      "Hessian-aware int6 GPTQ with Cholesky compensation and percentile clipping",
-      "XSA on the last four layers for extended context during eval",
-      "Score-first TTT with frozen early blocks plus 50/50 EMA and tight SWA blend"
+      "Hessian-aware GPTQ calibration with Cholesky error compensation",
+      "XSA applied to the final four layers for extended contextual attention",
+      "Score-first TTT with AdamW chunked adaptation and EMA+SWA weight blending"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

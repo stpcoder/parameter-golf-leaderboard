@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T11:08:50.277Z",
+  "generatedAt": "2026-03-27T23:20:17.417Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -19,17 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Eval-time N-gram cache refreshes every 65K tokens so multi-order stats update frequently, letting a score-first cache boost predictions without retraining.",
+    "summary": "Eval cache updates occur every 65K tokens so the N-gram stats refresh 15× faster atop the 11L GQA + GPTQ-Int5 stack without altering training.",
     "tags": [
       "evaluation",
-      "compression"
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Smaller score-first chunks trigger more frequent cache rewrites",
-      "Entropy-adaptive order 2-9 backoff with per-order multipliers",
-      "GPTQ-int5, LeakyReLU(0.9)², and multi-query attention architecture"
+      "Fine-grained N-gram cache chunking",
+      "Order-2-9 entropy-adaptive backoff multipliers",
+      "GPTQ-Int5 quantized 11L GQA model"
     ]
   },
   "compatibility": {

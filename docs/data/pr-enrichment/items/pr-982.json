@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T21:48:42.553Z",
+  "generatedAt": "2026-03-27T23:19:17.413Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 982,
     "title": " Record: Fort Knox — Legal Packed Training Cache, Zero Val Adaptation (val_bpb 0.0638, 3-seed)",
-    "state": "open",
-    "updatedAt": "2026-03-27T21:47:02Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:01:56Z",
     "headSha": "2c970e959c151916411737173c7eba618975d879",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/982",
     "authorLogin": "haikosys"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Fuses a frozen 6L transformer with packed training-only n-gram stats and sharpened logits so eval uses no validation-time adaptation.",
+    "summary": "Blends a frozen 6L transformer with a packed training-only n-gram cache and zero validation adaptation to establish an ultra-conservative legality baseline.",
     "tags": [
       "val-only",
       "architecture",
-      "compression",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "packed training n-gram cache in artifact",
-      "zero validation-time adaptation",
-      "temperature sharpening blend"
+      "Packed training-only n-gram cache serialized with the artifact and blended into inference",
+      "Zero val-data adaptation—no caches, TTT, or calibration during evaluation",
+      "Temperature sharpening (T=0.85) applied to frozen model logits before softmax"
     ]
   },
   "compatibility": {

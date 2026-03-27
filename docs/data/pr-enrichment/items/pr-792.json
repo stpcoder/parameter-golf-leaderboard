@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T01:35:59.219Z",
+  "generatedAt": "2026-03-27T23:20:34.761Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 792,
     "title": "11L LeakyReLU² + XSA-all + Full GPTQ + 5-gram Backoff (1.0340 BPB)",
-    "state": "open",
-    "updatedAt": "2026-03-26T01:05:47Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T23:04:43Z",
     "headSha": "c7a9540ef9630c87443e2fc750ceab5bef6c3c83",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/792",
     "authorLogin": "xexyz"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer transformer pairs LeakyReLU(0.5)^2, XSA in every block, and Hessian GPTQ with entropy-steered 5-gram backoff for eval scoring.",
+    "summary": "11-layer 512d transformer uses LeakyReLU(0.5)² with XSA on every layer, full GPTQ int6 quantization, and entropy-weighted 5-gram backoff caching.",
     "tags": [
       "architecture",
-      "attention",
       "quantization",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU(0.5)^2 MLP with skip connections and RoPE",
-      "Cross-sequence attention applied across all layers",
-      "Hessian-based GPTQ plus entropy-adaptive 5-gram backoff"
+      "LeakyReLU(0.5)² MLP with XSA on all layers",
+      "Hessian-based full GPTQ int6 quantization with Cholesky correction",
+      "Entropy-adaptive 5-gram backoff cache with score-first cascade"
     ]
   },
   "compatibility": {
