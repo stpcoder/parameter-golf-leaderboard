@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T21:48:24.190Z",
+  "generatedAt": "2026-03-27T22:18:24.443Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -7484,6 +7484,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25",
+        "folderPath": "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/train_gpt.py"
+      },
+      "submission": {
+        "author": "ymrohit",
+        "githubId": "ymrohit",
+        "name": "11L XSA4 Late Shared Workspace Adapter (LSWA-64x4) + MLP2.5",
+        "blurb": "Late Shared Workspace Adapter (LSWA) adds a shared token-to-workspace-to-token writeback path only in late decoder blocks on top of the public March 23 11-layer record lineage, while keeping the trunk close to the donor. This snapshot keeps the novel part focused: same 11x512 banked backbone, same XSA-last-4 recipe, same bigram and VE paths, but with LSWA-64x4, MLP_MULT=2.5, and a simplified no-TTT/no-EMA exact-eval deployment. Best included legal seed is 1.08568610 exact post-quant val_bpb at 15,900,041 bytes.",
+        "date": "2026-03-27T18:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.0856861,
+        "valLoss": 1.83313551,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15900041,
+        "bytesCode": 87049,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 988,
+        "title": "Record-track submission: 11L XSA4 + Late Shared Workspace Adapter (LSWA-64x4) + MLP2.5",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/988",
+        "authorLogin": "ymrohit",
+        "authorName": null,
+        "createdAt": "2026-03-27T21:50:09Z",
+        "updatedAt": "2026-03-27T21:55:05Z",
+        "headSha": "22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef",
+        "headRepo": "ymrohit/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef/records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef/records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef/records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef/records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef/records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25",
+        "pr": "https://github.com/openai/parameter-golf/pull/988",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-23_LoquiAuris_10L_LoRA_TTT_1-0865",
       "source": "pull_request",
       "status": "closed",
@@ -12167,16 +12244,16 @@
         "authorLogin": "pattern4bots",
         "authorName": null,
         "createdAt": "2026-03-26T21:54:45Z",
-        "updatedAt": "2026-03-26T22:57:44Z",
-        "headSha": "554a6ab86eadbaf8d917dd99ee8163bde97783e8",
+        "updatedAt": "2026-03-27T22:14:31Z",
+        "headSha": "2baeef8b2a700896dd492f26459d5c8b2087907e",
         "headRepo": "pattern4bots/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/554a6ab86eadbaf8d917dd99ee8163bde97783e8/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/554a6ab86eadbaf8d917dd99ee8163bde97783e8/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/554a6ab86eadbaf8d917dd99ee8163bde97783e8/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/554a6ab86eadbaf8d917dd99ee8163bde97783e8/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/554a6ab86eadbaf8d917dd99ee8163bde97783e8/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
         "pr": "https://github.com/openai/parameter-golf/pull/898",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -15951,6 +16028,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/de52d4fac644e3c401ca85c3a78ca0578f30e3fc/records/track_10min_16mb/2026-03-20_11L_Int6_SmearGate_SWA/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/de52d4fac644e3c401ca85c3a78ca0578f30e3fc/records/track_10min_16mb/2026-03-20_11L_Int6_SmearGate_SWA",
         "pr": "https://github.com/openai/parameter-golf/pull/236",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-28_QAT_SWA_Ablation",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-28_QAT_SWA_Ablation",
+        "folderPath": "records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation",
+        "submissionPath": "records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/train_gpt.py"
+      },
+      "submission": {
+        "author": "Alexander Perry",
+        "githubId": "alexanderaperry-arch",
+        "name": "QAT x SWA Ablation: Antagonistic Interaction in Quantization-Aware Training",
+        "blurb": "2x2 factorial ablation of QAT x SWA interaction on PR #180 stack. Key finding: SWA and QAT are antagonistic — QAT alone (1.14018, 3-seed mean) beats SWA alone (1.14382) by 3.64 mBPB, but combining them (1.14468) is worse than either. Explains why prior QAT entries underperformed non-QAT submissions.",
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": 1.14018,
+        "valLoss": 1.925,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": 600,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15787003,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 989,
+        "title": "QAT x SWA Ablation: antagonistic interaction finding",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/989",
+        "authorLogin": "alexanderaperry-arch",
+        "authorName": null,
+        "createdAt": "2026-03-27T22:05:24Z",
+        "updatedAt": "2026-03-27T22:05:24Z",
+        "headSha": "ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d",
+        "headRepo": "alexanderaperry-arch/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d/records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d/records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d/records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d/records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d/records/track_10min_16mb/2026-03-28_QAT_SWA_Ablation",
+        "pr": "https://github.com/openai/parameter-golf/pull/989",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

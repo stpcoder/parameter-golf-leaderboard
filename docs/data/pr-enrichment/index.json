@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2026-03-27T21:48:42.704Z",
+  "generatedAt": "2026-03-27T22:18:39.583Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 989,
+      "title": "QAT x SWA Ablation: antagonistic interaction finding",
+      "status": "open",
+      "updatedAt": "2026-03-27T22:05:24Z",
+      "headSha": "ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d",
+      "generatedAt": "2026-03-27T22:18:30.598Z",
+      "summary": "2×2 QAT×SWA ablation shows SWA averaging undoes STE-based quantization shaping, so QAT excels only with SWA disabled.",
+      "tags": [
+        "quantization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-989.json"
+    },
+    {
+      "prNumber": 988,
+      "title": "Record-track submission: 11L XSA4 + Late Shared Workspace Adapter (LSWA-64x4) + MLP2.5",
+      "status": "open",
+      "updatedAt": "2026-03-27T21:55:05Z",
+      "headSha": "22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef",
+      "generatedAt": "2026-03-27T22:18:35.916Z",
+      "summary": "Adds LSWA to write tokens via a compact workspace in late decoder blocks while keeping the 11L XSA4 trunk unchanged.",
+      "tags": [
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-988.json"
+    },
     {
       "prNumber": 986,
       "title": "Record: Packed N-gram + Two-Pass   Dirichlet CTW — val_bpb 0.0830 (3-seed mean)",
@@ -1505,10 +1549,10 @@
       "prNumber": 898,
       "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-26T22:57:44Z",
-      "headSha": "554a6ab86eadbaf8d917dd99ee8163bde97783e8",
-      "generatedAt": "2026-03-26T23:44:21.133Z",
-      "summary": "Frequency-weighted mixed int6/int8 quantization keeps top-100 tokens at int8 precision while rare embeddings stay int6 to favor frequent token accuracy.",
+      "updatedAt": "2026-03-27T22:14:31Z",
+      "headSha": "2baeef8b2a700896dd492f26459d5c8b2087907e",
+      "generatedAt": "2026-03-27T22:18:39.416Z",
+      "summary": "Embedding quantization reserves int8 for the most frequent 100 tokens and int6 for the rest, using token frequency stats to guide precision.",
       "tags": [
         "quantization"
       ],

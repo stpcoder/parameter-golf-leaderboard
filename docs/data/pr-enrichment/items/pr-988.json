@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-27T22:18:35.916Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 988,
+    "title": "Record-track submission: 11L XSA4 + Late Shared Workspace Adapter (LSWA-64x4) + MLP2.5",
+    "state": "open",
+    "updatedAt": "2026-03-27T21:55:05Z",
+    "headSha": "22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/988",
+    "authorLogin": "ymrohit"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Adds LSWA to write tokens via a compact workspace in late decoder blocks while keeping the 11L XSA4 trunk unchanged.",
+    "tags": [
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Late Shared Workspace Adapter reused across late decoder sites",
+      "Reduced MLP width (2.5×) to make room for the workspace under 16MB",
+      "Exact int6 post-quant validation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

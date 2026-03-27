@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T23:44:21.133Z",
+  "generatedAt": "2026-03-27T22:18:39.416Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 898,
     "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-26T22:57:44Z",
-    "headSha": "554a6ab86eadbaf8d917dd99ee8163bde97783e8",
+    "updatedAt": "2026-03-27T22:14:31Z",
+    "headSha": "2baeef8b2a700896dd492f26459d5c8b2087907e",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/898",
     "authorLogin": "pattern4bots"
   },
@@ -19,16 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Frequency-weighted mixed int6/int8 quantization keeps top-100 tokens at int8 precision while rare embeddings stay int6 to favor frequent token accuracy.",
+    "summary": "Embedding quantization reserves int8 for the most frequent 100 tokens and int6 for the rest, using token frequency stats to guide precision.",
     "tags": [
       "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Frequency-aware embedding quantization",
-      "Int8 for top tokens, int6 for others",
-      "Custom dequantization handling"
+      "frequency-weighted int8/int6 split",
+      "per-embedding-layer detection in quantizer",
+      "matching dequant logic for split embeddings"
     ]
   },
   "compatibility": {
