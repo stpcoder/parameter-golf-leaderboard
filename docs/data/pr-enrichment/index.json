@@ -1,8 +1,53 @@
 {
-  "generatedAt": "2026-03-27T17:17:06.212Z",
+  "generatedAt": "2026-03-27T17:47:35.207Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 968,
+      "title": "Record: Order-20 Dirichlet Posterior + Phrase Cache — 0.11545 BPB (3-seed)",
+      "status": "open",
+      "updatedAt": "2026-03-27T17:44:22Z",
+      "headSha": "ae22ace58b381e7ce240959a1060a9e8105fd497",
+      "generatedAt": "2026-03-27T17:47:13.211Z",
+      "summary": "Extends Dirichlet-smoothed n-gram backoff to order 20 with per-order OBCL mixing and phrase suffix caching for richer posterior estimates.",
+      "tags": [
+        "architecture",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-968.json"
+    },
+    {
+      "prNumber": 967,
+      "title": "Record: 1.0450 BPB — SGD TTT + HedgeMixer with Per-Layer LR Groups",
+      "status": "open",
+      "updatedAt": "2026-03-27T17:23:46Z",
+      "headSha": "ec95c58f2ee1da62105369e895e1629b3de395bf",
+      "generatedAt": "2026-03-27T17:47:19.808Z",
+      "summary": "TTT now uses SGD momentum and per-layer LR groups with cosine decay on the PR #720 HedgeMixer backbone.",
+      "tags": [
+        "optimizer",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-967.json"
+    },
     {
       "prNumber": 965,
       "title": "Architectural Record: 1.11837 BPB via KGIIR Trajectory Mixing",
@@ -303,29 +348,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-950.json"
-    },
-    {
-      "prNumber": 948,
-      "title": "Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
-      "status": "open",
-      "updatedAt": "2026-03-27T11:40:52Z",
-      "headSha": "89b55147bbf1d2f118660d5a3fa2ab39b47c6f41",
-      "generatedAt": "2026-03-27T11:45:54.640Z",
-      "summary": "Mixes EBLS neural base with two-level Dirichlet/posterior n-gram plus phrase-cache smoothing before GPTQ+LZMA compression.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "compression"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-948.json"
     },
     {
       "prNumber": 947,
@@ -1277,13 +1299,15 @@
       "prNumber": 892,
       "title": "Non-record: Technique Taxonomy — Tier List, Interaction Effects, and BPB Verification Tools",
       "status": "open",
-      "updatedAt": "2026-03-26T22:11:17Z",
-      "headSha": "d3864b39d246f989dc923f89006939dc5da28102",
-      "generatedAt": "2026-03-26T22:12:44.438Z",
-      "summary": "Synthesizes merged Parameter Golf research into a tiered technique taxonomy, interaction matrix, and verification checklist to guide future submissions.",
+      "updatedAt": "2026-03-27T17:21:34Z",
+      "headSha": "9aff41195b11d9199a9d14a4f1c3b38957bd3f4c",
+      "generatedAt": "2026-03-27T17:47:25.806Z",
+      "summary": "Synthesis of merged submissions into a BPB-tiered technique list, interaction matrix, and verification/budget tools for the Non-record 16MB track.",
       "tags": [
         "non-record",
-        "evaluation"
+        "evaluation",
+        "quantization",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1344,10 +1368,10 @@
       "prNumber": 886,
       "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
       "status": "open",
-      "updatedAt": "2026-03-27T15:59:42Z",
+      "updatedAt": "2026-03-27T17:42:38Z",
       "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
-      "generatedAt": "2026-03-27T16:17:06.299Z",
-      "summary": "Diagnoses n-gram cache BPB inflation as an invalid probability distribution and proposes distribution checks plus causality/eval-time state caps.",
+      "generatedAt": "2026-03-27T17:47:30.008Z",
+      "summary": "Shows n-gram cache blends use invalid P(cache_bin) ratios inflating BPB, proposing distribution checks, causality rules, and eval-state caps.",
       "tags": [
         "evaluation",
         "non-record"
@@ -5506,10 +5530,10 @@
       "prNumber": 619,
       "title": "non-record 16MB A100 SXM run (10L mixed int5/int6 + EMA + QAT)",
       "status": "open",
-      "updatedAt": "2026-03-27T07:13:08Z",
-      "headSha": "e6a8be47853e40d46e8b2877530a8898634fb698",
-      "generatedAt": "2026-03-27T07:15:29.639Z",
-      "summary": "10-layer GPT with BigramHash uses block-wise mixed int5/int6 quant, EMA-export weights, and late QAT to target the 16MB non-record cap.",
+      "updatedAt": "2026-03-27T17:27:35Z",
+      "headSha": "90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2",
+      "generatedAt": "2026-03-27T17:47:35.113Z",
+      "summary": "10-layer GPT pairs module-specific int5/int6 quantization with EMA-exported weights and late-stage QAT atop BigramHash tokens for 16MB compliance.",
       "tags": [
         "quantization",
         "architecture",

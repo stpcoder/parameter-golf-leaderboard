@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T17:47:13.211Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 968,
+    "title": "Record: Order-20 Dirichlet Posterior + Phrase Cache — 0.11545 BPB (3-seed)",
+    "state": "open",
+    "updatedAt": "2026-03-27T17:44:22Z",
+    "headSha": "ae22ace58b381e7ce240959a1060a9e8105fd497",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/968",
+    "authorLogin": "dentity007"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/README.md",
+      "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "Extends Dirichlet-smoothed n-gram backoff to order 20 with per-order OBCL mixing and phrase suffix caching for richer posterior estimates.",
+    "tags": [
+      "architecture",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Order-20 Dirichlet posterior with per-order OBCL mixing",
+      "Phrase cache probing at 20/16-token suffixes",
+      "GPTQ int6 + LZMA compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

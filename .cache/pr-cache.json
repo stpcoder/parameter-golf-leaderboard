@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-27T17:16:47.931Z",
-  "lastSeenUpdatedAt": "2026-03-27T17:15:11Z",
+  "generatedAt": "2026-03-27T17:47:03.692Z",
+  "lastSeenUpdatedAt": "2026-03-27T17:44:34Z",
   "prs": {
     "1": {
       "number": 1,
@@ -53274,7 +53274,7 @@
     },
     "619": {
       "number": 619,
-      "updatedAt": "2026-03-27T07:13:08Z",
+      "updatedAt": "2026-03-27T17:27:35Z",
       "pr": {
         "number": 619,
         "title": "non-record 16MB A100 SXM run (10L mixed int5/int6 + EMA + QAT)",
@@ -53285,8 +53285,8 @@
         "authorLogin": "zeal175",
         "authorName": null,
         "createdAt": "2026-03-24T13:38:05Z",
-        "updatedAt": "2026-03-27T07:13:08Z",
-        "headSha": "e6a8be47853e40d46e8b2877530a8898634fb698",
+        "updatedAt": "2026-03-27T17:27:35Z",
+        "headSha": "90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2",
         "headRepo": "zeal175/parameter-golf"
       },
       "submissions": [
@@ -53348,16 +53348,16 @@
             "authorLogin": "zeal175",
             "authorName": null,
             "createdAt": "2026-03-24T13:38:05Z",
-            "updatedAt": "2026-03-27T07:13:08Z",
-            "headSha": "e6a8be47853e40d46e8b2877530a8898634fb698",
+            "updatedAt": "2026-03-27T17:27:35Z",
+            "headSha": "90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2",
             "headRepo": "zeal175/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e6a8be47853e40d46e8b2877530a8898634fb698/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/e6a8be47853e40d46e8b2877530a8898634fb698/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/e6a8be47853e40d46e8b2877530a8898634fb698/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/e6a8be47853e40d46e8b2877530a8898634fb698/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/e6a8be47853e40d46e8b2877530a8898634fb698/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/90f7aca8d0a7a57c35d9c2b9baea0f6ba92a6cd2/records/track_non_record_16mb/2026-03-24_A100SXM1_10L_MixedInt5Int6_EMA_QAT",
             "pr": "https://github.com/openai/parameter-golf/pull/619"
           }
         }
@@ -76079,7 +76079,7 @@
     },
     "886": {
       "number": 886,
-      "updatedAt": "2026-03-27T15:59:42Z",
+      "updatedAt": "2026-03-27T17:42:38Z",
       "pr": {
         "number": 886,
         "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
@@ -76090,7 +76090,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-27T15:59:42Z",
+        "updatedAt": "2026-03-27T17:42:38Z",
         "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -76153,7 +76153,7 @@
             "authorLogin": "abaybektursun",
             "authorName": null,
             "createdAt": "2026-03-26T19:03:36Z",
-            "updatedAt": "2026-03-27T15:59:42Z",
+            "updatedAt": "2026-03-27T17:42:38Z",
             "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
             "headRepo": "abaybektursun/parameter-golf"
           },
@@ -76696,7 +76696,7 @@
     },
     "892": {
       "number": 892,
-      "updatedAt": "2026-03-26T22:11:17Z",
+      "updatedAt": "2026-03-27T17:21:34Z",
       "pr": {
         "number": 892,
         "title": "Non-record: Technique Taxonomy — Tier List, Interaction Effects, and BPB Verification Tools",
@@ -76707,8 +76707,8 @@
         "authorLogin": "robbiebusinessacc",
         "authorName": null,
         "createdAt": "2026-03-26T19:26:32Z",
-        "updatedAt": "2026-03-26T22:11:17Z",
-        "headSha": "d3864b39d246f989dc923f89006939dc5da28102",
+        "updatedAt": "2026-03-27T17:21:34Z",
+        "headSha": "9aff41195b11d9199a9d14a4f1c3b38957bd3f4c",
         "headRepo": "robbiebusinessacc/parameter-golf"
       },
       "submissions": [
@@ -76770,16 +76770,16 @@
             "authorLogin": "robbiebusinessacc",
             "authorName": null,
             "createdAt": "2026-03-26T19:26:32Z",
-            "updatedAt": "2026-03-26T22:11:17Z",
-            "headSha": "d3864b39d246f989dc923f89006939dc5da28102",
+            "updatedAt": "2026-03-27T17:21:34Z",
+            "headSha": "9aff41195b11d9199a9d14a4f1c3b38957bd3f4c",
             "headRepo": "robbiebusinessacc/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/d3864b39d246f989dc923f89006939dc5da28102/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/d3864b39d246f989dc923f89006939dc5da28102/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/d3864b39d246f989dc923f89006939dc5da28102/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/d3864b39d246f989dc923f89006939dc5da28102/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/d3864b39d246f989dc923f89006939dc5da28102/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/9aff41195b11d9199a9d14a4f1c3b38957bd3f4c/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/9aff41195b11d9199a9d14a4f1c3b38957bd3f4c/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/9aff41195b11d9199a9d14a4f1c3b38957bd3f4c/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/9aff41195b11d9199a9d14a4f1c3b38957bd3f4c/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/9aff41195b11d9199a9d14a4f1c3b38957bd3f4c/records/track_non_record_16mb/2026-03-26_Technique_Taxonomy_Research",
             "pr": "https://github.com/openai/parameter-golf/pull/892"
           }
         }
@@ -81724,10 +81724,10 @@
     },
     "948": {
       "number": 948,
-      "updatedAt": "2026-03-27T11:40:52Z",
+      "updatedAt": "2026-03-27T17:44:34Z",
       "pr": {
         "number": 948,
-        "title": "Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
+        "title": "Record: Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -81735,8 +81735,8 @@
         "authorLogin": "dentity007",
         "authorName": null,
         "createdAt": "2026-03-27T11:40:52Z",
-        "updatedAt": "2026-03-27T11:40:52Z",
-        "headSha": "89b55147bbf1d2f118660d5a3fa2ab39b47c6f41",
+        "updatedAt": "2026-03-27T17:44:34Z",
+        "headSha": "4be498f525986d732906d3d3cdb0ce2448e04212",
         "headRepo": "NathanMaine/parameter-golf"
       },
       "submissions": [
@@ -81768,7 +81768,7 @@
             "date": "2026-03-27"
           },
           "metrics": {
-            "valBpb": 0.1156,
+            "valBpb": 0.11556,
             "valLoss": null,
             "preQuantValBpb": null,
             "preQuantValLoss": null,
@@ -81790,7 +81790,7 @@
           },
           "pr": {
             "number": 948,
-            "title": "Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
+            "title": "Record: Two-Level Dirichlet Posterior + Phrase Cache — 0.11556 BPB (3-seed)",
             "state": "open",
             "draft": false,
             "mergedAt": null,
@@ -81798,16 +81798,16 @@
             "authorLogin": "dentity007",
             "authorName": null,
             "createdAt": "2026-03-27T11:40:52Z",
-            "updatedAt": "2026-03-27T11:40:52Z",
-            "headSha": "89b55147bbf1d2f118660d5a3fa2ab39b47c6f41",
+            "updatedAt": "2026-03-27T17:44:34Z",
+            "headSha": "4be498f525986d732906d3d3cdb0ce2448e04212",
             "headRepo": "NathanMaine/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/89b55147bbf1d2f118660d5a3fa2ab39b47c6f41/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/89b55147bbf1d2f118660d5a3fa2ab39b47c6f41/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/89b55147bbf1d2f118660d5a3fa2ab39b47c6f41/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/89b55147bbf1d2f118660d5a3fa2ab39b47c6f41/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/89b55147bbf1d2f118660d5a3fa2ab39b47c6f41/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/4be498f525986d732906d3d3cdb0ce2448e04212/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/4be498f525986d732906d3d3cdb0ce2448e04212/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/4be498f525986d732906d3d3cdb0ce2448e04212/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/4be498f525986d732906d3d3cdb0ce2448e04212/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/4be498f525986d732906d3d3cdb0ce2448e04212/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache",
             "pr": "https://github.com/openai/parameter-golf/pull/948"
           }
         }
@@ -84356,7 +84356,7 @@
     },
     "966": {
       "number": 966,
-      "updatedAt": "2026-03-27T17:09:53Z",
+      "updatedAt": "2026-03-27T17:20:32Z",
       "pr": {
         "number": 966,
         "title": "Mixture of Convolutions (MoC): token-adaptive short convolutions via kernel mixtures",
@@ -84367,11 +84367,264 @@
         "authorLogin": "andrewmouldon",
         "authorName": null,
         "createdAt": "2026-03-27T17:09:11Z",
-        "updatedAt": "2026-03-27T17:09:53Z",
-        "headSha": "0cf745c209bb615e8a844645c1a3fa1125964788",
+        "updatedAt": "2026-03-27T17:20:32Z",
+        "headSha": "173a43c0b90dac107f7502cedce743ec481fe7d4",
         "headRepo": "andrewmouldon/parameter-golf"
       },
       "submissions": []
+    },
+    "967": {
+      "number": 967,
+      "updatedAt": "2026-03-27T17:23:46Z",
+      "pr": {
+        "number": 967,
+        "title": "Record: 1.0450 BPB — SGD TTT + HedgeMixer with Per-Layer LR Groups",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/967",
+        "authorLogin": "dexhunter",
+        "authorName": null,
+        "createdAt": "2026-03-27T17:23:46Z",
+        "updatedAt": "2026-03-27T17:23:46Z",
+        "headSha": "ec95c58f2ee1da62105369e895e1629b3de395bf",
+        "headRepo": "dexhunter/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-967-records-track_10min_16mb-2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1-0450-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450",
+            "folderPath": "records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450",
+            "submissionPath": "records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/train_gpt.py"
+          },
+          "submission": {
+            "author": "dexhunter",
+            "githubId": "dexhunter",
+            "name": "SGD TTT + HedgeMixer: Per-Layer LR Groups on PR #720 Backbone",
+            "blurb": "Built on PR #720 by @agalimova. Switches TTT from AdamW to SGD (lr=0.002, momentum=0.9) with per-layer LR groups (3x proj, 0.5x fc), cosine schedule, and zero frozen blocks. 3-seed mean 1.0450 BPB on 8xH100 in under 600s eval.",
+            "date": "2026-03-27"
+          },
+          "metrics": {
+            "valBpb": 1.04498723,
+            "valLoss": 1.76441249,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 15672158,
+            "bytesCode": 102023,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 967,
+            "title": "Record: 1.0450 BPB — SGD TTT + HedgeMixer with Per-Layer LR Groups",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/967",
+            "authorLogin": "dexhunter",
+            "authorName": null,
+            "createdAt": "2026-03-27T17:23:46Z",
+            "updatedAt": "2026-03-27T17:23:46Z",
+            "headSha": "ec95c58f2ee1da62105369e895e1629b3de395bf",
+            "headRepo": "dexhunter/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ec95c58f2ee1da62105369e895e1629b3de395bf/records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/ec95c58f2ee1da62105369e895e1629b3de395bf/records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/ec95c58f2ee1da62105369e895e1629b3de395bf/records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/ec95c58f2ee1da62105369e895e1629b3de395bf/records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/ec95c58f2ee1da62105369e895e1629b3de395bf/records/track_10min_16mb/2026-03-27_SGD_TTT_HedgeMixer_PerLayerLR_1.0450",
+            "pr": "https://github.com/openai/parameter-golf/pull/967"
+          }
+        }
+      ]
+    },
+    "968": {
+      "number": 968,
+      "updatedAt": "2026-03-27T17:44:22Z",
+      "pr": {
+        "number": 968,
+        "title": "Record: Order-20 Dirichlet Posterior + Phrase Cache — 0.11545 BPB (3-seed)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/968",
+        "authorLogin": "dentity007",
+        "authorName": null,
+        "createdAt": "2026-03-27T17:33:53Z",
+        "updatedAt": "2026-03-27T17:44:22Z",
+        "headSha": "ae22ace58b381e7ce240959a1060a9e8105fd497",
+        "headRepo": "NathanMaine/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-968-records-track_10min_16mb-2026-03-27_Dirichlet_Ngram_Phrase_Cache-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-27_Dirichlet_Ngram_Phrase_Cache",
+            "folderPath": "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache",
+            "submissionPath": "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train_gpt.py"
+          },
+          "submission": {
+            "author": "Nathan Maine",
+            "githubId": "NathanMaine",
+            "name": "Two-Level Dirichlet Posterior + Per-Order OBCL + Phrase Cache (3-seed)",
+            "blurb": "Two-level Dirichlet-Multinomial posterior mixing with per-order OBCL concentrations (50.0 for bigrams to 1.86 for 14-grams) and phrase suffix matching (probes at 20,16 tokens). 15-gram backoff with neural base measure. Complementary training (alpha=0.50). EBLS architecture (3 shared x 3 loops + 2 unique = 11L). GPTQ int6 + LZMA. 3-seed mean: 0.11556 (std 0.0000057). Based on techniques from PRs #414, #900, #846.",
+            "date": "2026-03-27"
+          },
+          "metrics": {
+            "valBpb": 0.1156,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 15077877,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 968,
+            "title": "Record: Order-20 Dirichlet Posterior + Phrase Cache — 0.11545 BPB (3-seed)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/968",
+            "authorLogin": "dentity007",
+            "authorName": null,
+            "createdAt": "2026-03-27T17:33:53Z",
+            "updatedAt": "2026-03-27T17:44:22Z",
+            "headSha": "ae22ace58b381e7ce240959a1060a9e8105fd497",
+            "headRepo": "NathanMaine/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Dirichlet_Ngram_Phrase_Cache",
+            "pr": "https://github.com/openai/parameter-golf/pull/968"
+          }
+        },
+        {
+          "id": "pr-968-records-track_10min_16mb-2026-03-27_Order20_Dirichlet_Ngram_Phrase-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-27_Order20_Dirichlet_Ngram_Phrase",
+            "folderPath": "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase",
+            "submissionPath": "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/train_gpt.py"
+          },
+          "submission": {
+            "author": "Nathan Maine",
+            "githubId": "NathanMaine",
+            "name": "Order-20 Dirichlet Posterior + Per-Order OBCL + Phrase Cache (3-seed)",
+            "blurb": "Extended n-gram backoff to order 20 (from 15). Two-level Dirichlet-Multinomial posterior mixing with per-order OBCL concentrations and phrase suffix matching. 3-seed mean: 0.11545 (std 0.0000010). Improvement over PR #948 (order 15, 0.11556) confirmed via 1xH100 ablation.",
+            "date": "2026-03-27"
+          },
+          "metrics": {
+            "valBpb": 0.11545,
+            "valLoss": null,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 15077877,
+            "bytesCode": null,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 968,
+            "title": "Record: Order-20 Dirichlet Posterior + Phrase Cache — 0.11545 BPB (3-seed)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/968",
+            "authorLogin": "dentity007",
+            "authorName": null,
+            "createdAt": "2026-03-27T17:33:53Z",
+            "updatedAt": "2026-03-27T17:44:22Z",
+            "headSha": "ae22ace58b381e7ce240959a1060a9e8105fd497",
+            "headRepo": "NathanMaine/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/ae22ace58b381e7ce240959a1060a9e8105fd497/records/track_10min_16mb/2026-03-27_Order20_Dirichlet_Ngram_Phrase",
+            "pr": "https://github.com/openai/parameter-golf/pull/968"
+          }
+        }
+      ]
     }
   }
 }

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T16:17:06.299Z",
+  "generatedAt": "2026-03-27T17:47:30.008Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 886,
     "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
     "state": "open",
-    "updatedAt": "2026-03-27T15:59:42Z",
+    "updatedAt": "2026-03-27T17:42:38Z",
     "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/886",
     "authorLogin": "abaybektursun"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Diagnoses n-gram cache BPB inflation as an invalid probability distribution and proposes distribution checks plus causality/eval-time state caps.",
+    "summary": "Shows n-gram cache blends use invalid P(cache_bin) ratios inflating BPB, proposing distribution checks, causality rules, and eval-state caps.",
     "tags": [
       "evaluation",
       "non-record"
@@ -27,8 +27,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "distribution sum verification",
-      "causality and eval-state caps"
+      "- full distribution verification via torch.sum",
+      "- cache hash collision analysis",
+      "- proposals capping eval-time state and latency"
     ]
   },
   "compatibility": {
