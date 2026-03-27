@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T14:47:05.289Z",
+  "generatedAt": "2026-03-27T15:16:45.435Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 886,
-    "title": "RFC: N-gram scores need a distribution validity check",
+    "title": "RFC: N-gram scores are invalid, and the eval setup needs constraints",
     "state": "open",
-    "updatedAt": "2026-03-27T14:39:43Z",
+    "updatedAt": "2026-03-27T15:02:01Z",
     "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/886",
     "authorLogin": "abaybektursun"
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Validates n-gram cache eval by checking probability sums, banning two-pass rescoring, and proposing caps on eval-time auxiliary state/latency.",
+    "summary": "Shows n-gram cache BPB claims stem from invalid cache-bin ratios and proposes per-token distribution checks plus causality/aux-state/time caps.",
     "tags": [
       "evaluation",
+      "training-schedule",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "distribution sum checks",
-      "causality rule",
-      "auxiliary state/latency caps"
+      "verify per-token softmax sums",
+      "enforce single-pass causality",
+      "cap eval auxiliary state and latency"
     ]
   },
   "compatibility": {

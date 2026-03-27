@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T15:16:34.118Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 961,
+    "title": "Record: 0.0881 BPB — 11L Int5 GPTQ + Order-12 N-gram + Phrase Cache + 65K Chunks",
+    "state": "open",
+    "updatedAt": "2026-03-27T15:13:03Z",
+    "headSha": "42bb4aa34affad22c0a713997a735cef0cf297ed",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/961",
+    "authorLogin": "callithyia"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Uses an int5-quantized 11L base model with order-12 n-gram plus phrase caches and 65K-token chunks for single-pass cache evaluation.",
+    "tags": [
+      "quantization",
+      "evaluation",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Order-12 n-gram + long phrase cache with temperature sharpening",
+      "65K-token chunk score-first cache eval to fit depth-specific budgets",
+      "Full Hessian GPTQ int5 quantization with LZMA compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

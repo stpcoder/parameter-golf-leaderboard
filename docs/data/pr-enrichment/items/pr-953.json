@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T14:46:57.495Z",
+  "generatedAt": "2026-03-27T15:16:40.303Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 953,
     "title": "Record: 1.0722 BPB — Improved TTT + HedgeMixer with Per-Layer LR Groups",
     "state": "open",
-    "updatedAt": "2026-03-27T14:46:41Z",
+    "updatedAt": "2026-03-27T15:08:57Z",
     "headSha": "27b39c622da3a7f289ec0f81557e0f60455c4eb9",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/953",
     "authorLogin": "dexhunter"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Test-time training pairs per-layer LR groups with a cosine schedule, four epochs, and only one frozen block to boost HedgeMixer adaptation.",
+    "summary": "TTT adaptation now uses per-layer LR groups, cosine annealing, four epochs, and fewer frozen blocks to better target output projections.",
     "tags": [
       "training-schedule",
       "optimizer",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Per-layer LR groups for TTT",
-      "Cosine LR annealing within adaptation",
-      "Four TTT epochs with one frozen block"
+      "Per-layer LR multipliers emphasizing adaptation of output projections",
+      "Cosine LR decay plus four TTT epochs with only one frozen block",
+      "Reused TTT eval to drop standalone sliding-window passes"
     ]
   },
   "compatibility": {

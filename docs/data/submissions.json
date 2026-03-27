@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T14:46:27.817Z",
+  "generatedAt": "2026-03-27T15:16:23.099Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -611,6 +611,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/5d3c5757e514f2bbfd9f93a7ae61c7cc37472ef7/records/track_10min_16mb/2026-03-27_CacheMoney_Full_6L256d/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/5d3c5757e514f2bbfd9f93a7ae61c7cc37472ef7/records/track_10min_16mb/2026-03-27_CacheMoney_Full_6L256d",
         "pr": "https://github.com/openai/parameter-golf/pull/933",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K",
+        "folderPath": "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/train_gpt.py"
+      },
+      "submission": {
+        "author": "callithyia",
+        "githubId": "callithyia",
+        "name": "11L Int5 GPTQ + Order-12 N-gram + Phrase Cache + 65K Chunks",
+        "blurb": "Fully-trained 11L 512d base model (pre-quant 1.14 BPB) with order-12 backoff n-gram cache, long phrase cache, entropy-adaptive alpha, temperature sharpening (T=0.85), and 65K-token chunks. Full Hessian GPTQ int5 + LZMA. Eval approach from PR #913 adapted with 65K chunk size for properly trained models where 131K exceeds eval budget. 3-seed mean 0.0881 (std 0.0004).",
+        "date": "2026-03-27"
+      },
+      "metrics": {
+        "valBpb": 0.0881,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 13001360,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 961,
+        "title": "Record: 0.0881 BPB — 11L Int5 GPTQ + Order-12 N-gram + Phrase Cache + 65K Chunks",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/961",
+        "authorLogin": "callithyia",
+        "authorName": null,
+        "createdAt": "2026-03-27T15:08:19Z",
+        "updatedAt": "2026-03-27T15:13:03Z",
+        "headSha": "42bb4aa34affad22c0a713997a735cef0cf297ed",
+        "headRepo": "callithyia/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/42bb4aa34affad22c0a713997a735cef0cf297ed/records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/42bb4aa34affad22c0a713997a735cef0cf297ed/records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/42bb4aa34affad22c0a713997a735cef0cf297ed/records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/42bb4aa34affad22c0a713997a735cef0cf297ed/records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/42bb4aa34affad22c0a713997a735cef0cf297ed/records/track_10min_16mb/2026-03-27_11L_Int5GPTQ_Order12_NgramPhrase_65K",
+        "pr": "https://github.com/openai/parameter-golf/pull/961",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -6837,7 +6914,7 @@
       },
       "pr": {
         "number": 953,
-        "title": "  Record: 1.1069 BPB — Improved TTT + HedgeMixer with Per-Layer LR Groups",
+        "title": "Record: 1.0722 BPB — Improved TTT + HedgeMixer with Per-Layer LR Groups",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -6845,7 +6922,7 @@
         "authorLogin": "dexhunter",
         "authorName": null,
         "createdAt": "2026-03-27T13:31:45Z",
-        "updatedAt": "2026-03-27T14:39:06Z",
+        "updatedAt": "2026-03-27T15:08:57Z",
         "headSha": "27b39c622da3a7f289ec0f81557e0f60455c4eb9",
         "headRepo": "dexhunter/parameter-golf"
       },
@@ -43885,7 +43962,7 @@
       },
       "pr": {
         "number": 886,
-        "title": "RFC: N-gram scores need a distribution validity check",
+        "title": "RFC: N-gram scores are invalid, and the eval setup needs constraints",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -43893,7 +43970,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-27T14:39:43Z",
+        "updatedAt": "2026-03-27T15:02:01Z",
         "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
         "headRepo": "abaybektursun/parameter-golf"
       },

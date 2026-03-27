@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-27T14:47:09.680Z",
+  "generatedAt": "2026-03-27T15:16:45.575Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 961,
+      "title": "Record: 0.0881 BPB — 11L Int5 GPTQ + Order-12 N-gram + Phrase Cache + 65K Chunks",
+      "status": "open",
+      "updatedAt": "2026-03-27T15:13:03Z",
+      "headSha": "42bb4aa34affad22c0a713997a735cef0cf297ed",
+      "generatedAt": "2026-03-27T15:16:34.118Z",
+      "summary": "Uses an int5-quantized 11L base model with order-12 n-gram plus phrase caches and 65K-token chunks for single-pass cache evaluation.",
+      "tags": [
+        "quantization",
+        "evaluation",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-961.json"
+    },
     {
       "prNumber": 960,
       "title": "Preliminary: 11L VRL + Full GPTQ + Parallel Muon + Legal TTT — val_bpb 1.1882 (ADIITJ)",
@@ -143,10 +166,10 @@
       "prNumber": 953,
       "title": "Record: 1.0722 BPB — Improved TTT + HedgeMixer with Per-Layer LR Groups",
       "status": "open",
-      "updatedAt": "2026-03-27T14:46:41Z",
+      "updatedAt": "2026-03-27T15:08:57Z",
       "headSha": "27b39c622da3a7f289ec0f81557e0f60455c4eb9",
-      "generatedAt": "2026-03-27T14:46:57.495Z",
-      "summary": "Test-time training pairs per-layer LR groups with a cosine schedule, four epochs, and only one frozen block to boost HedgeMixer adaptation.",
+      "generatedAt": "2026-03-27T15:16:40.303Z",
+      "summary": "TTT adaptation now uses per-layer LR groups, cosine annealing, four epochs, and fewer frozen blocks to better target output projections.",
       "tags": [
         "training-schedule",
         "optimizer",
@@ -1250,14 +1273,15 @@
     },
     {
       "prNumber": 886,
-      "title": "RFC: N-gram scores need a distribution validity check",
+      "title": "RFC: N-gram scores are invalid, and the eval setup needs constraints",
       "status": "open",
-      "updatedAt": "2026-03-27T14:39:43Z",
+      "updatedAt": "2026-03-27T15:02:01Z",
       "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
-      "generatedAt": "2026-03-27T14:47:05.289Z",
-      "summary": "Validates n-gram cache eval by checking probability sums, banning two-pass rescoring, and proposing caps on eval-time auxiliary state/latency.",
+      "generatedAt": "2026-03-27T15:16:45.435Z",
+      "summary": "Shows n-gram cache BPB claims stem from invalid cache-bin ratios and proposes per-token distribution checks plus causality/aux-state/time caps.",
       "tags": [
         "evaluation",
+        "training-schedule",
         "non-record"
       ],
       "flags": {
