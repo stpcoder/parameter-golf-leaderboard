@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T10:15:04.415Z",
+  "generatedAt": "2026-03-27T10:45:15.182Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -19807,6 +19807,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100",
+        "folderPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/train_gpt.py"
+      },
+      "submission": {
+        "author": "Aamod Bhatt",
+        "githubId": "aamodbhatt",
+        "name": "Legal Neural-Only No-TTT Alt (8xH100)",
+        "blurb": "Compliance-focused neural-only alternative with frontier_candidate scaling, no n-gram/two-pass cache blending, and no TTT under strict 10-minute/16MB constraints.",
+        "date": "2026-03-27"
+      },
+      "metrics": {
+        "valBpb": 1.15758536,
+        "valLoss": 1.9545344,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 14921440,
+        "bytesCode": 207992,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 947,
+        "title": "Non-record: Legal Neural-Only No-TTT Alt (8xH100) val_bpb=1.1576",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/947",
+        "authorLogin": "aamodbhatt",
+        "authorName": null,
+        "createdAt": "2026-03-27T10:42:54Z",
+        "updatedAt": "2026-03-27T10:42:54Z",
+        "headSha": "c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3",
+        "headRepo": "aamodbhatt/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100",
+        "pr": "https://github.com/openai/parameter-golf/pull/947",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-03-26_CoDA_GQA_DifferentialAttention",
       "source": "pull_request",
       "status": "open",
@@ -20722,6 +20799,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/3131670eaa558ac4cade159a2ab9ba44f650bb47/records/track_10min_16mb/2026-03-19_Seed2025_Top2K_Stride64/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/3131670eaa558ac4cade159a2ab9ba44f650bb47/records/track_10min_16mb/2026-03-19_Seed2025_Top2K_Stride64",
         "pr": "https://github.com/openai/parameter-golf/pull/99",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-27_Legal_NeuralOnly_NoTTT_8xH100",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_Legal_NeuralOnly_NoTTT_8xH100",
+        "folderPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/train_gpt.py"
+      },
+      "submission": {
+        "author": "Aamod Bhatt",
+        "githubId": "aamodbhatt",
+        "name": "Legal Neural-Only No-TTT (8xH100)",
+        "blurb": "Compliance-focused neural-only baseline: no n-gram/two-pass cache blending and no TTT. Uses frontier_lean under strict 10-minute constraints with artifact and eval guardrails.",
+        "date": "2026-03-27"
+      },
+      "metrics": {
+        "valBpb": 1.16059263,
+        "valLoss": 1.95961204,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 13446760,
+        "bytesCode": 207992,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 946,
+        "title": "Non-record: Legal Neural-Only No-TTT (8xH100) val_bpb=1.1606",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/946",
+        "authorLogin": "aamodbhatt",
+        "authorName": null,
+        "createdAt": "2026-03-27T10:42:27Z",
+        "updatedAt": "2026-03-27T10:42:27Z",
+        "headSha": "7782f4c0867db60b54bbb42b885cf256e7999328",
+        "headRepo": "aamodbhatt/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7782f4c0867db60b54bbb42b885cf256e7999328/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/7782f4c0867db60b54bbb42b885cf256e7999328/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/7782f4c0867db60b54bbb42b885cf256e7999328/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/7782f4c0867db60b54bbb42b885cf256e7999328/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/7782f4c0867db60b54bbb42b885cf256e7999328/records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100",
+        "pr": "https://github.com/openai/parameter-golf/pull/946",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

@@ -1,8 +1,53 @@
 {
-  "generatedAt": "2026-03-27T09:44:59.533Z",
+  "generatedAt": "2026-03-27T10:45:34.888Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 947,
+      "title": "Non-record: Legal Neural-Only No-TTT Alt (8xH100) val_bpb=1.1576",
+      "status": "open",
+      "updatedAt": "2026-03-27T10:42:54Z",
+      "headSha": "c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3",
+      "generatedAt": "2026-03-27T10:45:28.051Z",
+      "summary": "Scaling a frontier_candidate preset (BIGRAM_VOCAB=2048, MLP_MULT=3.2) to stay neural-only at eval while disabling cache rescoring/TTT.",
+      "tags": [
+        "architecture",
+        "evaluation",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-947.json"
+    },
+    {
+      "prNumber": 946,
+      "title": "Non-record: Legal Neural-Only No-TTT (8xH100) val_bpb=1.1606",
+      "status": "open",
+      "updatedAt": "2026-03-27T10:42:27Z",
+      "headSha": "7782f4c0867db60b54bbb42b885cf256e7999328",
+      "generatedAt": "2026-03-27T10:45:34.745Z",
+      "summary": "Compliance run keeps base tokenizer/dataset, uses frontier_lean with no n-gram/TTT blending and score-first causal evaluation.",
+      "tags": [
+        "non-record",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-946.json"
+    },
     {
       "prNumber": 945,
       "title": "Record: Order-16 Frozen N-gram Oracle + Learned Gate + TTT — val_bpb 0.0274 (3-seed mean)",

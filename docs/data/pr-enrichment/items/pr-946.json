@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-27T10:45:34.745Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 946,
+    "title": "Non-record: Legal Neural-Only No-TTT (8xH100) val_bpb=1.1606",
+    "state": "open",
+    "updatedAt": "2026-03-27T10:42:27Z",
+    "headSha": "7782f4c0867db60b54bbb42b885cf256e7999328",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/946",
+    "authorLogin": "aamodbhatt"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Compliance run keeps base tokenizer/dataset, uses frontier_lean with no n-gram/TTT blending and score-first causal evaluation.",
+    "tags": [
+      "non-record",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "Not a val-only training submission.",
+    "techniques": [
+      "score-first causal evaluation path",
+      "disabled n-gram and TTT caches",
+      "frontier_lean preset under runtime/size guards"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

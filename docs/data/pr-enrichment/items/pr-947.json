@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T10:45:28.051Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 947,
+    "title": "Non-record: Legal Neural-Only No-TTT Alt (8xH100) val_bpb=1.1576",
+    "state": "open",
+    "updatedAt": "2026-03-27T10:42:54Z",
+    "headSha": "c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/947",
+    "authorLogin": "aamodbhatt"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Scaling a frontier_candidate preset (BIGRAM_VOCAB=2048, MLP_MULT=3.2) to stay neural-only at eval while disabling cache rescoring/TTT.",
+    "tags": [
+      "architecture",
+      "evaluation",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "frontier_candidate scaling with BIGRAM_VOCAB=2048 and MLP_MULT=3.2",
+      "neural-only evaluation via disabling n-gram rescoring and TTT",
+      "sliding eval disabled for bounded runtime"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
