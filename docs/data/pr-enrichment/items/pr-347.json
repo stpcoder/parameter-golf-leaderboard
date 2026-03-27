@@ -1,19 +1,20 @@
 {
-  "generatedAt": "2026-03-26T13:40:49.755Z",
+  "generatedAt": "2026-03-27T11:15:34.195Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
     "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
     "state": "open",
-    "updatedAt": "2026-03-26T13:28:33Z",
-    "headSha": "1cc698c348bae2c9f800a40f994dd6374a04c195",
+    "updatedAt": "2026-03-27T11:10:34Z",
+    "headSha": "74c4ce7d489a6afb474cd18a3c6250cc0a16a8a1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
   "inputs": {
-    "hash": "8986d7e21e1a39d2edd4e76b295c0af19b81820615d903fd88bb4b8c62e7e93d",
+    "hash": "74539e002411f24c69bfa8a88c0eedb9aa9b324567a5789fb5e36ff8ba262e93",
     "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
       "records/track_10min_16mb/2026-03-26_BankQAT_2048train_4096eval/README.md",
       "records/track_10min_16mb/2026-03-25_LongContext4096_Int4_BankQAT/README.md",
       "records/track_10min_16mb/2026-03-25_LongContext4096_Int6_QAT/README.md",
@@ -23,21 +24,21 @@
       "records/track_10min_16mb/2026-03-21_LongContext4096_FullStack/README.md",
       "records/track_10min_16mb/2026-03-21_QAT_Int4_16L/README.md"
     ],
-    "submissionCount": 9
+    "submissionCount": 10
   },
   "output": {
-    "summary": "Extends the PR #549 stack with 4k context and layered int6/int4 QAT (including bank weights) to prep 16-layer exports under 16MB.",
+    "summary": "Combines PR#549’s full stack with 4k context and expanded quantization experiments (int4 nibble packing, bank QAT, 16L depth) to prep export-ready artifacts.",
     "tags": [
-      "quantization",
       "architecture",
-      "training-schedule"
+      "quantization",
+      "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "N/A",
+    "valOnlyReasoning": "",
     "techniques": [
-      "4k train/eval context with NTK-aware RoPE scaling",
-      "int6/int4 QAT applied to CastedLinear and bank weights to match exports",
-      "16-layer int4 nibble-packed stack with GPTQ-lite quantization"
+      "4096-token context + full SOTA stack",
+      "Bank-wide STE QAT for int4/int6 exports",
+      "Nibble-packed 16-layer depth expansion"
     ]
   },
   "compatibility": {

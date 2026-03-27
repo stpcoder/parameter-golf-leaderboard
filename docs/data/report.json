@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-03-27T10:44:54.999Z",
+  "generatedAt": "2026-03-27T11:14:59.342Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
-  "skipped": [],
+  "skipped": [
+    {
+      "stage": "pull-request-readme",
+      "pr": 347,
+      "submissionPath": "records/track_10min_16mb/2026-03-26_LongContext4096_BankQAT_GatedAttn/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    }
+  ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-03-27T09:42:55Z",
+    "cutoffUpdatedAt": "2026-03-27T10:42:54Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 2,
-    "prsReused": 198,
+    "prsRefreshed": 1,
+    "prsReused": 199,
     "stoppedEarly": true,
     "refreshFailures": 0,
     "cacheEntries": 901,

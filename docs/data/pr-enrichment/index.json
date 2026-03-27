@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T10:45:34.888Z",
+  "generatedAt": "2026-03-27T11:15:34.244Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -9647,14 +9647,14 @@
       "prNumber": 347,
       "title": "LongContext 4096 + Full SOTA Stack + QAT Int4/Int6 → 16 Layers",
       "status": "open",
-      "updatedAt": "2026-03-26T13:28:33Z",
-      "headSha": "1cc698c348bae2c9f800a40f994dd6374a04c195",
-      "generatedAt": "2026-03-26T13:40:49.755Z",
-      "summary": "Extends the PR #549 stack with 4k context and layered int6/int4 QAT (including bank weights) to prep 16-layer exports under 16MB.",
+      "updatedAt": "2026-03-27T11:10:34Z",
+      "headSha": "74c4ce7d489a6afb474cd18a3c6250cc0a16a8a1",
+      "generatedAt": "2026-03-27T11:15:34.195Z",
+      "summary": "Combines PR#549’s full stack with 4k context and expanded quantization experiments (int4 nibble packing, bank QAT, 16L depth) to prep export-ready artifacts.",
       "tags": [
-        "quantization",
         "architecture",
-        "training-schedule"
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
