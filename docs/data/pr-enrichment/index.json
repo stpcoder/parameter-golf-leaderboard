@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T15:46:59.737Z",
+  "generatedAt": "2026-03-27T16:17:21.109Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,13 +7,14 @@
       "prNumber": 962,
       "title": "Record: 0.0214 bpb - Low Eval-Time Memory Regime: Packed Training N-gram Artifact + Learned Gate (No Phrase Cache)",
       "status": "open",
-      "updatedAt": "2026-03-27T15:45:45Z",
+      "updatedAt": "2026-03-27T15:52:45Z",
       "headSha": "57776873fc584397a41022103228febb0063f00f",
-      "generatedAt": "2026-03-27T15:46:37.339Z",
-      "summary": "Packed order-2..9 training n-gram cache plus a learned neural/ngram gate and dropped the mixer/phrase cache to keep the causal eval path lean.",
+      "generatedAt": "2026-03-27T16:16:45.178Z",
+      "summary": "Packed training-derived order-2..9 n-gram cache lives in the artifact and a learned gate blends neural+ngram experts without the logistic mixer or phrase cache.",
       "tags": [
-        "architecture",
-        "evaluation"
+        "evaluation",
+        "quantization",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -76,20 +77,21 @@
       "prNumber": 959,
       "title": "Record: Nacrith Log-Bias + Full-Rescore N-gram — val_bpb 0.00000035 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-27T14:28:11Z",
+      "updatedAt": "2026-03-27T15:59:48Z",
       "headSha": "5aede00a343bfac5c47093f5860ad93df40cc1f1",
-      "generatedAt": "2026-03-27T14:46:41.958Z",
-      "summary": "Two-pass full-rescore n-gram eval adds online per-token log-space bias with log-odds blending after each score to exploit cache-wide statistics.",
+      "generatedAt": "2026-03-27T16:16:51.572Z",
+      "summary": "Combines online Nacrith log-space bias SGD, log-odds mixing, and full-rescore two-pass N-gram evaluation to adaptively correct every token.",
       "tags": [
+        "val-only",
         "evaluation"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-959.json"
     },
@@ -908,16 +910,16 @@
     },
     {
       "prNumber": 914,
-      "title": "[Non-Record] Hymba-LongContext: 32K context training via hybrid SSM + SWA (1.1873 BPB)",
+      "title": "[Non-Record] Hymba-LongContext: 32K context training and eval via hybrid SSM (1.1873 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-27T00:26:13Z",
+      "updatedAt": "2026-03-27T16:07:33Z",
       "headSha": "269bebb25c2f3ae31826a63ea2ad181a61152462",
-      "generatedAt": "2026-03-27T00:43:35.860Z",
-      "summary": "Hybrid Hymba blocks run Mamba SSM alongside sliding-window attention, keeping per-token cost flat for 32K context and enabling score-first TTT adaptation.",
+      "generatedAt": "2026-03-27T16:16:56.016Z",
+      "summary": "Hybrid Hymba blocks pair sliding-window attention with recurrent Mamba SSM to train 32K-context models with constant per-token cost.",
       "tags": [
         "architecture",
         "attention",
-        "evaluation"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1000,15 +1002,13 @@
       "prNumber": 909,
       "title": "Record: 11-gram Eval Cache + Hedge Mixer (val_bpb: 0.8609)",
       "status": "open",
-      "updatedAt": "2026-03-26T23:16:37Z",
-      "headSha": "dd9251272656ff9d06b383fe38ad392317ac81a1",
-      "generatedAt": "2026-03-26T23:43:08.115Z",
-      "summary": "Adds a multi-order entropy-adaptive n-gram eval cache plus Hedge mixer to the 11L GQA+XSA base, freeing time from TTT for sliding-window scoring.",
+      "updatedAt": "2026-03-27T15:49:55Z",
+      "headSha": "8834070de5a6e7ad1df76f660072eb7d54201ed6",
+      "generatedAt": "2026-03-27T16:17:01.531Z",
+      "summary": "Sliding-window eval swaps TTT for an entropy-weighted 11-gram cache plus a Hedge mixer to blend neural and n-gram predictions within the eval budget.",
       "tags": [
         "evaluation",
-        "attention",
-        "architecture",
-        "quantization"
+        "sliding-window-eval"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1296,12 +1296,12 @@
     },
     {
       "prNumber": 886,
-      "title": "RFC: N-gram distributions don't sum to 1 — proposed fixes",
+      "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
       "status": "open",
-      "updatedAt": "2026-03-27T15:41:04Z",
+      "updatedAt": "2026-03-27T15:59:42Z",
       "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
-      "generatedAt": "2026-03-27T15:46:53.271Z",
-      "summary": "Proposes verifying eval-time N-gram cache distributions sum to 1, tightening causality rules, and capping state/latency so reported BPB stays meaningful.",
+      "generatedAt": "2026-03-27T16:17:06.299Z",
+      "summary": "Diagnoses n-gram cache BPB inflation as an invalid probability distribution and proposes distribution checks plus causality/eval-time state caps.",
       "tags": [
         "evaluation",
         "non-record"
@@ -1504,10 +1504,10 @@
       "prNumber": 875,
       "title": "New Record: Pure Neural GDN 1.0226 BPB (shalyhinpavel)",
       "status": "open",
-      "updatedAt": "2026-03-27T15:40:18Z",
+      "updatedAt": "2026-03-27T16:04:16Z",
       "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
-      "generatedAt": "2026-03-27T15:46:59.609Z",
-      "summary": "Pure neural 16MB submission swaps to Gated DeltaNet layers, fast loader, and curriculum batch growth to hit 1.0226 BPB without TTT.",
+      "generatedAt": "2026-03-27T16:17:10.536Z",
+      "summary": "Pure-neural leaderboard record combines Gated DeltaNet layers with a runtime-aware batch/chunk curriculum and FastLoader throughput optimizations.",
       "tags": [
         "architecture",
         "training-schedule",
@@ -1631,29 +1631,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-868.json"
-    },
-    {
-      "prNumber": 866,
-      "title": "Claude/peaceful mclean",
-      "status": "closed",
-      "updatedAt": "2026-03-26T16:39:53Z",
-      "headSha": "902f42a6ada93e956735ab4416b757ab948c8cf4",
-      "generatedAt": "2026-03-26T17:41:52.879Z",
-      "summary": "Uses dual surprise-gated LoRA and in-place TTT on an 11-layer hashed/Value-Residual stack with LeakyReLU^2 and full GPTQ quantization.",
-      "tags": [
-        "training-schedule",
-        "quantization",
-        "architecture"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-866.json"
     },
     {
       "prNumber": 862,
@@ -3197,29 +3174,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-773.json"
-    },
-    {
-      "prNumber": 771,
-      "title": "Record: AdamW TTT 30ep Cosine + Per-Layer LR (val_bpb: 1.0705)",
-      "status": "open",
-      "updatedAt": "2026-03-26T00:15:45Z",
-      "headSha": "318b9cc499e6eb9e2d39a4665470d68e54574e32",
-      "generatedAt": "2026-03-26T17:42:26.788Z",
-      "summary": "Whole-validation AdamW TTT (30ep cosine decay, per-layer LRs) adapts the PR #549 base before sliding-window scoring.",
-      "tags": [
-        "val-only",
-        "optimizer",
-        "training-schedule"
-      ],
-      "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": false
-      },
-      "file": "items/pr-771.json"
     },
     {
       "prNumber": 770,
@@ -8674,10 +8628,10 @@
       "prNumber": 425,
       "title": "Codex/runpod 2026 03 20 checkpoint",
       "status": "open",
-      "updatedAt": "2026-03-27T14:31:44Z",
-      "headSha": "4477c99b339de71f68025be0184c73a0c4c1aaaa",
-      "generatedAt": "2026-03-27T14:47:09.619Z",
-      "summary": "Single-GPU 600s ablation stacks ATTN_TWICE_ALPHA=0.05 with split eval seq lengths to balance roundtrip and TTT scoring under size limits.",
+      "updatedAt": "2026-03-27T16:15:36Z",
+      "headSha": "681c41d7d5c8f1841dee8a3b1defb997b6a59c29",
+      "generatedAt": "2026-03-27T16:17:15.947Z",
+      "summary": "Runpod H100 ablation paired ATTN_TWICE_ALPHA=0.05 with split EVAL_SEQ_LEN/TTT_EVAL_SEQ_LEN to balance roundtrip and TTT scoring under single-GPU cap.",
       "tags": [
         "attention",
         "evaluation",
@@ -10319,10 +10273,10 @@
       "prNumber": 323,
       "title": "Minimal recurrent motif (sb1 rs2 g0.18) – non-record submission",
       "status": "open",
-      "updatedAt": "2026-03-21T07:23:54Z",
-      "headSha": "b4f2e913e35f9e138394a2d40870f0924c66689c",
-      "generatedAt": "2026-03-21T07:29:26.785Z",
-      "summary": "Compact recurrent motif reuses a single shared block with soft-gated recurrence to extend capacity within the 16MB limit.",
+      "updatedAt": "2026-03-27T15:47:49Z",
+      "headSha": "21b6b6b39fbd477b20db4fdf75ae3c7604941072",
+      "generatedAt": "2026-03-27T16:17:21.062Z",
+      "summary": "Reuses a single softly gated shared block with two recurrence steps to build large motifs while staying under 16MB.",
       "tags": [
         "architecture",
         "compression",

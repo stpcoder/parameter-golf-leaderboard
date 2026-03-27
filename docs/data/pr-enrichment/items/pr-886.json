@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T15:46:53.271Z",
+  "generatedAt": "2026-03-27T16:17:06.299Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 886,
-    "title": "RFC: N-gram distributions don't sum to 1 — proposed fixes",
+    "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
     "state": "open",
-    "updatedAt": "2026-03-27T15:41:04Z",
+    "updatedAt": "2026-03-27T15:59:42Z",
     "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/886",
     "authorLogin": "abaybektursun"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Proposes verifying eval-time N-gram cache distributions sum to 1, tightening causality rules, and capping state/latency so reported BPB stays meaningful.",
+    "summary": "Diagnoses n-gram cache BPB inflation as an invalid probability distribution and proposes distribution checks plus causality/eval-time state caps.",
     "tags": [
       "evaluation",
       "non-record"
@@ -27,8 +27,8 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Enforce per-position distribution sum checks during caching",
-      "Explicit causality rule plus auxiliary-state and per-token latency caps"
+      "distribution sum verification",
+      "causality and eval-state caps"
     ]
   },
   "compatibility": {

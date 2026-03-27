@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-21T07:29:26.785Z",
+  "generatedAt": "2026-03-27T16:17:21.062Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 323,
     "title": "Minimal recurrent motif (sb1 rs2 g0.18) – non-record submission",
     "state": "open",
-    "updatedAt": "2026-03-21T07:23:54Z",
-    "headSha": "b4f2e913e35f9e138394a2d40870f0924c66689c",
+    "updatedAt": "2026-03-27T15:47:49Z",
+    "headSha": "21b6b6b39fbd477b20db4fdf75ae3c7604941072",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/323",
     "authorLogin": "megnat05-tmm"
   },
@@ -17,7 +17,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Compact recurrent motif reuses a single shared block with soft-gated recurrence to extend capacity within the 16MB limit.",
+    "summary": "Reuses a single softly gated shared block with two recurrence steps to build large motifs while staying under 16MB.",
     "tags": [
       "architecture",
       "compression",
@@ -26,8 +26,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "single shared block with 2 recurrence steps",
-      "soft-gated recurrence for structural reuse"
+      "Shared block reused via two-step recurrence",
+      "Soft-gated recurrence expands compact operator",
+      "Structural reuse replaces explicit depth for size efficiency"
     ]
   },
   "compatibility": {

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T14:46:41.958Z",
+  "generatedAt": "2026-03-27T16:16:51.572Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 959,
     "title": "Record: Nacrith Log-Bias + Full-Rescore N-gram — val_bpb 0.00000035 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-27T14:28:11Z",
+    "updatedAt": "2026-03-27T15:59:48Z",
     "headSha": "5aede00a343bfac5c47093f5860ad93df40cc1f1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/959",
     "authorLogin": "himanalot"
@@ -19,22 +19,23 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Two-pass full-rescore n-gram eval adds online per-token log-space bias with log-odds blending after each score to exploit cache-wide statistics.",
+    "summary": "Combines online Nacrith log-space bias SGD, log-odds mixing, and full-rescore two-pass N-gram evaluation to adaptively correct every token.",
     "tags": [
+      "val-only",
       "evaluation"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Per-token bias parameters are updated via SGD during the validation-only scoring pass.",
     "techniques": [
-      "Nacrith-style online per-token log bias",
-      "PAQ log-odds blending for neural+ngram fusion",
-      "Full-rescore two-pass n-gram cache usage"
+      "Nacrith-style online per-token log-bias SGD",
+      "PAQ-inspired log-odds logit blending",
+      "Full-rescore two-pass N-gram cache"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }
