@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T17:41:41.408Z",
+  "generatedAt": "2026-03-27T22:49:45.755Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 869,
     "title": "Record: N-gram Two-Pass Score-First Evaluation (0.1290 BPB)",
-    "state": "open",
-    "updatedAt": "2026-03-26T16:59:47Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:35:41Z",
     "headSha": "7b04ed42ec55a83c9f10a33921edbb6ac54e14d1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/869",
     "authorLogin": "THUQiXuan"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Score-first two-pass n-gram evaluation warms a 62M-token cache so every token sees full corpus statistics before mixing with an int5 neural model.",
+    "summary": "Score-first two-pass N-gram caching rescores validation chunks with OAEG mixing and stride-64 neural scoring to leverage full corpus statistics.",
     "tags": [
       "evaluation",
       "quantization"
@@ -27,9 +27,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "score-first two-pass n-gram cache build",
-      "OAEG gating between neural and n-gram logits",
-      "stride=64 halves forward passes while keeping 2048-token context"
+      "Pass1 builds 9-gram cache across 62M tokens before rescore",
+      "Pass2 rescoring all chunks with warm cache mixes neural/N-gram via OAEG",
+      "Stride=64 halves neural passes while keeping full 2048-token context"
     ]
   },
   "compatibility": {

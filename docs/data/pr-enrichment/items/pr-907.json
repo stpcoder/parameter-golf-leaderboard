@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T23:43:58.428Z",
+  "generatedAt": "2026-03-27T22:49:17.237Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 907,
     "title": "Record: Two-Pass Order-12 Shared N-gram Tables — val_bpb 0.0960 (3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-26T23:22:26Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:35:20Z",
     "headSha": "63287ce01259a53a3b1f0cb4e0d1bfcdb2233f12",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/907",
     "authorLogin": "resouer"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11L int6 transformer uses shared order-2-12 n-gram tables and two-pass rescoring so every rank builds the full cache before final scoring.",
+    "summary": "11L GQA transformer shares deterministic n-gram caches across ranks, uses two-pass rescoring with order-12 backoff, and int6 quant.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Shared n-gram tables across ranks",
-      "Two-pass rescoring with numpy cache",
-      "Order 2-12 with entropy-adaptive weights"
+      "Shared deterministic n-gram tables across ranks",
+      "Two-pass rescoring with order-2-12 backoff multipliers",
+      "np.bincount for fast cache construction"
     ]
   },
   "compatibility": {

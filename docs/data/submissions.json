@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T22:18:24.443Z",
+  "generatedAt": "2026-03-27T22:48:46.777Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -933,7 +933,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_FullRescore_NgramCache_0-0935",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -981,14 +981,14 @@
       "pr": {
         "number": 870,
         "title": "Record: BROADSIDE — Full-Rescore N-gram Cache (val_bpb 0.0935)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/870",
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-26T17:05:21Z",
-        "updatedAt": "2026-03-26T20:23:34Z",
+        "updatedAt": "2026-03-27T22:35:37Z",
         "headSha": "21b493b8d57fc5eb87e8fa7f91cfc05d57dae449",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
@@ -1010,7 +1010,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_FullRescore_Order13_Ngram_0-0938",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1058,14 +1058,14 @@
       "pr": {
         "number": 921,
         "title": "Record: Order-13 Full-Rescore N-gram + 11L Int6 GPTQ — val_bpb 0.0939 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/921",
         "authorLogin": "TimPietrusky",
         "authorName": null,
         "createdAt": "2026-03-27T01:37:38Z",
-        "updatedAt": "2026-03-27T01:37:38Z",
+        "updatedAt": "2026-03-27T22:46:41Z",
         "headSha": "e6e96b340f0a86ed5ef8c6ef9d67c664017b3337",
         "headRepo": "TimPietrusky/parameter-golf"
       },
@@ -1087,7 +1087,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_FastPush_FullRescore_8xH100",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1133,17 +1133,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 888,
-        "title": "Record: Fast Full-Rescore N-gram — val_bpb 0.09420444 (3-seed mean)",
-        "state": "open",
+        "number": 943,
+        "title": "Record: Compliance-First Packed Causal Memory + Dirichlet Mixing — val_bpb 0.01654407 (3-seed mean)",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/888",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/943",
         "authorLogin": "aamodbhatt",
         "authorName": null,
-        "createdAt": "2026-03-26T19:11:12Z",
-        "updatedAt": "2026-03-26T19:13:29Z",
-        "headSha": "f3d4a98707c8a443b420c9b1d2c3a7167b9592e7",
+        "createdAt": "2026-03-27T09:02:05Z",
+        "updatedAt": "2026-03-27T09:03:45Z",
+        "headSha": "58c04cf8e611c4eea031971a88b562cb0ba52f16",
         "headRepo": "aamodbhatt/parameter-golf"
       },
       "links": {
@@ -1152,7 +1152,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/f3d4a98707c8a443b420c9b1d2c3a7167b9592e7/records/track_10min_16mb/2026-03-26_FastPush_FullRescore_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/f3d4a98707c8a443b420c9b1d2c3a7167b9592e7/records/track_10min_16mb/2026-03-26_FastPush_FullRescore_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/f3d4a98707c8a443b420c9b1d2c3a7167b9592e7/records/track_10min_16mb/2026-03-26_FastPush_FullRescore_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/888",
+        "pr": "https://github.com/openai/parameter-golf/pull/943",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -1164,7 +1164,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_TwoPass_Order12_SharedTables_0-0960",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1212,14 +1212,14 @@
       "pr": {
         "number": 907,
         "title": "Record: Two-Pass Order-12 Shared N-gram Tables — val_bpb 0.0960 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/907",
         "authorLogin": "resouer",
         "authorName": null,
         "createdAt": "2026-03-26T22:53:47Z",
-        "updatedAt": "2026-03-26T23:22:26Z",
+        "updatedAt": "2026-03-27T22:35:20Z",
         "headSha": "63287ce01259a53a3b1f0cb4e0d1bfcdb2233f12",
         "headRepo": "resouer/parameter-golf"
       },
@@ -1318,7 +1318,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_WaterLOO_FullRescore_SelfExclusion_0-0990",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1366,14 +1366,14 @@
       "pr": {
         "number": 881,
         "title": "Record: WaterLOO — Full-Rescore N-gram Cache with Self-Exclusion (val_bpb 0.0990)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/881",
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-26T18:23:01Z",
-        "updatedAt": "2026-03-26T18:38:29Z",
+        "updatedAt": "2026-03-27T22:35:33Z",
         "headSha": "c996cee3c4777a8ff8f25563713d60c2aca3e0e5",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
@@ -1626,7 +1626,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_Budgeted_TwoPass_Ngram_8xH100",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1674,14 +1674,14 @@
       "pr": {
         "number": 868,
         "title": "Record: Budgeted Two-Pass N-gram Backoff — val_bpb 0.11814796 (3-seed mean)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/868",
         "authorLogin": "aamodbhatt",
         "authorName": null,
         "createdAt": "2026-03-26T16:45:38Z",
-        "updatedAt": "2026-03-26T17:05:11Z",
+        "updatedAt": "2026-03-27T22:35:45Z",
         "headSha": "4ef9abf6631f13d9781d1fb91b3444dd4e2d63cc",
         "headRepo": "aamodbhatt/parameter-golf"
       },
@@ -1703,7 +1703,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_NGram2Pass_0-1294",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1751,14 +1751,14 @@
       "pr": {
         "number": 869,
         "title": "Record: N-gram Two-Pass Score-First Evaluation (0.1290 BPB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/869",
         "authorLogin": "THUQiXuan",
         "authorName": null,
         "createdAt": "2026-03-26T16:59:47Z",
-        "updatedAt": "2026-03-26T16:59:47Z",
+        "updatedAt": "2026-03-27T22:35:41Z",
         "headSha": "7b04ed42ec55a83c9f10a33921edbb6ac54e14d1",
         "headRepo": "THUQiXuan/parameter-golf"
       },
@@ -1857,7 +1857,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_TwoPassNgram_0-1434",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -1905,14 +1905,14 @@
       "pr": {
         "number": 846,
         "title": "Record: Two-Pass N-gram Rescoring (val_bpb 0.1434)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/846",
         "authorLogin": "himanshudongre",
         "authorName": null,
         "createdAt": "2026-03-26T12:20:06Z",
-        "updatedAt": "2026-03-26T16:43:49Z",
+        "updatedAt": "2026-03-27T22:35:49Z",
         "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
         "headRepo": "himanshudongre/parameter-golf"
       },
@@ -2165,7 +2165,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-26_11L_ParallelMuon_NgramBackoff",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -2213,14 +2213,14 @@
       "pr": {
         "number": 893,
         "title": "Record: Two-Pass Order-12 N-gram Backoff + Parallel Muon — val_bpb 0.1310 (3-seed)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/893",
         "authorLogin": "aryanbhosale",
         "authorName": null,
         "createdAt": "2026-03-26T19:32:05Z",
-        "updatedAt": "2026-03-27T05:19:52Z",
+        "updatedAt": "2026-03-27T22:35:25Z",
         "headSha": "aff6a980cded172e2bafc44061323fbd591a7c89",
         "headRepo": "aryanbhosale/parameter-golf"
       },
@@ -7486,7 +7486,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_11L_XSA4_LateSharedWorkspaceAdapter_MLP25",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -7534,14 +7534,14 @@
       "pr": {
         "number": 988,
         "title": "Record-track submission: 11L XSA4 + Late Shared Workspace Adapter (LSWA-64x4) + MLP2.5",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/988",
         "authorLogin": "ymrohit",
         "authorName": null,
         "createdAt": "2026-03-27T21:50:09Z",
-        "updatedAt": "2026-03-27T21:55:05Z",
+        "updatedAt": "2026-03-27T22:43:19Z",
         "headSha": "22bf6e9bf5b13b9e03bc425f662ed9c9fec158ef",
         "headRepo": "ymrohit/parameter-golf"
       },
@@ -7840,18 +7840,18 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 824,
-        "title": "GatedAttn + ValueResid + XSA6 + HedgeMixer + Legal TTT — val_bpb: 1.08965 (3-seed mean)",
+        "number": 776,
+        "title": "Record Submission: 0.9258 BPB — Kitchen Sink (7-gram + XSA6 + BigramHash4K + Cosine TTT)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/824",
-        "authorLogin": "sahiee-dev",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/776",
+        "authorLogin": "agalimova",
         "authorName": null,
-        "createdAt": "2026-03-26T07:05:12Z",
-        "updatedAt": "2026-03-26T07:17:35Z",
-        "headSha": "d7572869ea4e901edaba49917cb0f1f2a688ae26",
-        "headRepo": "sahiee-dev/parameter-golf"
+        "createdAt": "2026-03-25T21:58:22Z",
+        "updatedAt": "2026-03-25T21:58:22Z",
+        "headSha": "b5bfc9aa533a0a86be1881bbc7bc747bf77848da",
+        "headRepo": "agalimova/parameter-golf"
       },
       "links": {
         "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e0bb22c8c700f2282ac400509fb082dfb8c977cf/records/track_10min_16mb/2026-03-25_XSA6_BigramHash4K_HedgeMixer_1.1078/submission.json",
@@ -7859,7 +7859,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/e0bb22c8c700f2282ac400509fb082dfb8c977cf/records/track_10min_16mb/2026-03-25_XSA6_BigramHash4K_HedgeMixer_1.1078/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/e0bb22c8c700f2282ac400509fb082dfb8c977cf/records/track_10min_16mb/2026-03-25_XSA6_BigramHash4K_HedgeMixer_1.1078/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/e0bb22c8c700f2282ac400509fb082dfb8c977cf/records/track_10min_16mb/2026-03-25_XSA6_BigramHash4K_HedgeMixer_1.1078",
-        "pr": "https://github.com/openai/parameter-golf/pull/824",
+        "pr": "https://github.com/openai/parameter-golf/pull/776",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -9087,7 +9087,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-25T15:03:32Z",
-        "updatedAt": "2026-03-26T21:47:13Z",
+        "updatedAt": "2026-03-27T22:43:03Z",
         "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -11879,6 +11879,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-26_FreqWeightedEmbedding_1-1231",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-26_FreqWeightedEmbedding_1.1231",
+        "folderPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
+        "submissionPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py"
+      },
+      "submission": {
+        "author": "Liora",
+        "githubId": "pattern4bots",
+        "name": null,
+        "blurb": null,
+        "date": "2026-03-27T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.12176827,
+        "valLoss": 1.89405372,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15807424,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 898,
+        "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/898",
+        "authorLogin": "pattern4bots",
+        "authorName": null,
+        "createdAt": "2026-03-26T21:54:45Z",
+        "updatedAt": "2026-03-27T22:40:56Z",
+        "headSha": "62d902092f2697cc0cd8f4ad6b61b28b22d54016",
+        "headRepo": "pattern4bots/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/62d902092f2697cc0cd8f4ad6b61b28b22d54016/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
+        "pr": "https://github.com/openai/parameter-golf/pull/898",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-26_FullQAT_FA3_11L_1-1219",
       "source": "pull_request",
       "status": "open",
@@ -12178,83 +12255,6 @@
         "script": "https://github.com/openai/parameter-golf/blob/c156b369189207a4e5fe6c62fa035aeddd52084c/records/track_non_record_16mb/2026-03-22_11L_XSA4_EMA_Modal_1.12296_Over16MB/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/c156b369189207a4e5fe6c62fa035aeddd52084c/records/track_non_record_16mb/2026-03-22_11L_XSA4_EMA_Modal_1.12296_Over16MB",
         "pr": "https://github.com/openai/parameter-golf/pull/416",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
-      }
-    },
-    {
-      "id": "record-records-track_10min_16mb-2026-03-26_FreqWeightedEmbedding_1-1231",
-      "source": "pull_request",
-      "status": "open",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-03-26_FreqWeightedEmbedding_1.1231",
-        "folderPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
-        "submissionPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py"
-      },
-      "submission": {
-        "author": "Liora",
-        "githubId": "YOUR_GITHUB_USERNAME",
-        "name": null,
-        "blurb": null,
-        "date": "2026-03-26T21:54:45Z"
-      },
-      "metrics": {
-        "valBpb": 1.1231,
-        "valLoss": 1.8963,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": null,
-        "bytesCode": null,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 898,
-        "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/898",
-        "authorLogin": "pattern4bots",
-        "authorName": null,
-        "createdAt": "2026-03-26T21:54:45Z",
-        "updatedAt": "2026-03-27T22:14:31Z",
-        "headSha": "2baeef8b2a700896dd492f26459d5c8b2087907e",
-        "headRepo": "pattern4bots/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/2baeef8b2a700896dd492f26459d5c8b2087907e/records/track_10min_16mb/2026-03-26_FreqWeightedEmbedding_1.1231",
-        "pr": "https://github.com/openai/parameter-golf/pull/898",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -16086,7 +16086,7 @@
       },
       "pr": {
         "number": 989,
-        "title": "QAT x SWA Ablation: antagonistic interaction finding",
+        "title": "QAT x SWA Ablation: SWA sabotages QAT (-3.64 mBPB, 3-seed validated)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -16094,7 +16094,7 @@
         "authorLogin": "alexanderaperry-arch",
         "authorName": null,
         "createdAt": "2026-03-27T22:05:24Z",
-        "updatedAt": "2026-03-27T22:05:24Z",
+        "updatedAt": "2026-03-27T22:45:21Z",
         "headSha": "ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d",
         "headRepo": "alexanderaperry-arch/parameter-golf"
       },
@@ -46459,7 +46459,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-25_10L_7gram_cache",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -46507,14 +46507,14 @@
       "pr": {
         "number": 724,
         "title": "Record: 10L + 7-gram eval cache (mean val_bpb=1.0717)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/724",
         "authorLogin": "hypery11",
         "authorName": null,
         "createdAt": "2026-03-25T14:29:00Z",
-        "updatedAt": "2026-03-25T14:29:00Z",
+        "updatedAt": "2026-03-27T22:46:05Z",
         "headSha": "d7dd6d05d05640da901a2ee71362a1a70c22faa7",
         "headRepo": "hypery11/parameter-golf"
       },

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T17:41:47.030Z",
+  "generatedAt": "2026-03-27T22:49:50.207Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 868,
     "title": "Record: Budgeted Two-Pass N-gram Backoff — val_bpb 0.11814796 (3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-26T17:05:11Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:35:45Z",
     "headSha": "4ef9abf6631f13d9781d1fb91b3444dd4e2d63cc",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/868",
     "authorLogin": "aamodbhatt"
@@ -19,15 +19,15 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Budgeted two-pass tuner auto-caps chunk rescoring to keep an order-12 weighted N-gram backoff score-first eval within the 10-minute innovation envelope.",
+    "summary": "Adds a budget-aware two-pass rescoring tuner plus weighted order-12 N-gram backoff to retain pass-2 gains within the eval time budget.",
     "tags": [
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Budgeted chunk-rescoring tuner for two-pass evaluation",
-      "- Order-12 weighted N-gram backoff interpolation"
+      "budget-aware two-pass rescoring tuner",
+      "weighted order-12 N-gram backoff"
     ]
   },
   "compatibility": {

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T01:43:49.535Z",
+  "generatedAt": "2026-03-27T22:49:11.757Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 921,
     "title": "Record: Order-13 Full-Rescore N-gram + 11L Int6 GPTQ — val_bpb 0.0939 (3-seed mean)",
-    "state": "open",
-    "updatedAt": "2026-03-27T01:37:38Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:46:41Z",
     "headSha": "e6e96b340f0a86ed5ef8c6ef9d67c664017b3337",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/921",
     "authorLogin": "TimPietrusky"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer gated-attention/value-residual GPT with Int6 GPTQ and a two-pass order-13 backward n-gram cache that full-rescores via entropy-adaptive mixing.",
+    "summary": "11-layer gated-attention/value-residual GPTQ model uses two-pass order-13 entropy-adaptive n-gram cache for full-rescore validation.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Two-pass order-13 backward n-gram cache with entropy-adaptive mixing",
-      "Int6 GPTQ with descending actorder, dead-column handling, and lzma compression",
-      "11-layer gated-attention/value-residual model with GQA and LeakyReLU(0.5)^2"
+      "Entropy-adaptive order-13 n-gram cache rescoring",
+      "Int6 GPTQ with descending actorder plus lzma compression",
+      "11-layer gated attention with value residual"
     ]
   },
   "compatibility": {

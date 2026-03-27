@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-27T22:49:06.046Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 943,
+    "title": "Record: Compliance-First Packed Causal Memory + Dirichlet Mixing — val_bpb 0.01654407 (3-seed mean)",
+    "state": "closed",
+    "updatedAt": "2026-03-27T09:03:45Z",
+    "headSha": "58c04cf8e611c4eea031971a88b562cb0ba52f16",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/943",
+    "authorLogin": "aamodbhatt"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_FastPush_FullRescore_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Packed causal n-gram memory built from shards enables Dirichlet-normalized multi-order scoring with count-confidence gating for compliance-first rescore.",
+    "tags": [
+      "architecture",
+      "evaluation",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Packed causal n-gram memory built from train shards before eval",
+      "Dirichlet-normalized multi-order mixing for cached scores",
+      "Count-confidence gating for robustness"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

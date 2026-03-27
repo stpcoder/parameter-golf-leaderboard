@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T05:44:38.589Z",
+  "generatedAt": "2026-03-27T22:49:28.380Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 893,
     "title": "Record: Two-Pass Order-12 N-gram Backoff + Parallel Muon — val_bpb 0.1310 (3-seed)",
-    "state": "open",
-    "updatedAt": "2026-03-27T05:19:52Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:35:25Z",
     "headSha": "aff6a980cded172e2bafc44061323fbd591a7c89",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/893",
     "authorLogin": "aryanbhosale"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Parallel Muon 11-layer transformer with GPTQ-lite quantization rescored via two-pass order-12 N-gram backoff and entropy-adaptive blending.",
+    "summary": "11L parallel Muon transformer uses order-12 N-gram backoff cache built in pass one and rescoring cold chunks in pass two.",
     "tags": [
-      "muon",
       "architecture",
-      "quantization",
+      "muon",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Two-pass order-12 N-gram backoff rescoring",
-      "11L Parallel Muon stack with gated attention, BigramHash, GPTQ-lite int6",
-      "Entropy-adaptive blending with per-order multipliers"
+      "Parallel Muon 11L transformer with gated attention and Value Residual",
+      "Two-pass eval: build full order-12 N-gram cache, then rescore cold chunks",
+      "Entropy-adaptive backoff blending across 4M hash buckets"
     ]
   },
   "compatibility": {

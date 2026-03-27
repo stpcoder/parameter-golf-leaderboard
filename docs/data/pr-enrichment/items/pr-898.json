@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-27T22:18:39.416Z",
+  "generatedAt": "2026-03-27T22:49:20.366Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 898,
     "title": "Frequency-Weighted Embedding Quantization (1.1231 BPB)",
     "state": "open",
-    "updatedAt": "2026-03-27T22:14:31Z",
-    "headSha": "2baeef8b2a700896dd492f26459d5c8b2087907e",
+    "updatedAt": "2026-03-27T22:40:56Z",
+    "headSha": "62d902092f2697cc0cd8f4ad6b61b28b22d54016",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/898",
     "authorLogin": "pattern4bots"
   },
@@ -19,16 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Embedding quantization reserves int8 for the most frequent 100 tokens and int6 for the rest, using token frequency stats to guide precision.",
+    "summary": "Apply mixed quantization that keeps the most frequent tokens in int8 while quantizing the rest of the embedding rows to int6 to preserve precision where data concentrates.",
     "tags": [
-      "quantization"
+      "quantization",
+      "mixed-precision"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "frequency-weighted int8/int6 split",
-      "per-embedding-layer detection in quantizer",
-      "matching dequant logic for split embeddings"
+      "frequency-weighted embedding quantization",
+      "dual-precision handling for top vs rare tokens"
     ]
   },
   "compatibility": {

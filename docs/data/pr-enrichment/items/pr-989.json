@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T22:18:30.598Z",
+  "generatedAt": "2026-03-27T22:48:54.487Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 989,
-    "title": "QAT x SWA Ablation: antagonistic interaction finding",
+    "title": "QAT x SWA Ablation: SWA sabotages QAT (-3.64 mBPB, 3-seed validated)",
     "state": "open",
-    "updatedAt": "2026-03-27T22:05:24Z",
+    "updatedAt": "2026-03-27T22:45:21Z",
     "headSha": "ae1d2c25a4cf4bf38f0e8c606e84dab25a9f474d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/989",
     "authorLogin": "alexanderaperry-arch"
@@ -19,16 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "2×2 QAT×SWA ablation shows SWA averaging undoes STE-based quantization shaping, so QAT excels only with SWA disabled.",
+    "summary": "A 2×2 factorial ablation shows checkpoint averaging via SWA erases QAT’s boundary shaping, so QAT without SWA wins post-quantization BPB.",
     "tags": [
       "quantization",
-      "evaluation"
+      "training-schedule",
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "2×2 factorial QAT×SWA ablation",
-      "STE fake-quantization vs SWA averaging conflict"
+      "2×2 QAT×SWA factorial ablation",
+      "QAT without SWA to preserve fake-quant boundaries",
+      "STE fake quant with tighter pruning margin"
     ]
   },
   "compatibility": {

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T14:31:39.235Z",
+  "generatedAt": "2026-03-27T22:50:08.502Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 724,
     "title": "Record: 10L + 7-gram eval cache (mean val_bpb=1.0717)",
-    "state": "open",
-    "updatedAt": "2026-03-25T14:29:00Z",
+    "state": "closed",
+    "updatedAt": "2026-03-27T22:46:05Z",
     "headSha": "d7dd6d05d05640da901a2ee71362a1a70c22faa7",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/724",
     "authorLogin": "hypery11"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10L transformer with BigramHash smearing, gated attention + U-Net skips, mixed int5/int6 quantization, and a backward-looking 7-gram eval cache.",
+    "summary": "10-layer GQA transformer with mixed int5/int6 quantization, SmearGate/U-Net, and a backward-looking 7-gram eval cache.",
     "tags": [
-      "architecture",
       "quantization",
-      "evaluation",
-      "compression"
+      "architecture",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Mixed int5/int6 quantization with zstd-22",
-      "Backward-looking 7-gram score-first eval cache",
-      "Gated attention + U-Net skip + SmearGate architecture"
+      "Mixed int5/int6 quantization with zstd-22 compression",
+      "Backward-looking 7-gram evaluation cache (score-first, deterministic)",
+      "Muon + AdamW training with pruning/EMA and gated attention"
     ]
   },
   "compatibility": {
