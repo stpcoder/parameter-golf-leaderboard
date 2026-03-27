@@ -1,8 +1,8 @@
 {
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
-  "generatedAt": "2026-03-27T02:43:22.007Z",
-  "lastSeenUpdatedAt": "2026-03-27T02:40:23Z",
+  "generatedAt": "2026-03-27T03:13:24.543Z",
+  "lastSeenUpdatedAt": "2026-03-27T03:06:55Z",
   "prs": {
     "1": {
       "number": 1,
@@ -79774,7 +79774,7 @@
     },
     "924": {
       "number": 924,
-      "updatedAt": "2026-03-27T02:40:23Z",
+      "updatedAt": "2026-03-27T03:06:55Z",
       "pr": {
         "number": 924,
         "title": "Order-16 Frozen N-gram Oracle + Score-First TTT (0.02801 BPB)",
@@ -79785,8 +79785,8 @@
         "authorLogin": "THUQiXuan",
         "authorName": null,
         "createdAt": "2026-03-27T02:40:23Z",
-        "updatedAt": "2026-03-27T02:40:23Z",
-        "headSha": "d3650d6278f1bdd590ada76219593d66e2b5b0ea",
+        "updatedAt": "2026-03-27T03:06:55Z",
+        "headSha": "6edfbe62385f761fbf9b04b679afd69dce57e424",
         "headRepo": "THUQiXuan/parameter-golf"
       },
       "submissions": [
@@ -79848,17 +79848,108 @@
             "authorLogin": "THUQiXuan",
             "authorName": null,
             "createdAt": "2026-03-27T02:40:23Z",
-            "updatedAt": "2026-03-27T02:40:23Z",
-            "headSha": "d3650d6278f1bdd590ada76219593d66e2b5b0ea",
+            "updatedAt": "2026-03-27T03:06:55Z",
+            "headSha": "6edfbe62385f761fbf9b04b679afd69dce57e424",
             "headRepo": "THUQiXuan/parameter-golf"
           },
           "links": {
-            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/submission.json",
-            "readme": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/README.md",
-            "trainLog": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train.log",
-            "script": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train_gpt.py",
-            "folder": "https://github.com/openai/parameter-golf/tree/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch",
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch",
             "pr": "https://github.com/openai/parameter-golf/pull/924"
+          }
+        }
+      ]
+    },
+    "925": {
+      "number": 925,
+      "updatedAt": "2026-03-27T02:45:21Z",
+      "pr": {
+        "number": 925,
+        "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/925",
+        "authorLogin": "THUQiXuan",
+        "authorName": null,
+        "createdAt": "2026-03-27T02:45:21Z",
+        "updatedAt": "2026-03-27T02:45:21Z",
+        "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
+        "headRepo": "THUQiXuan/parameter-golf"
+      },
+      "submissions": [
+        {
+          "id": "pr-925-records-track_10min_16mb-2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch-submission-json",
+          "source": "pull_request",
+          "status": "open",
+          "category": "main-track",
+          "track": {
+            "path": "records/track_10min_16mb",
+            "slug": "track_10min_16mb",
+            "label": "10 Minute / 16MB",
+            "official": true,
+            "category": "main-track"
+          },
+          "record": {
+            "folderName": "2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch",
+            "folderPath": "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch",
+            "submissionPath": "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/submission.json",
+            "readmePath": "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/README.md",
+            "trainLogPath": "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/train.log",
+            "scriptPath": "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/train_gpt.py"
+          },
+          "submission": {
+            "author": "qixuan1",
+            "githubId": "THUQiXuan",
+            "name": "Frozen N-gram Oracle (Order-16) + Score-First TTT",
+            "blurb": "Pre-fill order-16 n-gram tables from ALL 8B training tokens. BackoffNgramMixer: 1 neural + 15 n-gram order experts (2-16), learned alpha head (nn.Linear(512,16)). Score-first TTT eval: score → oracle update → 1-epoch AdamW train per 32K chunk. Complementary training reduces CE weight for oracle-predicted tokens. 3-seed mean: 0.02807 (std 0.00009). Training ~582s L20Z, eval ~566s L20Z (well within 600s H100 budget). Artifact ≤12.9MB.",
+            "date": "2026-03-27"
+          },
+          "metrics": {
+            "valBpb": 0.028073143,
+            "valLoss": 0.047387277,
+            "preQuantValBpb": null,
+            "preQuantValLoss": null,
+            "stepStop": null,
+            "wallclockSeconds": null,
+            "evalTimeSeconds": null
+          },
+          "artifact": {
+            "bytesTotal": 13465940,
+            "bytesCode": 98302,
+            "bytesModelInt8Zlib": null
+          },
+          "flags": {
+            "usesValOnly": false
+          },
+          "detection": {
+            "valOnlyConfidence": "none",
+            "valOnlyMatches": []
+          },
+          "pr": {
+            "number": 925,
+            "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
+            "state": "open",
+            "draft": false,
+            "mergedAt": null,
+            "htmlUrl": "https://github.com/openai/parameter-golf/pull/925",
+            "authorLogin": "THUQiXuan",
+            "authorName": null,
+            "createdAt": "2026-03-27T02:45:21Z",
+            "updatedAt": "2026-03-27T02:45:21Z",
+            "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
+            "headRepo": "THUQiXuan/parameter-golf"
+          },
+          "links": {
+            "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7cab60aad4a14de6b9a024d82d0d08a4a1756501/records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/submission.json",
+            "readme": "https://github.com/openai/parameter-golf/blob/7cab60aad4a14de6b9a024d82d0d08a4a1756501/records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/README.md",
+            "trainLog": "https://github.com/openai/parameter-golf/blob/7cab60aad4a14de6b9a024d82d0d08a4a1756501/records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/train.log",
+            "script": "https://github.com/openai/parameter-golf/blob/7cab60aad4a14de6b9a024d82d0d08a4a1756501/records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/train_gpt.py",
+            "folder": "https://github.com/openai/parameter-golf/tree/7cab60aad4a14de6b9a024d82d0d08a4a1756501/records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch",
+            "pr": "https://github.com/openai/parameter-golf/pull/925"
           }
         }
       ]

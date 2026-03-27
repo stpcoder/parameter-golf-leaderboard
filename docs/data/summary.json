@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-27T02:43:22.043Z",
+  "generatedAt": "2026-03-27T03:13:24.578Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "counts": {
-    "submissions": 708,
+    "submissions": 709,
     "official": 1,
-    "openPr": 578,
+    "openPr": 579,
     "mergedPr": 22,
     "closedPr": 107,
-    "prBacked": 708,
+    "prBacked": 709,
     "readmeListed": 20,
     "collectorErrors": 0
   },
@@ -148,16 +148,16 @@
         "authorLogin": "THUQiXuan",
         "authorName": null,
         "createdAt": "2026-03-27T02:40:23Z",
-        "updatedAt": "2026-03-27T02:40:23Z",
-        "headSha": "d3650d6278f1bdd590ada76219593d66e2b5b0ea",
+        "updatedAt": "2026-03-27T03:06:55Z",
+        "headSha": "6edfbe62385f761fbf9b04b679afd69dce57e424",
         "headRepo": "THUQiXuan/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/d3650d6278f1bdd590ada76219593d66e2b5b0ea/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/6edfbe62385f761fbf9b04b679afd69dce57e424/records/track_10min_16mb/2026-03-27_FrozenNgramOracle_order16_TTT1epoch",
         "pr": "https://github.com/openai/parameter-golf/pull/924",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-27T03:13:32.557Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 925,
+    "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
+    "state": "open",
+    "updatedAt": "2026-03-27T02:45:21Z",
+    "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/925",
+    "authorLogin": "THUQiXuan"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_FrozenNgramOracle_order16_4Mbuckets_TTT1epoch/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Order-16 frozen n-gram oracle mixes with the neural expert via a learned gate, plus complementary weights and score-first TTT per-chunk training.",
+    "tags": [
+      "val-only",
+      "architecture",
+      "evaluation",
+      "training-schedule"
+    ],
+    "usesValOnly": true,
+    "valOnlyReasoning": "Score-first TTT evaluates by scoring each 32K-token validation chunk, updates the oracle, then trains on that chunk, so eval includes val-shard training.",
+    "techniques": [
+      "Order-16 BackoffNgramMixer prefilled from 8B tokens",
+      "alpha head mixing neural logits with 15 n-gram experts",
+      "complementary loss weight and score-first TTT per validation chunk"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
+  }
+}
