@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T19:17:53.893Z",
+  "generatedAt": "2026-03-28T18:24:07.612Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 976,
     "title": "Add 1.20 BPB submission with Legal TTT and Calibration (9L/448D)",
-    "state": "open",
-    "updatedAt": "2026-03-27T18:59:26Z",
+    "state": "closed",
+    "updatedAt": "2026-03-28T18:19:51Z",
     "headSha": "c75bbf0e6247636389af611a3a61956e79334ceb",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/976",
     "authorLogin": "Vibes-me"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Standalone 9-layer GPT links Legal TTT schedule with temperature calibration over seq2048 context before int8+zlib quantization for the 10-min/16MB run.",
+    "summary": "9-layer, 448-dim GPT trained under long-context Legal TTT with temperature calibration before int8+zlib compression for the 16MB/10min track.",
     "tags": [
       "architecture",
-      "training-schedule",
-      "quantization"
+      "quantization",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Legal TTT schedule tuning",
-      "Long-context seq2048 GPT9L recipe",
-      "Temperature calibration + int8+zlib quantization"
+      "Long-context Legal TTT with 2048-token sequences",
+      "Temperature calibration applied pre-quantized eval",
+      "Int8+zlib weight serialization to meet constraints"
     ]
   },
   "compatibility": {

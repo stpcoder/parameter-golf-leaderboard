@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-28T17:54:44.305Z",
+  "generatedAt": "2026-03-28T18:24:03.319Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 998,
     "title": "Add Conker-5 tandem residual exact experts non-record submission",
     "state": "open",
-    "updatedAt": "2026-03-28T17:48:53Z",
+    "updatedAt": "2026-03-28T18:00:36Z",
     "headSha": "cb7619f66f259b9e1817c66378d47d7298d09708",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/998",
     "authorLogin": "asuramaya"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Tandem-trained Conker-3 base pairs with sparse exact residual experts and gate-only routing, packaged via int6+zlib for a non-record leaderboard entry.",
+    "summary": "Non-record tandem-trained Conker-3 with sparse exact residual experts and gate-only routing, packaged int6+zlib but later invalidated by a non-strict causal mask.",
     "tags": [
       "architecture",
       "quantization",
-      "non-record"
+      "non-record",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Tandem Conker-3 base with sparse exact residual experts",
-      "Gate-only learned routing over experts",
-      "int6+zlib packaging"
+      "tandem-trained Conker-3 base with sparse exact residual experts",
+      "gate-only learned routing over residual experts",
+      "int6+zlib packaged artifacts"
     ]
   },
   "compatibility": {

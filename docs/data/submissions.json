@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T17:54:12.851Z",
+  "generatedAt": "2026-03-28T18:23:56.667Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -3452,7 +3452,7 @@
         "authorLogin": "asuramaya",
         "authorName": null,
         "createdAt": "2026-03-28T02:27:23Z",
-        "updatedAt": "2026-03-28T17:48:53Z",
+        "updatedAt": "2026-03-28T18:00:36Z",
         "headSha": "cb7619f66f259b9e1817c66378d47d7298d09708",
         "headRepo": "asuramaya/parameter-golf"
       },
@@ -30207,7 +30207,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-27_LegalTTT_9L_448D",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -30255,16 +30255,16 @@
       "pr": {
         "number": 976,
         "title": "Add 1.20 BPB submission with Legal TTT and Calibration (9L/448D)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/976",
         "authorLogin": "Vibes-me",
         "authorName": null,
         "createdAt": "2026-03-27T18:59:26Z",
-        "updatedAt": "2026-03-27T18:59:26Z",
+        "updatedAt": "2026-03-28T18:19:51Z",
         "headSha": "c75bbf0e6247636389af611a3a61956e79334ceb",
-        "headRepo": "Vibes-me/parameter-golf"
+        "headRepo": null
       },
       "links": {
         "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c75bbf0e6247636389af611a3a61956e79334ceb/records/track_10min_16mb/2026-03-27_LegalTTT_9L_448D/submission.json",

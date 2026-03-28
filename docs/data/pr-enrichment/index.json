@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T17:54:50.794Z",
+  "generatedAt": "2026-03-28T18:24:07.750Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -617,14 +617,15 @@
       "prNumber": 998,
       "title": "Add Conker-5 tandem residual exact experts non-record submission",
       "status": "open",
-      "updatedAt": "2026-03-28T17:48:53Z",
+      "updatedAt": "2026-03-28T18:00:36Z",
       "headSha": "cb7619f66f259b9e1817c66378d47d7298d09708",
-      "generatedAt": "2026-03-28T17:54:44.305Z",
-      "summary": "Tandem-trained Conker-3 base pairs with sparse exact residual experts and gate-only routing, packaged via int6+zlib for a non-record leaderboard entry.",
+      "generatedAt": "2026-03-28T18:24:03.319Z",
+      "summary": "Non-record tandem-trained Conker-3 with sparse exact residual experts and gate-only routing, packaged int6+zlib but later invalidated by a non-strict causal mask.",
       "tags": [
         "architecture",
         "quantization",
-        "non-record"
+        "non-record",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1030,15 +1031,15 @@
     {
       "prNumber": 976,
       "title": "Add 1.20 BPB submission with Legal TTT and Calibration (9L/448D)",
-      "status": "open",
-      "updatedAt": "2026-03-27T18:59:26Z",
+      "status": "closed",
+      "updatedAt": "2026-03-28T18:19:51Z",
       "headSha": "c75bbf0e6247636389af611a3a61956e79334ceb",
-      "generatedAt": "2026-03-27T19:17:53.893Z",
-      "summary": "Standalone 9-layer GPT links Legal TTT schedule with temperature calibration over seq2048 context before int8+zlib quantization for the 10-min/16MB run.",
+      "generatedAt": "2026-03-28T18:24:07.612Z",
+      "summary": "9-layer, 448-dim GPT trained under long-context Legal TTT with temperature calibration before int8+zlib compression for the 16MB/10min track.",
       "tags": [
         "architecture",
-        "training-schedule",
-        "quantization"
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
