@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-28T11:22:00.492Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1015,
+    "title": "Add Parameter Golf submission: Vocab768_LinearPhaseInit_GatedXSA_EMA_…",
+    "state": "open",
+    "updatedAt": "2026-03-28T11:12:42Z",
+    "headSha": "bf130b15e7a891b925a01da4216aafe48e112f1c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1015",
+    "authorLogin": "shram86"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-28_Vocab768_LinearPhaseInit_GatedXSA_EMA_LateQAT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines SP-768 tokenizer, linear phase-mix init, gated XSA on final layers, EMA, and matrix-only late QAT with FlashAttention 3 for a sub-16MB submission.",
+    "tags": [
+      "tokenization",
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "SP-768 BPE tokenizer with tied embeddings",
+      "Linear phase-mix init and gated XSA on final layers",
+      "EMA plus late matrix-only QAT feeding FlashAttention 3"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

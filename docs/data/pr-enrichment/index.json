@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-28T10:52:21.988Z",
+  "generatedAt": "2026-03-28T11:22:04.747Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1015,
+      "title": "Add Parameter Golf submission: Vocab768_LinearPhaseInit_GatedXSA_EMA_…",
+      "status": "open",
+      "updatedAt": "2026-03-28T11:12:42Z",
+      "headSha": "bf130b15e7a891b925a01da4216aafe48e112f1c",
+      "generatedAt": "2026-03-28T11:22:00.492Z",
+      "summary": "Combines SP-768 tokenizer, linear phase-mix init, gated XSA on final layers, EMA, and matrix-only late QAT with FlashAttention 3 for a sub-16MB submission.",
+      "tags": [
+        "tokenization",
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1015.json"
+    },
     {
       "prNumber": 1013,
       "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
@@ -6299,14 +6323,14 @@
       "prNumber": 619,
       "title": "non-record 16MB A100 SXM run (10L mixed int5/int6 + EMA + QAT)",
       "status": "open",
-      "updatedAt": "2026-03-28T10:40:43Z",
-      "headSha": "53a56294fffdf664554c4cad29145f663a41fe81",
-      "generatedAt": "2026-03-28T10:52:15.405Z",
-      "summary": "10-layer GPT+BigramHash with 3x MLP, mixed int5/int6 quant, EMA export weights, and 15% final-fraction QAT before int8 serialization.",
+      "updatedAt": "2026-03-28T11:14:00Z",
+      "headSha": "880a22922b69e73e9257f2529b3093d590c0b961",
+      "generatedAt": "2026-03-28T11:22:04.655Z",
+      "summary": "10-layer model mixes int5/int6 quant per submodule, exports EMA weights, and applies late QAT with bigram hashing for 16MB non-record run.",
       "tags": [
         "quantization",
         "architecture",
-        "training-schedule",
+        "optimizer",
         "non-record"
       ],
       "flags": {
