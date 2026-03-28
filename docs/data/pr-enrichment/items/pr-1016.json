@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-28T12:22:15.096Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1016,
+    "title": "11L VRL + Parallel Muon + Legal TTT v2 (val_bpb=1.1269, non-record)",
+    "state": "open",
+    "updatedAt": "2026-03-28T12:17:35Z",
+    "headSha": "590de29b7e814454360c524727749201356b5074",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1016",
+    "authorLogin": "ADIITJ"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Blends VRL gated V0 residuals into later layers, ups BigramHash, Parallel Muon with tight SWA, always-on legal TTT, and zstd-22 compression.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "VRL gating of V outputs",
+      "Parallel Muon + tight SWA",
+      "zstd-22 + legal TTT"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T11:51:57.411Z",
+  "generatedAt": "2026-03-28T12:22:09.349Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -14103,6 +14103,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/07884e6ce1c41105b5a8e83e6eb39cfe3d866c9a/records/track_10min_16mb/2026-03-22_11L_XSA-all_GPTQ-lite_EMA_LateQAT_1.1271/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/07884e6ce1c41105b5a8e83e6eb39cfe3d866c9a/records/track_10min_16mb/2026-03-22_11L_XSA-all_GPTQ-lite_EMA_LateQAT_1.1271",
         "pr": "https://github.com/openai/parameter-golf/pull/478",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-27_VRL_ParallelMuon_LegalTTT_v2",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_VRL_ParallelMuon_LegalTTT_v2",
+        "folderPath": "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/train_gpt.py"
+      },
+      "submission": {
+        "author": "Atharva Date",
+        "githubId": "ADIITJ",
+        "name": "11L VRL + BigramHash3072 + Parallel Muon + Legal SGD TTT v2 (ADIITJ)",
+        "blurb": "Forked from PR #549 (abaybektursun, 1.1194 SOTA). Additions: (1) VRL (Value Residual Learning, arxiv:2410.17897) on all 11 layers via learned sigmoid gates; (2) BigramHash 1536->3072 (free -0.0009 bpb); (3) Tight SWA preferred over EMA; (4) zstd-22 compression replacing lzma; (5) Sliding window eval bug fix. Removed Full GPTQ (added overhead without meaningful compression gain). TTT enabled by default with freeze_blocks=0. 6170-6182 steps at ~97ms/step.",
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": 1.1269,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15828109,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1016,
+        "title": "11L VRL + Parallel Muon + Legal TTT v2 (val_bpb=1.1269, non-record)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1016",
+        "authorLogin": "ADIITJ",
+        "authorName": null,
+        "createdAt": "2026-03-28T11:56:23Z",
+        "updatedAt": "2026-03-28T12:17:35Z",
+        "headSha": "590de29b7e814454360c524727749201356b5074",
+        "headRepo": "ADIITJ/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/590de29b7e814454360c524727749201356b5074/records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/590de29b7e814454360c524727749201356b5074/records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/590de29b7e814454360c524727749201356b5074/records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/590de29b7e814454360c524727749201356b5074/records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/590de29b7e814454360c524727749201356b5074/records/track_10min_16mb/2026-03-27_VRL_ParallelMuon_LegalTTT_v2",
+        "pr": "https://github.com/openai/parameter-golf/pull/1016",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
