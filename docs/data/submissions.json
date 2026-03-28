@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T13:22:41.524Z",
+  "generatedAt": "2026-03-28T13:52:47.381Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -2913,7 +2913,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-28T00:02:14Z",
-        "updatedAt": "2026-03-28T08:33:21Z",
+        "updatedAt": "2026-03-28T13:33:49Z",
         "headSha": "90741b4c55ca0a0d0f79056dec29da64d7636491",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -9415,83 +9415,6 @@
       }
     },
     {
-      "id": "record-records-track_10min_16mb-2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
-      "source": "pull_request",
-      "status": "open",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
-        "folderPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
-        "submissionPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_gpt.py"
-      },
-      "submission": {
-        "author": "abaybektursun",
-        "githubId": "abaybektursun",
-        "name": "Val-Calibrated GPTQ + XSA-all + BigramHash 3072x112",
-        "blurb": "PR609-derived 11L XSA-all + Full GPTQ + selective-pruning stack, but with GPTQ calibration switched from train shards to val shards to avoid eval-time train-data access. Final config uses BigramHash(3072,112), warmdown=4000, and lzma preset=9. 3-seed exact mean: 1.11420025 BPB / 1.88127547 nats, beating PR549's exact 3-seed mean 1.11937967 BPB / 1.89002068 nats by 0.00874521 nats (Welch t=-15.23, df=2.12, two-sided p=0.00335).",
-        "date": "2026-03-25"
-      },
-      "metrics": {
-        "valBpb": 1.11420025,
-        "valLoss": 1.88127547,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": 15866156,
-        "bytesCode": null,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 728,
-        "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1147 (3-seed mean)",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/728",
-        "authorLogin": "abaybektursun",
-        "authorName": null,
-        "createdAt": "2026-03-25T15:03:32Z",
-        "updatedAt": "2026-03-28T13:22:09Z",
-        "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-        "headRepo": "abaybektursun/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/713bb3fcd9017ba01d104723b3f873201976bab8/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/713bb3fcd9017ba01d104723b3f873201976bab8/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/713bb3fcd9017ba01d104723b3f873201976bab8/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/713bb3fcd9017ba01d104723b3f873201976bab8/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/713bb3fcd9017ba01d104723b3f873201976bab8/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
-        "pr": "https://github.com/openai/parameter-golf/pull/728",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
-      }
-    },
-    {
       "id": "record-records-track_10min_16mb-2026-03-27_ApproachB_LargerModel_Int5",
       "source": "pull_request",
       "status": "open",
@@ -9637,6 +9560,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/21661294e55de6ccb982d98f934512c7ed714813/records/track_10min_16mb/2026-03-25_Memmap_multi_shard_data_pipeline_GPU_prefetch_LeakyReLU_Legal_TTT_Parallel_Muon/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/21661294e55de6ccb982d98f934512c7ed714813/records/track_10min_16mb/2026-03-25_Memmap_multi_shard_data_pipeline_GPU_prefetch_LeakyReLU_Legal_TTT_Parallel_Muon",
         "pr": "https://github.com/openai/parameter-golf/pull/726",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
+        "folderPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
+        "submissionPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_gpt.py"
+      },
+      "submission": {
+        "author": "abaybektursun",
+        "githubId": "abaybektursun",
+        "name": "AR Self-Gen GPTQ + XSA-all + BigramHash 3072x112",
+        "blurb": "11L XSA-all + Full Hessian GPTQ with autoregressive self-generated calibration (no val/train data accessed during quantization) + selective-pruning stack. BigramHash(3072,112), warmdown=4000, lzma preset=9. 3-seed exact mean: 1.11473509 BPB / 1.88217853 nats, beating PR549's exact 3-seed mean 1.11937967 BPB / 1.89002068 nats by 0.00784215 nats (Welch t=-11.83, df=3.31).",
+        "date": "2026-03-25"
+      },
+      "metrics": {
+        "valBpb": 1.11473509,
+        "valLoss": 1.88217853,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15984850,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1019,
+        "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11473 (3-seed mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1019",
+        "authorLogin": "abaybektursun",
+        "authorName": null,
+        "createdAt": "2026-03-28T13:34:01Z",
+        "updatedAt": "2026-03-28T13:34:01Z",
+        "headSha": "d7fbe3d16f81a16e26604353bafc61d151cf5264",
+        "headRepo": "abaybektursun/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c5c675ac4e7c6a67e0eb17a11f24cd772e3913ab/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c5c675ac4e7c6a67e0eb17a11f24cd772e3913ab/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c5c675ac4e7c6a67e0eb17a11f24cd772e3913ab/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c5c675ac4e7c6a67e0eb17a11f24cd772e3913ab/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c5c675ac4e7c6a67e0eb17a11f24cd772e3913ab/records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072",
+        "pr": "https://github.com/openai/parameter-golf/pull/1019",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -44061,6 +44061,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research",
         "pr": "https://github.com/openai/parameter-golf/pull/1012",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-28_MC_Dropout_Ensemble_Negative",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-28_MC_Dropout_Ensemble_Negative",
+        "folderPath": "records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative",
+        "submissionPath": "records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/train_gpt.py"
+      },
+      "submission": {
+        "author": "abaybektursun",
+        "githubId": "abaybektursun",
+        "name": "MC Dropout Ensembling Is Negative for Small LMs",
+        "blurb": "MC Dropout (train with dropout, average K=16 softmax distributions at eval) does not improve BPB at 17M parameters. Tested dropout=0.30 (+0.005 BPB) and dropout=0.05 (+0.002 BPB). The deterministic single pass is strictly better. Sub-networks lack diversity at this scale.",
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1021,
+        "title": "Non-record: MC Dropout ensembling is negative for small LMs",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1021",
+        "authorLogin": "abaybektursun",
+        "authorName": null,
+        "createdAt": "2026-03-28T13:48:45Z",
+        "updatedAt": "2026-03-28T13:48:45Z",
+        "headSha": "1f643bb82df35fdbcebbaef4e08d2574dc5337e1",
+        "headRepo": "abaybektursun/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/1f643bb82df35fdbcebbaef4e08d2574dc5337e1/records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/1f643bb82df35fdbcebbaef4e08d2574dc5337e1/records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/1f643bb82df35fdbcebbaef4e08d2574dc5337e1/records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/1f643bb82df35fdbcebbaef4e08d2574dc5337e1/records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/1f643bb82df35fdbcebbaef4e08d2574dc5337e1/records/track_non_record_16mb/2026-03-28_MC_Dropout_Ensemble_Negative",
+        "pr": "https://github.com/openai/parameter-golf/pull/1021",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

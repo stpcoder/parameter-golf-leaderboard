@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-28T09:21:45.621Z",
+  "generatedAt": "2026-03-28T13:53:01.937Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 990,
     "title": "ClownCar: Frugendorff compression baseline + canonical DeltaNet integration",
     "state": "open",
-    "updatedAt": "2026-03-28T08:33:21Z",
+    "updatedAt": "2026-03-28T13:33:49Z",
     "headSha": "90741b4c55ca0a0d0f79056dec29da64d7636491",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/990",
     "authorLogin": "newjordan"
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "ClownCar reuses a shared crawler block with loop-conditioned flow instructions to boost effective depth and pairs it with canonical DeltaNet kernels for compression-friendly inference.",
+    "summary": "ClownCar reuses a shared Frugendorff crawler with DeltaNet kernels and int8-aware tweaks to trade depth for width in a compression-focused tiny model.",
     "tags": [
       "architecture",
+      "quantization",
       "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "shared crawler block repeated 4x with stateful flow instructions",
-      "width allocation from freed parameters after loop sharing",
-      "canonical DeltaNet chunk_delta_rule integration"
+      "Weight-shared Frugendorff crawler looping with loop-conditioned flow instructions",
+      "Canonical DeltaNet kernels replacing Python chunks",
+      "Int8-aware crawler quant mode for shared-weight resilience"
     ]
   },
   "compatibility": {

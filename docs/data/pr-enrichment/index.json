@@ -1,8 +1,54 @@
 {
-  "generatedAt": "2026-03-28T13:23:08.338Z",
+  "generatedAt": "2026-03-28T13:53:02.082Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1021,
+      "title": "Non-record: MC Dropout ensembling is negative for small LMs",
+      "status": "open",
+      "updatedAt": "2026-03-28T13:48:45Z",
+      "headSha": "1f643bb82df35fdbcebbaef4e08d2574dc5337e1",
+      "generatedAt": "2026-03-28T13:52:52.716Z",
+      "summary": "Keep dropout active at eval to average K=16 softmaxes, showing MC Dropout ensembling worsens a 17M-parameter LM because subnet diversity is lacking.",
+      "tags": [
+        "non-record",
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1021.json"
+    },
+    {
+      "prNumber": 1019,
+      "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11473 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-28T13:34:01Z",
+      "headSha": "d7fbe3d16f81a16e26604353bafc61d151cf5264",
+      "generatedAt": "2026-03-28T13:52:57.538Z",
+      "summary": "Full Hessian GPTQ uses autoregressive self-generated calibration, a wider BigramHash, and XSA on every layer to tighten quantization without touching val or train data.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "attention"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1019.json"
+    },
     {
       "prNumber": 1016,
       "title": "11L VRL + Parallel Muon + Legal TTT v2 (val_bpb=1.1269, non-record)",
@@ -522,12 +568,13 @@
       "prNumber": 990,
       "title": "ClownCar: Frugendorff compression baseline + canonical DeltaNet integration",
       "status": "open",
-      "updatedAt": "2026-03-28T08:33:21Z",
+      "updatedAt": "2026-03-28T13:33:49Z",
       "headSha": "90741b4c55ca0a0d0f79056dec29da64d7636491",
-      "generatedAt": "2026-03-28T09:21:45.621Z",
-      "summary": "ClownCar reuses a shared crawler block with loop-conditioned flow instructions to boost effective depth and pairs it with canonical DeltaNet kernels for compression-friendly inference.",
+      "generatedAt": "2026-03-28T13:53:01.937Z",
+      "summary": "ClownCar reuses a shared Frugendorff crawler with DeltaNet kernels and int8-aware tweaks to trade depth for width in a compression-focused tiny model.",
       "tags": [
         "architecture",
+        "quantization",
         "compression"
       ],
       "flags": {
@@ -4660,30 +4707,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-731.json"
-    },
-    {
-      "prNumber": 728,
-      "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1147 (3-seed mean)",
-      "status": "open",
-      "updatedAt": "2026-03-28T13:22:09Z",
-      "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-      "generatedAt": "2026-03-28T13:23:08.229Z",
-      "summary": "Full-Hessian GPTQ with autoregressive self-gen calibration, BigramHash 3072×112, and XSA across all layers quantizes within 16MB without eval-time train data access.",
-      "tags": [
-        "quantization",
-        "attention",
-        "architecture",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-728.json"
     },
     {
       "prNumber": 727,
