@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T12:22:15.364Z",
+  "generatedAt": "2026-03-28T13:23:08.338Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -194,15 +194,15 @@
       "prNumber": 1006,
       "title": "1.1085 BPB: JEPA + AdamW TTT + Full GPTQ + FA3 + LZMA",
       "status": "open",
-      "updatedAt": "2026-03-28T05:46:49Z",
+      "updatedAt": "2026-03-28T13:12:11Z",
       "headSha": "8ab5217009ea9e20f2f858f9aef5f0bd8c16c4c0",
-      "generatedAt": "2026-03-28T05:50:52.472Z",
-      "summary": "JEPA auxiliary loss plus AdamW test-time training on EMA weights before full-Hessian GPTQ, Flash-Attention 3, LZMA, and XSA across every layer.",
+      "generatedAt": "2026-03-28T13:22:50.110Z",
+      "summary": "Uses JEPA regularizer, pre-quantization AdamW TTT, Hessian GPTQ, FA3, XSA on every layer, and LZMA to stay under 16MB.",
       "tags": [
         "architecture",
-        "training-schedule",
+        "optimizer",
         "quantization",
-        "compression"
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -589,12 +589,12 @@
       "prNumber": 986,
       "title": "Record: Packed N-gram + Two-Pass   Dirichlet CTW — val_bpb 0.0830 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-28T06:24:18Z",
+      "updatedAt": "2026-03-28T13:12:05Z",
       "headSha": "1c70fa129218ea7107a314c465c74588a1af7b9f",
-      "generatedAt": "2026-03-28T06:51:15.184Z",
-      "summary": "Packed order-2..13 n-gram artifact plus sliding-window cache warms a two-pass rescore that mixes orders via hierarchical Dirichlet CTW and phrase cache lookups.",
+      "generatedAt": "2026-03-28T13:22:56.463Z",
+      "summary": "Packed order-2-13 n-gram artifact with two-pass rescore and hierarchical Dirichlet CTW mixing lets a warmed cache shoulder most probability work.",
       "tags": [
-        "sliding-window-eval",
+        "compression",
         "evaluation",
         "architecture"
       ],
@@ -2227,10 +2227,10 @@
       "prNumber": 886,
       "title": "RFC: How to Clean Up All the Parameter Golf Submissions",
       "status": "open",
-      "updatedAt": "2026-03-27T17:42:38Z",
+      "updatedAt": "2026-03-28T13:02:48Z",
       "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
-      "generatedAt": "2026-03-27T17:47:30.008Z",
-      "summary": "Shows n-gram cache blends use invalid P(cache_bin) ratios inflating BPB, proposing distribution checks, causality rules, and eval-state caps.",
+      "generatedAt": "2026-03-28T13:23:02.763Z",
+      "summary": "Audit shows cached n-gram blend reports invalid BPB because hash ratios aren't normalized; proposes per-token distribution checks, causality rules, and eval-state caps.",
       "tags": [
         "evaluation",
         "non-record"
@@ -4663,16 +4663,17 @@
     },
     {
       "prNumber": 728,
-      "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
+      "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1147 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-27T22:43:03Z",
+      "updatedAt": "2026-03-28T13:22:09Z",
       "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
-      "generatedAt": "2026-03-27T22:50:03.562Z",
-      "summary": "Full Hessian GPTQ uses val-shard calibration while XSA spans all 11 layers and BigramHash 3072×112 fits under 16MB.",
+      "generatedAt": "2026-03-28T13:23:08.229Z",
+      "summary": "Full-Hessian GPTQ with autoregressive self-gen calibration, BigramHash 3072×112, and XSA across all layers quantizes within 16MB without eval-time train data access.",
       "tags": [
         "quantization",
         "attention",
-        "architecture"
+        "architecture",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,

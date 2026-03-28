@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T12:52:16.190Z",
+  "generatedAt": "2026-03-28T13:22:41.524Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -834,7 +834,7 @@
         "authorLogin": "sofiabod",
         "authorName": null,
         "createdAt": "2026-03-27T21:32:05Z",
-        "updatedAt": "2026-03-28T06:24:18Z",
+        "updatedAt": "2026-03-28T13:12:05Z",
         "headSha": "1c70fa129218ea7107a314c465c74588a1af7b9f",
         "headRepo": "sofiabod/parameter-golf"
       },
@@ -2836,7 +2836,7 @@
         "authorLogin": "sofiabod",
         "authorName": null,
         "createdAt": "2026-03-27T21:32:05Z",
-        "updatedAt": "2026-03-28T06:24:18Z",
+        "updatedAt": "2026-03-28T13:12:05Z",
         "headSha": "1c70fa129218ea7107a314c465c74588a1af7b9f",
         "headRepo": "sofiabod/parameter-golf"
       },
@@ -9004,7 +9004,7 @@
         "authorLogin": "NewyorkDev",
         "authorName": null,
         "createdAt": "2026-03-28T05:45:09Z",
-        "updatedAt": "2026-03-28T05:46:49Z",
+        "updatedAt": "2026-03-28T13:12:11Z",
         "headSha": "8ab5217009ea9e20f2f858f9aef5f0bd8c16c4c0",
         "headRepo": "NewyorkDev/parameter-golf"
       },
@@ -9464,7 +9464,7 @@
       },
       "pr": {
         "number": 728,
-        "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
+        "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1147 (3-seed mean)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -9472,7 +9472,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-25T15:03:32Z",
-        "updatedAt": "2026-03-27T22:43:03Z",
+        "updatedAt": "2026-03-28T13:22:09Z",
         "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
         "headRepo": "abaybektursun/parameter-golf"
       },
@@ -47361,7 +47361,7 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-26T19:03:36Z",
-        "updatedAt": "2026-03-27T17:42:38Z",
+        "updatedAt": "2026-03-28T13:02:48Z",
         "headSha": "37aa1892cd4607a4a20a2027067b8f86b0244da4",
         "headRepo": "abaybektursun/parameter-golf"
       },

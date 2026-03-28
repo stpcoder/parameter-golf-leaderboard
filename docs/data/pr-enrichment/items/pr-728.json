@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T22:50:03.562Z",
+  "generatedAt": "2026-03-28T13:23:08.229Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 728,
-    "title": "Record: Val-Calibrated GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1142 (3-seed mean)",
+    "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.1147 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-27T22:43:03Z",
+    "updatedAt": "2026-03-28T13:22:09Z",
     "headSha": "713bb3fcd9017ba01d104723b3f873201976bab8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/728",
     "authorLogin": "abaybektursun"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Full Hessian GPTQ uses val-shard calibration while XSA spans all 11 layers and BigramHash 3072×112 fits under 16MB.",
+    "summary": "Full-Hessian GPTQ with autoregressive self-gen calibration, BigramHash 3072×112, and XSA across all layers quantizes within 16MB without eval-time train data access.",
     "tags": [
       "quantization",
       "attention",
-      "architecture"
+      "architecture",
+      "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Calibration relies on validation shards but no val-only training occurs.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Val-shard calibration for Full Hessian GPTQ",
-      "BigramHash 3072×112 embedding table",
-      "XSA applied to every layer"
+      "Full Hessian GPTQ with Cholesky compensation",
+      "Autoregressive self-generated calibration sequences",
+      "BigramHash 3072×112 with XSA on all layers"
     ]
   },
   "compatibility": {
