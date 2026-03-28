@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T11:21:52.846Z",
+  "generatedAt": "2026-03-28T11:51:57.411Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -30493,7 +30493,7 @@
         "authorLogin": "shram86",
         "authorName": null,
         "createdAt": "2026-03-28T11:12:42Z",
-        "updatedAt": "2026-03-28T11:12:42Z",
+        "updatedAt": "2026-03-28T11:40:03Z",
         "headSha": "bf130b15e7a891b925a01da4216aafe48e112f1c",
         "headRepo": "shram86/parameter-golf"
       },
@@ -45128,16 +45128,16 @@
         "authorLogin": "FlashyFlash3011",
         "authorName": null,
         "createdAt": "2026-03-21T15:22:07Z",
-        "updatedAt": "2026-03-28T10:33:33Z",
-        "headSha": "6351d76789ce7bb84df78bd30350ee3f272e11d2",
+        "updatedAt": "2026-03-28T11:43:02Z",
+        "headSha": "3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec",
         "headRepo": "FlashyFlash3011/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6351d76789ce7bb84df78bd30350ee3f272e11d2/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/6351d76789ce7bb84df78bd30350ee3f272e11d2/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/6351d76789ce7bb84df78bd30350ee3f272e11d2/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/6351d76789ce7bb84df78bd30350ee3f272e11d2/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/6351d76789ce7bb84df78bd30350ee3f272e11d2/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec/records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT",
         "pr": "https://github.com/openai/parameter-golf/pull/347",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

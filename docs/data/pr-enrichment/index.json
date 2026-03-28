@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T11:22:04.747Z",
+  "generatedAt": "2026-03-28T11:52:08.672Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,15 +7,14 @@
       "prNumber": 1015,
       "title": "Add Parameter Golf submission: Vocab768_LinearPhaseInit_GatedXSA_EMA_…",
       "status": "open",
-      "updatedAt": "2026-03-28T11:12:42Z",
+      "updatedAt": "2026-03-28T11:40:03Z",
       "headSha": "bf130b15e7a891b925a01da4216aafe48e112f1c",
-      "generatedAt": "2026-03-28T11:22:00.492Z",
-      "summary": "Combines SP-768 tokenizer, linear phase-mix init, gated XSA on final layers, EMA, and matrix-only late QAT with FlashAttention 3 for a sub-16MB submission.",
+      "generatedAt": "2026-03-28T11:52:03.540Z",
+      "summary": "Combines SP768 tokenizer, linear phase-mix init with gated XSA in final layers, EMA, and late matrix-only QAT on FlashAttention3.",
       "tags": [
         "tokenization",
         "architecture",
-        "quantization",
-        "training-schedule"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -10714,15 +10713,15 @@
       "prNumber": 347,
       "title": "GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
       "status": "open",
-      "updatedAt": "2026-03-28T10:33:33Z",
-      "headSha": "6351d76789ce7bb84df78bd30350ee3f272e11d2",
-      "generatedAt": "2026-03-28T10:52:21.936Z",
-      "summary": "Adds gated attention/value residual mixing with full-step QAT, using lzma-9 to restore BigramHash 2048 atop the Parameter Banking + Parallel Muon base.",
+      "updatedAt": "2026-03-28T11:43:02Z",
+      "headSha": "3dd38f2b5a5c55bb2d829655e45a27ee8572c8ec",
+      "generatedAt": "2026-03-28T11:52:08.627Z",
+      "summary": "GPTQLite keeps LeakyReLU² base while adding GatedAttention/ValueResidual, full-step int6 QAT, lzma-9 compression, and restored 2048 BigramHash.",
       "tags": [
+        "attention",
         "architecture",
         "quantization",
-        "optimizer",
-        "training-schedule"
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
