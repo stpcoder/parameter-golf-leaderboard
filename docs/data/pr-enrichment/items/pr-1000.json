@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-28T02:49:48.407Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1000,
+    "title": "[WIP] Latent LM with TurboQuant 3-bit Quantization",
+    "state": "open",
+    "updatedAt": "2026-03-28T02:39:20Z",
+    "headSha": "4c31708e2cd3cf684bc37f191b02d839f3492325",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1000",
+    "authorLogin": "Elarwei001"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-28_LatentLM_TurboQuant_LeWM/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Latent LM pairs LeWM-style latent prediction with a tied encoder/decoder and TurboQuant 3-bit compression for the Transformer predictor.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "- LeWM-style latent Transformer predictor",
+      "- TurboQuant 3-bit compression to double parameters",
+      "- SIGReg plus cross-entropy loss on latents"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

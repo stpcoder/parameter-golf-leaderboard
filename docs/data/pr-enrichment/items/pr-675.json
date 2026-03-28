@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-26T18:42:04.636Z",
+  "generatedAt": "2026-03-28T02:50:13.612Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 675,
     "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
     "state": "open",
-    "updatedAt": "2026-03-26T18:24:03Z",
-    "headSha": "01d2780a67d6e583f8a1ed50ab8fa14901040098",
+    "updatedAt": "2026-03-28T02:44:12Z",
+    "headSha": "d736eb1ff0718defaae14f5b4cd15ef415e51c21",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/675",
     "authorLogin": "ChideraIbe123"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Stacked 10-layer model using LAWA averaging, LeakyReLU(0.5)², ramping WD, and lzma compression while training on the validation shard.",
+    "summary": "Stacks LeakyReLU(0.5)², LAWA checkpoint averaging, ramping weight decay, and val-set training on a 10-layer model to squeeze quality on 1xH100.",
     "tags": [
       "val-only",
+      "architecture",
       "training-schedule",
-      "compression",
-      "architecture"
+      "regularization"
     ],
     "usesValOnly": true,
-    "valOnlyReasoning": "Explicitly trained on the validation shard as allowed by the rules for this submission.",
+    "valOnlyReasoning": "The run explicitly trains on the validation shard as permitted by the rules to boost BPB before quantization.",
     "techniques": [
-      "LAWA checkpoint averaging",
-      "LeakyReLU(0.5)² with ramping weight decay",
-      "lzma compression combined with val-set training"
+      "LeakyReLU(0.5)² activations with lzma compression",
+      "LAWA averaging plus ramping weight decay warmdown",
+      "Validation-set training on budgeted 1xH100 run"
     ]
   },
   "compatibility": {

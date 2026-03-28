@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-28T02:49:53.664Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 999,
+    "title": "Record: 11L Muon TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-03-28T02:28:37Z",
+    "headSha": "bffd4266401b90620667d45bb3d10af5772fcaa5",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/999",
+    "authorLogin": "aamodbhatt"
+  },
+  "inputs": {
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-27_Legal_NeuralOnly_NoTTT_Alt_8xH100/README.md"
+    ],
+    "submissionCount": 2
+  },
+  "output": {
+    "summary": "Applies Muon-style Newton-Schulz updates and entropy-gated per-chunk epoch counts to the score-first TTT loop over the 11-layer SOTA stack.",
+    "tags": [
+      "muon",
+      "optimizer",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Muon Newton-Schulz updates replace SGD inside the TTT optimizer",
+      "Chunk NLL gates 2/3/4 epoch counts with global sync",
+      "Score-first TTT on the SOTA 11L base with full adaptation budget"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

@@ -1,8 +1,77 @@
 {
-  "generatedAt": "2026-03-28T02:19:49.820Z",
+  "generatedAt": "2026-03-28T02:50:13.707Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1000,
+      "title": "[WIP] Latent LM with TurboQuant 3-bit Quantization",
+      "status": "open",
+      "updatedAt": "2026-03-28T02:39:20Z",
+      "headSha": "4c31708e2cd3cf684bc37f191b02d839f3492325",
+      "generatedAt": "2026-03-28T02:49:48.407Z",
+      "summary": "Latent LM pairs LeWM-style latent prediction with a tied encoder/decoder and TurboQuant 3-bit compression for the Transformer predictor.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1000.json"
+    },
+    {
+      "prNumber": 999,
+      "title": "Record: 11L Muon TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-03-28T02:28:37Z",
+      "headSha": "bffd4266401b90620667d45bb3d10af5772fcaa5",
+      "generatedAt": "2026-03-28T02:49:53.664Z",
+      "summary": "Applies Muon-style Newton-Schulz updates and entropy-gated per-chunk epoch counts to the score-first TTT loop over the 11-layer SOTA stack.",
+      "tags": [
+        "muon",
+        "optimizer",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-999.json"
+    },
+    {
+      "prNumber": 998,
+      "title": "Add Conker-5 tandem residual exact experts non-record submission",
+      "status": "open",
+      "updatedAt": "2026-03-28T02:27:23Z",
+      "headSha": "084a2fe41800de14ec63a7e18ebe71611f73b805",
+      "generatedAt": "2026-03-28T02:49:58.474Z",
+      "summary": "Tandem-trains Conker-3 base with sparse exact residual experts gated for symbolic continuations, then quantizes to int6+zlib for a non-record 16MB package.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-998.json"
+    },
     {
       "prNumber": 996,
       "title": "Pre-Enrichment + EMA-GPU + SmearGate + XSA4 (val_bpb=1.1478, …",
@@ -121,23 +190,24 @@
     {
       "prNumber": 991,
       "title": "Record: 33.6M Int5 GPTQ + Score-First TTT (val_bpb=1.1145, 3-seed)",
-      "status": "open",
-      "updatedAt": "2026-03-28T01:52:42Z",
+      "status": "closed",
+      "updatedAt": "2026-03-28T02:32:05Z",
       "headSha": "da4750aa811ed4dfa3a70c915ce3a5711e2d2ec0",
-      "generatedAt": "2026-03-28T02:19:37.224Z",
-      "summary": "Larger 33.6M model with int5 GPTQ compression feeds score-first backward-looking TTT on last blocks plus temperature calibration.",
+      "generatedAt": "2026-03-28T02:50:04.377Z",
+      "summary": "33.6M int5 GPTQ model applies score-first backward TTT on the last two blocks followed by temperature calibration for sharper evaluation.",
       "tags": [
+        "val-only",
         "quantization",
         "training-schedule",
         "evaluation"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-991.json"
     },
@@ -851,29 +921,6 @@
       "file": "items/pr-951.json"
     },
     {
-      "prNumber": 947,
-      "title": "Non-record: Legal Neural-Only No-TTT Alt (8xH100) val_bpb=1.1576",
-      "status": "open",
-      "updatedAt": "2026-03-27T10:42:54Z",
-      "headSha": "c941cc0121f3a0e83a7402ab6525cce9dd4ccdb3",
-      "generatedAt": "2026-03-27T10:45:28.051Z",
-      "summary": "Scaling a frontier_candidate preset (BIGRAM_VOCAB=2048, MLP_MULT=3.2) to stay neural-only at eval while disabling cache rescoring/TTT.",
-      "tags": [
-        "architecture",
-        "evaluation",
-        "non-record"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-947.json"
-    },
-    {
       "prNumber": 946,
       "title": "Non-record: Legal Neural-Only No-TTT (8xH100) val_bpb=1.1606",
       "status": "open",
@@ -1552,14 +1599,14 @@
       "prNumber": 911,
       "title": "KoopCaps-HRM Ternary Reasoner — Koopman Capsule Dynamics + Adaptive Halting",
       "status": "open",
-      "updatedAt": "2026-03-27T20:27:15Z",
-      "headSha": "da77da82bd2cccd6f8e186f6b0a78d79908d8c75",
-      "generatedAt": "2026-03-27T20:48:33.711Z",
-      "summary": "Ternary U-Net with Koopman capsule dynamics and adaptive halting adds predictive iterative reasoning plus cross-window capsule carry in a 16MB stack.",
+      "updatedAt": "2026-03-28T02:43:40Z",
+      "headSha": "5619522dacbc7e6716567ea9e7bf60a562475e7d",
+      "generatedAt": "2026-03-28T02:50:08.786Z",
+      "summary": "Ternary U-Net pairs Koopman-driven capsule iterations, adaptive halting, and cross-window memory with Hadamard feedback to squeeze reasoning into ~12MB.",
       "tags": [
         "quantization",
         "architecture",
-        "evaluation"
+        "sliding-window-eval"
       ],
       "flags": {
         "usesValOnly": false,
@@ -5127,15 +5174,15 @@
       "prNumber": 675,
       "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
       "status": "open",
-      "updatedAt": "2026-03-26T18:24:03Z",
-      "headSha": "01d2780a67d6e583f8a1ed50ab8fa14901040098",
-      "generatedAt": "2026-03-26T18:42:04.636Z",
-      "summary": "Stacked 10-layer model using LAWA averaging, LeakyReLU(0.5)², ramping WD, and lzma compression while training on the validation shard.",
+      "updatedAt": "2026-03-28T02:44:12Z",
+      "headSha": "d736eb1ff0718defaae14f5b4cd15ef415e51c21",
+      "generatedAt": "2026-03-28T02:50:13.612Z",
+      "summary": "Stacks LeakyReLU(0.5)², LAWA checkpoint averaging, ramping weight decay, and val-set training on a 10-layer model to squeeze quality on 1xH100.",
       "tags": [
         "val-only",
+        "architecture",
         "training-schedule",
-        "compression",
-        "architecture"
+        "regularization"
       ],
       "flags": {
         "usesValOnly": true,
