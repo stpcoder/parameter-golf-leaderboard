@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T09:51:23.541Z",
+  "generatedAt": "2026-03-28T10:21:25.621Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -3375,7 +3375,7 @@
         "authorLogin": "asuramaya",
         "authorName": null,
         "createdAt": "2026-03-28T02:27:23Z",
-        "updatedAt": "2026-03-28T02:27:23Z",
+        "updatedAt": "2026-03-28T09:57:26Z",
         "headSha": "084a2fe41800de14ec63a7e18ebe71611f73b805",
         "headRepo": "asuramaya/parameter-golf"
       },
@@ -24430,6 +24430,83 @@
       }
     },
     {
+      "id": "record-records-track_non_record_16mb-2026-03-28_S4DLin_SSM_Hybrid_Research",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-28_S4DLin_SSM_Hybrid_Research",
+        "folderPath": "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research",
+        "submissionPath": "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/train_gpt.py"
+      },
+      "submission": {
+        "author": "Himanshu Dongre",
+        "githubId": "himanshudongre",
+        "name": "S4D-Lin SSM Hybrid: Fixing Why Mamba Failed in Parameter Golf",
+        "blurb": null,
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": 1.1682,
+        "valLoss": 1.9725,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 13198249,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1013,
+        "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1013",
+        "authorLogin": "himanshudongre",
+        "authorName": null,
+        "createdAt": "2026-03-28T10:15:02Z",
+        "updatedAt": "2026-03-28T10:16:41Z",
+        "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
+        "headRepo": "himanshudongre/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research",
+        "pr": "https://github.com/openai/parameter-golf/pull/1013",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT",
       "source": "pull_request",
       "status": "open",
@@ -43753,6 +43830,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/4c31708e2cd3cf684bc37f191b02d839f3492325/records/track_10min_16mb/2026-03-28_LatentLM_TurboQuant_LeWM/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/4c31708e2cd3cf684bc37f191b02d839f3492325/records/track_10min_16mb/2026-03-28_LatentLM_TurboQuant_LeWM",
         "pr": "https://github.com/openai/parameter-golf/pull/1000",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-28_JEPA_LM_Research",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-28_JEPA_LM_Research",
+        "folderPath": "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research",
+        "submissionPath": "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/train_gpt.py"
+      },
+      "submission": {
+        "author": "Himanshu Dongre",
+        "githubId": "himanshudongre",
+        "name": "JEPA-LM: When Synthetic Success Doesn't Transfer to Real Language",
+        "blurb": null,
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1012,
+        "title": "Non-record: JEPA-LM — When Synthetic Success Doesn't Transfer to Real…",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1012",
+        "authorLogin": "himanshudongre",
+        "authorName": null,
+        "createdAt": "2026-03-28T10:14:53Z",
+        "updatedAt": "2026-03-28T10:17:14Z",
+        "headSha": "7f92855470f44c0a9689ea618ccbaed14b2b5cb0",
+        "headRepo": "himanshudongre/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/7f92855470f44c0a9689ea618ccbaed14b2b5cb0/records/track_non_record_16mb/2026-03-28_JEPA_LM_Research",
+        "pr": "https://github.com/openai/parameter-golf/pull/1012",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

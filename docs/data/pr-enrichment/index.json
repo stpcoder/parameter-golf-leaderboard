@@ -1,8 +1,54 @@
 {
-  "generatedAt": "2026-03-28T09:51:42.225Z",
+  "generatedAt": "2026-03-28T10:21:50.602Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1013,
+      "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
+      "status": "open",
+      "updatedAt": "2026-03-28T10:16:41Z",
+      "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
+      "generatedAt": "2026-03-28T10:21:32.310Z",
+      "summary": "Hybrid model swaps Mamba SSM scans for S4D-Lin causal conv1d layers so state-space blocks match transformer throughput before upper attention.",
+      "tags": [
+        "architecture",
+        "non-record",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1013.json"
+    },
+    {
+      "prNumber": 1012,
+      "title": "Non-record: JEPA-LM — When Synthetic Success Doesn't Transfer to Real…",
+      "status": "open",
+      "updatedAt": "2026-03-28T10:17:14Z",
+      "headSha": "7f92855470f44c0a9689ea618ccbaed14b2b5cb0",
+      "generatedAt": "2026-03-28T10:21:46.483Z",
+      "summary": "Uses JEPA EMA target encoder and predictor auxiliary loss in LM training, but representation prediction gains collapse on real text despite synthetic promise.",
+      "tags": [
+        "architecture",
+        "regularization",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1012.json"
+    },
     {
       "prNumber": 1011,
       "title": "Anubhav ctw submission",
@@ -289,13 +335,14 @@
       "prNumber": 998,
       "title": "Add Conker-5 tandem residual exact experts non-record submission",
       "status": "open",
-      "updatedAt": "2026-03-28T02:27:23Z",
+      "updatedAt": "2026-03-28T09:57:26Z",
       "headSha": "084a2fe41800de14ec63a7e18ebe71611f73b805",
-      "generatedAt": "2026-03-28T02:49:58.474Z",
-      "summary": "Tandem-trains Conker-3 base with sparse exact residual experts gated for symbolic continuations, then quantizes to int6+zlib for a non-record 16MB package.",
+      "generatedAt": "2026-03-28T10:21:50.455Z",
+      "summary": "Tandem-trains a Conker-3 base with gate-selected sparse exact residual experts and packages the model as an int6+zlib artifact.",
       "tags": [
         "architecture",
         "quantization",
+        "compression",
         "non-record"
       ],
       "flags": {

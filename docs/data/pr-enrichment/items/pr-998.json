@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-28T02:49:58.474Z",
+  "generatedAt": "2026-03-28T10:21:50.455Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 998,
     "title": "Add Conker-5 tandem residual exact experts non-record submission",
     "state": "open",
-    "updatedAt": "2026-03-28T02:27:23Z",
+    "updatedAt": "2026-03-28T09:57:26Z",
     "headSha": "084a2fe41800de14ec63a7e18ebe71611f73b805",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/998",
     "authorLogin": "asuramaya"
@@ -19,17 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Tandem-trains Conker-3 base with sparse exact residual experts gated for symbolic continuations, then quantizes to int6+zlib for a non-record 16MB package.",
+    "summary": "Tandem-trains a Conker-3 base with gate-selected sparse exact residual experts and packages the model as an int6+zlib artifact.",
     "tags": [
       "architecture",
       "quantization",
+      "compression",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Tandem-trained Conker-3 base with sparse exact-context residual experts",
-      "Gate-only learned selection for symbolic continuations"
+      "Tandem-trained Conker-3 backbone with sparse exact experts",
+      "Gate-only learned selection over residual sources",
+      "int6 quantization with zlib-compressed artifact"
     ]
   },
   "compatibility": {

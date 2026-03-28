@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-28T10:21:46.483Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1012,
+    "title": "Non-record: JEPA-LM — When Synthetic Success Doesn't Transfer to Real…",
+    "state": "open",
+    "updatedAt": "2026-03-28T10:17:14Z",
+    "headSha": "7f92855470f44c0a9689ea618ccbaed14b2b5cb0",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1012",
+    "authorLogin": "himanshudongre"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-28_JEPA_LM_Research/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Uses JEPA EMA target encoder and predictor auxiliary loss in LM training, but representation prediction gains collapse on real text despite synthetic promise.",
+    "tags": [
+      "architecture",
+      "regularization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "JEPA auxiliary loss with EMA target encoder",
+      "Predictor head for representation prediction alongside CE",
+      "Validation comparison of synthetic Markov vs. real English text"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

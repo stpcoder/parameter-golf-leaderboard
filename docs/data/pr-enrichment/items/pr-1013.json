@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-28T10:21:32.310Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1013,
+    "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
+    "state": "open",
+    "updatedAt": "2026-03-28T10:16:41Z",
+    "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1013",
+    "authorLogin": "himanshudongre"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Hybrid model swaps Mamba SSM scans for S4D-Lin causal conv1d layers so state-space blocks match transformer throughput before upper attention.",
+    "tags": [
+      "architecture",
+      "non-record",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "S4D-Lin causal conv1d SSM block",
+      "Lower-layer SSM plus upper attention hybrid",
+      "Torch.compile-friendly pure PyTorch ops"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
