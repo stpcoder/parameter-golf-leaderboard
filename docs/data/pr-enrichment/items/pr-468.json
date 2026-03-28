@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-28T14:53:25.444Z",
+  "generatedAt": "2026-03-28T15:23:21.651Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 468,
     "title": "[track_10min_16mb] utkuaydiin 10L Muon — 15.46 MB",
     "state": "open",
-    "updatedAt": "2026-03-28T14:35:48Z",
-    "headSha": "84a2f386320245f46f129d99fe93c07d44f837ee",
+    "updatedAt": "2026-03-28T15:16:00Z",
+    "headSha": "2120a1746d167c8ddf081d30e27e79cd8a6f43e5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/468",
     "authorLogin": "utkuaydiin"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "10-layer 448-dim Muon model with BigramHash+SmearGate, Muon+AdamW hybrid with SWA, global pruning and mixed Int5/Int6 PTQ.",
+    "summary": "10-layer Muon network uses BigramHash+SmearGate with Muon+AdamW+SWA, 5.5% pruning, and mixed Int5/Int6 PTQ for a compact footprint.",
     "tags": [
       "architecture",
       "optimizer",
-      "quantization",
-      "training-schedule"
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Muon+AdamW hybrid optimizer with SWA",
-      "BigramHash routing plus SmearGate gating",
-      "Global 5.5% pruning before mixed Int5/Int6 PTQ"
+      "Muon+AdamW optimizer with SWA",
+      "Global 5.5% pruning before quantization",
+      "Mixed Int5/Int6 post-training quantization"
     ]
   },
   "compatibility": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T14:53:25.517Z",
+  "generatedAt": "2026-03-28T15:23:21.717Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -101,14 +101,14 @@
       "prNumber": 1019,
       "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11473 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-28T13:34:01Z",
+      "updatedAt": "2026-03-28T15:09:05Z",
       "headSha": "d7fbe3d16f81a16e26604353bafc61d151cf5264",
-      "generatedAt": "2026-03-28T13:52:57.538Z",
-      "summary": "Full Hessian GPTQ uses autoregressive self-generated calibration, a wider BigramHash, and XSA on every layer to tighten quantization without touching val or train data.",
+      "generatedAt": "2026-03-28T15:23:15.663Z",
+      "summary": "Full-Hessian GPTQ calibrates on autoregressively self-generated text combined with XSA-all and a 3072×112 BigramHash under 16MB.",
       "tags": [
         "quantization",
-        "architecture",
-        "attention"
+        "attention",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -8840,15 +8840,14 @@
       "prNumber": 468,
       "title": "[track_10min_16mb] utkuaydiin 10L Muon — 15.46 MB",
       "status": "open",
-      "updatedAt": "2026-03-28T14:35:48Z",
-      "headSha": "84a2f386320245f46f129d99fe93c07d44f837ee",
-      "generatedAt": "2026-03-28T14:53:25.444Z",
-      "summary": "10-layer 448-dim Muon model with BigramHash+SmearGate, Muon+AdamW hybrid with SWA, global pruning and mixed Int5/Int6 PTQ.",
+      "updatedAt": "2026-03-28T15:16:00Z",
+      "headSha": "2120a1746d167c8ddf081d30e27e79cd8a6f43e5",
+      "generatedAt": "2026-03-28T15:23:21.651Z",
+      "summary": "10-layer Muon network uses BigramHash+SmearGate with Muon+AdamW+SWA, 5.5% pruning, and mixed Int5/Int6 PTQ for a compact footprint.",
       "tags": [
         "architecture",
         "optimizer",
-        "quantization",
-        "training-schedule"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
