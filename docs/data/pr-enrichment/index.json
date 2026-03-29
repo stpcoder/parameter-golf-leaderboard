@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T07:58:10.247Z",
+  "generatedAt": "2026-03-29T08:58:09.138Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -51,17 +51,17 @@
     },
     {
       "prNumber": 1060,
-      "title": "Record: 1.1123 BPB — Coprime-Stride Loader + Full GPTQ + XSA-all (3-seed mean)",
+      "title": "Record: 1.1122 BPB — Coprime-Stride Loader + Full GPTQ + XSA-all (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-29T07:33:22Z",
-      "headSha": "fcf51c98c7aef05dc83cedc0128220594ed3051d",
-      "generatedAt": "2026-03-29T07:58:00.668Z",
-      "summary": "Stacks coprime-stride multi-shard batching with full Hessian GPTQ, XSA on all 11 layers, and an expanded BigramHash to stabilize sliding-window eval.",
+      "updatedAt": "2026-03-29T08:34:00Z",
+      "headSha": "d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28",
+      "generatedAt": "2026-03-29T08:58:04.224Z",
+      "summary": "Combines coprime-stride multi-shard loading with full Hessian GPTQ quantization and XSA across all 11 layers plus an expanded BigramHash projection.",
       "tags": [
-        "quantization",
         "architecture",
+        "quantization",
         "tokenization",
-        "evaluation"
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -98,16 +98,16 @@
     },
     {
       "prNumber": 1058,
-      "title": "Publish clean prune baseline 1.12470947 as non-record package",
+      "title": "Publish coprime multi-shard loader candidate 1.11796805 as non-record package",
       "status": "open",
-      "updatedAt": "2026-03-29T06:17:38Z",
-      "headSha": "388f428ac9685b9de9121adeffb4dd2860f87d1a",
-      "generatedAt": "2026-03-29T06:27:57.206Z",
-      "summary": "Packages the clean prune-before-quant baseline with selective pre-quant pruning off and exact 16MB budgeting for a reproducible non-record submission.",
+      "updatedAt": "2026-03-29T08:48:17Z",
+      "headSha": "ee16ec22f18b1632e48194aea9b29fdc5cf2be6c",
+      "generatedAt": "2026-03-29T08:58:08.980Z",
+      "summary": "Packages a coprime multi-shard loader run with a clean no-TTT 16MB boundary and int6 sliding-window evaluation for the non-record release.",
       "tags": [
         "non-record",
-        "quantization",
-        "compression"
+        "compression",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T08:27:49.724Z",
+  "generatedAt": "2026-03-29T08:57:56.694Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -9900,11 +9900,11 @@
         "author": "Dex Hunter",
         "githubId": "dexhunter",
         "name": "Coprime-Stride Loader + Full Hessian GPTQ + XSA-all + BigramHash",
-        "blurb": "Coprime-stride multi-shard data pipeline (PR #726 style) + Full Hessian GPTQ with Cholesky error compensation + XSA on all 11 layers + BigramHash(2816x112) + EMA + Parallel Muon. No TTT (sliding-only outperforms TTT on this stack). 3-seed mean: 1.1123 (std 0.0005). Built on PR #549.",
+        "blurb": "Coprime-stride multi-shard data pipeline (PR #726 style) + Full Hessian GPTQ with Cholesky error compensation + XSA on all 11 layers + BigramHash(2816x112) + EMA + Parallel Muon. No TTT (sliding-only outperforms TTT on this stack). 3-seed mean: 1.1122 (std 0.0004). Built on PR #549.",
         "date": "2026-03-29"
       },
       "metrics": {
-        "valBpb": 1.1123,
+        "valBpb": 1.1122,
         "valLoss": null,
         "preQuantValBpb": null,
         "preQuantValLoss": null,
@@ -9913,7 +9913,7 @@
         "evalTimeSeconds": null
       },
       "artifact": {
-        "bytesTotal": 15991086,
+        "bytesTotal": 15983626,
         "bytesCode": null,
         "bytesModelInt8Zlib": null
       },
@@ -9926,7 +9926,7 @@
       },
       "pr": {
         "number": 1060,
-        "title": "Record: 1.1123 BPB — Coprime-Stride Loader + Full GPTQ + XSA-all (3-seed mean)",
+        "title": "Record: 1.1122 BPB — Coprime-Stride Loader + Full GPTQ + XSA-all (3-seed mean)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -9934,16 +9934,16 @@
         "authorLogin": "dexhunter",
         "authorName": null,
         "createdAt": "2026-03-29T06:15:28Z",
-        "updatedAt": "2026-03-29T07:33:22Z",
-        "headSha": "fcf51c98c7aef05dc83cedc0128220594ed3051d",
+        "updatedAt": "2026-03-29T08:34:00Z",
+        "headSha": "d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28",
         "headRepo": "dexhunter/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/fcf51c98c7aef05dc83cedc0128220594ed3051d/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/fcf51c98c7aef05dc83cedc0128220594ed3051d/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/fcf51c98c7aef05dc83cedc0128220594ed3051d/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/fcf51c98c7aef05dc83cedc0128220594ed3051d/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/fcf51c98c7aef05dc83cedc0128220594ed3051d/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/d61f5e17f8e075292d24faba8fe2bf7b4bf5eb28/records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_BigramHash2816",
         "pr": "https://github.com/openai/parameter-golf/pull/1060",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -11254,6 +11254,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/e1595978f7da5e674ea976d4b832e7f81b4a94ed/records/track_10min_16mb/2026-03-24_Int5GPTQ_33M_LegalTTT/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/e1595978f7da5e674ea976d4b832e7f81b4a94ed/records/track_10min_16mb/2026-03-24_Int5GPTQ_33M_LegalTTT",
         "pr": "https://github.com/openai/parameter-golf/pull/606",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-29_CoprimeMultiShardLoader_1-1180",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-29_CoprimeMultiShardLoader_1.1180",
+        "folderPath": "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180",
+        "submissionPath": "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/train_gpt.py"
+      },
+      "submission": {
+        "author": "Lei Zhang",
+        "githubId": "resouer",
+        "name": "Coprime Multi-Shard Loader Delta (1.11796805)",
+        "blurb": "Compliant non-record 16MB package for a coprime multi-shard loader result on a clean no-TTT trunk: size-clean at 15,871,257 bytes and terminal sliding-window exact val_bpb 1.11796805 on 8xH100 SXM.",
+        "date": "2026-03-29T08:45:48Z"
+      },
+      "metrics": {
+        "valBpb": 1.11796805,
+        "valLoss": 1.88763723,
+        "preQuantValBpb": 1.1373,
+        "preQuantValLoss": 1.9202,
+        "stepStop": 5925,
+        "wallclockSeconds": 600,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15871257,
+        "bytesCode": 117485,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1058,
+        "title": "Publish coprime multi-shard loader candidate 1.11796805 as non-record package",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1058",
+        "authorLogin": "resouer",
+        "authorName": null,
+        "createdAt": "2026-03-29T05:38:25Z",
+        "updatedAt": "2026-03-29T08:48:17Z",
+        "headSha": "ee16ec22f18b1632e48194aea9b29fdc5cf2be6c",
+        "headRepo": "resouer/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ee16ec22f18b1632e48194aea9b29fdc5cf2be6c/records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/ee16ec22f18b1632e48194aea9b29fdc5cf2be6c/records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/ee16ec22f18b1632e48194aea9b29fdc5cf2be6c/records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/ee16ec22f18b1632e48194aea9b29fdc5cf2be6c/records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/ee16ec22f18b1632e48194aea9b29fdc5cf2be6c/records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180",
+        "pr": "https://github.com/openai/parameter-golf/pull/1058",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -14488,83 +14565,6 @@
         "script": "https://github.com/openai/parameter-golf/blob/6b4acf9082ee3ac18a9dc8bde3d6d4a093bcdac8/records/track_non_record_16mb/2026-03-22_11L_PR315_Backout_FA3_RunPod/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/6b4acf9082ee3ac18a9dc8bde3d6d4a093bcdac8/records/track_non_record_16mb/2026-03-22_11L_PR315_Backout_FA3_RunPod",
         "pr": "https://github.com/openai/parameter-golf/pull/394",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
-      }
-    },
-    {
-      "id": "record-records-track_non_record_16mb-2026-03-28_CleanPruneBeforeQuant_Baseline_1-1247",
-      "source": "pull_request",
-      "status": "open",
-      "category": "non-record",
-      "track": {
-        "path": "records/track_non_record_16mb",
-        "slug": "track_non_record_16mb",
-        "label": "Non-record / 16MB",
-        "official": false,
-        "category": "non-record"
-      },
-      "record": {
-        "folderName": "2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247",
-        "folderPath": "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247",
-        "submissionPath": "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/submission.json",
-        "readmePath": "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/README.md",
-        "trainLogPath": "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/train.log",
-        "scriptPath": "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/train_gpt.py"
-      },
-      "submission": {
-        "author": "Lei Zhang",
-        "githubId": "resouer",
-        "name": "Clean Prune-Before-Quant Baseline (1.12470947)",
-        "blurb": "Fully closed clean prune-before-quant baseline: no pre-quant TTT, exact 16,000,000-byte budgeting, size-clean at 15,922,913 bytes, and terminal sliding-window exact val_bpb 1.12470947 on 8xH100 SXM.",
-        "date": "2026-03-29T03:43:25Z"
-      },
-      "metrics": {
-        "valBpb": 1.12470947,
-        "valLoss": 1.89901981,
-        "preQuantValBpb": 1.1444,
-        "preQuantValLoss": 1.9323,
-        "stepStop": 5321,
-        "wallclockSeconds": 600,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": 15922913,
-        "bytesCode": 121429,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 1058,
-        "title": "Publish clean prune baseline 1.12470947 as non-record package",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1058",
-        "authorLogin": "resouer",
-        "authorName": null,
-        "createdAt": "2026-03-29T05:38:25Z",
-        "updatedAt": "2026-03-29T06:17:38Z",
-        "headSha": "388f428ac9685b9de9121adeffb4dd2860f87d1a",
-        "headRepo": "resouer/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/388f428ac9685b9de9121adeffb4dd2860f87d1a/records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/388f428ac9685b9de9121adeffb4dd2860f87d1a/records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/388f428ac9685b9de9121adeffb4dd2860f87d1a/records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/388f428ac9685b9de9121adeffb4dd2860f87d1a/records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/388f428ac9685b9de9121adeffb4dd2860f87d1a/records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247",
-        "pr": "https://github.com/openai/parameter-golf/pull/1058",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

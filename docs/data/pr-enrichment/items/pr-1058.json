@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-03-29T06:27:57.206Z",
+  "generatedAt": "2026-03-29T08:58:08.980Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1058,
-    "title": "Publish clean prune baseline 1.12470947 as non-record package",
+    "title": "Publish coprime multi-shard loader candidate 1.11796805 as non-record package",
     "state": "open",
-    "updatedAt": "2026-03-29T06:17:38Z",
-    "headSha": "388f428ac9685b9de9121adeffb4dd2860f87d1a",
+    "updatedAt": "2026-03-29T08:48:17Z",
+    "headSha": "ee16ec22f18b1632e48194aea9b29fdc5cf2be6c",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1058",
     "authorLogin": "resouer"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_non_record_16mb/2026-03-28_CleanPruneBeforeQuant_Baseline_1.1247/README.md"
+      "records/track_non_record_16mb/2026-03-29_CoprimeMultiShardLoader_1.1180/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Packages the clean prune-before-quant baseline with selective pre-quant pruning off and exact 16MB budgeting for a reproducible non-record submission.",
+    "summary": "Packages a coprime multi-shard loader run with a clean no-TTT 16MB boundary and int6 sliding-window evaluation for the non-record release.",
     "tags": [
       "non-record",
-      "quantization",
-      "compression"
+      "compression",
+      "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "N/A",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Selective prune-before-quant boundary with TTT disabled",
-      "Strict 16MB budget accounting in the packed package",
-      "Self-contained reproducibility bundle for auditable non-record run"
+      "coprime multi-shard loader boundary",
+      "int6 sliding-window eval",
+      "no-TTT clean packaging"
     ]
   },
   "compatibility": {
