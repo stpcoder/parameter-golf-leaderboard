@@ -1,19 +1,43 @@
 {
-  "generatedAt": "2026-03-29T11:59:01.396Z",
+  "generatedAt": "2026-03-29T12:29:03.304Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1074,
+      "title": "Non-record: Hyperbolic Q/K Lite 1xH100 exploration package",
+      "status": "open",
+      "updatedAt": "2026-03-29T12:12:02Z",
+      "headSha": "5f5ca985a12eed1143c7181b14f58e6448f6640e",
+      "generatedAt": "2026-03-29T12:28:31.022Z",
+      "summary": "Mixes q/k via a trainable Lorentz-style transform while leaving the rest of the GPT stack Euclidean to test a lightweight hyperbolic attention tweak.",
+      "tags": [
+        "attention",
+        "architecture",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1074.json"
+    },
+    {
       "prNumber": 1073,
       "title": "Non-record: Deep Supervision on M4 MacBook",
       "status": "open",
-      "updatedAt": "2026-03-29T11:56:39Z",
+      "updatedAt": "2026-03-29T12:15:47Z",
       "headSha": "fc4bed02669b61cf06b3d2ad59734f9b946998a2",
-      "generatedAt": "2026-03-29T11:58:32.818Z",
-      "summary": "Adds deep supervision loss at the U-Net encoder-decoder boundary and studies its weight/batch-size interaction, finding 0.03 regularizes small batches.",
+      "generatedAt": "2026-03-29T12:28:44.243Z",
+      "summary": "Adds a U-Net encoder-decoder boundary auxiliary loss to stabilize noisy gradients while probing batch scaling and convergence behavior on an M4 MacBook.",
       "tags": [
         "architecture",
         "regularization",
+        "training-schedule",
         "non-record"
       ],
       "flags": {
@@ -424,10 +448,10 @@
       "prNumber": 1047,
       "title": "(0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
       "status": "open",
-      "updatedAt": "2026-03-29T07:44:04Z",
+      "updatedAt": "2026-03-29T12:02:04Z",
       "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
-      "generatedAt": "2026-03-29T07:58:05.179Z",
-      "summary": "Medusa Unstable S2 pairs DeltaNet crawler loops with chunk_delta_rule and loop-aware GPTQ, stopping 30s early so calibration fits the 600s budget.",
+      "generatedAt": "2026-03-29T12:28:49.757Z",
+      "summary": "Medusa Unstable S2 retrains a DeltaNet crawler (4 loops, chunk_delta_rule) with loop-aware GPTQ, stopping 30s early so calibration fits the 600s budget.",
       "tags": [
         "architecture",
         "quantization",
@@ -3381,12 +3405,13 @@
       "prNumber": 875,
       "title": "New Record: Pure Neural GDN 1.0226 BPB (shalyhinpavel)",
       "status": "open",
-      "updatedAt": "2026-03-29T09:23:21Z",
+      "updatedAt": "2026-03-29T12:22:13Z",
       "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
-      "generatedAt": "2026-03-29T09:28:01.693Z",
-      "summary": "Pure-neural Gated DeltaNet stack (plus final attention) with dynamic batch-size curriculum and FastLoader throughput tuning for record BPB.",
+      "generatedAt": "2026-03-29T12:28:53.225Z",
+      "summary": "Uses compact Gated DeltaNet layers with dynamic batch/ chunk curriculum plus FastLoader to push pure neural 10m/16MB performance without TTT.",
       "tags": [
         "architecture",
+        "optimizer",
         "training-schedule"
       ],
       "flags": {
@@ -14328,15 +14353,15 @@
       "prNumber": 181,
       "title": "1.1190 BPB — 11L LeakyReLU² XSA4 PartialRoPE LNScale EMA ParallelMuon TTT",
       "status": "open",
-      "updatedAt": "2026-03-29T11:27:46Z",
-      "headSha": "fd61c130250c01264bec672fc6707542c38c2ee7",
-      "generatedAt": "2026-03-29T11:28:38.111Z",
-      "summary": "11-layer LeakyReLU² model mixes Partial RoPE, XSA4, U-Net skips, Parallel Muon/SWA, and GPTQ-lite quant with Score-First TTT adaptation.",
+      "updatedAt": "2026-03-29T12:05:01Z",
+      "headSha": "a40338e458f8c8d2afd3dd8dee88d75102e65f94",
+      "generatedAt": "2026-03-29T12:29:03.277Z",
+      "summary": "11L LeakyReLU² Transformer with Partial RoPE, XSA4, LNScale, Parallel Muon optimizer, GPTQ-lite int6/int8 quant, and Legal Score-First TTT.",
       "tags": [
         "architecture",
-        "quantization",
+        "attention",
         "optimizer",
-        "evaluation"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-29T07:58:05.179Z",
+  "generatedAt": "2026-03-29T12:28:49.757Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1047,
     "title": "(0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
     "state": "open",
-    "updatedAt": "2026-03-29T07:44:04Z",
+    "updatedAt": "2026-03-29T12:02:04Z",
     "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1047",
     "authorLogin": "newjordan"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Medusa Unstable S2 pairs DeltaNet crawler loops with chunk_delta_rule and loop-aware GPTQ, stopping 30s early so calibration fits the 600s budget.",
+    "summary": "Medusa Unstable S2 retrains a DeltaNet crawler (4 loops, chunk_delta_rule) with loop-aware GPTQ, stopping 30s early so calibration fits the 600s budget.",
     "tags": [
       "architecture",
       "quantization",
       "training-schedule"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Not applicable; training uses standard training data with validated GPTQ timing.",
     "techniques": [
-      "DeltaNet crawler loops with chunk_delta_rule",
-      "Loop-aware 2-phase GPTQ using GPTQ_RESERVE_MS",
-      "Late-start EMA on Frugendorff topology"
+      "DeltaNet crawler with chunk_delta_rule across four loops",
+      "Loop-aware GPTQ calibration finished inside 600s via GPTQ_RESERVE_MS early stop",
+      "Late-start EMA/SWA schedule for stability"
     ]
   },
   "compatibility": {

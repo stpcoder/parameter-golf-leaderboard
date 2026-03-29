@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-29T11:58:32.818Z",
+  "generatedAt": "2026-03-29T12:28:44.243Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1073,
     "title": "Non-record: Deep Supervision on M4 MacBook",
     "state": "open",
-    "updatedAt": "2026-03-29T11:56:39Z",
+    "updatedAt": "2026-03-29T12:15:47Z",
     "headSha": "fc4bed02669b61cf06b3d2ad59734f9b946998a2",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1073",
     "authorLogin": "ranausmanai"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds deep supervision loss at the U-Net encoder-decoder boundary and studies its weight/batch-size interaction, finding 0.03 regularizes small batches.",
+    "summary": "Adds a U-Net encoder-decoder boundary auxiliary loss to stabilize noisy gradients while probing batch scaling and convergence behavior on an M4 MacBook.",
     "tags": [
       "architecture",
       "regularization",
+      "training-schedule",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Auxiliary loss at encoder-decoder interface",
-      "Weight sweep to pick 0.03 deep-supervision scale",
-      "Batch scaling to characterize regularization effect"
+      "- Encoder-decoder boundary deep supervision loss",
+      "- Systematic batch-size scaling to 128K tokens",
+      "- Step-count analysis of EMA/SWA convergence tricks"
     ]
   },
   "compatibility": {

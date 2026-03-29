@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-29T12:28:31.022Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1074,
+    "title": "Non-record: Hyperbolic Q/K Lite 1xH100 exploration package",
+    "state": "open",
+    "updatedAt": "2026-03-29T12:12:02Z",
+    "headSha": "5f5ca985a12eed1143c7181b14f58e6448f6640e",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1074",
+    "authorLogin": "ldh-at"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-28_hyperbolic_qk_lite_10min_1gpu/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Mixes q/k via a trainable Lorentz-style transform while leaving the rest of the GPT stack Euclidean to test a lightweight hyperbolic attention tweak.",
+    "tags": [
+      "attention",
+      "architecture",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "N/A",
+    "techniques": [
+      "Lorentz-style q/k mixing",
+      "Trainable hyperbolic mix and radius",
+      "Mostly Euclidean GPT stack"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
