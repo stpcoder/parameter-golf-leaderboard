@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T00:25:54.988Z",
+  "generatedAt": "2026-03-29T00:55:50.550Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -4630,6 +4630,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-29_Medusa_Unstable_S2_Legal_8xH100",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-29_Medusa_Unstable_S2_Legal_8xH100",
+        "folderPath": "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100",
+        "submissionPath": "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/train_gpt.py"
+      },
+      "submission": {
+        "author": "Frosty40",
+        "githubId": "newjordan",
+        "name": "Medusa: Unstable S2 — DeltaNet Crawler + Loop-Aware GPTQ (Legal)",
+        "blurb": "Legal resubmission of Medusa: Unstable (PR #1028). Fix: GPTQ_RESERVE_MS=30000 stops training 30s early so GPTQ calibration (~12s) completes within the 600s wallclock budget. All hyperparameters identical to Medusa_IV. DELTA_NET_HEADS=4, chunk_delta_rule, loop-aware 2-phase GPTQ, late-start EMA (step 4400, decay=0.99). 4 flat + 1 crawler x 4 loops, INST_DIM=32. Known: high cross-seed variance from DeltaNet heads; stabilization is active research.",
+        "date": "2026-03-29"
+      },
+      "metrics": {
+        "valBpb": 0.8822,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 10088662,
+        "bytesCode": 180983,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1047,
+        "title": "Medusa: Unstable S2 — DeltaNet Crawler, Legal (0.8822 BPB mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1047",
+        "authorLogin": "newjordan",
+        "authorName": null,
+        "createdAt": "2026-03-29T00:53:07Z",
+        "updatedAt": "2026-03-29T00:55:02Z",
+        "headSha": "37975042e506dc2f20cd663c9e450ecf381f17a2",
+        "headRepo": "newjordan/parameter-golf-1"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/37975042e506dc2f20cd663c9e450ecf381f17a2/records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/37975042e506dc2f20cd663c9e450ecf381f17a2/records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/37975042e506dc2f20cd663c9e450ecf381f17a2/records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/37975042e506dc2f20cd663c9e450ecf381f17a2/records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/37975042e506dc2f20cd663c9e450ecf381f17a2/records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100",
+        "pr": "https://github.com/openai/parameter-golf/pull/1047",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-26_7gram_NgramCache_0-8960",
       "source": "pull_request",
       "status": "open",
@@ -6078,7 +6155,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-28T16:08:34Z",
-        "updatedAt": "2026-03-29T00:09:54Z",
+        "updatedAt": "2026-03-29T00:40:53Z",
         "headSha": "37df3009ba811f4cfc35a815057d7b7df925b5a2",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -32230,7 +32307,7 @@
         "author": "Jayteare",
         "githubId": "Jayteare",
         "name": "11L Adaptive Markov + Int6/Int8 Mixed Quant + 786K Batch",
-        "blurb": "11-layer 384-dim GPT with adaptive Markov mixing: a unigram transition table is mixed with transformer logits using a learned per-position gate with confidence-based thresholding. Per-row int6 quantization on MLP/attention weights, int8 on embeddings/Markov table, fp16 passthrough for control tensors. Zstd-22 compression recovers wasted bits from 6-bit values stored as int8. 786K token batch for higher data throughput per step. GQA with 8 heads / 4 KV heads, tied embeddings, relu-squared MLP.",
+        "blurb": "11-layer 512-dim GPT with adaptive Markov mixing: a unigram transition table is mixed with transformer logits using a learned per-position gate with confidence-based thresholding. Per-row int6 quantization on MLP/attention weights, int8 on embeddings/Markov table, fp16 passthrough for control tensors. Zstd-22 compression recovers wasted bits from 6-bit values stored as int8. 786K token batch for higher data throughput per step. GQA with 8 heads / 4 KV heads, tied embeddings, relu-squared MLP.",
         "date": "2026-03-28T09:30:00Z"
       },
       "metrics": {
@@ -32264,16 +32341,16 @@
         "authorLogin": "Jayteare",
         "authorName": null,
         "createdAt": "2026-03-29T00:21:39Z",
-        "updatedAt": "2026-03-29T00:21:39Z",
-        "headSha": "bde73581708508f4f57407b53c30c5dc9d7f63dc",
+        "updatedAt": "2026-03-29T00:33:22Z",
+        "headSha": "d561d88117873f44ea98d696ac47c2441d463313",
         "headRepo": "Jayteare/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/bde73581708508f4f57407b53c30c5dc9d7f63dc/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/bde73581708508f4f57407b53c30c5dc9d7f63dc/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/bde73581708508f4f57407b53c30c5dc9d7f63dc/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/bde73581708508f4f57407b53c30c5dc9d7f63dc/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/bde73581708508f4f57407b53c30c5dc9d7f63dc/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/d561d88117873f44ea98d696ac47c2441d463313/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/d561d88117873f44ea98d696ac47c2441d463313/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/d561d88117873f44ea98d696ac47c2441d463313/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/d561d88117873f44ea98d696ac47c2441d463313/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/d561d88117873f44ea98d696ac47c2441d463313/records/track_10min_16mb/2026-03-28_11L_AdaptiveMarkov_Int6_786K_1.2174",
         "pr": "https://github.com/openai/parameter-golf/pull/1046",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

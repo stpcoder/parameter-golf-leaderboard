@@ -1,19 +1,43 @@
 {
-  "generatedAt": "2026-03-29T00:26:30.333Z",
+  "generatedAt": "2026-03-29T00:56:09.692Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1047,
+      "title": "Medusa: Unstable S2 — DeltaNet Crawler, Legal (0.8822 BPB mean)",
+      "status": "open",
+      "updatedAt": "2026-03-29T00:55:02Z",
+      "headSha": "37975042e506dc2f20cd663c9e450ecf381f17a2",
+      "generatedAt": "2026-03-29T00:55:58.478Z",
+      "summary": "DeltaNet crawler with Frugendorff loops uses loop-aware GPTQ int6 calibration within 600s by cutting training 30s short.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1047.json"
+    },
+    {
       "prNumber": 1046,
       "title": "Record: 11L Adaptive Markov + Int6 Mixed Quant (1.2174 bpb)",
       "status": "open",
-      "updatedAt": "2026-03-29T00:21:39Z",
-      "headSha": "bde73581708508f4f57407b53c30c5dc9d7f63dc",
-      "generatedAt": "2026-03-29T00:25:59.564Z",
-      "summary": "Hybrid GPT mixes transformer logits with an adaptive per-position Markov gate and combines that with per-row int6/int8 quant plus a 786K-token batch for throughput.",
+      "updatedAt": "2026-03-29T00:33:22Z",
+      "headSha": "d561d88117873f44ea98d696ac47c2441d463313",
+      "generatedAt": "2026-03-29T00:56:04.417Z",
+      "summary": "An 11-layer GPT mixes transformer logits with an adaptive unigram Markov gate plus mixed int6/int8 quantization and a 786K-token batch for throughput.",
       "tags": [
         "architecture",
-        "quantization"
+        "quantization",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -399,13 +423,13 @@
       "prNumber": 1028,
       "title": "Medusa: Unstable — DeltaNet Crawler 0.8104 BPB 10mb file size(best seed), mean 0.9984, Frugendorff continuation",
       "status": "open",
-      "updatedAt": "2026-03-29T00:09:54Z",
+      "updatedAt": "2026-03-29T00:40:53Z",
       "headSha": "37df3009ba811f4cfc35a815057d7b7df925b5a2",
-      "generatedAt": "2026-03-29T00:26:08.999Z",
-      "summary": "Combines Frugendorff crawler loops with 4-head DeltaNet chunk_delta_rule, loop-aware GPTQ, and late-start EMA for int6-frugal training.",
+      "generatedAt": "2026-03-29T00:56:09.539Z",
+      "summary": "Medusa weaves DeltaNet chunk_delta_rule heads through Frugendorff crawler loops, using loop-aware GPTQ quantization and a late-start EMA during warmdown.",
       "tags": [
-        "architecture",
         "quantization",
+        "architecture",
         "training-schedule"
       ],
       "flags": {

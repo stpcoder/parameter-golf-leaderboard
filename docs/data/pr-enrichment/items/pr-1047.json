@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-29T00:55:58.478Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1047,
+    "title": "Medusa: Unstable S2 — DeltaNet Crawler, Legal (0.8822 BPB mean)",
+    "state": "open",
+    "updatedAt": "2026-03-29T00:55:02Z",
+    "headSha": "37975042e506dc2f20cd663c9e450ecf381f17a2",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1047",
+    "authorLogin": "newjordan"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-29_Medusa_Unstable_S2_Legal_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "DeltaNet crawler with Frugendorff loops uses loop-aware GPTQ int6 calibration within 600s by cutting training 30s short.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "Not a val-only training regime; GPTQ calibration still uses training loop.",
+    "techniques": [
+      "Frugendorff crawler stacking 4 flat + 1 crawler ×4 loops with DeltaNet heads",
+      "Loop-aware 2-phase GPTQ int6+zstd calibrated inside the 600s cap via GPTQ_RESERVE_MS=30000",
+      "Late-start EMA (step 4400, decay 0.99)"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
