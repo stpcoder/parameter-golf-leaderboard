@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T13:59:34.299Z",
+  "generatedAt": "2026-03-29T14:29:20.356Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,15 +7,15 @@
       "prNumber": 1077,
       "title": "Sota 11 l submission",
       "status": "open",
-      "updatedAt": "2026-03-29T13:47:55Z",
-      "headSha": "2d74ef7401bf5cbe073b49976dfce5baf863aa61",
-      "generatedAt": "2026-03-29T13:59:12.306Z",
-      "summary": "11-layer U-Net transformer stacks LeakyReLU², partial RoPE, XSA, VE128, dual EMA+SWA averaging, and late INT6 QAT with legal test-time training.",
+      "updatedAt": "2026-03-29T14:11:36Z",
+      "headSha": "22867a52fbeebdae050edf860c5ca3a06eef354b",
+      "generatedAt": "2026-03-29T14:29:16.517Z",
+      "summary": "Combines an 11-layer U-Net Transformer with LeakyReLU², partial RoPE/XSA, VE128, and EMA+SWA alongside late INT6 QAT + GPTQ-lite quantization.",
       "tags": [
         "architecture",
         "attention",
         "quantization",
-        "evaluation"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -492,16 +492,16 @@
     },
     {
       "prNumber": 1047,
-      "title": "(0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
+      "title": "INVALID MOST LIKELY (0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
       "status": "open",
-      "updatedAt": "2026-03-29T13:56:18Z",
+      "updatedAt": "2026-03-29T14:21:38Z",
       "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
-      "generatedAt": "2026-03-29T13:59:28.082Z",
-      "summary": "Medusa Unstable S2 reruns the DeltaNet crawler with loop-aware GPTQ and GPTQ_RESERVE_MS timing so calibration finishes within the 600s budget.",
+      "generatedAt": "2026-03-29T14:29:20.200Z",
+      "summary": "Medusa Unstable S2 keeps the DeltaNet crawler topology with chunk_delta_rule, loop-aware GPTQ, and an early stop so calibration fits inside the 600s cap.",
       "tags": [
         "architecture",
-        "training-schedule",
-        "quantization"
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,

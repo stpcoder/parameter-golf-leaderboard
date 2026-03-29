@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T13:59:04.687Z",
+  "generatedAt": "2026-03-29T14:29:06.615Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -4833,7 +4833,7 @@
       },
       "pr": {
         "number": 1047,
-        "title": "(0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
+        "title": "INVALID MOST LIKELY (0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -4841,7 +4841,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-29T00:53:07Z",
-        "updatedAt": "2026-03-29T13:56:18Z",
+        "updatedAt": "2026-03-29T14:21:38Z",
         "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -10165,16 +10165,16 @@
         "authorLogin": "malc3om",
         "authorName": null,
         "createdAt": "2026-03-29T13:44:00Z",
-        "updatedAt": "2026-03-29T13:47:55Z",
-        "headSha": "2d74ef7401bf5cbe073b49976dfce5baf863aa61",
+        "updatedAt": "2026-03-29T14:11:36Z",
+        "headSha": "22867a52fbeebdae050edf860c5ca3a06eef354b",
         "headRepo": "malc3om/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/2d74ef7401bf5cbe073b49976dfce5baf863aa61/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/2d74ef7401bf5cbe073b49976dfce5baf863aa61/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/2d74ef7401bf5cbe073b49976dfce5baf863aa61/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/2d74ef7401bf5cbe073b49976dfce5baf863aa61/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/2d74ef7401bf5cbe073b49976dfce5baf863aa61/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/22867a52fbeebdae050edf860c5ca3a06eef354b/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/22867a52fbeebdae050edf860c5ca3a06eef354b/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/22867a52fbeebdae050edf860c5ca3a06eef354b/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/22867a52fbeebdae050edf860c5ca3a06eef354b/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/22867a52fbeebdae050edf860c5ca3a06eef354b/records/track_10min_16mb/2026-03-29_SOTA_11L_XSA_EMA_TTT",
         "pr": "https://github.com/openai/parameter-golf/pull/1077",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -19097,8 +19097,8 @@
         "authorLogin": "malc3om",
         "authorName": null,
         "createdAt": "2026-03-29T13:44:00Z",
-        "updatedAt": "2026-03-29T13:47:55Z",
-        "headSha": "2d74ef7401bf5cbe073b49976dfce5baf863aa61",
+        "updatedAt": "2026-03-29T14:11:36Z",
+        "headSha": "22867a52fbeebdae050edf860c5ca3a06eef354b",
         "headRepo": "malc3om/parameter-golf"
       },
       "links": {
@@ -57602,8 +57602,8 @@
         "authorLogin": "malc3om",
         "authorName": null,
         "createdAt": "2026-03-29T13:44:00Z",
-        "updatedAt": "2026-03-29T13:47:55Z",
-        "headSha": "2d74ef7401bf5cbe073b49976dfce5baf863aa61",
+        "updatedAt": "2026-03-29T14:11:36Z",
+        "headSha": "22867a52fbeebdae050edf860c5ca3a06eef354b",
         "headRepo": "malc3om/parameter-golf"
       },
       "links": {
