@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-29T02:26:37.366Z",
+  "generatedAt": "2026-03-29T17:00:48.952Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 996,
     "title": "Pre-Enrichment + EMA-GPU + SmearGate + XSA4 (val_bpb=1.1470(mean), …",
     "state": "open",
-    "updatedAt": "2026-03-29T02:23:38Z",
+    "updatedAt": "2026-03-29T16:36:19Z",
     "headSha": "efa0dd17bae1c097e23e2212aca0364d0f51d073",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/996",
     "authorLogin": "Idan3011"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "GELU pre‑enrichment + SmearGate/BigramHash feed a 10L 512d GQA core with XSA4, while GPU EMA and sliding-window eval pair with int6 QAT for fast training.",
+    "summary": "GPU-resident EMA plus GELU pre-enrichment, SmearGate/BigramHash front-end, and XSA4 layers drive the int6-QAT model with sliding-window eval for faster updates.",
     "tags": [
       "architecture",
-      "attention",
-      "training-schedule",
+      "optimizer",
+      "evaluation",
       "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GELU pre-enrichment (512→768→512) before RMSNorm/residual stream",
-      "GPU-resident EMA with Muon warmdown to cut step time to ~64ms",
-      "XSA on final layers plus SmearGate/BigramHash with sliding-window scoring"
+      "GPU-resident EMA state to cut per-step time",
+      "GELU pre-enrichment with SmearGate and BigramHash before RMSNorm",
+      "XSA on final layers paired with sliding-window stride-64 eval"
     ]
   },
   "compatibility": {

@@ -1,16 +1,38 @@
 {
-  "generatedAt": "2026-03-29T16:30:37.175Z",
+  "generatedAt": "2026-03-29T17:00:49.094Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1084,
+      "title": "Non-Record: SLOT Eval-Time Augmentation on PR #549 SOTA Stack",
+      "status": "open",
+      "updatedAt": "2026-03-29T16:31:32Z",
+      "headSha": "142ca2afe5f3338864da5cda76834404d369811f",
+      "generatedAt": "2026-03-29T17:00:37.676Z",
+      "summary": "Eval-time SLOT optimizes a 512-d delta on TTT hidden states inside the scoring loop to refine logits just before BPB scoring.",
+      "tags": [
+        "non-record",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1084.json"
+    },
+    {
       "prNumber": 1083,
       "title": "Bandit: ClownCar Crawler x Cubric Ngram9 — 0.4961 BPB (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-29T16:03:03Z",
+      "updatedAt": "2026-03-29T16:57:26Z",
       "headSha": "4efa746c3596aba503b77ad4c5c5181aafab04bd",
-      "generatedAt": "2026-03-29T16:30:31.602Z",
-      "summary": "ClownCar crawler (flat+loops, inst_dim32) pairs loop-aware GPTQ/EMA with shared 3D Cubric and complementary n-gram oracle.",
+      "generatedAt": "2026-03-29T17:00:43.456Z",
+      "summary": "Pairs a Frugendorff ClownCar crawler (4 flat + crawler loops with loop-aware GPTQ and late EMA) with X-Wing’s shared 3D Cubric n-gram oracle and complementary training.",
       "tags": [
         "architecture",
         "quantization",
@@ -1540,14 +1562,14 @@
       "prNumber": 996,
       "title": "Pre-Enrichment + EMA-GPU + SmearGate + XSA4 (val_bpb=1.1470(mean), …",
       "status": "open",
-      "updatedAt": "2026-03-29T02:23:38Z",
+      "updatedAt": "2026-03-29T16:36:19Z",
       "headSha": "efa0dd17bae1c097e23e2212aca0364d0f51d073",
-      "generatedAt": "2026-03-29T02:26:37.366Z",
-      "summary": "GELU pre‑enrichment + SmearGate/BigramHash feed a 10L 512d GQA core with XSA4, while GPU EMA and sliding-window eval pair with int6 QAT for fast training.",
+      "generatedAt": "2026-03-29T17:00:48.952Z",
+      "summary": "GPU-resident EMA plus GELU pre-enrichment, SmearGate/BigramHash front-end, and XSA4 layers drive the int6-QAT model with sliding-window eval for faster updates.",
       "tags": [
         "architecture",
-        "attention",
-        "training-schedule",
+        "optimizer",
+        "evaluation",
         "quantization"
       ],
       "flags": {
