@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-29T12:29:03.304Z",
+  "generatedAt": "2026-03-29T12:58:38.187Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1075,
+      "title": "WIP: brelt non-record scaling package on 2xh100 (1.9761 val bpb)",
+      "status": "open",
+      "updatedAt": "2026-03-29T12:53:06Z",
+      "headSha": "7c1a6df3f7bf573912cf2febce147e8987a103d6",
+      "generatedAt": "2026-03-29T12:58:26.590Z",
+      "summary": "Brelt packages a byte-level recurrent latent model with learned segmentation and shared recurrent global latent mixing to probe scaling pathologies on 2xH100.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1075.json"
+    },
     {
       "prNumber": 1074,
       "title": "Non-record: Hyperbolic Q/K Lite 1xH100 exploration package",
@@ -448,10 +472,10 @@
       "prNumber": 1047,
       "title": "(0.8822 BPB mean) Medusa: Unstable S2 — DeltaNet Crawler, Legal  10mb. .77bpb single seed.",
       "status": "open",
-      "updatedAt": "2026-03-29T12:02:04Z",
+      "updatedAt": "2026-03-29T12:42:07Z",
       "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
-      "generatedAt": "2026-03-29T12:28:49.757Z",
-      "summary": "Medusa Unstable S2 retrains a DeltaNet crawler (4 loops, chunk_delta_rule) with loop-aware GPTQ, stopping 30s early so calibration fits the 600s budget.",
+      "generatedAt": "2026-03-29T12:58:34.535Z",
+      "summary": "DeltaNet crawler loops combine with loop-aware GPTQ and GPTQ_RESERVE_MS timing to keep int6 calibration inside the 600s cap.",
       "tags": [
         "architecture",
         "quantization",
@@ -3405,14 +3429,14 @@
       "prNumber": 875,
       "title": "New Record: Pure Neural GDN 1.0226 BPB (shalyhinpavel)",
       "status": "open",
-      "updatedAt": "2026-03-29T12:22:13Z",
+      "updatedAt": "2026-03-29T12:35:53Z",
       "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
-      "generatedAt": "2026-03-29T12:28:53.225Z",
-      "summary": "Uses compact Gated DeltaNet layers with dynamic batch/ chunk curriculum plus FastLoader to push pure neural 10m/16MB performance without TTT.",
+      "generatedAt": "2026-03-29T12:58:38.057Z",
+      "summary": "Pure neural Gated DeltaNet with dynamic batch/chunk curriculum and FastLoader-driven throughput keeps 1.0226 BPB zero-shot within the 16MB 10-min regime.",
       "tags": [
         "architecture",
-        "optimizer",
-        "training-schedule"
+        "training-schedule",
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,

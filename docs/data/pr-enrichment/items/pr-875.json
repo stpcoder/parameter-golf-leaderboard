@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-29T12:28:53.225Z",
+  "generatedAt": "2026-03-29T12:58:38.057Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 875,
     "title": "New Record: Pure Neural GDN 1.0226 BPB (shalyhinpavel)",
     "state": "open",
-    "updatedAt": "2026-03-29T12:22:13Z",
+    "updatedAt": "2026-03-29T12:35:53Z",
     "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/875",
     "authorLogin": "shalyhinpavel"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Uses compact Gated DeltaNet layers with dynamic batch/ chunk curriculum plus FastLoader to push pure neural 10m/16MB performance without TTT.",
+    "summary": "Pure neural Gated DeltaNet with dynamic batch/chunk curriculum and FastLoader-driven throughput keeps 1.0226 BPB zero-shot within the 16MB 10-min regime.",
     "tags": [
       "architecture",
-      "optimizer",
-      "training-schedule"
+      "training-schedule",
+      "optimizer"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "GatedDeltaBlock stack with final attention layer",
-      "Time-based batch/ chunk curriculum",
-      "FastLoader with pinning for high throughput"
+      "Gated DeltaNet layers replace standard attention",
+      "Dynamic batch/chunk curriculum tuned to elapsed time",
+      "FastLoader with pinning/non-blocking prefetching"
     ]
   },
   "compatibility": {

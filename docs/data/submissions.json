@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-29T12:28:24.577Z",
+  "generatedAt": "2026-03-29T12:58:21.916Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -4764,7 +4764,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-29T00:53:07Z",
-        "updatedAt": "2026-03-29T12:02:04Z",
+        "updatedAt": "2026-03-29T12:42:07Z",
         "headSha": "99d34869c2ced0dd13b353f075765cac14246961",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -6463,7 +6463,7 @@
         "authorLogin": "shalyhinpavel",
         "authorName": null,
         "createdAt": "2026-03-26T17:45:18Z",
-        "updatedAt": "2026-03-29T12:22:13Z",
+        "updatedAt": "2026-03-29T12:35:53Z",
         "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8",
         "headRepo": "shalyhinpavel/parameter-golf"
       },
@@ -44441,6 +44441,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/c54484207301787b83bb6e43ffb7a1816cd3f479/records/track_10min_16mb/2026-03-23_naive_solution/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/c54484207301787b83bb6e43ffb7a1816cd3f479/records/track_10min_16mb/2026-03-23_naive_solution",
         "pr": "https://github.com/openai/parameter-golf/pull/539",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-29_brelt_wip_2xH100_20min",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-29_brelt_wip_2xH100_20min",
+        "folderPath": "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min",
+        "submissionPath": "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/train_gpt.py"
+      },
+      "submission": {
+        "author": "guily",
+        "githubId": "guilhhotina",
+        "name": "brelt wip 2xh100 20min package",
+        "blurb": "non-record 2xh100 scaling package for brelt, a byte-level recurrent latent architecture. this run reached 1.9228 raw val_bpb and 1.9761 int8+zlib val_bpb in 20 minutes, while exposing a clear scaling pathology: segmentation opens too far and the latent stream becomes too cheap. included alongside a same-budget run of the original challenge baseline for direct comparison.",
+        "date": "2026-03-29T12:20:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.97605225,
+        "valLoss": 1.36969504,
+        "preQuantValBpb": 1.9228,
+        "preQuantValLoss": 1.3328,
+        "stepStop": 504,
+        "wallclockSeconds": 1200.232,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 13924361,
+        "bytesCode": 99352,
+        "bytesModelInt8Zlib": 13825009
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1075,
+        "title": "WIP: brelt non-record scaling package on 2xh100 (1.9761 val bpb)",
+        "state": "open",
+        "draft": true,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1075",
+        "authorLogin": "guilhhotina",
+        "authorName": null,
+        "createdAt": "2026-03-29T12:40:38Z",
+        "updatedAt": "2026-03-29T12:53:06Z",
+        "headSha": "7c1a6df3f7bf573912cf2febce147e8987a103d6",
+        "headRepo": "guilhhotina/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7c1a6df3f7bf573912cf2febce147e8987a103d6/records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/7c1a6df3f7bf573912cf2febce147e8987a103d6/records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/7c1a6df3f7bf573912cf2febce147e8987a103d6/records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/7c1a6df3f7bf573912cf2febce147e8987a103d6/records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/7c1a6df3f7bf573912cf2febce147e8987a103d6/records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min",
+        "pr": "https://github.com/openai/parameter-golf/pull/1075",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

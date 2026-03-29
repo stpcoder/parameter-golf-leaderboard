@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-29T12:58:26.590Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1075,
+    "title": "WIP: brelt non-record scaling package on 2xh100 (1.9761 val bpb)",
+    "state": "open",
+    "updatedAt": "2026-03-29T12:53:06Z",
+    "headSha": "7c1a6df3f7bf573912cf2febce147e8987a103d6",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1075",
+    "authorLogin": "guilhhotina"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-29_brelt_wip_2xH100_20min/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Brelt packages a byte-level recurrent latent model with learned segmentation and shared recurrent global latent mixing to probe scaling pathologies on 2xH100.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "byte-level recurrent latent modeling with learned segmentation",
+      "shared recurrent global latent mixing",
+      "int8+zlib export with rotated weights"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
