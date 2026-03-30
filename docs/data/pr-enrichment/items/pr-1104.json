@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-30T02:32:49.541Z",
+  "generatedAt": "2026-03-30T06:04:03.754Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1104,
     "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Word Boundaries (39x-91x fewer params than H-Net paper)",
     "state": "open",
-    "updatedAt": "2026-03-30T02:31:31Z",
+    "updatedAt": "2026-03-30T05:37:10Z",
     "headSha": "dea0514e52ed3139f37b37eea80b7fceec76d1d1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1104",
     "authorLogin": "DariusFeher"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Byte-level 1-stage H-Net pairs tuned ratio loss and deeper outer layers to learn whitespace-aligned boundaries via dynamic chunking on raw bytes.",
+    "summary": "1-stage 9-layer H-Net learns byte-level dynamic chunking, tuning outer-layer depth and ratio loss to recover whitespace-aligned segments without a tokenizer.",
     "tags": [
       "architecture",
       "tokenization",
-      "regularization",
-      "evaluation"
+      "evaluation",
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Dynamic chunking via cosine-based router compresses sequences before the main transformer stage",
-      "- Tuned ratio loss weight and outer depth guide whitespace-aware, wordlike segmentation",
-      "- Multi-GPU DDP training with padded chunk sequences enables artifact-sized runs"
+      "Dynamic chunking router tuned via ratio loss and outer-layer depth",
+      "Matched byte260 vs sp1024 ablations for chunk behavior",
+      "Multi-GPU padded-chunk DDP training for compressed sequences"
     ]
   },
   "compatibility": {

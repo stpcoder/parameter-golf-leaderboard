@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T05:33:46.752Z",
+  "generatedAt": "2026-03-30T06:03:49.693Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -4321,7 +4321,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-29_HNet_Tokenization",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -4369,14 +4369,14 @@
       "pr": {
         "number": 1121,
         "title": "Notable Non-Record: H-Net Tokenization — 0.6846 BPB — Hierarchical Token Processing",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1121",
         "authorLogin": "gowtham0992",
         "authorName": null,
         "createdAt": "2026-03-30T05:06:26Z",
-        "updatedAt": "2026-03-30T05:06:26Z",
+        "updatedAt": "2026-03-30T05:53:58Z",
         "headSha": "bb3d03a5358e8f8ab868f6ad8368c60e21324179",
         "headRepo": "gowtham0992/parameter-golf"
       },
@@ -40888,7 +40888,7 @@
         "authorLogin": "DariusFeher",
         "authorName": null,
         "createdAt": "2026-03-29T23:52:12Z",
-        "updatedAt": "2026-03-30T02:31:31Z",
+        "updatedAt": "2026-03-30T05:37:10Z",
         "headSha": "dea0514e52ed3139f37b37eea80b7fceec76d1d1",
         "headRepo": "DariusFeher/parameter-golf"
       },

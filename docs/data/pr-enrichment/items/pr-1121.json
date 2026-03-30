@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-30T05:33:58.752Z",
+  "generatedAt": "2026-03-30T06:03:56.950Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1121,
     "title": "Notable Non-Record: H-Net Tokenization — 0.6846 BPB — Hierarchical Token Processing",
-    "state": "open",
-    "updatedAt": "2026-03-30T05:06:26Z",
+    "state": "closed",
+    "updatedAt": "2026-03-30T05:53:58Z",
     "headSha": "bb3d03a5358e8f8ab868f6ad8368c60e21324179",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1121",
     "authorLogin": "gowtham0992"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "H-Net learns gated merges and per-position unmerges to run a coarse encoder and full-resolution decoder for hierarchical tokenization.",
+    "summary": "Hierarchical token merge/unmerge pipeline processes encoder layers at half resolution, then restores gated tokens with per-position projections before full-resolution decoding.",
     "tags": [
-      "tokenization",
       "architecture",
-      "evaluation"
+      "tokenization",
+      "attention"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Gated token merge/unmerge with per-position projections",
-      "Encoder runs at half resolution before full-resolution decoder",
-      "Sliding-window eval with int6 GPTQ calibration"
+      "Gated token merge with learned softmax weights",
+      "Encoder at T/2 with coarse-resolution skip storage",
+      "Per-position projections to unmerge tokens before decoder"
     ]
   },
   "compatibility": {
