@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T21:07:55.313Z",
+  "generatedAt": "2026-03-30T21:37:56.941Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -50113,7 +50113,7 @@
       },
       "artifact": {
         "bytesTotal": null,
-        "bytesCode": 129273,
+        "bytesCode": 130009,
         "bytesModelInt8Zlib": null
       },
       "flags": {
@@ -50133,16 +50133,16 @@
         "authorLogin": "greqone",
         "authorName": null,
         "createdAt": "2026-03-30T16:44:28Z",
-        "updatedAt": "2026-03-30T16:49:50Z",
-        "headSha": "1cd1248cc7ef1bbff563d30fc258c9390632d572",
+        "updatedAt": "2026-03-30T21:21:52Z",
+        "headSha": "17b8acf855b1d14f9a1e4bda4d0a36c96e789be9",
         "headRepo": "greqone/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/1cd1248cc7ef1bbff563d30fc258c9390632d572/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/1cd1248cc7ef1bbff563d30fc258c9390632d572/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/1cd1248cc7ef1bbff563d30fc258c9390632d572/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/1cd1248cc7ef1bbff563d30fc258c9390632d572/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/1cd1248cc7ef1bbff563d30fc258c9390632d572/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/17b8acf855b1d14f9a1e4bda4d0a36c96e789be9/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/17b8acf855b1d14f9a1e4bda4d0a36c96e789be9/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/17b8acf855b1d14f9a1e4bda4d0a36c96e789be9/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/17b8acf855b1d14f9a1e4bda4d0a36c96e789be9/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/17b8acf855b1d14f9a1e4bda4d0a36c96e789be9/records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512",
         "pr": "https://github.com/openai/parameter-golf/pull/1138",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
