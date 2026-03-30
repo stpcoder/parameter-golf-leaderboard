@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T20:37:50.841Z",
+  "generatedAt": "2026-03-30T21:07:55.313Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -1596,7 +1596,7 @@
       },
       "pr": {
         "number": 1143,
-        "title": "Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
+        "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -1604,7 +1604,7 @@
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-30T18:53:55Z",
-        "updatedAt": "2026-03-30T18:55:44Z",
+        "updatedAt": "2026-03-30T20:45:24Z",
         "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
@@ -8457,7 +8457,7 @@
       },
       "pr": {
         "number": 1143,
-        "title": "Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
+        "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -8465,7 +8465,7 @@
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-30T18:53:55Z",
-        "updatedAt": "2026-03-30T18:55:44Z",
+        "updatedAt": "2026-03-30T20:45:24Z",
         "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
