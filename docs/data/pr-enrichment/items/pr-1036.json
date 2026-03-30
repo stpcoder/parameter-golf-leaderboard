@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-03-28T20:54:55.584Z",
+  "generatedAt": "2026-03-30T13:37:08.926Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1036,
     "title": "Non-record: AutoResearch Batch Optimization — 1.1974 bpb (1× RTX 4090)",
     "state": "open",
-    "updatedAt": "2026-03-28T20:28:42Z",
-    "headSha": "9ca8d13b74d1e436c170c50e1e253887c31c3ee3",
+    "updatedAt": "2026-03-30T13:28:04Z",
+    "headSha": "2cbedce617a90a26eabada0d2c2a30812355958d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1036",
     "authorLogin": "ivanontech"
   },
   "inputs": {
-    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_non_record_16mb/2026-03-28_AutoResearch_R3_1x4090/README.md"
+      "records/track_non_record_16mb/2026-03-28_AutoResearch_R3_1x4090/README.md",
+      "records/track_non_record_16mb/2026-03-30_AutoResearch_LeakyReLU_MLP3x_BatchOpt/README.md"
     ],
-    "submissionCount": 1
+    "submissionCount": 2
   },
   "output": {
-    "summary": "12-layer 1024d transformer with gated value embeddings and AdamW+Muon runs 2¹⁶ token batches to cram ~404 5-minute steps for faster convergence.",
+    "summary": "AutoResearch non-record tuning on 1×4090 runs automated sweeps with lower TOTAL_BATCH_SIZE, value embeddings, and long-range attention to maximize steps in 5m.",
     "tags": [
+      "non-record",
       "architecture",
-      "optimizer",
       "training-schedule",
-      "non-record"
+      "attention"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Gated value embeddings on alternating layers",
-      "AdamW+Muon split optimizer with cosine warmdown",
-      "2¹⁶ total batch tokens to multiply steps"
+      "Aggressive TOTAL_BATCH_SIZE drop (2^19→2^16) to hit ~400 steps in 5 min",
+      "Gated value embeddings layered into a 12-level long-range transformer",
+      "Muon+AdamW hybrid optimizer with cosine warmdown and no warmup"
     ]
   },
   "compatibility": {

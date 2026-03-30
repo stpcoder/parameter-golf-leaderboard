@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-30T11:35:33.582Z",
+  "generatedAt": "2026-03-30T13:36:52.373Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1104,
     "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Word Boundaries (39x-91x fewer params than H-Net paper)",
     "state": "open",
-    "updatedAt": "2026-03-30T11:18:18Z",
-    "headSha": "6d67d690ad3a4916f2a4ff4f00f3b47fd3bca23c",
+    "updatedAt": "2026-03-30T13:30:13Z",
+    "headSha": "e3ea22adc4582aabf47c22c5e46d73ec3393b589",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1104",
     "authorLogin": "DariusFeher"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "1-stage H-Net compares byte260 vs sp1024 dynamic chunking, learning whitespace-aligned boundaries via padded multi-GPU training and boundary metrics.",
+    "summary": "Byte-level 1-stage H-Net learns whitespace-aligned word boundaries via dynamic chunking while matched byte vs subword runs trace compression behavior.",
     "tags": [
       "architecture",
       "tokenization",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "byte vs subword dynamic chunking ablation",
-      "multi-GPU DDP with padded chunk sequences",
-      "boundary metrics for whitespace alignment and chunk regularity"
+      "Dynamic chunking router using cosine dissimilarity to pick learned boundaries",
+      "DDP training with padded chunk sequences across 8×H100",
+      "Matched byte260 vs sp1024 ablations with boundary metrics"
     ]
   },
   "compatibility": {

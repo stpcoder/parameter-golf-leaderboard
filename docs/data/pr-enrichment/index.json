@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T13:06:07.209Z",
+  "generatedAt": "2026-03-30T13:37:15.032Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -31,14 +31,15 @@
       "prNumber": 1129,
       "title": "Record: CROWN-Q + GPTQ + Legal TTT — val_bpb 1.1174 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-30T09:54:20Z",
-      "headSha": "3c407db13044aa26a64b6f33573a5d48cef12552",
-      "generatedAt": "2026-03-30T10:05:02.926Z",
-      "summary": "Combines CROWN-Q penalty, full Cholesky GPTQ, and score-first AdamW TTT with sqrt cooldown on an 11L GQA model.",
+      "updatedAt": "2026-03-30T13:25:00Z",
+      "headSha": "f6652f72e61964eaf7d80ded835df05feedd0cb4",
+      "generatedAt": "2026-03-30T13:36:43.324Z",
+      "summary": "Combines CROWN-Q warmdown, full Cholesky GPTQ, and score-first AdamW TTT with a sqrt cooldown to preserve post-quantization quality.",
       "tags": [
         "quantization",
         "optimizer",
-        "training-schedule"
+        "training-schedule",
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -493,10 +494,10 @@
       "prNumber": 1104,
       "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Word Boundaries (39x-91x fewer params than H-Net paper)",
       "status": "open",
-      "updatedAt": "2026-03-30T11:18:18Z",
-      "headSha": "6d67d690ad3a4916f2a4ff4f00f3b47fd3bca23c",
-      "generatedAt": "2026-03-30T11:35:33.582Z",
-      "summary": "1-stage H-Net compares byte260 vs sp1024 dynamic chunking, learning whitespace-aligned boundaries via padded multi-GPU training and boundary metrics.",
+      "updatedAt": "2026-03-30T13:30:13Z",
+      "headSha": "e3ea22adc4582aabf47c22c5e46d73ec3393b589",
+      "generatedAt": "2026-03-30T13:36:52.373Z",
+      "summary": "Byte-level 1-stage H-Net learns whitespace-aligned word boundaries via dynamic chunking while matched byte vs subword runs trace compression behavior.",
       "tags": [
         "architecture",
         "tokenization",
@@ -1106,14 +1107,14 @@
       "prNumber": 1061,
       "title": "Causal Oscillator LM: physics-native architecture (BPB 1.34)",
       "status": "open",
-      "updatedAt": "2026-03-30T10:25:52Z",
+      "updatedAt": "2026-03-30T13:19:01Z",
       "headSha": "54ba8cfc2bf3a0bda2bbf4264263b780f82fef27",
-      "generatedAt": "2026-03-30T10:36:02.349Z",
-      "summary": "Causal Oscillator LM encodes causal context with damped harmonic oscillators via FFT before attention, keeping physics-critical parameters at higher precision.",
+      "generatedAt": "2026-03-30T13:36:57.053Z",
+      "summary": "Causal Oscillator LM encodes context via damped harmonic oscillator impulse responses and FFT causal convolutions before attention, sidestepping traditional transformer blocks.",
       "tags": [
         "architecture",
-        "attention",
-        "quantization"
+        "quantization",
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1587,15 +1588,15 @@
       "prNumber": 1036,
       "title": "Non-record: AutoResearch Batch Optimization — 1.1974 bpb (1× RTX 4090)",
       "status": "open",
-      "updatedAt": "2026-03-28T20:28:42Z",
-      "headSha": "9ca8d13b74d1e436c170c50e1e253887c31c3ee3",
-      "generatedAt": "2026-03-28T20:54:55.584Z",
-      "summary": "12-layer 1024d transformer with gated value embeddings and AdamW+Muon runs 2¹⁶ token batches to cram ~404 5-minute steps for faster convergence.",
+      "updatedAt": "2026-03-30T13:28:04Z",
+      "headSha": "2cbedce617a90a26eabada0d2c2a30812355958d",
+      "generatedAt": "2026-03-30T13:37:08.926Z",
+      "summary": "AutoResearch non-record tuning on 1×4090 runs automated sweeps with lower TOTAL_BATCH_SIZE, value embeddings, and long-range attention to maximize steps in 5m.",
       "tags": [
+        "non-record",
         "architecture",
-        "optimizer",
         "training-schedule",
-        "non-record"
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -12429,10 +12430,10 @@
       "prNumber": 347,
       "title": "GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
       "status": "open",
-      "updatedAt": "2026-03-30T12:40:25Z",
-      "headSha": "9cd14898fc8e9d67daea35627261a899e5a7d6f1",
-      "generatedAt": "2026-03-30T13:06:07.161Z",
-      "summary": "Lean GPTQLite: disable gated attention/value residual, drop SWA, and late-enable QAT so 2048-context training maximizes steps before legal TTT.",
+      "updatedAt": "2026-03-30T13:23:10Z",
+      "headSha": "211abeafaabb5d5567cf268d23b45e6aa8ff3142",
+      "generatedAt": "2026-03-30T13:37:14.981Z",
+      "summary": "Stripped GatedAttention/ValueResidual to squeeze extra steps, keeping Legal TTT intact while delaying QAT to final warmdown with 2048 context.",
       "tags": [
         "architecture",
         "training-schedule",

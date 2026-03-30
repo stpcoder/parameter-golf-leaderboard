@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-30T13:06:07.161Z",
+  "generatedAt": "2026-03-30T13:37:14.981Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 347,
     "title": "GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
     "state": "open",
-    "updatedAt": "2026-03-30T12:40:25Z",
-    "headSha": "9cd14898fc8e9d67daea35627261a899e5a7d6f1",
+    "updatedAt": "2026-03-30T13:23:10Z",
+    "headSha": "211abeafaabb5d5567cf268d23b45e6aa8ff3142",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/347",
     "authorLogin": "FlashyFlash3011"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Lean GPTQLite: disable gated attention/value residual, drop SWA, and late-enable QAT so 2048-context training maximizes steps before legal TTT.",
+    "summary": "Stripped GatedAttention/ValueResidual to squeeze extra steps, keeping Legal TTT intact while delaying QAT to final warmdown with 2048 context.",
     "tags": [
       "architecture",
       "training-schedule",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Disable gated attention/value residual to recover per-step budget",
-      "Omit SWA and trigger QAT only in final warmdown for stable TTT",
-      "Use 2048-context training to extend warmdown and accommodate longer evaluations"
+      "Lean architecture tweaks for faster steps",
+      "Late-stage QAT to avoid early overhead",
+      "Full 2048-context warmdown paired with Legal TTT"
     ]
   },
   "compatibility": {
