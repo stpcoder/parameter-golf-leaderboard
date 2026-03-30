@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-30T07:04:09.675Z",
+  "generatedAt": "2026-03-30T07:34:27.681Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1118,
     "title": "Submission: 11L XSA4 + TrigramHash + ValueResidual + Legal TTT (val_bpb=1.1187)",
     "state": "open",
-    "updatedAt": "2026-03-30T06:34:28Z",
+    "updatedAt": "2026-03-30T07:12:36Z",
     "headSha": "8d7b23a2fa9363031490f7290a4fccf4a3ff6ab6",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1118",
     "authorLogin": "adityakm24"
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer XSA4/GQA Transformer uses ValueResidual-enhanced hash embeddings and legal score-first TTT tuning before int6+lzma compression.",
+    "summary": "11-layer parameter-banking GPT applies XSA4 GQA with hash embeddings, ValueResidual, and int6+lzma compression alongside sliding-window legal TTT scoring.",
     "tags": [
-      "attention",
+      "architecture",
       "quantization",
+      "optimizer",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "XSA4+GQA attention with Partial RoPE and ValueResidual",
-      "Bigram/Trigram hash embeddings feeding ValueEmbedding",
-      "Legal score-first TTT tuning prior to sliding-window int6+lzma export"
+      "Parameter-banking GPT stack with GQA, XSA4, SmearGate, and partial RoPE",
+      "Bigram+Trigram hash embeddings plus ValueEmbedding/ValueResidual",
+      "int6+lzma compression with sliding-window eval and legal score-first TTT"
     ]
   },
   "compatibility": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T07:04:19.175Z",
+  "generatedAt": "2026-03-30T07:34:27.840Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -124,13 +124,14 @@
       "prNumber": 1118,
       "title": "Submission: 11L XSA4 + TrigramHash + ValueResidual + Legal TTT (val_bpb=1.1187)",
       "status": "open",
-      "updatedAt": "2026-03-30T06:34:28Z",
+      "updatedAt": "2026-03-30T07:12:36Z",
       "headSha": "8d7b23a2fa9363031490f7290a4fccf4a3ff6ab6",
-      "generatedAt": "2026-03-30T07:04:09.675Z",
-      "summary": "11-layer XSA4/GQA Transformer uses ValueResidual-enhanced hash embeddings and legal score-first TTT tuning before int6+lzma compression.",
+      "generatedAt": "2026-03-30T07:34:27.681Z",
+      "summary": "11-layer parameter-banking GPT applies XSA4 GQA with hash embeddings, ValueResidual, and int6+lzma compression alongside sliding-window legal TTT scoring.",
       "tags": [
-        "attention",
+        "architecture",
         "quantization",
+        "optimizer",
         "evaluation"
       ],
       "flags": {
