@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-03-30T06:04:03.911Z",
+  "generatedAt": "2026-03-30T06:34:10.017Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1123,
+      "title": "Non-Record Submission: 1.1986 BPB — HybridQuantGPT v6.1 rANS + Legal TTT",
+      "status": "open",
+      "updatedAt": "2026-03-30T06:21:24Z",
+      "headSha": "45b892592a7ca6eeddb051df3e6811fbc777dfda",
+      "generatedAt": "2026-03-30T06:34:03.891Z",
+      "summary": "HybridQuantGPT uses per-component mixed-precision quantization, rANS compression, and Legal Score-First TTT on its U-Net Transformer stack.",
+      "tags": [
+        "quantization",
+        "compression",
+        "evaluation",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1123.json"
+    },
     {
       "prNumber": 1122,
       "title": "Record: EngramLite + Gated Skips + Full GPTQ + FA3 — val_bpb 1.1146 (1-seed, 2 pending)",
@@ -942,11 +966,11 @@
     {
       "prNumber": 1066,
       "title": "Add competitive 8xH100 run package (1.1259 bpb)",
-      "status": "open",
-      "updatedAt": "2026-03-29T09:52:01Z",
+      "status": "closed",
+      "updatedAt": "2026-03-30T06:33:44Z",
       "headSha": "2ea5c34ca7028f2023a11b224b68958a9d2510d4",
-      "generatedAt": "2026-03-29T09:58:02.825Z",
-      "summary": "11-layer SOTA-derived stack with GQA/XSA+Partial RoPE, Muon+AdamW+EMA mix, and int6+lzma quant plus legal score-first TTT on 8xH100.",
+      "generatedAt": "2026-03-30T06:34:09.862Z",
+      "summary": "Competitive 11-layer GPT run leverages GQA/XSA/PartialRoPE, Muon+AdamW+EMA, and int6+lzma quantization with legal-TTT eval on 8xH100.",
       "tags": [
         "architecture",
         "optimizer",

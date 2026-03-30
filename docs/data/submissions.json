@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T06:03:49.693Z",
+  "generatedAt": "2026-03-30T06:33:55.973Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -16270,7 +16270,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-29_Competitive_8xH100_Run3_TTT_1-1259",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -16318,14 +16318,14 @@
       "pr": {
         "number": 1066,
         "title": "Add competitive 8xH100 run package (1.1259 bpb)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1066",
         "authorLogin": "adityakm24",
         "authorName": null,
         "createdAt": "2026-03-29T09:52:01Z",
-        "updatedAt": "2026-03-29T09:52:01Z",
+        "updatedAt": "2026-03-30T06:33:44Z",
         "headSha": "2ea5c34ca7028f2023a11b224b68958a9d2510d4",
         "headRepo": "adityakm24/parameter-golf"
       },
@@ -32275,6 +32275,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/c0ce492f9efc3f2960efd5b5564cd6b1433f5216/records/track_10min_16mb/2026-03-26_ProgressiveDepth/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/c0ce492f9efc3f2960efd5b5564cd6b1433f5216/records/track_10min_16mb/2026-03-26_ProgressiveDepth",
         "pr": "https://github.com/openai/parameter-golf/pull/895",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K",
+        "folderPath": "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K",
+        "submissionPath": "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train_gpt.py"
+      },
+      "submission": {
+        "author": "sisegod",
+        "githubId": "sisegod",
+        "name": "HybridQuantGPT v6.1 — Mixed-Precision rANS + SWA + Legal TTT",
+        "blurb": "11-layer HybridQuantGPT with mixed-precision quantization (Q/K:Int6, V/O:Int5, MLP-up:Pentanary, MLP-down:Int4, Embed:FP16). rANS entropy coding compression. SWA weight averaging over 10K steps with Muon optimizer + HMA. Legal Score-First TTT (lr=0.002, epochs=3, chunk=32K). U-Net skip connections, XSA-all, Value Residual, SmearGate, BigramHash, VE128, PartialRoPE(16), LN Scale, LeakyReLU(0.5)^2. Single RTX 3090, 28h training.",
+        "date": "2026-03-30T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.1986,
+        "valLoss": 2.02372,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": 10000,
+        "wallclockSeconds": 101156.6,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15132719,
+        "bytesCode": 66582,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1123,
+        "title": "Non-Record Submission: 1.1986 BPB — HybridQuantGPT v6.1 rANS + Legal TTT",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1123",
+        "authorLogin": "sisegod",
+        "authorName": null,
+        "createdAt": "2026-03-30T06:21:24Z",
+        "updatedAt": "2026-03-30T06:21:24Z",
+        "headSha": "45b892592a7ca6eeddb051df3e6811fbc777dfda",
+        "headRepo": "sisegod/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/45b892592a7ca6eeddb051df3e6811fbc777dfda/records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/45b892592a7ca6eeddb051df3e6811fbc777dfda/records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/45b892592a7ca6eeddb051df3e6811fbc777dfda/records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/45b892592a7ca6eeddb051df3e6811fbc777dfda/records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/45b892592a7ca6eeddb051df3e6811fbc777dfda/records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K",
+        "pr": "https://github.com/openai/parameter-golf/pull/1123",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-30T06:34:03.891Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1123,
+    "title": "Non-Record Submission: 1.1986 BPB — HybridQuantGPT v6.1 rANS + Legal TTT",
+    "state": "open",
+    "updatedAt": "2026-03-30T06:21:24Z",
+    "headSha": "45b892592a7ca6eeddb051df3e6811fbc777dfda",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1123",
+    "authorLogin": "sisegod"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "HybridQuantGPT uses per-component mixed-precision quantization, rANS compression, and Legal Score-First TTT on its U-Net Transformer stack.",
+    "tags": [
+      "quantization",
+      "compression",
+      "evaluation",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Per-component mixed-precision quantization (Int6/Int5/Pentanary/Int4)",
+      "rANS-compressed weights with pure-Python decoder",
+      "Legal Score-First TTT fine-tuning after Muon+SWA training"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
