@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T03:03:00.390Z",
+  "generatedAt": "2026-03-30T03:32:38.679Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -12167,7 +12167,7 @@
         "authorLogin": "Adam-Jacuch",
         "authorName": null,
         "createdAt": "2026-03-27T17:07:03Z",
-        "updatedAt": "2026-03-29T00:15:00Z",
+        "updatedAt": "2026-03-30T03:07:07Z",
         "headSha": "8d680e58e3f75a610cd95a16e4b1c2d408c05eac",
         "headRepo": "Adam-Jacuch/parameter-golf"
       },
@@ -40908,6 +40908,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-29_Random_Adapters_LoRA",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-29_Random_Adapters_LoRA",
+        "folderPath": "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA",
+        "submissionPath": "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train_gpt.py"
+      },
+      "submission": {
+        "author": "gowtham0992",
+        "githubId": "gowtham0992",
+        "name": "Learning Adapters on Random Linear Maps",
+        "blurb": "First random-linear-maps submission. Attention and MLP weights are frozen random orthogonal matrices (regenerated from seed, 0 bytes in artifact). Only LoRA adapters (rank 32) trained and stored. 30M effective params, 5.19 MB artifact. Sliding window eval only. 8xH100 SXM, 4307 steps at 129ms/step.",
+        "date": "2026-03-29T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.37047831,
+        "valLoss": 2.31399522,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 5191021,
+        "bytesCode": 75904,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1113,
+        "title": "Notable Non-Record: Learning Adapters on Random Linear Maps — 1.3705 BPB",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1113",
+        "authorLogin": "gowtham0992",
+        "authorName": null,
+        "createdAt": "2026-03-30T03:10:16Z",
+        "updatedAt": "2026-03-30T03:10:16Z",
+        "headSha": "e9c48639b3068412e3ced4c1256b290f59f97af3",
+        "headRepo": "gowtham0992/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e9c48639b3068412e3ced4c1256b290f59f97af3/records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/e9c48639b3068412e3ced4c1256b290f59f97af3/records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/e9c48639b3068412e3ced4c1256b290f59f97af3/records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/e9c48639b3068412e3ced4c1256b290f59f97af3/records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/e9c48639b3068412e3ced4c1256b290f59f97af3/records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA",
+        "pr": "https://github.com/openai/parameter-golf/pull/1113",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-03-27_Autoresearch_8L_512d_RTX4090",
       "source": "pull_request",
       "status": "closed",
@@ -47125,8 +47202,8 @@
         "authorLogin": "megnat05-tmm",
         "authorName": null,
         "createdAt": "2026-03-21T07:23:54Z",
-        "updatedAt": "2026-03-27T15:47:49Z",
-        "headSha": "21b6b6b39fbd477b20db4fdf75ae3c7604941072",
+        "updatedAt": "2026-03-30T03:23:32Z",
+        "headSha": "d5d9e65a85bda8f64cd7b0f03b1d3171953bad01",
         "headRepo": "megnat05-tmm/parameter-golf"
       },
       "links": {
@@ -48305,6 +48382,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-29_PackedNgram_DirichletCTW",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-29_PackedNgram_DirichletCTW",
+        "folderPath": "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW",
+        "submissionPath": "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/train_gpt.py"
+      },
+      "submission": {
+        "author": "minh-stakc",
+        "githubId": "minh-stakc",
+        "name": null,
+        "blurb": null,
+        "date": "2026-03-30T03:21:03Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1114,
+        "title": "Record: Packed N-gram + Dirichlet CTW — val_bpb 0.0235 (1xB200)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1114",
+        "authorLogin": "minh-stakc",
+        "authorName": null,
+        "createdAt": "2026-03-30T03:21:03Z",
+        "updatedAt": "2026-03-30T03:21:03Z",
+        "headSha": "a6050caeb82112cd711c1ff69edb93e12a9e05ca",
+        "headRepo": "minh-stakc/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/a6050caeb82112cd711c1ff69edb93e12a9e05ca/records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/a6050caeb82112cd711c1ff69edb93e12a9e05ca/records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/a6050caeb82112cd711c1ff69edb93e12a9e05ca/records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/a6050caeb82112cd711c1ff69edb93e12a9e05ca/records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/a6050caeb82112cd711c1ff69edb93e12a9e05ca/records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW",
+        "pr": "https://github.com/openai/parameter-golf/pull/1114",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-03-29_BSM_Bounded_State_Manifolds_Non_Transformer_Approach_with_QAT",
       "source": "pull_request",
       "status": "open",
@@ -48439,8 +48593,8 @@
         "authorLogin": "MichaelMcCulloch",
         "authorName": null,
         "createdAt": "2026-03-30T02:56:58Z",
-        "updatedAt": "2026-03-30T02:59:50Z",
-        "headSha": "41a027ab920edc3b812946c4d4088526e57d9a15",
+        "updatedAt": "2026-03-30T03:20:18Z",
+        "headSha": "03637df4900ee1150e8bd1263e32b03bd60f2837",
         "headRepo": "MichaelMcCulloch/parameter-golf"
       },
       "links": {

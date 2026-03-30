@@ -1,8 +1,54 @@
 {
-  "generatedAt": "2026-03-30T03:04:53.789Z",
+  "generatedAt": "2026-03-30T03:33:11.737Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1114,
+      "title": "Record: Packed N-gram + Dirichlet CTW — val_bpb 0.0235 (1xB200)",
+      "status": "open",
+      "updatedAt": "2026-03-30T03:21:03Z",
+      "headSha": "a6050caeb82112cd711c1ff69edb93e12a9e05ca",
+      "generatedAt": "2026-03-30T03:32:45.075Z",
+      "summary": "Combines packed training n-gram tables with hierarchical Dirichlet CTW mixing and an online cache for warm-started eval predictions.",
+      "tags": [
+        "architecture",
+        "compression",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1114.json"
+    },
+    {
+      "prNumber": 1113,
+      "title": "Notable Non-Record: Learning Adapters on Random Linear Maps — 1.3705 BPB",
+      "status": "open",
+      "updatedAt": "2026-03-30T03:10:16Z",
+      "headSha": "e9c48639b3068412e3ced4c1256b290f59f97af3",
+      "generatedAt": "2026-03-30T03:32:51.336Z",
+      "summary": "Freezes random orthogonal projections for each transformer matrix and trains only rank-32 LoRA adapters to fit the 16MB artifact budget.",
+      "tags": [
+        "architecture",
+        "attention",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1113.json"
+    },
     {
       "prNumber": 1112,
       "title": "Submission/hybrid RWKV token shift",
@@ -31,15 +77,15 @@
       "prNumber": 1111,
       "title": "The Kitchen Sink",
       "status": "open",
-      "updatedAt": "2026-03-30T02:59:50Z",
-      "headSha": "41a027ab920edc3b812946c4d4088526e57d9a15",
-      "generatedAt": "2026-03-30T03:03:11.475Z",
-      "summary": "Env-gated architecture/training/quantization stack powers an 11L/512d int6 model with Muon optimizer plus eval-time adapters (TTT LoRA, n-gram, kNN, TurboQuant).",
+      "updatedAt": "2026-03-30T03:20:18Z",
+      "headSha": "03637df4900ee1150e8bd1263e32b03bd60f2837",
+      "generatedAt": "2026-03-30T03:32:59.108Z",
+      "summary": "Env-var gated 11L/512d training on Muon+QAT with int6 compression plus LoRA/n-gram/kNN/TurboQuant eval stack.",
       "tags": [
-        "architecture",
         "quantization",
-        "compression",
-        "evaluation"
+        "optimizer",
+        "evaluation",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2493,12 +2539,13 @@
       "prNumber": 965,
       "title": "Architectural Record: 1.11837 BPB via KGIIR Trajectory Mixing",
       "status": "open",
-      "updatedAt": "2026-03-29T00:15:00Z",
+      "updatedAt": "2026-03-30T03:07:07Z",
       "headSha": "8d680e58e3f75a610cd95a16e4b1c2d408c05eac",
-      "generatedAt": "2026-03-29T00:26:22.580Z",
-      "summary": "Augments the Bektursun baseline with hardware-fused KGIIR trajectory mixing using gated 4-tap IIR momentum to offload local context and free attention capacity.",
+      "generatedAt": "2026-03-30T03:33:07.669Z",
+      "summary": "KGIIR trajectory mixing adds a momentum-gated 4-tap IIR filter alongside shifts so attention heads focus on global reasoning while keeping 88ms steps.",
       "tags": [
-        "architecture"
+        "architecture",
+        "attention"
       ],
       "flags": {
         "usesValOnly": false,
@@ -12578,10 +12625,10 @@
       "prNumber": 323,
       "title": "Minimal recurrent motif (sb1 rs2 g0.18) – non-record submission",
       "status": "open",
-      "updatedAt": "2026-03-27T15:47:49Z",
-      "headSha": "21b6b6b39fbd477b20db4fdf75ae3c7604941072",
-      "generatedAt": "2026-03-27T16:17:21.062Z",
-      "summary": "Reuses a single softly gated shared block with two recurrence steps to build large motifs while staying under 16MB.",
+      "updatedAt": "2026-03-30T03:23:32Z",
+      "headSha": "d5d9e65a85bda8f64cd7b0f03b1d3171953bad01",
+      "generatedAt": "2026-03-30T03:33:11.688Z",
+      "summary": "Compact shared-block motif reuses a single operator with two-step recurrence and soft gating to build capacity without extra depth.",
       "tags": [
         "architecture",
         "compression",

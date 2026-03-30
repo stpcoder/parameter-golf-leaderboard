@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-30T03:32:45.075Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1114,
+    "title": "Record: Packed N-gram + Dirichlet CTW — val_bpb 0.0235 (1xB200)",
+    "state": "open",
+    "updatedAt": "2026-03-30T03:21:03Z",
+    "headSha": "a6050caeb82112cd711c1ff69edb93e12a9e05ca",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1114",
+    "authorLogin": "minh-stakc"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-29_PackedNgram_DirichletCTW/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines packed training n-gram tables with hierarchical Dirichlet CTW mixing and an online cache for warm-started eval predictions.",
+    "tags": [
+      "architecture",
+      "compression",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Packed training n-gram tables stored in compressed artifact",
+      "Hierarchical Dirichlet CTW mixing across orders",
+      "Score-first online cache for orders 2-9"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
