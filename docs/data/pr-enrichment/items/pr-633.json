@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-24T23:27:47.631Z",
+  "generatedAt": "2026-03-30T03:04:39.317Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 633,
     "title": "PROTEUS v9 — 11L INT6 + single-epoch LoRA TTT (mean val_bpb=1.1526, 3 seeds)",
     "state": "open",
-    "updatedAt": "2026-03-24T22:56:52Z",
+    "updatedAt": "2026-03-30T02:33:10Z",
     "headSha": "40d8baf3dbc2b252e6080986710ab950b1468b24",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/633",
     "authorLogin": "MatoTeziTanka"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer GQA model uses INT6 GPTQ-lite quant plus single-epoch score-then-train LoRA TTT to stay legal while adapting per document.",
+    "summary": "11-layer GPT with INT6 GPTQ-lite quant and single-epoch score-then-train LoRA TTT per document so each token is scored before adaptation.",
     "tags": [
       "quantization",
-      "training-schedule",
       "architecture",
-      "evaluation"
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "INT6 GPTQ-lite quantization",
-      "Single-epoch score-then-train LoRA TTT",
-      "Depth-scaled residual GQA transformer"
+      "Single-epoch score-then-train LoRA per document",
+      "INT6 GPTQ-lite quant with zstd-22 compression",
+      "Depth-scaled residuals + Muon optimizer"
     ]
   },
   "compatibility": {

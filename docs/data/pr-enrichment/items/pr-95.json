@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-25T21:04:50.856Z",
+  "generatedAt": "2026-03-30T03:04:53.776Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 95,
     "title": "PROTEUS EMA — val_bpb: 1.1836 (3-seed mean, Notable Non-Record)",
     "state": "open",
-    "updatedAt": "2026-03-25T20:53:44Z",
+    "updatedAt": "2026-03-30T02:33:26Z",
     "headSha": "ed6850a56260e15b0eacdfb2c95763220f3488ff",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/95",
     "authorLogin": "MatoTeziTanka"
@@ -20,18 +20,16 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "EMA weight averaging on the baseline transformer smooths weights to shrink INT8 quantization loss while documenting INT4 and recurrence failures.",
+    "summary": "Baseline transformer uses EMA weight averaging to shrink INT8 quantization loss without architectural changes.",
     "tags": [
-      "regularization",
       "quantization",
-      "evaluation"
+      "regularization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "EMA weight averaging on baseline transformer",
-      "INT8 post-training quant evaluation",
-      "documented INT4 and shared-weight depth recurrence failures"
+      "EMA weight averaging for smoother INT8 quant loss",
+      "Documented INT4 and recurrence negative results as reference"
     ]
   },
   "compatibility": {

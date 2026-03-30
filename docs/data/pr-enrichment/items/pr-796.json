@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T21:18:54.470Z",
+  "generatedAt": "2026-03-30T03:04:20.079Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 796,
     "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
     "state": "closed",
-    "updatedAt": "2026-03-27T20:56:42Z",
+    "updatedAt": "2026-03-30T02:32:30Z",
     "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/796",
     "authorLogin": "Robby955"
@@ -19,16 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Recursive Dirichlet-Multinomial smoothing mixes the neural LM prior with up to 15-gram counts via one global concentration, replacing heuristic multiplier tuning.",
+    "summary": "Recursive Dirichlet-Multinomial mixing uses the neural LM as a prior while smoothing 2–15 gram caches with a single concentration parameter instead of per-order weights.",
     "tags": [
-      "evaluation"
+      "evaluation",
+      "regularization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Neural LM serves as Dirichlet prior for hierarchical cache smoothing",
-      "Single global concentration controls tradeoff from bigrams to 15-grams",
-      "Distributed cache prefill complements the n-gram mixing pipeline"
+      "Recursive Dirichlet-Multinomial mixing with neural prior across 2–15 grams",
+      "Distributed cache prefill to mimic sequential scoring",
+      "Complementary training downweights n-gram-predictable tokens"
     ]
   },
   "compatibility": {

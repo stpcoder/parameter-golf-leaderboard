@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T23:19:33.803Z",
+  "generatedAt": "2026-03-30T03:03:27.871Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 925,
     "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
     "state": "closed",
-    "updatedAt": "2026-03-27T23:01:37Z",
+    "updatedAt": "2026-03-30T02:32:22Z",
     "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/925",
     "authorLogin": "THUQiXuan"
@@ -19,24 +19,24 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines an order-16 frozen n-gram oracle mixture with learned alpha gating and complementary loss weighting under score-first TTT scheduling.",
+    "summary": "Combines a frozen order-16 n-gram BackoffNgramMixer with a learned alpha gate and complementary loss inside a score-first TTT pipeline.",
     "tags": [
+      "val-only",
       "architecture",
-      "training-schedule",
       "evaluation"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Score-first TTT repeatedly trains on validation chunks (score→oracle update→train) so the regimen ingests validation data for learning.",
     "techniques": [
-      "Order-16 BackoffNgramMixer with learned alpha head",
-      "Complementary loss downweighting for oracle-resolved tokens",
-      "Score-first TTT loop: score → oracle update → train per chunk"
+      "Order-16 prefilled n-gram Oracle + BackoffNgramMixer",
+      "Learned alpha gate mixing neural logits with n-gram experts",
+      "Score-first TTT per 32K chunk with complementary CE weighting"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

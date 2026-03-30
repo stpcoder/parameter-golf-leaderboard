@@ -1,8 +1,79 @@
 {
-  "generatedAt": "2026-03-30T02:33:20.844Z",
+  "generatedAt": "2026-03-30T03:04:53.789Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1112,
+      "title": "Submission/hybrid RWKV token shift",
+      "status": "open",
+      "updatedAt": "2026-03-30T02:59:54Z",
+      "headSha": "9202646fed1b5ee1c9c4854c1847cd151665d535",
+      "generatedAt": "2026-03-30T03:03:06.728Z",
+      "summary": "Hybrid transformer alternates learned RWKV-inspired token shifts with short-window and full attention layers for efficient local mixing.",
+      "tags": [
+        "architecture",
+        "attention",
+        "quantization",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1112.json"
+    },
+    {
+      "prNumber": 1111,
+      "title": "The Kitchen Sink",
+      "status": "open",
+      "updatedAt": "2026-03-30T02:59:50Z",
+      "headSha": "41a027ab920edc3b812946c4d4088526e57d9a15",
+      "generatedAt": "2026-03-30T03:03:11.475Z",
+      "summary": "Env-gated architecture/training/quantization stack powers an 11L/512d int6 model with Muon optimizer plus eval-time adapters (TTT LoRA, n-gram, kNN, TurboQuant).",
+      "tags": [
+        "architecture",
+        "quantization",
+        "compression",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1111.json"
+    },
+    {
+      "prNumber": 1110,
+      "title": "Notable Non-Record: Universal Transformer — 1.2249 BPB — Depth Recurrence with Iteration Embeddings",
+      "status": "open",
+      "updatedAt": "2026-03-30T02:42:21Z",
+      "headSha": "c203fe131af62d9cfc0d062611c7e57d156dbda9",
+      "generatedAt": "2026-03-30T03:03:15.782Z",
+      "summary": "Universal Transformer reuses three shared blocks across four iterations, adding per-iteration embeddings/scales to differentiate depth-recursive passes while keeping params small.",
+      "tags": [
+        "architecture",
+        "attention",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1110.json"
+    },
     {
       "prNumber": 1107,
       "title": "Mamba-3 SSD + Attention Hybrid with QAT (1.5633 bpb)",
@@ -261,30 +332,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-1092.json"
-    },
-    {
-      "prNumber": 1091,
-      "title": "The Kitchen Sink",
-      "status": "closed",
-      "updatedAt": "2026-03-29T21:16:01Z",
-      "headSha": "336910da00060709d7d53f0bc03b178ae32a5d70",
-      "generatedAt": "2026-03-29T21:31:47.207Z",
-      "summary": "Env-gated script merges 26 togglable architecture, training, quant, and eval tricks (TTT/kNN/n-gram) into a single parameter-golf pipeline.",
-      "tags": [
-        "architecture",
-        "training-schedule",
-        "quantization",
-        "evaluation"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-1091.json"
     },
     {
       "prNumber": 1090,
@@ -1614,14 +1661,14 @@
       "prNumber": 1013,
       "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
       "status": "open",
-      "updatedAt": "2026-03-28T17:36:47Z",
+      "updatedAt": "2026-03-30T02:32:18Z",
       "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
-      "generatedAt": "2026-03-28T17:54:38.284Z",
-      "summary": "Hybrid model replaces custom SSM kernels with standard conv1d S4D-Lin layers to keep throughput parity while blending SSM lower layers with attention.",
+      "generatedAt": "2026-03-30T03:03:19.240Z",
+      "summary": "Hybrid transformer stacks two lower S4D-Lin SSM conv1d blocks under standard attention layers to match throughput while probing SSM quality vs attention at scale.",
       "tags": [
         "architecture",
         "attention",
-        "quantization",
+        "evaluation",
         "non-record"
       ],
       "flags": {
@@ -1724,29 +1771,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-1008.json"
-    },
-    {
-      "prNumber": 1007,
-      "title": "Submission/hybrid rwkv token shift",
-      "status": "open",
-      "updatedAt": "2026-03-29T20:49:08Z",
-      "headSha": "9d1a09cd58230ec874c30559a29582debcb7779d",
-      "generatedAt": "2026-03-29T21:01:35.029Z",
-      "summary": "Hybrid transformer uses 8 RWKV-inspired token-shift layers plus 3 short-window attention layers so learned interpolation handles local mixing instead of full attention.",
-      "tags": [
-        "architecture",
-        "quantization",
-        "non-record"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-1007.json"
     },
     {
       "prNumber": 1006,
@@ -3211,22 +3235,22 @@
       "prNumber": 925,
       "title": "Record: Frozen N-gram Oracle (Order-16) + Score-First TTT (0.02807 BPB)",
       "status": "closed",
-      "updatedAt": "2026-03-27T23:01:37Z",
+      "updatedAt": "2026-03-30T02:32:22Z",
       "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
-      "generatedAt": "2026-03-27T23:19:33.803Z",
-      "summary": "Combines an order-16 frozen n-gram oracle mixture with learned alpha gating and complementary loss weighting under score-first TTT scheduling.",
+      "generatedAt": "2026-03-30T03:03:27.871Z",
+      "summary": "Combines a frozen order-16 n-gram BackoffNgramMixer with a learned alpha gate and complementary loss inside a score-first TTT pipeline.",
       "tags": [
+        "val-only",
         "architecture",
-        "training-schedule",
         "evaluation"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-925.json"
     },
@@ -3419,13 +3443,12 @@
       "prNumber": 913,
       "title": "Record: Cache Is All You Need — val_bpb 0.0887, 622KB artifact (3-seed mean)",
       "status": "closed",
-      "updatedAt": "2026-03-27T22:53:06Z",
+      "updatedAt": "2026-03-30T02:32:23Z",
       "headSha": "64c9d07a00e618ebd4f74ee9b2e2d6f2a7ef4f58",
-      "generatedAt": "2026-03-27T23:19:37.982Z",
-      "summary": "Eval-time n-gram and phrase caches with entropy-weighted blending augment the tiny GPT baseline during sliding-window evaluation.",
+      "generatedAt": "2026-03-30T03:03:34.689Z",
+      "summary": "Adds eval-time adaptive n-gram and phrase caches layered over the tiny GPT baseline for much lower BPB without touching training.",
       "tags": [
-        "evaluation",
-        "architecture"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4312,15 +4335,15 @@
       "prNumber": 852,
       "title": "Hymba-11L: SOTA High-Density Takeover (1.1189 BPB)",
       "status": "open",
-      "updatedAt": "2026-03-27T00:48:50Z",
+      "updatedAt": "2026-03-30T02:32:39Z",
       "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
-      "generatedAt": "2026-03-27T01:13:43.747Z",
-      "summary": "11-layer hybrid with Selective Scan+Rotary, overlapping sharded Muon optimizer and 3D parameter banking to enable 3-epoch test-time adaptation with TurboQuant QAT.",
+      "generatedAt": "2026-03-30T03:03:41.287Z",
+      "summary": "Combines selective-scan rotary hybrid architecture with sharded Muon optimizer and 3D parameter bank to free budget for 3-epoch test-time adaptation and 4-bit QAT.",
       "tags": [
-        "optimizer",
         "architecture",
-        "training-schedule",
-        "quantization"
+        "optimizer",
+        "quantization",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4407,13 +4430,13 @@
       "prNumber": 846,
       "title": "Record: Two-Pass N-gram Rescoring (val_bpb 0.1434)",
       "status": "closed",
-      "updatedAt": "2026-03-27T22:35:49Z",
+      "updatedAt": "2026-03-30T02:32:58Z",
       "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
-      "generatedAt": "2026-03-27T22:49:56.403Z",
-      "summary": "Two-pass n-gram rescoring reuses the full cache to reevaluate early chunks after a standard score-first pass.",
+      "generatedAt": "2026-03-30T03:03:46.285Z",
+      "summary": "Two-pass n-gram eval rescoring early chunks with the full cache after score-first TTT and GPTQ-Int5 quantization to cut BPB within the 600s budget.",
       "tags": [
-        "evaluation",
         "quantization",
+        "evaluation",
         "optimizer"
       ],
       "flags": {
@@ -4635,11 +4658,12 @@
       "prNumber": 828,
       "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
       "status": "closed",
-      "updatedAt": "2026-03-27T23:02:22Z",
+      "updatedAt": "2026-03-30T02:32:57Z",
       "headSha": "34c1781c54b1ccc310ecfd3c18c357f142c1ab27",
-      "generatedAt": "2026-03-27T23:20:23.565Z",
-      "summary": "Raised Matrix LR to 0.03 on the 10L GQA model with multi-order n-gram backoff after systematic hyperparameter screening.",
+      "generatedAt": "2026-03-30T03:03:51.316Z",
+      "summary": "Raised MATRIX_LR to 0.03 in the 10L GQA + gated-attention mixed-int setup to better align with the established multi-order n-gram backoff eval.",
       "tags": [
+        "architecture",
         "optimizer",
         "evaluation"
       ],
@@ -4680,13 +4704,13 @@
       "prNumber": 825,
       "title": "Record: Order-Adaptive BackoffMixer (mean val_bpb=0.5440)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:30:48Z",
+      "updatedAt": "2026-03-30T02:32:49Z",
       "headSha": "79ae889affcfa7d1f97534206adfac413ef61f34",
-      "generatedAt": "2026-03-26T14:41:30.637Z",
-      "summary": "11-layer XSA-all transformer runs entropy-gated order-adaptive BackoffNgramMixer with per-order thresholds for score-first eval mixing.",
+      "generatedAt": "2026-03-30T03:03:56.643Z",
+      "summary": "11-layer XSA-all transformer with int5 + Soft-Round QAT and order-adaptive entropy-gated BackoffNgramMixer eval scoring.",
       "tags": [
         "architecture",
-        "evaluation",
+        "attention",
         "quantization"
       ],
       "flags": {
@@ -4937,10 +4961,10 @@
       "prNumber": 808,
       "title": "Record: 0.6360 BPB - Depth Recurrence + Multi-Order N-gram Backoff",
       "status": "open",
-      "updatedAt": "2026-03-26T16:33:13Z",
+      "updatedAt": "2026-03-30T02:32:51Z",
       "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
-      "generatedAt": "2026-03-26T16:41:32.755Z",
-      "summary": "Repeating layers 4/5 via depth recurrence pairs with eval-time multi-order n-gram backoff, entropy-adaptive blending, and multi-GPU prefill.",
+      "generatedAt": "2026-03-30T03:04:02.903Z",
+      "summary": "Depth recurrence stacks repeated layers while eval-time multi-order n-gram backoff with entropy-adaptive blending and multi-GPU prefill improves scoring.",
       "tags": [
         "architecture",
         "evaluation"
@@ -4982,13 +5006,13 @@
       "prNumber": 806,
       "title": "Record: Backoff N-gram Cache + LeakyReLU(0.9)² (val_bpb=0.6678)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:24:50Z",
+      "updatedAt": "2026-03-30T02:32:53Z",
       "headSha": "9876d60008393c88f90b38b53329dfdaf74f64e8",
-      "generatedAt": "2026-03-26T14:42:23.607Z",
-      "summary": "Backoff n-gram cache mixes entropy-adaptive alpha, uses distributed pre-fill, and swaps relu² for LeakyReLU(0.9)² atop the 11L base.",
+      "generatedAt": "2026-03-30T03:04:12.496Z",
+      "summary": "Backoff n-gram eval cache using entropy-adaptive mixing, distributed pre-fill, and LeakyReLU(0.9)² on a neural base while preserving score-first legality.",
       "tags": [
-        "sliding-window-eval",
-        "muon",
+        "evaluation",
+        "optimizer",
         "architecture"
       ],
       "flags": {
@@ -5185,12 +5209,13 @@
       "prNumber": 796,
       "title": "Record: 0.2292 BPB — Dirichlet-Multinomial Smoothing + Distributed Prefill + 15-Gram + EBLS",
       "status": "closed",
-      "updatedAt": "2026-03-27T20:56:42Z",
+      "updatedAt": "2026-03-30T02:32:30Z",
       "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
-      "generatedAt": "2026-03-27T21:18:54.470Z",
-      "summary": "Recursive Dirichlet-Multinomial smoothing mixes the neural LM prior with up to 15-gram counts via one global concentration, replacing heuristic multiplier tuning.",
+      "generatedAt": "2026-03-30T03:04:20.079Z",
+      "summary": "Recursive Dirichlet-Multinomial mixing uses the neural LM as a prior while smoothing 2–15 gram caches with a single concentration parameter instead of per-order weights.",
       "tags": [
-        "evaluation"
+        "evaluation",
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -5622,10 +5647,10 @@
       "prNumber": 769,
       "title": "PROTEUS+STYX — val_bpb 0.8495 (3-seed mean) — LeakyReLU(0.9)² + 5-gram Eval Cache",
       "status": "closed",
-      "updatedAt": "2026-03-28T14:20:07Z",
+      "updatedAt": "2026-03-30T02:33:01Z",
       "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
-      "generatedAt": "2026-03-28T14:23:17.504Z",
-      "summary": "PROTEUS+STYX pairs LeakyReLU(0.9)² architecture tweaks with a backward-looking 5-gram sliding-window cache blend for evaluation-time gains.",
+      "generatedAt": "2026-03-30T03:04:24.968Z",
+      "summary": "PROTEUS+STYX swaps in LeakyReLU(0.9)² and blends a backward-looking 5-gram hash cache with model logits during sliding-window eval.",
       "tags": [
         "architecture",
         "evaluation",
@@ -5716,12 +5741,13 @@
       "prNumber": 764,
       "title": "Record: Curriculum Learning + LeakyReLU(0.9)² + 7-gram Backoff (val_bpb=0.9633)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:24:47Z",
+      "updatedAt": "2026-03-30T02:32:55Z",
       "headSha": "519eec39fb729490d279d6a7fa46d644f2b248ef",
-      "generatedAt": "2026-03-26T14:42:43.980Z",
-      "summary": "Hardest-first shard ordering plus LeakyReLU(0.9)^2 and a 7-gram backoff cache extend the Podracing II stack.",
+      "generatedAt": "2026-03-30T03:04:31.042Z",
+      "summary": "Podracing II stack reorders shards by perplexity and swaps to LeakyReLU(0.9)^2 while relying on sliding-window plus 7-gram backoff eval.",
       "tags": [
         "training-schedule",
+        "architecture",
         "evaluation"
       ],
       "flags": {
@@ -7604,15 +7630,14 @@
       "prNumber": 633,
       "title": "PROTEUS v9 — 11L INT6 + single-epoch LoRA TTT (mean val_bpb=1.1526, 3 seeds)",
       "status": "open",
-      "updatedAt": "2026-03-24T22:56:52Z",
+      "updatedAt": "2026-03-30T02:33:10Z",
       "headSha": "40d8baf3dbc2b252e6080986710ab950b1468b24",
-      "generatedAt": "2026-03-24T23:27:47.631Z",
-      "summary": "11-layer GQA model uses INT6 GPTQ-lite quant plus single-epoch score-then-train LoRA TTT to stay legal while adapting per document.",
+      "generatedAt": "2026-03-30T03:04:39.317Z",
+      "summary": "11-layer GPT with INT6 GPTQ-lite quant and single-epoch score-then-train LoRA TTT per document so each token is scored before adaptation.",
       "tags": [
         "quantization",
-        "training-schedule",
         "architecture",
-        "evaluation"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -8609,15 +8634,14 @@
       "prNumber": 568,
       "title": "Record: PROTEUS v8 — 11L INT6 + LoRA TTT 5ep cosine (mean val_bpb=0.7853, 4 seeds)",
       "status": "closed",
-      "updatedAt": "2026-03-24T17:05:34Z",
+      "updatedAt": "2026-03-30T02:33:18Z",
       "headSha": "6b59f5e9e2c286ed655666b236e796e08163c8b4",
-      "generatedAt": "2026-03-24T17:26:12.210Z",
-      "summary": "PROTEUS v8 keeps the 11-layer INT6 depth-scaled Transformer but runs LoRA TTT for 5 cosine-decay epochs, scoring every pass before training.",
+      "generatedAt": "2026-03-30T03:04:44.320Z",
+      "summary": "11-layer INT6 transformer uses LoRA test-time training with five cosine-decayed epochs that score every token before adaptation.",
       "tags": [
-        "architecture",
         "quantization",
         "training-schedule",
-        "evaluation"
+        "optimizer"
       ],
       "flags": {
         "usesValOnly": false,
@@ -9422,13 +9446,12 @@
       "prNumber": 512,
       "title": "Record: PROTEUS v7 — 11L INT6 + LoRA TTT (mean val_bpb=0.9512, 3 seeds)",
       "status": "closed",
-      "updatedAt": "2026-03-24T15:59:49Z",
+      "updatedAt": "2026-03-30T02:33:24Z",
       "headSha": "502a29f01510b50a872a8b3737dfe874a3478e2d",
-      "generatedAt": "2026-03-24T16:27:08.823Z",
-      "summary": "11-layer PROTEUS pairs INT6 uniform quantization and depth-scaled residuals with backward-looking multi-epoch LoRA TTT per document.",
+      "generatedAt": "2026-03-30T03:04:48.456Z",
+      "summary": "11-layer PROTEUS pairs INT6 uniform quantization and depth-scaled residuals with per-document backward-looking LoRA TTT during evaluation.",
       "tags": [
         "quantization",
-        "architecture",
         "evaluation"
       ],
       "flags": {
@@ -16212,14 +16235,13 @@
       "prNumber": 95,
       "title": "PROTEUS EMA — val_bpb: 1.1836 (3-seed mean, Notable Non-Record)",
       "status": "open",
-      "updatedAt": "2026-03-25T20:53:44Z",
+      "updatedAt": "2026-03-30T02:33:26Z",
       "headSha": "ed6850a56260e15b0eacdfb2c95763220f3488ff",
-      "generatedAt": "2026-03-25T21:04:50.856Z",
-      "summary": "EMA weight averaging on the baseline transformer smooths weights to shrink INT8 quantization loss while documenting INT4 and recurrence failures.",
+      "generatedAt": "2026-03-30T03:04:53.776Z",
+      "summary": "Baseline transformer uses EMA weight averaging to shrink INT8 quantization loss without architectural changes.",
       "tags": [
-        "regularization",
         "quantization",
-        "evaluation"
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,

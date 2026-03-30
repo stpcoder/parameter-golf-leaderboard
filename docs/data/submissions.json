@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T02:32:37.726Z",
+  "generatedAt": "2026-03-30T03:03:00.390Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -600,7 +600,7 @@
         "authorLogin": "THUQiXuan",
         "authorName": null,
         "createdAt": "2026-03-27T02:45:21Z",
-        "updatedAt": "2026-03-27T23:01:37Z",
+        "updatedAt": "2026-03-30T02:32:22Z",
         "headSha": "7cab60aad4a14de6b9a024d82d0d08a4a1756501",
         "headRepo": "THUQiXuan/parameter-golf"
       },
@@ -2220,7 +2220,7 @@
         "authorLogin": "himanshudongre",
         "authorName": null,
         "createdAt": "2026-03-26T12:20:06Z",
-        "updatedAt": "2026-03-27T22:35:49Z",
+        "updatedAt": "2026-03-30T02:32:58Z",
         "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
         "headRepo": "himanshudongre/parameter-golf"
       },
@@ -2374,7 +2374,7 @@
         "authorLogin": "Robby955",
         "authorName": null,
         "createdAt": "2026-03-26T01:41:00Z",
-        "updatedAt": "2026-03-27T20:56:42Z",
+        "updatedAt": "2026-03-30T02:32:30Z",
         "headSha": "c3e2c4304144dccad1eb2613e5a02fdfb0c92d17",
         "headRepo": null
       },
@@ -4145,7 +4145,7 @@
         "authorLogin": "Naazimsnh02",
         "authorName": null,
         "createdAt": "2026-03-26T04:18:04Z",
-        "updatedAt": "2026-03-26T16:33:13Z",
+        "updatedAt": "2026-03-30T02:32:51Z",
         "headSha": "6c1b833be9b0e11e468c01b92f87a8f5ed395b84",
         "headRepo": "Naazimsnh02/parameter-golf"
       },
@@ -4222,7 +4222,7 @@
         "authorLogin": "ibarrajo",
         "authorName": null,
         "createdAt": "2026-03-26T03:47:28Z",
-        "updatedAt": "2026-03-26T14:24:50Z",
+        "updatedAt": "2026-03-30T02:32:53Z",
         "headSha": "9876d60008393c88f90b38b53329dfdaf74f64e8",
         "headRepo": "ibarrajo/parameter-golf"
       },
@@ -4610,7 +4610,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-23T19:43:44Z",
-        "updatedAt": "2026-03-24T17:05:34Z",
+        "updatedAt": "2026-03-30T02:33:18Z",
         "headSha": "6b59f5e9e2c286ed655666b236e796e08163c8b4",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -4841,7 +4841,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-25T21:28:08Z",
-        "updatedAt": "2026-03-28T14:20:07Z",
+        "updatedAt": "2026-03-30T02:33:01Z",
         "headSha": "ca847e29a3ce3d61b7cf41f14828a6b95dca13c4",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -5611,7 +5611,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-23T07:58:41Z",
-        "updatedAt": "2026-03-24T15:59:49Z",
+        "updatedAt": "2026-03-30T02:33:24Z",
         "headSha": "502a29f01510b50a872a8b3737dfe874a3478e2d",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -6078,7 +6078,7 @@
         "authorLogin": "ndokutovich",
         "authorName": null,
         "createdAt": "2026-03-25T20:26:04Z",
-        "updatedAt": "2026-03-26T14:24:47Z",
+        "updatedAt": "2026-03-30T02:32:55Z",
         "headSha": "519eec39fb729490d279d6a7fa46d644f2b248ef",
         "headRepo": "ndokutovich/parameter-golf"
       },
@@ -23024,7 +23024,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-24T17:12:33Z",
-        "updatedAt": "2026-03-24T22:56:52Z",
+        "updatedAt": "2026-03-30T02:33:10Z",
         "headSha": "40d8baf3dbc2b252e6080986710ab950b1468b24",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -27644,7 +27644,7 @@
         "authorLogin": "himanshudongre",
         "authorName": null,
         "createdAt": "2026-03-28T10:15:02Z",
-        "updatedAt": "2026-03-28T17:36:47Z",
+        "updatedAt": "2026-03-30T02:32:18Z",
         "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
         "headRepo": "himanshudongre/parameter-golf"
       },
@@ -29877,7 +29877,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-19T15:46:22Z",
-        "updatedAt": "2026-03-25T20:53:44Z",
+        "updatedAt": "2026-03-30T02:33:26Z",
         "headSha": "ed6850a56260e15b0eacdfb2c95763220f3488ff",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -30955,7 +30955,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-03-19T15:46:22Z",
-        "updatedAt": "2026-03-25T20:53:44Z",
+        "updatedAt": "2026-03-30T02:33:26Z",
         "headSha": "ed6850a56260e15b0eacdfb2c95763220f3488ff",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -35364,6 +35364,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-03-29_Universal_Transformer",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-29_Universal_Transformer",
+        "folderPath": "records/track_10min_16mb/2026-03-29_Universal_Transformer",
+        "submissionPath": "records/track_10min_16mb/2026-03-29_Universal_Transformer/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-29_Universal_Transformer/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-29_Universal_Transformer/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-29_Universal_Transformer/train_gpt.py"
+      },
+      "submission": {
+        "author": "gowtham0992",
+        "githubId": "gowtham0992",
+        "name": "Universal Transformer: Depth Recurrence with Weight Sharing + Iteration Embeddings",
+        "blurb": "3 unique blocks x 4 iterations = 12 effective layers with per-iteration learnable embeddings (timestep encoding from Dehghani et al. 2018). 70% param savings (8.1M vs 27M), 4.95 MB artifact. Sliding window eval only. 8xH100 SXM, 5466 steps at 101ms/step.",
+        "date": "2026-03-30T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.22490891,
+        "valLoss": 2.06820738,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 4946680,
+        "bytesCode": 72802,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1110,
+        "title": "Notable Non-Record: Universal Transformer — 1.2249 BPB — Depth Recurrence with Iteration Embeddings",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1110",
+        "authorLogin": "gowtham0992",
+        "authorName": null,
+        "createdAt": "2026-03-30T02:42:20Z",
+        "updatedAt": "2026-03-30T02:42:21Z",
+        "headSha": "c203fe131af62d9cfc0d062611c7e57d156dbda9",
+        "headRepo": "gowtham0992/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c203fe131af62d9cfc0d062611c7e57d156dbda9/records/track_10min_16mb/2026-03-29_Universal_Transformer/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c203fe131af62d9cfc0d062611c7e57d156dbda9/records/track_10min_16mb/2026-03-29_Universal_Transformer/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c203fe131af62d9cfc0d062611c7e57d156dbda9/records/track_10min_16mb/2026-03-29_Universal_Transformer/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c203fe131af62d9cfc0d062611c7e57d156dbda9/records/track_10min_16mb/2026-03-29_Universal_Transformer/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c203fe131af62d9cfc0d062611c7e57d156dbda9/records/track_10min_16mb/2026-03-29_Universal_Transformer",
+        "pr": "https://github.com/openai/parameter-golf/pull/1110",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-03-28_HybridRWKV_TokenShift_ShortWindowAttn",
       "source": "pull_request",
       "status": "open",
@@ -35412,17 +35489,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1007,
-        "title": "Submission/hybrid rwkv token shift",
+        "number": 1112,
+        "title": "Submission/hybrid RWKV token shift",
         "state": "open",
-        "draft": true,
+        "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1007",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1112",
         "authorLogin": "dillon-blake",
         "authorName": null,
-        "createdAt": "2026-03-28T06:26:55Z",
-        "updatedAt": "2026-03-29T20:49:08Z",
-        "headSha": "9d1a09cd58230ec874c30559a29582debcb7779d",
+        "createdAt": "2026-03-30T02:59:54Z",
+        "updatedAt": "2026-03-30T02:59:54Z",
+        "headSha": "9202646fed1b5ee1c9c4854c1847cd151665d535",
         "headRepo": "dillon-blake/parameter-golf"
       },
       "links": {
@@ -35431,7 +35508,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/9d1a09cd58230ec874c30559a29582debcb7779d/records/track_non_record_16mb/2026-03-28_HybridRWKV_TokenShift_ShortWindowAttn/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/9d1a09cd58230ec874c30559a29582debcb7779d/records/track_non_record_16mb/2026-03-28_HybridRWKV_TokenShift_ShortWindowAttn/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/9d1a09cd58230ec874c30559a29582debcb7779d/records/track_non_record_16mb/2026-03-28_HybridRWKV_TokenShift_ShortWindowAttn",
-        "pr": "https://github.com/openai/parameter-golf/pull/1007",
+        "pr": "https://github.com/openai/parameter-golf/pull/1112",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -48307,7 +48384,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant",
       "source": "pull_request",
-      "status": "closed",
+      "status": "open",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -48353,17 +48430,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1091,
+        "number": 1111,
         "title": "The Kitchen Sink",
-        "state": "closed",
-        "draft": true,
+        "state": "open",
+        "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1091",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1111",
         "authorLogin": "MichaelMcCulloch",
         "authorName": null,
-        "createdAt": "2026-03-29T18:22:17Z",
-        "updatedAt": "2026-03-29T21:16:01Z",
-        "headSha": "336910da00060709d7d53f0bc03b178ae32a5d70",
+        "createdAt": "2026-03-30T02:56:58Z",
+        "updatedAt": "2026-03-30T02:59:50Z",
+        "headSha": "41a027ab920edc3b812946c4d4088526e57d9a15",
         "headRepo": "MichaelMcCulloch/parameter-golf"
       },
       "links": {
@@ -48372,7 +48449,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/336910da00060709d7d53f0bc03b178ae32a5d70/records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/336910da00060709d7d53f0bc03b178ae32a5d70/records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/336910da00060709d7d53f0bc03b178ae32a5d70/records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant",
-        "pr": "https://github.com/openai/parameter-golf/pull/1091",
+        "pr": "https://github.com/openai/parameter-golf/pull/1111",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -50595,7 +50672,7 @@
         "authorLogin": "RoyiRa",
         "authorName": null,
         "createdAt": "2026-03-27T00:12:28Z",
-        "updatedAt": "2026-03-27T22:53:06Z",
+        "updatedAt": "2026-03-30T02:32:23Z",
         "headSha": "64c9d07a00e618ebd4f74ee9b2e2d6f2a7ef4f58",
         "headRepo": "RoyiRa/parameter-golf"
       },
@@ -52135,7 +52212,7 @@
         "authorLogin": "hypery11",
         "authorName": null,
         "createdAt": "2026-03-26T07:07:51Z",
-        "updatedAt": "2026-03-26T14:30:48Z",
+        "updatedAt": "2026-03-30T02:32:49Z",
         "headSha": "79ae889affcfa7d1f97534206adfac413ef61f34",
         "headRepo": "hypery11/parameter-golf"
       },
@@ -52212,7 +52289,7 @@
         "authorLogin": "bigbag",
         "authorName": null,
         "createdAt": "2026-03-26T07:48:46Z",
-        "updatedAt": "2026-03-27T23:02:22Z",
+        "updatedAt": "2026-03-30T02:32:57Z",
         "headSha": "34c1781c54b1ccc310ecfd3c18c357f142c1ab27",
         "headRepo": "bigbag/parameter-golf"
       },
@@ -52366,7 +52443,7 @@
         "authorLogin": "Prush69",
         "authorName": null,
         "createdAt": "2026-03-26T14:20:12Z",
-        "updatedAt": "2026-03-27T00:48:50Z",
+        "updatedAt": "2026-03-30T02:32:39Z",
         "headSha": "b8b44bd26693031d7058a7b1021f35b947bb8536",
         "headRepo": "Prush69/parameter-golf"
       },

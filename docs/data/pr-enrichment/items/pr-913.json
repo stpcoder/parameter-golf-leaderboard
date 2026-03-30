@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T23:19:37.982Z",
+  "generatedAt": "2026-03-30T03:03:34.689Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 913,
     "title": "Record: Cache Is All You Need — val_bpb 0.0887, 622KB artifact (3-seed mean)",
     "state": "closed",
-    "updatedAt": "2026-03-27T22:53:06Z",
+    "updatedAt": "2026-03-30T02:32:23Z",
     "headSha": "64c9d07a00e618ebd4f74ee9b2e2d6f2a7ef4f58",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/913",
     "authorLogin": "RoyiRa"
@@ -19,17 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Eval-time n-gram and phrase caches with entropy-weighted blending augment the tiny GPT baseline during sliding-window evaluation.",
+    "summary": "Adds eval-time adaptive n-gram and phrase caches layered over the tiny GPT baseline for much lower BPB without touching training.",
     "tags": [
-      "evaluation",
-      "architecture"
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "entropy-adaptive n-gram cache blending",
-      "long phrase cache with phrase-length gating",
-      "sliding-window cache evaluation integration"
+      "Eval-time n-gram cache with entropy-aware weights",
+      "Phrase cache probing lengths 16-64 tokens",
+      "Sliding-window scoring that updates caches incrementally"
     ]
   },
   "compatibility": {

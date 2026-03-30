@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T22:49:56.403Z",
+  "generatedAt": "2026-03-30T03:03:46.285Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 846,
     "title": "Record: Two-Pass N-gram Rescoring (val_bpb 0.1434)",
     "state": "closed",
-    "updatedAt": "2026-03-27T22:35:49Z",
+    "updatedAt": "2026-03-30T02:32:58Z",
     "headSha": "e4cea2ccf12853e4b8dbca827216211a68d18311",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/846",
     "authorLogin": "himanshudongre"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Two-pass n-gram rescoring reuses the full cache to reevaluate early chunks after a standard score-first pass.",
+    "summary": "Two-pass n-gram eval rescoring early chunks with the full cache after score-first TTT and GPTQ-Int5 quantization to cut BPB within the 600s budget.",
     "tags": [
-      "evaluation",
       "quantization",
+      "evaluation",
       "optimizer"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "two-pass n-gram rescoring via complete cache",
-      "score-first TTT adaptation before rescoring",
-      "GPTQ-Int5 quantization grid search"
+      "Two-pass n-gram rescore for cold-start chunks",
+      "Score-first TTT adaptation before eval",
+      "GPTQ-Int5 quantized export"
     ]
   },
   "compatibility": {

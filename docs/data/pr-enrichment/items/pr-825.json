@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-26T14:41:30.637Z",
+  "generatedAt": "2026-03-30T03:03:56.643Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 825,
     "title": "Record: Order-Adaptive BackoffMixer (mean val_bpb=0.5440)",
     "state": "open",
-    "updatedAt": "2026-03-26T14:30:48Z",
+    "updatedAt": "2026-03-30T02:32:49Z",
     "headSha": "79ae889affcfa7d1f97534206adfac413ef61f34",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/825",
     "authorLogin": "hypery11"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer XSA-all transformer runs entropy-gated order-adaptive BackoffNgramMixer with per-order thresholds for score-first eval mixing.",
+    "summary": "11-layer XSA-all transformer with int5 + Soft-Round QAT and order-adaptive entropy-gated BackoffNgramMixer eval scoring.",
     "tags": [
       "architecture",
-      "evaluation",
+      "attention",
       "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "XSA-all 11L transformer with LeakyReLU^2 and 3.5x MLP",
-      "Entropy-gated BackoffNgramMixer mixing across 2–7 grams",
-      "int5 quantization with Soft-Round QAT plus EMA/SWA"
+      "order-adaptive entropy gating",
+      "BackoffNgramMixer with per-order thresholds",
+      "int5 Soft-Round quantization"
     ]
   },
   "compatibility": {

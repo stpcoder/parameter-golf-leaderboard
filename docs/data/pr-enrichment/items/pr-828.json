@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-27T23:20:23.565Z",
+  "generatedAt": "2026-03-30T03:03:51.316Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 828,
     "title": "Record: 0.9076 BPB — 10L + N-gram Backoff + Matrix LR 0.03",
     "state": "closed",
-    "updatedAt": "2026-03-27T23:02:22Z",
+    "updatedAt": "2026-03-30T02:32:57Z",
     "headSha": "34c1781c54b1ccc310ecfd3c18c357f142c1ab27",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/828",
     "authorLogin": "bigbag"
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Raised Matrix LR to 0.03 on the 10L GQA model with multi-order n-gram backoff after systematic hyperparameter screening.",
+    "summary": "Raised MATRIX_LR to 0.03 in the 10L GQA + gated-attention mixed-int setup to better align with the established multi-order n-gram backoff eval.",
     "tags": [
+      "architecture",
       "optimizer",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "10L GQA with gated attention, BigramHash, and smeargate enhancements",
-      "Multi-order n-gram backoff cache scoring with entropy-adaptive mixing",
-      "Matrix LR tuned to 0.03 via intensive screening"
+      "10L GQA transformer with gated attention and mixed int quantization",
+      "Matrix LR tuning (0.03) informed by systematic screening",
+      "Multi-order n-gram backoff evaluation"
     ]
   },
   "compatibility": {

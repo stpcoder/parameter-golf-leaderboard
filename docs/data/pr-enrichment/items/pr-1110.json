@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-30T03:03:15.782Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1110,
+    "title": "Notable Non-Record: Universal Transformer — 1.2249 BPB — Depth Recurrence with Iteration Embeddings",
+    "state": "open",
+    "updatedAt": "2026-03-30T02:42:21Z",
+    "headSha": "c203fe131af62d9cfc0d062611c7e57d156dbda9",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1110",
+    "authorLogin": "gowtham0992"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-29_Universal_Transformer/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Universal Transformer reuses three shared blocks across four iterations, adding per-iteration embeddings/scales to differentiate depth-recursive passes while keeping params small.",
+    "tags": [
+      "architecture",
+      "attention",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "depth-recurrent weight sharing with 3 shared blocks",
+      "per-iteration learnable embeddings and scales for iteration signaling",
+      "int6 GPTQ calibration during training"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

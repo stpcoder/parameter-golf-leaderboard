@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-28T17:54:38.284Z",
+  "generatedAt": "2026-03-30T03:03:19.240Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1013,
     "title": "Non-record: S4D-Lin SSM Hybrid — Fixing Why Mamba Failed in Parameter…",
     "state": "open",
-    "updatedAt": "2026-03-28T17:36:47Z",
+    "updatedAt": "2026-03-30T02:32:18Z",
     "headSha": "dafde7df4176e836ee936969bc91037ec6142044",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1013",
     "authorLogin": "himanshudongre"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Hybrid model replaces custom SSM kernels with standard conv1d S4D-Lin layers to keep throughput parity while blending SSM lower layers with attention.",
+    "summary": "Hybrid transformer stacks two lower S4D-Lin SSM conv1d blocks under standard attention layers to match throughput while probing SSM quality vs attention at scale.",
     "tags": [
       "architecture",
       "attention",
-      "quantization",
+      "evaluation",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "No explicit val-only training regime; standard training with validation evaluation.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "S4D-Lin causal conv1d SSM",
-      "two-layer SSM + Transformer hybrid stack",
-      "torch.compile-friendly operations"
+      "Conv1d-native S4D-Lin SSM layers in lower stack",
+      "Export via GPTQ int5 with lzma compressor",
+      "Torch.compile-friendly pure PyTorch implementation"
     ]
   },
   "compatibility": {
