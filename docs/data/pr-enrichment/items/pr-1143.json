@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T07:41:46.140Z",
+  "generatedAt": "2026-03-31T08:12:31.229Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -20,7 +20,7 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Search-derived TokenMonster tokenizer plus metadata-driven retokenized FineWeb bundle powering a legal score-first TTT evaluation stack.",
+    "summary": "Search-tuned TokenMonster tokenizer Scylla with per-token metadata accounting couples with legal score-first TTT evaluation over a full-data retokenized bundle.",
     "tags": [
       "tokenization",
       "evaluation"
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- search-driven TokenMonster tokenizer selection (Scylla)",
-      "- metadata-rich retokenized FineWeb bundle for explicit byte accounting",
-      "- backward-looking legal score-first TTT evaluation stack"
+      "TokenMonster-derived Scylla tokenizer found via autoresearch",
+      "Full-data retokenization plus metadata-driven byte accounting",
+      "Backward-looking legal score-first TTT evaluation"
     ]
   },
   "compatibility": {

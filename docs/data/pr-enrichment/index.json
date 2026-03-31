@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T07:41:46.303Z",
+  "generatedAt": "2026-03-31T08:12:31.392Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -376,10 +376,10 @@
       "prNumber": 1150,
       "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
       "status": "open",
-      "updatedAt": "2026-03-30T20:18:26Z",
+      "updatedAt": "2026-03-31T08:03:08Z",
       "headSha": "f24a386e23346fa5ebc87d82da146e87b2d96331",
-      "generatedAt": "2026-03-30T20:37:57.761Z",
-      "summary": "Stacks SLOT’s per-batch output-delta optimization (5 AdamW steps) atop Legal TTT, keeping the transformer frozen while reusing a single forward pass per chunk.",
+      "generatedAt": "2026-03-31T08:12:26.381Z",
+      "summary": "Adds Legal TTT plus SLOT per-batch residual deltas optimized through the final logits layer atop the PR #549 Parallel Muon baseline.",
       "tags": [
         "evaluation",
         "optimizer"
@@ -493,8 +493,8 @@
       "status": "open",
       "updatedAt": "2026-03-31T07:41:35Z",
       "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
-      "generatedAt": "2026-03-31T07:41:46.140Z",
-      "summary": "Search-derived TokenMonster tokenizer plus metadata-driven retokenized FineWeb bundle powering a legal score-first TTT evaluation stack.",
+      "generatedAt": "2026-03-31T08:12:31.229Z",
+      "summary": "Search-tuned TokenMonster tokenizer Scylla with per-token metadata accounting couples with legal score-first TTT evaluation over a full-data retokenized bundle.",
       "tags": [
         "tokenization",
         "evaluation"
