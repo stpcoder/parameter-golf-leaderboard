@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-31T09:12:08.899Z",
+  "generatedAt": "2026-03-31T09:42:06.025Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1172,
     "title": "Record: SLOT + Split-LR + Full GPTQ + XSA-all — val_bpb 1.1015 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-31T09:08:52Z",
+    "updatedAt": "2026-03-31T09:12:19Z",
     "headSha": "99b080be7ee758616038526f297e9e4f8680734c",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1172",
     "authorLogin": "dexhunter"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines SLOT eval-time delta tuning with split early/late Muon LR, sigmoid-gated skips, soft-round QAT, and compression/minification tweaks.",
+    "summary": "Pair Full GPTQ + soft-round QAT quantization with eval-time SLOT deltas, sigmoid-gated skips, split Muon LR, and compact Brotli packaging.",
     "tags": [
-      "val-only",
-      "optimizer",
       "quantization",
-      "architecture"
+      "evaluation",
+      "optimizer",
+      "compression"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "SLOT only adapts a delta vector during evaluation without training on validation shards.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "SLOT eval-time delta optimization per sliding-window batch",
-      "Sigmoid-gated skip connections with soft-round QAT alpha ramp for int6 GPTQ",
-      "Split Muon LR schedule plus minified Brotli packaging & larger BigramHash"
+      "Eval-time SLOT delta adaptation",
+      "Split Muon LR with soft-round QAT",
+      "Sigmoid-gated skips + Brotli packaging"
     ]
   },
   "compatibility": {

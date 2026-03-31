@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T09:11:58.934Z",
+  "generatedAt": "2026-03-31T09:42:00.949Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -9851,7 +9851,7 @@
         "authorLogin": "dexhunter",
         "authorName": null,
         "createdAt": "2026-03-31T06:22:04Z",
-        "updatedAt": "2026-03-31T09:08:52Z",
+        "updatedAt": "2026-03-31T09:12:19Z",
         "headSha": "99b080be7ee758616038526f297e9e4f8680734c",
         "headRepo": "dexhunter/parameter-golf"
       },
@@ -18319,7 +18319,7 @@
       },
       "pr": {
         "number": 1048,
-        "title": "Non-record: Compression moonshots — 8 negative/marginal findings (Procrustes, SWA smoothness, selective fp16, pruning+zstd)",
+        "title": "Non-record: Cross-seed rotational symmetry in transformer weights — 33 checkpoint experiments (Procrustes, pruning×zstd, block-level quantization outliers)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -18327,7 +18327,7 @@
         "authorLogin": "mrdavtan",
         "authorName": null,
         "createdAt": "2026-03-29T00:59:25Z",
-        "updatedAt": "2026-03-29T00:59:25Z",
+        "updatedAt": "2026-03-31T09:29:58Z",
         "headSha": "e55a3b410a21fa4f1710f9c9f76b28e29d9aec09",
         "headRepo": "mrdavtan/parameter-golf"
       },
@@ -29330,7 +29330,7 @@
       },
       "pr": {
         "number": 1048,
-        "title": "Non-record: Compression moonshots — 8 negative/marginal findings (Procrustes, SWA smoothness, selective fp16, pruning+zstd)",
+        "title": "Non-record: Cross-seed rotational symmetry in transformer weights — 33 checkpoint experiments (Procrustes, pruning×zstd, block-level quantization outliers)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -29338,7 +29338,7 @@
         "authorLogin": "mrdavtan",
         "authorName": null,
         "createdAt": "2026-03-29T00:59:25Z",
-        "updatedAt": "2026-03-29T00:59:25Z",
+        "updatedAt": "2026-03-31T09:29:58Z",
         "headSha": "e55a3b410a21fa4f1710f9c9f76b28e29d9aec09",
         "headRepo": "mrdavtan/parameter-golf"
       },
