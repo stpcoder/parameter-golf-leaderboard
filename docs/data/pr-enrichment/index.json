@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T10:12:07.832Z",
+  "generatedAt": "2026-03-31T10:42:25.414Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -1164,14 +1164,14 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + SLOT + Brotli — 1.1088 BPB (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-31T02:26:55Z",
-      "headSha": "0df40cc5465a80bd114588fe2e631cd316b9338a",
-      "generatedAt": "2026-03-31T02:40:21.383Z",
-      "summary": "Fused MLP kernels, a 3.5× MLP, and Hessian-guided mixed int5/int6 quantization reclaim throughput while fitting 16MB with Brotli.",
+      "updatedAt": "2026-03-31T10:33:30Z",
+      "headSha": "a50289416cddfa58dab6a65fd55142217d0e00f5",
+      "generatedAt": "2026-03-31T10:42:25.254Z",
+      "summary": "Fuses Triton TMA and CUTLASS EVT MLP kernels, widens the MLP, and offsets Huffman budget via Hessian-driven mixed int5/int6 quant plus Brotli and SLOT eval.",
       "tags": [
-        "architecture",
         "quantization",
-        "compression",
+        "architecture",
+        "training-schedule",
         "evaluation"
       ],
       "flags": {
