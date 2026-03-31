@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-31T20:46:16.811Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1191,
+    "title": "Non-record: H-Net Dynamic Chunking — Learned Tokenization Layer (val_bpb 1.3587)",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:39:26Z",
+    "headSha": "c4cf7174371e392462c864c1d6025e73a55b44f4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1191",
+    "authorLogin": "dentity007"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_HNet_DynamicChunking_LearnedTokenization/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Adds a lightweight learned dynamic chunking layer that predicts soft token boundaries before the transformer to approximate H-Net-style tokenization.",
+    "tags": [
+      "architecture",
+      "tokenization",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "learned chunker predicting boundary sigmoids",
+      "softly blends adjacent embeddings based on boundary scores",
+      "HNET_ENABLED/HNET_LAYERS toggle for control"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

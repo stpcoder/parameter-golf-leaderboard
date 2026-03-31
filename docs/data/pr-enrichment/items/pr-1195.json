@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-03-31T20:45:51.017Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1195,
+    "title": "Non-record: Learning Adapters on Random Linear Maps (val_bpb 2.2017)",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:41:01Z",
+    "headSha": "f2c462d8f5a580209f86a0b0db5c6e25cc44699c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1195",
+    "authorLogin": "dentity007"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_RandomLinearMapAdapters/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Frozen random orthogonal projections for attention and MLP layers with only diagonal scale+shift adapters trained (~0.5% params) to test random maps for LM structure.",
+    "tags": [
+      "architecture",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Frozen random orthogonal projections for q/k/v/proj/up/down layers",
+      "Trainable diagonal scale+shift adapters on top of fixed maps"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

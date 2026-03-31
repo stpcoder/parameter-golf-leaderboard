@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-03-31T20:46:08.995Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1192,
+    "title": "Non-record: Fused Triton Megakernels — RMSNorm + LeakyReLU² (val_bpb 1.3560)",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:40:00Z",
+    "headSha": "c22ffe99c73611cb7255851e81b5c940ab606098",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1192",
+    "authorLogin": "dentity007"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_Megakernels_FusedTriton/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Custom Triton megakernels fuse RMSNorm and LeakyReLU² for faster eval with autograd wrappers prepping kernel reuse in training.",
+    "tags": [
+      "non-record",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Triton fused RMSNorm+LeakyReLU² eval kernels",
+      "autograd.Function wrappers for kernel reuse"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

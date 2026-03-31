@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-31T20:45:32.865Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1198,
+    "title": "Add non-record 16MB submission: Hybrid Sparse Diffusion 2H on 8xH100",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:43:38Z",
+    "headSha": "4942d41cbd59c62761d6dd8f65f34ff11867ee18",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1198",
+    "authorLogin": "ymrohit"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_HybridSparseDiffusion_2h_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Hybrid sparse diffusion v7 keeps a 9-layer 512d tied-embedding transformer with block-mask diffusion on 8×H100 for the 16MB non-record track.",
+    "tags": [
+      "architecture",
+      "training-schedule",
+      "compression",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Hybrid sparse diffusion masking schedule",
+      "Int8+zlib packaging to meet 16MB cap"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

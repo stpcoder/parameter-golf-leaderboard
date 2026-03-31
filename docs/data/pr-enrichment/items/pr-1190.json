@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-31T20:46:25.733Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1190,
+    "title": "Non-record: 10L MLP3x + Muon | val_bpb=1.3365 | Single Colab GPU",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:38:57Z",
+    "headSha": "845651bf5abc4477d6435d9921e0b1d0937249b4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1190",
+    "authorLogin": "Durlabhkumarjha"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_10L_MLP3x_Muon_1GPU_Colab/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Single-GPU Colab run bumps to 10 layers with 3× MLP expansion and Muon optimizer while keeping a 2048 context length.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "10-layer stack with 3× MLP expansion",
+      "Muon optimizer for matrix params",
+      "2048-token context on single GPU"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
