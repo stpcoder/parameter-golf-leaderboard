@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T14:13:35.475Z",
+  "generatedAt": "2026-03-31T14:43:37.460Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -50274,15 +50274,15 @@
       },
       "pr": {
         "number": 1173,
-        "title": "Add non-record 16MB submission: Ternary QAT vs Int5 proxy study",
+        "title": "Add non-record 16MB submission: mixed ternary QAT proxy study",
         "state": "open",
-        "draft": true,
+        "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1173",
         "authorLogin": "imitation-alpha",
         "authorName": null,
         "createdAt": "2026-03-31T06:24:34Z",
-        "updatedAt": "2026-03-31T13:55:44Z",
+        "updatedAt": "2026-03-31T14:41:07Z",
         "headSha": "7b12bb478578f0596b2b6f9087bc6af9efcc7b98",
         "headRepo": "imitation-alpha/parameter-golf"
       },

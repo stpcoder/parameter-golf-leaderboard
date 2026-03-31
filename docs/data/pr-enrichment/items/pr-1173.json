@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-31T14:13:42.224Z",
+  "generatedAt": "2026-03-31T14:43:44.206Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1173,
-    "title": "Add non-record 16MB submission: Ternary QAT vs Int5 proxy study",
+    "title": "Add non-record 16MB submission: mixed ternary QAT proxy study",
     "state": "open",
-    "updatedAt": "2026-03-31T13:55:44Z",
+    "updatedAt": "2026-03-31T14:41:07Z",
     "headSha": "7b12bb478578f0596b2b6f9087bc6af9efcc7b98",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1173",
     "authorLogin": "imitation-alpha"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Mixed ternary QAT adds TernaryLinear/quant packing knobs and post-export eval to reclaim bytes for larger proxy models under 16MB.",
+    "summary": "Uses BitNet-style mixed ternary QAT with STE MLPs and quantized export to reallocate bytes for larger proxy models under the 16MB cap.",
     "tags": [
       "quantization",
       "architecture",
-      "evaluation",
+      "compression",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "TernaryLinear+STE quant modes with packing/export",
-      "Mixed ternary compression to fund larger proxy models",
-      "Post-export quantized evaluation on proxy split"
+      "Mixed ternary STE MLP compression with quantized pack/export",
+      "Byte-reallocation to scale depth/dim within 16MB"
     ]
   },
   "compatibility": {

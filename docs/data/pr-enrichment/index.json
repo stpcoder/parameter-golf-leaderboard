@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T14:13:52.374Z",
+  "generatedAt": "2026-03-31T14:43:44.383Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -100,16 +100,16 @@
     },
     {
       "prNumber": 1173,
-      "title": "Add non-record 16MB submission: Ternary QAT vs Int5 proxy study",
+      "title": "Add non-record 16MB submission: mixed ternary QAT proxy study",
       "status": "open",
-      "updatedAt": "2026-03-31T13:55:44Z",
+      "updatedAt": "2026-03-31T14:41:07Z",
       "headSha": "7b12bb478578f0596b2b6f9087bc6af9efcc7b98",
-      "generatedAt": "2026-03-31T14:13:42.224Z",
-      "summary": "Mixed ternary QAT adds TernaryLinear/quant packing knobs and post-export eval to reclaim bytes for larger proxy models under 16MB.",
+      "generatedAt": "2026-03-31T14:43:44.206Z",
+      "summary": "Uses BitNet-style mixed ternary QAT with STE MLPs and quantized export to reallocate bytes for larger proxy models under the 16MB cap.",
       "tags": [
         "quantization",
         "architecture",
-        "evaluation",
+        "compression",
         "non-record"
       ],
       "flags": {
