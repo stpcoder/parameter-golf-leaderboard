@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-31T02:40:14.676Z",
+  "generatedAt": "2026-03-31T16:45:04.347Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1140,
     "title": "Crawler —  8.8MB -1.1874 BPB (3-seed mean, 8xH100, 600s)",
     "state": "open",
-    "updatedAt": "2026-03-31T02:30:23Z",
+    "updatedAt": "2026-03-31T16:39:33Z",
     "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1140",
     "authorLogin": "newjordan"
@@ -24,19 +24,18 @@
     "submissionCount": 6
   },
   "output": {
-    "summary": "Micro Crawler shares one crawler block across three causal-horizon loops to iteratively sharpen representations before int6 quantization.",
+    "summary": "Micro Crawler iterates a shared causal coordination block over three horizons to refine a fuzzy representation before int8-aware training and int6 compression.",
     "tags": [
       "architecture",
-      "attention",
       "quantization",
-      "compression"
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "shared crawler loops for immediate, medium, and distant horizons",
-      "flat XSA stack feeding a single shared crawler block",
-      "int6+QAT via CRAWLER_QUANT_INT8 with zstd compression"
+      "shared-weight looped causal coordination across near/mid/far horizons",
+      "per-loop RoPE scaling to adapt attention range",
+      "int8 QAT followed by naive int6+zstd compression"
     ]
   },
   "compatibility": {

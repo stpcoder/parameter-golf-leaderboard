@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T16:14:21.476Z",
+  "generatedAt": "2026-03-31T16:44:54.079Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -3452,7 +3452,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -3606,7 +3606,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -6694,7 +6694,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -10236,16 +10236,16 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/39ed402b3b11b680e15a3596efd6f3bf385ffee9/records/track_10min_16mb/2026-03-30_Rascal_8xH100/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/39ed402b3b11b680e15a3596efd6f3bf385ffee9/records/track_10min_16mb/2026-03-30_Rascal_8xH100/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/39ed402b3b11b680e15a3596efd6f3bf385ffee9/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/39ed402b3b11b680e15a3596efd6f3bf385ffee9/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/39ed402b3b11b680e15a3596efd6f3bf385ffee9/records/track_10min_16mb/2026-03-30_Rascal_8xH100",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/99b790dd8eb4c7bbdaa26012944a7c66ba9bd610/records/track_10min_16mb/2026-03-30_Rascal_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/99b790dd8eb4c7bbdaa26012944a7c66ba9bd610/records/track_10min_16mb/2026-03-30_Rascal_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/99b790dd8eb4c7bbdaa26012944a7c66ba9bd610/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/99b790dd8eb4c7bbdaa26012944a7c66ba9bd610/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/99b790dd8eb4c7bbdaa26012944a7c66ba9bd610/records/track_10min_16mb/2026-03-30_Rascal_8xH100",
         "pr": "https://github.com/openai/parameter-golf/pull/1140",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -32110,7 +32110,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -56909,7 +56909,7 @@
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-03-30T17:18:30Z",
-        "updatedAt": "2026-03-31T02:30:23Z",
+        "updatedAt": "2026-03-31T16:39:33Z",
         "headSha": "11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88",
         "headRepo": "newjordan/parameter-golf-1"
       },
