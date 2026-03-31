@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-31T15:44:27.530Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1181,
+    "title": "RecurLoRA: Quantization-Stable Shallow Recurrence with Low-Rank Corrective Adapters",
+    "state": "open",
+    "updatedAt": "2026-03-31T15:28:50Z",
+    "headSha": "dc2fad1ee7137c9b4b627e74e70f547a0e19bece",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1181",
+    "authorLogin": "Tanush1912"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "RecurLoRA repeats two mid layers with fp16 rank-2 LoRA corrections plus RMSNorm and learnable scaling to stabilize shallow recurrence under 16MB int6 quantization.",
+    "tags": [
+      "architecture",
+      "attention",
+      "quantization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Shallow recurrence with per-pass rank-2 LoRA corrections on attention projections",
+      "RMSNorm plus learnable alpha to limit distribution drift across repeats",
+      "fp16 LoRA passthrough keeps the 28KB overhead within the 16MB budget"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

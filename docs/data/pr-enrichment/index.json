@@ -1,8 +1,55 @@
 {
-  "generatedAt": "2026-03-31T15:14:25.640Z",
+  "generatedAt": "2026-03-31T15:44:27.724Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1182,
+      "title": "[track_10min_16mb] XSA7 + BigramHash + ValueResidual + Legal TTT — val_bpb=1.1227",
+      "status": "open",
+      "updatedAt": "2026-03-31T15:36:24Z",
+      "headSha": "60822cd54da08eb6faff9c3104f242ce07e39448",
+      "generatedAt": "2026-03-31T15:44:19.163Z",
+      "summary": "11-layer parameter-banking GPT uses cross-sequence attention on the final 7 layers with bigram/trigram hash embeddings, value residual reinjection, and legal TTT with int6 quant.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1182.json"
+    },
+    {
+      "prNumber": 1181,
+      "title": "RecurLoRA: Quantization-Stable Shallow Recurrence with Low-Rank Corrective Adapters",
+      "status": "open",
+      "updatedAt": "2026-03-31T15:28:50Z",
+      "headSha": "dc2fad1ee7137c9b4b627e74e70f547a0e19bece",
+      "generatedAt": "2026-03-31T15:44:27.530Z",
+      "summary": "RecurLoRA repeats two mid layers with fp16 rank-2 LoRA corrections plus RMSNorm and learnable scaling to stabilize shallow recurrence under 16MB int6 quantization.",
+      "tags": [
+        "architecture",
+        "attention",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1181.json"
+    },
     {
       "prNumber": 1180,
       "title": "SR-CM-P2Loss: 1.0577 bpb (~15.06MB)",

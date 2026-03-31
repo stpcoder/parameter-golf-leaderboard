@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-31T15:44:19.163Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1182,
+    "title": "[track_10min_16mb] XSA7 + BigramHash + ValueResidual + Legal TTT — val_bpb=1.1227",
+    "state": "open",
+    "updatedAt": "2026-03-31T15:36:24Z",
+    "headSha": "60822cd54da08eb6faff9c3104f242ce07e39448",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1182",
+    "authorLogin": "adityakm24"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-31_XSA7_BigramHash_ValueResidual_TTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer parameter-banking GPT uses cross-sequence attention on the final 7 layers with bigram/trigram hash embeddings, value residual reinjection, and legal TTT with int6 quant.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "parameter banking with Parallel Muon optimizer",
+      "XSA layers plus bigram/trigram hash embeddings",
+      "legal score-first TTT after int6+lzma quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
