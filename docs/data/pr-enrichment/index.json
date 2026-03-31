@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-03-30T23:08:44.651Z",
+  "generatedAt": "2026-03-31T00:08:59.932Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1159,
+      "title": "Add non-record 16MB submission: Dirichlet PPM + Legal TTT on 8xH100",
+      "status": "open",
+      "updatedAt": "2026-03-31T00:01:58Z",
+      "headSha": "517544a340a8656ebaf8083ea65dc27ec91c10ef",
+      "generatedAt": "2026-03-31T00:08:59.753Z",
+      "summary": "Combines the stabilized control trainer with Dirichlet posterior predictive cache mixing over PPM orders before legal score-first TTT on 8×H100.",
+      "tags": [
+        "non-record",
+        "evaluation",
+        "architecture"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1159.json"
+    },
     {
       "prNumber": 1156,
       "title": "Record: EGGROLL v2 — val_bpb 1.1161 (3-seed mean, std 0.0001)",

@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-03-31T00:08:59.753Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1159,
+    "title": "Add non-record 16MB submission: Dirichlet PPM + Legal TTT on 8xH100",
+    "state": "open",
+    "updatedAt": "2026-03-31T00:01:58Z",
+    "headSha": "517544a340a8656ebaf8083ea65dc27ec91c10ef",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1159",
+    "authorLogin": "JDAppleseed"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines the stabilized control trainer with Dirichlet posterior predictive cache mixing over PPM orders before legal score-first TTT on 8×H100.",
+    "tags": [
+      "non-record",
+      "evaluation",
+      "architecture"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Dirichlet posterior predictive cache mixing across PPM orders 2–7",
+      "Distributed legal score-first TTT exact eval on 8×H100"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

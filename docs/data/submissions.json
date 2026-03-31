@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T23:38:46.589Z",
+  "generatedAt": "2026-03-31T00:08:50.669Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -2847,6 +2847,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/0444ef13e132a596356801dc7fa1da5bca7f1269/records/track_10min_16mb/2026-03-26_ComplementaryNgram65K_Int5GPTQ_LoRATTT/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/0444ef13e132a596356801dc7fa1da5bca7f1269/records/track_10min_16mb/2026-03-26_ComplementaryNgram65K_Int5GPTQ_LoRATTT",
         "pr": "https://github.com/openai/parameter-golf/pull/850",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-27_DirichletPPM_LegalTTT_8xH100",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-27_DirichletPPM_LegalTTT_8xH100",
+        "folderPath": "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100",
+        "submissionPath": "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train_gpt.py"
+      },
+      "submission": {
+        "author": "Jonathan Davanzo",
+        "githubId": "JDAppleseed",
+        "name": "Dirichlet PPM + Legal TTT (8xH100 full run)",
+        "blurb": "Non-record 8xH100 frontier submission using single-pass Dirichlet posterior predictive cache mixing on the stabilized control trainer path. Official metric legal_ttt_exact = 0.36930761 at 10,176,408 measured artifact bytes; the run is legal and under the 16MB cap, but the full train plus exact-eval pipeline took 1831.174s end to end, so it is not 10-minute wall-clock compliant.",
+        "date": "2026-03-27T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 0.36930761,
+        "valLoss": 0.62355877,
+        "preQuantValBpb": 1.2370079255856536,
+        "preQuantValLoss": 2.0886360661952943,
+        "stepStop": 1786,
+        "wallclockSeconds": 1831.174,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 10176408,
+        "bytesCode": 132164,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1159,
+        "title": "Add non-record 16MB submission: Dirichlet PPM + Legal TTT on 8xH100",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1159",
+        "authorLogin": "JDAppleseed",
+        "authorName": null,
+        "createdAt": "2026-03-31T00:01:58Z",
+        "updatedAt": "2026-03-31T00:01:58Z",
+        "headSha": "517544a340a8656ebaf8083ea65dc27ec91c10ef",
+        "headRepo": "JDAppleseed/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/517544a340a8656ebaf8083ea65dc27ec91c10ef/records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/517544a340a8656ebaf8083ea65dc27ec91c10ef/records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/517544a340a8656ebaf8083ea65dc27ec91c10ef/records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/517544a340a8656ebaf8083ea65dc27ec91c10ef/records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/517544a340a8656ebaf8083ea65dc27ec91c10ef/records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100",
+        "pr": "https://github.com/openai/parameter-golf/pull/1159",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
