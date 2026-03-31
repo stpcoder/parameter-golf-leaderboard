@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-31T21:16:00.286Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1201,
+    "title": "records: add 2026-03-27 TrigramHash run, harden quantization safety, and clean docs",
+    "state": "open",
+    "updatedAt": "2026-03-31T21:13:34Z",
+    "headSha": "59818afb4c7b44d1103530ae6923f12c5e48e699",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1201",
+    "authorLogin": "Mister2005"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines TrigramHash embeddings with value-residual attention, bank-level QAT+GradQuant tiers, MTP heads, and Adam-mode TTT with calibration/warmdown care.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "training-schedule"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "TrigramHash embeddings with value-residual attention",
+      "Bank-level QAT and GradQuant tiering",
+      "MTP heads plus Adam-mode TTT and temperature calibration"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

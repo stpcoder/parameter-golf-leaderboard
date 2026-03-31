@@ -1,20 +1,67 @@
 {
-  "generatedAt": "2026-03-31T20:46:25.912Z",
+  "generatedAt": "2026-03-31T21:16:13.772Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1201,
+      "title": "records: add 2026-03-27 TrigramHash run, harden quantization safety, and clean docs",
+      "status": "open",
+      "updatedAt": "2026-03-31T21:13:34Z",
+      "headSha": "59818afb4c7b44d1103530ae6923f12c5e48e699",
+      "generatedAt": "2026-03-31T21:16:00.286Z",
+      "summary": "Combines TrigramHash embeddings with value-residual attention, bank-level QAT+GradQuant tiers, MTP heads, and Adam-mode TTT with calibration/warmdown care.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1201.json"
+    },
+    {
+      "prNumber": 1199,
+      "title": "Non-record: Elite UT v22.8 12-step recurrence (Windows 3090)",
+      "status": "open",
+      "updatedAt": "2026-03-31T20:49:01Z",
+      "headSha": "332eed9fdba5cb1ad08004af6e874418b18ee766",
+      "generatedAt": "2026-03-31T21:16:07.006Z",
+      "summary": "Windows-focused Elite Universal Transformer v22.8 pairs 12-step recurrence, strict pre-norm, Polar Express Muon optimizer, and fused Triton kernels.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "muon",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1199.json"
+    },
+    {
       "prNumber": 1198,
       "title": "Add non-record 16MB submission: Hybrid Sparse Diffusion 2H on 8xH100",
       "status": "open",
-      "updatedAt": "2026-03-31T20:43:38Z",
+      "updatedAt": "2026-03-31T20:47:24Z",
       "headSha": "4942d41cbd59c62761d6dd8f65f34ff11867ee18",
-      "generatedAt": "2026-03-31T20:45:32.865Z",
-      "summary": "Hybrid sparse diffusion v7 keeps a 9-layer 512d tied-embedding transformer with block-mask diffusion on 8×H100 for the 16MB non-record track.",
+      "generatedAt": "2026-03-31T21:16:13.596Z",
+      "summary": "Hybrid Sparse Diffusion v7 runs a 9-layer tied-embedding Transformer with shared-block masking and refine-last steps on 8×H100 under the 16MB cap.",
       "tags": [
         "architecture",
-        "training-schedule",
         "compression",
+        "quantization",
         "non-record"
       ],
       "flags": {

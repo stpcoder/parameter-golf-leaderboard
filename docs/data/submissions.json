@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T20:45:27.614Z",
+  "generatedAt": "2026-03-31T21:15:52.037Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -46965,13 +46965,13 @@
         "number": 1198,
         "title": "Add non-record 16MB submission: Hybrid Sparse Diffusion 2H on 8xH100",
         "state": "open",
-        "draft": true,
+        "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1198",
         "authorLogin": "ymrohit",
         "authorName": null,
         "createdAt": "2026-03-31T20:43:38Z",
-        "updatedAt": "2026-03-31T20:43:38Z",
+        "updatedAt": "2026-03-31T20:47:24Z",
         "headSha": "4942d41cbd59c62761d6dd8f65f34ff11867ee18",
         "headRepo": "ymrohit/parameter-golf"
       },
@@ -47213,6 +47213,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/f5027810bdfbb59e4488e5e0da55791e3ee9c7a1/records/track_non_record_16mb/2026-03-20_RTX4070_SP1024_8x512_KV4_500steps/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/f5027810bdfbb59e4488e5e0da55791e3ee9c7a1/records/track_non_record_16mb/2026-03-20_RTX4070_SP1024_8x512_KV4_500steps",
         "pr": "https://github.com/openai/parameter-golf/pull/248",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT",
+        "folderPath": "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT",
+        "submissionPath": "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/train_gpt.py"
+      },
+      "submission": {
+        "author": "Varun Gupta",
+        "githubId": "Mister2005",
+        "name": "TrigramHash + Value Residual + Bank-Level QAT + GradQuant (Int5/Int6/Int7) + MTP + Adam TTT",
+        "blurb": "Fast-compute run (local5060_fast_seed1337) used profile=fast, seed=1337, layers=8, dim=384, heads=6, kv=3, seq=1024, batch_tokens=32768, iters=1200, eval_stride=256, val_max_tokens=8000000, ttt_enabled=0. Observed results from this run: final_int6_roundtrip val_bpb=1.6768, final_int6_sliding_window_exact val_bpb=1.63711028, final_int6_sliding_window_s64_exact val_bpb=1.63503057. Legal score-first TTT was disabled for this run. Final submission size (int6+lzma) = 5909270 bytes.",
+        "date": "2026-03-27"
+      },
+      "metrics": {
+        "valBpb": 1.63711028,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 5909270,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1201,
+        "title": "records: add 2026-03-27 TrigramHash run, harden quantization safety, and clean docs",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1201",
+        "authorLogin": "Mister2005",
+        "authorName": null,
+        "createdAt": "2026-03-31T21:13:20Z",
+        "updatedAt": "2026-03-31T21:13:34Z",
+        "headSha": "59818afb4c7b44d1103530ae6923f12c5e48e699",
+        "headRepo": "Mister2005/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/59818afb4c7b44d1103530ae6923f12c5e48e699/records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/59818afb4c7b44d1103530ae6923f12c5e48e699/records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/59818afb4c7b44d1103530ae6923f12c5e48e699/records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/59818afb4c7b44d1103530ae6923f12c5e48e699/records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/59818afb4c7b44d1103530ae6923f12c5e48e699/records/track_10min_16mb/2026-03-27_TrigramHash_ValueResidual_BankQAT_GradQuant_MTP_AdamTTT",
+        "pr": "https://github.com/openai/parameter-golf/pull/1201",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -52300,6 +52377,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/381ece0b8f6f876cdea2b10e3e411d12d9ea8010/records/track_10min_16mb/2026-03-XX_DepthRecurrence_eb1386/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/381ece0b8f6f876cdea2b10e3e411d12d9ea8010/records/track_10min_16mb/2026-03-XX_DepthRecurrence_eb1386",
         "pr": "https://github.com/openai/parameter-golf/pull/449",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090",
+        "folderPath": "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090",
+        "submissionPath": "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/train_gpt.py"
+      },
+      "submission": {
+        "author": "Ribin",
+        "githubId": "Ribin545",
+        "name": "Windows Elite Launcher (non-record)",
+        "blurb": "Non-record submission focused on Windows helper scripts (venv setup + 10-minute run bat files + Windows launcher wrapper). Update metrics/bytes/log links after final run.",
+        "date": "2026-04-01T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1199,
+        "title": "Non-record: Elite UT v22.8 12-step recurrence (Windows 3090)",
+        "state": "open",
+        "draft": true,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1199",
+        "authorLogin": "Ribin545",
+        "authorName": null,
+        "createdAt": "2026-03-31T20:49:01Z",
+        "updatedAt": "2026-03-31T20:49:01Z",
+        "headSha": "332eed9fdba5cb1ad08004af6e874418b18ee766",
+        "headRepo": "Ribin545/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/332eed9fdba5cb1ad08004af6e874418b18ee766/records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/332eed9fdba5cb1ad08004af6e874418b18ee766/records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/332eed9fdba5cb1ad08004af6e874418b18ee766/records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/332eed9fdba5cb1ad08004af6e874418b18ee766/records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/332eed9fdba5cb1ad08004af6e874418b18ee766/records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090",
+        "pr": "https://github.com/openai/parameter-golf/pull/1199",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

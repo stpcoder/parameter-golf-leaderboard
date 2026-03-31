@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-03-31T21:16:07.006Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1199,
+    "title": "Non-record: Elite UT v22.8 12-step recurrence (Windows 3090)",
+    "state": "open",
+    "updatedAt": "2026-03-31T20:49:01Z",
+    "headSha": "332eed9fdba5cb1ad08004af6e874418b18ee766",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1199",
+    "authorLogin": "Ribin545"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Windows-focused Elite Universal Transformer v22.8 pairs 12-step recurrence, strict pre-norm, Polar Express Muon optimizer, and fused Triton kernels.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "muon",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "12-step recursive Elite UT with strict pre-norm",
+      "Polar Express Muon degree-5 optimizer at 0.009 LR",
+      "Fused Triton MLP kernels for Windows throughput"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
