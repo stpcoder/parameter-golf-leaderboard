@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T08:20:36.015Z",
+  "generatedAt": "2026-04-01T08:50:49.195Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -27741,6 +27741,83 @@
       }
     },
     {
+      "id": "record-records-track_non_record_16mb-2026-04-01_12L_rANS_SoftXSA_IndubIndustries",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-01_12L_rANS_SoftXSA_IndubIndustries",
+        "folderPath": "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries",
+        "submissionPath": "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/train_gpt.py"
+      },
+      "submission": {
+        "author": "Dan",
+        "githubId": "turbo-indubitable",
+        "name": "12L rANS + LeakyReLU(0.95)² + Soft XSA",
+        "blurb": "12L enabled by per-tensor rANS compression. Soft XSA with learned per-head alpha on all layers via position-tiled Triton kernel. LeakyReLU(0.95)² activation. 10% magnitude pruning. 1xH100 extrapolating 8xH100 token budget. N-gram eval forthcoming.",
+        "date": "2026-04-01"
+      },
+      "metrics": {
+        "valBpb": 1.1601,
+        "valLoss": 1.9587,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15912601,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1215,
+        "title": "12L rANS + LeakyReLU(0.95)² + Soft XSA (1.1601 BPB, non_record_16mb)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1215",
+        "authorLogin": "turbo-indubitable",
+        "authorName": null,
+        "createdAt": "2026-04-01T08:33:57Z",
+        "updatedAt": "2026-04-01T08:33:57Z",
+        "headSha": "b53f5fb35b1ec2abb9389cd95b3969f4e75255ec",
+        "headRepo": "turbo-indubitable/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b53f5fb35b1ec2abb9389cd95b3969f4e75255ec/records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/b53f5fb35b1ec2abb9389cd95b3969f4e75255ec/records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/b53f5fb35b1ec2abb9389cd95b3969f4e75255ec/records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/b53f5fb35b1ec2abb9389cd95b3969f4e75255ec/records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/b53f5fb35b1ec2abb9389cd95b3969f4e75255ec/records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries",
+        "pr": "https://github.com/openai/parameter-golf/pull/1215",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-03-20_WiderMLP_FP16Embed_Stride32",
       "source": "pull_request",
       "status": "open",
@@ -53521,7 +53598,7 @@
         "authorLogin": "mikeapedia",
         "authorName": null,
         "createdAt": "2026-04-01T04:55:55Z",
-        "updatedAt": "2026-04-01T05:02:45Z",
+        "updatedAt": "2026-04-01T08:23:30Z",
         "headSha": "1cfb222f236144d0b33500829f5e3418db2c8135",
         "headRepo": "mikeapedia/parameter-golf-1"
       },

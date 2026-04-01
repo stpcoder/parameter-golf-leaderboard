@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-01T08:20:43.996Z",
+  "generatedAt": "2026-04-01T08:51:08.504Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1215,
+      "title": "12L rANS + LeakyReLU(0.95)² + Soft XSA (1.1601 BPB, non_record_16mb)",
+      "status": "open",
+      "updatedAt": "2026-04-01T08:33:57Z",
+      "headSha": "b53f5fb35b1ec2abb9389cd95b3969f4e75255ec",
+      "generatedAt": "2026-04-01T08:50:59.604Z",
+      "summary": "Adds per-tensor adaptive rANS quantization to squeeze a 12L Soft XSA model with LeakyReLU² and pruning into the 16MB budget.",
+      "tags": [
+        "compression",
+        "architecture",
+        "attention",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1215.json"
+    },
     {
       "prNumber": 1214,
       "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
@@ -53,13 +77,12 @@
       "prNumber": 1210,
       "title": "Non-record: Custom tokenizer with web-content symbols + pre-tokenized dataset",
       "status": "open",
-      "updatedAt": "2026-04-01T05:02:45Z",
+      "updatedAt": "2026-04-01T08:23:30Z",
       "headSha": "1cfb222f236144d0b33500829f5e3418db2c8135",
-      "generatedAt": "2026-04-01T05:19:18.052Z",
-      "summary": "Custom SentencePiece BPE keeps digits intact and treats frequent web symbols as single tokens with pre-tokenized FineWeb shards ready for training.",
+      "generatedAt": "2026-04-01T08:51:08.322Z",
+      "summary": "Trains a SentencePiece BPE with split_digits=false and ten web-pattern symbols, plus pre-tokenized shards ready for GPT training.",
       "tags": [
         "tokenization",
-        "compression",
         "non-record"
       ],
       "flags": {
