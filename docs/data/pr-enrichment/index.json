@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T07:19:47.098Z",
+  "generatedAt": "2026-04-01T07:50:28.898Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -657,17 +657,17 @@
     },
     {
       "prNumber": 1180,
-      "title": "SR-CM-P2Loss: 1.0577 bpb (~15.06MB)",
+      "title": "Loss function comparison (CE vs P2 variants) under parameter-golf constraints",
       "status": "open",
-      "updatedAt": "2026-03-31T12:57:15Z",
+      "updatedAt": "2026-04-01T07:24:17Z",
       "headSha": "827b05787c397d51b93381260cf3f5b80bc95c8c",
-      "generatedAt": "2026-03-31T13:13:00.457Z",
-      "summary": "Mixes P2 difficulty-aware loss with wallclock-aligned warmdown, residual+conv mixing, and a Muon/Adam split to keep GPT compression-friendly under ~15MB.",
+      "generatedAt": "2026-04-01T07:50:28.729Z",
+      "summary": "Parameter-golf GPT uses P2 loss, wallclock-aware warmdown, residual mixing/conv token mixer, and Muon+Adam split to co-design training and quantized compression.",
       "tags": [
-        "training-schedule",
         "optimizer",
         "architecture",
-        "quantization"
+        "training-schedule",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T07:19:40.845Z",
+  "generatedAt": "2026-04-01T07:50:21.290Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -8303,7 +8303,7 @@
       },
       "pr": {
         "number": 1180,
-        "title": "SR-CM-P2Loss: 1.0577 bpb (~15.06MB)",
+        "title": "Loss function comparison (CE vs P2 variants) under parameter-golf constraints",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -8311,7 +8311,7 @@
         "authorLogin": "estesryan",
         "authorName": null,
         "createdAt": "2026-03-31T11:32:19Z",
-        "updatedAt": "2026-03-31T12:57:15Z",
+        "updatedAt": "2026-04-01T07:24:17Z",
         "headSha": "827b05787c397d51b93381260cf3f5b80bc95c8c",
         "headRepo": "estesryan/parameter-golf"
       },
