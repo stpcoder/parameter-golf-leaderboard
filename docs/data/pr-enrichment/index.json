@@ -1,19 +1,43 @@
 {
-  "generatedAt": "2026-04-01T10:51:38.039Z",
+  "generatedAt": "2026-04-01T12:22:12.538Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1218,
+      "title": "Record: 4096-Vocab + 4.0-MLP-mult + 0.085-WD + Simplifications — val_bpb 1.09785 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-01T12:13:25Z",
+      "headSha": "4421a8d90c6e653bf36e2cbc59c08691d82f46af",
+      "generatedAt": "2026-04-01T12:21:57.940Z",
+      "summary": "Larger 4096-token vocab, wider MLP, and stronger weight decay combine with a simplified XSA-only backbone, coprime loader, and GPTQ+compression pipeline.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "tokenization",
+        "regularization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1218.json"
+    },
+    {
       "prNumber": 1217,
       "title": "Record: MuonEq-R + Context-Only SLOT + QK_GAIN=5.0 — val_bpb 1.1027 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-01T10:39:26Z",
+      "updatedAt": "2026-04-01T12:11:58Z",
       "headSha": "1b462047cba314e27afefd29c42463bb8ad06985",
-      "generatedAt": "2026-04-01T10:51:37.856Z",
-      "summary": "Combines MuonEq-R's row-normalized Newton-Schulz, higher QK_GAIN_INIT, and a causal context-only SLOT delta update during sliding-window eval.",
+      "generatedAt": "2026-04-01T12:22:05.675Z",
+      "summary": "Row-normalized MuonEq-R, QK_GAIN=5, and causal context-only SLOT refine sliding-window eval delta tuning.",
       "tags": [
-        "optimizer",
         "muon",
+        "optimizer",
         "evaluation"
       ],
       "flags": {
@@ -260,14 +284,15 @@
       "prNumber": 1203,
       "title": "Add non-record recurrent 0011+g2 R768 submission",
       "status": "open",
-      "updatedAt": "2026-03-31T22:23:29Z",
-      "headSha": "165ce0fc2708a2a3647380570e919875ab5a0104",
-      "generatedAt": "2026-03-31T22:46:30.240Z",
-      "summary": "Packages a stripped recurrent block_anchor 0,0,1,1 (A-A-C-C) candidate with grouped anchor gating and shared corrective cores for the non-record 16MB track.",
+      "updatedAt": "2026-04-01T12:04:12Z",
+      "headSha": "ec99c18a53561f83f32ce2630a934013bb2f2473",
+      "generatedAt": "2026-04-01T12:22:12.368Z",
+      "summary": "Deploys fixed block_anchor A-A-C-C recurrence with grouped corrective gating on an R768 H12/KV6 model for the 16MB non-record submission.",
       "tags": [
-        "non-record",
         "architecture",
-        "training-schedule"
+        "training-schedule",
+        "quantization",
+        "non-record"
       ],
       "flags": {
         "usesValOnly": false,

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-31T22:46:30.240Z",
+  "generatedAt": "2026-04-01T12:22:12.368Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1203,
     "title": "Add non-record recurrent 0011+g2 R768 submission",
     "state": "open",
-    "updatedAt": "2026-03-31T22:23:29Z",
-    "headSha": "165ce0fc2708a2a3647380570e919875ab5a0104",
+    "updatedAt": "2026-04-01T12:04:12Z",
+    "headSha": "ec99c18a53561f83f32ce2630a934013bb2f2473",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1203",
     "authorLogin": "raider99k"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Packages a stripped recurrent block_anchor 0,0,1,1 (A-A-C-C) candidate with grouped anchor gating and shared corrective cores for the non-record 16MB track.",
+    "summary": "Deploys fixed block_anchor A-A-C-C recurrence with grouped corrective gating on an R768 H12/KV6 model for the 16MB non-record submission.",
     "tags": [
-      "non-record",
       "architecture",
-      "training-schedule"
+      "training-schedule",
+      "quantization",
+      "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- fixed four-step block_anchor recurrence schedule",
-      "- grouped anchor gating with shared corrective core",
-      "- minimal trainer snapshot focused on submitted candidate"
+      "block_anchor A-A-C-C recurrence",
+      "grouped corrective anchor gating",
+      "R768 H12/KV6 geometry on H100"
     ]
   },
   "compatibility": {

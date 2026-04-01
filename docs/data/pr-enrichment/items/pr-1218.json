@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-01T12:21:57.940Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1218,
+    "title": "Record: 4096-Vocab + 4.0-MLP-mult + 0.085-WD + Simplifications — val_bpb 1.09785 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-04-01T12:13:25Z",
+    "headSha": "4421a8d90c6e653bf36e2cbc59c08691d82f46af",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1218",
+    "authorLogin": "clarkkev"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Larger 4096-token vocab, wider MLP, and stronger weight decay combine with a simplified XSA-only backbone, coprime loader, and GPTQ+compression pipeline.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "tokenization",
+      "regularization"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "High-WD wider MLP with XSA layers only",
+      "Coprime-stride data loader for diverse minibatches",
+      "GPTQ Hessian quant + byte-shuffle/Brotli compression"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
