@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-28T09:21:34.805Z",
+  "generatedAt": "2026-04-01T05:19:28.872Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1008,
-    "title": "Add non-record unlimited-compute 11L LeakyTTT 16h local RTX 4060 Ti run",
+    "title": "Non-record:  11L LeakyTTT 16hr | local RTX 4060 Ti |",
     "state": "open",
-    "updatedAt": "2026-03-28T08:55:24Z",
+    "updatedAt": "2026-04-01T04:58:40Z",
     "headSha": "8db0a8bd8d7d1e04ae962cc355b5898036d9c666",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1008",
     "authorLogin": "monkeyKingProgrammer"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer LeakyReLU^2 stack with Parallel Muon, XSA4, Partial RoPE, and layerwise LN scale, capped by legal score-first TTT + EMA for a 16MB nonrecord run.",
+    "summary": "11-layer LeakyReLU^2/Parallel Muon architecture adds XSA4, partial RoPE, and layerwise LN scale with EMA before legal score-first TTT on a single RTX 4060 Ti.",
     "tags": [
       "architecture",
-      "muon",
       "attention",
-      "training-schedule"
+      "training-schedule",
+      "sliding-window-eval"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU(0.5)^2 MLP + layerwise LN scale backbone",
-      "Parallel Muon with XSA4 and Partial RoPE(16/64) attention",
-      "Legal score-first TTT after EMA(0.997) on the int6-sliding export"
+      "LeakyReLU^2 MLP with Parallel Muon and XSA4",
+      "Partial RoPE plus layerwise LN scaling and EMA ahead of int6 export",
+      "Legal score-first TTT applied after sliding-window evaluation"
     ]
   },
   "compatibility": {

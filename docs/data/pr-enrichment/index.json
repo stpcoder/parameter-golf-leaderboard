@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-04-01T04:49:30.663Z",
+  "generatedAt": "2026-04-01T05:19:29.022Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1210,
+      "title": "Non-record: Custom tokenizer with web-content symbols + pre-tokenized dataset",
+      "status": "open",
+      "updatedAt": "2026-04-01T05:02:45Z",
+      "headSha": "1cfb222f236144d0b33500829f5e3418db2c8135",
+      "generatedAt": "2026-04-01T05:19:18.052Z",
+      "summary": "Custom SentencePiece BPE keeps digits intact and treats frequent web symbols as single tokens with pre-tokenized FineWeb shards ready for training.",
+      "tags": [
+        "tokenization",
+        "compression",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1210.json"
+    },
     {
       "prNumber": 1208,
       "title": "Nightcrawler — 1.176bpb   10mb ",
@@ -3308,14 +3331,14 @@
       "prNumber": 1009,
       "title": "12L INT4 bQAT + Value Embeddings — val_bpb 1.1588",
       "status": "open",
-      "updatedAt": "2026-03-28T08:33:54Z",
-      "headSha": "0f506eb7978afe523e62ec5e398c9025b2812083",
-      "generatedAt": "2026-03-28T09:21:26.755Z",
-      "summary": "Combines INT4 bQAT MLP with EMA/QAT fixes, U-Net skips, and late-layer value embeddings to reinject token identity into V.",
+      "updatedAt": "2026-04-01T05:13:48Z",
+      "headSha": "f25c703a2de658e499ac46f3d21a90b99850b0b1",
+      "generatedAt": "2026-04-01T05:19:23.031Z",
+      "summary": "INT4 bQAT with EMA-reset, U-Net skips, XSA, and value embeddings that reinject token identity into V layers 10-11 boost per-step quality in 12L model.",
       "tags": [
-        "architecture",
         "quantization",
-        "attention"
+        "architecture",
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -3329,17 +3352,17 @@
     },
     {
       "prNumber": 1008,
-      "title": "Add non-record unlimited-compute 11L LeakyTTT 16h local RTX 4060 Ti run",
+      "title": "Non-record:  11L LeakyTTT 16hr | local RTX 4060 Ti |",
       "status": "open",
-      "updatedAt": "2026-03-28T08:55:24Z",
+      "updatedAt": "2026-04-01T04:58:40Z",
       "headSha": "8db0a8bd8d7d1e04ae962cc355b5898036d9c666",
-      "generatedAt": "2026-03-28T09:21:34.805Z",
-      "summary": "11-layer LeakyReLU^2 stack with Parallel Muon, XSA4, Partial RoPE, and layerwise LN scale, capped by legal score-first TTT + EMA for a 16MB nonrecord run.",
+      "generatedAt": "2026-04-01T05:19:28.872Z",
+      "summary": "11-layer LeakyReLU^2/Parallel Muon architecture adds XSA4, partial RoPE, and layerwise LN scale with EMA before legal score-first TTT on a single RTX 4060 Ti.",
       "tags": [
         "architecture",
-        "muon",
         "attention",
-        "training-schedule"
+        "training-schedule",
+        "sliding-window-eval"
       ],
       "flags": {
         "usesValOnly": false,

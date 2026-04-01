@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-01T05:19:18.052Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1210,
+    "title": "Non-record: Custom tokenizer with web-content symbols + pre-tokenized dataset",
+    "state": "open",
+    "updatedAt": "2026-04-01T05:02:45Z",
+    "headSha": "1cfb222f236144d0b33500829f5e3418db2c8135",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1210",
+    "authorLogin": "mikeapedia"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Custom SentencePiece BPE keeps digits intact and treats frequent web symbols as single tokens with pre-tokenized FineWeb shards ready for training.",
+    "tags": [
+      "tokenization",
+      "compression",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "split_digits=false SentencePiece BPE",
+      "user_defined_symbols for URLs/TLDs",
+      "pre-tokenized FineWeb shards on HuggingFace"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

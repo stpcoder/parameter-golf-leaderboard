@@ -1,36 +1,37 @@
 {
-  "generatedAt": "2026-03-28T09:21:26.755Z",
+  "generatedAt": "2026-04-01T05:19:23.031Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1009,
     "title": "12L INT4 bQAT + Value Embeddings — val_bpb 1.1588",
     "state": "open",
-    "updatedAt": "2026-03-28T08:33:54Z",
-    "headSha": "0f506eb7978afe523e62ec5e398c9025b2812083",
+    "updatedAt": "2026-04-01T05:13:48Z",
+    "headSha": "f25c703a2de658e499ac46f3d21a90b99850b0b1",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1009",
     "authorLogin": "SoHarshh"
   },
   "inputs": {
-    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/README.md"
+      "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/README.md",
+      "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/README.md"
     ],
-    "submissionCount": 1
+    "submissionCount": 2
   },
   "output": {
-    "summary": "Combines INT4 bQAT MLP with EMA/QAT fixes, U-Net skips, and late-layer value embeddings to reinject token identity into V.",
+    "summary": "INT4 bQAT with EMA-reset, U-Net skips, XSA, and value embeddings that reinject token identity into V layers 10-11 boost per-step quality in 12L model.",
     "tags": [
-      "architecture",
       "quantization",
-      "attention"
+      "architecture",
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "INT4 MLP+bigram QAT with EMA reset and LeakyReLU²",
-      "U-Net skips plus Legal TTT schedule for training",
-      "Value embeddings add shared token identity to V in layers 10-11"
+      "INT4 bQAT with EMA averaging and late QAT reset",
+      "Value embeddings added to V vectors in layers 10-11",
+      "U-Net skips plus XSA(last 4) with RoPE16 and resid_mix"
     ]
   },
   "compatibility": {

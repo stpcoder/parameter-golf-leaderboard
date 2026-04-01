@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T04:49:15.910Z",
+  "generatedAt": "2026-04-01T05:19:11.041Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -25480,7 +25480,7 @@
       },
       "pr": {
         "number": 1008,
-        "title": "Add non-record unlimited-compute 11L LeakyTTT 16h local RTX 4060 Ti run",
+        "title": "Non-record:  11L LeakyTTT 16hr | local RTX 4060 Ti |",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -25488,7 +25488,7 @@
         "authorLogin": "monkeyKingProgrammer",
         "authorName": null,
         "createdAt": "2026-03-28T07:44:02Z",
-        "updatedAt": "2026-03-28T08:55:24Z",
+        "updatedAt": "2026-04-01T04:58:40Z",
         "headSha": "8db0a8bd8d7d1e04ae962cc355b5898036d9c666",
         "headRepo": "monkeyKingProgrammer/parameter-golf"
       },
@@ -27259,8 +27259,8 @@
         "authorLogin": "SoHarshh",
         "authorName": null,
         "createdAt": "2026-03-28T08:06:32Z",
-        "updatedAt": "2026-03-28T08:33:54Z",
-        "headSha": "0f506eb7978afe523e62ec5e398c9025b2812083",
+        "updatedAt": "2026-04-01T05:13:48Z",
+        "headSha": "f25c703a2de658e499ac46f3d21a90b99850b0b1",
         "headRepo": "SoHarshh/parameter-golf"
       },
       "links": {
@@ -28733,6 +28733,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/ee5f6b33ef219fa01357bafe78fde10a02393f05/records/track_10min_16mb/2026-03-19_Vocab8192_SlidingWindow_SelectiveQuant/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/ee5f6b33ef219fa01357bafe78fde10a02393f05/records/track_10min_16mb/2026-03-19_Vocab8192_SlidingWindow_SelectiveQuant",
         "pr": "https://github.com/openai/parameter-golf/pull/92",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-03-28_13L_INT4_attn_failed",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-03-28_13L_INT4_attn_failed",
+        "folderPath": "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed",
+        "submissionPath": "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train_gpt.py"
+      },
+      "submission": {
+        "author": "Harsh Soni",
+        "githubId": "SoHarshH",
+        "name": "Non-record: 13L INT4 attn — slow steps, worse BPB",
+        "blurb": "Experiment: 13-layer model with INT4 attention (INT6→INT4 to free space for extra layer). Result: 172.8ms/step vs 148ms for 12L VE, only 3485 steps in 10 min. ttt_bpb=1.1640, worse than 12L INT4 VE (1.1574). Conclusion: extra layer does not compensate for step overhead — consistent with community finding that 12L+ at seq2048 is worse than 11L. INT4 attn penalty is too high.",
+        "date": "2026-03-28"
+      },
+      "metrics": {
+        "valBpb": 1.164,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15137448,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1009,
+        "title": "12L INT4 bQAT + Value Embeddings — val_bpb 1.1588",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1009",
+        "authorLogin": "SoHarshh",
+        "authorName": null,
+        "createdAt": "2026-03-28T08:06:32Z",
+        "updatedAt": "2026-04-01T05:13:48Z",
+        "headSha": "f25c703a2de658e499ac46f3d21a90b99850b0b1",
+        "headRepo": "SoHarshh/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f25c703a2de658e499ac46f3d21a90b99850b0b1/records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f25c703a2de658e499ac46f3d21a90b99850b0b1/records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f25c703a2de658e499ac46f3d21a90b99850b0b1/records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f25c703a2de658e499ac46f3d21a90b99850b0b1/records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f25c703a2de658e499ac46f3d21a90b99850b0b1/records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed",
+        "pr": "https://github.com/openai/parameter-golf/pull/1009",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -53224,6 +53301,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/dc2fad1ee7137c9b4b627e74e70f547a0e19bece/records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/dc2fad1ee7137c9b4b627e74e70f547a0e19bece/records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT",
         "pr": "https://github.com/openai/parameter-golf/pull/1181",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-03-31_CustomTokenizer_SplitDigits_WebSymbols",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-03-31_CustomTokenizer_SplitDigits_WebSymbols",
+        "folderPath": "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols",
+        "submissionPath": "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/train_gpt.py"
+      },
+      "submission": {
+        "author": "Mikeapedia",
+        "githubId": "mikeapedia",
+        "name": "Custom Tokenizer: split_digits=false + Web Symbols",
+        "blurb": "Custom SentencePiece BPE with web-content user_defined_symbols and split_digits=false. Untested - seeking H100 access to evaluate.",
+        "date": "2026-03-31"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1210,
+        "title": "Non-record: Custom tokenizer with web-content symbols + pre-tokenized dataset",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1210",
+        "authorLogin": "mikeapedia",
+        "authorName": null,
+        "createdAt": "2026-04-01T04:55:55Z",
+        "updatedAt": "2026-04-01T05:02:45Z",
+        "headSha": "1cfb222f236144d0b33500829f5e3418db2c8135",
+        "headRepo": "mikeapedia/parameter-golf-1"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/1cfb222f236144d0b33500829f5e3418db2c8135/records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/1cfb222f236144d0b33500829f5e3418db2c8135/records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/1cfb222f236144d0b33500829f5e3418db2c8135/records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/1cfb222f236144d0b33500829f5e3418db2c8135/records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/1cfb222f236144d0b33500829f5e3418db2c8135/records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols",
+        "pr": "https://github.com/openai/parameter-golf/pull/1210",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
