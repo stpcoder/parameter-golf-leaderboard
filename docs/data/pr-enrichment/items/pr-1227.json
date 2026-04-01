@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-01T19:54:51.264Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1227,
+    "title": "Non-record: 28 Experiments in 5 Days — What Works, What Fails, and Why Small-Scale Tests Lie",
+    "state": "open",
+    "updatedAt": "2026-04-01T19:25:43Z",
+    "headSha": "4ba466313f2ccadf47b07abf8bcacda4581135c7",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1227",
+    "authorLogin": "himanshudongre"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "28 controlled experiments expose scale deception while confirming QAT-as-regularizer, distillation, Dirichlet CTW n-gram, and eval-time mixing for the 16MB LM.",
+    "tags": [
+      "quantization",
+      "evaluation",
+      "architecture",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "local-vs-GPU ablation to expose scale bias",
+      "QAT-as-regularizer outperforming float32",
+      "Dirichlet CTW n-gram with entropy-adaptive eval mixing"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

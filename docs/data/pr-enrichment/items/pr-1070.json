@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-29T11:59:01.232Z",
+  "generatedAt": "2026-04-01T19:54:55.641Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1070,
     "title": "Non-record: Aweb Ultimate — 1.1190 BPB (10min 8×H100, independent PR #549 reproduction)",
     "state": "open",
-    "updatedAt": "2026-03-29T11:31:02Z",
-    "headSha": "ba57dd8d712b551b494190b3aacd17ab40af17ca",
+    "updatedAt": "2026-04-01T19:54:03Z",
+    "headSha": "f66e8ede6cb3aa7b4f479241828d0b33b455f8bd",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1070",
     "authorLogin": "manfromnowhere143"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Recreates SOTA stack: 11L 512d LeakyReLU² net with late XSA, partial RoPE, LN scale, EMA+SWA, Parallel Muon, GPTQ-lite quant, and Legal Score-First TTT.",
+    "summary": "Reproduced PR #549 SOTA stack with 11L 512d LeakyReLU² Transformer, XSA+Partial RoPE, EMA+SWA, Parallel Muon, GPTQ-lite quant, and TTT evaluation.",
     "tags": [
       "architecture",
-      "attention",
       "optimizer",
-      "quantization"
+      "quantization",
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- 11L 512d LeakyReLU² transformer with late-layer XSA, partial RoPE, and LN scaling",
-      "- Parallel Muon optimizer with EMA/SWA and Legal Score-First TTT training",
-      "- GPTQ-lite int6/int8 quantization plus compression for compact artifact"
+      "11-layer 512d LeakyReLU² Transformer with XSA on last tiers and Partial RoPE",
+      "Parallel Muon optimizer coupled with EMA+SWA and Legal Score-First TTT schedule",
+      "GPTQ-lite int6/int8 quantization plus LZMA compression for the 16MB artifact"
     ]
   },
   "compatibility": {

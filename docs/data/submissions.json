@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T19:24:21.183Z",
+  "generatedAt": "2026-04-01T19:54:43.535Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -14631,8 +14631,8 @@
         "authorLogin": "manfromnowhere143",
         "authorName": null,
         "createdAt": "2026-03-29T11:31:02Z",
-        "updatedAt": "2026-03-29T11:31:02Z",
-        "headSha": "ba57dd8d712b551b494190b3aacd17ab40af17ca",
+        "updatedAt": "2026-04-01T19:54:03Z",
+        "headSha": "f66e8ede6cb3aa7b4f479241828d0b33b455f8bd",
         "headRepo": "manfromnowhere143/parameter-golf"
       },
       "links": {
@@ -53686,6 +53686,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/381ece0b8f6f876cdea2b10e3e411d12d9ea8010/records/track_10min_16mb/2026-03-XX_DepthRecurrence_eb1386/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/381ece0b8f6f876cdea2b10e3e411d12d9ea8010/records/track_10min_16mb/2026-03-XX_DepthRecurrence_eb1386",
         "pr": "https://github.com/openai/parameter-golf/pull/449",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-02_28_Experiments_5_Days_Scale_Deception",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-02_28_Experiments_5_Days_Scale_Deception",
+        "folderPath": "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception",
+        "submissionPath": "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/train_gpt.py"
+      },
+      "submission": {
+        "author": "Himanshu Dongre",
+        "githubId": "himanshudongre",
+        "name": "28 Experiments in 5 Days — What Works, What Fails, and Why Small-Scale Tests Lie",
+        "blurb": null,
+        "date": "2026-04-02"
+      },
+      "metrics": {
+        "valBpb": null,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1227,
+        "title": "Non-record: 28 Experiments in 5 Days — What Works, What Fails, and Why Small-Scale Tests Lie",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1227",
+        "authorLogin": "himanshudongre",
+        "authorName": null,
+        "createdAt": "2026-04-01T19:25:43Z",
+        "updatedAt": "2026-04-01T19:25:43Z",
+        "headSha": "4ba466313f2ccadf47b07abf8bcacda4581135c7",
+        "headRepo": "himanshudongre/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/4ba466313f2ccadf47b07abf8bcacda4581135c7/records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/4ba466313f2ccadf47b07abf8bcacda4581135c7/records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/4ba466313f2ccadf47b07abf8bcacda4581135c7/records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/4ba466313f2ccadf47b07abf8bcacda4581135c7/records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/4ba466313f2ccadf47b07abf8bcacda4581135c7/records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception",
+        "pr": "https://github.com/openai/parameter-golf/pull/1227",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
