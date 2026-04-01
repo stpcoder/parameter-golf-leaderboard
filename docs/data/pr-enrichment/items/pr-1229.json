@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-01T20:24:45.795Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1229,
+    "title": "Record: Scored-Position SLOT + Per-Sample Delta + GPTQ (val_bpb: 0.9300)",
+    "state": "open",
+    "updatedAt": "2026-04-01T19:56:29Z",
+    "headSha": "c0d3bbed1feb145b786a128abaa472da534b1b01",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1229",
+    "authorLogin": "resouer"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Aligns SLOT delta training to eval scoring strides with per-sample state/logit adaptations, cosine LR, and GPTQ calibrated on real data.",
+    "tags": [
+      "quantization",
+      "training-schedule",
+      "attention"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Scored-position SLOT mask on evaluation strides",
+      "Per-sample delta + logit bias adaptation",
+      "GPTQ calibration on real data with cosine LR"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

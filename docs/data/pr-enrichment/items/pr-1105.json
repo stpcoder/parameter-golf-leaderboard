@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-01T18:24:30.391Z",
+  "generatedAt": "2026-04-01T20:24:53.166Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1105,
     "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty— 1.1052 BPB (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-01T18:08:20Z",
+    "updatedAt": "2026-04-01T19:55:33Z",
     "headSha": "30c83c773b8629e45f09a17fefcf33afef6df08b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1105",
     "authorLogin": "abaybektursun"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Fuses Triton/CUTLASS MLP kernels, widens MLP to 3.5×, and pairs Hessian-guided mixed int5/int6 quantization with Brotli to stay within 16MB.",
+    "summary": "Custom Triton/CUTLASS fused MLP kernels with precomputed act_grad, wider MLP, Hessian-guided mixed int5/int6 quant, fast n-gram tilt, Brotli.",
     "tags": [
       "architecture",
       "quantization",
-      "compression"
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Fused Triton TMA forward + CUTLASS EVT backward MLP kernels",
-      "MLP 3.5× widening guided by SVD capacity analysis",
-      "Hessian-ranked mixed int5/int6 GPTQ with Brotli-11 headroom"
+      "Triton TMA forward + CUTLASS EVT backward fusion storing act_grad",
+      "Hessian-trace driven int5/int6 allocation to fit wider MLP under 16MB",
+      "GPU-resident causal n-gram tilt with subword certainty overrides"
     ]
   },
   "compatibility": {

@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-04-01T19:54:55.797Z",
+  "generatedAt": "2026-04-01T20:24:53.334Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1229,
+      "title": "Record: Scored-Position SLOT + Per-Sample Delta + GPTQ (val_bpb: 0.9300)",
+      "status": "open",
+      "updatedAt": "2026-04-01T19:56:29Z",
+      "headSha": "c0d3bbed1feb145b786a128abaa472da534b1b01",
+      "generatedAt": "2026-04-01T20:24:45.795Z",
+      "summary": "Aligns SLOT delta training to eval scoring strides with per-sample state/logit adaptations, cosine LR, and GPTQ calibrated on real data.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "attention"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1229.json"
+    },
     {
       "prNumber": 1227,
       "title": "Non-record: 28 Experiments in 5 Days — What Works, What Fails, and Why Small-Scale Tests Lie",
@@ -2077,14 +2100,14 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty— 1.1052 BPB (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-01T18:08:20Z",
+      "updatedAt": "2026-04-01T19:55:33Z",
       "headSha": "30c83c773b8629e45f09a17fefcf33afef6df08b",
-      "generatedAt": "2026-04-01T18:24:30.391Z",
-      "summary": "Fuses Triton/CUTLASS MLP kernels, widens MLP to 3.5×, and pairs Hessian-guided mixed int5/int6 quantization with Brotli to stay within 16MB.",
+      "generatedAt": "2026-04-01T20:24:53.166Z",
+      "summary": "Custom Triton/CUTLASS fused MLP kernels with precomputed act_grad, wider MLP, Hessian-guided mixed int5/int6 quant, fast n-gram tilt, Brotli.",
       "tags": [
         "architecture",
         "quantization",
-        "compression"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
