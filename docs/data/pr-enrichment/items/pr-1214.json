@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-01T06:49:38.952Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1214,
+    "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
+    "state": "open",
+    "updatedAt": "2026-04-01T06:38:50Z",
+    "headSha": "3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1214",
+    "authorLogin": "gersh"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Found that decoder layers 6-8 converge to near-perfect QO symmetry and introduced learnable SymMix plus post-training symmetrization to recycle bits.",
+    "tags": [
+      "architecture",
+      "compression",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Layer-specific QO symmetry analysis",
+      "Learnable SymMix blending W and W^T",
+      "Post-training symmetry enforcement before quantization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

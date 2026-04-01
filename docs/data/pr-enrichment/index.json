@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-04-01T05:49:31.127Z",
+  "generatedAt": "2026-04-01T06:49:39.135Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1214,
+      "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
+      "status": "open",
+      "updatedAt": "2026-04-01T06:38:50Z",
+      "headSha": "3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905",
+      "generatedAt": "2026-04-01T06:49:38.952Z",
+      "summary": "Found that decoder layers 6-8 converge to near-perfect QO symmetry and introduced learnable SymMix plus post-training symmetrization to recycle bits.",
+      "tags": [
+        "architecture",
+        "compression",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1214.json"
+    },
     {
       "prNumber": 1212,
       "title": "Record: Window Attention + Mixed Seq_Len Training, bpb 1.1108, eval at 6144 (5-seed mean)",

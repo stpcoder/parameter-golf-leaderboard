@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T06:19:20.934Z",
+  "generatedAt": "2026-04-01T06:49:31.454Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -29734,6 +29734,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/dafde7df4176e836ee936969bc91037ec6142044/records/track_non_record_16mb/2026-03-28_S4DLin_SSM_Hybrid_Research",
         "pr": "https://github.com/openai/parameter-golf/pull/1013",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-01_Emergent_QO_Symmetry_SymMix",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-01_Emergent_QO_Symmetry_SymMix",
+        "folderPath": "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix",
+        "submissionPath": "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train_gpt.py"
+      },
+      "submission": {
+        "author": "Gershon Bialer",
+        "githubId": "gersh",
+        "name": "Emergent Weight Symmetry in QO Projections + Learnable SymMix",
+        "blurb": "Layers 6-8 O projections converge to exact symmetry (W=W^T, sym_energy=0.999998) during training. SymMix (W + tanh(beta)*W^T with learnable beta) is loss-neutral. Research finding on weight structure in parameter-constrained transformers.",
+        "date": "2026-04-01"
+      },
+      "metrics": {
+        "valBpb": 1.1688,
+        "valLoss": 1.9734,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1214,
+        "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1214",
+        "authorLogin": "gersh",
+        "authorName": null,
+        "createdAt": "2026-04-01T06:30:36Z",
+        "updatedAt": "2026-04-01T06:38:50Z",
+        "headSha": "3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905",
+        "headRepo": "gersh/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905/records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905/records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905/records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905/records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/3f45f230a29eaf68fd2f4fdb5d9f7a8a93774905/records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix",
+        "pr": "https://github.com/openai/parameter-golf/pull/1214",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
