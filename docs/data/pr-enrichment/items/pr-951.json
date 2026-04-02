@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-27T12:45:53.752Z",
+  "generatedAt": "2026-04-02T19:04:42.584Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 951,
     "title": "16L XSA-all + INT4 MLP QAT + GPTQ + EMA + Partial RoPE + 30ep Cosine TTT",
     "state": "open",
-    "updatedAt": "2026-03-27T12:39:35Z",
-    "headSha": "4fb6969fc3fda29a6e0d846e0f39515799a3b004",
+    "updatedAt": "2026-04-02T18:40:02Z",
+    "headSha": "1a17ce188d6649ab0dce592042fcf4cc21a6ee08",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/951",
     "authorLogin": "Bharath-970"
   },
@@ -24,25 +24,25 @@
     "submissionCount": 8
   },
   "output": {
-    "summary": "Shares KV state across 16 layers while pairing INT4 nibble MLP QAT, GPTQ-lite, EMA, partial RoPE, hash embeddings, and 30-epoch cosine TTT.",
+    "summary": "Shares KV sets across all 16 layers while combining INT4/INT6 quantization, GPTQ-lite clipping, Partial RoPE, hash embeddings, EMA, Muon/WD, and 30-epoch val-token TTT.",
     "tags": [
+      "val-only",
       "quantization",
-      "optimizer",
-      "training-schedule",
-      "evaluation"
+      "architecture",
+      "optimizer"
     ],
-    "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "usesValOnly": true,
+    "valOnlyReasoning": "Per submission, the model runs 30-epoch cosine-schedule TTT on validation tokens after training.",
     "techniques": [
-      "XSA-all shared KV across 16 layers",
-      "INT4 nibble MLP QAT + INT6 attention with GPTQ-lite",
-      "30-epoch cosine TTT on val tokens plus sliding-window eval"
+      "XSA-all KV sharing across 16 layers",
+      "INT4/INT6 QAT plus GPTQ-lite clipping with EMA",
+      "30-epoch cosine TTT on val tokens with sliding-window eval"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": false,
-    "finalUsesValOnly": false,
-    "valOnlyMatchesCollector": true
+    "aiUsesValOnly": true,
+    "finalUsesValOnly": true,
+    "valOnlyMatchesCollector": false
   }
 }

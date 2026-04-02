@@ -1,35 +1,37 @@
 {
-  "generatedAt": "2026-04-02T18:33:53.282Z",
+  "generatedAt": "2026-04-02T19:03:56.723Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
   "skipped": [
     {
+      "pr": 1262,
+      "reason": "no-record-submission-json"
+    },
+    {
       "stage": "pull-request-readme",
-      "pr": 323,
-      "submissionPath": "records/track_non_record_16mb/motif_sb1_rs2_g018/submission.json",
+      "pr": 951,
+      "submissionPath": "records/track_10min_16mb/2026-03-25_14L_XSA6_GPTQ_EMA_PartialRoPE_TTT/submission.json",
       "reason": "missing-or-unreadable-readme"
     },
     {
-      "pr": 1222,
-      "reason": "no-record-submission-json"
-    },
-    {
-      "pr": 386,
-      "reason": "no-record-submission-json"
+      "stage": "pull-request-readme",
+      "pr": 951,
+      "submissionPath": "records/track_10min_16mb/2026-03-25_16L_XSAall_GPTQ_EMA_PartialRoPE_TTT/submission.json",
+      "reason": "missing-or-unreadable-readme"
     }
   ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-04-02T17:31:27Z",
+    "cutoffUpdatedAt": "2026-04-02T18:05:30Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 6,
-    "prsReused": 194,
+    "prsRefreshed": 5,
+    "prsReused": 195,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 1206,
+    "cacheEntries": 1208,
     "retryWindowRetained": false
   }
 }

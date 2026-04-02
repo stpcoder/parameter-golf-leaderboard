@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-01T22:55:45.286Z",
+  "generatedAt": "2026-04-02T19:04:34.414Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1235,
     "title": "Non-record: 21L PRP experiment",
     "state": "open",
-    "updatedAt": "2026-04-01T22:32:48Z",
-    "headSha": "8cf6640b5a06013564132234c6f0f8ada0993ee2",
+    "updatedAt": "2026-04-02T19:00:26Z",
+    "headSha": "0685600c9b56cb7b5d43639ae651a29d2520fd5a",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1235",
     "authorLogin": "maksblu"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "21L model uses PRP SwiGLU controls, shared attention pairings, and 8K tokenizer with 2048 context plus longer cosine LR schedule.",
+    "summary": "Deeper 21L model uses 8k vocab, 2048 context, PRP-based SwiGLU MLPs, and pairwise shared attention with shared-aware int8 export plus novel cosine schedule.",
     "tags": [
       "architecture",
-      "attention",
       "training-schedule",
-      "tokenization"
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Pairwise shared attention modules reduce unique stacks",
-      "PRP SwiGLU MLPs train low-rank controls with dedicated optimizer splits",
-      "8K SentencePiece + 2048 context with multi-phase cosine LR schedule"
+      "PRP-controlled SwiGLU MLP with LoRA and scalars",
+      "Pairwise-shared attention modules with per-block norms",
+      "Three-phase cosine warmup/flash drop/tail schedule"
     ]
   },
   "compatibility": {

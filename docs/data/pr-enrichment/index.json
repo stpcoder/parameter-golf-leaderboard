@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-04-02T18:34:40.842Z",
+  "generatedAt": "2026-04-02T19:04:47.454Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1261,
+      "title": "Add non-record 1xH100 budget seq2048 run (val_bpb 1.3029)",
+      "status": "open",
+      "updatedAt": "2026-04-02T19:00:00Z",
+      "headSha": "e26466f597bd56012c38eae3c2af5f704677177e",
+      "generatedAt": "2026-04-02T19:04:30.628Z",
+      "summary": "Budget-focused single-H100 run uses seq len 2048 with tuned matrix/scalar/tied-embed LR and warmdown to stay within a 600s cap.",
+      "tags": [
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1261.json"
+    },
     {
       "prNumber": 1260,
       "title": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ — val_bpb 1.0929 (3-seed mean)",
@@ -496,15 +518,14 @@
       "prNumber": 1235,
       "title": "Non-record: 21L PRP experiment",
       "status": "open",
-      "updatedAt": "2026-04-01T22:32:48Z",
-      "headSha": "8cf6640b5a06013564132234c6f0f8ada0993ee2",
-      "generatedAt": "2026-04-01T22:55:45.286Z",
-      "summary": "21L model uses PRP SwiGLU controls, shared attention pairings, and 8K tokenizer with 2048 context plus longer cosine LR schedule.",
+      "updatedAt": "2026-04-02T19:00:26Z",
+      "headSha": "0685600c9b56cb7b5d43639ae651a29d2520fd5a",
+      "generatedAt": "2026-04-02T19:04:34.414Z",
+      "summary": "Deeper 21L model uses 8k vocab, 2048 context, PRP-based SwiGLU MLPs, and pairwise shared attention with shared-aware int8 export plus novel cosine schedule.",
       "tags": [
         "architecture",
-        "attention",
         "training-schedule",
-        "tokenization"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -5205,23 +5226,23 @@
       "prNumber": 951,
       "title": "16L XSA-all + INT4 MLP QAT + GPTQ + EMA + Partial RoPE + 30ep Cosine TTT",
       "status": "open",
-      "updatedAt": "2026-03-27T12:39:35Z",
-      "headSha": "4fb6969fc3fda29a6e0d846e0f39515799a3b004",
-      "generatedAt": "2026-03-27T12:45:53.752Z",
-      "summary": "Shares KV state across 16 layers while pairing INT4 nibble MLP QAT, GPTQ-lite, EMA, partial RoPE, hash embeddings, and 30-epoch cosine TTT.",
+      "updatedAt": "2026-04-02T18:40:02Z",
+      "headSha": "1a17ce188d6649ab0dce592042fcf4cc21a6ee08",
+      "generatedAt": "2026-04-02T19:04:42.584Z",
+      "summary": "Shares KV sets across all 16 layers while combining INT4/INT6 quantization, GPTQ-lite clipping, Partial RoPE, hash embeddings, EMA, Muon/WD, and 30-epoch val-token TTT.",
       "tags": [
+        "val-only",
         "quantization",
-        "optimizer",
-        "training-schedule",
-        "evaluation"
+        "architecture",
+        "optimizer"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-951.json"
     },
@@ -6706,16 +6727,16 @@
     },
     {
       "prNumber": 855,
-      "title": "Non-Record: First Viable 3-Loop Recurrence — Birkhoff + Output-LN + Timestep Scaling (val_bpb=1.2659, 14 eff layers from 6 unique blocks)",
+      "title": "Non-Record: Depth Recurrence Research — 20 Ablation Runs, 8 Techniques, 5 Series (best val_bpb=1.2624, 14 eff layers from 6 unique blocks)",
       "status": "open",
-      "updatedAt": "2026-03-26T14:41:29Z",
-      "headSha": "a3a861317bac7e9b6c3a7226c80cac8495a32774",
-      "generatedAt": "2026-03-26T15:11:35.291Z",
-      "summary": "Three-loop recurrence with prelude/coda uses Output-LN, Birkhoff mixing, and capped timestep scales to tame quantization blowup across shared blocks.",
+      "updatedAt": "2026-04-02T18:41:49Z",
+      "headSha": "5e31104282abe6b33a237d02d1e62e63cb0589b9",
+      "generatedAt": "2026-04-02T19:04:47.333Z",
+      "summary": "Stabilize 3-loop depth recurrence with Output-LN, Birkhoff-constrained mixing, FiLM/timestep scaling, and sinusoidal depth encoding under 16MB quantization.",
       "tags": [
         "architecture",
-        "regularization",
         "quantization",
+        "training-schedule",
         "non-record"
       ],
       "flags": {
