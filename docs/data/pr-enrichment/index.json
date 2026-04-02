@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T14:32:28.340Z",
+  "generatedAt": "2026-04-02T15:03:17.382Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -170,14 +170,14 @@
       "prNumber": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
       "status": "open",
-      "updatedAt": "2026-04-02T13:46:00Z",
-      "headSha": "e7b1283d56111ae80ed3a34e855314d669174b40",
-      "generatedAt": "2026-04-02T14:01:56.918Z",
-      "summary": "10-layer GPT uses BitNet ternary QAT with relu², NeoMuon, Partial RoPE, and base-3 packing to fit ~73M params under 16MB.",
+      "updatedAt": "2026-04-02T14:37:28Z",
+      "headSha": "dd773c8120b712b6302dd3e4fa99df3e08c9d09f",
+      "generatedAt": "2026-04-02T15:03:10.073Z",
+      "summary": "Trinity-inspired GPT uses BitNet ternary QAT, relu² MLP, Partial RoPE and NeoMuon tweaks to fit ~71M params under 16MB.",
       "tags": [
         "quantization",
         "architecture",
-        "training-schedule",
+        "optimizer",
         "compression"
       ],
       "flags": {
@@ -2612,15 +2612,15 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T13:39:46Z",
-      "headSha": "fbb9b372ee90ebf21c9ab969f964669a82c3bdb0",
-      "generatedAt": "2026-04-02T14:02:04.604Z",
-      "summary": "Uses fused Triton TMA + CUTLASS EVT MLP kernels plus fast causal n-gram tilt as sparse auxiliary memory, with all-int6 quantization and Brotli compression.",
+      "updatedAt": "2026-04-02T14:38:11Z",
+      "headSha": "e5eb594ae834eceac208d7b3c103a4a43b5ef7f0",
+      "generatedAt": "2026-04-02T15:03:17.225Z",
+      "summary": "Fuses Triton TMA forward + CUTLASS EVT backward MLP with all-int6 GPTQ, SP4608 vocab, and a fast sparse causal n-gram tilt as sparse auxiliary memory.",
       "tags": [
         "architecture",
         "quantization",
-        "compression",
-        "training-schedule"
+        "evaluation",
+        "tokenization"
       ],
       "flags": {
         "usesValOnly": false,
