@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T19:04:47.454Z",
+  "generatedAt": "2026-04-02T19:34:24.661Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -29,10 +29,10 @@
       "prNumber": 1260,
       "title": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ — val_bpb 1.0929 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T17:35:11Z",
+      "updatedAt": "2026-04-02T19:18:26Z",
       "headSha": "b955b6df7187cb89859d84c1055b86644ec793c7",
-      "generatedAt": "2026-04-02T18:34:25.850Z",
-      "summary": "Adds MuonEq-R row-normalization, shared-layer depth recurrence, and mixed int5/int6 GPTQ on the high-WD 4096-vocab stack.",
+      "generatedAt": "2026-04-02T19:34:24.477Z",
+      "summary": "Stacks MuonEq-R optimizer, depth recurrence on layers 4-5, and Hessian-ranked mixed int5/int6 GPTQ atop the high-WD 4096-vocab base.",
       "tags": [
         "optimizer",
         "architecture",
