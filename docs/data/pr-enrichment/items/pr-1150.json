@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-31T08:12:26.381Z",
+  "generatedAt": "2026-04-02T13:31:51.955Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1150,
     "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
-    "state": "open",
-    "updatedAt": "2026-03-31T08:03:08Z",
+    "state": "closed",
+    "updatedAt": "2026-04-02T13:28:51Z",
     "headSha": "f24a386e23346fa5ebc87d82da146e87b2d96331",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1150",
     "authorLogin": "sahiee-dev"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds Legal TTT plus SLOT per-batch residual deltas optimized through the final logits layer atop the PR #549 Parallel Muon baseline.",
+    "summary": "Legal TTT baseline keeps its architecture while adding SLOT’s per-batch residual logit delta optimized at eval time.",
     "tags": [
       "evaluation",
       "optimizer"
@@ -27,9 +27,8 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Legal TTT + SLOT residual delta adaptation during evaluation",
-      "Optimizes logits-only delta via five AdamW steps per batch",
-      "Keeps PR #549 GQA/LeakyReLU Parallel Muon backbone unchanged"
+      "Chunked Legal TTT SGD scoring",
+      "SLOT residual delta tuned via AdamW on logits"
     ]
   },
   "compatibility": {

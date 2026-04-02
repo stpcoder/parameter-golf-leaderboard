@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T13:01:23.788Z",
+  "generatedAt": "2026-04-02T13:31:45.328Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -12651,7 +12651,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-03-30_SLOT_SGD_Final",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -12699,14 +12699,14 @@
       "pr": {
         "number": 1150,
         "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1150",
         "authorLogin": "sahiee-dev",
         "authorName": null,
         "createdAt": "2026-03-30T20:14:28Z",
-        "updatedAt": "2026-03-31T08:03:08Z",
+        "updatedAt": "2026-04-02T13:28:51Z",
         "headSha": "f24a386e23346fa5ebc87d82da146e87b2d96331",
         "headRepo": "sahiee-dev/parameter-golf"
       },
