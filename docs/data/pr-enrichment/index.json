@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-02T21:34:58.183Z",
+  "generatedAt": "2026-04-02T22:05:17.311Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1268,
+      "title": "Non-record: Mamba3 Hybrid + GPTQ Long Context (1.1875 BPB)",
+      "status": "open",
+      "updatedAt": "2026-04-02T22:02:43Z",
+      "headSha": "73737ebbb6c12db84d05bc9efa7b65c497d24548",
+      "generatedAt": "2026-04-02T22:05:07.303Z",
+      "summary": "Mamba3 hybrid uses eight SSM blocks and two GQA attention layers with U-Net skips, 16K context, EMA smoothing, and Hessian GPTQ for long context models.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1268.json"
+    },
     {
       "prNumber": 1263,
       "title": "Record: 11L LeakyReLU² + XSA-all + QK-Gain 4.0 + Full GPTQ + SLOT — val_bpb 0.9354 (3-seed mean)",
@@ -1634,12 +1658,12 @@
       "prNumber": 1176,
       "title": "Record: QK-Gain 4.0 + XSA-11 + Muon-TTT + SLOT — val_bpb 1.0914 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-03-31T18:53:45Z",
+      "updatedAt": "2026-04-02T21:52:24Z",
       "headSha": "cc1ad3b313c61aa3af41b44c655d57570d67cf6b",
-      "generatedAt": "2026-03-31T19:15:12.463Z",
-      "summary": "Extends the 11-layer Muon baseline by boosting Q/K gain, enabling XSA on every layer, turning on Muon-TTT, and tuning SLOT deltas per batch at eval time.",
+      "generatedAt": "2026-04-02T22:05:12.190Z",
+      "summary": "Melds QK_GAIN_INIT=4.0, XSA on all 11 layers, Muon score-first TTT, and SLOT eval-time delta adaptation atop PR #1135.",
       "tags": [
-        "muon",
+        "architecture",
         "attention",
         "evaluation"
       ],
@@ -2769,14 +2793,13 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T17:54:33Z",
-      "headSha": "dc03ff599c71aac6ef153c6b4d96b78d78307cce",
-      "generatedAt": "2026-04-02T18:34:36.663Z",
-      "summary": "Combines fused Triton+CUTLASS MLP kernels, all-int6 GPTQ on a widened MLP, and a fast causal n-gram tilt acting as sparse auxiliary memory.",
+      "updatedAt": "2026-04-02T21:36:45Z",
+      "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
+      "generatedAt": "2026-04-02T22:05:17.151Z",
+      "summary": "Combines Triton/CUTLASS fused MLP kernels, a wider sp4608 stack with all-int6 GPTQ, and a fast causal n-gram tilt as sparse auxiliary memory.",
       "tags": [
-        "quantization",
         "architecture",
-        "training-schedule",
+        "quantization",
         "evaluation"
       ],
       "flags": {

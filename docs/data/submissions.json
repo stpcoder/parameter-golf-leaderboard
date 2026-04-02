@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T21:34:50.620Z",
+  "generatedAt": "2026-04-02T22:04:55.910Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -10390,16 +10390,16 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-30T00:03:19Z",
-        "updatedAt": "2026-04-02T17:54:33Z",
-        "headSha": "dc03ff599c71aac6ef153c6b4d96b78d78307cce",
+        "updatedAt": "2026-04-02T21:36:45Z",
+        "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
         "headRepo": "abaybektursun/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f734fda870378774645a10e60d92377c18fd5dde/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f734fda870378774645a10e60d92377c18fd5dde/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f734fda870378774645a10e60d92377c18fd5dde/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f734fda870378774645a10e60d92377c18fd5dde/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f734fda870378774645a10e60d92377c18fd5dde/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
         "pr": "https://github.com/openai/parameter-golf/pull/1105",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -34209,6 +34209,83 @@
       }
     },
     {
+      "id": "record-records-track_non_record_16mb-2026-04-02_Mamba3_Long_Context_GPTQ",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-02_Mamba3_Long_Context_GPTQ",
+        "folderPath": "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ",
+        "submissionPath": "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_gpt.py"
+      },
+      "submission": {
+        "author": "Sam Quiring",
+        "githubId": "samquiring",
+        "name": "Mamba3-GPTQ-Long-Context",
+        "blurb": "10L Mamba3 hybrid (8 Mamba3 SISO + 2 GQA attention) with U-Net skip connections, EMA, full Hessian GPTQ int6, and LZMA compression. Trains at seq_len=16384 exploiting Mamba's linear-time long context scaling.",
+        "date": "2026-04-02T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.18752767,
+        "valLoss": 2.00510046,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15510226,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1268,
+        "title": "Non-record: Mamba3 Hybrid + GPTQ Long Context (1.1875 BPB)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1268",
+        "authorLogin": "samquiring",
+        "authorName": null,
+        "createdAt": "2026-04-02T22:02:43Z",
+        "updatedAt": "2026-04-02T22:02:43Z",
+        "headSha": "73737ebbb6c12db84d05bc9efa7b65c497d24548",
+        "headRepo": "samquiring/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/73737ebbb6c12db84d05bc9efa7b65c497d24548/records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/73737ebbb6c12db84d05bc9efa7b65c497d24548/records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/73737ebbb6c12db84d05bc9efa7b65c497d24548/records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/73737ebbb6c12db84d05bc9efa7b65c497d24548/records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/73737ebbb6c12db84d05bc9efa7b65c497d24548/records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ",
+        "pr": "https://github.com/openai/parameter-golf/pull/1268",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-20_TopRecipe10L_MuonWD_OvertoneInit_PeytonTolbert",
       "source": "pull_request",
       "status": "open",
@@ -56524,7 +56601,7 @@
         "authorLogin": "bigbag",
         "authorName": null,
         "createdAt": "2026-03-31T09:45:23Z",
-        "updatedAt": "2026-03-31T18:53:45Z",
+        "updatedAt": "2026-04-02T21:52:24Z",
         "headSha": "cc1ad3b313c61aa3af41b44c655d57570d67cf6b",
         "headRepo": "bigbag/parameter-golf"
       },

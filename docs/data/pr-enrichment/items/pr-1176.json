@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-31T19:15:12.463Z",
+  "generatedAt": "2026-04-02T22:05:12.190Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1176,
     "title": "Record: QK-Gain 4.0 + XSA-11 + Muon-TTT + SLOT — val_bpb 1.0914 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-03-31T18:53:45Z",
+    "updatedAt": "2026-04-02T21:52:24Z",
     "headSha": "cc1ad3b313c61aa3af41b44c655d57570d67cf6b",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1176",
     "authorLogin": "bigbag"
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Extends the 11-layer Muon baseline by boosting Q/K gain, enabling XSA on every layer, turning on Muon-TTT, and tuning SLOT deltas per batch at eval time.",
+    "summary": "Melds QK_GAIN_INIT=4.0, XSA on all 11 layers, Muon score-first TTT, and SLOT eval-time delta adaptation atop PR #1135.",
     "tags": [
-      "muon",
+      "architecture",
       "attention",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "QK gain 4.0 with XSA across all 11 layers",
-      "Score-first Muon TTT enabled",
-      "SLOT per-batch delta optimization during evaluation"
+      "Q/K gain initialized to 4.0 across layers",
+      "XSA everywhere plus Muon score-first TTT during eval",
+      "SLOT per-batch delta optimized via AdamW"
     ]
   },
   "compatibility": {

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-02T22:05:07.303Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1268,
+    "title": "Non-record: Mamba3 Hybrid + GPTQ Long Context (1.1875 BPB)",
+    "state": "open",
+    "updatedAt": "2026-04-02T22:02:43Z",
+    "headSha": "73737ebbb6c12db84d05bc9efa7b65c497d24548",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1268",
+    "authorLogin": "samquiring"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Mamba3 hybrid uses eight SSM blocks and two GQA attention layers with U-Net skips, 16K context, EMA smoothing, and Hessian GPTQ for long context models.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Mamba3+GQA U-Net hybrid layout",
+      "16K seq len training with EMA smoothing",
+      "Full Hessian GPTQ int6 + LZMA"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
