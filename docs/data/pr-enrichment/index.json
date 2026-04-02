@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-04-02T17:34:13.385Z",
+  "generatedAt": "2026-04-02T18:34:40.842Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1260,
+      "title": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ — val_bpb 1.0929 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-02T17:35:11Z",
+      "headSha": "b955b6df7187cb89859d84c1055b86644ec793c7",
+      "generatedAt": "2026-04-02T18:34:25.850Z",
+      "summary": "Adds MuonEq-R row-normalization, shared-layer depth recurrence, and mixed int5/int6 GPTQ on the high-WD 4096-vocab stack.",
+      "tags": [
+        "optimizer",
+        "architecture",
+        "quantization"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1260.json"
+    },
     {
       "prNumber": 1259,
       "title": "Non-record: KNN Hidden State Retrieval — Scale Deception from Weak to Strong Models (8xH100)",
@@ -239,14 +262,15 @@
       "prNumber": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
       "status": "open",
-      "updatedAt": "2026-04-02T16:45:08Z",
-      "headSha": "ab62ee3c45fa7f35325f0d1b12f62bbae71db600",
-      "generatedAt": "2026-04-02T17:04:05.946Z",
-      "summary": "BitNet b1.58 ternary QAT transformer packs {-1,0,+1} weights in base-3, pairs relu² MLP4x U-Net skips with Partial RoPE, and uses NeoMuon+EMA.",
+      "updatedAt": "2026-04-02T18:05:30Z",
+      "headSha": "f790c3a698493105b76ecebcde2b3e080521aff8",
+      "generatedAt": "2026-04-02T18:34:29.956Z",
+      "summary": "Trinity Ternary GPT pairs BitNet ternary QAT with relu²/NeoMuon U-Net layers, using Partial RoPE and base-3 packing to squeeze ~70M params under 16MB.",
       "tags": [
         "quantization",
         "architecture",
-        "optimizer"
+        "optimizer",
+        "compression"
       ],
       "flags": {
         "usesValOnly": false,
@@ -2680,13 +2704,14 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T17:31:27Z",
-      "headSha": "97ee24f27d4b6b8cb909622ce2464f310a7e47e1",
-      "generatedAt": "2026-04-02T17:34:13.228Z",
-      "summary": "Fuses Triton TMA and CUTLASS EVT MLP kernels, ups MLP to 3.5× int6 GPTQ, and adds fast causal n-gram tilt as sparse memory for repeats.",
+      "updatedAt": "2026-04-02T17:54:33Z",
+      "headSha": "dc03ff599c71aac6ef153c6b4d96b78d78307cce",
+      "generatedAt": "2026-04-02T18:34:36.663Z",
+      "summary": "Combines fused Triton+CUTLASS MLP kernels, all-int6 GPTQ on a widened MLP, and a fast causal n-gram tilt acting as sparse auxiliary memory.",
       "tags": [
-        "architecture",
         "quantization",
+        "architecture",
+        "training-schedule",
         "evaluation"
       ],
       "flags": {
@@ -14968,12 +14993,13 @@
       "prNumber": 323,
       "title": "Minimal recurrent motif (sb1 rs2 g0.18) – non-record submission",
       "status": "open",
-      "updatedAt": "2026-03-30T03:23:32Z",
-      "headSha": "d5d9e65a85bda8f64cd7b0f03b1d3171953bad01",
-      "generatedAt": "2026-03-30T03:33:11.688Z",
-      "summary": "Compact shared-block motif reuses a single operator with two-step recurrence and soft gating to build capacity without extra depth.",
+      "updatedAt": "2026-04-02T17:59:36Z",
+      "headSha": "38bc1c56fcf98d1d760504064fd6e52236857dfb",
+      "generatedAt": "2026-04-02T18:34:40.794Z",
+      "summary": "Reuses a single recurring shared block with soft-gated recurrence to build larger motifs without added depth for tight 16MB compression.",
       "tags": [
         "architecture",
+        "depth-width",
         "compression",
         "non-record"
       ],

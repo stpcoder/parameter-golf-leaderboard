@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T17:33:58.375Z",
+  "generatedAt": "2026-04-02T18:34:19.271Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -9794,6 +9794,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-04-02_MuonEqR_DepthRecurrence_MixedQuant",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-02_MuonEqR_DepthRecurrence_MixedQuant",
+        "folderPath": "records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant",
+        "submissionPath": "records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/train_gpt.py"
+      },
+      "submission": {
+        "author": "dexhunter",
+        "githubId": "dexhunter",
+        "name": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ",
+        "blurb": "Adds MuonEq-R optimizer (row-norm before NS5), depth recurrence (layers 4,5 repeated with shared MLP), and mixed int5/int6 GPTQ to PR #1218's 4096-vocab high-WD stack. 3-seed mean 1.0929 BPB, all seeds under 16MB.",
+        "date": "2026-04-02"
+      },
+      "metrics": {
+        "valBpb": 1.0929,
+        "valLoss": null,
+        "preQuantValBpb": 1.0992,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15981324,
+        "bytesCode": 21084,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1260,
+        "title": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ — val_bpb 1.0929 (3-seed mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1260",
+        "authorLogin": "dexhunter",
+        "authorName": null,
+        "createdAt": "2026-04-02T17:35:11Z",
+        "updatedAt": "2026-04-02T17:35:11Z",
+        "headSha": "b955b6df7187cb89859d84c1055b86644ec793c7",
+        "headRepo": "dexhunter/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/b955b6df7187cb89859d84c1055b86644ec793c7/records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/b955b6df7187cb89859d84c1055b86644ec793c7/records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/b955b6df7187cb89859d84c1055b86644ec793c7/records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/b955b6df7187cb89859d84c1055b86644ec793c7/records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/b955b6df7187cb89859d84c1055b86644ec793c7/records/track_10min_16mb/2026-04-02_MuonEqR_DepthRecurrence_MixedQuant",
+        "pr": "https://github.com/openai/parameter-golf/pull/1260",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_non_record_16mb-2026-04-01_11L_PR940_20kSteps_ScalingStudy_LegalTTT",
       "source": "pull_request",
       "status": "open",
@@ -10236,16 +10313,16 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-30T00:03:19Z",
-        "updatedAt": "2026-04-02T17:31:27Z",
-        "headSha": "97ee24f27d4b6b8cb909622ce2464f310a7e47e1",
+        "updatedAt": "2026-04-02T17:54:33Z",
+        "headSha": "dc03ff599c71aac6ef153c6b4d96b78d78307cce",
         "headRepo": "abaybektursun/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/97ee24f27d4b6b8cb909622ce2464f310a7e47e1/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/97ee24f27d4b6b8cb909622ce2464f310a7e47e1/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/97ee24f27d4b6b8cb909622ce2464f310a7e47e1/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/97ee24f27d4b6b8cb909622ce2464f310a7e47e1/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/97ee24f27d4b6b8cb909622ce2464f310a7e47e1/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/dc03ff599c71aac6ef153c6b4d96b78d78307cce/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
         "pr": "https://github.com/openai/parameter-golf/pull/1105",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -50667,16 +50744,16 @@
         "authorLogin": "deborahnelson8788726",
         "authorName": null,
         "createdAt": "2026-04-02T02:44:32Z",
-        "updatedAt": "2026-04-02T16:45:08Z",
-        "headSha": "ab62ee3c45fa7f35325f0d1b12f62bbae71db600",
+        "updatedAt": "2026-04-02T18:05:30Z",
+        "headSha": "f790c3a698493105b76ecebcde2b3e080521aff8",
         "headRepo": "deborahnelson8788726/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon",
         "pr": "https://github.com/openai/parameter-golf/pull/1246",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -53516,8 +53593,8 @@
         "authorLogin": "megnat05-tmm",
         "authorName": null,
         "createdAt": "2026-03-21T07:23:54Z",
-        "updatedAt": "2026-03-30T03:23:32Z",
-        "headSha": "d5d9e65a85bda8f64cd7b0f03b1d3171953bad01",
+        "updatedAt": "2026-04-02T17:59:36Z",
+        "headSha": "38bc1c56fcf98d1d760504064fd6e52236857dfb",
         "headRepo": "megnat05-tmm/parameter-golf"
       },
       "links": {
@@ -55215,16 +55292,16 @@
         "authorLogin": "deborahnelson8788726",
         "authorName": null,
         "createdAt": "2026-04-02T02:44:32Z",
-        "updatedAt": "2026-04-02T16:45:08Z",
-        "headSha": "ab62ee3c45fa7f35325f0d1b12f62bbae71db600",
+        "updatedAt": "2026-04-02T18:05:30Z",
+        "headSha": "f790c3a698493105b76ecebcde2b3e080521aff8",
         "headRepo": "deborahnelson8788726/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/ab62ee3c45fa7f35325f0d1b12f62bbae71db600/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f790c3a698493105b76ecebcde2b3e080521aff8/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
         "pr": "https://github.com/openai/parameter-golf/pull/1246",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

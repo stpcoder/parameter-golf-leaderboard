@@ -1,20 +1,35 @@
 {
-  "generatedAt": "2026-04-02T17:33:34.288Z",
+  "generatedAt": "2026-04-02T18:33:53.282Z",
   "sourceRepo": "openai/parameter-golf",
   "siteRoot": null,
   "tokenConfigured": true,
-  "skipped": [],
+  "skipped": [
+    {
+      "stage": "pull-request-readme",
+      "pr": 323,
+      "submissionPath": "records/track_non_record_16mb/motif_sb1_rs2_g018/submission.json",
+      "reason": "missing-or-unreadable-readme"
+    },
+    {
+      "pr": 1222,
+      "reason": "no-record-submission-json"
+    },
+    {
+      "pr": 386,
+      "reason": "no-record-submission-json"
+    }
+  ],
   "errors": [],
   "incremental": {
     "mode": "incremental",
-    "cutoffUpdatedAt": "2026-04-02T16:55:13Z",
+    "cutoffUpdatedAt": "2026-04-02T17:31:27Z",
     "pagesScanned": 2,
     "prsScanned": 200,
-    "prsRefreshed": 3,
-    "prsReused": 197,
+    "prsRefreshed": 6,
+    "prsReused": 194,
     "stoppedEarly": true,
     "refreshFailures": 0,
-    "cacheEntries": 1205,
+    "cacheEntries": 1206,
     "retryWindowRetained": false
   }
 }

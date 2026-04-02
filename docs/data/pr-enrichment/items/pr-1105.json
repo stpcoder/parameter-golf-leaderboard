@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-02T17:34:13.228Z",
+  "generatedAt": "2026-04-02T18:34:36.663Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1105,
     "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-02T17:31:27Z",
-    "headSha": "97ee24f27d4b6b8cb909622ce2464f310a7e47e1",
+    "updatedAt": "2026-04-02T17:54:33Z",
+    "headSha": "dc03ff599c71aac6ef153c6b4d96b78d78307cce",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1105",
     "authorLogin": "abaybektursun"
   },
@@ -19,18 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Fuses Triton TMA and CUTLASS EVT MLP kernels, ups MLP to 3.5× int6 GPTQ, and adds fast causal n-gram tilt as sparse memory for repeats.",
+    "summary": "Combines fused Triton+CUTLASS MLP kernels, all-int6 GPTQ on a widened MLP, and a fast causal n-gram tilt acting as sparse auxiliary memory.",
     "tags": [
-      "architecture",
       "quantization",
+      "architecture",
+      "training-schedule",
       "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Fused Triton TMA forward + CUTLASS EVT backward MLP kernels",
-      "All-int6 GPTQ paired with wider (3.5×) MLP",
-      "Fast causal n-gram tilt acting as sparse auxiliary memory"
+      "Fused Triton TMA forward + CUTLASS EVT backward MLP kernels with branch-free gradients",
+      "All-int6 GPTQ calibration on 3.5× MLP with larger sp4608 vocab and LR floor",
+      "Fast causal n-gram tilt as sparse auxiliary memory plus subword certainty overrides"
     ]
   },
   "compatibility": {
