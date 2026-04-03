@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-02T21:05:05.231Z",
+  "generatedAt": "2026-04-03T13:09:49.251Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1218,
     "title": "Record: 4096-Vocab + 4.0-MLP-mult + 0.085-WD + Simplifications — val_bpb 1.09785 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-02T20:36:16Z",
+    "updatedAt": "2026-04-03T12:56:32Z",
     "headSha": "4421a8d90c6e653bf36e2cbc59c08691d82f46af",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1218",
     "authorLogin": "clarkkev"
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Larger regularized Transformer with 4× MLP, 4096-token vocab, co-prime batching, and Muon + GPTQ Hessian quantization plus compression tweaks.",
+    "summary": "Expands vocab/MLP width with stronger weight decay, reuses Muon+DDP simplicity, and adds GPTQ plus coprime loading to keep a bigger model compressible.",
     "tags": [
       "architecture",
       "quantization",
       "tokenization",
-      "compression"
+      "regularization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "4096-vocab tokenizer with coprime-stride data loader",
-      "Regularized wider model (mlp_mult=4) with stronger WD and sigmoid-gated UNet skips",
-      "Muon training with GPTQ Hessian-aware quantization plus byte-shuffle/brotli compression"
+      "4096-tokenizer + 4× MLP with 0.085 WD to keep weights compressible",
+      "Coprime-stride data loader plus GPTQ Hessian-aware quantization",
+      "Simplified Muon+DDP stack with sigmoid-gated UNet skips and full-layer XSA"
     ]
   },
   "compatibility": {

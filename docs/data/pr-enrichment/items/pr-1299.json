@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-03T13:09:33.142Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1299,
+    "title": "Non-record: 1.8184 BPB Single-step Recurrent Transformer with Q-LoRA (Windows 3090)",
+    "state": "open",
+    "updatedAt": "2026-04-03T13:03:38Z",
+    "headSha": "e1b49a4f0bd73b21d9eb1a0e8dfdbb8984dd3ad5",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1299",
+    "authorLogin": "Ribin545"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-01_EliteUTv22p8_12StepRecurrence_Windows3090/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Single-step recurrent tied-block transformer with per-step Q-LoRA adapters and wallclock-aware optimizer routing on Windows RTX 3090.",
+    "tags": [
+      "architecture",
+      "optimizer",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Single-step tied-block recurrence",
+      "Per-step LoRA adapters+control embeddings",
+      "Wallclock-aware optimizer routing"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

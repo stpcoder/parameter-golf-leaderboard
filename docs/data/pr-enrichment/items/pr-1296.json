@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T11:39:04.500Z",
+  "generatedAt": "2026-04-03T13:09:37.374Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1296,
-    "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0940 (3-seed mean)",
+    "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0926 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-03T11:26:19Z",
-    "headSha": "938d6ae7ee145d4a9fb49aafc6c51bdede285faf",
+    "updatedAt": "2026-04-03T12:59:39Z",
+    "headSha": "d2388de6b1bc543ae90eef63d1f40dd2f3eeb89a",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1296",
     "authorLogin": "aryanbhosale"
   },
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines 4096-vocab widening, depth recurrence, MuonEq-R, and full int6 GPTQ with Brotli packing to fit the 16MB constraint.",
+    "summary": "SP4096 tokenization with larger MLP, depth recurrence on layers 4/5, MuonEq-R optimizer, and full GPTQ int6/Brotli compression.",
     "tags": [
       "architecture",
       "optimizer",
-      "quantization",
-      "compression"
+      "quantization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Depth recurrence on layers 4-5 to virtualize 13-layer capacity",
-      "MuonEq-R with row-normalized gradients and higher weight decay for quant-friendly weights",
-      "Full GPTQ int6 plus Brotli-11/byte-shuffle compression"
+      "SP4096 vocab + 4× MLP width",
+      "Depth recurrence activating layers 4 and 5",
+      "MuonEq-R plus full GPTQ int6 with Brotli wrapper"
     ]
   },
   "compatibility": {

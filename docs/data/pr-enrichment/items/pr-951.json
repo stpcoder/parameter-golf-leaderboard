@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T08:38:49.096Z",
+  "generatedAt": "2026-04-03T13:09:55.832Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 951,
     "title": "16L XSA-all + INT4 MLP QAT + GPTQ + EMA + Partial RoPE + 30ep Cosine TTT",
     "state": "open",
-    "updatedAt": "2026-04-03T08:35:20Z",
-    "headSha": "6580d33ef0e7350860802a3b84048bfd198af728",
+    "updatedAt": "2026-04-03T12:57:05Z",
+    "headSha": "990ccad71125bc014ce3980268c0ffc6aafb6229",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/951",
     "authorLogin": "Bharath-970"
   },
@@ -24,25 +24,25 @@
     "submissionCount": 8
   },
   "output": {
-    "summary": "16-layer XSA-all with shared KV, nibble-packed int4 MLP QAT+GPTQ-lite, hash embeddings, Partial RoPE, EMA/SmearGate, and 30-epoch cosine TTT on val tokens.",
+    "summary": "Uses XSA-all KV sharing, INT4/QAT+GPTQ-lite quantization, EMA, and partial RoPE before 30-epoch cosine TTT and sliding-window eval.",
     "tags": [
-      "val-only",
       "quantization",
       "architecture",
-      "optimizer"
+      "optimizer",
+      "training-schedule"
     ],
-    "usesValOnly": true,
-    "valOnlyReasoning": "Per submission notes, a 30-epoch cosine-scheduled AdamW TTT pass fine-tunes the full model on validation tokens.",
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
     "techniques": [
-      "Shared KV XSA-all with Partial RoPE, SmearGate, and hash embeddings",
-      "Int4 nibble-packed MLP QAT plus GPTQ-lite with EMA",
-      "30-epoch cosine-scheduled AdamW val TTT"
+      "Shared KV via XSA-all for compact 16-layer stack",
+      "INT4 nibble QAT plus GPTQ-lite quantization with EMA and partial RoPE",
+      "30-epoch cosine TTT on val tokens with stride-32 sliding eval"
     ]
   },
   "compatibility": {
     "collectorUsesValOnly": false,
-    "aiUsesValOnly": true,
-    "finalUsesValOnly": true,
-    "valOnlyMatchesCollector": false
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
   }
 }

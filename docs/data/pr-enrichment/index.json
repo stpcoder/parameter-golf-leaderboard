@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-03T12:39:42.885Z",
+  "generatedAt": "2026-04-03T13:09:55.970Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1299,
+      "title": "Non-record: 1.8184 BPB Single-step Recurrent Transformer with Q-LoRA (Windows 3090)",
+      "status": "open",
+      "updatedAt": "2026-04-03T13:03:38Z",
+      "headSha": "e1b49a4f0bd73b21d9eb1a0e8dfdbb8984dd3ad5",
+      "generatedAt": "2026-04-03T13:09:33.142Z",
+      "summary": "Single-step recurrent tied-block transformer with per-step Q-LoRA adapters and wallclock-aware optimizer routing on Windows RTX 3090.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1299.json"
+    },
     {
       "prNumber": 1298,
       "title": "Record: Polar Express NS + SLOT + MuonEq-R + XSA-all — 1.1043 BPB (3-seed mean)",
@@ -29,17 +53,16 @@
     },
     {
       "prNumber": 1296,
-      "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0940 (3-seed mean)",
+      "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0926 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T11:26:19Z",
-      "headSha": "938d6ae7ee145d4a9fb49aafc6c51bdede285faf",
-      "generatedAt": "2026-04-03T11:39:04.500Z",
-      "summary": "Combines 4096-vocab widening, depth recurrence, MuonEq-R, and full int6 GPTQ with Brotli packing to fit the 16MB constraint.",
+      "updatedAt": "2026-04-03T12:59:39Z",
+      "headSha": "d2388de6b1bc543ae90eef63d1f40dd2f3eeb89a",
+      "generatedAt": "2026-04-03T13:09:37.374Z",
+      "summary": "SP4096 tokenization with larger MLP, depth recurrence on layers 4/5, MuonEq-R optimizer, and full GPTQ int6/Brotli compression.",
       "tags": [
         "architecture",
         "optimizer",
-        "quantization",
-        "compression"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -382,14 +405,13 @@
       "prNumber": 1278,
       "title": "WIP: Depth Recurrence via Weight-Shared Transformer Blocks",
       "status": "open",
-      "updatedAt": "2026-04-03T02:32:12Z",
-      "headSha": "89c725bbad7b7b83de75db8b98852cde8e603db1",
-      "generatedAt": "2026-04-03T02:36:50.050Z",
-      "summary": "Weight-shared transformer recursion reuses a few blocks across iterations with layer-conditioned gating and recurrent skips on the PR#1019 stack.",
+      "updatedAt": "2026-04-03T13:05:27Z",
+      "headSha": "8ad372f3da340112668962caf0fc8eae55a6ae44",
+      "generatedAt": "2026-04-03T13:09:42.709Z",
+      "summary": "Shares transformer block weights across multiple iterations with per-iteration gating and U-Net skip control to realize deep recurrence under 16MB.",
       "tags": [
         "architecture",
-        "quantization",
-        "regularization"
+        "depth-width"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1453,15 +1475,15 @@
       "prNumber": 1218,
       "title": "Record: 4096-Vocab + 4.0-MLP-mult + 0.085-WD + Simplifications — val_bpb 1.09785 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T20:36:16Z",
+      "updatedAt": "2026-04-03T12:56:32Z",
       "headSha": "4421a8d90c6e653bf36e2cbc59c08691d82f46af",
-      "generatedAt": "2026-04-02T21:05:05.231Z",
-      "summary": "Larger regularized Transformer with 4× MLP, 4096-token vocab, co-prime batching, and Muon + GPTQ Hessian quantization plus compression tweaks.",
+      "generatedAt": "2026-04-03T13:09:49.251Z",
+      "summary": "Expands vocab/MLP width with stronger weight decay, reuses Muon+DDP simplicity, and adds GPTQ plus coprime loading to keep a bigger model compressible.",
       "tags": [
         "architecture",
         "quantization",
         "tokenization",
-        "compression"
+        "regularization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -1776,30 +1798,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-1201.json"
-    },
-    {
-      "prNumber": 1199,
-      "title": "Non-record: Elite UT v22.8 12-step recurrence (Windows 3090)",
-      "status": "open",
-      "updatedAt": "2026-03-31T20:49:01Z",
-      "headSha": "332eed9fdba5cb1ad08004af6e874418b18ee766",
-      "generatedAt": "2026-03-31T21:16:07.006Z",
-      "summary": "Windows-focused Elite Universal Transformer v22.8 pairs 12-step recurrence, strict pre-norm, Polar Express Muon optimizer, and fused Triton kernels.",
-      "tags": [
-        "architecture",
-        "optimizer",
-        "muon",
-        "non-record"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-1199.json"
     },
     {
       "prNumber": 1198,
@@ -5789,23 +5787,23 @@
       "prNumber": 951,
       "title": "16L XSA-all + INT4 MLP QAT + GPTQ + EMA + Partial RoPE + 30ep Cosine TTT",
       "status": "open",
-      "updatedAt": "2026-04-03T08:35:20Z",
-      "headSha": "6580d33ef0e7350860802a3b84048bfd198af728",
-      "generatedAt": "2026-04-03T08:38:49.096Z",
-      "summary": "16-layer XSA-all with shared KV, nibble-packed int4 MLP QAT+GPTQ-lite, hash embeddings, Partial RoPE, EMA/SmearGate, and 30-epoch cosine TTT on val tokens.",
+      "updatedAt": "2026-04-03T12:57:05Z",
+      "headSha": "990ccad71125bc014ce3980268c0ffc6aafb6229",
+      "generatedAt": "2026-04-03T13:09:55.832Z",
+      "summary": "Uses XSA-all KV sharing, INT4/QAT+GPTQ-lite quantization, EMA, and partial RoPE before 30-epoch cosine TTT and sliding-window eval.",
       "tags": [
-        "val-only",
         "quantization",
         "architecture",
-        "optimizer"
+        "optimizer",
+        "training-schedule"
       ],
       "flags": {
-        "usesValOnly": true,
-        "usesValOnlyAi": true,
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": false
+        "valOnlyMatchesCollector": true
       },
       "file": "items/pr-951.json"
     },
