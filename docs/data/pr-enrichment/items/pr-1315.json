@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T22:13:01.294Z",
+  "generatedAt": "2026-04-03T23:43:35.196Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1315,
     "title": "[non-record track] BankLinear: cross-layer shared weight bank",
     "state": "open",
-    "updatedAt": "2026-04-03T22:01:35Z",
+    "updatedAt": "2026-04-03T23:17:15Z",
     "headSha": "2e8b9633af7846ecb6d69d56fa8166cbd58c2287",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1315",
     "authorLogin": "andrewmouldon"
@@ -19,19 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "BankLinear composes each layer's QKV weights from a shared learnable bank with channel-wise modulation, replacing per-layer storage with compositional synthesis.",
+    "summary": "BankLinear synthesizes QKV weights via mixtures over a shared learned/random basis bank with channel-wise modulation so saved params enlarge the MLP.",
     "tags": [
       "architecture",
-      "compression",
       "attention",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "shared bank of basis matrices",
-      "channel-wise modulation",
-      "compositional QKV weight synthesis"
+      "Shared weight bank with learned and random basis",
+      "Channel-wise mixing for per-output adaptation",
+      "Reinvested savings into larger MLP"
     ]
   },
   "compatibility": {
