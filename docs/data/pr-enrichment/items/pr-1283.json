@@ -1,33 +1,25 @@
 {
-  "generatedAt": "2026-04-03T04:38:19.472Z",
+  "generatedAt": "2026-04-03T17:41:46.126Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1283,
     "title": "Ouroboros — 1.13727008 val_bpb (seed 444)",
-    "state": "open",
-    "updatedAt": "2026-04-03T04:25:12Z",
+    "state": "closed",
+    "updatedAt": "2026-04-03T17:34:08Z",
     "headSha": "af4700c9db57621ddc706f8094ff4f3419b96155",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1283",
     "authorLogin": "newjordan"
   },
   "inputs": {
-    "hash": "46ae9d5c638acb54f25e34c2f1e9d9878a9d54c1ded759bea20e8f187edaf212",
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/README.md",
-      "records/track_10min_16mb/2026-03-29_Bandit_ClownCar_X_CubricNgram9_8xH100/README.md",
-      "records/track_10min_16mb/2026-03-27_Medusa_FLA_DeltaNet_NaiveInt6_8xH100/README.md",
-      "records/track_10min_16mb/2026-03-30_Rascal_8xH100/README.md",
-      "records/track_10min_16mb/2026-04-03_Ouroboros_8xH100/README.md",
-      "records/track_10min_16mb/2026-04-01_Nightcrawler_8xH100/README.md",
-      "records/track_10min_16mb/2026-03-30_Crawler_Leg3_8xH100/README.md",
-      "records/track_10min_16mb/2026-04-02_Bandit_Wagon_X_9F_8xH100/README.md",
-      "records/track_10min_16mb/2026-03-26_BWING_FullPort_entropy_shift_fixedmults_8xH100/README.md"
+      "records/track_10min_16mb/2026-04-03_Ouroboros_8xH100/README.md"
     ],
-    "submissionCount": 9
+    "submissionCount": 1
   },
   "output": {
-    "summary": "Ouroboros stacks loop-aware GPTQ, brotli compression, higher QK gain, and 2-loop recurrence on a 9-flat crawler platform.",
+    "summary": "Stacks a 9-flat crawler with a 2-loop shared refinement block and loop-aware GPTQ plus brotli compression and bumped QK gain.",
     "tags": [
       "architecture",
       "quantization",
@@ -35,11 +27,11 @@
       "training-schedule"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Standard training run; no val-only regime.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Loop-aware GPTQ recalibrates crawler loops",
-      "Brotli replaces zstd to reclaim artifact headroom",
-      "Higher QK gain plus 2-loop cadence on 9-flat crawler"
+      "2-loop crawler with shared recurrent block",
+      "Loop-aware GPTQ Hessian recalibration for quant",
+      "Brotli compression with high QK gain init"
     ]
   },
   "compatibility": {

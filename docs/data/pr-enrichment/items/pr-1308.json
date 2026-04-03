@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-04-03T17:41:27.335Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1308,
+    "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
+    "state": "open",
+    "updatedAt": "2026-04-03T17:41:06Z",
+    "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
+    "authorLogin": "newjordan"
+  },
+  "inputs": {
+    "hash": "46ae9d5c638acb54f25e34c2f1e9d9878a9d54c1ded759bea20e8f187edaf212",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-29_Bandit_ClownCar_X_CubricNgram9_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-27_Medusa_FLA_DeltaNet_NaiveInt6_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-30_Rascal_8xH100/README.md",
+      "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/README.md",
+      "records/track_10min_16mb/2026-04-01_Nightcrawler_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-30_Crawler_Leg3_8xH100/README.md",
+      "records/track_10min_16mb/2026-04-02_Bandit_Wagon_X_9F_8xH100/README.md",
+      "records/track_10min_16mb/2026-03-26_BWING_FullPort_entropy_shift_fixedmults_8xH100/README.md"
+    ],
+    "submissionCount": 9
+  },
+  "output": {
+    "summary": "Ouroboros stacks five gated crawler signals on a nine-flat-layer base to study bidirectional cross-stream recurrence with loop-aware quantization.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Bidirectional crawler streams with position-agnostic routing",
+      "Loop-aware two-phase GPTQ for shared-weight recurrence",
+      "Ablation-driven width vs recursion analysis"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

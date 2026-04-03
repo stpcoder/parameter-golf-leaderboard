@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-03T17:10:21.207Z",
+  "generatedAt": "2026-04-03T17:41:16.844Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -3443,17 +3443,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -3462,7 +3462,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/7b29d6b5e32db72c66f6a6db26109fda8e46b5e0/records/track_10min_16mb/2026-03-26_XWING_Cubric3D_complementary_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -3597,17 +3597,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -3616,7 +3616,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/4efa746c3596aba503b77ad4c5c5181aafab04bd/records/track_10min_16mb/2026-03-29_Bandit_ClownCar_X_CubricNgram9_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/4efa746c3596aba503b77ad4c5c5181aafab04bd/records/track_10min_16mb/2026-03-29_Bandit_ClownCar_X_CubricNgram9_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/4efa746c3596aba503b77ad4c5c5181aafab04bd/records/track_10min_16mb/2026-03-29_Bandit_ClownCar_X_CubricNgram9_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -6916,17 +6916,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -6935,7 +6935,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/37df3009ba811f4cfc35a815057d7b7df925b5a2/records/track_10min_16mb/2026-03-27_Medusa_FLA_DeltaNet_NaiveInt6_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/37df3009ba811f4cfc35a815057d7b7df925b5a2/records/track_10min_16mb/2026-03-27_Medusa_FLA_DeltaNet_NaiveInt6_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/37df3009ba811f4cfc35a815057d7b7df925b5a2/records/track_10min_16mb/2026-03-27_Medusa_FLA_DeltaNet_NaiveInt6_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -12335,6 +12335,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-04-03_07c1_pr1212_base_runpod_strict",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-03_07c1_pr1212_base_runpod_strict",
+        "folderPath": "records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict",
+        "submissionPath": "records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/train_gpt.py"
+      },
+      "submission": {
+        "author": "amay",
+        "githubId": "amrayach",
+        "name": "07c1 Base Reproduction of PR #1212 with Strict RunPod Proof",
+        "blurb": "Faithful PR #1212 base reproduction plus 07c1 eval/export hygiene fixes, validated on 4 strict RunPod H100 SXM seeds under 600s. Submitted artifact is the best strict base seed (2025): 1.10894203 BPB / 1.87233216 nats / 15,728,840 bytes.",
+        "date": "2026-04-03"
+      },
+      "metrics": {
+        "valBpb": 1.10894203,
+        "valLoss": 1.87233216,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15728840,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1307,
+        "title": "Add 07c1 strict RunPod base submission",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1307",
+        "authorLogin": "amrayach",
+        "authorName": null,
+        "createdAt": "2026-04-03T17:14:06Z",
+        "updatedAt": "2026-04-03T17:15:13Z",
+        "headSha": "cae8caee5772901ba08809d43a1fd380773aa902",
+        "headRepo": "amrayach/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/cae8caee5772901ba08809d43a1fd380773aa902/records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/cae8caee5772901ba08809d43a1fd380773aa902/records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/cae8caee5772901ba08809d43a1fd380773aa902/records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/cae8caee5772901ba08809d43a1fd380773aa902/records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/cae8caee5772901ba08809d43a1fd380773aa902/records/track_10min_16mb/2026-04-03_07c1_pr1212_base_runpod_strict",
+        "pr": "https://github.com/openai/parameter-golf/pull/1307",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-30_Rascal_8xH100",
       "source": "pull_request",
       "status": "open",
@@ -12383,17 +12460,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -12402,7 +12479,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/d6631cc3779e5c37438c7908b642c348b8ca2a1e/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/d6631cc3779e5c37438c7908b642c348b8ca2a1e/records/track_10min_16mb/2026-03-30_Rascal_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/d6631cc3779e5c37438c7908b642c348b8ca2a1e/records/track_10min_16mb/2026-03-30_Rascal_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -22507,7 +22584,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-04-03_Ouroboros_8xH100",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -22555,14 +22632,14 @@
       "pr": {
         "number": 1283,
         "title": "Ouroboros — 1.13727008 val_bpb (seed 444)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1283",
         "authorLogin": "newjordan",
         "authorName": null,
         "createdAt": "2026-04-03T03:51:56Z",
-        "updatedAt": "2026-04-03T04:25:12Z",
+        "updatedAt": "2026-04-03T17:34:08Z",
         "headSha": "af4700c9db57621ddc706f8094ff4f3419b96155",
         "headRepo": "newjordan/parameter-golf-1"
       },
@@ -22573,6 +22650,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/af4700c9db57621ddc706f8094ff4f3419b96155/records/track_10min_16mb/2026-04-03_Ouroboros_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/af4700c9db57621ddc706f8094ff4f3419b96155/records/track_10min_16mb/2026-04-03_Ouroboros_8xH100",
         "pr": "https://github.com/openai/parameter-golf/pull/1283",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-03_Ouroboros_Crawler_Research_8xH100",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-03_Ouroboros_Crawler_Research_8xH100",
+        "folderPath": "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100",
+        "submissionPath": "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/train_gpt.py"
+      },
+      "submission": {
+        "author": "Frosty40",
+        "githubId": "newjordan",
+        "name": "Ouroboros",
+        "blurb": "9-flat crawler with loop-aware GPTQ, QK gain 4.0, 2-loop cadence, and brotli compression — stacking five research signals on the Bandit Wagon 9F platform.",
+        "date": "2026-04-03T00:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.1364,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15049936,
+        "bytesCode": 121677,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
+        "authorLogin": "newjordan",
+        "authorName": null,
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
+        "headRepo": "newjordan/parameter-golf-1"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/979f7907d5d159fcb315f136e05eee1c3e5a1ac4/records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/979f7907d5d159fcb315f136e05eee1c3e5a1ac4/records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/979f7907d5d159fcb315f136e05eee1c3e5a1ac4/records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/979f7907d5d159fcb315f136e05eee1c3e5a1ac4/records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/979f7907d5d159fcb315f136e05eee1c3e5a1ac4/records/track_non_record_16mb/2026-04-03_Ouroboros_Crawler_Research_8xH100",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -33872,17 +34026,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -33891,7 +34045,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/bcd26f765af9462bf7cde9178772f4940128181f/records/track_10min_16mb/2026-04-01_Nightcrawler_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/bcd26f765af9462bf7cde9178772f4940128181f/records/track_10min_16mb/2026-04-01_Nightcrawler_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/bcd26f765af9462bf7cde9178772f4940128181f/records/track_10min_16mb/2026-04-01_Nightcrawler_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -35643,17 +35797,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -35662,7 +35816,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-30_Crawler_Leg3_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-30_Crawler_Leg3_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-30_Crawler_Leg3_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -57747,17 +57901,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -57766,7 +57920,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/9e7d33fdddb73493f643239e91eb9e1ba91bbe34/records/track_10min_16mb/2026-04-02_Bandit_Wagon_X_9F_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/9e7d33fdddb73493f643239e91eb9e1ba91bbe34/records/track_10min_16mb/2026-04-02_Bandit_Wagon_X_9F_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/9e7d33fdddb73493f643239e91eb9e1ba91bbe34/records/track_10min_16mb/2026-04-02_Bandit_Wagon_X_9F_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -58218,16 +58372,16 @@
         "authorLogin": "GitGeeks",
         "authorName": null,
         "createdAt": "2026-04-03T02:32:12Z",
-        "updatedAt": "2026-04-03T16:52:15Z",
-        "headSha": "44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7",
+        "updatedAt": "2026-04-03T17:22:21Z",
+        "headSha": "3763838cd895a88ff9f54ff4c75206fc4b772da5",
         "headRepo": "GitGeeks/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/44ad608c3e57b66ec11c4dc0e5eb7eaf901215c7/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/3763838cd895a88ff9f54ff4c75206fc4b772da5/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/3763838cd895a88ff9f54ff4c75206fc4b772da5/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/3763838cd895a88ff9f54ff4c75206fc4b772da5/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/3763838cd895a88ff9f54ff4c75206fc4b772da5/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/3763838cd895a88ff9f54ff4c75206fc4b772da5/records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared",
         "pr": "https://github.com/openai/parameter-golf/pull/1278",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -58372,7 +58526,7 @@
         "authorLogin": "Ribin545",
         "authorName": null,
         "createdAt": "2026-04-03T13:16:27Z",
-        "updatedAt": "2026-04-03T13:16:27Z",
+        "updatedAt": "2026-04-03T17:33:09Z",
         "headSha": "3a10cfd929e9ba2a573b8008f9d9138259780657",
         "headRepo": "Ribin545/parameter-golf"
       },
@@ -64523,17 +64677,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1286,
-        "title": "Lucky IV — 1.09626897 val_bpb (seed 444)",
+        "number": 1308,
+        "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1286",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
         "authorLogin": "newjordan",
         "authorName": null,
-        "createdAt": "2026-04-03T05:39:09Z",
-        "updatedAt": "2026-04-03T05:43:42Z",
-        "headSha": "9a8da75b9ede18c402289f6b92f126f8ccc8c80f",
+        "createdAt": "2026-04-03T17:35:50Z",
+        "updatedAt": "2026-04-03T17:37:38Z",
+        "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
         "headRepo": "newjordan/parameter-golf-1"
       },
       "links": {
@@ -64542,7 +64696,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-26_BWING_FullPort_entropy_shift_fixedmults_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-26_BWING_FullPort_entropy_shift_fixedmults_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/11949489d4de7d8fa9b5cbd4dba71f6e4f7baf88/records/track_10min_16mb/2026-03-26_BWING_FullPort_entropy_shift_fixedmults_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1286",
+        "pr": "https://github.com/openai/parameter-golf/pull/1308",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
