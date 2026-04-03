@@ -1,38 +1,36 @@
 {
-  "generatedAt": "2026-04-02T18:34:29.956Z",
+  "generatedAt": "2026-04-03T11:39:09.624Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1246,
     "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
     "state": "open",
-    "updatedAt": "2026-04-02T18:05:30Z",
-    "headSha": "f790c3a698493105b76ecebcde2b3e080521aff8",
+    "updatedAt": "2026-04-03T11:19:03Z",
+    "headSha": "97901c8c90f772c0d1f51593adde8719b84f0055",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1246",
     "authorLogin": "deborahnelson8788726"
   },
   "inputs": {
-    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/README.md",
       "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md"
     ],
-    "submissionCount": 2
+    "submissionCount": 1
   },
   "output": {
-    "summary": "Trinity Ternary GPT pairs BitNet ternary QAT with relu²/NeoMuon U-Net layers, using Partial RoPE and base-3 packing to squeeze ~70M params under 16MB.",
+    "summary": "Combines BitNet ternary QAT with wider MLP layers and int6 GPTQ/pruning to boost byte-budgeted GPT under 16MB.",
     "tags": [
       "quantization",
       "architecture",
-      "optimizer",
       "compression"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "BitNet b1.58 ternary QAT",
-      "Partial RoPE + relu² U-Net structure",
-      "Base-3 ternary packing"
+      "ternary QAT with BitNet b1.58 rounding",
+      "MLP width boost guided by Trinity redundancy analysis",
+      "int6 GPTQ plus selective ±1 pruning"
     ]
   },
   "compatibility": {

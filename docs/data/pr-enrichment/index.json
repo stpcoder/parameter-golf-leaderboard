@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-03T10:39:09.746Z",
+  "generatedAt": "2026-04-03T11:39:09.811Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1296,
+      "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0940 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-03T11:26:19Z",
+      "headSha": "938d6ae7ee145d4a9fb49aafc6c51bdede285faf",
+      "generatedAt": "2026-04-03T11:39:04.500Z",
+      "summary": "Combines 4096-vocab widening, depth recurrence, MuonEq-R, and full int6 GPTQ with Brotli packing to fit the 16MB constraint.",
+      "tags": [
+        "architecture",
+        "optimizer",
+        "quantization",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1296.json"
+    },
     {
       "prNumber": 1295,
       "title": "[Submission] Random LinearMaps + LoRA Adapters",
@@ -868,14 +892,13 @@
       "prNumber": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
       "status": "open",
-      "updatedAt": "2026-04-02T18:05:30Z",
-      "headSha": "f790c3a698493105b76ecebcde2b3e080521aff8",
-      "generatedAt": "2026-04-02T18:34:29.956Z",
-      "summary": "Trinity Ternary GPT pairs BitNet ternary QAT with relu²/NeoMuon U-Net layers, using Partial RoPE and base-3 packing to squeeze ~70M params under 16MB.",
+      "updatedAt": "2026-04-03T11:19:03Z",
+      "headSha": "97901c8c90f772c0d1f51593adde8719b84f0055",
+      "generatedAt": "2026-04-03T11:39:09.624Z",
+      "summary": "Combines BitNet ternary QAT with wider MLP layers and int6 GPTQ/pruning to boost byte-budgeted GPT under 16MB.",
       "tags": [
         "quantization",
         "architecture",
-        "optimizer",
         "compression"
       ],
       "flags": {
