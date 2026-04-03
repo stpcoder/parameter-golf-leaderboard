@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T17:41:27.335Z",
+  "generatedAt": "2026-04-03T18:11:37.845Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1308,
     "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
     "state": "open",
-    "updatedAt": "2026-04-03T17:41:06Z",
+    "updatedAt": "2026-04-03T18:05:25Z",
     "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
     "authorLogin": "newjordan"
@@ -27,19 +27,18 @@
     "submissionCount": 9
   },
   "output": {
-    "summary": "Ouroboros stacks five gated crawler signals on a nine-flat-layer base to study bidirectional cross-stream recurrence with loop-aware quantization.",
+    "summary": "Ouroboros treats recursion as shared causal refinement, using crawler loops plus loop-aware GPTQ and content routers to stabilize quantized bidirectional streams.",
     "tags": [
       "architecture",
       "quantization",
-      "training-schedule",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Bidirectional crawler streams with position-agnostic routing",
-      "Loop-aware two-phase GPTQ for shared-weight recurrence",
-      "Ablation-driven width vs recursion analysis"
+      "Shared crawler loops refine representations across causal horizons via the same learned attractor",
+      "Loop-aware GPTQ calibrates Hessians for crawler activations to keep quantization stable",
+      "Position-agnostic cross-stream routing lets flat and crawler streams exchange content signals"
     ]
   },
   "compatibility": {

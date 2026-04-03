@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-04-03T18:11:21.904Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1310,
+    "title": "Non-record: Exact Sequence Matching + TTT on PR #549 (1.1177 BPB)",
+    "state": "open",
+    "updatedAt": "2026-04-03T17:49:14Z",
+    "headSha": "ff9afeb33b0b951435e507d2adc9b2214f61ca1c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1310",
+    "authorLogin": "cadenmcmann"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-03_ExactSequenceMatching_TTT_OldSOTA/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Stacks eval-time exact N-gram cache blending atop TTT on the PR #549 base to catch verbatim repeats beyond what adaptation alone learns.",
+    "tags": [
+      "evaluation",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Eval-time exact 8-12 gram cache blended into logits",
+      "TTT adaptation preceding sequence matching"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
