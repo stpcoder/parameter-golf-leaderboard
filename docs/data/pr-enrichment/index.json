@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-03T18:11:48.987Z",
+  "generatedAt": "2026-04-03T18:42:14.979Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1311,
+      "title": "Non-record: 11L LeakyReLU² + EMA + LZMA Int6 (val_bpb: 1.1303, 2-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-03T18:38:57Z",
+      "headSha": "8da4520e2057253e314c4eb3b20a7f411c09f778",
+      "generatedAt": "2026-04-03T18:41:47.188Z",
+      "summary": "11-layer Transformer with LeakyReLU(0.5)² MLP uses GPTQ-lite int6 plus LZMA compression and eval temperature scaling for compact artifacts.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "compression",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1311.json"
+    },
     {
       "prNumber": 1310,
       "title": "Non-record: Exact Sequence Matching + TTT on PR #549 (1.1177 BPB)",
@@ -52,13 +76,14 @@
       "prNumber": 1308,
       "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
       "status": "open",
-      "updatedAt": "2026-04-03T18:05:25Z",
+      "updatedAt": "2026-04-03T18:37:50Z",
       "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
-      "generatedAt": "2026-04-03T18:11:37.845Z",
-      "summary": "Ouroboros treats recursion as shared causal refinement, using crawler loops plus loop-aware GPTQ and content routers to stabilize quantized bidirectional streams.",
+      "generatedAt": "2026-04-03T18:41:54.648Z",
+      "summary": "Crawler research stacks bidirectional recurrence atop a 9-flat base, pairing loop-aware GPTQ with QK gain and brotli quantization to probe shared-width tradeoffs.",
       "tags": [
         "architecture",
         "quantization",
+        "compression",
         "non-record"
       ],
       "flags": {
@@ -169,13 +194,13 @@
       "prNumber": 1303,
       "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T15:37:53Z",
-      "headSha": "50b08ef1e2c0c3dbc80300b161f0256c232853b5",
-      "generatedAt": "2026-04-03T15:40:09.016Z",
-      "summary": "Combines VRL base with XSA on all layers, QK-Gain per-head scaling, and eval-time SLOT per-sequence delta/logit tuning to squeeze bpb.",
+      "updatedAt": "2026-04-03T18:19:43Z",
+      "headSha": "692707359e43d83c5041b11846c2edb28b6be7d0",
+      "generatedAt": "2026-04-03T18:42:04.786Z",
+      "summary": "Extends VRL+LeakyReLU2 base with QK-Gain 4.0, full-layer XSA, and eval-time per-sample SLOT delta/logit bias tuning over sliding windows.",
       "tags": [
-        "attention",
         "architecture",
+        "attention",
         "evaluation"
       ],
       "flags": {
@@ -569,10 +594,10 @@
       "prNumber": 1281,
       "title": "Non-record: MatrixGPT — O(n) Matrix-State Recurrent LM, 1.33MB artifact",
       "status": "open",
-      "updatedAt": "2026-04-03T03:01:19Z",
-      "headSha": "d04f53128ef72f7299f2c76192f11e1807dea846",
-      "generatedAt": "2026-04-03T03:07:08.604Z",
-      "summary": "Replaces attention with sequential 2×2 matrix recurrence, maintaining O(n) context through multiplicative state updates across layers.",
+      "updatedAt": "2026-04-03T18:29:57Z",
+      "headSha": "78efbd0442edb024a01191400a3e51474a0bccab",
+      "generatedAt": "2026-04-03T18:42:09.594Z",
+      "summary": "MatrixGPT swaps attention for streaming 2×2 matrix products that encode order-sensitive context via multiplicative state updates.",
       "tags": [
         "architecture",
         "non-record"
@@ -3519,10 +3544,10 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T17:59:03Z",
-      "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
-      "generatedAt": "2026-04-03T18:11:48.822Z",
-      "summary": "Fuse Triton TMA MLP forward with CUTLASS EVT backward plus fast GPU-resident causal n-gram tilt as sparse auxiliary memory for subword certainty.",
+      "updatedAt": "2026-04-03T18:27:06Z",
+      "headSha": "a73ca37b4d479e597ca412576e139233f6f60487",
+      "generatedAt": "2026-04-03T18:42:14.820Z",
+      "summary": "Fused Triton TMA forward + CUTLASS EVT backward MLPs, wider 3.5× layers, all-int6 GPTQ, and a GPU-side causal n-gram tilt that acts as sparse auxiliary memory.",
       "tags": [
         "architecture",
         "quantization",

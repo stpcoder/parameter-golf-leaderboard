@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T03:07:08.604Z",
+  "generatedAt": "2026-04-03T18:42:09.594Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1281,
     "title": "Non-record: MatrixGPT — O(n) Matrix-State Recurrent LM, 1.33MB artifact",
     "state": "open",
-    "updatedAt": "2026-04-03T03:01:19Z",
-    "headSha": "d04f53128ef72f7299f2c76192f11e1807dea846",
+    "updatedAt": "2026-04-03T18:29:57Z",
+    "headSha": "78efbd0442edb024a01191400a3e51474a0bccab",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1281",
     "authorLogin": "rlphlrnrys"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Replaces attention with sequential 2×2 matrix recurrence, maintaining O(n) context through multiplicative state updates across layers.",
+    "summary": "MatrixGPT swaps attention for streaming 2×2 matrix products that encode order-sensitive context via multiplicative state updates.",
     "tags": [
       "architecture",
       "non-record"
@@ -27,9 +27,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Sequential 2×2 matrix state recurrence",
-      "O(n) context mixing without KV cache",
-      "Pre-RMSNorm residual stream wrap"
+      "2×2 matrix recurrence replacing attention",
+      "O(n) sequential state updates via multiplicative paths",
+      "Residual readout from parallel matrix channels"
     ]
   },
   "compatibility": {

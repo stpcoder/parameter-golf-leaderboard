@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T18:11:48.822Z",
+  "generatedAt": "2026-04-03T18:42:14.820Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1105,
     "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-03T17:59:03Z",
-    "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
+    "updatedAt": "2026-04-03T18:27:06Z",
+    "headSha": "a73ca37b4d479e597ca412576e139233f6f60487",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1105",
     "authorLogin": "abaybektursun"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Fuse Triton TMA MLP forward with CUTLASS EVT backward plus fast GPU-resident causal n-gram tilt as sparse auxiliary memory for subword certainty.",
+    "summary": "Fused Triton TMA forward + CUTLASS EVT backward MLPs, wider 3.5× layers, all-int6 GPTQ, and a GPU-side causal n-gram tilt that acts as sparse auxiliary memory.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Fused Triton TMA forward + CUTLASS EVT backward for MLP",
-      "GPU-resident causal n-gram tilt acting as sparse auxiliary memory",
-      "Uniform int6 GPTQ with LR floor warmdown"
+      "Fused Triton TMA + CUTLASS EVT MLP kernels",
+      "All-int6 GPTQ with LR floor and MLP 3.5× capacity",
+      "GPU-side causal n-gram tilt as sparse auxiliary memory"
     ]
   },
   "compatibility": {

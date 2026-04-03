@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-03T18:41:47.188Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1311,
+    "title": "Non-record: 11L LeakyReLU² + EMA + LZMA Int6 (val_bpb: 1.1303, 2-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-04-03T18:38:57Z",
+    "headSha": "8da4520e2057253e314c4eb3b20a7f411c09f778",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1311",
+    "authorLogin": "htrung1105"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-03_11L_LeakyReLU2_EMA_LZMA_Int6/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer Transformer with LeakyReLU(0.5)² MLP uses GPTQ-lite int6 plus LZMA compression and eval temperature scaling for compact artifacts.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "compression",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "LeakyReLU(0.5)² MLP with XSA/U-Net tweaks",
+      "GPTQ-lite per-row int6 quantization + LZMA packing",
+      "Sliding eval w/ T=0.90 temperature scaling"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
