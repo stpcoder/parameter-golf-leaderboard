@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-03T15:10:17.811Z",
+  "generatedAt": "2026-04-03T15:40:14.595Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -31,13 +31,13 @@
       "prNumber": 1303,
       "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T14:58:18Z",
+      "updatedAt": "2026-04-03T15:37:53Z",
       "headSha": "50b08ef1e2c0c3dbc80300b161f0256c232853b5",
-      "generatedAt": "2026-04-03T15:10:17.618Z",
-      "summary": "11-layer VRL + LeakyReLU2 base augments XSA everywhere plus QK-Gain scaling and eval-time SLOT per-sample delta/logit tuning.",
+      "generatedAt": "2026-04-03T15:40:09.016Z",
+      "summary": "Combines VRL base with XSA on all layers, QK-Gain per-head scaling, and eval-time SLOT per-sequence delta/logit tuning to squeeze bpb.",
       "tags": [
-        "architecture",
         "attention",
+        "architecture",
         "evaluation"
       ],
       "flags": {
@@ -3382,10 +3382,10 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-02T21:36:45Z",
+      "updatedAt": "2026-04-03T15:32:29Z",
       "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
-      "generatedAt": "2026-04-02T22:05:17.151Z",
-      "summary": "Combines Triton/CUTLASS fused MLP kernels, a wider sp4608 stack with all-int6 GPTQ, and a fast causal n-gram tilt as sparse auxiliary memory.",
+      "generatedAt": "2026-04-03T15:40:14.385Z",
+      "summary": "Triton+CUTLASS fused MLP with precomputed act gradients, sp4608 vocab all-int6 GPTQ, and GPU-side sparse causal n-gram tilt via fast C++ hash.",
       "tags": [
         "architecture",
         "quantization",

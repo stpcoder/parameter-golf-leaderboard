@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-02T22:05:17.151Z",
+  "generatedAt": "2026-04-03T15:40:14.385Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1105,
     "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-02T21:36:45Z",
+    "updatedAt": "2026-04-03T15:32:29Z",
     "headSha": "f734fda870378774645a10e60d92377c18fd5dde",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1105",
     "authorLogin": "abaybektursun"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines Triton/CUTLASS fused MLP kernels, a wider sp4608 stack with all-int6 GPTQ, and a fast causal n-gram tilt as sparse auxiliary memory.",
+    "summary": "Triton+CUTLASS fused MLP with precomputed act gradients, sp4608 vocab all-int6 GPTQ, and GPU-side sparse causal n-gram tilt via fast C++ hash.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Fused Triton TMA forward + CUTLASS EVT backward in MLP to keep intermediates in registers",
-      "Uniform int6 GPTQ with LR floor 0.05 and MLP 3.5× widening",
-      "GPU-side causal n-gram tilt that proposes hinted tokens from the strict prefix"
+      "Fused Triton TMA+CUTLASS EVT MLP with precomputed activation gradients",
+      "All-int6 GPTQ over sp4608 vocab within 16MB",
+      "GPU-side sparse causal n-gram tilt using fast open-addressing hash"
     ]
   },
   "compatibility": {

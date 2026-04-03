@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T15:10:17.618Z",
+  "generatedAt": "2026-04-03T15:40:09.016Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1303,
     "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-03T14:58:18Z",
+    "updatedAt": "2026-04-03T15:37:53Z",
     "headSha": "50b08ef1e2c0c3dbc80300b161f0256c232853b5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1303",
     "authorLogin": "anthony-maio"
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer VRL + LeakyReLU2 base augments XSA everywhere plus QK-Gain scaling and eval-time SLOT per-sample delta/logit tuning.",
+    "summary": "Combines VRL base with XSA on all layers, QK-Gain per-head scaling, and eval-time SLOT per-sequence delta/logit tuning to squeeze bpb.",
     "tags": [
-      "architecture",
       "attention",
+      "architecture",
       "evaluation"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Not using validation-only training; SLOT applied during evaluation only.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Per-head QK-Gain 4.0 scaling",
-      "XSA on all 11 VRL layers with LeakyReLU2 MLPs",
-      "Eval-time SLOT hidden/logit delta tuning"
+      "SLOT per-sequence delta and logit-bias tuning",
+      "XSA all layers plus QK-Gain 4.0 on VRL/LeakyReLU2 base"
     ]
   },
   "compatibility": {
