@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T18:41:47.188Z",
+  "generatedAt": "2026-04-03T19:11:45.759Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1311,
     "title": "Non-record: 11L LeakyReLU² + EMA + LZMA Int6 (val_bpb: 1.1303, 2-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-03T18:38:57Z",
+    "updatedAt": "2026-04-03T18:45:21Z",
     "headSha": "8da4520e2057253e314c4eb3b20a7f411c09f778",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1311",
     "authorLogin": "htrung1105"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "11-layer Transformer with LeakyReLU(0.5)² MLP uses GPTQ-lite int6 plus LZMA compression and eval temperature scaling for compact artifacts.",
+    "summary": "11-layer Transformer couples LeakyReLU² MLPs, U-Net skips, and GPTQ-lite int6 weights with LZMA compression and 0.9 eval temperature.",
     "tags": [
       "architecture",
       "quantization",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "LeakyReLU(0.5)² MLP with XSA/U-Net tweaks",
-      "GPTQ-lite per-row int6 quantization + LZMA packing",
-      "Sliding eval w/ T=0.90 temperature scaling"
+      "LeakyReLU(0.5)² MLPs with U-Net skip connections",
+      "GPTQ-lite per-row int6 quantization paired with LZMA compression",
+      "Evaluation temperature scaling at T=0.90"
     ]
   },
   "compatibility": {

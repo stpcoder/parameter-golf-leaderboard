@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-03T18:42:14.979Z",
+  "generatedAt": "2026-04-03T19:11:56.061Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -7,10 +7,10 @@
       "prNumber": 1311,
       "title": "Non-record: 11L LeakyReLU² + EMA + LZMA Int6 (val_bpb: 1.1303, 2-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T18:38:57Z",
+      "updatedAt": "2026-04-03T18:45:21Z",
       "headSha": "8da4520e2057253e314c4eb3b20a7f411c09f778",
-      "generatedAt": "2026-04-03T18:41:47.188Z",
-      "summary": "11-layer Transformer with LeakyReLU(0.5)² MLP uses GPTQ-lite int6 plus LZMA compression and eval temperature scaling for compact artifacts.",
+      "generatedAt": "2026-04-03T19:11:45.759Z",
+      "summary": "11-layer Transformer couples LeakyReLU² MLPs, U-Net skips, and GPTQ-lite int6 weights with LZMA compression and 0.9 eval temperature.",
       "tags": [
         "architecture",
         "quantization",
@@ -76,14 +76,14 @@
       "prNumber": 1308,
       "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
       "status": "open",
-      "updatedAt": "2026-04-03T18:37:50Z",
+      "updatedAt": "2026-04-03T19:01:01Z",
       "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
-      "generatedAt": "2026-04-03T18:41:54.648Z",
-      "summary": "Crawler research stacks bidirectional recurrence atop a 9-flat base, pairing loop-aware GPTQ with QK gain and brotli quantization to probe shared-width tradeoffs.",
+      "generatedAt": "2026-04-03T19:11:55.868Z",
+      "summary": "Crawler research stacks five gated signals on a 9-flat floor with bidirectional cross-stream recurrence and loop-aware GPTQ calibration.",
       "tags": [
         "architecture",
         "quantization",
-        "compression",
+        "evaluation",
         "non-record"
       ],
       "flags": {

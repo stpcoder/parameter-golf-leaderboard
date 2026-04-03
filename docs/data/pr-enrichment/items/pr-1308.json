@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T18:41:54.648Z",
+  "generatedAt": "2026-04-03T19:11:55.868Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1308,
     "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
     "state": "open",
-    "updatedAt": "2026-04-03T18:37:50Z",
+    "updatedAt": "2026-04-03T19:01:01Z",
     "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
     "authorLogin": "newjordan"
@@ -27,19 +27,19 @@
     "submissionCount": 9
   },
   "output": {
-    "summary": "Crawler research stacks bidirectional recurrence atop a 9-flat base, pairing loop-aware GPTQ with QK gain and brotli quantization to probe shared-width tradeoffs.",
+    "summary": "Crawler research stacks five gated signals on a 9-flat floor with bidirectional cross-stream recurrence and loop-aware GPTQ calibration.",
     "tags": [
       "architecture",
       "quantization",
-      "compression",
+      "evaluation",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Loop-aware GPTQ calibration for shared weights",
-      "Bidirectional crawler recurrence over flat depth",
-      "QK gain plus brotli-loaded int6 compression"
+      "Bidirectional cross-stream recurrence bridging flat and crawler streams",
+      "Loop-aware GPTQ calibration for shared crawler loops",
+      "Stacked gated signals atop a deep flat backbone"
     ]
   },
   "compatibility": {
