@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-03T19:11:55.868Z",
+  "generatedAt": "2026-04-03T19:42:24.231Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1308,
     "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
     "state": "open",
-    "updatedAt": "2026-04-03T19:01:01Z",
+    "updatedAt": "2026-04-03T19:33:19Z",
     "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1308",
     "authorLogin": "newjordan"
@@ -27,19 +27,19 @@
     "submissionCount": 9
   },
   "output": {
-    "summary": "Crawler research stacks five gated signals on a 9-flat floor with bidirectional cross-stream recurrence and loop-aware GPTQ calibration.",
+    "summary": "Crawler research stacks nine flat layers with five gated signals plus loop-aware GPTQ to explore bidirectional cross-stream recurrence.",
     "tags": [
       "architecture",
       "quantization",
-      "evaluation",
+      "training-schedule",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Bidirectional cross-stream recurrence bridging flat and crawler streams",
-      "Loop-aware GPTQ calibration for shared crawler loops",
-      "Stacked gated signals atop a deep flat backbone"
+      "Loop-aware two-phase GPTQ calibration for shared crawler layers",
+      "Bidirectional cross-stream recurrence between flat and crawler signals",
+      "Stacked gating across five signals on a 9-flat platform"
     ]
   },
   "compatibility": {

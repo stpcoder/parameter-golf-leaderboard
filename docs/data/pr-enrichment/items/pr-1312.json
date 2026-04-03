@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-03T19:42:10.067Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1312,
+    "title": "Non-record: JEPA-LM Latent Predictive World Model (first JEPA submission)",
+    "state": "open",
+    "updatedAt": "2026-04-03T19:30:41Z",
+    "headSha": "dbd032d269a0436bb8ccbb82f10e80687372c0cd",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1312",
+    "authorLogin": "adi-suresh01"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-03_JEPA_LatentPredictiveWorldModel/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "JEPA-LM trains an encoder-decoder with a recursive multi-horizon latent predictor loss at the bottleneck, then strips the predictor for zero-inference overhead.",
+    "tags": [
+      "architecture",
+      "regularization",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "JEPA multi-horizon latent prediction auxiliary loss",
+      "Loss weight annealed to zero during warmdown"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

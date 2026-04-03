@@ -1,16 +1,40 @@
 {
-  "generatedAt": "2026-04-03T19:11:56.061Z",
+  "generatedAt": "2026-04-03T19:42:30.218Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1312,
+      "title": "Non-record: JEPA-LM Latent Predictive World Model (first JEPA submission)",
+      "status": "open",
+      "updatedAt": "2026-04-03T19:30:41Z",
+      "headSha": "dbd032d269a0436bb8ccbb82f10e80687372c0cd",
+      "generatedAt": "2026-04-03T19:42:10.067Z",
+      "summary": "JEPA-LM trains an encoder-decoder with a recursive multi-horizon latent predictor loss at the bottleneck, then strips the predictor for zero-inference overhead.",
+      "tags": [
+        "architecture",
+        "regularization",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1312.json"
+    },
+    {
       "prNumber": 1311,
       "title": "Non-record: 11L LeakyReLU² + EMA + LZMA Int6 (val_bpb: 1.1303, 2-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T18:45:21Z",
+      "updatedAt": "2026-04-03T19:23:20Z",
       "headSha": "8da4520e2057253e314c4eb3b20a7f411c09f778",
-      "generatedAt": "2026-04-03T19:11:45.759Z",
-      "summary": "11-layer Transformer couples LeakyReLU² MLPs, U-Net skips, and GPTQ-lite int6 weights with LZMA compression and 0.9 eval temperature.",
+      "generatedAt": "2026-04-03T19:42:14.241Z",
+      "summary": "11-layer Transformer uses LeakyReLU(0.5)² MLP, U-Net skips, and GPTQ-lite int6 + LZMA with T=0.90 eval.",
       "tags": [
         "architecture",
         "quantization",
@@ -76,14 +100,14 @@
       "prNumber": 1308,
       "title": "Non-Record: Ouroboros — Crawler Architecture Research (1.1364 BPB)",
       "status": "open",
-      "updatedAt": "2026-04-03T19:01:01Z",
+      "updatedAt": "2026-04-03T19:33:19Z",
       "headSha": "979f7907d5d159fcb315f136e05eee1c3e5a1ac4",
-      "generatedAt": "2026-04-03T19:11:55.868Z",
-      "summary": "Crawler research stacks five gated signals on a 9-flat floor with bidirectional cross-stream recurrence and loop-aware GPTQ calibration.",
+      "generatedAt": "2026-04-03T19:42:24.231Z",
+      "summary": "Crawler research stacks nine flat layers with five gated signals plus loop-aware GPTQ to explore bidirectional cross-stream recurrence.",
       "tags": [
         "architecture",
         "quantization",
-        "evaluation",
+        "training-schedule",
         "non-record"
       ],
       "flags": {
@@ -594,12 +618,13 @@
       "prNumber": 1281,
       "title": "Non-record: MatrixGPT — O(n) Matrix-State Recurrent LM, 1.33MB artifact",
       "status": "open",
-      "updatedAt": "2026-04-03T18:29:57Z",
-      "headSha": "78efbd0442edb024a01191400a3e51474a0bccab",
-      "generatedAt": "2026-04-03T18:42:09.594Z",
-      "summary": "MatrixGPT swaps attention for streaming 2×2 matrix products that encode order-sensitive context via multiplicative state updates.",
+      "updatedAt": "2026-04-03T19:41:17Z",
+      "headSha": "0b7fd0843fb9c7915782dcf70d1a3bc78d935721",
+      "generatedAt": "2026-04-03T19:42:30.028Z",
+      "summary": "MatrixGPT swaps attention for sequential 2×2 matrix products, building a multiplicative O(n) recurrence per layer while keeping the baseline Muon+int8 setup.",
       "tags": [
         "architecture",
+        "compression",
         "non-record"
       ],
       "flags": {
