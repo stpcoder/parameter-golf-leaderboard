@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-04-03T03:07:38.812Z",
+  "generatedAt": "2026-04-03T03:37:55.599Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1282,
+      "title": "Slot Machine — 1.10350531 val_bpb (seed 444)",
+      "status": "open",
+      "updatedAt": "2026-04-03T03:27:50Z",
+      "headSha": "9e7d33fdddb73493f643239e91eb9e1ba91bbe34",
+      "generatedAt": "2026-04-03T03:37:47.305Z",
+      "summary": "Rascal II with brotli byte-shuffle compression and context-only SLOT 8-step test-time optimization.",
+      "tags": [
+        "compression",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1282.json"
+    },
     {
       "prNumber": 1281,
       "title": "Non-record: MatrixGPT — O(n) Matrix-State Recurrent LM, 1.33MB artifact",
@@ -99,14 +121,14 @@
       "prNumber": 1277,
       "title": "Non-record: JEPA EMA teacher + attention predictor + MLP3x + 10L",
       "status": "open",
-      "updatedAt": "2026-04-03T02:50:11Z",
-      "headSha": "34d6e28166f5108703687253c8e9f89560e9704f",
-      "generatedAt": "2026-04-03T03:07:31.886Z",
-      "summary": "Adds JEPA aux loss with EMA teacher targets and a causal attention predictor on a 10-layer MLP3× model, keeping CE dominant while enriching latent regularization.",
+      "updatedAt": "2026-04-03T03:22:36Z",
+      "headSha": "419a5a1ecdaa6188c85845ee3135c7d466c54e8d",
+      "generatedAt": "2026-04-03T03:37:55.407Z",
+      "summary": "Adds JEPA auxiliary loss with EMA teacher and attention predictor (no serialization cost) while stacking 11 layers with LeakyReLU², SWA averaging, and partial RoPE.",
       "tags": [
-        "attention",
-        "regularization",
         "architecture",
+        "attention",
+        "training-schedule",
         "non-record"
       ],
       "flags": {
@@ -1304,27 +1326,6 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-1210.json"
-    },
-    {
-      "prNumber": 1208,
-      "title": "Nightcrawler — 1.176bpb   10mb ",
-      "status": "open",
-      "updatedAt": "2026-04-01T15:01:55Z",
-      "headSha": "bcd26f765af9462bf7cde9178772f4940128181f",
-      "generatedAt": "2026-04-01T15:23:24.427Z",
-      "summary": "Stacks five flat transformer layers per side of the crawler bottleneck and shares TAP encoder links with each loop to deepen the coordination path.",
-      "tags": [
-        "architecture"
-      ],
-      "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
-        "usesValOnlyCollector": false
-      },
-      "compatibility": {
-        "valOnlyMatchesCollector": true
-      },
-      "file": "items/pr-1208.json"
     },
     {
       "prNumber": 1207,
