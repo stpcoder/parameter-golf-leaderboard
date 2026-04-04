@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-04T15:51:23.146Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1351,
+    "title": "Record: Discriminative TTT — val_bpb 1.0807 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-04-04T15:40:40Z",
+    "headSha": "dbb4448d1fb7ddb68731bd884af5895de554107f",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1351",
+    "authorLogin": "resouer"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-04_DiscriminativeTTT_1.0807/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Pre-quant discriminative TTT with per-block adaptive learning rates and coprime-stride sampling before GPTQ quantization.",
+    "tags": [
+      "training-schedule",
+      "optimizer",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Per-block adaptive LR during pre-quant TTT",
+      "Coprime-stride weighted shard loader",
+      "GPTQ int6 with tuned config"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

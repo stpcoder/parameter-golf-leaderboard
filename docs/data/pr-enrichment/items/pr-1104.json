@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-02T00:56:44.931Z",
+  "generatedAt": "2026-04-04T15:51:53.893Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1104,
     "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Whitespace-aligned (Word-like) Boundaries (39x-91x fewer params than H-Net paper)",
     "state": "open",
-    "updatedAt": "2026-04-02T00:32:17Z",
+    "updatedAt": "2026-04-04T15:45:13Z",
     "headSha": "e3ea22adc4582aabf47c22c5e46d73ec3393b589",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1104",
     "authorLogin": "DariusFeher"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Byte-level 1-stage H-Net uses dynamic chunking to learn whitespace-aligned, word-like chunks from raw bytes while matched ablations contrast sp1024.",
+    "summary": "Byte-level H-Net uses dynamic chunking in its E-M-D layout to learn whitespace-aligned chunks from raw bytes while matched ablations compare to subword runs.",
     "tags": [
       "architecture",
       "tokenization",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "dynamic chunking router with encoder-main-decoder layout",
-      "matched byte260 vs sp1024 ablations with chunk-size CV and whitespace metrics",
-      "multi-GPU DDP training with padded chunk sequences"
+      "dynamic chunking router for whitespace-aligned segmentation",
+      "multi-GPU padding for chunked sequences",
+      "matched byte260 vs sp1024 ablations with chunk metrics"
     ]
   },
   "compatibility": {

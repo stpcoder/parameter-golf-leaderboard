@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-04T04:15:31.562Z",
+  "generatedAt": "2026-04-04T15:51:39.388Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1321,
     "title": "Record: SLOT-48 — val_bpb 0.7406 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-04T04:11:08Z",
-    "headSha": "ca21818b286e266550ec31b0de5ee328363eb21f",
+    "updatedAt": "2026-04-04T15:43:47Z",
+    "headSha": "92947c33cf15a9f4a85e8fb4484b3369b0181766",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1321",
     "authorLogin": "anthony-maio"
   },
@@ -19,17 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "SLOT evaluation now doubles steps to 48, tuning per-window hidden deltas and logit bias to push frozen-model performance beyond the prior 24-step gains.",
+    "summary": "Extends frozen-model SLOT eval by doubling per-window steps to 48 with stride-96 scored-position masking and per-sample delta+logit bias tuning.",
     "tags": [
       "evaluation",
-      "training-schedule"
+      "training-schedule",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Frozen-model SLOT adapts per-sample delta+logit bias per window",
-      "Cosine LR over 48 AdamW steps for SLOT adjustments",
-      "Scored-position masking with stride=96 during eval"
+      "per-window frozen-model delta/logit bias tuning",
+      "scored-position masked stride-96 slots",
+      "48-step AdamW cosine LR schedule"
     ]
   },
   "compatibility": {

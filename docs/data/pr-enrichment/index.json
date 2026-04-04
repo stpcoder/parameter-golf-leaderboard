@@ -1,8 +1,55 @@
 {
-  "generatedAt": "2026-04-04T15:21:24.894Z",
+  "generatedAt": "2026-04-04T15:51:54.050Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1351,
+      "title": "Record: Discriminative TTT — val_bpb 1.0807 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-04T15:40:40Z",
+      "headSha": "dbb4448d1fb7ddb68731bd884af5895de554107f",
+      "generatedAt": "2026-04-04T15:51:23.146Z",
+      "summary": "Pre-quant discriminative TTT with per-block adaptive learning rates and coprime-stride sampling before GPTQ quantization.",
+      "tags": [
+        "training-schedule",
+        "optimizer",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1351.json"
+    },
+    {
+      "prNumber": 1350,
+      "title": "Record: L-BFGS Causal SLOT — val_bpb 1.0046 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-04T15:40:21Z",
+      "headSha": "4ede046aac47273388f3b4d02de228292faa8a50",
+      "generatedAt": "2026-04-04T15:51:31.347Z",
+      "summary": "Applies L-BFGS causal logit SLOT on past tokens with pre-quant AdamW TTT and coprime shard sampling before GPTQ.",
+      "tags": [
+        "optimizer",
+        "training-schedule",
+        "quantization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1350.json"
+    },
     {
       "prNumber": 1349,
       "title": "Add shared-block recurrent 10-minute non-record 16MB submission",
@@ -521,13 +568,14 @@
       "prNumber": 1321,
       "title": "Record: SLOT-48 — val_bpb 0.7406 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-04T04:11:08Z",
-      "headSha": "ca21818b286e266550ec31b0de5ee328363eb21f",
-      "generatedAt": "2026-04-04T04:15:31.562Z",
-      "summary": "SLOT evaluation now doubles steps to 48, tuning per-window hidden deltas and logit bias to push frozen-model performance beyond the prior 24-step gains.",
+      "updatedAt": "2026-04-04T15:43:47Z",
+      "headSha": "92947c33cf15a9f4a85e8fb4484b3369b0181766",
+      "generatedAt": "2026-04-04T15:51:39.388Z",
+      "summary": "Extends frozen-model SLOT eval by doubling per-window steps to 48 with stride-96 scored-position masking and per-sample delta+logit bias tuning.",
       "tags": [
         "evaluation",
-        "training-schedule"
+        "training-schedule",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4173,15 +4221,15 @@
       "prNumber": 1107,
       "title": "Mamba-3 SSD + Attention Hybrid with QAT (1.5633 bpb)",
       "status": "open",
-      "updatedAt": "2026-04-04T15:05:13Z",
-      "headSha": "3848261b3e02dc31da716b2b356fedc47ba131cd",
-      "generatedAt": "2026-04-04T15:21:24.734Z",
-      "summary": "Hybrid Mamba-3 SSD stack with one attention layer, tuned Muon/GLU tweaks, and extended QAT on SSD projections to shrink quantization gap.",
+      "updatedAt": "2026-04-04T15:23:51Z",
+      "headSha": "159ac5c2a6c8a1f2e3360c3ba3b4eba26e756f31",
+      "generatedAt": "2026-04-04T15:51:47.654Z",
+      "summary": "Hybridizes Mamba-3 SISO SSD blocks with one attention layer, Muon optimizer, and extends QAT to SSD projections for INT6 deployment.",
       "tags": [
         "architecture",
         "quantization",
         "optimizer",
-        "non-record"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4244,10 +4292,10 @@
       "prNumber": 1104,
       "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Whitespace-aligned (Word-like) Boundaries (39x-91x fewer params than H-Net paper)",
       "status": "open",
-      "updatedAt": "2026-04-02T00:32:17Z",
+      "updatedAt": "2026-04-04T15:45:13Z",
       "headSha": "e3ea22adc4582aabf47c22c5e46d73ec3393b589",
-      "generatedAt": "2026-04-02T00:56:44.931Z",
-      "summary": "Byte-level 1-stage H-Net uses dynamic chunking to learn whitespace-aligned, word-like chunks from raw bytes while matched ablations contrast sp1024.",
+      "generatedAt": "2026-04-04T15:51:53.893Z",
+      "summary": "Byte-level H-Net uses dynamic chunking in its E-M-D layout to learn whitespace-aligned chunks from raw bytes while matched ablations compare to subword runs.",
       "tags": [
         "architecture",
         "tokenization",
