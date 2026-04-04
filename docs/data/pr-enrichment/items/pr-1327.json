@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-04-04T07:16:40.481Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1327,
+    "title": "Record: BESE Tokenizer 287 vocab — 1.1276 BPB",
+    "state": "open",
+    "updatedAt": "2026-04-04T07:05:19Z",
+    "headSha": "6f20821b5a945a0580e5a888a35ef74a7a2f4eba",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1327",
+    "authorLogin": "mrbese"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Introduces BESE 287-token vocabulary combining structured base symbols and BPE to cut tokens-per-byte and shrink embeddings while reusing the PR #1019 stack.",
+    "tags": [
+      "tokenization",
+      "compression"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "structured base alphabet plus 249 BESE BPE merges",
+      "T9/Huffman-inspired consonant grouping with positional tokens",
+      "self-contained decode/re-encode pipeline for validation data"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

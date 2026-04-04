@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T06:46:24.109Z",
+  "generatedAt": "2026-04-04T07:16:32.138Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -20962,6 +20962,83 @@
         "onMain": true,
         "hasPullRequest": true,
         "listedInReadme": true
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-04-04_BESE_Tokenizer_287_XSA11",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-04_BESE_Tokenizer_287_XSA11",
+        "folderPath": "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11",
+        "submissionPath": "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/train_gpt.py"
+      },
+      "submission": {
+        "author": "mrbese",
+        "githubId": "mrbese",
+        "name": "BESE Tokenizer — Novel Structured Encoding",
+        "blurb": "Novel BESE tokenizer (38 structured base tokens + 249 BPE merges = 287 vocab) replacing SentencePiece-1024. 33% fewer tokens per byte (0.51 vs 0.76). Built on PR #1019 architecture (XSA-all-11, GPTQ int6, Muon, EMA/SWA, BigramHash 3072x112).",
+        "date": "2026-04-04"
+      },
+      "metrics": {
+        "valBpb": 1.1276,
+        "valLoss": 1.5378,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1327,
+        "title": "Record: BESE Tokenizer 287 vocab — 1.1276 BPB",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1327",
+        "authorLogin": "mrbese",
+        "authorName": null,
+        "createdAt": "2026-04-04T07:05:19Z",
+        "updatedAt": "2026-04-04T07:05:19Z",
+        "headSha": "6f20821b5a945a0580e5a888a35ef74a7a2f4eba",
+        "headRepo": "mrbese/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6f20821b5a945a0580e5a888a35ef74a7a2f4eba/records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/6f20821b5a945a0580e5a888a35ef74a7a2f4eba/records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/6f20821b5a945a0580e5a888a35ef74a7a2f4eba/records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/6f20821b5a945a0580e5a888a35ef74a7a2f4eba/records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/6f20821b5a945a0580e5a888a35ef74a7a2f4eba/records/track_10min_16mb/2026-04-04_BESE_Tokenizer_287_XSA11",
+        "pr": "https://github.com/openai/parameter-golf/pull/1327",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
       }
     },
     {
@@ -58238,7 +58315,7 @@
       }
     },
     {
-      "id": "record-records-track_10min_16mb-2026-04-04_SLOT28_VRL_QKGain4_XSA11",
+      "id": "record-records-track_10min_16mb-2026-04-04_SLOT48_VRL_QKGain4_XSA11",
       "source": "pull_request",
       "status": "open",
       "category": "main-track",
@@ -58250,12 +58327,12 @@
         "category": "main-track"
       },
       "record": {
-        "folderName": "2026-04-04_SLOT28_VRL_QKGain4_XSA11",
-        "folderPath": "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11",
-        "submissionPath": "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/train_gpt.py"
+        "folderName": "2026-04-04_SLOT48_VRL_QKGain4_XSA11",
+        "folderPath": "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11",
+        "submissionPath": "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/train_gpt.py"
       },
       "submission": {
         "author": "yahya010",
@@ -58271,7 +58348,7 @@
         "preQuantValLoss": null,
         "stepStop": null,
         "wallclockSeconds": null,
-        "evalTimeSeconds": 359
+        "evalTimeSeconds": 508
       },
       "artifact": {
         "bytesTotal": null,
@@ -58287,7 +58364,7 @@
       },
       "pr": {
         "number": 1324,
-        "title": "Record: val_bpb 0.8275 (3-seed mean) — SLOT-28 + VRL + QK-Gain 4.0 + XSA-11",
+        "title": "Record: — val_bpb 0.7271 (3-seed mean) SLOT-48 + VRL + QK-Gain 4.0 + XSA-11 ",
         "state": "open",
         "draft": false,
         "mergedAt": null,
@@ -58295,16 +58372,16 @@
         "authorLogin": "yahya010",
         "authorName": null,
         "createdAt": "2026-04-04T05:20:29Z",
-        "updatedAt": "2026-04-04T05:20:29Z",
-        "headSha": "ca37a33176abcdb1afc9681ca28892c916b00169",
+        "updatedAt": "2026-04-04T07:01:17Z",
+        "headSha": "f08da600395fce03e3159515c382282640907b46",
         "headRepo": "yahya010/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/ca37a33176abcdb1afc9681ca28892c916b00169/records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/ca37a33176abcdb1afc9681ca28892c916b00169/records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/ca37a33176abcdb1afc9681ca28892c916b00169/records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/ca37a33176abcdb1afc9681ca28892c916b00169/records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/ca37a33176abcdb1afc9681ca28892c916b00169/records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f08da600395fce03e3159515c382282640907b46/records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/f08da600395fce03e3159515c382282640907b46/records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/f08da600395fce03e3159515c382282640907b46/records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/f08da600395fce03e3159515c382282640907b46/records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/f08da600395fce03e3159515c382282640907b46/records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11",
         "pr": "https://github.com/openai/parameter-golf/pull/1324",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

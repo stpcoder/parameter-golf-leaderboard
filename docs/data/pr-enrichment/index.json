@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-04-04T06:46:47.857Z",
+  "generatedAt": "2026-04-04T07:16:44.962Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1327,
+      "title": "Record: BESE Tokenizer 287 vocab — 1.1276 BPB",
+      "status": "open",
+      "updatedAt": "2026-04-04T07:05:19Z",
+      "headSha": "6f20821b5a945a0580e5a888a35ef74a7a2f4eba",
+      "generatedAt": "2026-04-04T07:16:40.481Z",
+      "summary": "Introduces BESE 287-token vocabulary combining structured base symbols and BPE to cut tokens-per-byte and shrink embeddings while reusing the PR #1019 stack.",
+      "tags": [
+        "tokenization",
+        "compression"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1327.json"
+    },
     {
       "prNumber": 1326,
       "title": "Record: SP4096 + Depth Recurrence + Parallel Residuals + MuonEq-R + Legal TTT — val_bpb 1.0896 (3-seed mean)",
@@ -52,16 +74,16 @@
     },
     {
       "prNumber": 1324,
-      "title": "Record: val_bpb 0.8275 (3-seed mean) — SLOT-28 + VRL + QK-Gain 4.0 + XSA-11",
+      "title": "Record: — val_bpb 0.7271 (3-seed mean) SLOT-48 + VRL + QK-Gain 4.0 + XSA-11 ",
       "status": "open",
-      "updatedAt": "2026-04-04T05:20:29Z",
-      "headSha": "ca37a33176abcdb1afc9681ca28892c916b00169",
-      "generatedAt": "2026-04-04T05:46:37.148Z",
-      "summary": "Extends the XSA-driven 11L/512d model with SLOT-28 eval-time AdamW plus VRL and per-head QK-Gain for tighter generalization.",
+      "updatedAt": "2026-04-04T07:01:17Z",
+      "headSha": "f08da600395fce03e3159515c382282640907b46",
+      "generatedAt": "2026-04-04T07:16:44.770Z",
+      "summary": "Freezes weights and runs SLOT-48 delta/logit tuning plus VRL, QK-Gain, and XSA-11 on a compact 11-layer GQA architecture.",
       "tags": [
-        "architecture",
         "evaluation",
-        "optimizer"
+        "attention",
+        "architecture"
       ],
       "flags": {
         "usesValOnly": false,

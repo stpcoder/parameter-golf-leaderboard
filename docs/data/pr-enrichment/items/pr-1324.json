@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-04-04T05:46:37.148Z",
+  "generatedAt": "2026-04-04T07:16:44.770Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1324,
-    "title": "Record: val_bpb 0.8275 (3-seed mean) — SLOT-28 + VRL + QK-Gain 4.0 + XSA-11",
+    "title": "Record: — val_bpb 0.7271 (3-seed mean) SLOT-48 + VRL + QK-Gain 4.0 + XSA-11 ",
     "state": "open",
-    "updatedAt": "2026-04-04T05:20:29Z",
-    "headSha": "ca37a33176abcdb1afc9681ca28892c916b00169",
+    "updatedAt": "2026-04-04T07:01:17Z",
+    "headSha": "f08da600395fce03e3159515c382282640907b46",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1324",
     "authorLogin": "yahya010"
   },
   "inputs": {
     "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_10min_16mb/2026-04-04_SLOT28_VRL_QKGain4_XSA11/README.md"
+      "records/track_10min_16mb/2026-04-04_SLOT48_VRL_QKGain4_XSA11/README.md"
     ],
     "submissionCount": 1
   },
   "output": {
-    "summary": "Extends the XSA-driven 11L/512d model with SLOT-28 eval-time AdamW plus VRL and per-head QK-Gain for tighter generalization.",
+    "summary": "Freezes weights and runs SLOT-48 delta/logit tuning plus VRL, QK-Gain, and XSA-11 on a compact 11-layer GQA architecture.",
     "tags": [
-      "architecture",
       "evaluation",
-      "optimizer"
+      "attention",
+      "architecture"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Not a val-only training regime; standard Slot eval with per-window deltas.",
     "techniques": [
-      "SLOT-28 eval-time AdamW with frozen base and cosine LR",
-      "Sigmoid-gated VRL plus learnable per-head QK-Gain 4.0",
-      "XSA applied across 11 layers with Partial RoPE-enhanced MLPs"
+      "SLOT-48 per-window delta/logit optimization",
+      "VRL plus QK-Gain and XSA-11 on GQA stack",
+      "Late QAT with int6 Hessian GPTQ compression"
     ]
   },
   "compatibility": {
