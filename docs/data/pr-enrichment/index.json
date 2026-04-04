@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-04-04T02:45:11.246Z",
+  "generatedAt": "2026-04-04T04:15:47.270Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1321,
+      "title": "Record: SLOT-48 — val_bpb 0.7406 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-04T04:11:08Z",
+      "headSha": "ca21818b286e266550ec31b0de5ee328363eb21f",
+      "generatedAt": "2026-04-04T04:15:31.562Z",
+      "summary": "SLOT evaluation now doubles steps to 48, tuning per-window hidden deltas and logit bias to push frozen-model performance beyond the prior 24-step gains.",
+      "tags": [
+        "evaluation",
+        "training-schedule"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1321.json"
+    },
     {
       "prNumber": 1320,
       "title": "Non-record: TTT chunk ordering does not improve BPB — negative results from 7 ordering variants",
@@ -331,22 +353,23 @@
       "prNumber": 1303,
       "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T21:41:13Z",
+      "updatedAt": "2026-04-04T03:52:35Z",
       "headSha": "692707359e43d83c5041b11846c2edb28b6be7d0",
-      "generatedAt": "2026-04-03T21:43:00.191Z",
-      "summary": "VRL/LeakyReLU base with 11-layer XSA applies per-head QK-Gain scaling and SLOT deltas to refine sliding-window outputs.",
+      "generatedAt": "2026-04-04T04:15:37.113Z",
+      "summary": "VRL-based 11L model adds QK-Gain 4.0 and XSA on every layer, then tunes scored positions with SLOT per-sequence deltas/logit biases at eval time.",
       "tags": [
         "architecture",
         "attention",
-        "evaluation"
+        "evaluation",
+        "val-only"
       ],
       "flags": {
-        "usesValOnly": false,
-        "usesValOnlyAi": false,
+        "usesValOnly": true,
+        "usesValOnlyAi": true,
         "usesValOnlyCollector": false
       },
       "compatibility": {
-        "valOnlyMatchesCollector": true
+        "valOnlyMatchesCollector": false
       },
       "file": "items/pr-1303.json"
     },
@@ -402,15 +425,15 @@
       "prNumber": 1300,
       "title": "Non-record: 1.8184 BPB Single-step Recurrent Transformer with Q-LoRA (Windows 3090)",
       "status": "open",
-      "updatedAt": "2026-04-03T23:10:45Z",
+      "updatedAt": "2026-04-04T03:52:34Z",
       "headSha": "3a10cfd929e9ba2a573b8008f9d9138259780657",
-      "generatedAt": "2026-04-03T23:13:28.375Z",
-      "summary": "Single-pass wide transformer with near-full-rank dual-Q attention and expanded MLP, tuned for max throughput on 10-minute Windows RTX 3090 runs.",
+      "generatedAt": "2026-04-04T04:15:42.292Z",
+      "summary": "Rebuilt the stack into a single-pass wide transformer with MLP×5 and near-full-rank dual-Q attention for 10-minute RTX 3090 runs.",
       "tags": [
         "architecture",
         "attention",
         "training-schedule",
-        "non-record"
+        "quantization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -871,13 +894,12 @@
       "prNumber": 1275,
       "title": "Non-record: Asymmetric 1/10 Split — 1.1492 pre-quant BPB on 8xH100 (one-line change)",
       "status": "open",
-      "updatedAt": "2026-04-04T00:56:00Z",
+      "updatedAt": "2026-04-04T03:52:32Z",
       "headSha": "1a40bded844bdaea22a692952d79406e8b26044e",
-      "generatedAt": "2026-04-04T01:14:09.085Z",
-      "summary": "Shifting the hourglass U-Net to one encoder layer and the rest decoder boosts autoregressive capacity without extra compute.",
+      "generatedAt": "2026-04-04T04:15:47.087Z",
+      "summary": "Hourglass split changed to one encoder layer to concentrate depth in the decoder, improving BPB with no extra compute.",
       "tags": [
         "architecture",
-        "attention",
         "non-record"
       ],
       "flags": {

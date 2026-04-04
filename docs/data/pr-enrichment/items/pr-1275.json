@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-04T01:14:09.085Z",
+  "generatedAt": "2026-04-04T04:15:47.087Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1275,
     "title": "Non-record: Asymmetric 1/10 Split — 1.1492 pre-quant BPB on 8xH100 (one-line change)",
     "state": "open",
-    "updatedAt": "2026-04-04T00:56:00Z",
+    "updatedAt": "2026-04-04T03:52:32Z",
     "headSha": "1a40bded844bdaea22a692952d79406e8b26044e",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1275",
     "authorLogin": "ranausmanai"
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Shifting the hourglass U-Net to one encoder layer and the rest decoder boosts autoregressive capacity without extra compute.",
+    "summary": "Hourglass split changed to one encoder layer to concentrate depth in the decoder, improving BPB with no extra compute.",
     "tags": [
       "architecture",
-      "attention",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "Full-training regime; not confined to validation-only data.",
+    "valOnlyReasoning": "",
     "techniques": [
-      "Hourglass encoder-decoder split rebalanced",
-      "Decoder-heavy capacity for autoregression",
-      "Zero-cost architecture tweak"
+      "Asymmetric hourglass split (encoder=1)",
+      "Decoder-focused depth without extra compute",
+      "Validated across baseline and SOTA sweeps"
     ]
   },
   "compatibility": {
