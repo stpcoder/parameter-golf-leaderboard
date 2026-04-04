@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-04T19:21:55.639Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1355,
+    "title": "Non-record: Mamba-3 Hybrid + Full Hessian GPTQ + Late QAT — val_bpb 1.1526",
+    "state": "open",
+    "updatedAt": "2026-04-04T19:04:09Z",
+    "headSha": "8370a698e6ce8b58a73542e91a77b07e74a6671c",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1355",
+    "authorLogin": "mradassaad"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Hybrid 7×Mamba-3 SSD + attention model couples full Hessian GPTQ and late LR-triggered QAT with a linear warmdown to erase its quantization gap.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "training-schedule",
+      "non-record"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Full Hessian GPTQ with late LR-triggered QAT",
+      "Linear warmdown schedule to unlock final-stage fake quant",
+      "7×Mamba-3 SISO + attention hybrid architecture"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

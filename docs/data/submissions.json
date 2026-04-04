@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T18:51:33.949Z",
+  "generatedAt": "2026-04-04T19:21:45.098Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -29041,6 +29041,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/37e6f39834561bc81cb2c4daf32402f93e2ae655/records/track_10min_16mb/2026-03-20_OrthoInit_Muon_Int6_MLP3x_SmearBigram_1.1524/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/37e6f39834561bc81cb2c4daf32402f93e2ae655/records/track_10min_16mb/2026-03-20_OrthoInit_Muon_Int6_MLP3x_SmearBigram_1.1524",
         "pr": "https://github.com/openai/parameter-golf/pull/164",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown",
+        "folderPath": "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown",
+        "submissionPath": "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train_gpt.py"
+      },
+      "submission": {
+        "author": "mradassaad",
+        "githubId": "mradassaad",
+        "name": "Mamba-3 Hybrid + Full Hessian GPTQ + Late QAT + Linear Warmdown",
+        "blurb": "Best SSM submission: 7x Mamba-3 SISO SSD + 1 attention hybrid with Full Hessian GPTQ, late QAT (LR-triggered fake quantization), and linear warmdown. Closes 174 mBPB quantization gap to effectively zero.",
+        "date": "2026-04-04"
+      },
+      "metrics": {
+        "valBpb": 1.1525919,
+        "valLoss": 1.94610314,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15781278,
+        "bytesCode": 82946,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1355,
+        "title": "Non-record: Mamba-3 Hybrid + Full Hessian GPTQ + Late QAT — val_bpb 1.1526",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1355",
+        "authorLogin": "mradassaad",
+        "authorName": null,
+        "createdAt": "2026-04-04T19:04:09Z",
+        "updatedAt": "2026-04-04T19:04:09Z",
+        "headSha": "8370a698e6ce8b58a73542e91a77b07e74a6671c",
+        "headRepo": "mradassaad/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/8370a698e6ce8b58a73542e91a77b07e74a6671c/records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/8370a698e6ce8b58a73542e91a77b07e74a6671c/records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/8370a698e6ce8b58a73542e91a77b07e74a6671c/records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/8370a698e6ce8b58a73542e91a77b07e74a6671c/records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/8370a698e6ce8b58a73542e91a77b07e74a6671c/records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown",
+        "pr": "https://github.com/openai/parameter-golf/pull/1355",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

@@ -2,7 +2,7 @@
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
-  "generatedAt": "2026-04-04T18:21:28.525Z",
+  "generatedAt": "2026-04-04T19:21:55.837Z",
   "prs": {
     "6": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:11373420c1f50e6a83599fb25bb73f38a6555cb7:closed:2026-03-18T18:34:32Z",
@@ -5547,6 +5547,12 @@
       "file": "items/pr-1353.json",
       "updatedAt": "2026-04-04T17:51:58Z",
       "headSha": "a62bc41631b53d7c19575c9e00bfbb6ed0144e05"
+    },
+    "1355": {
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:8370a698e6ce8b58a73542e91a77b07e74a6671c:open:2026-04-04T19:04:09Z",
+      "file": "items/pr-1355.json",
+      "updatedAt": "2026-04-04T19:04:09Z",
+      "headSha": "8370a698e6ce8b58a73542e91a77b07e74a6671c"
     }
   }
 }

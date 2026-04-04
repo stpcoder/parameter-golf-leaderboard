@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-04-04T18:21:28.525Z",
+  "generatedAt": "2026-04-04T19:21:55.837Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1355,
+      "title": "Non-record: Mamba-3 Hybrid + Full Hessian GPTQ + Late QAT — val_bpb 1.1526",
+      "status": "open",
+      "updatedAt": "2026-04-04T19:04:09Z",
+      "headSha": "8370a698e6ce8b58a73542e91a77b07e74a6671c",
+      "generatedAt": "2026-04-04T19:21:55.639Z",
+      "summary": "Hybrid 7×Mamba-3 SSD + attention model couples full Hessian GPTQ and late LR-triggered QAT with a linear warmdown to erase its quantization gap.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1355.json"
+    },
     {
       "prNumber": 1353,
       "title": "Non-record: 11L XSA-All + EMA + Legal GPTQ on 1xH100 PCIe (1.1546 bpb)",
