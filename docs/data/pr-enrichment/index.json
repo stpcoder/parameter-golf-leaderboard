@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T16:51:43.345Z",
+  "generatedAt": "2026-04-04T17:21:36.648Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -1921,14 +1921,14 @@
       "prNumber": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
       "status": "open",
-      "updatedAt": "2026-04-03T11:19:03Z",
-      "headSha": "97901c8c90f772c0d1f51593adde8719b84f0055",
-      "generatedAt": "2026-04-03T11:39:09.624Z",
-      "summary": "Combines BitNet ternary QAT with wider MLP layers and int6 GPTQ/pruning to boost byte-budgeted GPT under 16MB.",
+      "updatedAt": "2026-04-04T17:11:14Z",
+      "headSha": "ed6bb6f7fd7e49db1ead31f86b3cc0bd3a0ea3ca",
+      "generatedAt": "2026-04-04T17:21:32.703Z",
+      "summary": "Trinity-inspired ternary GPTQ packs BitNet weights via base-3 encoding, widens MLP, and blends Partial RoPE, NeoMuon, EMA/SWA to fit 16MB.",
       "tags": [
         "quantization",
         "architecture",
-        "compression"
+        "training-schedule"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4222,14 +4222,14 @@
       "prNumber": 1107,
       "title": "Mamba-3 SSD + Attention Hybrid with QAT (1.5633 bpb)",
       "status": "open",
-      "updatedAt": "2026-04-04T16:25:27Z",
-      "headSha": "00916fa900bcf7eeedc71d438efe98b77aa7210f",
-      "generatedAt": "2026-04-04T16:51:30.305Z",
-      "summary": "Hybrid stacks Mamba-3 SISO SSD blocks with a lone causal attention layer, GLU values, and Muon optimizer while expanding QAT to SSD projections for tighter quantization.",
+      "updatedAt": "2026-04-04T17:20:07Z",
+      "headSha": "8c2f98b8da0059d9ed57e9bf3d99e917100f95be",
+      "generatedAt": "2026-04-04T17:21:36.489Z",
+      "summary": "Hybrid mixes 7× Mamba-3 SSD blocks with one causal attention layer, GLU values, Muon optim, and extends QAT to the SSD in/out projections via CastedLinear.",
       "tags": [
         "architecture",
         "quantization",
-        "attention",
+        "optimizer",
         "non-record"
       ],
       "flags": {

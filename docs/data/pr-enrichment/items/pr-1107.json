@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-04T16:51:30.305Z",
+  "generatedAt": "2026-04-04T17:21:36.489Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1107,
     "title": "Mamba-3 SSD + Attention Hybrid with QAT (1.5633 bpb)",
     "state": "open",
-    "updatedAt": "2026-04-04T16:25:27Z",
-    "headSha": "00916fa900bcf7eeedc71d438efe98b77aa7210f",
+    "updatedAt": "2026-04-04T17:20:07Z",
+    "headSha": "8c2f98b8da0059d9ed57e9bf3d99e917100f95be",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1107",
     "authorLogin": "mradassaad"
   },
@@ -19,19 +19,19 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Hybrid stacks Mamba-3 SISO SSD blocks with a lone causal attention layer, GLU values, and Muon optimizer while expanding QAT to SSD projections for tighter quantization.",
+    "summary": "Hybrid mixes 7× Mamba-3 SSD blocks with one causal attention layer, GLU values, Muon optim, and extends QAT to the SSD in/out projections via CastedLinear.",
     "tags": [
       "architecture",
       "quantization",
-      "attention",
+      "optimizer",
       "non-record"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Hybrid Mamba-3 SSD blocks plus a single attention layer with GLU values",
-      "Extend QAT to Mamba-3 in_proj/out_proj via CastedLinear to cover SSD projections",
-      "Muon optimizer tuning and Muon SOTA params"
+      "Mamba-3 SSD + single causal attention hybrid",
+      "GLU-value attention activation",
+      "CastedLinear QAT on SSD projections"
     ]
   },
   "compatibility": {

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T11:39:09.624Z",
+  "generatedAt": "2026-04-04T17:21:32.703Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1246,
     "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
     "state": "open",
-    "updatedAt": "2026-04-03T11:19:03Z",
-    "headSha": "97901c8c90f772c0d1f51593adde8719b84f0055",
+    "updatedAt": "2026-04-04T17:11:14Z",
+    "headSha": "ed6bb6f7fd7e49db1ead31f86b3cc0bd3a0ea3ca",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1246",
     "authorLogin": "deborahnelson8788726"
   },
@@ -19,18 +19,18 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines BitNet ternary QAT with wider MLP layers and int6 GPTQ/pruning to boost byte-budgeted GPT under 16MB.",
+    "summary": "Trinity-inspired ternary GPTQ packs BitNet weights via base-3 encoding, widens MLP, and blends Partial RoPE, NeoMuon, EMA/SWA to fit 16MB.",
     "tags": [
       "quantization",
       "architecture",
-      "compression"
+      "training-schedule"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "ternary QAT with BitNet b1.58 rounding",
-      "MLP width boost guided by Trinity redundancy analysis",
-      "int6 GPTQ plus selective ±1 pruning"
+      "Trinity ternary GPTQ with base-3 packing",
+      "Wider 10-layer MLP 768d with Partial RoPE and NeoMuon",
+      "EMA+SWA warmdown with Z-loss regularization"
     ]
   },
   "compatibility": {
