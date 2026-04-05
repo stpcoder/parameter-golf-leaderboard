@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-05T17:28:45.974Z",
+  "generatedAt": "2026-04-05T17:59:10.041Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1385,
     "title": "Non-record: Compressor-Aware Training (CAT), differentiable compression proxies for LZ-family compressors",
     "state": "open",
-    "updatedAt": "2026-04-05T17:22:22Z",
-    "headSha": "de6b01af4fe4456edf8e2d48be9b1b3c98212865",
+    "updatedAt": "2026-04-05T17:33:16Z",
+    "headSha": "9436baa104b457dee52e79a58dc92d2ee113de04",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1385",
     "authorLogin": "korentomas"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Adds differentiable LZ77 dictionary-matching and entropy proxies so training encourages weights that compress better under int8+zlib serialization.",
+    "summary": "Trains models with differentiable LZ-family compression proxies, combining soft dictionary matching and entropy terms to bias quantized weights toward compressible patterns.",
     "tags": [
       "compression",
       "regularization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Soft autocorrelation proxy for dictionary matches",
-      "Gaussian histogram entropy proxy",
-      "STE through quantization"
+      "Soft multi-lag autocorrelation to proxy LZ77 dictionary matches",
+      "Gaussian-kernel histogram Shannon entropy proxy",
+      "Straight-through quantization gradient flow"
     ]
   },
   "compatibility": {

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-04-05T17:59:05.013Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1386,
+    "title": "Non-record submission: 11L XSA4 + EMA + BigramHash3072 + LZMA (1.1452 BPB)",
+    "state": "open",
+    "updatedAt": "2026-04-05T17:45:32Z",
+    "headSha": "323473ab438c7e00d5b24c832d08a752ea41d2e6",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1386",
+    "authorLogin": "Buld1n"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "11-layer XSA stack pairs EMA/SWA, BigramHash, VE/partial RoPE, and late QAT before int6+LZMA quantized export for a compliant <16MB run.",
+    "tags": [
+      "architecture",
+      "quantization",
+      "regularization",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "11-layer XSA stack with partial RoPE, VE128, EMA, and SWA",
+      "BigramHash(3072,112) with late QAT threshold 0.15",
+      "int6 + LZMA export plus sliding-window stride 64 evaluation"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

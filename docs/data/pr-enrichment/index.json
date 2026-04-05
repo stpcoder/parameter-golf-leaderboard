@@ -1,16 +1,40 @@
 {
-  "generatedAt": "2026-04-05T17:29:09.698Z",
+  "generatedAt": "2026-04-05T17:59:21.466Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
     {
+      "prNumber": 1386,
+      "title": "Non-record submission: 11L XSA4 + EMA + BigramHash3072 + LZMA (1.1452 BPB)",
+      "status": "open",
+      "updatedAt": "2026-04-05T17:45:32Z",
+      "headSha": "323473ab438c7e00d5b24c832d08a752ea41d2e6",
+      "generatedAt": "2026-04-05T17:59:05.013Z",
+      "summary": "11-layer XSA stack pairs EMA/SWA, BigramHash, VE/partial RoPE, and late QAT before int6+LZMA quantized export for a compliant <16MB run.",
+      "tags": [
+        "architecture",
+        "quantization",
+        "regularization",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1386.json"
+    },
+    {
       "prNumber": 1385,
       "title": "Non-record: Compressor-Aware Training (CAT), differentiable compression proxies for LZ-family compressors",
       "status": "open",
-      "updatedAt": "2026-04-05T17:22:22Z",
-      "headSha": "de6b01af4fe4456edf8e2d48be9b1b3c98212865",
-      "generatedAt": "2026-04-05T17:28:45.974Z",
-      "summary": "Adds differentiable LZ77 dictionary-matching and entropy proxies so training encourages weights that compress better under int8+zlib serialization.",
+      "updatedAt": "2026-04-05T17:33:16Z",
+      "headSha": "9436baa104b457dee52e79a58dc92d2ee113de04",
+      "generatedAt": "2026-04-05T17:59:10.041Z",
+      "summary": "Trains models with differentiable LZ-family compression proxies, combining soft dictionary matching and entropy terms to bias quantized weights toward compressible patterns.",
       "tags": [
         "compression",
         "regularization",
@@ -97,14 +121,13 @@
     },
     {
       "prNumber": 1380,
-      "title": "Non-record: Focal Loss for LM Pretraining — 1.1567 int8 BPB on RTX 4000 Ada (3-line change)",
+      "title": "Non-record: Cosine LR Schedule — -0.070 BPB improvement + Focal Loss Investigation (corrected)",
       "status": "open",
-      "updatedAt": "2026-04-05T15:02:56Z",
-      "headSha": "b0863f68319fd85ef6add4db34b2b7f3781e394f",
-      "generatedAt": "2026-04-05T15:27:53.712Z",
-      "summary": "Focal loss reweights cross-entropy, paired with a cosine LR schedule and 1/10 encoder split, to prioritize hard tokens in LM pretraining.",
+      "updatedAt": "2026-04-05T17:52:36Z",
+      "headSha": "41f223020d988441b2d27dafba7c8ae5e4f54384",
+      "generatedAt": "2026-04-05T17:59:15.919Z",
+      "summary": "Cosine annealing replaces linear warmdown (stacked with a 1/10 encoder-decoder split) for consistent BPB gains; focal loss proved to be a training-only artifact.",
       "tags": [
-        "regularization",
         "training-schedule",
         "architecture",
         "non-record"
@@ -215,11 +238,11 @@
     {
       "prNumber": 1372,
       "title": "V20: Cascaded 2-Phase L-BFGS Causal SLOT (1.00497 BPB, 3-seed)",
-      "status": "open",
-      "updatedAt": "2026-04-05T05:01:34Z",
+      "status": "closed",
+      "updatedAt": "2026-04-05T17:34:43Z",
       "headSha": "ef61af87cfcfa552171cb6749efdfba905eb8d1e",
-      "generatedAt": "2026-04-05T05:25:30.195Z",
-      "summary": "Stacks cascaded 2-phase L-BFGS SLOT eval with fresh history resets to cut curvature work while keeping causal mask on scored tokens.",
+      "generatedAt": "2026-04-05T17:59:21.254Z",
+      "summary": "Cascades a coarse-to-fine L-BFGS SLOT pass with a history reset between phases to keep PR #1350 quality while trimming eval work and runtime.",
       "tags": [
         "optimizer",
         "evaluation"

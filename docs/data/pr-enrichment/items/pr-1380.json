@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-05T15:27:53.712Z",
+  "generatedAt": "2026-04-05T17:59:15.919Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1380,
-    "title": "Non-record: Focal Loss for LM Pretraining — 1.1567 int8 BPB on RTX 4000 Ada (3-line change)",
+    "title": "Non-record: Cosine LR Schedule — -0.070 BPB improvement + Focal Loss Investigation (corrected)",
     "state": "open",
-    "updatedAt": "2026-04-05T15:02:56Z",
-    "headSha": "b0863f68319fd85ef6add4db34b2b7f3781e394f",
+    "updatedAt": "2026-04-05T17:52:36Z",
+    "headSha": "41f223020d988441b2d27dafba7c8ae5e4f54384",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1380",
     "authorLogin": "ranausmanai"
   },
@@ -19,9 +19,8 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Focal loss reweights cross-entropy, paired with a cosine LR schedule and 1/10 encoder split, to prioritize hard tokens in LM pretraining.",
+    "summary": "Cosine annealing replaces linear warmdown (stacked with a 1/10 encoder-decoder split) for consistent BPB gains; focal loss proved to be a training-only artifact.",
     "tags": [
-      "regularization",
       "training-schedule",
       "architecture",
       "non-record"
@@ -29,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Focal loss reweights CE to focus gradients on hard tokens",
-      "- Cosine LR schedule replaces the linear warmdown",
-      "- Asymmetric 1/10 encoder-decoder split limits encoder depth"
+      "Cosine-annealed lr_mul() with min_lr_frac floor",
+      "Asymmetric 1/10 encoder-decoder layer ratio stacking",
+      "Focal loss evaluation bug fix keeps weighting training-only"
     ]
   },
   "compatibility": {
