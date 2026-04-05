@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-03T18:42:14.820Z",
+  "generatedAt": "2026-04-05T14:27:57.436Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1105,
     "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-03T18:27:06Z",
-    "headSha": "a73ca37b4d479e597ca412576e139233f6f60487",
+    "updatedAt": "2026-04-05T14:08:22Z",
+    "headSha": "e97f70d4a42a9144febeb08d8a69ff95262472a5",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1105",
     "authorLogin": "abaybektursun"
   },
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Fused Triton TMA forward + CUTLASS EVT backward MLPs, wider 3.5× layers, all-int6 GPTQ, and a GPU-side causal n-gram tilt that acts as sparse auxiliary memory.",
+    "summary": "Fuses Triton/CUTLASS MLP kernels with all-int6 GPTQ and a GPU causal n-gram tilt acting as sparse auxiliary memory for single-pass eval.",
     "tags": [
       "architecture",
       "quantization",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Fused Triton TMA + CUTLASS EVT MLP kernels",
-      "All-int6 GPTQ with LR floor and MLP 3.5× capacity",
-      "GPU-side causal n-gram tilt as sparse auxiliary memory"
+      "Triton TMA forward + CUTLASS EVT backward MLP fusion with precomputed act_grad",
+      "Full Hessian GPTQ to keep 66 layers in int6 under 16MB",
+      "Causal n-gram tilt as sparse auxiliary memory with fast C++ hash + GPU tilt"
     ]
   },
   "compatibility": {

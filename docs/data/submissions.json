@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-05T13:57:41.646Z",
+  "generatedAt": "2026-04-05T14:27:43.759Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -12084,16 +12084,16 @@
         "authorLogin": "abaybektursun",
         "authorName": null,
         "createdAt": "2026-03-30T00:03:19Z",
-        "updatedAt": "2026-04-03T18:27:06Z",
-        "headSha": "a73ca37b4d479e597ca412576e139233f6f60487",
+        "updatedAt": "2026-04-05T14:08:22Z",
+        "headSha": "e97f70d4a42a9144febeb08d8a69ff95262472a5",
         "headRepo": "abaybektursun/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/a73ca37b4d479e597ca412576e139233f6f60487/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/a73ca37b4d479e597ca412576e139233f6f60487/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/a73ca37b4d479e597ca412576e139233f6f60487/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/a73ca37b4d479e597ca412576e139233f6f60487/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/a73ca37b4d479e597ca412576e139233f6f60487/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/e97f70d4a42a9144febeb08d8a69ff95262472a5/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/e97f70d4a42a9144febeb08d8a69ff95262472a5/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/e97f70d4a42a9144febeb08d8a69ff95262472a5/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/e97f70d4a42a9144febeb08d8a69ff95262472a5/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/e97f70d4a42a9144febeb08d8a69ff95262472a5/records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap",
         "pr": "https://github.com/openai/parameter-golf/pull/1105",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -47598,6 +47598,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/3d29b3296fea2f5cd8bdbe021c0e9ca714a2410a/records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/3d29b3296fea2f5cd8bdbe021c0e9ca714a2410a/records/track_non_record_16mb/2026-03-27_PhaseCoherenceGatedGradients",
         "pr": "https://github.com/openai/parameter-golf/pull/984",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_non_record_16mb-2026-04-04_NeuromodulatoryRecurrence",
+      "source": "pull_request",
+      "status": "open",
+      "category": "non-record",
+      "track": {
+        "path": "records/track_non_record_16mb",
+        "slug": "track_non_record_16mb",
+        "label": "Non-record / 16MB",
+        "official": false,
+        "category": "non-record"
+      },
+      "record": {
+        "folderName": "2026-04-04_NeuromodulatoryRecurrence",
+        "folderPath": "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence",
+        "submissionPath": "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/submission.json",
+        "readmePath": "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/README.md",
+        "trainLogPath": "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/train.log",
+        "scriptPath": "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/train_gpt.py"
+      },
+      "submission": {
+        "author": "nirmathur",
+        "githubId": "nirmathur",
+        "name": "Nir Mathur",
+        "blurb": null,
+        "date": "2026-04-04"
+      },
+      "metrics": {
+        "valBpb": 1.3151,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1383,
+        "title": "Non-record: Neuromodulatory Depth-Recurrent Transformer with FiLM-only TTT (WIP, val_bpb=1.3151)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1383",
+        "authorLogin": "nirmathur",
+        "authorName": null,
+        "createdAt": "2026-04-05T14:04:14Z",
+        "updatedAt": "2026-04-05T14:08:07Z",
+        "headSha": "6633e80bcc272c796efd1441f43a0944ff212b64",
+        "headRepo": "nirmathur/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/6633e80bcc272c796efd1441f43a0944ff212b64/records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/6633e80bcc272c796efd1441f43a0944ff212b64/records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/6633e80bcc272c796efd1441f43a0944ff212b64/records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/6633e80bcc272c796efd1441f43a0944ff212b64/records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/6633e80bcc272c796efd1441f43a0944ff212b64/records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence",
+        "pr": "https://github.com/openai/parameter-golf/pull/1383",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

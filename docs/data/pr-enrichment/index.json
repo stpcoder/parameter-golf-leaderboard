@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-04-05T13:57:55.308Z",
+  "generatedAt": "2026-04-05T14:27:57.596Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1383,
+      "title": "Non-record: Neuromodulatory Depth-Recurrent Transformer with FiLM-only TTT (WIP, val_bpb=1.3151)",
+      "status": "open",
+      "updatedAt": "2026-04-05T14:08:07Z",
+      "headSha": "6633e80bcc272c796efd1441f43a0944ff212b64",
+      "generatedAt": "2026-04-05T14:27:52.323Z",
+      "summary": "Depth-recurrent transformer reuses shared blocks with per-iteration FiLM modulation, mimicking neuromodulation while keeping TTT updates confined to FiLM parameters.",
+      "tags": [
+        "architecture",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1383.json"
+    },
     {
       "prNumber": 1381,
       "title": "Cautious Muon + SP4096 + Depth Recurrence — val_bpb 1.1604 (non-record)",
@@ -4818,10 +4840,10 @@
       "prNumber": 1105,
       "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-03T18:27:06Z",
-      "headSha": "a73ca37b4d479e597ca412576e139233f6f60487",
-      "generatedAt": "2026-04-03T18:42:14.820Z",
-      "summary": "Fused Triton TMA forward + CUTLASS EVT backward MLPs, wider 3.5× layers, all-int6 GPTQ, and a GPU-side causal n-gram tilt that acts as sparse auxiliary memory.",
+      "updatedAt": "2026-04-05T14:08:22Z",
+      "headSha": "e97f70d4a42a9144febeb08d8a69ff95262472a5",
+      "generatedAt": "2026-04-05T14:27:57.436Z",
+      "summary": "Fuses Triton/CUTLASS MLP kernels with all-int6 GPTQ and a GPU causal n-gram tilt acting as sparse auxiliary memory for single-pass eval.",
       "tags": [
         "architecture",
         "quantization",
