@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-05T05:55:36.382Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1373,
+    "title": "Submit Int6 Native + SmearGate + BigramHash config",
+    "state": "open",
+    "updatedAt": "2026-04-05T05:39:17Z",
+    "headSha": "83364e82e2340dc7cb32e2f1bea21c63f41ff88a",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1373",
+    "authorLogin": "metadore"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/int6_smeargate_bigramhash/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "Combines Int6-native quantization with a learned SmearGate and BigramHash memorization on a 10-layer MLP-heavy network plus Muon weight decay tweaks.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "attention"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "Int6 native emulation quantization",
+      "SmearGate input blending gate",
+      "BigramHash token memorization"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}
