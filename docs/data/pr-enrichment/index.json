@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-05T19:59:44.386Z",
+  "generatedAt": "2026-04-05T20:29:55.574Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -8619,10 +8619,10 @@
       "prNumber": 877,
       "title": "Non-record: sin² activation + causal screening pipeline",
       "status": "open",
-      "updatedAt": "2026-04-04T20:00:43Z",
-      "headSha": "1c643878e4d5771bffd64d256580f9909860d8cb",
-      "generatedAt": "2026-04-04T20:22:35.840Z",
-      "summary": "Drop-in sin² MLP activation discovered via causal DAG screening, paired with adaptive multi-token prediction and Rho-1 selective loss probes.",
+      "updatedAt": "2026-04-05T20:22:01Z",
+      "headSha": "faaa0f0ee1380685d317233cd5699cab4b218a19",
+      "generatedAt": "2026-04-05T20:29:55.451Z",
+      "summary": "Swapped relu² for sin² in GPT MLPs while using a causal DAG-guided screening pipeline to surface periodic activations and adaptive multi-token ideas.",
       "tags": [
         "architecture",
         "evaluation",
