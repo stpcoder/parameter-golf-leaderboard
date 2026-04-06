@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-21T06:29:33.821Z",
+  "generatedAt": "2026-04-06T23:06:37.902Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 314,
     "title": "11L Int4 MLP QAT + BigramHash(10240) + SWA",
-    "state": "open",
-    "updatedAt": "2026-03-21T06:04:26Z",
+    "state": "closed",
+    "updatedAt": "2026-04-06T22:53:15Z",
     "headSha": "45f22cbd6618ab343681c0ad034986a643aa97b8",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/314",
     "authorLogin": "aravhawk"
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Int4 QAT on MLP weights buys space for an 11-layer transformer while keeping BigramHash+SWA innovations and tuned pruning.",
+    "summary": "Adds an 11th layer by swapping to int4 MLP QAT and mild pruning so the extra capacity fits the 16MB budget while preserving existing BigramHash/SWA innovations.",
     "tags": [
       "quantization",
       "architecture",
@@ -28,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Int4 MLP QAT via STE fake quantization",
-      "Per-module magnitude pruning (5% MLP, 3% attention)",
-      "SWA + BigramHash(10240) preserved within 16MB"
+      "Int4 MLP QAT via STE fake quantization with differentiated pruning",
+      "Extra transformer layer enabled by quantization/pruning savings",
+      "SWA plus reduced warmdown inside the existing BigramHash/SmearGate stack"
     ]
   },
   "compatibility": {

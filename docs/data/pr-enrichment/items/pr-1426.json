@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-06T22:05:57.126Z",
+  "generatedAt": "2026-04-06T23:06:34.303Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1426,
     "title": "14L Int4-Packed MLP GPTQ + XSA-all + BigramHash 3072x112",
     "state": "open",
-    "updatedAt": "2026-04-06T21:57:17Z",
-    "headSha": "32fcaa897660f2a581c7baa4151f6b07296382dc",
+    "updatedAt": "2026-04-06T23:03:06Z",
+    "headSha": "6a4c5eddf4f69c37c81ae52bf1773302a6e264ab",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1426",
     "authorLogin": "aravhawk"
   },
@@ -19,18 +19,17 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Full-Hessian GPTQ with clip_range=7 on MLP plus true int4 bit-packing frees bytes to run 14-layer transformer while keeping attention at int6.",
+    "summary": "Extends the SOTA stack with true int4 bit-packing plus int4 GPTQ for MLPs to fit 13-14 transformer layers in 16MB.",
     "tags": [
       "quantization",
-      "architecture",
-      "compression"
+      "compression",
+      "architecture"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Full Hessian GPTQ with clip_range=7 for MLP quantization",
-      "True int4 bit-packing stores two weights per byte before compression",
-      "14-layer architecture retaining XSA-all and int6 attention"
+      "True int4 bit-packing storing two weights per byte",
+      "Full Hessian GPTQ MLP quantized at clip_range=7 while keeping attention at int6"
     ]
   },
   "compatibility": {
