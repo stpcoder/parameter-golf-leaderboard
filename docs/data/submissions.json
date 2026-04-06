@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T09:32:35.775Z",
+  "generatedAt": "2026-04-06T10:02:46.718Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -13261,7 +13261,7 @@
     {
       "id": "record-records-track_10min_16mb-2026-04-05_Hadamard_dTTT_Recur2",
       "source": "pull_request",
-      "status": "open",
+      "status": "closed",
       "category": "main-track",
       "track": {
         "path": "records/track_10min_16mb",
@@ -13309,14 +13309,14 @@
       "pr": {
         "number": 1400,
         "title": "Record: Hadamard-Rotated GPTQ + dTTT + Recur2 (1.1035 BPB)",
-        "state": "open",
+        "state": "closed",
         "draft": false,
         "mergedAt": null,
         "htmlUrl": "https://github.com/openai/parameter-golf/pull/1400",
         "authorLogin": "tmancino",
         "authorName": null,
         "createdAt": "2026-04-06T01:52:00Z",
-        "updatedAt": "2026-04-06T01:52:00Z",
+        "updatedAt": "2026-04-06T09:53:17Z",
         "headSha": "69faa980026c540f99d1d86aa2baac4444b1072b",
         "headRepo": "tmancino/parameter-golf"
       },
@@ -56279,17 +56279,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1400,
-        "title": "Record: Hadamard-Rotated GPTQ + dTTT + Recur2 (1.1035 BPB)",
+        "number": 1239,
+        "title": "[Non-Record] Whirlpool v5b — Non-Euclidean Lorentzian Attention on the Hyperboloid Manifold",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1400",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1239",
         "authorLogin": "tmancino",
         "authorName": null,
-        "createdAt": "2026-04-06T01:52:00Z",
-        "updatedAt": "2026-04-06T01:52:00Z",
-        "headSha": "69faa980026c540f99d1d86aa2baac4444b1072b",
+        "createdAt": "2026-04-01T23:55:33Z",
+        "updatedAt": "2026-04-01T23:55:33Z",
+        "headSha": "3780f0e47ee6d83d1b082a5828efa70b18c41994",
         "headRepo": "tmancino/parameter-golf"
       },
       "links": {
@@ -56298,7 +56298,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/3780f0e47ee6d83d1b082a5828efa70b18c41994/records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/3780f0e47ee6d83d1b082a5828efa70b18c41994/records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/3780f0e47ee6d83d1b082a5828efa70b18c41994/records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer",
-        "pr": "https://github.com/openai/parameter-golf/pull/1400",
+        "pr": "https://github.com/openai/parameter-golf/pull/1239",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

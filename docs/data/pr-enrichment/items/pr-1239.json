@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T23:56:34.596Z",
+  "generatedAt": "2026-04-06T10:02:58.471Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Hyperboloid Lorentzian attention with a custom Triton kernel and curvature-progressive shared blocks for depth.",
+    "summary": "Shared-block Transformer reuses 3 blocks across 8 curvature-progressive orbits, scoring Lorentzian attention via Minkowski inner products with a Flash kernel.",
     "tags": [
       "attention",
       "architecture",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "- Minkowski inner-product attention on the hyperboloid via a fused Flash Lorentz kernel",
-      "- Shared 3-block architecture run through 8 curvature-progressive orbits for depth with few stored params",
-      "- Scale clamping plus extended warmup to stabilize non-Euclidean training"
+      "Flash Lorentz attention kernel",
+      "Curvature-progressive orbits over shared blocks",
+      "Scale clamping plus extended warmup stabilizes Lorentzian training"
     ]
   },
   "compatibility": {
