@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T08:33:03.349Z",
+  "generatedAt": "2026-04-06T09:02:37.516Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -16191,6 +16191,83 @@
       }
     },
     {
+      "id": "record-records-track_10min_16mb-2026-04-06_Jtss-ux_SOTA_v2",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-06_Jtss-ux_SOTA_v2",
+        "folderPath": "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2",
+        "submissionPath": "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/train_gpt.py"
+      },
+      "submission": {
+        "author": "Jtss-ux",
+        "githubId": "Jtss-ux",
+        "name": null,
+        "blurb": "11L XSA-all + Full Hessian GPTQ with autoregressive self-generated calibration + BigramHash 3072x112. 3-seed mean: 1.115094 BPB.",
+        "date": "2026-04-06"
+      },
+      "metrics": {
+        "valBpb": 1.1151,
+        "valLoss": 1.8828,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 15860098,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1269,
+        "title": "30-Layer Recursive GPT (10 Physical x 3 Recursive) + VRL + Parallel Muon",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1269",
+        "authorLogin": "Jtss-ux",
+        "authorName": null,
+        "createdAt": "2026-04-02T22:21:57Z",
+        "updatedAt": "2026-04-06T08:45:33Z",
+        "headSha": "494c8aec8cbb89213989a7367ebaa6fdcbc8c145",
+        "headRepo": "Jtss-ux/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2",
+        "pr": "https://github.com/openai/parameter-golf/pull/1269",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
       "id": "record-records-track_10min_16mb-2026-03-30_SLOT_SGD_Final",
       "source": "pull_request",
       "status": "closed",
@@ -23409,16 +23486,16 @@
         "authorLogin": "Jtss-ux",
         "authorName": null,
         "createdAt": "2026-04-02T22:21:57Z",
-        "updatedAt": "2026-04-06T07:02:07Z",
-        "headSha": "58c874f80ec800c2377f9d08cf8474cc8b2faabe",
+        "updatedAt": "2026-04-06T08:45:33Z",
+        "headSha": "494c8aec8cbb89213989a7367ebaa6fdcbc8c145",
         "headRepo": "Jtss-ux/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline",
         "pr": "https://github.com/openai/parameter-golf/pull/1269",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -41581,16 +41658,16 @@
         "authorLogin": "Jtss-ux",
         "authorName": null,
         "createdAt": "2026-04-02T22:21:57Z",
-        "updatedAt": "2026-04-06T07:02:07Z",
-        "headSha": "58c874f80ec800c2377f9d08cf8474cc8b2faabe",
+        "updatedAt": "2026-04-06T08:45:33Z",
+        "headSha": "494c8aec8cbb89213989a7367ebaa6fdcbc8c145",
         "headRepo": "Jtss-ux/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/58c874f80ec800c2377f9d08cf8474cc8b2faabe/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/494c8aec8cbb89213989a7367ebaa6fdcbc8c145/records/track_10min_16mb/Jtss-ux_Recursive_30_Layer",
         "pr": "https://github.com/openai/parameter-golf/pull/1269",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },

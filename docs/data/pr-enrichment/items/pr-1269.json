@@ -1,38 +1,39 @@
 {
-  "generatedAt": "2026-04-06T08:34:54.839Z",
+  "generatedAt": "2026-04-06T09:02:45.535Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1269,
     "title": "30-Layer Recursive GPT (10 Physical x 3 Recursive) + VRL + Parallel Muon",
     "state": "open",
-    "updatedAt": "2026-04-06T07:02:07Z",
-    "headSha": "58c874f80ec800c2377f9d08cf8474cc8b2faabe",
+    "updatedAt": "2026-04-06T08:45:33Z",
+    "headSha": "494c8aec8cbb89213989a7367ebaa6fdcbc8c145",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1269",
     "authorLogin": "Jtss-ux"
   },
   "inputs": {
-    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "hash": "c4f8d017d13e812b0ad5a78b677f8350df1124736cd3f84c8d4e37f273206c70",
     "readmePaths": [
+      "records/track_10min_16mb/2026-04-06_Jtss-ux_SOTA_v2/README.md",
       "records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/README.md",
       "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/README.md"
     ],
-    "submissionCount": 2
+    "submissionCount": 3
   },
   "output": {
-    "summary": "Shares 10 physical layers across 3 recursive passes with VRL, MTP, and bigram/trigram hashing plus Parallel Muon targeting 30-layer virtual depth.",
+    "summary": "Emulates 30 layers via 3× recursive 10-layer block with VRL, MTP, hash n-grams, and int8 muon-trained GPTQ on H100.",
     "tags": [
       "architecture",
       "optimizer",
-      "muon",
-      "quantization"
+      "quantization",
+      "tokenization"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Recursive weight sharing for 30-layer virtual depth",
-      "Value Residual Learning with sigmoid gating",
-      "Parallel Muon optimizer with bigram/trigram hashing and MTP"
+      "Recursive weight sharing to reach 30-layer virtual depth",
+      "Value Residual Learning with sigmoid gating plus MTP and bigram/trigram hashing",
+      "Parallel Muon training followed by Hessian GPTQ int8 calibration"
     ]
   },
   "compatibility": {
