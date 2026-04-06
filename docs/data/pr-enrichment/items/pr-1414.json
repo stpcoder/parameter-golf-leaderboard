@@ -1,26 +1,25 @@
 {
-  "generatedAt": "2026-04-06T12:03:28.599Z",
+  "generatedAt": "2026-04-06T21:05:52.540Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1414,
     "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
     "state": "open",
-    "updatedAt": "2026-04-06T11:47:39Z",
-    "headSha": "f76e6945116e7b4fbc88495325ec165d1edc9800",
+    "updatedAt": "2026-04-06T20:50:28Z",
+    "headSha": "5b1740dc195fa4e7bf6346661b09866253a9690f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1414",
     "authorLogin": "Abhishek8108"
   },
   "inputs": {
-    "hash": "333c1651a7101d4267d971ebe25bd793307b61c975586544bbd6b9a9c3a8cf24",
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
     "readmePaths": [
-      "records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/README.md",
-      "records/track_non_record_16mb/2026-03-27_QNA_SQWA_CompressionThesis_8xH100/README.md"
+      "records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/README.md"
     ],
-    "submissionCount": 2
+    "submissionCount": 1
   },
   "output": {
-    "summary": "Combines discriminative per-block TTT LR scaling before quantization with SLOT-24 eval-time delta optimization to probe whether SLOT dominates base-model gains.",
+    "summary": "Combines discriminative per-block TTT fine-tuning with SLOT-24 per-sample delta optimization to saturate eval budget at ~0.71 BPB.",
     "tags": [
       "training-schedule",
       "evaluation",
@@ -29,9 +28,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "discriminative per-block TTT LR scaling pre-quantization",
-      "SLOT-24 per-sample hidden-state/logit delta optimization",
-      "3-seed verification of the combined pipeline"
+      "per-block adaptive learning-rate TTT",
+      "24-step SLOT delta updates with hidden-state/logit bias",
+      "3-seed verification of merged workflow"
     ]
   },
   "compatibility": {

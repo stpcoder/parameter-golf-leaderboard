@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T19:17:57.639Z",
+  "generatedAt": "2026-04-06T21:05:59.283Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
@@ -19,7 +19,7 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Targets the int6 artifact by training with LR-scaled quantization noise and averaging quantized-dequantized EMA snapshots to live in a quant-friendly subspace.",
+    "summary": "Apply quantization-noise annealing and stochastic quantized EMA averaging to bias training toward the int6 artifact while exposing float-quality bottleneck.",
     "tags": [
       "quantization",
       "training-schedule",
@@ -28,8 +28,8 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "Quantization Noise Annealing via LR-scaled uniform int6 noise",
-      "Stochastic Quantized Weight Averaging on EMA snapshots"
+      "Quantization Noise Annealing: LR-scaled int6 noise in CastedLinear passes",
+      "Stochastic Quantized Weight Averaging: average quant-dequant EMA snapshots during warmdown"
     ]
   },
   "compatibility": {

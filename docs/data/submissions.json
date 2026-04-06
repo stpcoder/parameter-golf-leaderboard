@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T20:35:37.762Z",
+  "generatedAt": "2026-04-06T21:05:45.234Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -4838,16 +4838,16 @@
         "authorLogin": "Abhishek8108",
         "authorName": null,
         "createdAt": "2026-04-06T11:47:39Z",
-        "updatedAt": "2026-04-06T11:47:39Z",
-        "headSha": "f76e6945116e7b4fbc88495325ec165d1edc9800",
+        "updatedAt": "2026-04-06T20:50:28Z",
+        "headSha": "5b1740dc195fa4e7bf6346661b09866253a9690f",
         "headRepo": "Abhishek8108/parameter-golf"
       },
       "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/f76e6945116e7b4fbc88495325ec165d1edc9800/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/f76e6945116e7b4fbc88495325ec165d1edc9800/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/f76e6945116e7b4fbc88495325ec165d1edc9800/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/f76e6945116e7b4fbc88495325ec165d1edc9800/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/f76e6945116e7b4fbc88495325ec165d1edc9800/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100",
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/5b1740dc195fa4e7bf6346661b09866253a9690f/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/5b1740dc195fa4e7bf6346661b09866253a9690f/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/5b1740dc195fa4e7bf6346661b09866253a9690f/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/5b1740dc195fa4e7bf6346661b09866253a9690f/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/5b1740dc195fa4e7bf6346661b09866253a9690f/records/track_non_record_16mb/2026-04-06_DiscTTT_SLOT24_3seed_8xH100",
         "pr": "https://github.com/openai/parameter-golf/pull/1414",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
@@ -21552,17 +21552,17 @@
         "valOnlyMatches": []
       },
       "pr": {
-        "number": 1414,
-        "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
+        "number": 975,
+        "title": "Non-record: QNA + SQWA compression thesis (8xH100 SXM)",
         "state": "open",
         "draft": false,
         "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1414",
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/975",
         "authorLogin": "Abhishek8108",
         "authorName": null,
-        "createdAt": "2026-04-06T11:47:39Z",
-        "updatedAt": "2026-04-06T11:47:39Z",
-        "headSha": "f76e6945116e7b4fbc88495325ec165d1edc9800",
+        "createdAt": "2026-03-27T18:54:04Z",
+        "updatedAt": "2026-03-27T18:54:04Z",
+        "headSha": "fe607e10da1153321fe110b83f634a69a71df8ac",
         "headRepo": "Abhishek8108/parameter-golf"
       },
       "links": {
@@ -21571,7 +21571,7 @@
         "trainLog": "https://github.com/openai/parameter-golf/blob/fe607e10da1153321fe110b83f634a69a71df8ac/records/track_non_record_16mb/2026-03-27_QNA_SQWA_CompressionThesis_8xH100/train.log",
         "script": "https://github.com/openai/parameter-golf/blob/fe607e10da1153321fe110b83f634a69a71df8ac/records/track_non_record_16mb/2026-03-27_QNA_SQWA_CompressionThesis_8xH100/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/fe607e10da1153321fe110b83f634a69a71df8ac/records/track_non_record_16mb/2026-03-27_QNA_SQWA_CompressionThesis_8xH100",
-        "pr": "https://github.com/openai/parameter-golf/pull/1414",
+        "pr": "https://github.com/openai/parameter-golf/pull/975",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

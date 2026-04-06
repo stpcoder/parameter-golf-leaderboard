@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T20:35:49.567Z",
+  "generatedAt": "2026-04-06T21:05:59.413Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -264,10 +264,10 @@
       "prNumber": 1414,
       "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
       "status": "open",
-      "updatedAt": "2026-04-06T11:47:39Z",
-      "headSha": "f76e6945116e7b4fbc88495325ec165d1edc9800",
-      "generatedAt": "2026-04-06T12:03:28.599Z",
-      "summary": "Combines discriminative per-block TTT LR scaling before quantization with SLOT-24 eval-time delta optimization to probe whether SLOT dominates base-model gains.",
+      "updatedAt": "2026-04-06T20:50:28Z",
+      "headSha": "5b1740dc195fa4e7bf6346661b09866253a9690f",
+      "generatedAt": "2026-04-06T21:05:52.540Z",
+      "summary": "Combines discriminative per-block TTT fine-tuning with SLOT-24 per-sample delta optimization to saturate eval budget at ~0.71 BPB.",
       "tags": [
         "training-schedule",
         "evaluation",
@@ -7723,6 +7723,29 @@
         "valOnlyMatchesCollector": true
       },
       "file": "items/pr-978.json"
+    },
+    {
+      "prNumber": 975,
+      "title": "Non-record: QNA + SQWA compression thesis (8xH100 SXM)",
+      "status": "open",
+      "updatedAt": "2026-03-27T18:54:04Z",
+      "headSha": "fe607e10da1153321fe110b83f634a69a71df8ac",
+      "generatedAt": "2026-04-06T21:05:59.283Z",
+      "summary": "Apply quantization-noise annealing and stochastic quantized EMA averaging to bias training toward the int6 artifact while exposing float-quality bottleneck.",
+      "tags": [
+        "quantization",
+        "training-schedule",
+        "non-record"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-975.json"
     },
     {
       "prNumber": 974,
