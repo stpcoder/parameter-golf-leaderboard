@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-06T08:35:00.108Z",
+  "generatedAt": "2026-04-06T12:34:11.294Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1246,
     "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
     "state": "open",
-    "updatedAt": "2026-04-05T21:56:53Z",
-    "headSha": "7d9268023ac266762aa5d620230f59ba56fc3378",
+    "updatedAt": "2026-04-06T12:18:48Z",
+    "headSha": "c7b75aa858907b6a56b27854e28383d3e79f645d",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1246",
     "authorLogin": "deborahnelson8788726"
   },
@@ -19,18 +19,16 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Trinity-inspired ternary QAT widens the MLP and packs weights via base-3 ternary packing while training with Partial RoPE, NeoMuon, EMA/SWA before GPTQ.",
+    "summary": "Ternary BitNet QAT GPT with Partial RoPE and NeoMuon, plus per-sample SLOT v2 delta/logit-bias tuning during eval to keep the 16MB artifact size.",
     "tags": [
       "quantization",
-      "architecture",
-      "muon"
+      "evaluation"
     ],
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "ternary QAT with base-3 packing",
-      "wider (3.25x+) MLP per Trinity redundancy insight",
-      "Partial RoPE + NeoMuon + EMA/SWA training stack"
+      "BitNet ternary QAT GPT backbone with Partial RoPE & NeoMuon",
+      "Per-sample SLOT v2 delta/logit-bias tuning during eval"
     ]
   },
   "compatibility": {

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-04-06T12:33:58.321Z",
+  "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
+  "model": "gpt-5.1-codex-mini",
+  "pr": {
+    "number": 1415,
+    "title": "Record: SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB — val_bpb 1.0913 (3-seed mean)",
+    "state": "open",
+    "updatedAt": "2026-04-06T12:32:13Z",
+    "headSha": "4949b8172b12da304d5c6711d619405faabf20bd",
+    "htmlUrl": "https://github.com/openai/parameter-golf/pull/1415",
+    "authorLogin": "bigbag"
+  },
+  "inputs": {
+    "hash": "0bb5690a2afcdecc4c65637c61da65621bc92bfea1c1e4857140b879f69a6341",
+    "readmePaths": [
+      "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/README.md"
+    ],
+    "submissionCount": 1
+  },
+  "output": {
+    "summary": "SP4096 model pairs GPTQ-quantized embeddings with SDClip, three-layer depth recurrence, and ETLB logit bias during sliding-window evaluation.",
+    "tags": [
+      "quantization",
+      "architecture",
+      "evaluation"
+    ],
+    "usesValOnly": false,
+    "valOnlyReasoning": "",
+    "techniques": [
+      "GPTQ embeddings with SDClip clipping",
+      "3-layer depth recurrence on layers 3-5",
+      "Eval-time logit bias (ETLB) during sliding-window eval"
+    ]
+  },
+  "compatibility": {
+    "collectorUsesValOnly": false,
+    "aiUsesValOnly": false,
+    "finalUsesValOnly": false,
+    "valOnlyMatchesCollector": true
+  }
+}

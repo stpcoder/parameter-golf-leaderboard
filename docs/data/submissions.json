@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T12:03:23.043Z",
+  "generatedAt": "2026-04-06T12:33:51.890Z",
   "sourceRepo": "openai/parameter-golf",
   "sourceRoot": "https://github.com/openai/parameter-golf",
   "submissions": [
@@ -1604,7 +1604,7 @@
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-30T18:53:55Z",
-        "updatedAt": "2026-03-31T14:44:56Z",
+        "updatedAt": "2026-04-06T12:08:26Z",
         "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
@@ -4464,6 +4464,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/7b786ba0b3dc778d02f179be697a020623a2da36/records/track_10min_16mb/2026-03-25_NgramCache_EntropyAdaptive_0.6672/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/7b786ba0b3dc778d02f179be697a020623a2da36/records/track_10min_16mb/2026-03-25_NgramCache_EntropyAdaptive_0.6672",
         "pr": "https://github.com/openai/parameter-golf/pull/770",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
+        "folderPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
+        "submissionPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py"
+      },
+      "submission": {
+        "author": "gHashTag",
+        "githubId": "deborahnelson8788726",
+        "name": "Trinity_SLOT_v2",
+        "blurb": null,
+        "date": "2026-04-06"
+      },
+      "metrics": {
+        "valBpb": 0.668,
+        "valLoss": null,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": null,
+        "bytesCode": null,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1246,
+        "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1246",
+        "authorLogin": "deborahnelson8788726",
+        "authorName": null,
+        "createdAt": "2026-04-02T02:44:32Z",
+        "updatedAt": "2026-04-06T12:18:48Z",
+        "headSha": "c7b75aa858907b6a56b27854e28383d3e79f645d",
+        "headRepo": "deborahnelson8788726/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/c7b75aa858907b6a56b27854e28383d3e79f645d/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/c7b75aa858907b6a56b27854e28383d3e79f645d/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/c7b75aa858907b6a56b27854e28383d3e79f645d/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/c7b75aa858907b6a56b27854e28383d3e79f645d/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/c7b75aa858907b6a56b27854e28383d3e79f645d/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
+        "pr": "https://github.com/openai/parameter-golf/pull/1246",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -9851,7 +9928,7 @@
         "authorLogin": "simon-marcus",
         "authorName": null,
         "createdAt": "2026-03-30T18:53:55Z",
-        "updatedAt": "2026-03-31T14:44:56Z",
+        "updatedAt": "2026-04-06T12:08:26Z",
         "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
         "headRepo": "simon-marcus/parameter-golf-fork"
       },
@@ -9928,7 +10005,7 @@
         "authorLogin": "MatoTeziTanka",
         "authorName": null,
         "createdAt": "2026-04-03T07:37:15Z",
-        "updatedAt": "2026-04-06T11:48:34Z",
+        "updatedAt": "2026-04-06T12:31:43Z",
         "headSha": "302f714bebadaf8727f448690f0e138bf3da9b8f",
         "headRepo": "MatoTeziTanka/parameter-golf"
       },
@@ -11479,6 +11556,83 @@
         "script": "https://github.com/openai/parameter-golf/blob/e1cf90a3f9911001e059cd1d1ca4bde32d6677d5/records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_WD090_AllInt6/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/e1cf90a3f9911001e059cd1d1ca4bde32d6677d5/records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_WD090_AllInt6",
         "pr": "https://github.com/openai/parameter-golf/pull/1285",
+        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
+      },
+      "provenance": {
+        "onMain": false,
+        "hasPullRequest": true,
+        "listedInReadme": false
+      }
+    },
+    {
+      "id": "record-records-track_10min_16mb-2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB",
+      "source": "pull_request",
+      "status": "open",
+      "category": "main-track",
+      "track": {
+        "path": "records/track_10min_16mb",
+        "slug": "track_10min_16mb",
+        "label": "10 Minute / 16MB",
+        "official": true,
+        "category": "main-track"
+      },
+      "record": {
+        "folderName": "2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB",
+        "folderPath": "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB",
+        "submissionPath": "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/submission.json",
+        "readmePath": "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/README.md",
+        "trainLogPath": "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train.log",
+        "scriptPath": "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_gpt.py"
+      },
+      "submission": {
+        "author": "bigbag",
+        "githubId": "bigbag",
+        "name": "SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB",
+        "blurb": "SP4096 with 3-layer depth recurrence (layers 3,4,5), GPTQ on embeddings (int8), SDClip quantization, QK-Gain 5.0, WD=0.095, MLR=0.022, and eval-time logit bias (ETLB). Based on PR #1394 codebase.",
+        "date": "2026-04-06T19:00:00Z"
+      },
+      "metrics": {
+        "valBpb": 1.0913,
+        "valLoss": 2.5079,
+        "preQuantValBpb": null,
+        "preQuantValLoss": null,
+        "stepStop": null,
+        "wallclockSeconds": null,
+        "evalTimeSeconds": null
+      },
+      "artifact": {
+        "bytesTotal": 14748056,
+        "bytesCode": 18165,
+        "bytesModelInt8Zlib": null
+      },
+      "flags": {
+        "usesValOnly": false
+      },
+      "detection": {
+        "valOnlyConfidence": "none",
+        "valOnlyMatches": []
+      },
+      "pr": {
+        "number": 1415,
+        "title": "Record: SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB — val_bpb 1.0913 (3-seed mean)",
+        "state": "open",
+        "draft": false,
+        "mergedAt": null,
+        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1415",
+        "authorLogin": "bigbag",
+        "authorName": null,
+        "createdAt": "2026-04-06T12:32:13Z",
+        "updatedAt": "2026-04-06T12:32:13Z",
+        "headSha": "4949b8172b12da304d5c6711d619405faabf20bd",
+        "headRepo": "bigbag/parameter-golf"
+      },
+      "links": {
+        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/4949b8172b12da304d5c6711d619405faabf20bd/records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/submission.json",
+        "readme": "https://github.com/openai/parameter-golf/blob/4949b8172b12da304d5c6711d619405faabf20bd/records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/README.md",
+        "trainLog": "https://github.com/openai/parameter-golf/blob/4949b8172b12da304d5c6711d619405faabf20bd/records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train.log",
+        "script": "https://github.com/openai/parameter-golf/blob/4949b8172b12da304d5c6711d619405faabf20bd/records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_gpt.py",
+        "folder": "https://github.com/openai/parameter-golf/tree/4949b8172b12da304d5c6711d619405faabf20bd/records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB",
+        "pr": "https://github.com/openai/parameter-golf/pull/1415",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {
@@ -23805,83 +23959,6 @@
         "script": "https://github.com/openai/parameter-golf/blob/479b8bcfa8ea0e5e7b711aff7f54fafb9b72b0c2/records/track_10min_16mb/2026-03-20_FarnsworthEngine_TTT_11L_Int6_MLP3x/train_gpt.py",
         "folder": "https://github.com/openai/parameter-golf/tree/479b8bcfa8ea0e5e7b711aff7f54fafb9b72b0c2/records/track_10min_16mb/2026-03-20_FarnsworthEngine_TTT_11L_Int6_MLP3x",
         "pr": "https://github.com/openai/parameter-golf/pull/254",
-        "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
-      },
-      "provenance": {
-        "onMain": false,
-        "hasPullRequest": true,
-        "listedInReadme": false
-      }
-    },
-    {
-      "id": "record-records-track_10min_16mb-2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
-      "source": "pull_request",
-      "status": "open",
-      "category": "main-track",
-      "track": {
-        "path": "records/track_10min_16mb",
-        "slug": "track_10min_16mb",
-        "label": "10 Minute / 16MB",
-        "official": true,
-        "category": "main-track"
-      },
-      "record": {
-        "folderName": "2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
-        "folderPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
-        "submissionPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
-        "readmePath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
-        "trainLogPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
-        "scriptPath": "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py"
-      },
-      "submission": {
-        "author": "gHashTag",
-        "githubId": "deborahnelson8788726",
-        "name": "Trinity_Hybrid_GPTQ_XSA",
-        "blurb": null,
-        "date": "2026-04-05"
-      },
-      "metrics": {
-        "valBpb": 1.1304,
-        "valLoss": null,
-        "preQuantValBpb": null,
-        "preQuantValLoss": null,
-        "stepStop": null,
-        "wallclockSeconds": null,
-        "evalTimeSeconds": null
-      },
-      "artifact": {
-        "bytesTotal": null,
-        "bytesCode": null,
-        "bytesModelInt8Zlib": null
-      },
-      "flags": {
-        "usesValOnly": false
-      },
-      "detection": {
-        "valOnlyConfidence": "none",
-        "valOnlyMatches": []
-      },
-      "pr": {
-        "number": 1246,
-        "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
-        "state": "open",
-        "draft": false,
-        "mergedAt": null,
-        "htmlUrl": "https://github.com/openai/parameter-golf/pull/1246",
-        "authorLogin": "deborahnelson8788726",
-        "authorName": null,
-        "createdAt": "2026-04-02T02:44:32Z",
-        "updatedAt": "2026-04-05T21:56:53Z",
-        "headSha": "7d9268023ac266762aa5d620230f59ba56fc3378",
-        "headRepo": "deborahnelson8788726/parameter-golf"
-      },
-      "links": {
-        "submissionJson": "https://raw.githubusercontent.com/openai/parameter-golf/7d9268023ac266762aa5d620230f59ba56fc3378/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
-        "readme": "https://github.com/openai/parameter-golf/blob/7d9268023ac266762aa5d620230f59ba56fc3378/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
-        "trainLog": "https://github.com/openai/parameter-golf/blob/7d9268023ac266762aa5d620230f59ba56fc3378/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train.log",
-        "script": "https://github.com/openai/parameter-golf/blob/7d9268023ac266762aa5d620230f59ba56fc3378/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
-        "folder": "https://github.com/openai/parameter-golf/tree/7d9268023ac266762aa5d620230f59ba56fc3378/records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA",
-        "pr": "https://github.com/openai/parameter-golf/pull/1246",
         "officialLeaderboard": "https://github.com/openai/parameter-golf#leaderboard"
       },
       "provenance": {

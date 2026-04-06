@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-04-06T12:03:39.705Z",
+  "generatedAt": "2026-04-06T12:34:17.720Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
+    {
+      "prNumber": 1415,
+      "title": "Record: SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB — val_bpb 1.0913 (3-seed mean)",
+      "status": "open",
+      "updatedAt": "2026-04-06T12:32:13Z",
+      "headSha": "4949b8172b12da304d5c6711d619405faabf20bd",
+      "generatedAt": "2026-04-06T12:33:58.321Z",
+      "summary": "SP4096 model pairs GPTQ-quantized embeddings with SDClip, three-layer depth recurrence, and ETLB logit bias during sliding-window evaluation.",
+      "tags": [
+        "quantization",
+        "architecture",
+        "evaluation"
+      ],
+      "flags": {
+        "usesValOnly": false,
+        "usesValOnlyAi": false,
+        "usesValOnlyCollector": false
+      },
+      "compatibility": {
+        "valOnlyMatchesCollector": true
+      },
+      "file": "items/pr-1415.json"
+    },
     {
       "prNumber": 1414,
       "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
@@ -2312,15 +2335,14 @@
       "prNumber": 1289,
       "title": "Record: PROTEUS v1.6 — Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0819 (3-seed mean)",
       "status": "open",
-      "updatedAt": "2026-04-06T11:48:34Z",
+      "updatedAt": "2026-04-06T12:31:43Z",
       "headSha": "302f714bebadaf8727f448690f0e138bf3da9b8f",
-      "generatedAt": "2026-04-06T12:03:39.519Z",
-      "summary": "Integrates Scylla retokenization with parallel residuals/depth recurrence, legal TTT, sensitivity-driven mixed INT5/INT6 quantization, and learnable lane mixing.",
+      "generatedAt": "2026-04-06T12:34:04.014Z",
+      "summary": "Mixed INT5/INT6 per-layer quantization with learnable parallel-residual mixing and Scylla retokenization to unite legal TTT and depth recurrence engineering.",
       "tags": [
         "quantization",
         "architecture",
-        "tokenization",
-        "optimizer"
+        "tokenization"
       ],
       "flags": {
         "usesValOnly": false,
@@ -3054,14 +3076,13 @@
       "prNumber": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
       "status": "open",
-      "updatedAt": "2026-04-05T21:56:53Z",
-      "headSha": "7d9268023ac266762aa5d620230f59ba56fc3378",
-      "generatedAt": "2026-04-06T08:35:00.108Z",
-      "summary": "Trinity-inspired ternary QAT widens the MLP and packs weights via base-3 ternary packing while training with Partial RoPE, NeoMuon, EMA/SWA before GPTQ.",
+      "updatedAt": "2026-04-06T12:18:48Z",
+      "headSha": "c7b75aa858907b6a56b27854e28383d3e79f645d",
+      "generatedAt": "2026-04-06T12:34:11.294Z",
+      "summary": "Ternary BitNet QAT GPT with Partial RoPE and NeoMuon, plus per-sample SLOT v2 delta/logit-bias tuning during eval to keep the 16MB artifact size.",
       "tags": [
         "quantization",
-        "architecture",
-        "muon"
+        "evaluation"
       ],
       "flags": {
         "usesValOnly": false,
@@ -4776,10 +4797,10 @@
       "prNumber": 1143,
       "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
       "status": "closed",
-      "updatedAt": "2026-03-31T14:44:56Z",
+      "updatedAt": "2026-04-06T12:08:26Z",
       "headSha": "07c721f05508e6a2ebbe6455de4dc14104d65d05",
-      "generatedAt": "2026-03-31T15:14:13.624Z",
-      "summary": "Combines a TokenMonster-derived Scylla tokenizer chosen via autoresearch with full-data retokenization metadata and legal score-first TTT evaluation.",
+      "generatedAt": "2026-04-06T12:34:17.553Z",
+      "summary": "Autoresearches a TokenMonster-derived Scylla tokenizer, retokenizes the bundle with metadata, and evaluates via legal score-first TTT.",
       "tags": [
         "tokenization",
         "evaluation"
