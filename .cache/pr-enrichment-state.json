@@ -2,7 +2,7 @@
   "version": 1,
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
-  "generatedAt": "2026-04-06T17:05:03.562Z",
+  "generatedAt": "2026-04-06T17:35:31.694Z",
   "prs": {
     "6": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:11373420c1f50e6a83599fb25bb73f38a6555cb7:closed:2026-03-18T18:34:32Z",
@@ -2699,10 +2699,10 @@
       "headSha": "4e465ee7c8c8c3adbfa9c2db9631bdd15b68a791"
     },
     "675": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:2504fce04cd64523aba2199bbbf070be05dbd286:open:2026-04-06T16:30:52Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:6cf19d180acd8fc7d9df35aa74db2e141744284b:open:2026-04-06T17:06:01Z",
       "file": "items/pr-675.json",
-      "updatedAt": "2026-04-06T16:30:52Z",
-      "headSha": "2504fce04cd64523aba2199bbbf070be05dbd286"
+      "updatedAt": "2026-04-06T17:06:01Z",
+      "headSha": "6cf19d180acd8fc7d9df35aa74db2e141744284b"
     },
     "676": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:697f4ce12cff9a911d00417ab6b5378660cf91a6:open:2026-03-25T04:12:57Z",
@@ -3491,10 +3491,10 @@
       "headSha": "90d5115e4071a2538e05dafeb6e97c9490d0afe8"
     },
     "877": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:1d85c1630df9fed56de7c00aeffa954a0c93e03f:open:2026-04-05T21:48:29Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:552a56b447957105b625348e1e85788d04bff27c:open:2026-04-06T17:26:31Z",
       "file": "items/pr-877.json",
-      "updatedAt": "2026-04-05T21:48:29Z",
-      "headSha": "1d85c1630df9fed56de7c00aeffa954a0c93e03f"
+      "updatedAt": "2026-04-06T17:26:31Z",
+      "headSha": "552a56b447957105b625348e1e85788d04bff27c"
     },
     "880": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:56905be419483309a413735ba8f7e457da3a18f7:closed:2026-03-27T22:52:40Z",
@@ -5231,9 +5231,9 @@
       "headSha": "6c8151a8ed066ba261d8bed25f2b1a8f9be70f98"
     },
     "1289": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:302f714bebadaf8727f448690f0e138bf3da9b8f:open:2026-04-06T14:09:31Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:302f714bebadaf8727f448690f0e138bf3da9b8f:open:2026-04-06T17:27:50Z",
       "file": "items/pr-1289.json",
-      "updatedAt": "2026-04-06T14:09:31Z",
+      "updatedAt": "2026-04-06T17:27:50Z",
       "headSha": "302f714bebadaf8727f448690f0e138bf3da9b8f"
     },
     "1290": {
@@ -5777,9 +5777,9 @@
       "headSha": "e849134f251fe0f504ff7b5f94f283867293e54f"
     },
     "1405": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:b965076d78d8b81a891fdf99cd0a0aea18895381:open:2026-04-06T16:28:14Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:b965076d78d8b81a891fdf99cd0a0aea18895381:closed:2026-04-06T17:26:05Z",
       "file": "items/pr-1405.json",
-      "updatedAt": "2026-04-06T16:28:14Z",
+      "updatedAt": "2026-04-06T17:26:05Z",
       "headSha": "b965076d78d8b81a891fdf99cd0a0aea18895381"
     },
     "1406": {
@@ -5861,16 +5861,22 @@
       "headSha": "e29aa1fcc1b0cd96e4a9a09e6d251437225d81db"
     },
     "1420": {
-      "signature": "2026-03-20-pr-enrichment-v2-approach-first:14879d029f339d9b9898a4deb2ece4ed3546136a:open:2026-04-06T16:59:08Z",
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:d5817955938e370f88e293187b3b530ae8d1b81d:open:2026-04-06T17:13:17Z",
       "file": "items/pr-1420.json",
-      "updatedAt": "2026-04-06T16:59:08Z",
-      "headSha": "14879d029f339d9b9898a4deb2ece4ed3546136a"
+      "updatedAt": "2026-04-06T17:13:17Z",
+      "headSha": "d5817955938e370f88e293187b3b530ae8d1b81d"
     },
     "1421": {
       "signature": "2026-03-20-pr-enrichment-v2-approach-first:93151bdee818beb1c6c58ce7f44d37626a45bb1a:open:2026-04-06T16:35:22Z",
       "file": "items/pr-1421.json",
       "updatedAt": "2026-04-06T16:35:22Z",
       "headSha": "93151bdee818beb1c6c58ce7f44d37626a45bb1a"
+    },
+    "1422": {
+      "signature": "2026-03-20-pr-enrichment-v2-approach-first:11cde64ade5f7f549411e6cc9b8835691fbd80d7:open:2026-04-06T17:20:55Z",
+      "file": "items/pr-1422.json",
+      "updatedAt": "2026-04-06T17:20:55Z",
+      "headSha": "11cde64ade5f7f549411e6cc9b8835691fbd80d7"
     }
   }
 }

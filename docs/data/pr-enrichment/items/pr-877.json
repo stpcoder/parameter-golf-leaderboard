@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-06T08:35:24.085Z",
+  "generatedAt": "2026-04-06T17:35:25.998Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 877,
     "title": "Non-record: sin² activation + causal screening pipeline",
     "state": "open",
-    "updatedAt": "2026-04-05T21:48:29Z",
-    "headSha": "1d85c1630df9fed56de7c00aeffa954a0c93e03f",
+    "updatedAt": "2026-04-06T17:26:31Z",
+    "headSha": "552a56b447957105b625348e1e85788d04bff27c",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/877",
     "authorLogin": "clthuang"
   },
@@ -20,7 +20,7 @@
     "submissionCount": 2
   },
   "output": {
-    "summary": "Use sin² in MLPs and an automated causal screening pipeline to guide periodic activations plus adaptive multi-token prediction and Rho-1 loss masking probes.",
+    "summary": "Automated causal-screening pipeline surfaced sin² periodic MLP activations alongside adaptive multi-token prediction and Rho-1 selective loss probes.",
     "tags": [
       "architecture",
       "evaluation",
@@ -29,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "sin² drop-in for relu² to keep non-negative squaring while smoothing gradients",
-      "automated causal DAG screening pipeline to prioritize architecture interventions",
-      "adaptive multi-token prediction and Rho-1 selective loss masking explorations"
+      "sin² periodic activation as drop-in MLP replacement",
+      "causal DAG-guided intervention screening pipeline",
+      "exploration of adaptive multi-token prediction with selective loss masking"
     ]
   },
   "compatibility": {
