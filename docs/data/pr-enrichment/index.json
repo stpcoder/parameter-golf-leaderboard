@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T21:05:59.413Z",
+  "generatedAt": "2026-04-06T21:36:00.988Z",
   "sourceRepo": "openai/parameter-golf",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "entries": [
@@ -263,12 +263,13 @@
     {
       "prNumber": 1414,
       "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
-      "status": "open",
-      "updatedAt": "2026-04-06T20:50:28Z",
+      "status": "closed",
+      "updatedAt": "2026-04-06T21:25:30Z",
       "headSha": "5b1740dc195fa4e7bf6346661b09866253a9690f",
-      "generatedAt": "2026-04-06T21:05:52.540Z",
-      "summary": "Combines discriminative per-block TTT fine-tuning with SLOT-24 per-sample delta optimization to saturate eval budget at ~0.71 BPB.",
+      "generatedAt": "2026-04-06T21:35:52.349Z",
+      "summary": "Combines per-block discriminative TTT pre-quantization with SLOT-24 eval-time delta optimization, verified across seeds to probe SLOT saturation.",
       "tags": [
+        "optimizer",
         "training-schedule",
         "evaluation",
         "non-record"
@@ -9278,10 +9279,10 @@
       "prNumber": 877,
       "title": "Non-record: sin² activation + causal screening pipeline",
       "status": "open",
-      "updatedAt": "2026-04-06T19:39:38Z",
-      "headSha": "4d428fec7f02ba9230b3dac9ec40951d033b8346",
-      "generatedAt": "2026-04-06T20:05:54.647Z",
-      "summary": "sin² periodic activation replaces relu² in MLPs, chosen via an automated causal-DAG screening pipeline that benchmarks 24 interventions.",
+      "updatedAt": "2026-04-06T21:35:26Z",
+      "headSha": "756497a79ecfbd549967029044d70129f6d91b58",
+      "generatedAt": "2026-04-06T21:36:00.869Z",
+      "summary": "Automated causal screening swapped MLP relu² for sin² to probe periodic activations while leaving the baseline architecture and training unchanged.",
       "tags": [
         "architecture",
         "evaluation",

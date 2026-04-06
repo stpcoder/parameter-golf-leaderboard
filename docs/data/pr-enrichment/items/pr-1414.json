@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-06T21:05:52.540Z",
+  "generatedAt": "2026-04-06T21:35:52.349Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 1414,
     "title": "Non-record: Discriminative TTT + SLOT-24, 3-seed verified (8xH100 SXM)",
-    "state": "open",
-    "updatedAt": "2026-04-06T20:50:28Z",
+    "state": "closed",
+    "updatedAt": "2026-04-06T21:25:30Z",
     "headSha": "5b1740dc195fa4e7bf6346661b09866253a9690f",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/1414",
     "authorLogin": "Abhishek8108"
@@ -19,8 +19,9 @@
     "submissionCount": 1
   },
   "output": {
-    "summary": "Combines discriminative per-block TTT fine-tuning with SLOT-24 per-sample delta optimization to saturate eval budget at ~0.71 BPB.",
+    "summary": "Combines per-block discriminative TTT pre-quantization with SLOT-24 eval-time delta optimization, verified across seeds to probe SLOT saturation.",
     "tags": [
+      "optimizer",
       "training-schedule",
       "evaluation",
       "non-record"
@@ -28,9 +29,9 @@
     "usesValOnly": false,
     "valOnlyReasoning": "",
     "techniques": [
-      "per-block adaptive learning-rate TTT",
-      "24-step SLOT delta updates with hidden-state/logit bias",
-      "3-seed verification of merged workflow"
+      "per-block adaptive LR discriminative TTT",
+      "SLOT-24 hidden-state/logit delta optimization",
+      "3-seed verification of combined pipeline"
     ]
   },
   "compatibility": {
