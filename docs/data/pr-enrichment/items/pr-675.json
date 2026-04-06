@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-06T20:06:08.571Z",
+  "generatedAt": "2026-04-06T22:36:03.252Z",
   "promptVersion": "2026-03-20-pr-enrichment-v2-approach-first",
   "model": "gpt-5.1-codex-mini",
   "pr": {
     "number": 675,
     "title": "Record: L-BFGS SLOT — val_bpb 0.5793 (3-seed mean)",
     "state": "open",
-    "updatedAt": "2026-04-06T19:41:48Z",
-    "headSha": "8bd119f5972bc996217d1e911ef8504d9b09dccb",
+    "updatedAt": "2026-04-06T22:10:20Z",
+    "headSha": "7c66905889cc8228038ddb8b135d4da38f233d28",
     "htmlUrl": "https://github.com/openai/parameter-golf/pull/675",
     "authorLogin": "ChideraIbe123"
   },
@@ -21,16 +21,17 @@
     "submissionCount": 3
   },
   "output": {
-    "summary": "SLOT swaps AdamW for 8-step L-BFGS quasi-Newton updates on the 1,536-param per-sample problem with strong Wolfe line search.",
+    "summary": "SLOT swaps AdamW for L-BFGS with 8 outer steps and strong-Wolfe line search to exploit curvature in the 1,536-param per-sample optimization.",
     "tags": [
       "optimizer",
       "non-record"
     ],
     "usesValOnly": false,
-    "valOnlyReasoning": "",
+    "valOnlyReasoning": "Training is standard SLOT optimization; validation shards are used strictly for evaluation.",
     "techniques": [
-      "L-BFGS + strong Wolfe line search",
-      "Curvature-aware updates for 1,536-param SLOT per sample"
+      "Second-order L-BFGS for the compact 1,536-parameter SLOT problem",
+      "Strong-Wolfe line search + history_size=10 Hessian approx",
+      "8 outer steps replace 48-step AdamW schedule"
     ]
   },
   "compatibility": {
